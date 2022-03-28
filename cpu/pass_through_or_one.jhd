@@ -1,0 +1,7 @@
+MODULE pass_through_or_one
+	SUBMODULE buffer_8bit
+		INSTANCE buff_const_one
+	SUBMODULE buffer_8bit
+		INSTANCE buff_origin
+	SUBMODULE one_8bit
+		INSTANCE const_one

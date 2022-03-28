@@ -1,0 +1,4 @@
+sch2sym -intstyle ise -family aspartan6 -refsym cpu_control /home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu_control.sch /home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu_control.sym 
+sch2hdl -intstyle ise -family aspartan6 -flat -suppress -vhdl cpu_control_drc.vhf -w /home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu_control.sch 
+sch2hdl -intstyle ise -family aspartan6 -flat -suppress -vhdl cpu_control.vhf -w /home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu_control.sch 
+sch2vhdl -intstyle ise -family aspartan6 -tionly -w /home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu_control.sch cpu_control.vhi 

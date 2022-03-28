@@ -1,0 +1,72 @@
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa6slx9-ftg256-3 led_control.ngc led_control.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_control_map.ncd led_control.ngd led_control.pcf 
+par -w -intstyle ise -ol high -mt off led_control_map.ncd led_control.ncd led_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml led_control.twx led_control.ncd -o led_control.twr led_control.pcf 
+bitgen -intstyle ise -f led_control.ut led_control.ncd 
+bitgen -intstyle ise -f led_control.ut led_control.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc led_control.ucf -p xa6slx9-ftg256-3 led_control.ngc led_control.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_control_map.ncd led_control.ngd led_control.pcf 
+par -w -intstyle ise -ol high -mt off led_control_map.ncd led_control.ncd led_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml led_control.twx led_control.ncd -o led_control.twr led_control.pcf -ucf led_control.ucf 
+bitgen -intstyle ise -f led_control.ut led_control.ncd 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc led_control.ucf -p xa6slx9-ftg256-3 led_control.ngc led_control.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_control_map.ncd led_control.ngd led_control.pcf 
+par -w -intstyle ise -ol high -mt off led_control_map.ncd led_control.ncd led_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml led_control.twx led_control.ncd -o led_control.twr led_control.pcf -ucf led_control.ucf 
+bitgen -intstyle ise -f led_control.ut led_control.ncd 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc led_control.ucf -p xa6slx9-ftg256-3 led_control.ngc led_control.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_control_map.ncd led_control.ngd led_control.pcf 
+par -w -intstyle ise -ol high -mt off led_control_map.ncd led_control.ncd led_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml led_control.twx led_control.ncd -o led_control.twr led_control.pcf -ucf led_control.ucf 
+bitgen -intstyle ise -f led_control.ut led_control.ncd 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc led_control.ucf -p xa6slx9-ftg256-3 led_control.ngc led_control.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_control_map.ncd led_control.ngd led_control.pcf 
+par -w -intstyle ise -ol high -mt off led_control_map.ncd led_control.ncd led_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml led_control.twx led_control.ncd -o led_control.twr led_control.pcf -ucf led_control.ucf 
+bitgen -intstyle ise -f led_control.ut led_control.ncd 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc led_control.ucf -p xa6slx9-ftg256-3 led_control.ngc led_control.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_control_map.ncd led_control.ngd led_control.pcf 
+par -w -intstyle ise -ol high -mt off led_control_map.ncd led_control.ncd led_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml led_control.twx led_control.ncd -o led_control.twr led_control.pcf -ucf led_control.ucf 
+bitgen -intstyle ise -f led_control.ut led_control.ncd 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc led_control.ucf -p xa6slx9-ftg256-3 led_control.ngc led_control.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_control_map.ncd led_control.ngd led_control.pcf 
+par -w -intstyle ise -ol high -mt off led_control_map.ncd led_control.ncd led_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml led_control.twx led_control.ncd -o led_control.twr led_control.pcf -ucf led_control.ucf 
+bitgen -intstyle ise -f led_control.ut led_control.ncd 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc led_control.ucf -p xa6slx9-ftg256-3 led_control.ngc led_control.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_control_map.ncd led_control.ngd led_control.pcf 
+par -w -intstyle ise -ol high -mt off led_control_map.ncd led_control.ncd led_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml led_control.twx led_control.ncd -o led_control.twr led_control.pcf -ucf led_control.ucf 
+bitgen -intstyle ise -f led_control.ut led_control.ncd 

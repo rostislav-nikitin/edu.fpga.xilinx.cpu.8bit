@@ -1,0 +1,5 @@
+vhdl work "cmp_1bit.vhf"
+vhdl work "lzero.vhf"
+vhdl work "cmp_8bit.vhf"
+vhdl work "alu.vhf"
+vhdl work "tb_alu.vhd"

@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/home/s0lid/Sources/edu.fpga.xilinx/led_control/impact.xsl
+OUTFILE=/home/s0lid/Sources/edu.fpga.xilinx/led_control/impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=/home/s0lid/Sources/edu.fpga.xilinx/led_control
+LICENSE=iMPACT
+USER_INFO=iMPACT

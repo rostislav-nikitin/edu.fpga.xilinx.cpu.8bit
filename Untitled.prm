@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.40xd
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o /home/s0lid/Sources/edu.fpga.xilinx/led_control//Untitled -s 8192 -u 0000 /home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.bit -spi 
+
+PROM /home/s0lid/Sources/edu.fpga.xilinx/led_control/Untitled.prm map: Tue Mar  8 23:25:28 2022
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          8192K
+PROM start    0000:0000
+PROM end      007f:ffff
+PROM checksum 7a5826e8
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0005:327b     Mar  8 23:21:27 2022 /home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/led_control.bit

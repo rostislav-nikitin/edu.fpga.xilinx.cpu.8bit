@@ -1,0 +1,3 @@
+MODULE reg_8bit
+	SUBMODULE buffer_8bit
+		INSTANCE XLXI_4
