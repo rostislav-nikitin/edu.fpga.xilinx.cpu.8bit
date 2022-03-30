@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ram_256bytes.vhf
--- /___/   /\     Timestamp : 03/28/2022 22:46:27
+-- /___/   /\     Timestamp : 03/30/2022 23:59:50
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family aspartan6 -flat -suppress -vhdl /home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/ram_256bytes.vhf -w /home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/ram_256bytes.sch
+--Command: sch2hdl -intstyle ise -family aspartan6 -flat -suppress -vhdl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/ram_256bytes.vhf -w /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/ram_256bytes.sch
 --Design Name: ram_256bytes
 --Device: aspartan6
 --Purpose:
@@ -133,7 +133,7 @@ architecture BEHAVIORAL of ram_256bytes is
    
    attribute INIT of XLXI_1 : label is 
          "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF";
-   attribute HU_SET of XLXI_15 : label is "XLXI_15_21";
+   attribute HU_SET of XLXI_15 : label is "XLXI_15_39";
    attribute INIT of XLXI_20 : label is 
          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
    attribute INIT of XLXI_21 : label is 
@@ -142,7 +142,7 @@ architecture BEHAVIORAL of ram_256bytes is
          "F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0";
    attribute INIT of XLXI_23 : label is 
          "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF";
-   attribute HU_SET of XLXI_41 : label is "XLXI_41_22";
+   attribute HU_SET of XLXI_41 : label is "XLXI_41_40";
 begin
    a_o(7 downto 0) <= a_o_DUMMY(7 downto 0);
    XLXI_1 : RAM256X1S

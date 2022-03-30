@@ -19,8 +19,8 @@ Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" int
 Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/tb_cpu.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 107948 KB
-Fuse CPU Usage: 1470 ms
+Fuse Memory Usage: 108012 KB
+Fuse CPU Usage: 1460 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
@@ -56,7 +56,6 @@ Compiling architecture behavioral of entity CB4CE_HXILINX_cpu [cb4ce_hxilinx_cpu
 Compiling architecture behavioral of entity stepper_MUSER_cpu [stepper_muser_cpu_default]
 Compiling architecture or4_v of entity OR4 [or4_default]
 Compiling architecture d2_4e_hxilinx_cpu_v of entity D2_4E_HXILINX_cpu [d2_4e_hxilinx_cpu_default]
-Compiling architecture and3_v of entity AND3 [and3_default]
 Compiling architecture behavioral of entity cpu_control_MUSER_cpu [cpu_control_muser_cpu_default]
 Compiling architecture behavioral of entity one_8bit_MUSER_cpu [one_8bit_muser_cpu_default]
 Compiling architecture behavioral of entity pass_through_or_one_MUSER_cpu [pass_through_or_one_muser_cpu_de...]
@@ -69,8 +68,8 @@ Compiling architecture behavioral of entity ram_256bytes_MUSER_cpu [ram_256bytes
 Compiling architecture behavioral of entity cpu [cpu_default]
 Compiling architecture behavioral of entity cpu_cpu_sch_tb
 Time Resolution for simulation is 1ps.
-Compiled 91 VHDL Units
+Compiled 89 VHDL Units
 Built simulation executable /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_cpu_sch_tb_isim_beh.exe
-Fuse Memory Usage: 4368432 KB
-Fuse CPU Usage: 2010 ms
-GCC CPU Usage: 2910 ms
+Fuse Memory Usage: 4368496 KB
+Fuse CPU Usage: 1970 ms
+GCC CPU Usage: 2850 ms

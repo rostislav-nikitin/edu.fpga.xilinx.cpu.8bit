@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : alu.vhf
--- /___/   /\     Timestamp : 03/27/2022 22:30:05
+-- /___/   /\     Timestamp : 03/30/2022 23:59:49
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family aspartan6 -flat -suppress -vhdl /home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/alu.vhf -w /home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/alu.sch
+--Command: sch2hdl -intstyle ise -family aspartan6 -flat -suppress -vhdl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/alu.vhf -w /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/alu.sch
 --Design Name: alu
 --Device: aspartan6
 --Purpose:

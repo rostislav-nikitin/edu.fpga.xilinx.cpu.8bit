@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : lzero.vhf
--- /___/   /\     Timestamp : 03/19/2022 19:56:14
+-- /___/   /\     Timestamp : 03/30/2022 23:59:50
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family aspartan6 -flat -suppress -vhdl /home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/lzero.vhf -w /home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/lzero.sch
+--Command: sch2hdl -intstyle ise -family aspartan6 -flat -suppress -vhdl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/lzero.vhf -w /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/lzero.sch
 --Design Name: lzero
 --Device: aspartan6
 --Purpose:

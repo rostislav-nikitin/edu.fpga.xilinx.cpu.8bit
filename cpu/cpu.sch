@@ -49,11 +49,11 @@
         <signal name="ctl_iar_w" />
         <signal name="ctl_r0_w" />
         <signal name="manual_r0_w" />
+        <signal name="ctl_r1_w" />
+        <signal name="manual_r1_w" />
         <signal name="alu_op(2)" />
         <signal name="alu_op(1)" />
         <signal name="alu_op(0)" />
-        <signal name="ctl_r1_w" />
-        <signal name="manual_r1_w" />
         <port polarity="Output" name="sysbus(7:0)" />
         <port polarity="Output" name="temp_w" />
         <port polarity="Output" name="bus1" />
@@ -82,6 +82,7 @@
         <port polarity="Output" name="clkw" />
         <port polarity="Input" name="clk" />
         <port polarity="Output" name="ram_r" />
+        <port polarity="Output" name="ram_w" />
         <port polarity="Output" name="ram_a_w" />
         <port polarity="Output" name="alu_op(2:0)" />
         <port polarity="Output" name="ir_o(7:0)" />
@@ -155,56 +156,57 @@
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <blockdef name="cpu_control">
-            <timestamp>2022-3-28T18:52:3</timestamp>
+            <timestamp>2022-3-30T21:55:9</timestamp>
             <rect width="1408" x="64" y="-1472" height="1408" />
-            <line x2="864" y1="-1472" y2="-1536" x1="864" />
-            <line x2="928" y1="-1472" y2="-1536" x1="928" />
-            <line x2="1536" y1="-352" y2="-352" x1="1472" />
-            <line x2="1536" y1="-864" y2="-864" x1="1472" />
-            <line x2="1536" y1="-1056" y2="-1056" x1="1472" />
-            <line x2="1536" y1="-928" y2="-928" x1="1472" />
-            <line x2="1056" y1="-1472" y2="-1536" x1="1056" />
-            <line x2="1120" y1="-1472" y2="-1536" x1="1120" />
-            <line x2="1184" y1="-1472" y2="-1536" x1="1184" />
-            <line x2="1536" y1="-800" y2="-800" x1="1472" />
-            <line x2="1536" y1="-992" y2="-992" x1="1472" />
-            <line x2="1536" y1="-1120" y2="-1120" x1="1472" />
-            <line x2="1536" y1="-736" y2="-736" x1="1472" />
-            <line x2="608" y1="-1472" y2="-1536" x1="608" />
             <line x2="0" y1="-1440" y2="-1440" x1="64" />
-            <line x2="96" y1="-64" y2="0" x1="96" />
             <line x2="0" y1="-1376" y2="-1376" x1="64" />
-            <line x2="1536" y1="-1184" y2="-1184" x1="1472" />
-            <line x2="480" y1="-1472" y2="-1536" x1="480" />
-            <line x2="544" y1="-1472" y2="-1536" x1="544" />
-            <line x2="160" y1="-64" y2="0" x1="160" />
-            <rect width="24" x="148" y="-64" height="64" />
-            <line x2="672" y1="-1472" y2="-1536" x1="672" />
-            <line x2="1312" y1="-1472" y2="-1536" x1="1312" />
-            <line x2="1248" y1="-1472" y2="-1536" x1="1248" />
-            <line x2="1376" y1="-1472" y2="-1536" x1="1376" />
-            <line x2="1440" y1="-1472" y2="-1536" x1="1440" />
             <line x2="1536" y1="-1440" y2="-1440" x1="1472" />
             <line x2="1536" y1="-1376" y2="-1376" x1="1472" />
             <line x2="1536" y1="-1312" y2="-1312" x1="1472" />
             <line x2="1536" y1="-1248" y2="-1248" x1="1472" />
-            <line x2="800" y1="-1472" y2="-1536" x1="800" />
-            <line x2="736" y1="-1472" y2="-1536" x1="736" />
+            <line x2="1536" y1="-1184" y2="-1184" x1="1472" />
+            <line x2="1536" y1="-1120" y2="-1120" x1="1472" />
+            <line x2="1536" y1="-1056" y2="-1056" x1="1472" />
+            <line x2="1536" y1="-992" y2="-992" x1="1472" />
+            <line x2="1536" y1="-928" y2="-928" x1="1472" />
+            <line x2="1536" y1="-864" y2="-864" x1="1472" />
+            <line x2="1536" y1="-800" y2="-800" x1="1472" />
+            <line x2="1536" y1="-736" y2="-736" x1="1472" />
             <line x2="1536" y1="-672" y2="-672" x1="1472" />
             <line x2="1536" y1="-608" y2="-608" x1="1472" />
             <line x2="1536" y1="-544" y2="-544" x1="1472" />
             <line x2="1536" y1="-480" y2="-480" x1="1472" />
             <line x2="1536" y1="-416" y2="-416" x1="1472" />
+            <line x2="1536" y1="-352" y2="-352" x1="1472" />
             <line x2="1536" y1="-288" y2="-288" x1="1472" />
             <line x2="1536" y1="-224" y2="-224" x1="1472" />
             <line x2="1536" y1="-160" y2="-160" x1="1472" />
+            <line x2="1536" y1="-96" y2="-96" x1="1472" />
             <line x2="96" y1="-1472" y2="-1536" x1="96" />
             <line x2="160" y1="-1472" y2="-1536" x1="160" />
             <line x2="224" y1="-1472" y2="-1536" x1="224" />
             <line x2="288" y1="-1472" y2="-1536" x1="288" />
             <line x2="352" y1="-1472" y2="-1536" x1="352" />
             <line x2="416" y1="-1472" y2="-1536" x1="416" />
+            <line x2="480" y1="-1472" y2="-1536" x1="480" />
+            <line x2="544" y1="-1472" y2="-1536" x1="544" />
+            <line x2="608" y1="-1472" y2="-1536" x1="608" />
+            <line x2="672" y1="-1472" y2="-1536" x1="672" />
+            <line x2="736" y1="-1472" y2="-1536" x1="736" />
+            <line x2="800" y1="-1472" y2="-1536" x1="800" />
+            <line x2="864" y1="-1472" y2="-1536" x1="864" />
+            <line x2="928" y1="-1472" y2="-1536" x1="928" />
             <line x2="992" y1="-1472" y2="-1536" x1="992" />
+            <line x2="1056" y1="-1472" y2="-1536" x1="1056" />
+            <line x2="1120" y1="-1472" y2="-1536" x1="1120" />
+            <line x2="1184" y1="-1472" y2="-1536" x1="1184" />
+            <line x2="1248" y1="-1472" y2="-1536" x1="1248" />
+            <line x2="1312" y1="-1472" y2="-1536" x1="1312" />
+            <line x2="1376" y1="-1472" y2="-1536" x1="1376" />
+            <line x2="1440" y1="-1472" y2="-1536" x1="1440" />
+            <line x2="96" y1="-64" y2="0" x1="96" />
+            <line x2="160" y1="-64" y2="0" x1="160" />
+            <rect width="24" x="148" y="-64" height="64" />
         </blockdef>
         <blockdef name="ram_256bytes">
             <timestamp>2022-3-28T19:46:1</timestamp>
@@ -307,43 +309,27 @@
             <blockpin signalname="clkw" name="clkw" />
         </block>
         <block symbolname="cpu_control" name="cpu_ctl">
-            <blockpin signalname="acc_r" name="acc_r" />
-            <blockpin signalname="acc_w" name="acc_w" />
-            <blockpin name="alu" />
-            <blockpin name="alu_and" />
-            <blockpin name="alu_lshift" />
-            <blockpin name="alu_not" />
-            <blockpin signalname="alu_op(0)" name="alu_op0" />
-            <blockpin signalname="alu_op(1)" name="alu_op1" />
-            <blockpin signalname="alu_op(2)" name="alu_op2" />
-            <blockpin name="alu_or" />
-            <blockpin name="alu_rshift" />
-            <blockpin name="alu_sum" />
-            <blockpin name="alu_xor" />
-            <blockpin signalname="bus1" name="bus1" />
             <blockpin signalname="clkc" name="clk" />
-            <blockpin signalname="clkr" name="clkr" />
             <blockpin signalname="clkw" name="clkw" />
-            <blockpin name="ground" />
-            <blockpin signalname="iar_r" name="iar_r" />
-            <blockpin signalname="ctl_iar_w" name="iar_w" />
-            <blockpin signalname="ir_o(7:0)" name="ir(7:0)" />
-            <blockpin signalname="ir_w" name="ir_w" />
-            <blockpin signalname="r0_r" name="r0_r" />
-            <blockpin signalname="ctl_r0_w" name="r0_w" />
             <blockpin signalname="r1_r" name="r1_r" />
-            <blockpin signalname="ctl_r1_w" name="r1_w" />
-            <blockpin signalname="r2_r" name="r2_r" />
             <blockpin signalname="r2_w" name="r2_w" />
-            <blockpin signalname="r3_r" name="r3_r" />
+            <blockpin signalname="r2_r" name="r2_r" />
             <blockpin signalname="r3_w" name="r3_w" />
-            <blockpin signalname="ram_a_w" name="ram_a_w" />
-            <blockpin signalname="ram_r" name="ram_r" />
+            <blockpin signalname="r3_r" name="r3_r" />
+            <blockpin name="ground" />
+            <blockpin name="alu_sum" />
+            <blockpin name="alu_lshift" />
+            <blockpin name="alu_rshift" />
+            <blockpin name="alu_not" />
+            <blockpin name="alu_and" />
+            <blockpin name="alu_or" />
+            <blockpin name="alu_xor" />
             <blockpin name="ra_0" />
             <blockpin name="ra_1" />
             <blockpin name="ra_2" />
             <blockpin name="ra_3" />
             <blockpin name="rb_0" />
+            <blockpin name="alu" />
             <blockpin name="rb_1" />
             <blockpin name="rb_2" />
             <blockpin name="rb_3" />
@@ -353,7 +339,24 @@
             <blockpin name="s4" />
             <blockpin name="s5" />
             <blockpin name="s6" />
+            <blockpin signalname="iar_r" name="iar_r" />
+            <blockpin signalname="ctl_iar_w" name="iar_w" />
+            <blockpin signalname="bus1" name="bus1" />
+            <blockpin signalname="ir_w" name="ir_w" />
+            <blockpin signalname="ram_r" name="ram_r" />
+            <blockpin signalname="ram_a_w" name="ram_a_w" />
+            <blockpin signalname="acc_r" name="acc_r" />
+            <blockpin signalname="acc_w" name="acc_w" />
             <blockpin signalname="temp_w" name="temp_w" />
+            <blockpin signalname="ram_w" name="ram_w" />
+            <blockpin signalname="alu_op(0)" name="alu_op0" />
+            <blockpin signalname="alu_op(1)" name="alu_op1" />
+            <blockpin signalname="alu_op(2)" name="alu_op2" />
+            <blockpin signalname="ctl_r0_w" name="r0_w" />
+            <blockpin signalname="r0_r" name="r0_r" />
+            <blockpin signalname="ctl_r1_w" name="r1_w" />
+            <blockpin signalname="clkr" name="clkr" />
+            <blockpin signalname="ir_o(7:0)" name="ir(7:0)" />
         </block>
         <block symbolname="ram_256bytes" name="XLXI_9">
             <blockpin signalname="sysbus(7:0)" name="a(7:0)" />
@@ -733,32 +736,25 @@
             <wire x2="2528" y1="800" y2="912" x1="2528" />
         </branch>
         <branch name="acc_w">
-            <wire x2="2976" y1="800" y2="816" x1="2976" />
-            <wire x2="2976" y1="816" y2="912" x1="2976" />
+            <wire x2="2976" y1="800" y2="912" x1="2976" />
         </branch>
         <branch name="acc_r">
-            <wire x2="2912" y1="800" y2="816" x1="2912" />
-            <wire x2="2912" y1="816" y2="912" x1="2912" />
+            <wire x2="2912" y1="800" y2="912" x1="2912" />
         </branch>
         <branch name="ram_a_w">
-            <wire x2="2848" y1="800" y2="816" x1="2848" />
-            <wire x2="2848" y1="816" y2="912" x1="2848" />
+            <wire x2="2848" y1="800" y2="912" x1="2848" />
         </branch>
         <branch name="ram_r">
-            <wire x2="2784" y1="800" y2="816" x1="2784" />
-            <wire x2="2784" y1="816" y2="912" x1="2784" />
+            <wire x2="2784" y1="800" y2="912" x1="2784" />
         </branch>
         <branch name="ir_w">
-            <wire x2="2720" y1="800" y2="816" x1="2720" />
-            <wire x2="2720" y1="816" y2="912" x1="2720" />
+            <wire x2="2720" y1="800" y2="912" x1="2720" />
         </branch>
         <branch name="bus1">
-            <wire x2="2656" y1="800" y2="816" x1="2656" />
-            <wire x2="2656" y1="816" y2="912" x1="2656" />
+            <wire x2="2656" y1="800" y2="912" x1="2656" />
         </branch>
         <branch name="ctl_iar_w">
-            <wire x2="2592" y1="800" y2="816" x1="2592" />
-            <wire x2="2592" y1="816" y2="912" x1="2592" />
+            <wire x2="2592" y1="800" y2="912" x1="2592" />
         </branch>
         <iomarker fontsize="28" x="2592" y="800" name="ctl_iar_w" orien="R270" />
         <iomarker fontsize="28" x="2656" y="800" name="bus1" orien="R270" />
@@ -767,72 +763,33 @@
         <iomarker fontsize="28" x="2848" y="800" name="ram_a_w" orien="R270" />
         <iomarker fontsize="28" x="2912" y="800" name="acc_r" orien="R270" />
         <iomarker fontsize="28" x="2976" y="800" name="acc_w" orien="R270" />
-        <branch name="alu_op(2:0)">
-            <attrtext style="alignment:SOFT-TCENTER;fontsize:28;fontname:Arial" attrname="Name" x="3328" y="608" type="branch" />
-            <wire x2="3328" y1="448" y2="512" x1="3328" />
-            <wire x2="3328" y1="512" y2="576" x1="3328" />
-            <wire x2="3328" y1="576" y2="608" x1="3328" />
-            <wire x2="3440" y1="608" y2="608" x1="3328" />
-        </branch>
-        <bustap x2="3232" y1="448" y2="448" x1="3328" />
-        <bustap x2="3232" y1="512" y2="512" x1="3328" />
-        <bustap x2="3232" y1="576" y2="576" x1="3328" />
-        <iomarker fontsize="28" x="3440" y="608" name="alu_op(2:0)" orien="R0" />
-        <branch name="alu_op(2)">
-            <wire x2="3232" y1="576" y2="912" x1="3232" />
-        </branch>
-        <branch name="alu_op(1)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="3168" y="512" type="branch" />
-            <wire x2="3168" y1="512" y2="912" x1="3168" />
-            <wire x2="3232" y1="512" y2="512" x1="3168" />
-        </branch>
-        <branch name="alu_op(0)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="3104" y="448" type="branch" />
-            <wire x2="3104" y1="448" y2="912" x1="3104" />
-            <wire x2="3232" y1="448" y2="448" x1="3104" />
-        </branch>
         <branch name="temp_w">
             <wire x2="3040" y1="800" y2="912" x1="3040" />
         </branch>
         <iomarker fontsize="28" x="3040" y="800" name="temp_w" orien="R270" />
-        <branch name="ctl_r0_w">
-            <wire x2="3296" y1="800" y2="816" x1="3296" />
-            <wire x2="3296" y1="816" y2="912" x1="3296" />
-        </branch>
+        <iomarker fontsize="28" x="3360" y="800" name="ctl_r0_w" orien="R270" />
         <branch name="r0_r">
-            <wire x2="3360" y1="800" y2="816" x1="3360" />
-            <wire x2="3360" y1="816" y2="912" x1="3360" />
+            <wire x2="3424" y1="800" y2="912" x1="3424" />
         </branch>
-        <iomarker fontsize="28" x="3360" y="800" name="r0_r" orien="R270" />
-        <iomarker fontsize="28" x="3296" y="800" name="ctl_r0_w" orien="R270" />
-        <branch name="r1_r">
-            <wire x2="3424" y1="800" y2="816" x1="3424" />
-            <wire x2="3424" y1="816" y2="912" x1="3424" />
-        </branch>
-        <iomarker fontsize="28" x="3424" y="800" name="r1_r" orien="R270" />
+        <iomarker fontsize="28" x="3424" y="800" name="r0_r" orien="R270" />
         <branch name="ctl_r1_w">
-            <wire x2="3488" y1="800" y2="816" x1="3488" />
-            <wire x2="3488" y1="816" y2="912" x1="3488" />
+            <wire x2="3488" y1="800" y2="912" x1="3488" />
         </branch>
         <iomarker fontsize="28" x="3488" y="800" name="ctl_r1_w" orien="R270" />
-        <branch name="r2_r">
-            <wire x2="3600" y1="1008" y2="1008" x1="3584" />
-            <wire x2="3712" y1="1008" y2="1008" x1="3600" />
+        <branch name="r1_r">
+            <wire x2="3712" y1="1008" y2="1008" x1="3584" />
         </branch>
-        <iomarker fontsize="28" x="3712" y="1008" name="r2_r" orien="R0" />
+        <iomarker fontsize="28" x="3712" y="1008" name="r1_r" orien="R0" />
         <branch name="r2_w">
-            <wire x2="3600" y1="1072" y2="1072" x1="3584" />
-            <wire x2="3712" y1="1072" y2="1072" x1="3600" />
+            <wire x2="3712" y1="1072" y2="1072" x1="3584" />
         </branch>
         <iomarker fontsize="28" x="3712" y="1072" name="r2_w" orien="R0" />
-        <branch name="r3_r">
-            <wire x2="3600" y1="1136" y2="1136" x1="3584" />
-            <wire x2="3712" y1="1136" y2="1136" x1="3600" />
+        <branch name="r2_r">
+            <wire x2="3712" y1="1136" y2="1136" x1="3584" />
         </branch>
-        <iomarker fontsize="28" x="3712" y="1136" name="r3_r" orien="R0" />
+        <iomarker fontsize="28" x="3712" y="1136" name="r2_r" orien="R0" />
         <branch name="r3_w">
-            <wire x2="3600" y1="1200" y2="1200" x1="3584" />
-            <wire x2="3712" y1="1200" y2="1200" x1="3600" />
+            <wire x2="3712" y1="1200" y2="1200" x1="3584" />
         </branch>
         <iomarker fontsize="28" x="3712" y="1200" name="r3_w" orien="R0" />
         <instance x="1712" y="656" name="XLXI_12" orien="R0" />
@@ -847,5 +804,44 @@
             <wire x2="1664" y1="592" y2="688" x1="1664" />
         </branch>
         <iomarker fontsize="28" x="1584" y="688" name="manual_r1_w" orien="R180" />
+        <branch name="ram_w">
+            <wire x2="3104" y1="800" y2="912" x1="3104" />
+        </branch>
+        <iomarker fontsize="28" x="3104" y="800" name="ram_w" orien="R270" />
+        <branch name="r3_r">
+            <wire x2="3712" y1="1264" y2="1264" x1="3584" />
+        </branch>
+        <iomarker fontsize="28" x="3712" y="1264" name="r3_r" orien="R0" />
+        <branch name="ctl_r0_w">
+            <wire x2="3360" y1="800" y2="912" x1="3360" />
+        </branch>
+        <branch name="alu_op(2:0)">
+            <attrtext style="alignment:SOFT-TCENTER;fontsize:28;fontname:Arial" attrname="Name" x="3440" y="624" type="branch" />
+            <wire x2="3440" y1="464" y2="496" x1="3440" />
+            <wire x2="3440" y1="496" y2="512" x1="3440" />
+            <wire x2="3440" y1="512" y2="528" x1="3440" />
+            <wire x2="3440" y1="528" y2="592" x1="3440" />
+            <wire x2="3440" y1="592" y2="624" x1="3440" />
+            <wire x2="3552" y1="624" y2="624" x1="3440" />
+        </branch>
+        <bustap x2="3344" y1="592" y2="592" x1="3440" />
+        <bustap x2="3344" y1="528" y2="528" x1="3440" />
+        <bustap x2="3344" y1="464" y2="464" x1="3440" />
+        <iomarker fontsize="28" x="3552" y="624" name="alu_op(2:0)" orien="R0" />
+        <branch name="alu_op(2)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="3296" y="592" type="branch" />
+            <wire x2="3296" y1="592" y2="912" x1="3296" />
+            <wire x2="3344" y1="592" y2="592" x1="3296" />
+        </branch>
+        <branch name="alu_op(1)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="3232" y="528" type="branch" />
+            <wire x2="3232" y1="528" y2="912" x1="3232" />
+            <wire x2="3344" y1="528" y2="528" x1="3232" />
+        </branch>
+        <branch name="alu_op(0)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="3168" y="464" type="branch" />
+            <wire x2="3168" y1="464" y2="912" x1="3168" />
+            <wire x2="3344" y1="464" y2="464" x1="3168" />
+        </branch>
     </sheet>
 </drawing>

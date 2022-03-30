@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : reg_8bit.vhf
--- /___/   /\     Timestamp : 03/27/2022 22:45:30
+-- /___/   /\     Timestamp : 03/30/2022 23:59:50
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family aspartan6 -flat -suppress -vhdl /home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/reg_8bit.vhf -w /home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/reg_8bit.sch
+--Command: sch2hdl -intstyle ise -family aspartan6 -flat -suppress -vhdl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/reg_8bit.vhf -w /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/reg_8bit.sch
 --Design Name: reg_8bit
 --Device: aspartan6
 --Purpose:
@@ -101,7 +101,7 @@ architecture BEHAVIORAL of buffer_8bit_MUSER_reg_8bit is
    end component;
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_54 : label is "XLXI_54_21";
+   attribute HU_SET of XLXI_54 : label is "XLXI_54_34";
 begin
    XLXI_54 : OBUFT8_HXILINX_reg_8bit
       port map (I(7 downto 0)=>i(7 downto 0),
@@ -145,7 +145,7 @@ architecture BEHAVIORAL of reg_8bit is
              o : out   std_logic_vector (7 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_22";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_35";
    attribute INIT of XLXI_2 : label is "00";
 begin
    XLXI_2 : LD8_HXILINX_reg_8bit

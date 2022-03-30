@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : clk_generator.vhf
--- /___/   /\     Timestamp : 03/26/2022 02:17:21
+-- /___/   /\     Timestamp : 03/30/2022 23:59:50
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family aspartan6 -flat -suppress -vhdl /home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/clk_generator.vhf -w /home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/clk_generator.sch
+--Command: sch2hdl -intstyle ise -family aspartan6 -flat -suppress -vhdl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/clk_generator.vhf -w /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/clk_generator.sch
 --Design Name: clk_generator
 --Device: aspartan6
 --Purpose:
@@ -125,7 +125,7 @@ architecture BEHAVIORAL of clk_generator is
    end component;
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_0";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_38";
 begin
    clkc <= clkc_DUMMY;
    XLXI_4 : FJKC_HXILINX_clk_generator

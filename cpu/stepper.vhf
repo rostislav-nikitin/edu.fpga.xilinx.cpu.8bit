@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : stepper.vhf
--- /___/   /\     Timestamp : 03/26/2022 02:46:02
+-- /___/   /\     Timestamp : 03/30/2022 23:59:50
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family aspartan6 -flat -suppress -vhdl /home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/stepper.vhf -w /home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/stepper.sch
+--Command: sch2hdl -intstyle ise -family aspartan6 -flat -suppress -vhdl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/stepper.vhf -w /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/stepper.sch
 --Design Name: stepper
 --Device: aspartan6
 --Purpose:
@@ -191,8 +191,8 @@ architecture BEHAVIORAL of stepper is
    end component;
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_24 : label is "XLXI_24_16";
-   attribute HU_SET of XLXI_25 : label is "XLXI_25_17";
+   attribute HU_SET of XLXI_24 : label is "XLXI_24_41";
+   attribute HU_SET of XLXI_25 : label is "XLXI_25_42";
 begin
    XLXI_21 : VCC
       port map (P=>XLXN_14);

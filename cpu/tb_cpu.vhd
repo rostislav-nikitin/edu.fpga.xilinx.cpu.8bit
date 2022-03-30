@@ -55,6 +55,7 @@ ARCHITECTURE behavioral OF cpu_cpu_sch_tb IS
           clk	:	IN	STD_LOGIC; 
           ram_r	:	OUT	STD_LOGIC; 
           ram_a_w	:	OUT	STD_LOGIC; 
+			 ram_w	:	OUT	STD_LOGIC; 
           alu_op	:	OUT	STD_LOGIC_VECTOR (2 DOWNTO 0); 
           ir_o	:	OUT	STD_LOGIC_VECTOR (7 DOWNTO 0); 
           ram_a_o	:	OUT	STD_LOGIC_VECTOR (7 DOWNTO 0); 
@@ -96,6 +97,7 @@ ARCHITECTURE behavioral OF cpu_cpu_sch_tb IS
    SIGNAL clk	:	STD_LOGIC;
    SIGNAL ram_r	:	STD_LOGIC;
    SIGNAL ram_a_w	:	STD_LOGIC;
+	SIGNAL ram_w	:	STD_LOGIC;
    SIGNAL alu_op	:	STD_LOGIC_VECTOR (2 DOWNTO 0);
    SIGNAL ir_o	:	STD_LOGIC_VECTOR (7 DOWNTO 0);
    SIGNAL ram_a_o	:	STD_LOGIC_VECTOR (7 DOWNTO 0);
@@ -175,6 +177,7 @@ BEGIN
 		clk => clk, 
 		ram_r => ram_r, 
 		ram_a_w => ram_a_w, 
+		ram_w => ram_w, 
 		alu_op => alu_op, 
 		ir_o => ir_o, 
 		ram_a_o => ram_a_o, 

@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cmp_1bit.vhf
--- /___/   /\     Timestamp : 03/18/2022 06:24:46
+-- /___/   /\     Timestamp : 03/30/2022 23:59:49
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family aspartan6 -flat -suppress -vhdl /home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cmp_1bit.vhf -w /home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cmp_1bit.sch
+--Command: sch2hdl -intstyle ise -family aspartan6 -flat -suppress -vhdl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cmp_1bit.vhf -w /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cmp_1bit.sch
 --Design Name: cmp_1bit
 --Device: aspartan6
 --Purpose:
