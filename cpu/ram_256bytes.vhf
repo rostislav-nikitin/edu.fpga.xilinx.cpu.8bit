@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ram_256bytes.vhf
--- /___/   /\     Timestamp : 03/30/2022 23:59:50
+-- /___/   /\     Timestamp : 03/31/2022 23:25:57
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -133,7 +133,7 @@ architecture BEHAVIORAL of ram_256bytes is
    
    attribute INIT of XLXI_1 : label is 
          "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF";
-   attribute HU_SET of XLXI_15 : label is "XLXI_15_39";
+   attribute HU_SET of XLXI_15 : label is "XLXI_15_22";
    attribute INIT of XLXI_20 : label is 
          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
    attribute INIT of XLXI_21 : label is 
@@ -141,8 +141,8 @@ architecture BEHAVIORAL of ram_256bytes is
    attribute INIT of XLXI_22 : label is 
          "F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0";
    attribute INIT of XLXI_23 : label is 
-         "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF";
-   attribute HU_SET of XLXI_41 : label is "XLXI_41_40";
+         "00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF";
+   attribute HU_SET of XLXI_41 : label is "XLXI_41_23";
 begin
    a_o(7 downto 0) <= a_o_DUMMY(7 downto 0);
    XLXI_1 : RAM256X1S
@@ -222,7 +222,7 @@ begin
    XLXI_23 : RAM256X1S
    -- synopsys translate_off
    generic map( INIT => 
-         x"FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF")
+         x"00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF")
    -- synopsys translate_on
       port map (A(7 downto 0)=>a_o_DUMMY(7 downto 0),
                 D=>i(7),

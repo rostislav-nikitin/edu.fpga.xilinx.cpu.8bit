@@ -78,6 +78,7 @@ int main(int argc, char **argv)
     unisim_a_0126580473_2855348447_init();
     unisim_a_1740411252_2855348447_init();
     unisim_a_0839347865_2855348447_init();
+    unisim_a_1270837471_2855348447_init();
     work_a_3924899576_3212880686_init();
     work_a_1415465652_3212880686_init();
     work_a_0261840617_3212880686_init();

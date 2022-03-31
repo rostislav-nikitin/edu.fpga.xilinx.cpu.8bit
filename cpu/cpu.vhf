@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu.vhf
--- /___/   /\     Timestamp : 03/31/2022 01:02:04
+-- /___/   /\     Timestamp : 04/01/2022 00:03:29
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -500,7 +500,7 @@ architecture BEHAVIORAL of ram_256bytes_MUSER_cpu is
    attribute INIT of XLXI_22 : label is 
          "F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0";
    attribute INIT of XLXI_23 : label is 
-         "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF";
+         "00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF";
    attribute HU_SET of XLXI_41 : label is "XLXI_41_3";
 begin
    a_o(7 downto 0) <= a_o_DUMMY(7 downto 0);
@@ -581,7 +581,7 @@ begin
    XLXI_23 : RAM256X1S
    -- synopsys translate_off
    generic map( INIT => 
-         x"FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF")
+         x"00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF")
    -- synopsys translate_on
       port map (A(7 downto 0)=>a_o_DUMMY(7 downto 0),
                 D=>i(7),
@@ -778,6 +778,9 @@ architecture BEHAVIORAL of cpu_control_MUSER_cpu is
    signal ls_jmp_flg       : std_logic;
    signal ls_ld            : std_logic;
    signal ls_ldc           : std_logic;
+   signal ls_ldc_s4        : std_logic;
+   signal ls_ldc_s5        : std_logic;
+   signal ls_ldc_s6        : std_logic;
    signal ls_ldst_s4       : std_logic;
    signal ls_ld_s5         : std_logic;
    signal ls_st            : std_logic;
@@ -1014,14 +1017,14 @@ begin
    
    XLXI_10 : OR4
       port map (I0=>s1_DUMMY,
-                I1=>ground_DUMMY,
+                I1=>ls_ldc_s4,
                 I2=>ground_DUMMY,
                 I3=>ground_DUMMY,
                 O=>XLXN_4);
    
    XLXI_11 : OR4
       port map (I0=>s1_DUMMY,
-                I1=>ground_DUMMY,
+                I1=>ls_ldc_s4,
                 I2=>ground_DUMMY,
                 I3=>ground_DUMMY,
                 O=>XLXN_5);
@@ -1029,14 +1032,14 @@ begin
    XLXI_12 : OR4
       port map (I0=>s2_DUMMY,
                 I1=>ls_ld_s5,
-                I2=>ground_DUMMY,
+                I2=>ls_ldc_s5,
                 I3=>ground_DUMMY,
                 O=>XLXN_7);
    
    XLXI_13 : OR4
       port map (I0=>ground_DUMMY,
                 I1=>ground_DUMMY,
-                I2=>ground_DUMMY,
+                I2=>ls_ldc_s6,
                 I3=>s3_DUMMY,
                 O=>XLXN_11);
    
@@ -1049,7 +1052,7 @@ begin
    
    XLXI_15 : OR4
       port map (I0=>ground_DUMMY,
-                I1=>ground_DUMMY,
+                I1=>ls_ldc_s4,
                 I2=>ls_ldst_s4,
                 I3=>s1_DUMMY,
                 O=>XLXN_16);
@@ -1067,12 +1070,12 @@ begin
    XLXI_19 : OR4
       port map (I0=>s3_DUMMY,
                 I1=>alu_s6,
-                I2=>ground_DUMMY,
+                I2=>ls_ldc_s6,
                 I3=>ground_DUMMY,
                 O=>XLXN_22);
    
    XLXI_20 : OR4
-      port map (I0=>ground_DUMMY,
+      port map (I0=>ls_ldc_s4,
                 I1=>alu_binary_s5,
                 I2=>alu_unari_s4,
                 I3=>s1_DUMMY,
@@ -1372,7 +1375,7 @@ begin
    
    XLXI_465 : OR4
       port map (I0=>ground_DUMMY,
-                I1=>ground_DUMMY,
+                I1=>ls_ldc_s5,
                 I2=>ls_ld_s5,
                 I3=>alu_s6,
                 O=>raw_int);
@@ -1418,6 +1421,21 @@ begin
                 I2=>ground_DUMMY,
                 I3=>ls_st_s5,
                 O=>XLXN_981);
+   
+   XLXI_494 : AND2
+      port map (I0=>ls_ldc,
+                I1=>s4_DUMMY,
+                O=>ls_ldc_s4);
+   
+   XLXI_498 : AND2
+      port map (I0=>ls_ldc,
+                I1=>s5_DUMMY,
+                O=>ls_ldc_s5);
+   
+   XLXI_499 : AND2
+      port map (I0=>ls_ldc,
+                I1=>s6_DUMMY,
+                O=>ls_ldc_s6);
    
 end BEHAVIORAL;
 
@@ -2455,27 +2473,44 @@ architecture BEHAVIORAL of cpu is
    end component;
    
    component cpu_control_MUSER_cpu
-      port ( clk        : in    std_logic; 
-             clkw       : in    std_logic; 
-             r1_r       : out   std_logic; 
-             r2_w       : out   std_logic; 
-             r2_r       : out   std_logic; 
-             r3_w       : out   std_logic; 
-             r3_r       : out   std_logic; 
-             ground     : out   std_logic; 
-             alu_sum    : out   std_logic; 
-             alu_lshift : out   std_logic; 
-             alu_rshift : out   std_logic; 
-             alu_not    : out   std_logic; 
+      port ( acc_r      : out   std_logic; 
+             acc_w      : out   std_logic; 
+             alu        : out   std_logic; 
              alu_and    : out   std_logic; 
+             alu_lshift : out   std_logic; 
+             alu_not    : out   std_logic; 
+             alu_op0    : out   std_logic; 
+             alu_op1    : out   std_logic; 
+             alu_op2    : out   std_logic; 
              alu_or     : out   std_logic; 
+             alu_rshift : out   std_logic; 
+             alu_sum    : out   std_logic; 
              alu_xor    : out   std_logic; 
+             bus1       : out   std_logic; 
+             clk        : in    std_logic; 
+             clkr       : in    std_logic; 
+             clkw       : in    std_logic; 
+             ground     : out   std_logic; 
+             iar_r      : out   std_logic; 
+             iar_w      : out   std_logic; 
+             ir         : in    std_logic_vector (7 downto 0); 
+             ir_w       : out   std_logic; 
+             r0_r       : out   std_logic; 
+             r0_w       : out   std_logic; 
+             r1_r       : out   std_logic; 
+             r1_w       : out   std_logic; 
+             r2_r       : out   std_logic; 
+             r2_w       : out   std_logic; 
+             r3_r       : out   std_logic; 
+             r3_w       : out   std_logic; 
+             ram_a_w    : out   std_logic; 
+             ram_r      : out   std_logic; 
+             ram_w      : out   std_logic; 
              ra_0       : out   std_logic; 
              ra_1       : out   std_logic; 
              ra_2       : out   std_logic; 
              ra_3       : out   std_logic; 
              rb_0       : out   std_logic; 
-             alu        : out   std_logic; 
              rb_1       : out   std_logic; 
              rb_2       : out   std_logic; 
              rb_3       : out   std_logic; 
@@ -2485,24 +2520,7 @@ architecture BEHAVIORAL of cpu is
              s4         : out   std_logic; 
              s5         : out   std_logic; 
              s6         : out   std_logic; 
-             iar_r      : out   std_logic; 
-             iar_w      : out   std_logic; 
-             bus1       : out   std_logic; 
-             ir_w       : out   std_logic; 
-             ram_r      : out   std_logic; 
-             ram_a_w    : out   std_logic; 
-             acc_r      : out   std_logic; 
-             acc_w      : out   std_logic; 
-             temp_w     : out   std_logic; 
-             ram_w      : out   std_logic; 
-             alu_op0    : out   std_logic; 
-             alu_op1    : out   std_logic; 
-             alu_op2    : out   std_logic; 
-             r0_w       : out   std_logic; 
-             r0_r       : out   std_logic; 
-             r1_w       : out   std_logic; 
-             clkr       : in    std_logic; 
-             ir         : in    std_logic_vector (7 downto 0));
+             temp_w     : out   std_logic);
    end component;
    
    component pass_through_or_one_MUSER_cpu

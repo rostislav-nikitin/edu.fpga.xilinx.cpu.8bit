@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu_control.vhf
--- /___/   /\     Timestamp : 03/31/2022 01:02:05
+-- /___/   /\     Timestamp : 03/31/2022 23:51:47
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -236,8 +236,8 @@ architecture BEHAVIORAL of stepper_MUSER_cpu_control is
    end component;
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_24 : label is "XLXI_24_22";
-   attribute HU_SET of XLXI_25 : label is "XLXI_25_23";
+   attribute HU_SET of XLXI_24 : label is "XLXI_24_0";
+   attribute HU_SET of XLXI_25 : label is "XLXI_25_1";
 begin
    XLXI_21 : VCC
       port map (P=>XLXN_14);
@@ -349,6 +349,9 @@ architecture BEHAVIORAL of cpu_control is
    signal ls_jmp_flg       : std_logic;
    signal ls_ld            : std_logic;
    signal ls_ldc           : std_logic;
+   signal ls_ldc_s4        : std_logic;
+   signal ls_ldc_s5        : std_logic;
+   signal ls_ldc_s6        : std_logic;
    signal ls_ldst_s4       : std_logic;
    signal ls_ld_s5         : std_logic;
    signal ls_st            : std_logic;
@@ -513,10 +516,10 @@ architecture BEHAVIORAL of cpu_control is
    end component;
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_39 : label is "XLXI_39_26";
-   attribute HU_SET of XLXI_47 : label is "XLXI_47_24";
-   attribute HU_SET of XLXI_48 : label is "XLXI_48_25";
-   attribute HU_SET of XLXI_252 : label is "XLXI_252_27";
+   attribute HU_SET of XLXI_39 : label is "XLXI_39_4";
+   attribute HU_SET of XLXI_47 : label is "XLXI_47_2";
+   attribute HU_SET of XLXI_48 : label is "XLXI_48_3";
+   attribute HU_SET of XLXI_252 : label is "XLXI_252_5";
 begin
    alu <= alu_DUMMY;
    alu_and <= alu_and_DUMMY;
@@ -585,14 +588,14 @@ begin
    
    XLXI_10 : OR4
       port map (I0=>s1_DUMMY,
-                I1=>ground_DUMMY,
+                I1=>ls_ldc_s4,
                 I2=>ground_DUMMY,
                 I3=>ground_DUMMY,
                 O=>XLXN_4);
    
    XLXI_11 : OR4
       port map (I0=>s1_DUMMY,
-                I1=>ground_DUMMY,
+                I1=>ls_ldc_s4,
                 I2=>ground_DUMMY,
                 I3=>ground_DUMMY,
                 O=>XLXN_5);
@@ -600,14 +603,14 @@ begin
    XLXI_12 : OR4
       port map (I0=>s2_DUMMY,
                 I1=>ls_ld_s5,
-                I2=>ground_DUMMY,
+                I2=>ls_ldc_s5,
                 I3=>ground_DUMMY,
                 O=>XLXN_7);
    
    XLXI_13 : OR4
       port map (I0=>ground_DUMMY,
                 I1=>ground_DUMMY,
-                I2=>ground_DUMMY,
+                I2=>ls_ldc_s6,
                 I3=>s3_DUMMY,
                 O=>XLXN_11);
    
@@ -620,7 +623,7 @@ begin
    
    XLXI_15 : OR4
       port map (I0=>ground_DUMMY,
-                I1=>ground_DUMMY,
+                I1=>ls_ldc_s4,
                 I2=>ls_ldst_s4,
                 I3=>s1_DUMMY,
                 O=>XLXN_16);
@@ -638,12 +641,12 @@ begin
    XLXI_19 : OR4
       port map (I0=>s3_DUMMY,
                 I1=>alu_s6,
-                I2=>ground_DUMMY,
+                I2=>ls_ldc_s6,
                 I3=>ground_DUMMY,
                 O=>XLXN_22);
    
    XLXI_20 : OR4
-      port map (I0=>ground_DUMMY,
+      port map (I0=>ls_ldc_s4,
                 I1=>alu_binary_s5,
                 I2=>alu_unari_s4,
                 I3=>s1_DUMMY,
@@ -943,7 +946,7 @@ begin
    
    XLXI_465 : OR4
       port map (I0=>ground_DUMMY,
-                I1=>ground_DUMMY,
+                I1=>ls_ldc_s5,
                 I2=>ls_ld_s5,
                 I3=>alu_s6,
                 O=>raw_int);
@@ -989,6 +992,21 @@ begin
                 I2=>ground_DUMMY,
                 I3=>ls_st_s5,
                 O=>XLXN_981);
+   
+   XLXI_494 : AND2
+      port map (I0=>ls_ldc,
+                I1=>s4_DUMMY,
+                O=>ls_ldc_s4);
+   
+   XLXI_498 : AND2
+      port map (I0=>ls_ldc,
+                I1=>s5_DUMMY,
+                O=>ls_ldc_s5);
+   
+   XLXI_499 : AND2
+      port map (I0=>ls_ldc,
+                I1=>s6_DUMMY,
+                O=>ls_ldc_s6);
    
 end BEHAVIORAL;
 
