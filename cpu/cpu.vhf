@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu.vhf
--- /___/   /\     Timestamp : 04/01/2022 00:03:29
+-- /___/   /\     Timestamp : 04/01/2022 22:01:48
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -775,6 +775,8 @@ architecture BEHAVIORAL of cpu_control_MUSER_cpu is
    signal jmp_ifjmp        : std_logic;
    signal jmp_jmp          : std_logic;
    signal jmp_jmpr         : std_logic;
+   signal jmp_jmpr_s4      : std_logic;
+   signal jmp_jmp_s4       : std_logic;
    signal ls_jmp_flg       : std_logic;
    signal ls_ld            : std_logic;
    signal ls_ldc           : std_logic;
@@ -1033,12 +1035,12 @@ begin
       port map (I0=>s2_DUMMY,
                 I1=>ls_ld_s5,
                 I2=>ls_ldc_s5,
-                I3=>ground_DUMMY,
+                I3=>jmp_jmp_s4,
                 O=>XLXN_7);
    
    XLXI_13 : OR4
-      port map (I0=>ground_DUMMY,
-                I1=>ground_DUMMY,
+      port map (I0=>jmp_jmp_s4,
+                I1=>jmp_jmpr_s4,
                 I2=>ls_ldc_s6,
                 I3=>s3_DUMMY,
                 O=>XLXN_11);
@@ -1302,7 +1304,7 @@ begin
                 O=>alu_s4);
    
    XLXI_315 : OR3
-      port map (I0=>ground_DUMMY,
+      port map (I0=>jmp_jmpr_s4,
                 I1=>ls_st_s5,
                 I2=>alu_s4,
                 O=>ra_int);
@@ -1436,6 +1438,16 @@ begin
       port map (I0=>ls_ldc,
                 I1=>s6_DUMMY,
                 O=>ls_ldc_s6);
+   
+   XLXI_500 : AND2
+      port map (I0=>jmp_jmpr,
+                I1=>s4_DUMMY,
+                O=>jmp_jmpr_s4);
+   
+   XLXI_501 : AND2
+      port map (I0=>jmp_jmp,
+                I1=>s4_DUMMY,
+                O=>jmp_jmp_s4);
    
 end BEHAVIORAL;
 

@@ -125,6 +125,8 @@
         <signal name="ls_ldc_s4" />
         <signal name="ls_ldc_s5" />
         <signal name="ls_ldc_s6" />
+        <signal name="jmp_jmpr_s4" />
+        <signal name="jmp_jmp_s4" />
         <port polarity="Input" name="clk" />
         <port polarity="Input" name="clkr" />
         <port polarity="Input" name="clkw" />
@@ -346,7 +348,7 @@
             <blockpin signalname="s2" name="I0" />
             <blockpin signalname="ls_ld_s5" name="I1" />
             <blockpin signalname="ls_ldc_s5" name="I2" />
-            <blockpin signalname="ground" name="I3" />
+            <blockpin signalname="jmp_jmp_s4" name="I3" />
             <blockpin signalname="XLXN_7" name="O" />
         </block>
         <block symbolname="and2" name="XLXI_16">
@@ -426,8 +428,8 @@
             <blockpin signalname="XLXN_16" name="O" />
         </block>
         <block symbolname="or4" name="XLXI_13">
-            <blockpin signalname="ground" name="I0" />
-            <blockpin signalname="ground" name="I1" />
+            <blockpin signalname="jmp_jmp_s4" name="I0" />
+            <blockpin signalname="jmp_jmpr_s4" name="I1" />
             <blockpin signalname="ls_ldc_s6" name="I2" />
             <blockpin signalname="s3" name="I3" />
             <blockpin signalname="XLXN_11" name="O" />
@@ -578,7 +580,7 @@
             <blockpin signalname="ls_jmp_flg" name="O" />
         </block>
         <block symbolname="or3" name="XLXI_315">
-            <blockpin signalname="ground" name="I0" />
+            <blockpin signalname="jmp_jmpr_s4" name="I0" />
             <blockpin signalname="ls_st_s5" name="I1" />
             <blockpin signalname="alu_s4" name="I2" />
             <blockpin signalname="ra_int" name="O" />
@@ -767,6 +769,16 @@
             <blockpin signalname="ls_ldc" name="I0" />
             <blockpin signalname="s6" name="I1" />
             <blockpin signalname="ls_ldc_s6" name="O" />
+        </block>
+        <block symbolname="and2" name="XLXI_500">
+            <blockpin signalname="jmp_jmpr" name="I0" />
+            <blockpin signalname="s4" name="I1" />
+            <blockpin signalname="jmp_jmpr_s4" name="O" />
+        </block>
+        <block symbolname="and2" name="XLXI_501">
+            <blockpin signalname="jmp_jmp" name="I0" />
+            <blockpin signalname="s4" name="I1" />
+            <blockpin signalname="jmp_jmp_s4" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="7609" height="5382">
@@ -1179,11 +1191,11 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1760" y="1008" type="branch" />
             <wire x2="1840" y1="1008" y2="1008" x1="1760" />
         </branch>
-        <branch name="ground">
+        <branch name="jmp_jmpr_s4">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1760" y="1072" type="branch" />
             <wire x2="1840" y1="1072" y2="1072" x1="1760" />
         </branch>
-        <branch name="ground">
+        <branch name="jmp_jmp_s4">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1760" y="1136" type="branch" />
             <wire x2="1840" y1="1136" y2="1136" x1="1760" />
         </branch>
@@ -1348,7 +1360,7 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="960" y="1584" type="branch" />
             <wire x2="960" y1="1584" y2="1584" x1="896" />
         </branch>
-        <branch name="ground">
+        <branch name="jmp_jmp_s4">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="960" y="1648" type="branch" />
             <wire x2="960" y1="1648" y2="1648" x1="896" />
         </branch>
@@ -1444,7 +1456,7 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5776" y="240" type="branch" />
             <wire x2="5856" y1="240" y2="240" x1="5776" />
         </branch>
-        <text style="fontsize:64;fontname:Arial" x="5676" y="1256">&amp; STORE(LS)</text>
+        <text style="fontsize:64;fontname:Arial" x="5676" y="1256">LOAD &amp; STORE(LS)</text>
         <text style="fontsize:64;fontname:Arial" x="5676" y="136">&amp; STORE/JMP/FLAG(LS/JMP/FLG)</text>
         <line x2="7048" y1="1120" y2="1120" x1="5680" />
         <branch name="ls_jmp_flg">
@@ -1542,7 +1554,7 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3664" y="816" type="branch" />
             <wire x2="3664" y1="816" y2="816" x1="3584" />
         </branch>
-        <branch name="ground">
+        <branch name="jmp_jmpr_s4">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3072" y="1600" type="branch" />
             <wire x2="3088" y1="1600" y2="1600" x1="3072" />
         </branch>
@@ -1883,6 +1895,35 @@
         <branch name="ls_ldc_s5">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3040" y="2368" type="branch" />
             <wire x2="3088" y1="2368" y2="2368" x1="3040" />
+        </branch>
+        <line x2="7056" y1="2020" y2="2020" x1="5688" />
+        <text style="fontsize:64;fontname:Arial" x="5684" y="2116">JMP(JMP)</text>
+        <instance x="5856" y="2384" name="XLXI_500" orien="R0" />
+        <branch name="s4">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5760" y="2256" type="branch" />
+            <wire x2="5856" y1="2256" y2="2256" x1="5760" />
+        </branch>
+        <branch name="jmp_jmpr">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5760" y="2320" type="branch" />
+            <wire x2="5856" y1="2320" y2="2320" x1="5760" />
+        </branch>
+        <branch name="jmp_jmpr_s4">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="6240" y="2288" type="branch" />
+            <wire x2="6240" y1="2288" y2="2288" x1="6112" />
+        </branch>
+        <instance x="5856" y="2624" name="XLXI_501" orien="R0" />
+        <branch name="s4">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5760" y="2496" type="branch" />
+            <wire x2="5856" y1="2496" y2="2496" x1="5760" />
+        </branch>
+        <branch name="jmp_jmp">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5760" y="2560" type="branch" />
+            <wire x2="5856" y1="2560" y2="2560" x1="5760" />
+        </branch>
+        <branch name="jmp_jmp_s4">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="6240" y="2528" type="branch" />
+            <wire x2="6176" y1="2528" y2="2528" x1="6112" />
+            <wire x2="6240" y1="2528" y2="2528" x1="6176" />
         </branch>
     </sheet>
 </drawing>

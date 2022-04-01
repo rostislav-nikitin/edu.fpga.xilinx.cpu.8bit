@@ -19,8 +19,8 @@ Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" int
 Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/tb_cpu.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 108036 KB
-Fuse CPU Usage: 1470 ms
+Fuse Memory Usage: 108052 KB
+Fuse CPU Usage: 1550 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
@@ -70,6 +70,6 @@ Compiling architecture behavioral of entity cpu_cpu_sch_tb
 Time Resolution for simulation is 1ps.
 Compiled 91 VHDL Units
 Built simulation executable /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_cpu_sch_tb_isim_beh.exe
-Fuse Memory Usage: 4368568 KB
-Fuse CPU Usage: 1960 ms
-GCC CPU Usage: 2890 ms
+Fuse Memory Usage: 4368584 KB
+Fuse CPU Usage: 2120 ms
+GCC CPU Usage: 3060 ms
