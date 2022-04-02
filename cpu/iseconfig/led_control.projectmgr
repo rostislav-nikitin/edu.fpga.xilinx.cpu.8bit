@@ -23,13 +23,13 @@
          <ClosedNode>/cpu |home|s0lid|Sources|edu.fpga.xilinx|led_control|led_control|cpu.sch/temp - reg_8bit</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>cpu (/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.sch)</SelectedItem>
+         <SelectedItem>alu_inst - alu (/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/alu.sch)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001a5000000020000000000000000000000000200000064ffffffff000000810000000300000002000001a50000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>cpu (/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.sch)</CurrentItem>
+      <CurrentItem>alu_inst - alu (/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/alu.sch)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -37,13 +37,13 @@
          <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f1000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f10000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -83,13 +83,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f1000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f10000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
       <ClosedNodes>
@@ -143,6 +143,18 @@
          <ClosedNode>/cpu |home|s0lid|Sources|edu.fpga.xilinx|led_control|led_control|cpu.sch/r3 - reg_8bit</ClosedNode>
          <ClosedNode>/cpu |home|s0lid|Sources|edu.fpga.xilinx|led_control|led_control|cpu.sch/temp - reg_8bit</ClosedNode>
          <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_cpu.vhd/UUT - cpu</ClosedNode>
+         <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_cpu.vhd/UUT - cpu/acc - reg_8bit</ClosedNode>
+         <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_cpu.vhd/UUT - cpu/alu_inst - alu</ClosedNode>
+         <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_cpu.vhd/UUT - cpu/cpu_ctl - cpu_control</ClosedNode>
+         <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_cpu.vhd/UUT - cpu/iar - reg_8bit</ClosedNode>
+         <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_cpu.vhd/UUT - cpu/ir - reg_8bit</ClosedNode>
+         <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_cpu.vhd/UUT - cpu/pass_th - pass_through_or_one</ClosedNode>
+         <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_cpu.vhd/UUT - cpu/r0 - reg_8bit</ClosedNode>
+         <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_cpu.vhd/UUT - cpu/r1 - reg_8bit</ClosedNode>
+         <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_cpu.vhd/UUT - cpu/r2 - reg_8bit</ClosedNode>
+         <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_cpu.vhd/UUT - cpu/r3 - reg_8bit</ClosedNode>
+         <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_cpu.vhd/UUT - cpu/rin - reg_8bit</ClosedNode>
+         <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_cpu.vhd/UUT - cpu/temp - reg_8bit</ClosedNode>
          <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx|led_control|led_control|tb_cpu.vhd/UUT - cpu</ClosedNode>
          <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx|led_control|led_control|tb_cpu.vhd/UUT - cpu/acc - reg_8bit</ClosedNode>
          <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx|led_control|led_control|tb_cpu.vhd/UUT - cpu/alu_inst - alu</ClosedNode>

@@ -62,7 +62,10 @@ ARCHITECTURE behavioral OF cpu_cpu_sch_tb IS
           clkc	:	OUT	STD_LOGIC; 
           ctl_iar_w	:	OUT	STD_LOGIC; 
           ctl_r0_w	:	OUT	STD_LOGIC;
-			 ctl_r1_w	:	OUT	STD_LOGIC);
+			 ctl_r1_w	:	OUT	STD_LOGIC;
+			 flags_o	:	OUT	STD_LOGIC_VECTOR(3 DOWNTO 0);
+			 flags_w		:	OUT	STD_LOGIC;
+			 flags_clr	:	OUT	STD_LOGIC);
    END COMPONENT;
 
    SIGNAL sysbus	:	STD_LOGIC_VECTOR (7 DOWNTO 0);
@@ -105,6 +108,9 @@ ARCHITECTURE behavioral OF cpu_cpu_sch_tb IS
    SIGNAL ctl_iar_w	:	STD_LOGIC;
    SIGNAL ctl_r0_w	:	STD_LOGIC;
 	SIGNAL ctl_r1_w	:	STD_LOGIC;
+	SIGNAL flags_o		:	STD_LOGIC_VECTOR(3 DOWNTO 0);
+	SIGNAL flags_w		:	STD_LOGIC;
+	SIGNAL flags_clr	:	STD_LOGIC;
 	
 	procedure one_step(signal clk : inout std_logic) is
 	begin
@@ -184,7 +190,10 @@ BEGIN
 		clkc => clkc, 
 		ctl_iar_w => ctl_iar_w, 
 		ctl_r0_w => ctl_r0_w,
-		ctl_r1_w => ctl_r1_w
+		ctl_r1_w => ctl_r1_w,
+		flags_o => flags_o,
+		flags_w => flags_w,
+		flags_clr => flags_clr
    );
 	
 	
@@ -297,7 +306,28 @@ BEGIN
 --==========JMP===============================================
 		one_step(clk);
 --==========CMD AFTER JMP=====================================
-	one_step(clk);
+	   one_step(clk);
+		
+		
+--==========INIT IAR==========================================
+		set_reg(rind, rinw, rinr, manual_iar_w, "00001101");
+--==========INIT R0===========================================
+		set_reg(rind, rinw, rinr, manual_r0_w, "00000000");
+--==========INIT R1===========================================
+		set_reg(rind, rinw, rinr, manual_r1_w, "00000000");
+--==========JMPIF===============================================
+		one_step(clk);
+--==========CMD AFTER JMPIF=====================================
+	   one_step(clk);
+		
+--==========INIT IAR==========================================
+		set_reg(rind, rinw, rinr, manual_iar_w, "00001110");
+--==========INIT R0===========================================
+		set_reg(rind, rinw, rinr, manual_r0_w, "00000000");
+--==========INIT R1===========================================
+		set_reg(rind, rinw, rinr, manual_r1_w, "00000000");
+--==========CLF===============================================
+		one_step(clk);
 
 
 	

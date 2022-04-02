@@ -215,6 +215,13 @@ extern void unisim_a_4107622670_2855348447_init()
 	xsi_register_executes(pe);
 }
 
+extern void unisim_a_1466931732_2855348447_init()
+{
+	static char *pe[] = {(void *)unisim_a_3772107243_2855348447_p_0,(void *)unisim_a_3772107243_2855348447_p_1};
+	xsi_register_didat("unisim_a_1466931732_2855348447", "isim/cpu_cpu_sch_tb_isim_beh.exe.sim/unisim/a_1466931732_2855348447.didat");
+	xsi_register_executes(pe);
+}
+
 extern void unisim_a_0126580473_2855348447_init()
 {
 	static char *pe[] = {(void *)unisim_a_3772107243_2855348447_p_0,(void *)unisim_a_3772107243_2855348447_p_1};

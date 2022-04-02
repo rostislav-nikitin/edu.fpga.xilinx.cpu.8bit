@@ -19,8 +19,8 @@ Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" int
 Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/tb_cpu.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 108052 KB
-Fuse CPU Usage: 1550 ms
+Fuse Memory Usage: 108456 KB
+Fuse CPU Usage: 1480 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
@@ -56,6 +56,7 @@ Compiling architecture behavioral of entity CB4CE_HXILINX_cpu [cb4ce_hxilinx_cpu
 Compiling architecture behavioral of entity stepper_MUSER_cpu [stepper_muser_cpu_default]
 Compiling architecture or4_v of entity OR4 [or4_default]
 Compiling architecture d2_4e_hxilinx_cpu_v of entity D2_4E_HXILINX_cpu [d2_4e_hxilinx_cpu_default]
+Compiling architecture or5_v of entity OR5 [or5_default]
 Compiling architecture behavioral of entity cpu_control_MUSER_cpu [cpu_control_muser_cpu_default]
 Compiling architecture behavioral of entity one_8bit_MUSER_cpu [one_8bit_muser_cpu_default]
 Compiling architecture behavioral of entity pass_through_or_one_MUSER_cpu [pass_through_or_one_muser_cpu_de...]
@@ -65,11 +66,13 @@ Compiling package vital_primitives
 Compiling package vpkg
 Compiling architecture ram256x1s_v of entity RAM256X1S [\RAM256X1S("11111111111111111111...]
 Compiling architecture behavioral of entity ram_256bytes_MUSER_cpu [ram_256bytes_muser_cpu_default]
+Compiling architecture behavioral of entity LD4CE_HXILINX_cpu [ld4ce_hxilinx_cpu_default]
 Compiling architecture behavioral of entity cpu [cpu_default]
 Compiling architecture behavioral of entity cpu_cpu_sch_tb
 Time Resolution for simulation is 1ps.
-Compiled 91 VHDL Units
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 97 VHDL Units
 Built simulation executable /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_cpu_sch_tb_isim_beh.exe
-Fuse Memory Usage: 4368584 KB
-Fuse CPU Usage: 2120 ms
-GCC CPU Usage: 3060 ms
+Fuse Memory Usage: 4368900 KB
+Fuse CPU Usage: 2010 ms
+GCC CPU Usage: 3040 ms
