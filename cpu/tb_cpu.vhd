@@ -23,10 +23,11 @@ END cpu_cpu_sch_tb;
 
 ARCHITECTURE behavioral OF cpu_cpu_sch_tb IS 
    COMPONENT cpu
-   PORT( sysbus	:	OUT	STD_LOGIC_VECTOR (7 DOWNTO 0); 
+   PORT(rst	:	IN	STD_LOGIC;
+			 sysbus	:	OUT	STD_LOGIC_VECTOR (7 DOWNTO 0); 
           temp_w	:	OUT	STD_LOGIC; 
           bus1	:	OUT	STD_LOGIC; 
-          alu_C_in	:	IN	STD_LOGIC; 
+          alu_C_in	:	OUT	STD_LOGIC; 
           alu_eq	:	OUT	STD_LOGIC; 
           alu_gt	:	OUT	STD_LOGIC; 
           alu_z	:	OUT	STD_LOGIC; 
@@ -65,9 +66,11 @@ ARCHITECTURE behavioral OF cpu_cpu_sch_tb IS
 			 ctl_r1_w	:	OUT	STD_LOGIC;
 			 flags_o	:	OUT	STD_LOGIC_VECTOR(3 DOWNTO 0);
 			 flags_w		:	OUT	STD_LOGIC;
-			 flags_clr	:	OUT	STD_LOGIC);
+			 flags_clr	:	OUT	STD_LOGIC;
+			 alu_C_in_enabled	:	OUT	STD_LOGIC);
    END COMPONENT;
 
+	SIGNAL rst	:	STD_LOGIC;
    SIGNAL sysbus	:	STD_LOGIC_VECTOR (7 DOWNTO 0);
    SIGNAL temp_w	:	STD_LOGIC;
    SIGNAL bus1	:	STD_LOGIC;
@@ -111,6 +114,7 @@ ARCHITECTURE behavioral OF cpu_cpu_sch_tb IS
 	SIGNAL flags_o		:	STD_LOGIC_VECTOR(3 DOWNTO 0);
 	SIGNAL flags_w		:	STD_LOGIC;
 	SIGNAL flags_clr	:	STD_LOGIC;
+	SIGNAL alu_C_in_enabled	:	STD_LOGIC;
 	
 	procedure one_step(signal clk : inout std_logic) is
 	begin
@@ -151,6 +155,7 @@ ARCHITECTURE behavioral OF cpu_cpu_sch_tb IS
 BEGIN
 
    UUT: cpu PORT MAP(
+		rst => rst,
 		sysbus => sysbus, 
 		temp_w => temp_w, 
 		bus1 => bus1, 
@@ -193,21 +198,26 @@ BEGIN
 		ctl_r1_w => ctl_r1_w,
 		flags_o => flags_o,
 		flags_w => flags_w,
-		flags_clr => flags_clr
+		flags_clr => flags_clr,
+		alu_C_in_enabled => alu_C_in_enabled
    );
 	
 	
 -- *** Test Bench - User Defined Section ***
    tb : PROCESS
    BEGIN
+		rst <= '1';
+		wait for 10 ns;
+		rst <= '0';
+		wait for 10 ns;
 --==========INIT IAR==========================================
 		set_reg(rind, rinw, rinr, manual_iar_w, "00000000");
 		
 		
 --==========INIT R0===========================================
-		set_reg(rind, rinw, rinr, manual_r0_w, "00000001");
+		set_reg(rind, rinw, rinr, manual_r0_w, "10000001");
 --==========INIT R1===========================================
-		set_reg(rind, rinw, rinr, manual_r1_w, "00000010");
+		set_reg(rind, rinw, rinr, manual_r1_w, "10000010");
 --==========SUM R0, R1========================================
 		one_step(clk);
 --============================================================

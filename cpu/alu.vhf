@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : alu.vhf
--- /___/   /\     Timestamp : 03/30/2022 23:59:49
+-- /___/   /\     Timestamp : 04/03/2022 17:34:46
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -462,7 +462,6 @@ architecture BEHAVIORAL of alu is
    signal XLXN_98  : std_logic;
    signal XLXN_99  : std_logic;
    signal XLXN_105 : std_logic;
-   signal XLXN_179 : std_logic;
    signal XLXN_191 : std_logic;
    signal XLXN_192 : std_logic;
    signal XLXN_193 : std_logic;
@@ -522,11 +521,6 @@ architecture BEHAVIORAL of alu is
              O : out   std_logic);
    end component;
    attribute BOX_TYPE of BUF : component is "BLACK_BOX";
-   
-   component GND
-      port ( G : out   std_logic);
-   end component;
-   attribute BOX_TYPE of GND : component is "BLACK_BOX";
    
    component VCC
       port ( P : out   std_logic);
@@ -622,7 +616,7 @@ begin
                 O(7 downto 0)=>x_DUMMY(7 downto 0));
    
    XLXI_12 : BUF
-      port map (I=>XLXN_179,
+      port map (I=>C_in,
                 O=>t(0));
    
    XLXI_13 : BUF
@@ -652,9 +646,6 @@ begin
    XLXI_19 : BUF
       port map (I=>a(6),
                 O=>t(7));
-   
-   XLXI_40 : GND
-      port map (G=>XLXN_179);
    
    XLXI_42 : INV
       port map (I=>XLXN_105,
@@ -715,7 +706,7 @@ begin
                 O(7 downto 0)=>x_DUMMY(7 downto 0));
    
    XLXI_98 : BUF
-      port map (I=>XLXN_179,
+      port map (I=>C_in,
                 O=>ls(7));
    
    XLXI_99 : AND2

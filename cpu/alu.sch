@@ -32,7 +32,6 @@
         <signal name="XLXN_99" />
         <signal name="XLXN_105" />
         <signal name="ls(7:0)" />
-        <signal name="XLXN_179" />
         <signal name="ls(6)" />
         <signal name="ls(5)" />
         <signal name="ls(4)" />
@@ -177,15 +176,6 @@
             <line x2="64" y1="-32" y2="-64" x1="128" />
             <line x2="64" y1="-64" y2="0" x1="64" />
         </blockdef>
-        <blockdef name="gnd">
-            <timestamp>2000-1-1T10:10:10</timestamp>
-            <line x2="64" y1="-64" y2="-96" x1="64" />
-            <line x2="52" y1="-48" y2="-48" x1="76" />
-            <line x2="60" y1="-32" y2="-32" x1="68" />
-            <line x2="40" y1="-64" y2="-64" x1="88" />
-            <line x2="64" y1="-64" y2="-80" x1="64" />
-            <line x2="64" y1="-128" y2="-96" x1="64" />
-        </blockdef>
         <blockdef name="vcc">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-32" y2="-64" x1="64" />
@@ -318,7 +308,7 @@
             <blockpin signalname="x(7:0)" name="O(7:0)" />
         </block>
         <block symbolname="buf" name="XLXI_12">
-            <blockpin signalname="XLXN_179" name="I" />
+            <blockpin signalname="C_in" name="I" />
             <blockpin signalname="t(0)" name="O" />
         </block>
         <block symbolname="inv" name="XLXI_42">
@@ -345,9 +335,6 @@
         <block symbolname="buf" name="XLXI_47">
             <blockpin signalname="a(7)" name="I" />
             <blockpin signalname="XLXN_93" name="O" />
-        </block>
-        <block symbolname="gnd" name="XLXI_40">
-            <blockpin signalname="XLXN_179" name="G" />
         </block>
         <block symbolname="buf" name="XLXI_89">
             <blockpin signalname="a(0)" name="I" />
@@ -387,7 +374,7 @@
             <blockpin signalname="x(7:0)" name="O(7:0)" />
         </block>
         <block symbolname="buf" name="XLXI_98">
-            <blockpin signalname="XLXN_179" name="I" />
+            <blockpin signalname="C_in" name="I" />
             <blockpin signalname="ls(7)" name="O" />
         </block>
         <block symbolname="and2" name="XLXI_99">
@@ -779,7 +766,6 @@
         <iomarker fontsize="28" x="816" y="4256" name="C_in" orien="R180" />
         <iomarker fontsize="28" x="816" y="4512" name="b(7:0)" orien="R180" />
         <iomarker fontsize="28" x="480" y="4752" name="op(2:0)" orien="R270" />
-        <instance x="1168" y="3248" name="XLXI_40" orien="R0" />
         <bustap x2="1088" y1="2960" y2="2960" x1="992" />
         <bustap x2="1088" y1="2896" y2="2896" x1="992" />
         <bustap x2="1088" y1="2832" y2="2832" x1="992" />
@@ -829,7 +815,8 @@
             <wire x2="2080" y1="2896" y2="2960" x1="2080" />
             <wire x2="2080" y1="2960" y2="3024" x1="2080" />
         </branch>
-        <branch name="XLXN_179">
+        <branch name="C_in">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1232" y="3120" type="branch" />
             <wire x2="1120" y1="3024" y2="3120" x1="1120" />
             <wire x2="1120" y1="3120" y2="3280" x1="1120" />
             <wire x2="1232" y1="3120" y2="3120" x1="1120" />

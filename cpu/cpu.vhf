@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu.vhf
--- /___/   /\     Timestamp : 04/03/2022 02:34:36
+-- /___/   /\     Timestamp : 04/03/2022 23:48:44
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -627,25 +627,23 @@ architecture BEHAVIORAL of ram_256bytes_MUSER_cpu is
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
    attribute INIT of XLXI_1 : label is 
-         "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF";
+         "0000000000000000000000000000000000000000000000000000000000000012";
    attribute HU_SET of XLXI_15 : label is "XLXI_15_3";
    attribute INIT of XLXI_18 : label is 
-         "2000200020002000200020002000200020002000200020002000200020002000";
-   attribute INIT of XLXI_20 : label is 
-         "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+         "0000000000000000000000000000000000000000000000000000000000000041";
    attribute INIT of XLXI_21 : label is 
-         "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC";
+         "0000000000000000000000000000000000000000000000000000000000000005";
    attribute INIT of XLXI_22 : label is 
-         "F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0";
+         "0000000000000000000000000000000000000000000000000000000000000020";
    attribute INIT of XLXI_23 : label is 
-         "00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF";
+         "0000000000000000000000000000000000000000000000000000000000000010";
    attribute HU_SET of XLXI_41 : label is "XLXI_41_4";
 begin
    a_o(7 downto 0) <= a_o_DUMMY(7 downto 0);
    XLXI_1 : RAM256X1S
    -- synopsys translate_off
    generic map( INIT => 
-         x"FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF")
+         x"0000000000000000000000000000000000000000000000000000000000000012")
    -- synopsys translate_on
       port map (A(7 downto 0)=>a_o_DUMMY(7 downto 0),
                 D=>i(0),
@@ -672,7 +670,7 @@ begin
    XLXI_18 : RAM256X1S
    -- synopsys translate_off
    generic map( INIT => 
-         x"2000200020002000200020002000200020002000200020002000200020002000")
+         x"0000000000000000000000000000000000000000000000000000000000000041")
    -- synopsys translate_on
       port map (A(7 downto 0)=>a_o_DUMMY(7 downto 0),
                 D=>i(2),
@@ -690,7 +688,7 @@ begin
    XLXI_20 : RAM256X1S
    -- synopsys translate_off
    generic map( INIT => 
-         x"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
+         x"0000000000000000000000000000000000000000000000000000000000000000")
    -- synopsys translate_on
       port map (A(7 downto 0)=>a_o_DUMMY(7 downto 0),
                 D=>i(4),
@@ -701,7 +699,7 @@ begin
    XLXI_21 : RAM256X1S
    -- synopsys translate_off
    generic map( INIT => 
-         x"CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC")
+         x"0000000000000000000000000000000000000000000000000000000000000005")
    -- synopsys translate_on
       port map (A(7 downto 0)=>a_o_DUMMY(7 downto 0),
                 D=>i(5),
@@ -712,7 +710,7 @@ begin
    XLXI_22 : RAM256X1S
    -- synopsys translate_off
    generic map( INIT => 
-         x"F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0")
+         x"0000000000000000000000000000000000000000000000000000000000000020")
    -- synopsys translate_on
       port map (A(7 downto 0)=>a_o_DUMMY(7 downto 0),
                 D=>i(6),
@@ -723,7 +721,7 @@ begin
    XLXI_23 : RAM256X1S
    -- synopsys translate_off
    generic map( INIT => 
-         x"00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF")
+         x"0000000000000000000000000000000000000000000000000000000000000010")
    -- synopsys translate_on
       port map (A(7 downto 0)=>a_o_DUMMY(7 downto 0),
                 D=>i(7),
@@ -853,57 +851,58 @@ library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
 entity cpu_control_MUSER_cpu is
-   port ( clk        : in    std_logic; 
-          clkr       : in    std_logic; 
-          clkw       : in    std_logic; 
-          flags      : in    std_logic_vector (3 downto 0); 
-          ir         : in    std_logic_vector (7 downto 0); 
-          acc_r      : out   std_logic; 
-          acc_w      : out   std_logic; 
-          alu        : out   std_logic; 
-          alu_and    : out   std_logic; 
-          alu_lshift : out   std_logic; 
-          alu_not    : out   std_logic; 
-          alu_op0    : out   std_logic; 
-          alu_op1    : out   std_logic; 
-          alu_op2    : out   std_logic; 
-          alu_or     : out   std_logic; 
-          alu_rshift : out   std_logic; 
-          alu_sum    : out   std_logic; 
-          alu_xor    : out   std_logic; 
-          bus1       : out   std_logic; 
-          flags_clr  : out   std_logic; 
-          flags_w    : out   std_logic; 
-          ground     : out   std_logic; 
-          iar_r      : out   std_logic; 
-          iar_w      : out   std_logic; 
-          ir_w       : out   std_logic; 
-          ram_a_w    : out   std_logic; 
-          ram_r      : out   std_logic; 
-          ram_w      : out   std_logic; 
-          ra_0       : out   std_logic; 
-          ra_1       : out   std_logic; 
-          ra_2       : out   std_logic; 
-          ra_3       : out   std_logic; 
-          rb_0       : out   std_logic; 
-          rb_1       : out   std_logic; 
-          rb_2       : out   std_logic; 
-          rb_3       : out   std_logic; 
-          r0_r       : out   std_logic; 
-          r0_w       : out   std_logic; 
-          r1_r       : out   std_logic; 
-          r1_w       : out   std_logic; 
-          r2_r       : out   std_logic; 
-          r2_w       : out   std_logic; 
-          r3_r       : out   std_logic; 
-          r3_w       : out   std_logic; 
-          s1         : out   std_logic; 
-          s2         : out   std_logic; 
-          s3         : out   std_logic; 
-          s4         : out   std_logic; 
-          s5         : out   std_logic; 
-          s6         : out   std_logic; 
-          temp_w     : out   std_logic);
+   port ( clk              : in    std_logic; 
+          clkr             : in    std_logic; 
+          clkw             : in    std_logic; 
+          flags            : in    std_logic_vector (3 downto 0); 
+          ir               : in    std_logic_vector (7 downto 0); 
+          acc_r            : out   std_logic; 
+          acc_w            : out   std_logic; 
+          alu              : out   std_logic; 
+          alu_and          : out   std_logic; 
+          alu_C_in_enabled : out   std_logic; 
+          alu_lshift       : out   std_logic; 
+          alu_not          : out   std_logic; 
+          alu_op0          : out   std_logic; 
+          alu_op1          : out   std_logic; 
+          alu_op2          : out   std_logic; 
+          alu_or           : out   std_logic; 
+          alu_rshift       : out   std_logic; 
+          alu_sum          : out   std_logic; 
+          alu_xor          : out   std_logic; 
+          bus1             : out   std_logic; 
+          flags_clr        : out   std_logic; 
+          flags_w          : out   std_logic; 
+          ground           : out   std_logic; 
+          iar_r            : out   std_logic; 
+          iar_w            : out   std_logic; 
+          ir_w             : out   std_logic; 
+          ram_a_w          : out   std_logic; 
+          ram_r            : out   std_logic; 
+          ram_w            : out   std_logic; 
+          ra_0             : out   std_logic; 
+          ra_1             : out   std_logic; 
+          ra_2             : out   std_logic; 
+          ra_3             : out   std_logic; 
+          rb_0             : out   std_logic; 
+          rb_1             : out   std_logic; 
+          rb_2             : out   std_logic; 
+          rb_3             : out   std_logic; 
+          r0_r             : out   std_logic; 
+          r0_w             : out   std_logic; 
+          r1_r             : out   std_logic; 
+          r1_w             : out   std_logic; 
+          r2_r             : out   std_logic; 
+          r2_w             : out   std_logic; 
+          r3_r             : out   std_logic; 
+          r3_w             : out   std_logic; 
+          s1               : out   std_logic; 
+          s2               : out   std_logic; 
+          s3               : out   std_logic; 
+          s4               : out   std_logic; 
+          s5               : out   std_logic; 
+          s6               : out   std_logic; 
+          temp_w           : out   std_logic);
 end cpu_control_MUSER_cpu;
 
 architecture BEHAVIORAL of cpu_control_MUSER_cpu is
@@ -912,6 +911,7 @@ architecture BEHAVIORAL of cpu_control_MUSER_cpu is
    signal alu_binary                  : std_logic;
    signal alu_binary_s4               : std_logic;
    signal alu_binary_s5               : std_logic;
+   signal alu_calc                    : std_logic;
    signal alu_s4                      : std_logic;
    signal alu_s6                      : std_logic;
    signal alu_unari                   : std_logic;
@@ -931,6 +931,7 @@ architecture BEHAVIORAL of cpu_control_MUSER_cpu is
    signal jmp_jmpr                    : std_logic;
    signal jmp_jmpr_s4                 : std_logic;
    signal jmp_jmp_s4                  : std_logic;
+   signal jmp_jmp_s5                  : std_logic;
    signal ls_jmp_flg                  : std_logic;
    signal ls_ld                       : std_logic;
    signal ls_ldc                      : std_logic;
@@ -992,6 +993,7 @@ architecture BEHAVIORAL of cpu_control_MUSER_cpu is
    signal XLXN_1019                   : std_logic;
    signal XLXN_1020                   : std_logic;
    signal XLXN_1021                   : std_logic;
+   signal XLXN_1034                   : std_logic;
    signal alu_sum_DUMMY               : std_logic;
    signal alu_rshift_DUMMY            : std_logic;
    signal s1_DUMMY                    : std_logic;
@@ -1015,6 +1017,9 @@ architecture BEHAVIORAL of cpu_control_MUSER_cpu is
    signal ra_1_DUMMY                  : std_logic;
    signal ra_2_DUMMY                  : std_logic;
    signal ra_3_DUMMY                  : std_logic;
+   signal XLXI_556_I0_openSignal      : std_logic;
+   signal XLXI_556_I1_openSignal      : std_logic;
+   signal XLXI_556_I2_openSignal      : std_logic;
    component stepper_MUSER_cpu
       port ( clk : in    std_logic; 
              s6  : out   std_logic; 
@@ -1052,13 +1057,6 @@ architecture BEHAVIORAL of cpu_control_MUSER_cpu is
              O  : out   std_logic);
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
-   
-   component AND2B1
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of AND2B1 : component is "BLACK_BOX";
    
    component D3_8E_HXILINX_cpu
       port ( A0 : in    std_logic; 
@@ -1119,6 +1117,14 @@ architecture BEHAVIORAL of cpu_control_MUSER_cpu is
              O  : out   std_logic);
    end component;
    attribute BOX_TYPE of OR5 : component is "BLACK_BOX";
+   
+   component AND3B1
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             I2 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND3B1 : component is "BLACK_BOX";
    
    attribute HU_SET of XLXI_39 : label is "XLXI_39_9";
    attribute HU_SET of XLXI_47 : label is "XLXI_47_7";
@@ -1194,7 +1200,7 @@ begin
       port map (I0=>s1_DUMMY,
                 I1=>ls_ldc_s4,
                 I2=>jmp_ifjmp_flag_equals_op_s4,
-                I3=>ground_DUMMY,
+                I3=>jmp_jmp_s4,
                 O=>XLXN_4);
    
    XLXI_11 : OR4
@@ -1210,13 +1216,6 @@ begin
                 I2=>ground_DUMMY,
                 I3=>s2_DUMMY,
                 O=>XLXN_12);
-   
-   XLXI_15 : OR4
-      port map (I0=>jmp_ifjmp_flag_equals_op_s4,
-                I1=>ls_ldc_s4,
-                I2=>ls_ldst_s4,
-                I3=>s1_DUMMY,
-                O=>XLXN_16);
    
    XLXI_16 : AND2
       port map (I0=>clkr,
@@ -1256,21 +1255,6 @@ begin
       port map (I0=>XLXN_32,
                 I1=>XLXN_173,
                 O=>alu_op2);
-   
-   XLXI_27 : AND2B1
-      port map (I0=>s1_DUMMY,
-                I1=>ir(4),
-                O=>XLXN_30);
-   
-   XLXI_28 : AND2B1
-      port map (I0=>s1_DUMMY,
-                I1=>ir(5),
-                O=>XLXN_31);
-   
-   XLXI_29 : AND2B1
-      port map (I0=>s1_DUMMY,
-                I1=>ir(6),
-                O=>XLXN_32);
    
    XLXI_39 : D3_8E_HXILINX_cpu
       port map (A0=>ir(4),
@@ -1696,13 +1680,13 @@ begin
       port map (I0=>s2_DUMMY,
                 I1=>ls_ld_s5,
                 I2=>ls_ldc_s5,
-                I3=>jmp_jmp_s4,
+                I3=>jmp_jmp_s5,
                 I4=>jmp_ifjmp_flag_equals_op_s5,
                 O=>XLXN_7);
    
    XLXI_550 : OR5
       port map (I0=>jmp_ifjmp_flag_equals_op_s5,
-                I1=>jmp_jmp_s4,
+                I1=>jmp_jmp_s5,
                 I2=>jmp_jmpr_s4,
                 I3=>ls_ldc_s6,
                 I4=>s3_DUMMY,
@@ -1717,6 +1701,58 @@ begin
       port map (I0=>flg_clf,
                 I1=>s4_DUMMY,
                 O=>flg_clf_s4);
+   
+   XLXI_553 : OR2
+      port map (I0=>alu_binary_s5,
+                I1=>alu_unari_s4,
+                O=>XLXN_1034);
+   
+   XLXI_554 : AND2
+      port map (I0=>clkr,
+                I1=>XLXN_1034,
+                O=>alu_C_in_enabled);
+   
+   XLXI_555 : OR2
+      port map (I0=>alu_binary_s5,
+                I1=>alu_unari_s4,
+                O=>alu_calc);
+   
+   XLXI_556 : AND3B1
+      port map (I0=>XLXI_556_I0_openSignal,
+                I1=>XLXI_556_I1_openSignal,
+                I2=>XLXI_556_I2_openSignal,
+                O=>open);
+   
+   XLXI_557 : AND3B1
+      port map (I0=>s1_DUMMY,
+                I1=>ir(4),
+                I2=>alu_calc,
+                O=>XLXN_30);
+   
+   XLXI_558 : AND3B1
+      port map (I0=>s1_DUMMY,
+                I1=>ir(5),
+                I2=>alu_calc,
+                O=>XLXN_31);
+   
+   XLXI_559 : AND3B1
+      port map (I0=>s1_DUMMY,
+                I1=>ir(6),
+                I2=>alu_calc,
+                O=>XLXN_32);
+   
+   XLXI_562 : OR5
+      port map (I0=>jmp_jmp_s4,
+                I1=>jmp_ifjmp_flag_equals_op_s4,
+                I2=>ls_ldc_s4,
+                I3=>ls_ldst_s4,
+                I4=>s1_DUMMY,
+                O=>XLXN_16);
+   
+   XLXI_563 : AND2
+      port map (I0=>jmp_jmp,
+                I1=>s5_DUMMY,
+                O=>jmp_jmp_s5);
    
 end BEHAVIORAL;
 
@@ -2142,7 +2178,6 @@ architecture BEHAVIORAL of alu_MUSER_cpu is
    signal XLXN_98  : std_logic;
    signal XLXN_99  : std_logic;
    signal XLXN_105 : std_logic;
-   signal XLXN_179 : std_logic;
    signal XLXN_191 : std_logic;
    signal XLXN_192 : std_logic;
    signal XLXN_193 : std_logic;
@@ -2202,11 +2237,6 @@ architecture BEHAVIORAL of alu_MUSER_cpu is
              O : out   std_logic);
    end component;
    attribute BOX_TYPE of BUF : component is "BLACK_BOX";
-   
-   component GND
-      port ( G : out   std_logic);
-   end component;
-   attribute BOX_TYPE of GND : component is "BLACK_BOX";
    
    component VCC
       port ( P : out   std_logic);
@@ -2302,7 +2332,7 @@ begin
                 O(7 downto 0)=>x_DUMMY(7 downto 0));
    
    XLXI_12 : BUF
-      port map (I=>XLXN_179,
+      port map (I=>C_in,
                 O=>t(0));
    
    XLXI_13 : BUF
@@ -2332,9 +2362,6 @@ begin
    XLXI_19 : BUF
       port map (I=>a(6),
                 O=>t(7));
-   
-   XLXI_40 : GND
-      port map (G=>XLXN_179);
    
    XLXI_42 : INV
       port map (I=>XLXN_105,
@@ -2395,7 +2422,7 @@ begin
                 O(7 downto 0)=>x_DUMMY(7 downto 0));
    
    XLXI_98 : BUF
-      port map (I=>XLXN_179,
+      port map (I=>C_in,
                 O=>ls(7));
    
    XLXI_99 : AND2
@@ -2559,94 +2586,100 @@ library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
 entity cpu is
-   port ( alu_C_in     : in    std_logic; 
-          clk          : in    std_logic; 
-          manual_iar_w : in    std_logic; 
-          manual_r0_w  : in    std_logic; 
-          manual_r1_w  : in    std_logic; 
-          rind         : in    std_logic_vector (7 downto 0); 
-          rinr         : in    std_logic; 
-          rinw         : in    std_logic; 
-          acc_r        : out   std_logic; 
-          acc_w        : out   std_logic; 
-          alu_C_out    : out   std_logic; 
-          alu_eq       : out   std_logic; 
-          alu_gt       : out   std_logic; 
-          alu_op       : out   std_logic_vector (2 downto 0); 
-          alu_z        : out   std_logic; 
-          bus1         : out   std_logic; 
-          clkc         : out   std_logic; 
-          clkr         : out   std_logic; 
-          clkw         : out   std_logic; 
-          ctl_iar_w    : out   std_logic; 
-          ctl_r0_w     : out   std_logic; 
-          ctl_r1_w     : out   std_logic; 
-          flags_clr    : out   std_logic; 
-          flags_o      : out   std_logic_vector (3 downto 0); 
-          flags_w      : out   std_logic; 
-          iar_r        : out   std_logic; 
-          iar_w        : out   std_logic; 
-          ir_o         : out   std_logic_vector (7 downto 0); 
-          ir_w         : out   std_logic; 
-          ram_a_o      : out   std_logic_vector (7 downto 0); 
-          ram_a_w      : out   std_logic; 
-          ram_r        : out   std_logic; 
-          ram_w        : out   std_logic; 
-          r0_r         : out   std_logic; 
-          r0_w         : out   std_logic; 
-          r1_r         : out   std_logic; 
-          r1_w         : out   std_logic; 
-          r2_r         : out   std_logic; 
-          r2_w         : out   std_logic; 
-          r3_r         : out   std_logic; 
-          r3_w         : out   std_logic; 
-          sysbus       : out   std_logic_vector (7 downto 0); 
-          temp_w       : out   std_logic);
+   port ( clk              : in    std_logic; 
+          manual_iar_w     : in    std_logic; 
+          manual_r0_w      : in    std_logic; 
+          manual_r1_w      : in    std_logic; 
+          rind             : in    std_logic_vector (7 downto 0); 
+          rinr             : in    std_logic; 
+          rinw             : in    std_logic; 
+          rst              : in    std_logic; 
+          acc_r            : out   std_logic; 
+          acc_w            : out   std_logic; 
+          alu_C_in         : out   std_logic; 
+          alu_C_in_enabled : out   std_logic; 
+          alu_C_out        : out   std_logic; 
+          alu_eq           : out   std_logic; 
+          alu_gt           : out   std_logic; 
+          alu_op           : out   std_logic_vector (2 downto 0); 
+          alu_z            : out   std_logic; 
+          bus1             : out   std_logic; 
+          clkc             : out   std_logic; 
+          clkr             : out   std_logic; 
+          clkw             : out   std_logic; 
+          ctl_iar_w        : out   std_logic; 
+          ctl_r0_w         : out   std_logic; 
+          ctl_r1_w         : out   std_logic; 
+          flags_clr        : out   std_logic; 
+          flags_o          : out   std_logic_vector (3 downto 0); 
+          flags_w          : out   std_logic; 
+          iar_r            : out   std_logic; 
+          iar_w            : out   std_logic; 
+          ir_o             : out   std_logic_vector (7 downto 0); 
+          ir_w             : out   std_logic; 
+          ram_a_o          : out   std_logic_vector (7 downto 0); 
+          ram_a_w          : out   std_logic; 
+          ram_r            : out   std_logic; 
+          ram_w            : out   std_logic; 
+          r0_r             : out   std_logic; 
+          r0_w             : out   std_logic; 
+          r1_r             : out   std_logic; 
+          r1_w             : out   std_logic; 
+          r2_r             : out   std_logic; 
+          r2_w             : out   std_logic; 
+          r3_r             : out   std_logic; 
+          r3_w             : out   std_logic; 
+          sysbus           : out   std_logic_vector (7 downto 0); 
+          temp_w           : out   std_logic);
 end cpu;
 
 architecture BEHAVIORAL of cpu is
    attribute BOX_TYPE   : string ;
    attribute HU_SET     : string ;
-   signal alu_x           : std_logic_vector (7 downto 0);
-   signal pto             : std_logic_vector (7 downto 0);
-   signal temp_o          : std_logic_vector (7 downto 0);
-   signal temp_r          : std_logic;
-   signal XLXN_23         : std_logic;
-   signal XLXN_194        : std_logic;
-   signal sysbus_DUMMY    : std_logic_vector (7 downto 0);
-   signal r2_r_DUMMY      : std_logic;
-   signal r2_w_DUMMY      : std_logic;
-   signal iar_r_DUMMY     : std_logic;
-   signal iar_w_DUMMY     : std_logic;
-   signal ctl_r0_w_DUMMY  : std_logic;
-   signal clkc_DUMMY      : std_logic;
-   signal alu_C_out_DUMMY : std_logic;
-   signal alu_op_DUMMY    : std_logic_vector (2 downto 0);
-   signal clkr_DUMMY      : std_logic;
-   signal ir_o_DUMMY      : std_logic_vector (7 downto 0);
-   signal clkw_DUMMY      : std_logic;
-   signal flags_o_DUMMY   : std_logic_vector (3 downto 0);
-   signal ir_w_DUMMY      : std_logic;
-   signal r1_r_DUMMY      : std_logic;
-   signal flags_w_DUMMY   : std_logic;
-   signal r1_w_DUMMY      : std_logic;
-   signal acc_r_DUMMY     : std_logic;
-   signal acc_w_DUMMY     : std_logic;
-   signal alu_eq_DUMMY    : std_logic;
-   signal ctl_iar_w_DUMMY : std_logic;
-   signal r3_r_DUMMY      : std_logic;
-   signal r3_w_DUMMY      : std_logic;
-   signal temp_w_DUMMY    : std_logic;
-   signal r0_r_DUMMY      : std_logic;
-   signal r0_w_DUMMY      : std_logic;
-   signal flags_clr_DUMMY : std_logic;
-   signal ctl_r1_w_DUMMY  : std_logic;
-   signal ram_r_DUMMY     : std_logic;
-   signal alu_gt_DUMMY    : std_logic;
-   signal bus1_DUMMY      : std_logic;
-   signal ram_w_DUMMY     : std_logic;
-   signal ram_a_w_DUMMY   : std_logic;
-   signal alu_z_DUMMY     : std_logic;
+   signal alu_x                  : std_logic_vector (7 downto 0);
+   signal pto                    : std_logic_vector (7 downto 0);
+   signal temp_o                 : std_logic_vector (7 downto 0);
+   signal temp_r                 : std_logic;
+   signal XLXN_23                : std_logic;
+   signal XLXN_194               : std_logic;
+   signal XLXN_216               : std_logic;
+   signal XLXN_217               : std_logic;
+   signal sysbus_DUMMY           : std_logic_vector (7 downto 0);
+   signal r2_r_DUMMY             : std_logic;
+   signal r2_w_DUMMY             : std_logic;
+   signal iar_r_DUMMY            : std_logic;
+   signal iar_w_DUMMY            : std_logic;
+   signal ctl_r0_w_DUMMY         : std_logic;
+   signal alu_C_in_DUMMY         : std_logic;
+   signal clkc_DUMMY             : std_logic;
+   signal alu_C_out_DUMMY        : std_logic;
+   signal alu_op_DUMMY           : std_logic_vector (2 downto 0);
+   signal alu_C_in_enabled_DUMMY : std_logic;
+   signal clkr_DUMMY             : std_logic;
+   signal ir_o_DUMMY             : std_logic_vector (7 downto 0);
+   signal clkw_DUMMY             : std_logic;
+   signal flags_o_DUMMY          : std_logic_vector (3 downto 0);
+   signal ir_w_DUMMY             : std_logic;
+   signal r1_r_DUMMY             : std_logic;
+   signal flags_w_DUMMY          : std_logic;
+   signal r1_w_DUMMY             : std_logic;
+   signal acc_r_DUMMY            : std_logic;
+   signal acc_w_DUMMY            : std_logic;
+   signal alu_eq_DUMMY           : std_logic;
+   signal ctl_iar_w_DUMMY        : std_logic;
+   signal r3_r_DUMMY             : std_logic;
+   signal r3_w_DUMMY             : std_logic;
+   signal temp_w_DUMMY           : std_logic;
+   signal r0_r_DUMMY             : std_logic;
+   signal r0_w_DUMMY             : std_logic;
+   signal flags_clr_DUMMY        : std_logic;
+   signal ctl_r1_w_DUMMY         : std_logic;
+   signal ram_r_DUMMY            : std_logic;
+   signal alu_gt_DUMMY           : std_logic;
+   signal bus1_DUMMY             : std_logic;
+   signal ram_w_DUMMY            : std_logic;
+   signal ram_a_w_DUMMY          : std_logic;
+   signal alu_z_DUMMY            : std_logic;
    component reg_8bit_MUSER_cpu
       port ( d : in    std_logic_vector (7 downto 0); 
              o : out   std_logic_vector (7 downto 0); 
@@ -2674,57 +2707,58 @@ architecture BEHAVIORAL of cpu is
    end component;
    
    component cpu_control_MUSER_cpu
-      port ( acc_r      : out   std_logic; 
-             acc_w      : out   std_logic; 
-             alu        : out   std_logic; 
-             alu_and    : out   std_logic; 
-             alu_lshift : out   std_logic; 
-             alu_not    : out   std_logic; 
-             alu_op0    : out   std_logic; 
-             alu_op1    : out   std_logic; 
-             alu_op2    : out   std_logic; 
-             alu_or     : out   std_logic; 
-             alu_rshift : out   std_logic; 
-             alu_sum    : out   std_logic; 
-             alu_xor    : out   std_logic; 
-             bus1       : out   std_logic; 
-             clk        : in    std_logic; 
-             clkr       : in    std_logic; 
-             clkw       : in    std_logic; 
-             flags      : in    std_logic_vector (3 downto 0); 
-             flags_clr  : out   std_logic; 
-             flags_w    : out   std_logic; 
-             ground     : out   std_logic; 
-             iar_r      : out   std_logic; 
-             iar_w      : out   std_logic; 
-             ir         : in    std_logic_vector (7 downto 0); 
-             ir_w       : out   std_logic; 
-             r0_r       : out   std_logic; 
-             r0_w       : out   std_logic; 
-             r1_r       : out   std_logic; 
-             r1_w       : out   std_logic; 
-             r2_r       : out   std_logic; 
-             r2_w       : out   std_logic; 
-             r3_r       : out   std_logic; 
-             r3_w       : out   std_logic; 
-             ram_a_w    : out   std_logic; 
-             ram_r      : out   std_logic; 
-             ram_w      : out   std_logic; 
-             ra_0       : out   std_logic; 
-             ra_1       : out   std_logic; 
-             ra_2       : out   std_logic; 
-             ra_3       : out   std_logic; 
-             rb_0       : out   std_logic; 
-             rb_1       : out   std_logic; 
-             rb_2       : out   std_logic; 
-             rb_3       : out   std_logic; 
-             s1         : out   std_logic; 
-             s2         : out   std_logic; 
-             s3         : out   std_logic; 
-             s4         : out   std_logic; 
-             s5         : out   std_logic; 
-             s6         : out   std_logic; 
-             temp_w     : out   std_logic);
+      port ( acc_r            : out   std_logic; 
+             acc_w            : out   std_logic; 
+             alu              : out   std_logic; 
+             alu_and          : out   std_logic; 
+             alu_C_in_enabled : out   std_logic; 
+             alu_lshift       : out   std_logic; 
+             alu_not          : out   std_logic; 
+             alu_op0          : out   std_logic; 
+             alu_op1          : out   std_logic; 
+             alu_op2          : out   std_logic; 
+             alu_or           : out   std_logic; 
+             alu_rshift       : out   std_logic; 
+             alu_sum          : out   std_logic; 
+             alu_xor          : out   std_logic; 
+             bus1             : out   std_logic; 
+             clk              : in    std_logic; 
+             clkr             : in    std_logic; 
+             clkw             : in    std_logic; 
+             flags            : in    std_logic_vector (3 downto 0); 
+             flags_clr        : out   std_logic; 
+             flags_w          : out   std_logic; 
+             ground           : out   std_logic; 
+             iar_r            : out   std_logic; 
+             iar_w            : out   std_logic; 
+             ir               : in    std_logic_vector (7 downto 0); 
+             ir_w             : out   std_logic; 
+             r0_r             : out   std_logic; 
+             r0_w             : out   std_logic; 
+             r1_r             : out   std_logic; 
+             r1_w             : out   std_logic; 
+             r2_r             : out   std_logic; 
+             r2_w             : out   std_logic; 
+             r3_r             : out   std_logic; 
+             r3_w             : out   std_logic; 
+             ram_a_w          : out   std_logic; 
+             ram_r            : out   std_logic; 
+             ram_w            : out   std_logic; 
+             ra_0             : out   std_logic; 
+             ra_1             : out   std_logic; 
+             ra_2             : out   std_logic; 
+             ra_3             : out   std_logic; 
+             rb_0             : out   std_logic; 
+             rb_1             : out   std_logic; 
+             rb_2             : out   std_logic; 
+             rb_3             : out   std_logic; 
+             s1               : out   std_logic; 
+             s2               : out   std_logic; 
+             s3               : out   std_logic; 
+             s4               : out   std_logic; 
+             s5               : out   std_logic; 
+             s6               : out   std_logic; 
+             temp_w           : out   std_logic);
    end component;
    
    component pass_through_or_one_MUSER_cpu
@@ -2775,10 +2809,27 @@ architecture BEHAVIORAL of cpu is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
+   component AND2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
+   
+   component FDC_1
+      port ( C   : in    std_logic; 
+             CLR : in    std_logic; 
+             D   : in    std_logic; 
+             Q   : out   std_logic);
+   end component;
+   attribute BOX_TYPE of FDC_1 : component is "BLACK_BOX";
+   
    attribute HU_SET of XLXI_87 : label is "XLXI_87_22";
 begin
    acc_r <= acc_r_DUMMY;
    acc_w <= acc_w_DUMMY;
+   alu_C_in <= alu_C_in_DUMMY;
+   alu_C_in_enabled <= alu_C_in_enabled_DUMMY;
    alu_C_out <= alu_C_out_DUMMY;
    alu_eq <= alu_eq_DUMMY;
    alu_gt <= alu_gt_DUMMY;
@@ -2820,7 +2871,7 @@ begin
    alu_inst : alu_MUSER_cpu
       port map (a(7 downto 0)=>sysbus_DUMMY(7 downto 0),
                 b(7 downto 0)=>pto(7 downto 0),
-                C_in=>alu_C_in,
+                C_in=>alu_C_in_DUMMY,
                 op(2 downto 0)=>alu_op_DUMMY(2 downto 0),
                 C_out=>alu_C_out_DUMMY,
                 eq=>alu_eq_DUMMY,
@@ -2844,6 +2895,7 @@ begin
                 acc_w=>acc_w_DUMMY,
                 alu=>open,
                 alu_and=>open,
+                alu_C_in_enabled=>alu_C_in_enabled_DUMMY,
                 alu_lshift=>open,
                 alu_not=>open,
                 alu_op0=>alu_op_DUMMY(0),
@@ -2972,7 +3024,7 @@ begin
                 O=>r1_w_DUMMY);
    
    XLXI_87 : LD4CE_HXILINX_cpu
-      port map (CLR=>flags_clr_DUMMY,
+      port map (CLR=>XLXN_217,
                 D0=>alu_C_out_DUMMY,
                 D1=>alu_gt_DUMMY,
                 D2=>alu_eq_DUMMY,
@@ -2986,6 +3038,22 @@ begin
    
    XLXI_88 : VCC
       port map (P=>XLXN_194);
+   
+   XLXI_89 : AND2
+      port map (I0=>XLXN_216,
+                I1=>alu_C_in_enabled_DUMMY,
+                O=>alu_C_in_DUMMY);
+   
+   XLXI_102 : FDC_1
+      port map (C=>clkr_DUMMY,
+                CLR=>rst,
+                D=>flags_o_DUMMY(0),
+                Q=>XLXN_216);
+   
+   XLXI_103 : OR2
+      port map (I0=>rst,
+                I1=>flags_clr_DUMMY,
+                O=>XLXN_217);
    
 end BEHAVIORAL;
 

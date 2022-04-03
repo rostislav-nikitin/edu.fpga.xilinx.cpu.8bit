@@ -89,7 +89,7 @@
     <file xil_pn:fileType="FILE_VHDL" xil_pn:name="cpu_control_drc.vhf"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cpu_cpu_sch_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="cpu_cpu_sch_tb_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="cpu_cpu_sch_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="cpu_cpu_sch_tb_isim_beh1.wdb"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cpu_cpu_sch_tb_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="cpu_envsettings.html"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="cpu_summary.html"/>
@@ -180,13 +180,13 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1648942270" xil_pn:in_ck="-4473977066004889170" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1648942270">
+    <transform xil_pn:end_ts="1649019670" xil_pn:in_ck="1895318070216826950" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1649019670">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="led_control.vhd"/>
       <outfile xil_pn:name="tb_alu.vhd"/>
+      <outfile xil_pn:name="tb_asm_counter.vhd"/>
       <outfile xil_pn:name="tb_clk_generator.vhd"/>
-      <outfile xil_pn:name="tb_cpu.vhd"/>
       <outfile xil_pn:name="tb_ram_256bytes.vhd"/>
       <outfile xil_pn:name="tb_stepper.vhd"/>
     </transform>
@@ -194,7 +194,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1648942476" xil_pn:in_ck="8024642543934607951" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-7490580144609136" xil_pn:start_ts="1648942474">
+    <transform xil_pn:end_ts="1649018925" xil_pn:in_ck="8024642543934607951" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-7490580144609136" xil_pn:start_ts="1649018923">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="alu.vhf"/>
@@ -215,7 +215,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1648942476" xil_pn:in_ck="-860183408087066379" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1648942476">
+    <transform xil_pn:end_ts="1649019670" xil_pn:in_ck="7680921191922650765" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1649019670">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="alu.vhf"/>
@@ -233,12 +233,12 @@
       <outfile xil_pn:name="reg_8bit.vhf"/>
       <outfile xil_pn:name="stepper.vhf"/>
       <outfile xil_pn:name="tb_alu.vhd"/>
+      <outfile xil_pn:name="tb_asm_counter.vhd"/>
       <outfile xil_pn:name="tb_clk_generator.vhd"/>
-      <outfile xil_pn:name="tb_cpu.vhd"/>
       <outfile xil_pn:name="tb_ram_256bytes.vhd"/>
       <outfile xil_pn:name="tb_stepper.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1648942479" xil_pn:in_ck="-860183408087066379" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-7871951945746904068" xil_pn:start_ts="1648942476">
+    <transform xil_pn:end_ts="1649019673" xil_pn:in_ck="7680921191922650765" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-7871951945746904068" xil_pn:start_ts="1649019670">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -250,12 +250,12 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1648942479" xil_pn:in_ck="-5857684884030932576" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-9024172443054276784" xil_pn:start_ts="1648942479">
+    <transform xil_pn:end_ts="1649019673" xil_pn:in_ck="-5857684884030932576" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-1786212331071359269" xil_pn:start_ts="1649019673">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="cpu_cpu_sch_tb_isim_beh.wdb"/>
+      <outfile xil_pn:name="cpu_cpu_sch_tb_isim_beh1.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
     </transform>
