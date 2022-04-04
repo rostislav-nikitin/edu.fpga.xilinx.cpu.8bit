@@ -68,6 +68,7 @@ int main(int argc, char **argv)
     work_a_2872865289_0260269735_init();
     unisim_a_2216889161_3025253650_init();
     unisim_a_2867636556_1359619727_init();
+    work_a_3664491719_0004991901_init();
     work_a_3817148531_3212880686_init();
     work_a_0555518447_3212880686_init();
     work_a_0313614646_3212880686_init();
@@ -75,11 +76,13 @@ int main(int argc, char **argv)
     ieee_p_2717149903_init();
     ieee_p_1367372525_init();
     unisim_p_3222816464_init();
-    unisim_a_0085946400_2855348447_init();
+    unisim_a_4255518557_2855348447_init();
     unisim_a_4107622670_2855348447_init();
-    unisim_a_2745914709_2855348447_init();
-    unisim_a_2268458446_2855348447_init();
+    unisim_a_1849141740_2855348447_init();
+    unisim_a_0454505008_2855348447_init();
     unisim_a_3819851085_2855348447_init();
+    unisim_a_1520645195_2855348447_init();
+    unisim_a_1656334974_2855348447_init();
     unisim_a_0947870096_2855348447_init();
     work_a_3924899576_3212880686_init();
     work_a_0430837267_3212880686_init();

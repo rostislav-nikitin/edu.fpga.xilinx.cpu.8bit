@@ -37,7 +37,7 @@ static void work_a_1873255094_2163549645_p_0(char *t0)
     char *t8;
     char *t9;
 
-LAB0:    xsi_set_current_line(381, ng0);
+LAB0:    xsi_set_current_line(404, ng0);
     t1 = (t0 + 1352U);
     t2 = *((char **)t1);
     t3 = *((unsigned char *)t2);
@@ -45,7 +45,7 @@ LAB0:    xsi_set_current_line(381, ng0);
     if (t4 != 0)
         goto LAB2;
 
-LAB4:    xsi_set_current_line(384, ng0);
+LAB4:    xsi_set_current_line(407, ng0);
     t1 = xsi_get_transient_memory(8U);
     memset(t1, 0, 8U);
     t2 = t1;
@@ -62,7 +62,7 @@ LAB3:    t1 = (t0 + 2824);
     *((int *)t1) = 1;
 
 LAB1:    return;
-LAB2:    xsi_set_current_line(382, ng0);
+LAB2:    xsi_set_current_line(405, ng0);
     t1 = (t0 + 1192U);
     t5 = *((char **)t1);
     t1 = (t0 + 2904);

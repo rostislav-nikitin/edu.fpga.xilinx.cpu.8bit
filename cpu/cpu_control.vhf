@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu_control.vhf
--- /___/   /\     Timestamp : 04/03/2022 23:43:05
+-- /___/   /\     Timestamp : 04/04/2022 23:47:23
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -69,6 +69,29 @@ Q0 <= COUNT(0);
 
 end Behavioral;
 
+----- CELL OR6_HXILINX_cpu_control -----
+  
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity OR6_HXILINX_cpu_control is
+  
+port(
+    O  : out std_logic;
+
+    I0  : in std_logic;
+    I1  : in std_logic;
+    I2  : in std_logic;
+    I3  : in std_logic;
+    I4  : in std_logic;
+    I5  : in std_logic
+  );
+end OR6_HXILINX_cpu_control;
+
+architecture OR6_HXILINX_cpu_control_V of OR6_HXILINX_cpu_control is
+begin
+  O <=  (I0 or I1 or I2 or I3 or I4 or I5);
+end OR6_HXILINX_cpu_control_V;
 ----- CELL D3_8E_HXILINX_cpu_control -----
   
 library IEEE;
@@ -236,8 +259,8 @@ architecture BEHAVIORAL of stepper_MUSER_cpu_control is
    end component;
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_24 : label is "XLXI_24_23";
-   attribute HU_SET of XLXI_25 : label is "XLXI_25_24";
+   attribute HU_SET of XLXI_24 : label is "XLXI_24_24";
+   attribute HU_SET of XLXI_25 : label is "XLXI_25_25";
 begin
    XLXI_21 : VCC
       port map (P=>XLXN_14);
@@ -339,118 +362,122 @@ end cpu_control;
 architecture BEHAVIORAL of cpu_control is
    attribute BOX_TYPE   : string ;
    attribute HU_SET     : string ;
-   signal alu_binary                  : std_logic;
-   signal alu_binary_s4               : std_logic;
-   signal alu_binary_s5               : std_logic;
-   signal alu_calc                    : std_logic;
-   signal alu_s4                      : std_logic;
-   signal alu_s6                      : std_logic;
-   signal alu_unari                   : std_logic;
-   signal alu_unari_s4                : std_logic;
-   signal flags_c                     : std_logic;
-   signal flags_eq                    : std_logic;
-   signal flags_gt                    : std_logic;
-   signal flags_z                     : std_logic;
-   signal flag_equals_op              : std_logic;
-   signal flg_clf                     : std_logic;
-   signal flg_clf_s4                  : std_logic;
-   signal jmp_ifjmp                   : std_logic;
-   signal jmp_ifjmp_flag_equals_op    : std_logic;
-   signal jmp_ifjmp_flag_equals_op_s4 : std_logic;
-   signal jmp_ifjmp_flag_equals_op_s5 : std_logic;
-   signal jmp_jmp                     : std_logic;
-   signal jmp_jmpr                    : std_logic;
-   signal jmp_jmpr_s4                 : std_logic;
-   signal jmp_jmp_s4                  : std_logic;
-   signal jmp_jmp_s5                  : std_logic;
-   signal ls_jmp_flg                  : std_logic;
-   signal ls_ld                       : std_logic;
-   signal ls_ldc                      : std_logic;
-   signal ls_ldc_s4                   : std_logic;
-   signal ls_ldc_s5                   : std_logic;
-   signal ls_ldc_s6                   : std_logic;
-   signal ls_ldst_s4                  : std_logic;
-   signal ls_ld_s5                    : std_logic;
-   signal ls_st                       : std_logic;
-   signal ls_st_s5                    : std_logic;
-   signal op_c                        : std_logic;
-   signal op_eq                       : std_logic;
-   signal op_gt                       : std_logic;
-   signal op_z                        : std_logic;
-   signal raw_int                     : std_logic;
-   signal ra_int                      : std_logic;
-   signal ra0_r                       : std_logic;
-   signal ra0_w                       : std_logic;
-   signal ra1_r                       : std_logic;
-   signal ra1_w                       : std_logic;
-   signal ra2_r                       : std_logic;
-   signal ra2_w                       : std_logic;
-   signal ra3_r                       : std_logic;
-   signal ra3_w                       : std_logic;
-   signal rb_int                      : std_logic;
-   signal rb0_r                       : std_logic;
-   signal rb1_r                       : std_logic;
-   signal rb2_r                       : std_logic;
-   signal rb3_r                       : std_logic;
-   signal XLXN_4                      : std_logic;
-   signal XLXN_5                      : std_logic;
-   signal XLXN_7                      : std_logic;
-   signal XLXN_11                     : std_logic;
-   signal XLXN_12                     : std_logic;
-   signal XLXN_16                     : std_logic;
-   signal XLXN_22                     : std_logic;
-   signal XLXN_23                     : std_logic;
-   signal XLXN_30                     : std_logic;
-   signal XLXN_31                     : std_logic;
-   signal XLXN_32                     : std_logic;
-   signal XLXN_75                     : std_logic;
-   signal XLXN_83                     : std_logic;
-   signal XLXN_84                     : std_logic;
-   signal XLXN_99                     : std_logic;
-   signal XLXN_155                    : std_logic;
-   signal XLXN_156                    : std_logic;
-   signal XLXN_157                    : std_logic;
-   signal XLXN_158                    : std_logic;
-   signal XLXN_173                    : std_logic;
-   signal XLXN_435                    : std_logic;
-   signal XLXN_462                    : std_logic;
-   signal XLXN_811                    : std_logic;
-   signal XLXN_812                    : std_logic;
-   signal XLXN_813                    : std_logic;
-   signal XLXN_814                    : std_logic;
-   signal XLXN_981                    : std_logic;
-   signal XLXN_997                    : std_logic;
-   signal XLXN_1018                   : std_logic;
-   signal XLXN_1019                   : std_logic;
-   signal XLXN_1020                   : std_logic;
-   signal XLXN_1021                   : std_logic;
-   signal XLXN_1034                   : std_logic;
-   signal alu_sum_DUMMY               : std_logic;
-   signal alu_rshift_DUMMY            : std_logic;
-   signal s1_DUMMY                    : std_logic;
-   signal s2_DUMMY                    : std_logic;
-   signal s3_DUMMY                    : std_logic;
-   signal s4_DUMMY                    : std_logic;
-   signal s5_DUMMY                    : std_logic;
-   signal s6_DUMMY                    : std_logic;
-   signal alu_and_DUMMY               : std_logic;
-   signal alu_xor_DUMMY               : std_logic;
-   signal alu_or_DUMMY                : std_logic;
-   signal rb_0_DUMMY                  : std_logic;
-   signal rb_1_DUMMY                  : std_logic;
-   signal rb_2_DUMMY                  : std_logic;
-   signal rb_3_DUMMY                  : std_logic;
-   signal alu_lshift_DUMMY            : std_logic;
-   signal alu_DUMMY                   : std_logic;
-   signal ground_DUMMY                : std_logic;
-   signal alu_not_DUMMY               : std_logic;
-   signal ra_0_DUMMY                  : std_logic;
-   signal ra_1_DUMMY                  : std_logic;
-   signal ra_2_DUMMY                  : std_logic;
-   signal ra_3_DUMMY                  : std_logic;
-   signal XLXI_556_I0_openSignal      : std_logic;
-   signal XLXI_556_I1_openSignal      : std_logic;
-   signal XLXI_556_I2_openSignal      : std_logic;
+   signal alu_binary                      : std_logic;
+   signal alu_binary_s4                   : std_logic;
+   signal alu_binary_s5                   : std_logic;
+   signal alu_calc                        : std_logic;
+   signal alu_s4                          : std_logic;
+   signal alu_s6                          : std_logic;
+   signal alu_unari                       : std_logic;
+   signal alu_unari_s4                    : std_logic;
+   signal flags_c                         : std_logic;
+   signal flags_eq                        : std_logic;
+   signal flags_gt                        : std_logic;
+   signal flags_z                         : std_logic;
+   signal flag_equals_op                  : std_logic;
+   signal flg_clf                         : std_logic;
+   signal flg_clf_s4                      : std_logic;
+   signal jmp_ifjmp                       : std_logic;
+   signal jmp_ifjmp_flag_equals_op        : std_logic;
+   signal jmp_ifjmp_flag_equals_op_s4     : std_logic;
+   signal jmp_ifjmp_flag_equals_op_s5     : std_logic;
+   signal jmp_ifjmp_flag_not_equals_op    : std_logic;
+   signal jmp_ifjmp_flag_not_equals_op_s4 : std_logic;
+   signal jmp_ifjmp_flag_not_equals_op_s5 : std_logic;
+   signal jmp_jmp                         : std_logic;
+   signal jmp_jmpr                        : std_logic;
+   signal jmp_jmpr_s4                     : std_logic;
+   signal jmp_jmp_s4                      : std_logic;
+   signal jmp_jmp_s5                      : std_logic;
+   signal ls_jmp_flg                      : std_logic;
+   signal ls_ld                           : std_logic;
+   signal ls_ldc                          : std_logic;
+   signal ls_ldc_s4                       : std_logic;
+   signal ls_ldc_s5                       : std_logic;
+   signal ls_ldc_s6                       : std_logic;
+   signal ls_ldst_s4                      : std_logic;
+   signal ls_ld_s5                        : std_logic;
+   signal ls_st                           : std_logic;
+   signal ls_st_s5                        : std_logic;
+   signal op_c                            : std_logic;
+   signal op_eq                           : std_logic;
+   signal op_gt                           : std_logic;
+   signal op_z                            : std_logic;
+   signal raw_int                         : std_logic;
+   signal ra_int                          : std_logic;
+   signal ra0_r                           : std_logic;
+   signal ra0_w                           : std_logic;
+   signal ra1_r                           : std_logic;
+   signal ra1_w                           : std_logic;
+   signal ra2_r                           : std_logic;
+   signal ra2_w                           : std_logic;
+   signal ra3_r                           : std_logic;
+   signal ra3_w                           : std_logic;
+   signal rb_int                          : std_logic;
+   signal rb0_r                           : std_logic;
+   signal rb1_r                           : std_logic;
+   signal rb2_r                           : std_logic;
+   signal rb3_r                           : std_logic;
+   signal XLXN_4                          : std_logic;
+   signal XLXN_5                          : std_logic;
+   signal XLXN_7                          : std_logic;
+   signal XLXN_11                         : std_logic;
+   signal XLXN_12                         : std_logic;
+   signal XLXN_16                         : std_logic;
+   signal XLXN_22                         : std_logic;
+   signal XLXN_23                         : std_logic;
+   signal XLXN_30                         : std_logic;
+   signal XLXN_31                         : std_logic;
+   signal XLXN_32                         : std_logic;
+   signal XLXN_75                         : std_logic;
+   signal XLXN_83                         : std_logic;
+   signal XLXN_84                         : std_logic;
+   signal XLXN_99                         : std_logic;
+   signal XLXN_155                        : std_logic;
+   signal XLXN_156                        : std_logic;
+   signal XLXN_157                        : std_logic;
+   signal XLXN_158                        : std_logic;
+   signal XLXN_173                        : std_logic;
+   signal XLXN_435                        : std_logic;
+   signal XLXN_462                        : std_logic;
+   signal XLXN_811                        : std_logic;
+   signal XLXN_812                        : std_logic;
+   signal XLXN_813                        : std_logic;
+   signal XLXN_814                        : std_logic;
+   signal XLXN_981                        : std_logic;
+   signal XLXN_997                        : std_logic;
+   signal XLXN_1018                       : std_logic;
+   signal XLXN_1019                       : std_logic;
+   signal XLXN_1020                       : std_logic;
+   signal XLXN_1021                       : std_logic;
+   signal XLXN_1034                       : std_logic;
+   signal XLXN_1063                       : std_logic;
+   signal alu_sum_DUMMY                   : std_logic;
+   signal alu_rshift_DUMMY                : std_logic;
+   signal s1_DUMMY                        : std_logic;
+   signal s2_DUMMY                        : std_logic;
+   signal s3_DUMMY                        : std_logic;
+   signal s4_DUMMY                        : std_logic;
+   signal s5_DUMMY                        : std_logic;
+   signal s6_DUMMY                        : std_logic;
+   signal alu_and_DUMMY                   : std_logic;
+   signal alu_xor_DUMMY                   : std_logic;
+   signal alu_or_DUMMY                    : std_logic;
+   signal rb_0_DUMMY                      : std_logic;
+   signal rb_1_DUMMY                      : std_logic;
+   signal rb_2_DUMMY                      : std_logic;
+   signal rb_3_DUMMY                      : std_logic;
+   signal alu_lshift_DUMMY                : std_logic;
+   signal alu_DUMMY                       : std_logic;
+   signal ground_DUMMY                    : std_logic;
+   signal alu_not_DUMMY                   : std_logic;
+   signal ra_0_DUMMY                      : std_logic;
+   signal ra_1_DUMMY                      : std_logic;
+   signal ra_2_DUMMY                      : std_logic;
+   signal ra_3_DUMMY                      : std_logic;
+   signal XLXI_556_I0_openSignal          : std_logic;
+   signal XLXI_556_I1_openSignal          : std_logic;
+   signal XLXI_556_I2_openSignal          : std_logic;
    component stepper_MUSER_cpu_control
       port ( clk : in    std_logic; 
              s6  : out   std_logic; 
@@ -557,10 +584,21 @@ architecture BEHAVIORAL of cpu_control is
    end component;
    attribute BOX_TYPE of AND3B1 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_39 : label is "XLXI_39_27";
-   attribute HU_SET of XLXI_47 : label is "XLXI_47_25";
-   attribute HU_SET of XLXI_48 : label is "XLXI_48_26";
-   attribute HU_SET of XLXI_252 : label is "XLXI_252_28";
+   component OR6_HXILINX_cpu_control
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             I2 : in    std_logic; 
+             I3 : in    std_logic; 
+             I4 : in    std_logic; 
+             I5 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   
+   attribute HU_SET of XLXI_39 : label is "XLXI_39_28";
+   attribute HU_SET of XLXI_47 : label is "XLXI_47_26";
+   attribute HU_SET of XLXI_48 : label is "XLXI_48_27";
+   attribute HU_SET of XLXI_252 : label is "XLXI_252_29";
+   attribute HU_SET of XLXI_577 : label is "XLXI_577_30";
 begin
    alu <= alu_DUMMY;
    alu_and <= alu_and_DUMMY;
@@ -627,17 +665,10 @@ begin
    XLXI_9 : GND
       port map (G=>ground_DUMMY);
    
-   XLXI_10 : OR4
-      port map (I0=>s1_DUMMY,
-                I1=>ls_ldc_s4,
-                I2=>jmp_ifjmp_flag_equals_op_s4,
-                I3=>jmp_jmp_s4,
-                O=>XLXN_4);
-   
    XLXI_11 : OR4
       port map (I0=>s1_DUMMY,
                 I1=>ls_ldc_s4,
-                I2=>ground_DUMMY,
+                I2=>jmp_ifjmp_flag_not_equals_op_s4,
                 I3=>ground_DUMMY,
                 O=>XLXN_5);
    
@@ -662,15 +693,8 @@ begin
       port map (I0=>s3_DUMMY,
                 I1=>alu_s6,
                 I2=>ls_ldc_s6,
-                I3=>ground_DUMMY,
+                I3=>jmp_ifjmp_flag_not_equals_op_s5,
                 O=>XLXN_22);
-   
-   XLXI_20 : OR4
-      port map (I0=>ls_ldc_s4,
-                I1=>alu_binary_s5,
-                I2=>alu_unari_s4,
-                I3=>s1_DUMMY,
-                O=>XLXN_23);
    
    XLXI_21 : OR2
       port map (I0=>XLXN_30,
@@ -1115,14 +1139,6 @@ begin
                 I4=>jmp_ifjmp_flag_equals_op_s5,
                 O=>XLXN_7);
    
-   XLXI_550 : OR5
-      port map (I0=>jmp_ifjmp_flag_equals_op_s5,
-                I1=>jmp_jmp_s5,
-                I2=>jmp_jmpr_s4,
-                I3=>ls_ldc_s6,
-                I4=>s3_DUMMY,
-                O=>XLXN_11);
-   
    XLXI_551 : AND2
       port map (I0=>flg_clf_s4,
                 I1=>clkw,
@@ -1184,6 +1200,50 @@ begin
       port map (I0=>jmp_jmp,
                 I1=>s5_DUMMY,
                 O=>jmp_jmp_s5);
+   
+   XLXI_571 : AND2
+      port map (I0=>jmp_ifjmp_flag_not_equals_op,
+                I1=>s4_DUMMY,
+                O=>jmp_ifjmp_flag_not_equals_op_s4);
+   
+   XLXI_572 : AND2
+      port map (I0=>jmp_ifjmp_flag_not_equals_op,
+                I1=>s5_DUMMY,
+                O=>jmp_ifjmp_flag_not_equals_op_s5);
+   
+   XLXI_573 : AND2
+      port map (I0=>XLXN_1063,
+                I1=>jmp_ifjmp,
+                O=>jmp_ifjmp_flag_not_equals_op);
+   
+   XLXI_574 : INV
+      port map (I=>flag_equals_op,
+                O=>XLXN_1063);
+   
+   XLXI_575 : OR5
+      port map (I0=>s1_DUMMY,
+                I1=>ls_ldc_s4,
+                I2=>jmp_ifjmp_flag_equals_op_s4,
+                I3=>jmp_jmp_s4,
+                I4=>jmp_ifjmp_flag_not_equals_op_s4,
+                O=>XLXN_4);
+   
+   XLXI_576 : OR5
+      port map (I0=>jmp_ifjmp_flag_not_equals_op_s4,
+                I1=>ls_ldc_s4,
+                I2=>alu_binary_s5,
+                I3=>alu_unari_s4,
+                I4=>s1_DUMMY,
+                O=>XLXN_23);
+   
+   XLXI_577 : OR6_HXILINX_cpu_control
+      port map (I0=>jmp_ifjmp_flag_not_equals_op_s5,
+                I1=>jmp_ifjmp_flag_equals_op_s5,
+                I2=>jmp_jmp_s5,
+                I3=>jmp_jmpr_s4,
+                I4=>ls_ldc_s6,
+                I5=>s3_DUMMY,
+                O=>XLXN_11);
    
 end BEHAVIORAL;
 

@@ -91,7 +91,7 @@
             <blockpin signalname="a_o(7:0)" name="Q(7:0)" />
         </block>
         <block symbolname="ram256x1s" name="XLXI_1">
-            <attr value="0000000000000000000000000000000000000000000000000000000000000012" name="INIT">
+            <attr value="0000000000000000000000000000000000000000000000000000000000000072" name="INIT">
                 <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
                 <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
                 <trait valuetype="BitVector 256 hexadecimal" />
@@ -115,7 +115,7 @@
             <blockpin signalname="a_o(7:0)" name="A(7:0)" />
         </block>
         <block symbolname="ram256x1s" name="XLXI_18">
-            <attr value="0000000000000000000000000000000000000000000000000000000000000041" name="INIT">
+            <attr value="0000000000000000000000000000000000000000000000000000000000000901" name="INIT">
                 <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
                 <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
                 <trait valuetype="BitVector 256 hexadecimal" />
@@ -127,6 +127,11 @@
             <blockpin signalname="a_o(7:0)" name="A(7:0)" />
         </block>
         <block symbolname="ram256x1s" name="XLXI_19">
+            <attr value="0000000000000000000000000000000000000000000000000000000000000040" name="INIT">
+                <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
+                <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
+                <trait valuetype="BitVector 256 hexadecimal" />
+            </attr>
             <blockpin signalname="i_w" name="WE" />
             <blockpin signalname="i_wclk" name="WCLK" />
             <blockpin signalname="i(3)" name="D" />
@@ -134,7 +139,7 @@
             <blockpin signalname="a_o(7:0)" name="A(7:0)" />
         </block>
         <block symbolname="ram256x1s" name="XLXI_20">
-            <attr value="0000000000000000000000000000000000000000000000000000000000000000" name="INIT">
+            <attr value="0000000000000000000000000000000000000000000000000000000000000020" name="INIT">
                 <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
                 <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
                 <trait valuetype="BitVector 256 hexadecimal" />
@@ -146,7 +151,7 @@
             <blockpin signalname="a_o(7:0)" name="A(7:0)" />
         </block>
         <block symbolname="ram256x1s" name="XLXI_21">
-            <attr value="0000000000000000000000000000000000000000000000000000000000000005" name="INIT">
+            <attr value="0000000000000000000000000000000000000000000000000000000000000205" name="INIT">
                 <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
                 <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
                 <trait valuetype="BitVector 256 hexadecimal" />
@@ -158,7 +163,7 @@
             <blockpin signalname="a_o(7:0)" name="A(7:0)" />
         </block>
         <block symbolname="ram256x1s" name="XLXI_22">
-            <attr value="0000000000000000000000000000000000000000000000000000000000000020" name="INIT">
+            <attr value="00000000000000000000000000000000000000000000000000000000000006A0" name="INIT">
                 <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
                 <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
                 <trait valuetype="BitVector 256 hexadecimal" />
@@ -264,7 +269,9 @@
         <instance x="1584" y="1088" name="XLXI_1" orien="R0" />
         <instance x="1584" y="1440" name="XLXI_17" orien="R0" />
         <instance x="1584" y="1792" name="XLXI_18" orien="R0" />
-        <instance x="1584" y="2144" name="XLXI_19" orien="R0" />
+        <instance x="1584" y="2144" name="XLXI_19" orien="R0">
+            <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="INIT" x="192" y="-576" type="instance" />
+        </instance>
         <instance x="1584" y="2496" name="XLXI_20" orien="R0" />
         <instance x="1584" y="2848" name="XLXI_21" orien="R0" />
         <instance x="1584" y="3200" name="XLXI_22" orien="R0" />

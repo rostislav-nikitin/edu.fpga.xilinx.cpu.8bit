@@ -206,6 +206,8 @@ BEGIN
 -- *** Test Bench - User Defined Section ***
    tb : PROCESS
    BEGIN
+		manual_r0_w <= '0';
+		manual_r1_w <= '0';
 		rst <= '1';
 		wait for 10 ns;
 		rst <= '0';
@@ -219,6 +221,8 @@ BEGIN
 			-- ADD
 			one_step(clk);
 			-- JMP
+			one_step(clk);
+			-- JMPIF
 			one_step(clk);
 		end loop;
 		
