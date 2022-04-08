@@ -4,14 +4,16 @@ Number of CPUs detected in this system: 32
 Turning on mult-threading, number of parallel sub-compilation jobs: 64 
 Determining compilation order of HDL files
 Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cmp_1bit.vhf" into library work
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/bus_muxer.vhf" into library work
 Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/stepper.vhf" into library work
-Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/one_8bit.vhf" into library work
 Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/lzero.vhf" into library work
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/encoder8_3.vhf" into library work
 Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cmp_8bit.vhf" into library work
-Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/buffer_8bit.vhf" into library work
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/alu_output_muxer.vhf" into library work
 Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/reg_8bit.vhf" into library work
 Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/ram_256bytes.vhf" into library work
 Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/pass_through_or_one.vhf" into library work
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_output_muxer.vhf" into library work
 Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_control.vhf" into library work
 Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/clk_generator.vhf" into library work
 Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/alu.vhf" into library work
@@ -19,17 +21,12 @@ Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" int
 Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/tb_asm_counter.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 108724 KB
-Fuse CPU Usage: 1480 ms
+Fuse Memory Usage: 110220 KB
+Fuse CPU Usage: 1540 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
 Compiling package vcomponents
-Compiling architecture behavioral of entity LD8_HXILINX_cpu [ld8_hxilinx_cpu_default]
-Compiling architecture obuft8_hxilinx_cpu_v of entity OBUFT8_HXILINX_cpu [obuft8_hxilinx_cpu_default]
-Compiling architecture inv_v of entity INV [inv_default]
-Compiling architecture behavioral of entity buffer_8bit_MUSER_cpu [buffer_8bit_muser_cpu_default]
-Compiling architecture behavioral of entity reg_8bit_MUSER_cpu [reg_8bit_muser_cpu_default]
 Compiling package std_logic_arith
 Compiling package std_logic_unsigned
 Compiling architecture d3_8e_hxilinx_cpu_v of entity D3_8E_HXILINX_cpu [d3_8e_hxilinx_cpu_default]
@@ -41,16 +38,20 @@ Compiling architecture or3_v of entity OR3 [or3_default]
 Compiling architecture inv8_hxilinx_cpu_v of entity INV8_HXILINX_cpu [inv8_hxilinx_cpu_default]
 Compiling architecture or2_v of entity OR2 [or2_default]
 Compiling architecture xnor2_v of entity XNOR2 [xnor2_default]
+Compiling architecture inv_v of entity INV [inv_default]
 Compiling architecture behavioral of entity cmp_1bit_MUSER_cpu [cmp_1bit_muser_cpu_default]
 Compiling architecture pullup_v of entity PULLUP [pullup_default]
 Compiling architecture pulldown_v of entity PULLDOWN [pulldown_default]
 Compiling architecture behavioral of entity cmp_8bit_MUSER_cpu [cmp_8bit_muser_cpu_default]
 Compiling architecture nor8_hxilinx_cpu_v of entity NOR8_HXILINX_cpu [nor8_hxilinx_cpu_default]
 Compiling architecture behavioral of entity lzero_MUSER_cpu [lzero_muser_cpu_default]
+Compiling architecture m16_1e_hxilinx_cpu_v of entity M16_1E_HXILINX_cpu [m16_1e_hxilinx_cpu_default]
+Compiling architecture behavioral of entity bus_muxer_MUSER_cpu [bus_muxer_muser_cpu_default]
+Compiling architecture gnd_v of entity GND [gnd_default]
+Compiling architecture behavioral of entity alu_output_muxer_MUSER_cpu [alu_output_muxer_muser_cpu_defau...]
 Compiling architecture behavioral of entity alu_MUSER_cpu [alu_muser_cpu_default]
 Compiling architecture behavioral of entity FJKC_HXILINX_cpu [\FJKC_HXILINX_cpu('0')\]
 Compiling architecture and2b1_v of entity AND2B1 [and2b1_default]
-Compiling architecture gnd_v of entity GND [gnd_default]
 Compiling architecture behavioral of entity clk_generator_MUSER_cpu [clk_generator_muser_cpu_default]
 Compiling architecture behavioral of entity CB4CE_HXILINX_cpu [cb4ce_hxilinx_cpu_default]
 Compiling architecture behavioral of entity stepper_MUSER_cpu [stepper_muser_cpu_default]
@@ -60,21 +61,28 @@ Compiling architecture or5_v of entity OR5 [or5_default]
 Compiling architecture and3b1_v of entity AND3B1 [and3b1_default]
 Compiling architecture or6_hxilinx_cpu_v of entity OR6_HXILINX_cpu [or6_hxilinx_cpu_default]
 Compiling architecture behavioral of entity cpu_control_MUSER_cpu [cpu_control_muser_cpu_default]
-Compiling architecture behavioral of entity one_8bit_MUSER_cpu [one_8bit_muser_cpu_default]
+Compiling architecture m2_1_hxilinx_cpu_v of entity M2_1_HXILINX_cpu [m2_1_hxilinx_cpu_default]
 Compiling architecture behavioral of entity pass_through_or_one_MUSER_cpu [pass_through_or_one_muser_cpu_de...]
 Compiling package textio
 Compiling package vital_timing
 Compiling package vital_primitives
 Compiling package vpkg
 Compiling architecture ram256x1s_v of entity RAM256X1S [\RAM256X1S("00000000000000000000...]
+Compiling architecture behavioral of entity LD8_HXILINX_cpu [ld8_hxilinx_cpu_default]
 Compiling architecture behavioral of entity ram_256bytes_MUSER_cpu [ram_256bytes_muser_cpu_default]
 Compiling architecture behavioral of entity LD4CE_HXILINX_cpu [ld4ce_hxilinx_cpu_default]
 Compiling architecture fdc_1_v of entity FDC_1 [\FDC_1('0')\]
+Compiling architecture behavioral of entity LD8CE_HXILINX_cpu [ld8ce_hxilinx_cpu_default]
+Compiling architecture behavioral of entity reg_8bit_MUSER_cpu [reg_8bit_muser_cpu_default]
+Compiling architecture and8_hxilinx_cpu_v of entity AND8_HXILINX_cpu [and8_hxilinx_cpu_default]
+Compiling architecture behavioral of entity encoder8_3_MUSER_cpu [encoder8_3_muser_cpu_default]
+Compiling architecture behavioral of entity cpu_output_muxer_MUSER_cpu [cpu_output_muxer_muser_cpu_defau...]
+Compiling architecture behavioral of entity CB16CE_HXILINX_cpu [cb16ce_hxilinx_cpu_default]
 Compiling architecture behavioral of entity cpu [cpu_default]
 Compiling architecture behavioral of entity cpu_cpu_sch_tb
 Time Resolution for simulation is 1ps.
-Compiled 105 VHDL Units
+Compiled 117 VHDL Units
 Built simulation executable /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_cpu_sch_tb_isim_beh.exe
-Fuse Memory Usage: 4369112 KB
-Fuse CPU Usage: 2040 ms
-GCC CPU Usage: 10290 ms
+Fuse Memory Usage: 4370732 KB
+Fuse CPU Usage: 2120 ms
+GCC CPU Usage: 3680 ms

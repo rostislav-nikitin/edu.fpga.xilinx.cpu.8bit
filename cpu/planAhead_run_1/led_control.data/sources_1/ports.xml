@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Bus Id="rind">
+			<Port Id="7" Dir="IN"/>
+			<Port Id="6" Dir="IN"/>
+			<Port Id="5" Dir="IN"/>
+			<Port Id="4" Dir="IN"/>
+			<Port Id="3" Dir="IN"/>
+			<Port Id="2" Dir="IN"/>
+			<Port Id="1" Dir="IN"/>
+			<Port Id="0" Dir="IN"/>
+		</Bus>
+		<Bus Id="alu_op">
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Bus Id="flags_o">
+			<Port Id="3" Dir="OUT"/>
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Bus Id="ir_o">
+			<Port Id="7" Dir="OUT"/>
+			<Port Id="6" Dir="OUT"/>
+			<Port Id="5" Dir="OUT"/>
+			<Port Id="4" Dir="OUT"/>
+			<Port Id="3" Dir="OUT"/>
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Bus Id="monitor">
+			<Port Id="7" Dir="OUT"/>
+			<Port Id="6" Dir="OUT"/>
+			<Port Id="5" Dir="OUT"/>
+			<Port Id="4" Dir="OUT"/>
+			<Port Id="3" Dir="OUT"/>
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Bus Id="ram_a_o">
+			<Port Id="7" Dir="OUT"/>
+			<Port Id="6" Dir="OUT"/>
+			<Port Id="5" Dir="OUT"/>
+			<Port Id="4" Dir="OUT"/>
+			<Port Id="3" Dir="OUT"/>
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Bus Id="sysbus">
+			<Port Id="7" Dir="OUT"/>
+			<Port Id="6" Dir="OUT"/>
+			<Port Id="5" Dir="OUT"/>
+			<Port Id="4" Dir="OUT"/>
+			<Port Id="3" Dir="OUT"/>
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Port Id="clk" Dir="IN"/>
+		<Port Id="rinr" Dir="IN"/>
+		<Port Id="rinw" Dir="IN"/>
+		<Port Id="rst_in" Dir="IN"/>
+		<Port Id="acc_r" Dir="OUT"/>
+		<Port Id="acc_w" Dir="OUT"/>
+		<Port Id="alu_C_in" Dir="OUT"/>
+		<Port Id="alu_C_in_enabled" Dir="OUT"/>
+		<Port Id="alu_C_out" Dir="OUT"/>
+		<Port Id="alu_eq" Dir="OUT"/>
+		<Port Id="alu_gt" Dir="OUT"/>
+		<Port Id="alu_z" Dir="OUT"/>
+		<Port Id="bus1" Dir="OUT"/>
+		<Port Id="clkc" Dir="OUT"/>
+		<Port Id="clkr" Dir="OUT"/>
+		<Port Id="clkw" Dir="OUT"/>
+		<Port Id="ctl_iar_w" Dir="OUT"/>
+		<Port Id="ctl_r0_w" Dir="OUT"/>
+		<Port Id="ctl_r1_w" Dir="OUT"/>
+		<Port Id="flags_clr" Dir="OUT"/>
+		<Port Id="flags_w" Dir="OUT"/>
+		<Port Id="iar_r" Dir="OUT"/>
+		<Port Id="iar_w" Dir="OUT"/>
+		<Port Id="ir_w" Dir="OUT"/>
+		<Port Id="ram_a_w" Dir="OUT"/>
+		<Port Id="ram_r" Dir="OUT"/>
+		<Port Id="ram_w" Dir="OUT"/>
+		<Port Id="r0_r" Dir="OUT"/>
+		<Port Id="r1_r" Dir="OUT"/>
+		<Port Id="r2_r" Dir="OUT"/>
+		<Port Id="r2_w" Dir="OUT"/>
+		<Port Id="r3_r" Dir="OUT"/>
+		<Port Id="r3_w" Dir="OUT"/>
+		<Port Id="temp_w" Dir="OUT"/>
+	</Ifc>
+</Interface>
+

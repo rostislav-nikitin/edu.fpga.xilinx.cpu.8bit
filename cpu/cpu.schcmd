@@ -1,0 +1,13 @@
+select figure at 597 3365 8 -branches -sn=1
+move instance at 416 3456 to 400 3456 R0 -keepConn -sn=1
+undo
+select figure at 801 3445 8 -branches -sn=1
+select figure at 821 3516 8 -branches -sn=1
+select figure at 798 3457 8 -branches -sn=1
+move wire at 800 3440 800 3456 to 864 3440 864 3456 -keepConn -sn=1
+select figure at 906 3515 8 -branches -sn=1
+select figure at 133 3116 8 -branches -sn=1
+select all in 133 3116 895 3508 -branches -enclosed -sn=1
+select figure at 454 3017 8 -branches -sn=1
+select figure at 105 3073 8 -branches -sn=1
+select all in 105 3073 908 3568 -branches -enclosed -sn=1

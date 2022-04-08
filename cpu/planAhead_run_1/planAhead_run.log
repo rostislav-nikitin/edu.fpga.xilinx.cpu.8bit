@@ -1,0 +1,112 @@
+
+****** PlanAhead v14.3 (64-bit)
+  **** Build 209282 by xbuild on Thu Oct 18 20:46:04 MDT 2012
+    ** Copyright 1986-1999, 2001-2012 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from /opt/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [/opt/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/opt/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/pa.fromHdl.tcl
+# create_project -name led_control -dir "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/planAhead_run_1" -part xa6slx9ftg256-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "cpu.ucf" [current_fileset -constrset]
+Adding file '/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {cmp_1bit.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {bus_muxer.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {stepper.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {lzero.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {encoder8_3.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {cmp_8bit.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {alu_output_muxer.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {reg_8bit.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ram_256bytes.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {pass_through_or_one.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {cpu_output_muxer.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {cpu_control.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {clk_generator.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {alu.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {cpu.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set_property top cpu $srcset
+# add_files [list {cpu.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xa6slx9ftg256-3
+Using Verific elaboration
+Parsing VHDL file "/opt/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "/opt/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" into library work
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from /opt/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/aspartan6/xa6slx9/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/aspartan6/xa6slx9/ClockBuffers.xml
+Loading package pin functions from /opt/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from /opt/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/aspartan6/xa6slx9/ftg256/Package.xml
+Loading io standards from /opt/Xilinx/14.3/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from /opt/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : /opt/Xilinx/14.3/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.ucf]
+CRITICAL WARNING: [Designutils 20-31] Unrecognized symbol NET [/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.ucf:18]
+Finished Parsing UCF File [/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  RAM256X1S => RAM256X1S (RAMS64E, RAMS64E, RAMS64E, RAMS64E, MUXF7, MUXF7, MUXF8): 8 instances
+
+Phase 0 | Netlist Checksum: 7dcc7c5e
+open_rtl_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:09 . Memory (MB): peak = 2998.012 ; gain = 169.078
+update_compile_order -fileset sim_1
+set_property iostandard LVCMOS25 [get_ports [list {monitor[7]} {monitor[6]} {monitor[5]} {monitor[4]} {monitor[3]} {monitor[2]} {monitor[1]} {monitor[0]}]]
+startgroup
+set_property package_pin P4 [get_ports {monitor[0]}]
+endgroup
+startgroup
+set_property package_pin N5 [get_ports {monitor[1]}]
+endgroup
+startgroup
+set_property package_pin P6 [get_ports {monitor[2]}]
+endgroup
+startgroup
+set_property package_pin M6 [get_ports {monitor[3]}]
+endgroup
+set_property package_pin "" [get_ports [list  {monitor[4]}]]
+startgroup
+set_property package_pin P5 [get_ports {monitor[2]}]
+endgroup
+save_design
+set_property package_pin "" [get_ports [list  {sysbus[0]}]]
+save_design
+exit
+INFO: [Common 17-206] Exiting PlanAhead at Sat Apr  9 01:56:46 2022...
+INFO: [Common 17-83] Releasing license: PlanAhead

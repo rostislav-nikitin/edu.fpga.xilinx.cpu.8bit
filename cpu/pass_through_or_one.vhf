@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : pass_through_or_one.vhf
--- /___/   /\     Timestamp : 03/30/2022 23:59:50
+-- /___/   /\     Timestamp : 04/08/2022 22:04:07
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -18,148 +18,33 @@
 --    This vhdl netlist is translated from an ECS schematic. It can be 
 --    synthesized and simulated, but it should not be modified. 
 --
------ CELL OBUFT8_HXILINX_pass_through_or_one -----
+----- CELL M2_1_HXILINX_pass_through_or_one -----
   
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 
-entity OBUFT8_HXILINX_pass_through_or_one is
+entity M2_1_HXILINX_pass_through_or_one is
+  
 port(
-    O  : out std_logic_vector(7 downto 0);
+    O   : out std_logic;
 
-    I  : in std_logic_vector(7 downto 0);
-    T  : in std_logic
+    D0  : in std_logic;
+    D1  : in std_logic;
+    S0  : in std_logic
   );
-end OBUFT8_HXILINX_pass_through_or_one;
+end M2_1_HXILINX_pass_through_or_one;
 
-architecture OBUFT8_HXILINX_pass_through_or_one_V of OBUFT8_HXILINX_pass_through_or_one is
+architecture M2_1_HXILINX_pass_through_or_one_V of M2_1_HXILINX_pass_through_or_one is
 begin
-  process (I, T)
+  process (D0, D1, S0)
   begin
-    if (T='0') then
-      O  <= I;
-    else
-      O  <= (others => 'Z');
-  end if;
- end process;
-
-end OBUFT8_HXILINX_pass_through_or_one_V;
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
-entity one_8bit_MUSER_pass_through_or_one is
-   port ( one : out   std_logic_vector (7 downto 0));
-end one_8bit_MUSER_pass_through_or_one;
-
-architecture BEHAVIORAL of one_8bit_MUSER_pass_through_or_one is
-   attribute BOX_TYPE   : string ;
-   signal XLXN_10 : std_logic;
-   signal XLXN_11 : std_logic;
-   component BUF
-      port ( I : in    std_logic; 
-             O : out   std_logic);
-   end component;
-   attribute BOX_TYPE of BUF : component is "BLACK_BOX";
-   
-   component PULLDOWN
-      port ( O : out   std_logic);
-   end component;
-   attribute BOX_TYPE of PULLDOWN : component is "BLACK_BOX";
-   
-   component PULLUP
-      port ( O : out   std_logic);
-   end component;
-   attribute BOX_TYPE of PULLUP : component is "BLACK_BOX";
-   
-begin
-   XLXI_2 : BUF
-      port map (I=>XLXN_10,
-                O=>one(7));
-   
-   XLXI_3 : BUF
-      port map (I=>XLXN_10,
-                O=>one(6));
-   
-   XLXI_4 : BUF
-      port map (I=>XLXN_10,
-                O=>one(5));
-   
-   XLXI_5 : BUF
-      port map (I=>XLXN_10,
-                O=>one(4));
-   
-   XLXI_6 : BUF
-      port map (I=>XLXN_10,
-                O=>one(3));
-   
-   XLXI_7 : BUF
-      port map (I=>XLXN_10,
-                O=>one(2));
-   
-   XLXI_9 : BUF
-      port map (I=>XLXN_10,
-                O=>one(1));
-   
-   XLXI_10 : BUF
-      port map (I=>XLXN_11,
-                O=>one(0));
-   
-   XLXI_11 : PULLDOWN
-      port map (O=>XLXN_10);
-   
-   XLXI_12 : PULLUP
-      port map (O=>XLXN_11);
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
-entity buffer_8bit_MUSER_pass_through_or_one is
-   port ( e : in    std_logic; 
-          i : in    std_logic_vector (7 downto 0); 
-          o : out   std_logic_vector (7 downto 0));
-end buffer_8bit_MUSER_pass_through_or_one;
-
-architecture BEHAVIORAL of buffer_8bit_MUSER_pass_through_or_one is
-   attribute HU_SET     : string ;
-   attribute BOX_TYPE   : string ;
-   signal XLXN_2 : std_logic;
-   component OBUFT8_HXILINX_pass_through_or_one
-      port ( I : in    std_logic_vector (7 downto 0); 
-             T : in    std_logic; 
-             O : out   std_logic_vector (7 downto 0));
-   end component;
-   
-   component INV
-      port ( I : in    std_logic; 
-             O : out   std_logic);
-   end component;
-   attribute BOX_TYPE of INV : component is "BLACK_BOX";
-   
-   attribute HU_SET of XLXI_54 : label is "XLXI_54_37";
-begin
-   XLXI_54 : OBUFT8_HXILINX_pass_through_or_one
-      port map (I(7 downto 0)=>i(7 downto 0),
-                T=>XLXN_2,
-                O(7 downto 0)=>o(7 downto 0));
-   
-   XLXI_55 : INV
-      port map (I=>e,
-                O=>XLXN_2);
-   
-end BEHAVIORAL;
-
-
+    case S0 is
+    when '0' => O <= D0;
+    when '1' => O <= D1;
+    when others => NULL;
+    end case;
+    end process; 
+end M2_1_HXILINX_pass_through_or_one_V;
 
 library ieee;
 use ieee.std_logic_1164.ALL;
@@ -174,44 +59,74 @@ entity pass_through_or_one is
 end pass_through_or_one;
 
 architecture BEHAVIORAL of pass_through_or_one is
-   attribute BOX_TYPE   : string ;
-   signal one_out : std_logic_vector (7 downto 0);
-   signal XLXN_32 : std_logic;
-   signal o_DUMMY : std_logic_vector (7 downto 0);
-   component buffer_8bit_MUSER_pass_through_or_one
-      port ( e : in    std_logic; 
-             i : in    std_logic_vector (7 downto 0); 
-             o : out   std_logic_vector (7 downto 0));
+   attribute HU_SET     : string ;
+   signal const_one  : std_logic;
+   signal const_zero : std_logic;
+   component M2_1_HXILINX_pass_through_or_one
+      port ( D0 : in    std_logic; 
+             D1 : in    std_logic; 
+             S0 : in    std_logic; 
+             O  : out   std_logic);
    end component;
    
-   component one_8bit_MUSER_pass_through_or_one
-      port ( one : out   std_logic_vector (7 downto 0));
-   end component;
-   
-   component INV
-      port ( I : in    std_logic; 
-             O : out   std_logic);
-   end component;
-   attribute BOX_TYPE of INV : component is "BLACK_BOX";
-   
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_33";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_34";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_35";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_36";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_37";
+   attribute HU_SET of XLXI_7 : label is "XLXI_7_38";
+   attribute HU_SET of XLXI_8 : label is "XLXI_8_39";
+   attribute HU_SET of XLXI_13 : label is "XLXI_13_40";
 begin
-   o(7 downto 0) <= o_DUMMY(7 downto 0);
-   buff_const_one : buffer_8bit_MUSER_pass_through_or_one
-      port map (e=>one,
-                i(7 downto 0)=>one_out(7 downto 0),
-                o(7 downto 0)=>o_DUMMY(7 downto 0));
+   const_one <= '1';
+   const_zero <= '0';
+   XLXI_1 : M2_1_HXILINX_pass_through_or_one
+      port map (D0=>i(1),
+                D1=>const_zero,
+                S0=>one,
+                O=>o(1));
    
-   buff_origin : buffer_8bit_MUSER_pass_through_or_one
-      port map (e=>XLXN_32,
-                i(7 downto 0)=>i(7 downto 0),
-                o(7 downto 0)=>o_DUMMY(7 downto 0));
+   XLXI_3 : M2_1_HXILINX_pass_through_or_one
+      port map (D0=>i(2),
+                D1=>const_zero,
+                S0=>one,
+                O=>o(2));
    
-   const_one : one_8bit_MUSER_pass_through_or_one
-      port map (one(7 downto 0)=>one_out(7 downto 0));
+   XLXI_4 : M2_1_HXILINX_pass_through_or_one
+      port map (D0=>i(3),
+                D1=>const_zero,
+                S0=>one,
+                O=>o(3));
    
-   inv_one : INV
-      port map (I=>one,
-                O=>XLXN_32);
+   XLXI_5 : M2_1_HXILINX_pass_through_or_one
+      port map (D0=>i(4),
+                D1=>const_zero,
+                S0=>one,
+                O=>o(4));
+   
+   XLXI_6 : M2_1_HXILINX_pass_through_or_one
+      port map (D0=>i(5),
+                D1=>const_zero,
+                S0=>one,
+                O=>o(5));
+   
+   XLXI_7 : M2_1_HXILINX_pass_through_or_one
+      port map (D0=>i(6),
+                D1=>const_zero,
+                S0=>one,
+                O=>o(6));
+   
+   XLXI_8 : M2_1_HXILINX_pass_through_or_one
+      port map (D0=>i(7),
+                D1=>const_zero,
+                S0=>one,
+                O=>o(7));
+   
+   XLXI_13 : M2_1_HXILINX_pass_through_or_one
+      port map (D0=>i(0),
+                D1=>const_one,
+                S0=>one,
+                O=>o(0));
    
 end BEHAVIORAL;
 

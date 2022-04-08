@@ -1,0 +1,22 @@
+//! **************************************************************************
+// Written by: Map P.40xd on Sat Apr 09 02:30:49 2022
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "T8" LEVEL 1;
+COMP "monitor<0>" LOCATE = SITE "P4" LEVEL 1;
+COMP "monitor<1>" LOCATE = SITE "N5" LEVEL 1;
+COMP "monitor<2>" LOCATE = SITE "P5" LEVEL 1;
+COMP "monitor<3>" LOCATE = SITE "M6" LEVEL 1;
+COMP "rst_in" LOCATE = SITE "C3" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "XLXI_132/COUNT_0" BEL "XLXI_132/COUNT_1" BEL
+        "XLXI_132/COUNT_2" BEL "XLXI_132/COUNT_3" BEL "XLXI_132/COUNT_4" BEL
+        "XLXI_132/COUNT_5" BEL "XLXI_131/COUNT_0" BEL "XLXI_131/COUNT_1" BEL
+        "XLXI_131/COUNT_2" BEL "XLXI_131/COUNT_3" BEL "XLXI_131/COUNT_4" BEL
+        "XLXI_131/COUNT_5" BEL "XLXI_131/COUNT_6" BEL "XLXI_131/COUNT_7" BEL
+        "XLXI_131/COUNT_8" BEL "XLXI_131/COUNT_9" BEL "XLXI_131/COUNT_10" BEL
+        "XLXI_131/COUNT_11" BEL "XLXI_131/COUNT_12" BEL "XLXI_131/COUNT_13"
+        BEL "XLXI_131/COUNT_14" BEL "XLXI_131/COUNT_15" BEL "clk_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
+SCHEMATIC END;
+

@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/test_buf.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/test_buf.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/test_buf.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/test_buf.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/test_buf.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/test_buf.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa6slx9-ftg256-3 test_buf.ngc test_buf.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_buf_map.ncd test_buf.ngd test_buf.pcf 
+par -w -intstyle ise -ol high -mt off test_buf_map.ncd test_buf.ncd test_buf.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml test_buf.twx test_buf.ncd -o test_buf.twr test_buf.pcf 

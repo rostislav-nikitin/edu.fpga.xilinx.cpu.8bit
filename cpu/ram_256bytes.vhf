@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ram_256bytes.vhf
--- /___/   /\     Timestamp : 04/04/2022 23:18:03
+-- /___/   /\     Timestamp : 04/07/2022 05:27:58
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -46,32 +46,6 @@ end process;
 
 end Behavioral;
 
------ CELL OBUFT8_HXILINX_ram_256bytes -----
-  
-library IEEE;
-use IEEE.STD_LOGIC_1164.all;
-
-entity OBUFT8_HXILINX_ram_256bytes is
-port(
-    O  : out std_logic_vector(7 downto 0);
-
-    I  : in std_logic_vector(7 downto 0);
-    T  : in std_logic
-  );
-end OBUFT8_HXILINX_ram_256bytes;
-
-architecture OBUFT8_HXILINX_ram_256bytes_V of OBUFT8_HXILINX_ram_256bytes is
-begin
-  process (I, T)
-  begin
-    if (T='0') then
-      O  <= I;
-    else
-      O  <= (others => 'Z');
-  end if;
- end process;
-
-end OBUFT8_HXILINX_ram_256bytes_V;
 
 library ieee;
 use ieee.std_logic_1164.ALL;
@@ -94,8 +68,6 @@ architecture BEHAVIORAL of ram_256bytes is
    attribute INIT       : string ;
    attribute BOX_TYPE   : string ;
    attribute HU_SET     : string ;
-   signal ro        : std_logic_vector (7 downto 0);
-   signal XLXN_71   : std_logic;
    signal a_o_DUMMY : std_logic_vector (7 downto 0);
    component RAM256X1S
       -- synopsys translate_off
@@ -119,12 +91,6 @@ architecture BEHAVIORAL of ram_256bytes is
              Q : out   std_logic_vector (7 downto 0));
    end component;
    
-   component OBUFT8_HXILINX_ram_256bytes
-      port ( I : in    std_logic_vector (7 downto 0); 
-             T : in    std_logic; 
-             O : out   std_logic_vector (7 downto 0));
-   end component;
-   
    component INV
       port ( I : in    std_logic; 
              O : out   std_logic);
@@ -133,7 +99,7 @@ architecture BEHAVIORAL of ram_256bytes is
    
    attribute INIT of XLXI_1 : label is 
          "0000000000000000000000000000000000000000000000000000000000000072";
-   attribute HU_SET of XLXI_15 : label is "XLXI_15_23";
+   attribute HU_SET of XLXI_15 : label is "XLXI_15_33";
    attribute INIT of XLXI_18 : label is 
          "0000000000000000000000000000000000000000000000000000000000000901";
    attribute INIT of XLXI_19 : label is 
@@ -146,7 +112,6 @@ architecture BEHAVIORAL of ram_256bytes is
          "00000000000000000000000000000000000000000000000000000000000006A0";
    attribute INIT of XLXI_23 : label is 
          "0000000000000000000000000000000000000000000000000000000000000010";
-   attribute HU_SET of XLXI_41 : label is "XLXI_41_24";
 begin
    a_o(7 downto 0) <= a_o_DUMMY(7 downto 0);
    XLXI_1 : RAM256X1S
@@ -158,7 +123,7 @@ begin
                 D=>i(0),
                 WCLK=>i_wclk,
                 WE=>i_w,
-                O=>ro(0));
+                O=>o(0));
    
    XLXI_15 : LD8_HXILINX_ram_256bytes
       port map (D(7 downto 0)=>a(7 downto 0),
@@ -174,7 +139,7 @@ begin
                 D=>i(1),
                 WCLK=>i_wclk,
                 WE=>i_w,
-                O=>ro(1));
+                O=>o(1));
    
    XLXI_18 : RAM256X1S
    -- synopsys translate_off
@@ -185,7 +150,7 @@ begin
                 D=>i(2),
                 WCLK=>i_wclk,
                 WE=>i_w,
-                O=>ro(2));
+                O=>o(2));
    
    XLXI_19 : RAM256X1S
    -- synopsys translate_off
@@ -196,7 +161,7 @@ begin
                 D=>i(3),
                 WCLK=>i_wclk,
                 WE=>i_w,
-                O=>ro(3));
+                O=>o(3));
    
    XLXI_20 : RAM256X1S
    -- synopsys translate_off
@@ -207,7 +172,7 @@ begin
                 D=>i(4),
                 WCLK=>i_wclk,
                 WE=>i_w,
-                O=>ro(4));
+                O=>o(4));
    
    XLXI_21 : RAM256X1S
    -- synopsys translate_off
@@ -218,7 +183,7 @@ begin
                 D=>i(5),
                 WCLK=>i_wclk,
                 WE=>i_w,
-                O=>ro(5));
+                O=>o(5));
    
    XLXI_22 : RAM256X1S
    -- synopsys translate_off
@@ -229,7 +194,7 @@ begin
                 D=>i(6),
                 WCLK=>i_wclk,
                 WE=>i_w,
-                O=>ro(6));
+                O=>o(6));
    
    XLXI_23 : RAM256X1S
    -- synopsys translate_off
@@ -240,16 +205,11 @@ begin
                 D=>i(7),
                 WCLK=>i_wclk,
                 WE=>i_w,
-                O=>ro(7));
-   
-   XLXI_41 : OBUFT8_HXILINX_ram_256bytes
-      port map (I(7 downto 0)=>ro(7 downto 0),
-                T=>XLXN_71,
-                O(7 downto 0)=>o(7 downto 0));
+                O=>o(7));
    
    XLXI_42 : INV
       port map (I=>i_r,
-                O=>XLXN_71);
+                O=>open);
    
 end BEHAVIORAL;
 

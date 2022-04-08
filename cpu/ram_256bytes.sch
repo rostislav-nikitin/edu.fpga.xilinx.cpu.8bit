@@ -20,18 +20,16 @@
         <signal name="i(2)" />
         <signal name="i(1)" />
         <signal name="i(0)" />
-        <signal name="ro(7:0)" />
-        <signal name="ro(7)" />
-        <signal name="ro(6)" />
-        <signal name="ro(5)" />
-        <signal name="ro(4)" />
-        <signal name="ro(3)" />
-        <signal name="ro(2)" />
-        <signal name="ro(1)" />
-        <signal name="ro(0)" />
         <signal name="o(7:0)" />
-        <signal name="XLXN_71" />
         <signal name="i_r" />
+        <signal name="o(0)" />
+        <signal name="o(1)" />
+        <signal name="o(2)" />
+        <signal name="o(3)" />
+        <signal name="o(4)" />
+        <signal name="o(6)" />
+        <signal name="o(7)" />
+        <signal name="o(5)" />
         <port polarity="Input" name="a_w" />
         <port polarity="Input" name="a(7:0)" />
         <port polarity="Output" name="a_o(7:0)" />
@@ -63,19 +61,6 @@
             <rect width="64" x="0" y="-268" height="24" />
             <line x2="64" y1="-128" y2="-128" x1="0" />
         </blockdef>
-        <blockdef name="obuft8">
-            <timestamp>2000-1-1T10:10:10</timestamp>
-            <line x2="96" y1="-48" y2="-96" x1="96" />
-            <line x2="64" y1="-96" y2="-96" x1="96" />
-            <line x2="128" y1="-32" y2="-32" x1="224" />
-            <line x2="128" y1="0" y2="-32" x1="64" />
-            <line x2="64" y1="-32" y2="-64" x1="128" />
-            <line x2="64" y1="-64" y2="0" x1="64" />
-            <line x2="64" y1="-96" y2="-96" x1="0" />
-            <rect width="64" x="0" y="-44" height="24" />
-            <line x2="64" y1="-32" y2="-32" x1="0" />
-            <rect width="96" x="128" y="-44" height="24" />
-        </blockdef>
         <blockdef name="inv">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-32" y2="-32" x1="0" />
@@ -99,7 +84,7 @@
             <blockpin signalname="i_w" name="WE" />
             <blockpin signalname="i_wclk" name="WCLK" />
             <blockpin signalname="i(0)" name="D" />
-            <blockpin signalname="ro(0)" name="O" />
+            <blockpin signalname="o(0)" name="O" />
             <blockpin signalname="a_o(7:0)" name="A(7:0)" />
         </block>
         <block symbolname="ram256x1s" name="XLXI_17">
@@ -111,7 +96,7 @@
             <blockpin signalname="i_w" name="WE" />
             <blockpin signalname="i_wclk" name="WCLK" />
             <blockpin signalname="i(1)" name="D" />
-            <blockpin signalname="ro(1)" name="O" />
+            <blockpin signalname="o(1)" name="O" />
             <blockpin signalname="a_o(7:0)" name="A(7:0)" />
         </block>
         <block symbolname="ram256x1s" name="XLXI_18">
@@ -123,7 +108,7 @@
             <blockpin signalname="i_w" name="WE" />
             <blockpin signalname="i_wclk" name="WCLK" />
             <blockpin signalname="i(2)" name="D" />
-            <blockpin signalname="ro(2)" name="O" />
+            <blockpin signalname="o(2)" name="O" />
             <blockpin signalname="a_o(7:0)" name="A(7:0)" />
         </block>
         <block symbolname="ram256x1s" name="XLXI_19">
@@ -135,7 +120,7 @@
             <blockpin signalname="i_w" name="WE" />
             <blockpin signalname="i_wclk" name="WCLK" />
             <blockpin signalname="i(3)" name="D" />
-            <blockpin signalname="ro(3)" name="O" />
+            <blockpin signalname="o(3)" name="O" />
             <blockpin signalname="a_o(7:0)" name="A(7:0)" />
         </block>
         <block symbolname="ram256x1s" name="XLXI_20">
@@ -147,7 +132,7 @@
             <blockpin signalname="i_w" name="WE" />
             <blockpin signalname="i_wclk" name="WCLK" />
             <blockpin signalname="i(4)" name="D" />
-            <blockpin signalname="ro(4)" name="O" />
+            <blockpin signalname="o(4)" name="O" />
             <blockpin signalname="a_o(7:0)" name="A(7:0)" />
         </block>
         <block symbolname="ram256x1s" name="XLXI_21">
@@ -159,7 +144,7 @@
             <blockpin signalname="i_w" name="WE" />
             <blockpin signalname="i_wclk" name="WCLK" />
             <blockpin signalname="i(5)" name="D" />
-            <blockpin signalname="ro(5)" name="O" />
+            <blockpin signalname="o(5)" name="O" />
             <blockpin signalname="a_o(7:0)" name="A(7:0)" />
         </block>
         <block symbolname="ram256x1s" name="XLXI_22">
@@ -171,7 +156,7 @@
             <blockpin signalname="i_w" name="WE" />
             <blockpin signalname="i_wclk" name="WCLK" />
             <blockpin signalname="i(6)" name="D" />
-            <blockpin signalname="ro(6)" name="O" />
+            <blockpin signalname="o(6)" name="O" />
             <blockpin signalname="a_o(7:0)" name="A(7:0)" />
         </block>
         <block symbolname="ram256x1s" name="XLXI_23">
@@ -183,17 +168,12 @@
             <blockpin signalname="i_w" name="WE" />
             <blockpin signalname="i_wclk" name="WCLK" />
             <blockpin signalname="i(7)" name="D" />
-            <blockpin signalname="ro(7)" name="O" />
+            <blockpin signalname="o(7)" name="O" />
             <blockpin signalname="a_o(7:0)" name="A(7:0)" />
-        </block>
-        <block symbolname="obuft8" name="XLXI_41">
-            <blockpin signalname="ro(7:0)" name="I(7:0)" />
-            <blockpin signalname="XLXN_71" name="T" />
-            <blockpin signalname="o(7:0)" name="O(7:0)" />
         </block>
         <block symbolname="inv" name="XLXI_42">
             <blockpin signalname="i_r" name="I" />
-            <blockpin signalname="XLXN_71" name="O" />
+            <blockpin name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="7609" height="5382">
@@ -269,9 +249,7 @@
         <instance x="1584" y="1088" name="XLXI_1" orien="R0" />
         <instance x="1584" y="1440" name="XLXI_17" orien="R0" />
         <instance x="1584" y="1792" name="XLXI_18" orien="R0" />
-        <instance x="1584" y="2144" name="XLXI_19" orien="R0">
-            <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="INIT" x="192" y="-576" type="instance" />
-        </instance>
+        <instance x="1584" y="2144" name="XLXI_19" orien="R0" />
         <instance x="1584" y="2496" name="XLXI_20" orien="R0" />
         <instance x="1584" y="2848" name="XLXI_21" orien="R0" />
         <instance x="1584" y="3200" name="XLXI_22" orien="R0" />
@@ -319,7 +297,7 @@
         <branch name="i(0)">
             <wire x2="1584" y1="448" y2="448" x1="1216" />
         </branch>
-        <branch name="ro(7:0)">
+        <branch name="o(7:0)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2640" y="400" type="branch" />
             <wire x2="2640" y1="400" y2="512" x1="2640" />
             <wire x2="2640" y1="512" y2="864" x1="2640" />
@@ -329,13 +307,7 @@
             <wire x2="2640" y1="1920" y2="2272" x1="2640" />
             <wire x2="2640" y1="2272" y2="2624" x1="2640" />
             <wire x2="2640" y1="2624" y2="2976" x1="2640" />
-            <wire x2="2720" y1="400" y2="400" x1="2640" />
-            <wire x2="2928" y1="400" y2="400" x1="2720" />
-        </branch>
-        <branch name="ro(7)">
-            <wire x2="2080" y1="2976" y2="2976" x1="1968" />
-            <wire x2="2304" y1="2976" y2="2976" x1="2080" />
-            <wire x2="2544" y1="2976" y2="2976" x1="2304" />
+            <wire x2="3008" y1="400" y2="400" x1="2640" />
         </branch>
         <bustap x2="2544" y1="2976" y2="2976" x1="2640" />
         <bustap x2="2544" y1="2624" y2="2624" x1="2640" />
@@ -351,53 +323,44 @@
         <iomarker fontsize="28" x="160" y="480" name="i_w" orien="R180" />
         <iomarker fontsize="28" x="160" y="336" name="i_r" orien="R180" />
         <iomarker fontsize="28" x="160" y="400" name="i(7:0)" orien="R180" />
-        <branch name="ro(6)">
-            <wire x2="2080" y1="2624" y2="2624" x1="1968" />
-            <wire x2="2304" y1="2624" y2="2624" x1="2080" />
-            <wire x2="2544" y1="2624" y2="2624" x1="2304" />
-        </branch>
-        <branch name="ro(5)">
-            <wire x2="2080" y1="2272" y2="2272" x1="1968" />
-            <wire x2="2304" y1="2272" y2="2272" x1="2080" />
-            <wire x2="2544" y1="2272" y2="2272" x1="2304" />
-        </branch>
-        <branch name="ro(4)">
-            <wire x2="2080" y1="1920" y2="1920" x1="1968" />
-            <wire x2="2304" y1="1920" y2="1920" x1="2080" />
-            <wire x2="2544" y1="1920" y2="1920" x1="2304" />
-        </branch>
-        <branch name="ro(3)">
-            <wire x2="2080" y1="1568" y2="1568" x1="1968" />
-            <wire x2="2304" y1="1568" y2="1568" x1="2080" />
-            <wire x2="2544" y1="1568" y2="1568" x1="2304" />
-        </branch>
-        <branch name="ro(2)">
-            <wire x2="2080" y1="1216" y2="1216" x1="1968" />
-            <wire x2="2304" y1="1216" y2="1216" x1="2080" />
-            <wire x2="2544" y1="1216" y2="1216" x1="2304" />
-        </branch>
-        <branch name="ro(1)">
-            <wire x2="2080" y1="864" y2="864" x1="1968" />
-            <wire x2="2304" y1="864" y2="864" x1="2080" />
-            <wire x2="2544" y1="864" y2="864" x1="2304" />
-        </branch>
-        <branch name="ro(0)">
-            <wire x2="2080" y1="512" y2="512" x1="1968" />
-            <wire x2="2304" y1="512" y2="512" x1="2080" />
-            <wire x2="2544" y1="512" y2="512" x1="2304" />
-        </branch>
-        <instance x="2928" y="432" name="XLXI_41" orien="R0" />
-        <branch name="o(7:0)">
-            <wire x2="3360" y1="400" y2="400" x1="3152" />
-        </branch>
-        <iomarker fontsize="28" x="3360" y="400" name="o(7:0)" orien="R0" />
-        <instance x="2288" y="368" name="XLXI_42" orien="R0" />
-        <branch name="XLXN_71">
-            <wire x2="2928" y1="336" y2="336" x1="2512" />
-        </branch>
         <branch name="i_r">
-            <wire x2="2288" y1="336" y2="336" x1="160" />
+            <wire x2="1376" y1="336" y2="336" x1="160" />
         </branch>
         <iomarker fontsize="28" x="848" y="720" name="a_o(7:0)" orien="R90" />
+        <instance x="1376" y="368" name="XLXI_42" orien="R0" />
+        <branch name="o(0)">
+            <wire x2="2320" y1="512" y2="512" x1="1968" />
+            <wire x2="2544" y1="512" y2="512" x1="2320" />
+        </branch>
+        <branch name="o(1)">
+            <wire x2="2320" y1="864" y2="864" x1="1968" />
+            <wire x2="2544" y1="864" y2="864" x1="2320" />
+        </branch>
+        <branch name="o(2)">
+            <wire x2="2320" y1="1216" y2="1216" x1="1968" />
+            <wire x2="2544" y1="1216" y2="1216" x1="2320" />
+        </branch>
+        <branch name="o(4)">
+            <wire x2="2320" y1="1920" y2="1920" x1="1968" />
+            <wire x2="2544" y1="1920" y2="1920" x1="2320" />
+        </branch>
+        <branch name="o(6)">
+            <wire x2="2320" y1="2624" y2="2624" x1="1968" />
+            <wire x2="2544" y1="2624" y2="2624" x1="2320" />
+        </branch>
+        <branch name="o(7)">
+            <wire x2="2320" y1="2976" y2="2976" x1="1968" />
+            <wire x2="2544" y1="2976" y2="2976" x1="2320" />
+        </branch>
+        <branch name="o(5)">
+            <wire x2="2320" y1="2272" y2="2272" x1="1968" />
+            <wire x2="2544" y1="2272" y2="2272" x1="2320" />
+        </branch>
+        <iomarker fontsize="28" x="3008" y="400" name="o(7:0)" orien="R0" />
+        <branch name="o(3)">
+            <wire x2="2320" y1="1568" y2="1568" x1="1968" />
+            <wire x2="2336" y1="1568" y2="1568" x1="2320" />
+            <wire x2="2544" y1="1568" y2="1568" x1="2336" />
+        </branch>
     </sheet>
 </drawing>

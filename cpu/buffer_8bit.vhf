@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : buffer_8bit.vhf
--- /___/   /\     Timestamp : 03/30/2022 23:59:50
+-- /___/   /\     Timestamp : 04/07/2022 00:16:17
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -18,32 +18,6 @@
 --    This vhdl netlist is translated from an ECS schematic. It can be 
 --    synthesized and simulated, but it should not be modified. 
 --
------ CELL OBUFT8_HXILINX_buffer_8bit -----
-  
-library IEEE;
-use IEEE.STD_LOGIC_1164.all;
-
-entity OBUFT8_HXILINX_buffer_8bit is
-port(
-    O  : out std_logic_vector(7 downto 0);
-
-    I  : in std_logic_vector(7 downto 0);
-    T  : in std_logic
-  );
-end OBUFT8_HXILINX_buffer_8bit;
-
-architecture OBUFT8_HXILINX_buffer_8bit_V of OBUFT8_HXILINX_buffer_8bit is
-begin
-  process (I, T)
-  begin
-    if (T='0') then
-      O  <= I;
-    else
-      O  <= (others => 'Z');
-  end if;
- end process;
-
-end OBUFT8_HXILINX_buffer_8bit_V;
 
 library ieee;
 use ieee.std_logic_1164.ALL;
@@ -58,14 +32,20 @@ entity buffer_8bit is
 end buffer_8bit;
 
 architecture BEHAVIORAL of buffer_8bit is
-   attribute HU_SET     : string ;
+   attribute IOSTANDARD : string ;
+   attribute SLEW       : string ;
+   attribute DRIVE      : string ;
    attribute BOX_TYPE   : string ;
-   signal XLXN_2 : std_logic;
-   component OBUFT8_HXILINX_buffer_8bit
-      port ( I : in    std_logic_vector (7 downto 0); 
+   signal t : std_logic;
+   component OBUFT
+      port ( I : in    std_logic; 
              T : in    std_logic; 
-             O : out   std_logic_vector (7 downto 0));
+             O : out   std_logic);
    end component;
+   attribute IOSTANDARD of OBUFT : component is "DEFAULT";
+   attribute SLEW of OBUFT : component is "SLOW";
+   attribute DRIVE of OBUFT : component is "12";
+   attribute BOX_TYPE of OBUFT : component is "BLACK_BOX";
    
    component INV
       port ( I : in    std_logic; 
@@ -73,16 +53,50 @@ architecture BEHAVIORAL of buffer_8bit is
    end component;
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_54 : label is "XLXI_54_36";
 begin
-   XLXI_54 : OBUFT8_HXILINX_buffer_8bit
-      port map (I(7 downto 0)=>i(7 downto 0),
-                T=>XLXN_2,
-                O(7 downto 0)=>o(7 downto 0));
+   XLXI_67 : OBUFT
+      port map (I=>i(0),
+                T=>t,
+                O=>o(0));
    
-   XLXI_55 : INV
+   XLXI_68 : OBUFT
+      port map (I=>i(1),
+                T=>t,
+                O=>o(1));
+   
+   XLXI_69 : OBUFT
+      port map (I=>i(2),
+                T=>t,
+                O=>o(2));
+   
+   XLXI_70 : OBUFT
+      port map (I=>i(3),
+                T=>t,
+                O=>o(3));
+   
+   XLXI_71 : OBUFT
+      port map (I=>i(4),
+                T=>t,
+                O=>o(4));
+   
+   XLXI_72 : OBUFT
+      port map (I=>i(5),
+                T=>t,
+                O=>o(5));
+   
+   XLXI_73 : OBUFT
+      port map (I=>i(6),
+                T=>t,
+                O=>o(6));
+   
+   XLXI_74 : OBUFT
+      port map (I=>i(7),
+                T=>t,
+                O=>o(7));
+   
+   XLXI_75 : INV
       port map (I=>e,
-                O=>XLXN_2);
+                O=>t);
    
 end BEHAVIORAL;
 

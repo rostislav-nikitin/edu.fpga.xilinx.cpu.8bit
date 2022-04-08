@@ -35,11 +35,11 @@ ARCHITECTURE behavioral OF cpu_cpu_sch_tb IS
           iar_r	:	OUT	STD_LOGIC; 
           iar_w	:	OUT	STD_LOGIC; 
           ir_w	:	OUT	STD_LOGIC; 
-          r1_w	:	OUT	STD_LOGIC; 
+          --r1_w	:	OUT	STD_LOGIC; 
           r1_r	:	OUT	STD_LOGIC; 
           r2_w	:	OUT	STD_LOGIC; 
           r2_r	:	OUT	STD_LOGIC; 
-          r0_w	:	OUT	STD_LOGIC; 
+          --r0_w	:	OUT	STD_LOGIC; 
           r0_r	:	OUT	STD_LOGIC; 
           r3_w	:	OUT	STD_LOGIC; 
           r3_r	:	OUT	STD_LOGIC; 
@@ -55,18 +55,18 @@ ARCHITECTURE behavioral OF cpu_cpu_sch_tb IS
           ir_o	:	OUT	STD_LOGIC_VECTOR (7 DOWNTO 0); 
           ram_a_o	:	OUT	STD_LOGIC_VECTOR (7 DOWNTO 0); 
           clkc	:	OUT	STD_LOGIC; 
-          manual_iar_w	:	IN	STD_LOGIC; 
+          --manual_iar_w	:	IN	STD_LOGIC; 
           ctl_iar_w	:	OUT	STD_LOGIC; 
           ctl_r0_w	:	OUT	STD_LOGIC; 
-          manual_r0_w	:	IN	STD_LOGIC; 
+          --manual_r0_w	:	IN	STD_LOGIC; 
           ctl_r1_w	:	OUT	STD_LOGIC; 
-          manual_r1_w	:	IN	STD_LOGIC; 
+          --manual_r1_w	:	IN	STD_LOGIC; 
           clk	:	IN	STD_LOGIC; 
           flags_w	:	OUT	STD_LOGIC; 
           flags_clr	:	OUT	STD_LOGIC; 
           flags_o	:	OUT	STD_LOGIC_VECTOR (3 DOWNTO 0); 
           alu_C_in_enabled	:	OUT	STD_LOGIC; 
-          rst	:	IN	STD_LOGIC);
+          rst_in	:	IN	STD_LOGIC);
    END COMPONENT;
 
    SIGNAL sysbus	:	STD_LOGIC_VECTOR (7 DOWNTO 0);
@@ -82,11 +82,11 @@ ARCHITECTURE behavioral OF cpu_cpu_sch_tb IS
    SIGNAL iar_r	:	STD_LOGIC;
    SIGNAL iar_w	:	STD_LOGIC;
    SIGNAL ir_w	:	STD_LOGIC;
-   SIGNAL r1_w	:	STD_LOGIC;
+   --SIGNAL r1_w	:	STD_LOGIC;
    SIGNAL r1_r	:	STD_LOGIC;
    SIGNAL r2_w	:	STD_LOGIC;
    SIGNAL r2_r	:	STD_LOGIC;
-   SIGNAL r0_w	:	STD_LOGIC;
+   --SIGNAL r0_w	:	STD_LOGIC;
    SIGNAL r0_r	:	STD_LOGIC;
    SIGNAL r3_w	:	STD_LOGIC;
    SIGNAL r3_r	:	STD_LOGIC;
@@ -102,23 +102,23 @@ ARCHITECTURE behavioral OF cpu_cpu_sch_tb IS
    SIGNAL ir_o	:	STD_LOGIC_VECTOR (7 DOWNTO 0);
    SIGNAL ram_a_o	:	STD_LOGIC_VECTOR (7 DOWNTO 0);
    SIGNAL clkc	:	STD_LOGIC;
-   SIGNAL manual_iar_w	:	STD_LOGIC;
+   --SIGNAL manual_iar_w	:	STD_LOGIC;
    SIGNAL ctl_iar_w	:	STD_LOGIC;
    SIGNAL ctl_r0_w	:	STD_LOGIC;
-   SIGNAL manual_r0_w	:	STD_LOGIC;
+   --SIGNAL manual_r0_w	:	STD_LOGIC;
    SIGNAL ctl_r1_w	:	STD_LOGIC;
-   SIGNAL manual_r1_w	:	STD_LOGIC;
+   --SIGNAL manual_r1_w	:	STD_LOGIC;
    SIGNAL clk	:	STD_LOGIC;
    SIGNAL flags_w	:	STD_LOGIC;
    SIGNAL flags_clr	:	STD_LOGIC;
    SIGNAL flags_o	:	STD_LOGIC_VECTOR (3 DOWNTO 0);
    SIGNAL alu_C_in_enabled	:	STD_LOGIC;
-   SIGNAL rst	:	STD_LOGIC;
+   SIGNAL rst_in	:	STD_LOGIC;
 
 
 	procedure one_step(signal clk : inout std_logic) is
 	begin
-		for i in 1 to 12 loop
+		for i in 1 to 805306368 loop
 			wait for 10 ns;
 			clk <= '1';
 			wait for 10 ns;
@@ -169,11 +169,11 @@ BEGIN
 		iar_r => iar_r, 
 		iar_w => iar_w, 
 		ir_w => ir_w, 
-		r1_w => r1_w, 
+		--r1_w => r1_w, 
 		r1_r => r1_r, 
 		r2_w => r2_w, 
 		r2_r => r2_r, 
-		r0_w => r0_w, 
+		--r0_w => r0_w, 
 		r0_r => r0_r, 
 		r3_w => r3_w, 
 		r3_r => r3_r, 
@@ -189,31 +189,31 @@ BEGIN
 		ir_o => ir_o, 
 		ram_a_o => ram_a_o, 
 		clkc => clkc, 
-		manual_iar_w => manual_iar_w, 
+		--manual_iar_w => manual_iar_w, 
 		ctl_iar_w => ctl_iar_w, 
 		ctl_r0_w => ctl_r0_w, 
-		manual_r0_w => manual_r0_w, 
+		--manual_r0_w => manual_r0_w, 
 		ctl_r1_w => ctl_r1_w, 
-		manual_r1_w => manual_r1_w, 
+		--manual_r1_w => manual_r1_w, 
 		clk => clk, 
 		flags_w => flags_w, 
 		flags_clr => flags_clr, 
 		flags_o => flags_o, 
 		alu_C_in_enabled => alu_C_in_enabled, 
-		rst => rst
+		rst_in => rst_in
    );
 
 -- *** Test Bench - User Defined Section ***
    tb : PROCESS
    BEGIN
-		manual_r0_w <= '0';
-		manual_r1_w <= '0';
-		rst <= '1';
+		--manual_r0_w <= '0';
+		--manual_r1_w <= '0';
+		rst_in <= '0';
 		wait for 10 ns;
-		rst <= '0';
+		rst_in <= '1';
 		wait for 10 ns;
 --==========INIT IAR==========================================
-		set_reg(rind, rinw, rinr, manual_iar_w, "00000000");
+		--set_reg(rind, rinw, rinr, manual_iar_w, "00000000");
 		one_step(clk);
 		one_step(clk);
 		

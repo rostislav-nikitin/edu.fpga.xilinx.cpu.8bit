@@ -39,15 +39,15 @@ static void work_a_3924899576_3212880686_p_0(char *t0)
     char *t10;
     char *t11;
 
-LAB0:    xsi_set_current_line(669, ng0);
+LAB0:    xsi_set_current_line(1532, ng0);
 
-LAB3:    t1 = (t0 + 2632U);
+LAB3:    t1 = (t0 + 2312U);
     t2 = *((char **)t1);
     t3 = (7 - 7);
     t4 = (t3 * 1U);
     t5 = (0 + t4);
     t1 = (t2 + t5);
-    t6 = (t0 + 4184);
+    t6 = (t0 + 3864);
     t7 = (t6 + 56U);
     t8 = *((char **)t7);
     t9 = (t8 + 56U);
@@ -55,7 +55,7 @@ LAB3:    t1 = (t0 + 2632U);
     memcpy(t10, t1, 8U);
     xsi_driver_first_trans_delta(t6, 0U, 8U, 0LL);
 
-LAB2:    t11 = (t0 + 4104);
+LAB2:    t11 = (t0 + 3784);
     *((int *)t11) = 1;
 
 LAB1:    return;

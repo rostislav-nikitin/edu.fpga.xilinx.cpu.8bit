@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="buffer_8bit">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2022-3-20T10:57:17</timestamp>
+    <timestamp>2022-4-6T21:14:58</timestamp>
     <pin polarity="Input" x="0" y="-96" name="e" />
     <pin polarity="Input" x="0" y="-32" name="i(7:0)" />
     <pin polarity="Output" x="384" y="-96" name="o(7:0)" />

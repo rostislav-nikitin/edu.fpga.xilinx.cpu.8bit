@@ -23,3 +23,125 @@ xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_cont
 xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu.syr" 
 xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu.syr" 
 xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -bm tb_ram_256bytes.bmm -p xa6slx9-ftg256-3 cpu.ngc cpu.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_map.ncd cpu.ngd cpu.pcf 
+netgen -intstyle ise -ar Structure -tm cpu -w -dir netgen/synthesis -ofmt vhdl -sim cpu.ngc cpu_synthesis.vhd 
+netgen -intstyle ise -rpw 100 -tpw 0 -ar Structure -tm cpu -w -dir netgen/translate -ofmt vhdl -sim cpu.ngd cpu_translate.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -bm tb_ram_256bytes.bmm -p xa6slx9-ftg256-3 cpu.ngc cpu.ngd  
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.syr" 
+netgen -intstyle ise -ar Structure -tm cpu -w -dir netgen/synthesis -ofmt vhdl -sim cpu.ngc cpu_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xa6slx9-ftg256-3 cpu.ngc cpu.ngd  
+netgen -intstyle ise -rpw 100 -tpw 0 -ar Structure -tm cpu -w -dir netgen/translate -ofmt vhdl -sim cpu.ngd cpu_translate.vhd 
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_map.ncd cpu.ngd cpu.pcf 
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_map.ncd cpu.ngd cpu.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xa6slx9-ftg256-3 cpu.ngc cpu.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_map.ncd cpu.ngd cpu.pcf 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xa6slx9-ftg256-3 cpu.ngc cpu.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_map.ncd cpu.ngd cpu.pcf 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xa6slx9-ftg256-3 cpu.ngc cpu.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -mt off cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xa6slx9-ftg256-3 cpu.ngc cpu.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -mt off cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xa6slx9-ftg256-3 cpu.ngc cpu.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -mt off cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xa6slx9-ftg256-3 cpu.ngc cpu.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -mt off cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xa6slx9-ftg256-3 cpu.ngc cpu.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -mt off cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xa6slx9-ftg256-3 cpu.ngc cpu.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_map.ncd cpu.ngd cpu.pcf 
+netgen -intstyle ise -s 3  -pcf cpu.pcf -rpw 100 -tpw 0 -ar Structure -tm cpu -w -dir netgen/map -ofmt vhdl -sim cpu_map.ncd cpu_map.vhd 
+par -w -intstyle ise -ol high -mt off cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xa6slx9-ftg256-3 cpu.ngc cpu.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -mt off cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xa6slx9-ftg256-3 cpu.ngc cpu.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -mt off cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xa6slx9-ftg256-3 cpu.ngc cpu.ngd  
+netgen -intstyle ise -rpw 100 -tpw 0 -ar Structure -tm cpu -w -dir netgen/translate -ofmt vhdl -sim cpu.ngd cpu_translate.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xa6slx9-ftg256-3 cpu.ngc cpu.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xa6slx9-ftg256-3 cpu.ngc cpu.ngd  
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xa6slx9-ftg256-3 cpu.ngc cpu.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -mt off cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xa6slx9-ftg256-3 cpu.ngc cpu.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_map.ncd cpu.ngd cpu.pcf 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xa6slx9-ftg256-3 cpu.ngc cpu.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_map.ncd cpu.ngd cpu.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xa6slx9-ftg256-3 cpu.ngc cpu.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -mt off cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xa6slx9-ftg256-3 cpu.ngc cpu.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -mt off cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xa6slx9-ftg256-3 cpu.ngc cpu.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -mt off cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xa6slx9-ftg256-3 cpu.ngc cpu.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -mt off cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 

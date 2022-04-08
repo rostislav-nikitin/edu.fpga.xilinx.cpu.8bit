@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Reading design: cpu.prj
@@ -108,70 +108,88 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cmp_1bit.vhf" into library work
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cmp_1bit.vhf" into library work
 Parsing entity <cmp_1bit>.
 Parsing architecture <BEHAVIORAL> of entity <cmp_1bit>.
-Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/stepper.vhf" into library work
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/bus_muxer.vhf" into library work
+Parsing entity <M16_1E_HXILINX_bus_muxer>.
+Parsing architecture <M16_1E_HXILINX_bus_muxer_V> of entity <m16_1e_hxilinx_bus_muxer>.
+Parsing entity <bus_muxer>.
+Parsing architecture <BEHAVIORAL> of entity <bus_muxer>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/stepper.vhf" into library work
 Parsing entity <CB4CE_HXILINX_stepper>.
 Parsing architecture <Behavioral> of entity <cb4ce_hxilinx_stepper>.
 Parsing entity <D3_8E_HXILINX_stepper>.
 Parsing architecture <D3_8E_HXILINX_stepper_V> of entity <d3_8e_hxilinx_stepper>.
 Parsing entity <stepper>.
 Parsing architecture <BEHAVIORAL> of entity <stepper>.
-Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/one_8bit.vhf" into library work
-Parsing entity <one_8bit>.
-Parsing architecture <BEHAVIORAL> of entity <one_8bit>.
-Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/lzero.vhf" into library work
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/lzero.vhf" into library work
 Parsing entity <NOR8_HXILINX_lzero>.
 Parsing architecture <NOR8_HXILINX_lzero_V> of entity <nor8_hxilinx_lzero>.
 Parsing entity <lzero>.
 Parsing architecture <BEHAVIORAL> of entity <lzero>.
-Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cmp_8bit.vhf" into library work
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/encoder8_3.vhf" into library work
+Parsing entity <AND8_HXILINX_encoder8_3>.
+Parsing architecture <AND8_HXILINX_encoder8_3_V> of entity <and8_hxilinx_encoder8_3>.
+Parsing entity <encoder8_3>.
+Parsing architecture <BEHAVIORAL> of entity <encoder8_3>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cmp_8bit.vhf" into library work
 Parsing entity <cmp_1bit_MUSER_cmp_8bit>.
 Parsing architecture <BEHAVIORAL> of entity <cmp_1bit_muser_cmp_8bit>.
 Parsing entity <cmp_8bit>.
 Parsing architecture <BEHAVIORAL> of entity <cmp_8bit>.
-Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/buffer_8bit.vhf" into library work
-Parsing entity <OBUFT8_HXILINX_buffer_8bit>.
-Parsing architecture <OBUFT8_HXILINX_buffer_8bit_V> of entity <obuft8_hxilinx_buffer_8bit>.
-Parsing entity <buffer_8bit>.
-Parsing architecture <BEHAVIORAL> of entity <buffer_8bit>.
-Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/reg_8bit.vhf" into library work
-Parsing entity <LD8_HXILINX_reg_8bit>.
-Parsing architecture <Behavioral> of entity <ld8_hxilinx_reg_8bit>.
-Parsing entity <buffer_8bit_MUSER_reg_8bit>.
-Parsing architecture <BEHAVIORAL> of entity <buffer_8bit_muser_reg_8bit>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/alu_output_muxer.vhf" into library work
+Parsing entity <M16_1E_HXILINX_alu_output_muxer>.
+Parsing architecture <M16_1E_HXILINX_alu_output_muxer_V> of entity <m16_1e_hxilinx_alu_output_muxer>.
+Parsing entity <bus_muxer_MUSER_alu_output_muxer>.
+Parsing architecture <BEHAVIORAL> of entity <bus_muxer_muser_alu_output_muxer>.
+Parsing entity <alu_output_muxer>.
+Parsing architecture <BEHAVIORAL> of entity <alu_output_muxer>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/reg_8bit.vhf" into library work
+Parsing entity <LD8CE_HXILINX_reg_8bit>.
+Parsing architecture <Behavioral> of entity <ld8ce_hxilinx_reg_8bit>.
 Parsing entity <reg_8bit>.
 Parsing architecture <BEHAVIORAL> of entity <reg_8bit>.
-Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/ram_256bytes.vhf" into library work
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/ram_256bytes.vhf" into library work
 Parsing entity <LD8_HXILINX_ram_256bytes>.
 Parsing architecture <Behavioral> of entity <ld8_hxilinx_ram_256bytes>.
-Parsing entity <OBUFT8_HXILINX_ram_256bytes>.
-Parsing architecture <OBUFT8_HXILINX_ram_256bytes_V> of entity <obuft8_hxilinx_ram_256bytes>.
 Parsing entity <ram_256bytes>.
 Parsing architecture <BEHAVIORAL> of entity <ram_256bytes>.
-Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/pass_through_or_one.vhf" into library work
-Parsing entity <one_8bit_MUSER_pass_through_or_one>.
-Parsing architecture <BEHAVIORAL> of entity <one_8bit_muser_pass_through_or_one>.
-Parsing entity <buffer_8bit_MUSER_pass_through_or_one>.
-Parsing architecture <BEHAVIORAL> of entity <buffer_8bit_muser_pass_through_or_one>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/pass_through_or_one.vhf" into library work
+Parsing entity <M2_1_HXILINX_pass_through_or_one>.
+Parsing architecture <M2_1_HXILINX_pass_through_or_one_V> of entity <m2_1_hxilinx_pass_through_or_one>.
 Parsing entity <pass_through_or_one>.
 Parsing architecture <BEHAVIORAL> of entity <pass_through_or_one>.
-Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu_control.vhf" into library work
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_output_muxer.vhf" into library work
+Parsing entity <M16_1E_HXILINX_cpu_output_muxer>.
+Parsing architecture <M16_1E_HXILINX_cpu_output_muxer_V> of entity <m16_1e_hxilinx_cpu_output_muxer>.
+Parsing entity <AND8_HXILINX_cpu_output_muxer>.
+Parsing architecture <AND8_HXILINX_cpu_output_muxer_V> of entity <and8_hxilinx_cpu_output_muxer>.
+Parsing entity <bus_muxer_MUSER_cpu_output_muxer>.
+Parsing architecture <BEHAVIORAL> of entity <bus_muxer_muser_cpu_output_muxer>.
+Parsing entity <encoder8_3_MUSER_cpu_output_muxer>.
+Parsing architecture <BEHAVIORAL> of entity <encoder8_3_muser_cpu_output_muxer>.
+Parsing entity <cpu_output_muxer>.
+Parsing architecture <BEHAVIORAL> of entity <cpu_output_muxer>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_control.vhf" into library work
 Parsing entity <CB4CE_HXILINX_cpu_control>.
 Parsing architecture <Behavioral> of entity <cb4ce_hxilinx_cpu_control>.
+Parsing entity <OR6_HXILINX_cpu_control>.
+Parsing architecture <OR6_HXILINX_cpu_control_V> of entity <or6_hxilinx_cpu_control>.
 Parsing entity <D3_8E_HXILINX_cpu_control>.
 Parsing architecture <D3_8E_HXILINX_cpu_control_V> of entity <d3_8e_hxilinx_cpu_control>.
+Parsing entity <D2_4E_HXILINX_cpu_control>.
+Parsing architecture <D2_4E_HXILINX_cpu_control_V> of entity <d2_4e_hxilinx_cpu_control>.
 Parsing entity <stepper_MUSER_cpu_control>.
 Parsing architecture <BEHAVIORAL> of entity <stepper_muser_cpu_control>.
 Parsing entity <cpu_control>.
 Parsing architecture <BEHAVIORAL> of entity <cpu_control>.
-Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/clk_generator.vhf" into library work
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/clk_generator.vhf" into library work
 Parsing entity <FJKC_HXILINX_clk_generator>.
 Parsing architecture <Behavioral> of entity <fjkc_hxilinx_clk_generator>.
 Parsing entity <clk_generator>.
 Parsing architecture <BEHAVIORAL> of entity <clk_generator>.
-Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/alu.vhf" into library work
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/alu.vhf" into library work
 Parsing entity <ADD8_HXILINX_alu>.
 Parsing architecture <ADD8_HXILINX_alu_V> of entity <add8_hxilinx_alu>.
 Parsing entity <NOR8_HXILINX_alu>.
@@ -180,8 +198,12 @@ Parsing entity <INV8_HXILINX_alu>.
 Parsing architecture <INV8_HXILINX_alu_V> of entity <inv8_hxilinx_alu>.
 Parsing entity <D3_8E_HXILINX_alu>.
 Parsing architecture <D3_8E_HXILINX_alu_V> of entity <d3_8e_hxilinx_alu>.
-Parsing entity <OBUFT8_HXILINX_alu>.
-Parsing architecture <OBUFT8_HXILINX_alu_V> of entity <obuft8_hxilinx_alu>.
+Parsing entity <M16_1E_HXILINX_alu>.
+Parsing architecture <M16_1E_HXILINX_alu_V> of entity <m16_1e_hxilinx_alu>.
+Parsing entity <bus_muxer_MUSER_alu>.
+Parsing architecture <BEHAVIORAL> of entity <bus_muxer_muser_alu>.
+Parsing entity <alu_output_muxer_MUSER_alu>.
+Parsing architecture <BEHAVIORAL> of entity <alu_output_muxer_muser_alu>.
 Parsing entity <lzero_MUSER_alu>.
 Parsing architecture <BEHAVIORAL> of entity <lzero_muser_alu>.
 Parsing entity <cmp_1bit_MUSER_alu>.
@@ -190,7 +212,9 @@ Parsing entity <cmp_8bit_MUSER_alu>.
 Parsing architecture <BEHAVIORAL> of entity <cmp_8bit_muser_alu>.
 Parsing entity <alu>.
 Parsing architecture <BEHAVIORAL> of entity <alu>.
-Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu.vhf" into library work
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" into library work
+Parsing entity <LD8CE_HXILINX_cpu>.
+Parsing architecture <Behavioral> of entity <ld8ce_hxilinx_cpu>.
 Parsing entity <CB4CE_HXILINX_cpu>.
 Parsing architecture <Behavioral> of entity <cb4ce_hxilinx_cpu>.
 Parsing entity <LD8_HXILINX_cpu>.
@@ -201,28 +225,44 @@ Parsing entity <NOR8_HXILINX_cpu>.
 Parsing architecture <NOR8_HXILINX_cpu_V> of entity <nor8_hxilinx_cpu>.
 Parsing entity <INV8_HXILINX_cpu>.
 Parsing architecture <INV8_HXILINX_cpu_V> of entity <inv8_hxilinx_cpu>.
+Parsing entity <OR6_HXILINX_cpu>.
+Parsing architecture <OR6_HXILINX_cpu_V> of entity <or6_hxilinx_cpu>.
+Parsing entity <LD4CE_HXILINX_cpu>.
+Parsing architecture <Behavioral> of entity <ld4ce_hxilinx_cpu>.
+Parsing entity <CB16CE_HXILINX_cpu>.
+Parsing architecture <Behavioral> of entity <cb16ce_hxilinx_cpu>.
 Parsing entity <D3_8E_HXILINX_cpu>.
 Parsing architecture <D3_8E_HXILINX_cpu_V> of entity <d3_8e_hxilinx_cpu>.
+Parsing entity <M16_1E_HXILINX_cpu>.
+Parsing architecture <M16_1E_HXILINX_cpu_V> of entity <m16_1e_hxilinx_cpu>.
 Parsing entity <FJKC_HXILINX_cpu>.
 Parsing architecture <Behavioral> of entity <fjkc_hxilinx_cpu>.
-Parsing entity <OBUFT8_HXILINX_cpu>.
-Parsing architecture <OBUFT8_HXILINX_cpu_V> of entity <obuft8_hxilinx_cpu>.
+Parsing entity <D2_4E_HXILINX_cpu>.
+Parsing architecture <D2_4E_HXILINX_cpu_V> of entity <d2_4e_hxilinx_cpu>.
+Parsing entity <M2_1_HXILINX_cpu>.
+Parsing architecture <M2_1_HXILINX_cpu_V> of entity <m2_1_hxilinx_cpu>.
+Parsing entity <AND8_HXILINX_cpu>.
+Parsing architecture <AND8_HXILINX_cpu_V> of entity <and8_hxilinx_cpu>.
+Parsing entity <bus_muxer_MUSER_cpu>.
+Parsing architecture <BEHAVIORAL> of entity <bus_muxer_muser_cpu>.
+Parsing entity <encoder8_3_MUSER_cpu>.
+Parsing architecture <BEHAVIORAL> of entity <encoder8_3_muser_cpu>.
+Parsing entity <cpu_output_muxer_MUSER_cpu>.
+Parsing architecture <BEHAVIORAL> of entity <cpu_output_muxer_muser_cpu>.
+Parsing entity <reg_8bit_MUSER_cpu>.
+Parsing architecture <BEHAVIORAL> of entity <reg_8bit_muser_cpu>.
+Parsing entity <pass_through_or_one_MUSER_cpu>.
+Parsing architecture <BEHAVIORAL> of entity <pass_through_or_one_muser_cpu>.
+Parsing entity <clk_generator_MUSER_cpu>.
+Parsing architecture <BEHAVIORAL> of entity <clk_generator_muser_cpu>.
 Parsing entity <ram_256bytes_MUSER_cpu>.
 Parsing architecture <BEHAVIORAL> of entity <ram_256bytes_muser_cpu>.
 Parsing entity <stepper_MUSER_cpu>.
 Parsing architecture <BEHAVIORAL> of entity <stepper_muser_cpu>.
 Parsing entity <cpu_control_MUSER_cpu>.
 Parsing architecture <BEHAVIORAL> of entity <cpu_control_muser_cpu>.
-Parsing entity <clk_generator_MUSER_cpu>.
-Parsing architecture <BEHAVIORAL> of entity <clk_generator_muser_cpu>.
-Parsing entity <buffer_8bit_MUSER_cpu>.
-Parsing architecture <BEHAVIORAL> of entity <buffer_8bit_muser_cpu>.
-Parsing entity <reg_8bit_MUSER_cpu>.
-Parsing architecture <BEHAVIORAL> of entity <reg_8bit_muser_cpu>.
-Parsing entity <one_8bit_MUSER_cpu>.
-Parsing architecture <BEHAVIORAL> of entity <one_8bit_muser_cpu>.
-Parsing entity <pass_through_or_one_MUSER_cpu>.
-Parsing architecture <BEHAVIORAL> of entity <pass_through_or_one_muser_cpu>.
+Parsing entity <alu_output_muxer_MUSER_cpu>.
+Parsing architecture <BEHAVIORAL> of entity <alu_output_muxer_muser_cpu>.
 Parsing entity <lzero_MUSER_cpu>.
 Parsing architecture <BEHAVIORAL> of entity <lzero_muser_cpu>.
 Parsing entity <cmp_1bit_MUSER_cpu>.
@@ -240,18 +280,10 @@ Parsing architecture <BEHAVIORAL> of entity <cpu>.
 
 Elaborating entity <cpu> (architecture <BEHAVIORAL>) from library <work>.
 
-Elaborating entity <reg_8bit_MUSER_cpu> (architecture <BEHAVIORAL>) from library <work>.
-
-Elaborating entity <LD8_HXILINX_cpu> (architecture <Behavioral>) from library <work>.
-
-Elaborating entity <buffer_8bit_MUSER_cpu> (architecture <BEHAVIORAL>) from library <work>.
-
-Elaborating entity <OBUFT8_HXILINX_cpu> (architecture <OBUFT8_HXILINX_cpu_V>) from library <work>.
-
 Elaborating entity <alu_MUSER_cpu> (architecture <BEHAVIORAL>) from library <work>.
 
 Elaborating entity <D3_8E_HXILINX_cpu> (architecture <D3_8E_HXILINX_cpu_V>) from library <work>.
-INFO:HDLCompiler:679 - "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu.vhf" Line 211. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 353. Case statement is complete. others clause is never selected
 
 Elaborating entity <ADD8_HXILINX_cpu> (architecture <ADD8_HXILINX_cpu_V>) from library <work>.
 
@@ -265,6 +297,86 @@ Elaborating entity <lzero_MUSER_cpu> (architecture <BEHAVIORAL>) from library <w
 
 Elaborating entity <NOR8_HXILINX_cpu> (architecture <NOR8_HXILINX_cpu_V>) from library <work>.
 
+Elaborating entity <alu_output_muxer_MUSER_cpu> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <bus_muxer_MUSER_cpu> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <M16_1E_HXILINX_cpu> (architecture <M16_1E_HXILINX_cpu_V>) from library <work>.
+INFO:HDLCompiler:679 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 428. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 618: Net <XLXN_54> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 619: Net <XLXN_55> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 620: Net <XLXN_56> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 621: Net <XLXN_57> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 622: Net <XLXN_58> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 623: Net <XLXN_59> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 624: Net <XLXN_60> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 625: Net <XLXN_61> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 626: Net <XLXN_70> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 627: Net <XLXN_71> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 628: Net <XLXN_72> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 629: Net <XLXN_73> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 630: Net <XLXN_74> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 631: Net <XLXN_75> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 632: Net <XLXN_76> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 633: Net <XLXN_77> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 634: Net <XLXN_86> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 635: Net <XLXN_87> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 636: Net <XLXN_88> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 637: Net <XLXN_89> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 638: Net <XLXN_90> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 639: Net <XLXN_91> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 640: Net <XLXN_92> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 641: Net <XLXN_93> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 642: Net <XLXN_102> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 643: Net <XLXN_103> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 644: Net <XLXN_104> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 645: Net <XLXN_105> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 646: Net <XLXN_106> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 647: Net <XLXN_107> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 648: Net <XLXN_108> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 649: Net <XLXN_109> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 650: Net <XLXN_118> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 651: Net <XLXN_119> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 652: Net <XLXN_120> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 653: Net <XLXN_121> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 654: Net <XLXN_122> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 655: Net <XLXN_123> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 656: Net <XLXN_124> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 657: Net <XLXN_125> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 658: Net <XLXN_134> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 659: Net <XLXN_135> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 660: Net <XLXN_136> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 661: Net <XLXN_137> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 662: Net <XLXN_138> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 663: Net <XLXN_139> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 664: Net <XLXN_140> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 665: Net <XLXN_141> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 666: Net <XLXN_150> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 667: Net <XLXN_151> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 668: Net <XLXN_152> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 669: Net <XLXN_153> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 670: Net <XLXN_154> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 671: Net <XLXN_155> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 672: Net <XLXN_156> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 673: Net <XLXN_157> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 674: Net <XLXN_166> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 675: Net <XLXN_167> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 676: Net <XLXN_168> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 677: Net <XLXN_169> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 678: Net <XLXN_170> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 679: Net <XLXN_171> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 680: Net <XLXN_172> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 681: Net <XLXN_173> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 2709: Net <XLXI_14_dev7_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 2710: Net <XLXI_14_dev8_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 2711: Net <XLXI_14_dev9_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 2712: Net <XLXI_14_dev10_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 2713: Net <XLXI_14_dev11_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 2714: Net <XLXI_14_dev12_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 2715: Net <XLXI_14_dev13_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 2716: Net <XLXI_14_dev14_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 2717: Net <XLXI_14_dev15_openSignal[7]> does not have a driver.
+
 Elaborating entity <clk_generator_MUSER_cpu> (architecture <BEHAVIORAL>) from library <work>.
 
 Elaborating entity <FJKC_HXILINX_cpu> (architecture <Behavioral>) with generics from library <work>.
@@ -275,33 +387,370 @@ Elaborating entity <stepper_MUSER_cpu> (architecture <BEHAVIORAL>) from library 
 
 Elaborating entity <CB4CE_HXILINX_cpu> (architecture <Behavioral>) from library <work>.
 
+Elaborating entity <D2_4E_HXILINX_cpu> (architecture <D2_4E_HXILINX_cpu_V>) from library <work>.
+INFO:HDLCompiler:679 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 515. Case statement is complete. others clause is never selected
+
+Elaborating entity <OR6_HXILINX_cpu> (architecture <OR6_HXILINX_cpu_V>) from library <work>.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1913: Net <XLXI_556_I0_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1914: Net <XLXI_556_I1_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1915: Net <XLXI_556_I2_openSignal> does not have a driver.
+
 Elaborating entity <pass_through_or_one_MUSER_cpu> (architecture <BEHAVIORAL>) from library <work>.
 
-Elaborating entity <one_8bit_MUSER_cpu> (architecture <BEHAVIORAL>) from library <work>.
+Elaborating entity <M2_1_HXILINX_cpu> (architecture <M2_1_HXILINX_cpu_V>) from library <work>.
+INFO:HDLCompiler:679 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 549. Case statement is complete. others clause is never selected
 
 Elaborating entity <ram_256bytes_MUSER_cpu> (architecture <BEHAVIORAL>) from library <work>.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu.vhf" Line 1824: Net <ram_w> does not have a driver.
+
+Elaborating entity <LD8_HXILINX_cpu> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <LD4CE_HXILINX_cpu> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <reg_8bit_MUSER_cpu> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <LD8CE_HXILINX_cpu> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <cpu_output_muxer_MUSER_cpu> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <encoder8_3_MUSER_cpu> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <AND8_HXILINX_cpu> (architecture <AND8_HXILINX_cpu_V>) from library <work>.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1102: Net <XLXI_1_dev7_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1103: Net <XLXI_1_dev8_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1104: Net <XLXI_1_dev9_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1105: Net <XLXI_1_dev10_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1106: Net <XLXI_1_dev11_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1107: Net <XLXI_1_dev12_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1108: Net <XLXI_1_dev13_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1109: Net <XLXI_1_dev14_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1110: Net <XLXI_1_dev15_openSignal[7]> does not have a driver.
+
+Elaborating entity <CB16CE_HXILINX_cpu> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 3472: Net <rind[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 3473: Net <rinr> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 3474: Net <rinw> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <cpu>.
-    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu.vhf".
-WARNING:Xst:653 - Signal <ram_w> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf".
+    Set property "HU_SET = XLXI_87_31" for instance <XLXI_87>.
+    Set property "HU_SET = XLXI_104_32" for instance <XLXI_104>.
+    Set property "HU_SET = XLXI_131_33" for instance <XLXI_131>.
+    Set property "HU_SET = XLXI_132_34" for instance <XLXI_132>.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 3718: Output port <alu> of the instance <cpu_ctl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 3718: Output port <alu_and> of the instance <cpu_ctl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 3718: Output port <alu_lshift> of the instance <cpu_ctl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 3718: Output port <alu_not> of the instance <cpu_ctl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 3718: Output port <alu_or> of the instance <cpu_ctl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 3718: Output port <alu_rshift> of the instance <cpu_ctl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 3718: Output port <alu_sum> of the instance <cpu_ctl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 3718: Output port <alu_xor> of the instance <cpu_ctl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 3718: Output port <ground> of the instance <cpu_ctl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 3718: Output port <ra_0> of the instance <cpu_ctl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 3718: Output port <ra_1> of the instance <cpu_ctl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 3718: Output port <ra_2> of the instance <cpu_ctl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 3718: Output port <ra_3> of the instance <cpu_ctl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 3718: Output port <rb_0> of the instance <cpu_ctl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 3718: Output port <rb_1> of the instance <cpu_ctl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 3718: Output port <rb_2> of the instance <cpu_ctl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 3718: Output port <rb_3> of the instance <cpu_ctl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 3718: Output port <s1> of the instance <cpu_ctl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 3718: Output port <s2> of the instance <cpu_ctl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 3718: Output port <s3> of the instance <cpu_ctl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 3718: Output port <s4> of the instance <cpu_ctl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 3718: Output port <s5> of the instance <cpu_ctl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 3718: Output port <s6> of the instance <cpu_ctl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 3783: Output port <a_o> of the instance <XLXI_9> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 3843: Output port <G> of the instance <XLXI_118> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 3846: Output port <G> of the instance <XLXI_119> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 3852: Output port <o> of the instance <XLXI_121> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 3932: Output port <Q> of the instance <XLXI_131> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 3932: Output port <TC> of the instance <XLXI_131> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 3940: Output port <CEO> of the instance <XLXI_132> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 3940: Output port <TC> of the instance <XLXI_132> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 3954: Output port <G> of the instance <XLXI_136> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <rind> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <rinr> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <rinw> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	no macro.
 Unit <cpu> synthesized.
 
-Synthesizing Unit <reg_8bit_MUSER_cpu>.
-    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu.vhf".
-    Set property "HU_SET = XLXI_2_6" for instance <XLXI_2>.
+Synthesizing Unit <alu_MUSER_cpu>.
+    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf".
+    Set property "HU_SET = XLXI_1_28" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_2_29" for instance <XLXI_2>.
+    Set property "HU_SET = XLXI_102_30" for instance <XLXI_102>.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 3192: Output port <D3> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 3192: Output port <D4> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 3192: Output port <D5> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 3192: Output port <D6> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 3192: Output port <D7> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 3206: Output port <OFL> of the instance <XLXI_2> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
-Unit <reg_8bit_MUSER_cpu> synthesized.
+Unit <alu_MUSER_cpu> synthesized.
+
+Synthesizing Unit <D3_8E_HXILINX_cpu>.
+    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <D3_8E_HXILINX_cpu> synthesized.
+
+Synthesizing Unit <ADD8_HXILINX_cpu>.
+    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf".
+    Found 9-bit adder for signal <n0022> created at line 153.
+    Found 9-bit adder for signal <adder_tmp> created at line 153.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+Unit <ADD8_HXILINX_cpu> synthesized.
+
+Synthesizing Unit <INV8_HXILINX_cpu>.
+    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf".
+    Summary:
+	no macro.
+Unit <INV8_HXILINX_cpu> synthesized.
+
+Synthesizing Unit <cmp_8bit_MUSER_cpu>.
+    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf".
+    Summary:
+	no macro.
+Unit <cmp_8bit_MUSER_cpu> synthesized.
+
+Synthesizing Unit <cmp_1bit_MUSER_cpu>.
+    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf".
+    Summary:
+	no macro.
+Unit <cmp_1bit_MUSER_cpu> synthesized.
+
+Synthesizing Unit <lzero_MUSER_cpu>.
+    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf".
+    Set property "HU_SET = XLXI_1_27" for instance <XLXI_1>.
+    Summary:
+	no macro.
+Unit <lzero_MUSER_cpu> synthesized.
+
+Synthesizing Unit <NOR8_HXILINX_cpu>.
+    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf".
+    Summary:
+	no macro.
+Unit <NOR8_HXILINX_cpu> synthesized.
+
+Synthesizing Unit <alu_output_muxer_MUSER_cpu>.
+    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf".
+WARNING:Xst:653 - Signal <XLXI_14_dev7_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXI_14_dev8_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXI_14_dev9_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXI_14_dev10_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXI_14_dev11_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXI_14_dev12_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXI_14_dev13_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXI_14_dev14_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXI_14_dev15_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <alu_output_muxer_MUSER_cpu> synthesized.
+
+Synthesizing Unit <bus_muxer_MUSER_cpu>.
+    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf".
+    Set property "HU_SET = XLXI_1_1" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_2_0" for instance <XLXI_2>.
+    Set property "HU_SET = XLXI_12_2" for instance <XLXI_12>.
+    Set property "HU_SET = XLXI_13_3" for instance <XLXI_13>.
+    Set property "HU_SET = XLXI_14_4" for instance <XLXI_14>.
+    Set property "HU_SET = XLXI_15_5" for instance <XLXI_15>.
+    Set property "HU_SET = XLXI_16_6" for instance <XLXI_16>.
+    Set property "HU_SET = XLXI_17_7" for instance <XLXI_17>.
+WARNING:Xst:647 - Input <dev8> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <dev9> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <dev10> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <dev11> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <dev12> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <dev13> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <dev14> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <dev15> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <XLXN_54> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_55> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_56> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_57> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_58> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_59> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_60> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_61> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_70> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_71> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_72> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_73> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_74> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_75> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_76> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_77> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_86> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_87> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_88> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_89> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_90> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_91> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_92> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_93> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_102> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_103> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_104> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_105> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_106> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_107> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_108> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_109> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_118> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_119> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_120> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_121> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_122> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_123> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_124> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_125> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_134> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_135> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_136> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_137> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_138> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_139> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_140> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_141> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_150> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_151> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_152> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_153> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_154> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_155> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_156> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_157> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_166> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_167> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_168> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_169> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_170> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_171> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_172> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_173> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <bus_muxer_MUSER_cpu> synthesized.
+
+Synthesizing Unit <M16_1E_HXILINX_cpu>.
+    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf".
+    Found 1-bit 16-to-1 multiplexer for signal <S3_D15_Mux_0_o> created at line 411.
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <M16_1E_HXILINX_cpu> synthesized.
+
+Synthesizing Unit <clk_generator_MUSER_cpu>.
+    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf".
+    Set property "HU_SET = XLXI_4_18" for instance <XLXI_4>.
+    Summary:
+	no macro.
+Unit <clk_generator_MUSER_cpu> synthesized.
+
+Synthesizing Unit <FJKC_HXILINX_cpu>.
+    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf".
+        INIT = '0'
+    Found 1-bit register for signal <q_tmp>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <FJKC_HXILINX_cpu> synthesized.
+
+Synthesizing Unit <cpu_control_MUSER_cpu>.
+    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf".
+    Set property "HU_SET = XLXI_39_24" for instance <XLXI_39>.
+    Set property "HU_SET = XLXI_47_22" for instance <XLXI_47>.
+    Set property "HU_SET = XLXI_48_23" for instance <XLXI_48>.
+    Set property "HU_SET = XLXI_252_25" for instance <XLXI_252>.
+    Set property "HU_SET = XLXI_577_26" for instance <XLXI_577>.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 2149: Output port <D7> of the instance <XLXI_39> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 2290: Output port <D7> of the instance <XLXI_252> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 2602: Output port <O> of the instance <XLXI_556> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <XLXI_556_I0_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXI_556_I1_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXI_556_I2_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <cpu_control_MUSER_cpu> synthesized.
+
+Synthesizing Unit <stepper_MUSER_cpu>.
+    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf".
+    Set property "HU_SET = XLXI_24_20" for instance <XLXI_24>.
+    Set property "HU_SET = XLXI_25_21" for instance <XLXI_25>.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 1703: Output port <CEO> of the instance <XLXI_24> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 1703: Output port <Q3> of the instance <XLXI_24> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 1703: Output port <TC> of the instance <XLXI_24> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 1714: Output port <D7> of the instance <XLXI_25> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <stepper_MUSER_cpu> synthesized.
+
+Synthesizing Unit <CB4CE_HXILINX_cpu>.
+    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf".
+    Found 4-bit register for signal <COUNT>.
+    Found 4-bit adder for signal <COUNT[3]_GND_23_o_add_0_OUT> created at line 89.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 D-type flip-flop(s).
+Unit <CB4CE_HXILINX_cpu> synthesized.
+
+Synthesizing Unit <D2_4E_HXILINX_cpu>.
+    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <D2_4E_HXILINX_cpu> synthesized.
+
+Synthesizing Unit <OR6_HXILINX_cpu>.
+    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf".
+    Summary:
+	no macro.
+Unit <OR6_HXILINX_cpu> synthesized.
+
+Synthesizing Unit <pass_through_or_one_MUSER_cpu>.
+    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf".
+    Set property "HU_SET = XLXI_1_10" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_3_11" for instance <XLXI_3>.
+    Set property "HU_SET = XLXI_4_12" for instance <XLXI_4>.
+    Set property "HU_SET = XLXI_5_13" for instance <XLXI_5>.
+    Set property "HU_SET = XLXI_6_14" for instance <XLXI_6>.
+    Set property "HU_SET = XLXI_7_15" for instance <XLXI_7>.
+    Set property "HU_SET = XLXI_8_16" for instance <XLXI_8>.
+    Set property "HU_SET = XLXI_13_17" for instance <XLXI_13>.
+    Summary:
+	no macro.
+Unit <pass_through_or_one_MUSER_cpu> synthesized.
+
+Synthesizing Unit <M2_1_HXILINX_cpu>.
+    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <M2_1_HXILINX_cpu> synthesized.
+
+Synthesizing Unit <ram_256bytes_MUSER_cpu>.
+    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf".
+    Set property "INIT = 0000000000000000000000000000000000000000000000000000000000000072" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_15_19" for instance <XLXI_15>.
+    Set property "INIT = 0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_17>.
+    Set property "INIT = 0000000000000000000000000000000000000000000000000000000000000901" for instance <XLXI_18>.
+    Set property "INIT = 0000000000000000000000000000000000000000000000000000000000000040" for instance <XLXI_19>.
+    Set property "INIT = 0000000000000000000000000000000000000000000000000000000000000020" for instance <XLXI_20>.
+    Set property "INIT = 0000000000000000000000000000000000000000000000000000000000000205" for instance <XLXI_21>.
+    Set property "INIT = 00000000000000000000000000000000000000000000000000000000000006A0" for instance <XLXI_22>.
+    Set property "INIT = 0000000000000000000000000000000000000000000000000000000000000010" for instance <XLXI_23>.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 1626: Output port <O> of the instance <XLXI_42> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <ram_256bytes_MUSER_cpu> synthesized.
 
 Synthesizing Unit <LD8_HXILINX_cpu>.
-    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu.vhf".
+    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf".
 WARNING:Xst:737 - Found 1-bit latch for signal <Q<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <Q<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <Q<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -314,183 +763,94 @@ WARNING:Xst:737 - Found 1-bit latch for signal <Q<7>>. Latches may be generated 
 	inferred   8 Latch(s).
 Unit <LD8_HXILINX_cpu> synthesized.
 
-Synthesizing Unit <buffer_8bit_MUSER_cpu>.
-    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu.vhf".
-    Set property "HU_SET = XLXI_54_5" for instance <XLXI_54>.
+Synthesizing Unit <LD4CE_HXILINX_cpu>.
+    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf".
+WARNING:Xst:737 - Found 1-bit latch for signal <Q2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Q1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Q0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Q3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   4 Latch(s).
+Unit <LD4CE_HXILINX_cpu> synthesized.
+
+Synthesizing Unit <reg_8bit_MUSER_cpu>.
+    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf".
+    Set property "HU_SET = XLXI_5_9" for instance <XLXI_5>.
+WARNING:Xst:647 - Input <r> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
 	no macro.
-Unit <buffer_8bit_MUSER_cpu> synthesized.
+Unit <reg_8bit_MUSER_cpu> synthesized.
 
-Synthesizing Unit <OBUFT8_HXILINX_cpu>.
-    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu.vhf".
-    Found 1-bit tristate buffer for signal <O<7>> created at line 290
-    Found 1-bit tristate buffer for signal <O<6>> created at line 290
-    Found 1-bit tristate buffer for signal <O<5>> created at line 290
-    Found 1-bit tristate buffer for signal <O<4>> created at line 290
-    Found 1-bit tristate buffer for signal <O<3>> created at line 290
-    Found 1-bit tristate buffer for signal <O<2>> created at line 290
-    Found 1-bit tristate buffer for signal <O<1>> created at line 290
-    Found 1-bit tristate buffer for signal <O<0>> created at line 290
+Synthesizing Unit <LD8CE_HXILINX_cpu>.
+    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf".
+WARNING:Xst:737 - Found 1-bit latch for signal <Q<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Q<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Q<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Q<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Q<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Q<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Q<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Q<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
     Summary:
-	inferred   8 Tristate(s).
-Unit <OBUFT8_HXILINX_cpu> synthesized.
+	inferred   8 Latch(s).
+Unit <LD8CE_HXILINX_cpu> synthesized.
 
-Synthesizing Unit <alu_MUSER_cpu>.
-    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu.vhf".
-    Set property "HU_SET = XLXI_1_8" for instance <XLXI_1>.
-    Set property "HU_SET = XLXI_2_9" for instance <XLXI_2>.
-    Set property "HU_SET = XLXI_4_10" for instance <XLXI_4>.
-    Set property "HU_SET = XLXI_7_11" for instance <XLXI_7>.
-    Set property "HU_SET = XLXI_97_12" for instance <XLXI_97>.
-    Set property "HU_SET = XLXI_102_13" for instance <XLXI_102>.
-    Set property "HU_SET = XLXI_111_14" for instance <XLXI_111>.
-    Set property "HU_SET = XLXI_112_15" for instance <XLXI_112>.
-    Set property "HU_SET = XLXI_113_16" for instance <XLXI_113>.
-    Set property "HU_SET = XLXI_136_17" for instance <XLXI_136>.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu.vhf" line 1506: Output port <OFL> of the instance <XLXI_2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu.vhf" line 1715: Output port <O> of the instance <XLXI_126> is unconnected or connected to loadless signal.
+Synthesizing Unit <cpu_output_muxer_MUSER_cpu>.
+    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf".
+WARNING:Xst:653 - Signal <XLXI_1_dev7_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXI_1_dev8_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXI_1_dev9_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXI_1_dev10_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXI_1_dev11_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXI_1_dev12_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXI_1_dev13_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXI_1_dev14_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXI_1_dev15_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	no macro.
-Unit <alu_MUSER_cpu> synthesized.
+Unit <cpu_output_muxer_MUSER_cpu> synthesized.
 
-Synthesizing Unit <D3_8E_HXILINX_cpu>.
-    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu.vhf".
-    Summary:
-	inferred   1 Multiplexer(s).
-Unit <D3_8E_HXILINX_cpu> synthesized.
-
-Synthesizing Unit <ADD8_HXILINX_cpu>.
-    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu.vhf".
-    Found 9-bit adder for signal <n0022> created at line 121.
-    Found 9-bit adder for signal <adder_tmp> created at line 121.
-    Summary:
-	inferred   2 Adder/Subtractor(s).
-Unit <ADD8_HXILINX_cpu> synthesized.
-
-Synthesizing Unit <INV8_HXILINX_cpu>.
-    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu.vhf".
+Synthesizing Unit <encoder8_3_MUSER_cpu>.
+    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf".
+    Set property "HU_SET = XLXI_4_8" for instance <XLXI_4>.
     Summary:
 	no macro.
-Unit <INV8_HXILINX_cpu> synthesized.
+Unit <encoder8_3_MUSER_cpu> synthesized.
 
-Synthesizing Unit <cmp_8bit_MUSER_cpu>.
-    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu.vhf".
+Synthesizing Unit <AND8_HXILINX_cpu>.
+    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf".
     Summary:
 	no macro.
-Unit <cmp_8bit_MUSER_cpu> synthesized.
+Unit <AND8_HXILINX_cpu> synthesized.
 
-Synthesizing Unit <cmp_1bit_MUSER_cpu>.
-    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu.vhf".
-    Summary:
-	no macro.
-Unit <cmp_1bit_MUSER_cpu> synthesized.
-
-Synthesizing Unit <lzero_MUSER_cpu>.
-    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu.vhf".
-    Set property "HU_SET = XLXI_1_7" for instance <XLXI_1>.
-    Summary:
-	no macro.
-Unit <lzero_MUSER_cpu> synthesized.
-
-Synthesizing Unit <NOR8_HXILINX_cpu>.
-    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu.vhf".
-    Summary:
-	no macro.
-Unit <NOR8_HXILINX_cpu> synthesized.
-
-Synthesizing Unit <clk_generator_MUSER_cpu>.
-    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu.vhf".
-    Set property "HU_SET = XLXI_4_4" for instance <XLXI_4>.
-    Summary:
-	no macro.
-Unit <clk_generator_MUSER_cpu> synthesized.
-
-Synthesizing Unit <FJKC_HXILINX_cpu>.
-    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu.vhf".
-        INIT = '0'
-    Found 1-bit register for signal <q_tmp>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
-	inferred   2 Multiplexer(s).
-Unit <FJKC_HXILINX_cpu> synthesized.
-
-Synthesizing Unit <cpu_control_MUSER_cpu>.
-    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu.vhf".
-WARNING:Xst:647 - Input <ir<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <ir<7:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu.vhf" line 625: Output port <s4> of the instance <stp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu.vhf" line 625: Output port <s5> of the instance <stp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu.vhf" line 625: Output port <s6> of the instance <stp> is unconnected or connected to loadless signal.
-    Summary:
-	no macro.
-Unit <cpu_control_MUSER_cpu> synthesized.
-
-Synthesizing Unit <stepper_MUSER_cpu>.
-    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu.vhf".
-    Set property "HU_SET = XLXI_24_2" for instance <XLXI_24>.
-    Set property "HU_SET = XLXI_25_3" for instance <XLXI_25>.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu.vhf" line 504: Output port <CEO> of the instance <XLXI_24> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu.vhf" line 504: Output port <Q3> of the instance <XLXI_24> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu.vhf" line 504: Output port <TC> of the instance <XLXI_24> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu.vhf" line 515: Output port <D7> of the instance <XLXI_25> is unconnected or connected to loadless signal.
-    Summary:
-	no macro.
-Unit <stepper_MUSER_cpu> synthesized.
-
-Synthesizing Unit <CB4CE_HXILINX_cpu>.
-    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu.vhf".
-    Found 4-bit register for signal <COUNT>.
-    Found 4-bit adder for signal <COUNT[3]_GND_40_o_add_0_OUT> created at line 57.
+Synthesizing Unit <CB16CE_HXILINX_cpu>.
+    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf".
+    Found 16-bit register for signal <COUNT>.
+    Found 16-bit adder for signal <COUNT[15]_GND_56_o_add_0_OUT> created at line 299.
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred   4 D-type flip-flop(s).
-Unit <CB4CE_HXILINX_cpu> synthesized.
-
-Synthesizing Unit <pass_through_or_one_MUSER_cpu>.
-    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu.vhf".
-    Summary:
-	no macro.
-Unit <pass_through_or_one_MUSER_cpu> synthesized.
-
-Synthesizing Unit <one_8bit_MUSER_cpu>.
-    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu.vhf".
-    Summary:
-	no macro.
-Unit <one_8bit_MUSER_cpu> synthesized.
-
-Synthesizing Unit <ram_256bytes_MUSER_cpu>.
-    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/cpu.vhf".
-    Set property "INIT = 0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_1>.
-    Set property "HU_SET = XLXI_15_0" for instance <XLXI_15>.
-    Set property "INIT = 0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_17>.
-    Set property "INIT = 0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_18>.
-    Set property "INIT = 0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_19>.
-    Set property "INIT = 0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_20>.
-    Set property "INIT = 0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_21>.
-    Set property "INIT = 0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_22>.
-    Set property "INIT = 0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_23>.
-    Set property "HU_SET = XLXI_41_1" for instance <XLXI_41>.
-    Summary:
-	no macro.
-Unit <ram_256bytes_MUSER_cpu> synthesized.
+	inferred  16 D-type flip-flop(s).
+Unit <CB16CE_HXILINX_cpu> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 3
+# Adders/Subtractors                                   : 5
+ 16-bit adder                                          : 2
  4-bit adder                                           : 1
  9-bit adder                                           : 2
-# Registers                                            : 2
+# Registers                                            : 4
  1-bit register                                        : 1
+ 16-bit register                                       : 2
  4-bit register                                        : 1
-# Latches                                              : 80
- 1-bit latch                                           : 80
-# Multiplexers                                         : 4
- 1-bit 2-to-1 multiplexer                              : 2
- 8-bit 2-to-1 multiplexer                              : 2
-# Tristates                                            : 152
- 1-bit tristate buffer                                 : 152
+# Latches                                              : 92
+ 1-bit latch                                           : 92
+# Multiplexers                                         : 48
+ 1-bit 16-to-1 multiplexer                             : 16
+ 1-bit 2-to-1 multiplexer                              : 26
+ 4-bit 2-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 4
 
 =========================================================================
 
@@ -498,6 +858,12 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+WARNING:Xst:1290 - Hierarchical block <XLXI_121> is unconnected in block <cpu>.
+   It will be removed from the design.
+
+Synthesizing (advanced) Unit <CB16CE_HXILINX_cpu>.
+The following registers are absorbed into counter <COUNT>: 1 register on signal <COUNT>.
+Unit <CB16CE_HXILINX_cpu> synthesized (advanced).
 
 Synthesizing (advanced) Unit <CB4CE_HXILINX_cpu>.
 The following registers are absorbed into counter <COUNT>: 1 register on signal <COUNT>.
@@ -509,61 +875,86 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # Adders/Subtractors                                   : 1
  9-bit adder carry in                                  : 1
-# Counters                                             : 1
+# Counters                                             : 3
+ 16-bit up counter                                     : 2
  4-bit up counter                                      : 1
-# Registers                                            : 1
- Flip-Flops                                            : 1
-# Multiplexers                                         : 4
- 1-bit 2-to-1 multiplexer                              : 2
- 8-bit 2-to-1 multiplexer                              : 2
+# Registers                                            : 2
+ Flip-Flops                                            : 2
+# Multiplexers                                         : 40
+ 1-bit 16-to-1 multiplexer                             : 16
+ 1-bit 2-to-1 multiplexer                              : 18
+ 4-bit 2-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 4
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:2973 - All outputs of instance <XLXI_121/XLXI_5> of block <LD8CE_HXILINX_cpu> are unconnected in block <cpu>. Underlying logic will be removed.
 
 Optimizing unit <cpu> ...
 
+Optimizing unit <LD8CE_HXILINX_cpu> ...
+
+Optimizing unit <cpu_control_MUSER_cpu> ...
+
+Optimizing unit <ram_256bytes_MUSER_cpu> ...
+
 Optimizing unit <LD8_HXILINX_cpu> ...
 
-Optimizing unit <OBUFT8_HXILINX_cpu> ...
+Optimizing unit <LD4CE_HXILINX_cpu> ...
+
+Optimizing unit <cpu_output_muxer_MUSER_cpu> ...
+
+Optimizing unit <bus_muxer_MUSER_cpu> ...
+
+Optimizing unit <encoder8_3_MUSER_cpu> ...
+
+Optimizing unit <pass_through_or_one_MUSER_cpu> ...
 
 Optimizing unit <alu_MUSER_cpu> ...
 
 Optimizing unit <cmp_8bit_MUSER_cpu> ...
 
-Optimizing unit <cpu_control_MUSER_cpu> ...
+Optimizing unit <CB16CE_HXILINX_cpu> ...
 
-Optimizing unit <one_8bit_MUSER_cpu> ...
+Optimizing unit <FJKC_HXILINX_cpu> ...
+
+Optimizing unit <CB4CE_HXILINX_cpu> ...
+
+Optimizing unit <D3_8E_HXILINX_cpu> ...
+
+Optimizing unit <D2_4E_HXILINX_cpu> ...
+
+Optimizing unit <OR6_HXILINX_cpu> ...
+
+Optimizing unit <M16_1E_HXILINX_cpu> ...
+
+Optimizing unit <AND8_HXILINX_cpu> ...
+
+Optimizing unit <M2_1_HXILINX_cpu> ...
 
 Optimizing unit <ADD8_HXILINX_cpu> ...
 
 Optimizing unit <INV8_HXILINX_cpu> ...
 
-Optimizing unit <D3_8E_HXILINX_cpu> ...
-
 Optimizing unit <NOR8_HXILINX_cpu> ...
-
-Optimizing unit <FJKC_HXILINX_cpu> ...
-
-Optimizing unit <CB4CE_HXILINX_cpu> ...
+WARNING:Xst:2677 - Node <COUNT_6> of sequential type is unconnected in block <XLXI_132>.
+WARNING:Xst:2677 - Node <COUNT_7> of sequential type is unconnected in block <XLXI_132>.
+WARNING:Xst:2677 - Node <COUNT_8> of sequential type is unconnected in block <XLXI_132>.
+WARNING:Xst:2677 - Node <COUNT_9> of sequential type is unconnected in block <XLXI_132>.
+WARNING:Xst:2677 - Node <COUNT_10> of sequential type is unconnected in block <XLXI_132>.
+WARNING:Xst:2677 - Node <COUNT_11> of sequential type is unconnected in block <XLXI_132>.
+WARNING:Xst:2677 - Node <COUNT_12> of sequential type is unconnected in block <XLXI_132>.
+WARNING:Xst:2677 - Node <COUNT_13> of sequential type is unconnected in block <XLXI_132>.
+WARNING:Xst:2677 - Node <COUNT_14> of sequential type is unconnected in block <XLXI_132>.
+WARNING:Xst:2677 - Node <COUNT_15> of sequential type is unconnected in block <XLXI_132>.
 WARNING:Xst:2677 - Node <COUNT_3> of sequential type is unconnected in block <cpu_ctl/stp/XLXI_24>.
 
 Mapping all equations...
-WARNING:Xst:1849 - Inserting OBUF on port <ir_o<3>> driven by tristate(s), possible simulation mismatch.
-WARNING:Xst:1849 - Inserting OBUF on port <ir_o<2>> driven by tristate(s), possible simulation mismatch.
-WARNING:Xst:1849 - Inserting OBUF on port <ir_o<1>> driven by tristate(s), possible simulation mismatch.
-WARNING:Xst:1492 - Inserting OBUF on port <sysbus<7>> driven by tristates located in different units having KEEP_HIERARCHY constraints. Possible simulation mismatch.
-WARNING:Xst:1492 - Inserting OBUF on port <sysbus<6>> driven by tristates located in different units having KEEP_HIERARCHY constraints. Possible simulation mismatch.
-WARNING:Xst:1492 - Inserting OBUF on port <sysbus<5>> driven by tristates located in different units having KEEP_HIERARCHY constraints. Possible simulation mismatch.
-WARNING:Xst:1492 - Inserting OBUF on port <sysbus<4>> driven by tristates located in different units having KEEP_HIERARCHY constraints. Possible simulation mismatch.
-WARNING:Xst:1492 - Inserting OBUF on port <sysbus<3>> driven by tristates located in different units having KEEP_HIERARCHY constraints. Possible simulation mismatch.
-WARNING:Xst:1492 - Inserting OBUF on port <sysbus<2>> driven by tristates located in different units having KEEP_HIERARCHY constraints. Possible simulation mismatch.
-WARNING:Xst:1492 - Inserting OBUF on port <sysbus<1>> driven by tristates located in different units having KEEP_HIERARCHY constraints. Possible simulation mismatch.
-WARNING:Xst:1492 - Inserting OBUF on port <sysbus<0>> driven by tristates located in different units having KEEP_HIERARCHY constraints. Possible simulation mismatch.
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block cpu, actual ratio is 1.
+Found area constraint ratio of 100 (+ 5) on block cpu, actual ratio is 3.
 
 Final Macro Processing ...
 
@@ -571,8 +962,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 4
- Flip-Flops                                            : 4
+# Registers                                            : 27
+ Flip-Flops                                            : 27
 
 =========================================================================
 
@@ -595,39 +986,43 @@ Top Level Output File Name         : cpu.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 194
-#      AND2                        : 35
-#      AND2B1                      : 4
-#      BUF                         : 26
-#      GND                         : 1
-#      INV                         : 48
-#      LUT2                        : 10
-#      LUT3                        : 15
-#      LUT6                        : 1
-#      MUXCY                       : 8
-#      OR2                         : 20
-#      OR3                         : 1
-#      OR4                         : 8
-#      VCC                         : 1
+# BELS                             : 485
+#      AND2                        : 88
+#      AND2B1                      : 1
+#      AND3B1                      : 4
+#      BUF                         : 58
+#      GND                         : 19
+#      INV                         : 42
+#      LUT1                        : 19
+#      LUT2                        : 34
+#      LUT3                        : 14
+#      LUT4                        : 14
+#      LUT6                        : 38
+#      MUXCY                       : 28
+#      MUXF7                       : 16
+#      MUXF8                       : 16
+#      OR2                         : 34
+#      OR3                         : 4
+#      OR4                         : 11
+#      OR5                         : 4
+#      VCC                         : 3
 #      XNOR2                       : 8
-#      XORCY                       : 8
-# FlipFlops/Latches                : 84
-#      FDCE                        : 4
-#      LD                          : 80
+#      XORCY                       : 30
+# FlipFlops/Latches                : 111
+#      FDC_1                       : 1
+#      FDCE                        : 26
+#      LD                          : 16
+#      LDCE                        : 68
 # RAMS                             : 8
 #      RAM256X1S                   : 8
-# Tri-States                       : 147
-#      BUFT                        : 147
-# Clock Buffers                    : 7
-#      BUFG                        : 1
-#      BUFGP                       : 6
-# IO Buffers                       : 49
-#      IBUF                        : 15
-#      OBUF                        : 29
-#      OBUFT                       : 5
-# Others                           : 7
-#      PULLDOWN                    : 2
-#      PULLUP                      : 5
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 18
+#      IBUF                        : 1
+#      OBUF                        : 17
+# Others                           : 5
+#      PULLDOWN                    : 1
+#      PULLUP                      : 4
 
 Device utilization summary:
 ---------------------------
@@ -636,25 +1031,25 @@ Selected Device : xa6slx9ftg256-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              84  out of  11440     0%  
- Number of Slice LUTs:                  106  out of   5720     1%  
-    Number used as Logic:                74  out of   5720     1%  
+ Number of Slice Registers:             111  out of  11440     0%  
+ Number of Slice LUTs:                  193  out of   5720     3%  
+    Number used as Logic:               161  out of   5720     2%  
     Number used as Memory:               32  out of   1440     2%  
        Number used as RAM:               32
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    190
-   Number with an unused Flip Flop:     106  out of    190    55%  
-   Number with an unused LUT:            84  out of    190    44%  
-   Number of fully used LUT-FF pairs:     0  out of    190     0%  
-   Number of unique control sets:        12
+ Number of LUT Flip Flop pairs used:    304
+   Number with an unused Flip Flop:     193  out of    304    63%  
+   Number with an unused LUT:           111  out of    304    36%  
+   Number of fully used LUT-FF pairs:     0  out of    304     0%  
+   Number of unique control sets:        16
 
 IO Utilization: 
- Number of IOs:                          55
- Number of bonded IOBs:                  55  out of    186    29%  
+ Number of IOs:                          19
+ Number of bonded IOBs:                  19  out of    186    10%  
 
 Specific Feature Utilization:
- Number of BUFG/BUFGCTRLs:                7  out of     16    43%  
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
 
 ---------------------------
 Partition Resource Summary:
@@ -677,21 +1072,16 @@ Clock Information:
 -----------------------------------+----------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)            | Load  |
 -----------------------------------+----------------------------------+-------+
-clkw_OBUF(clck_gen/XLXI_10:O)      | NONE(*)(XLXI_9/XLXI_23)          | 8     |
-ram_a_w_OBUF(cpu_ctl/XLXI_7:O)     | NONE(*)(XLXI_9/XLXI_15/Q_6)      | 8     |
-rinw                               | BUFGP                            | 8     |
-r0_w                               | BUFGP                            | 8     |
-r1_w                               | BUFGP                            | 8     |
-r2_w                               | BUFGP                            | 8     |
-r3_w                               | BUFGP                            | 8     |
-temp_w                             | BUFGP                            | 8     |
-iar_w_OBUF(cpu_ctl/XLXI_5:O)       | NONE(*)(iar/XLXI_2/Q_6)          | 8     |
-ir_w_OBUF(cpu_ctl/XLXI_6:O)        | NONE(*)(ir/XLXI_2/Q_6)           | 8     |
-acc_w_OBUF(cpu_ctl/XLXI_17:O)      | NONE(*)(acc/XLXI_2/Q_6)          | 8     |
-clk                                | IBUF+BUFG                        | 1     |
+clkr(clck_gen/XLXI_9:O)            | NONE(*)(XLXI_102)                | 1     |
+clk                                | BUFGP                            | 22    |
+XLXI_132/COUNT_5                   | NONE(clck_gen/XLXI_4/q_tmp)      | 1     |
+XLXI_122/XLXN_2                    | NONE(XLXI_122/XLXI_5/Q_6)        | 68    |
 clck_gen/XLXI_4/q_tmp              | NONE(cpu_ctl/stp/XLXI_24/COUNT_0)| 3     |
+clkw(clck_gen/XLXI_10:O)           | NONE(*)(XLXI_9/XLXI_23)          | 8     |
+ram_a_w(cpu_ctl/XLXI_7:O)          | NONE(*)(XLXI_9/XLXI_15/Q_6)      | 8     |
+ctl_r0_w(cpu_ctl/XLXI_80:O)        | NONE(*)(XLXI_104/Q_6)            | 8     |
 -----------------------------------+----------------------------------+-------+
-(*) These 5 clock signal(s) are generated by combinatorial logic,
+(*) These 4 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -704,204 +1094,68 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 4.578ns (Maximum Frequency: 218.436MHz)
-   Minimum input arrival time before clock: 9.937ns
-   Maximum output required time after clock: 22.061ns
-   Maximum combinational path delay: 21.608ns
+   Minimum period: 3.584ns (Maximum Frequency: 279.030MHz)
+   Minimum input arrival time before clock: 5.598ns
+   Maximum output required time after clock: 18.812ns
+   Maximum combinational path delay: No path found
 
 Timing Details:
 ---------------
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'r0_w'
-  Clock period: 1.114ns (frequency: 897.787MHz)
-  Total number of paths / destination ports: 8 / 8
--------------------------------------------------------------------------
-Delay:               1.114ns (Levels of Logic = 3)
-  Source:            r0/XLXI_2/Q_6 (LATCH)
-  Destination:       r0/XLXI_2/Q_6 (LATCH)
-  Source Clock:      r0_w falling
-  Destination Clock: r0_w falling
-
-  Data Path: r0/XLXI_2/Q_6 to r0/XLXI_2/Q_6
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               1   0.498   0.579  Q_6 (Q_6)
-     end scope: 'r0/XLXI_2:Q<6>'
-     begin scope: 'r0/XLXI_4/XLXI_54:I<6>'
-     BUFT:I->O            14   0.000   0.000  O<6>_I<6> (O<6>)
-     end scope: 'r0/XLXI_4/XLXI_54:O<6>'
-     begin scope: 'r0/XLXI_2:D<6>'
-     LD:D                      0.037          Q_6
-    ----------------------------------------
-    Total                      1.114ns (0.535ns logic, 0.579ns route)
-                                       (48.0% logic, 52.0% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'r1_w'
-  Clock period: 1.114ns (frequency: 897.787MHz)
-  Total number of paths / destination ports: 8 / 8
--------------------------------------------------------------------------
-Delay:               1.114ns (Levels of Logic = 3)
-  Source:            r1/XLXI_2/Q_6 (LATCH)
-  Destination:       r1/XLXI_2/Q_6 (LATCH)
-  Source Clock:      r1_w falling
-  Destination Clock: r1_w falling
-
-  Data Path: r1/XLXI_2/Q_6 to r1/XLXI_2/Q_6
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               1   0.498   0.579  Q_6 (Q_6)
-     end scope: 'r1/XLXI_2:Q<6>'
-     begin scope: 'r1/XLXI_4/XLXI_54:I<6>'
-     BUFT:I->O            14   0.000   0.000  O<6>_I<6> (O<6>)
-     end scope: 'r1/XLXI_4/XLXI_54:O<6>'
-     begin scope: 'r1/XLXI_2:D<6>'
-     LD:D                      0.037          Q_6
-    ----------------------------------------
-    Total                      1.114ns (0.535ns logic, 0.579ns route)
-                                       (48.0% logic, 52.0% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'r2_w'
-  Clock period: 1.114ns (frequency: 897.787MHz)
-  Total number of paths / destination ports: 8 / 8
--------------------------------------------------------------------------
-Delay:               1.114ns (Levels of Logic = 3)
-  Source:            r2/XLXI_2/Q_6 (LATCH)
-  Destination:       r2/XLXI_2/Q_6 (LATCH)
-  Source Clock:      r2_w falling
-  Destination Clock: r2_w falling
-
-  Data Path: r2/XLXI_2/Q_6 to r2/XLXI_2/Q_6
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               1   0.498   0.579  Q_6 (Q_6)
-     end scope: 'r2/XLXI_2:Q<6>'
-     begin scope: 'r2/XLXI_4/XLXI_54:I<6>'
-     BUFT:I->O            14   0.000   0.000  O<6>_I<6> (O<6>)
-     end scope: 'r2/XLXI_4/XLXI_54:O<6>'
-     begin scope: 'r2/XLXI_2:D<6>'
-     LD:D                      0.037          Q_6
-    ----------------------------------------
-    Total                      1.114ns (0.535ns logic, 0.579ns route)
-                                       (48.0% logic, 52.0% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'r3_w'
-  Clock period: 1.114ns (frequency: 897.787MHz)
-  Total number of paths / destination ports: 8 / 8
--------------------------------------------------------------------------
-Delay:               1.114ns (Levels of Logic = 3)
-  Source:            r3/XLXI_2/Q_6 (LATCH)
-  Destination:       r3/XLXI_2/Q_6 (LATCH)
-  Source Clock:      r3_w falling
-  Destination Clock: r3_w falling
-
-  Data Path: r3/XLXI_2/Q_6 to r3/XLXI_2/Q_6
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               1   0.498   0.579  Q_6 (Q_6)
-     end scope: 'r3/XLXI_2:Q<6>'
-     begin scope: 'r3/XLXI_4/XLXI_54:I<6>'
-     BUFT:I->O            14   0.000   0.000  O<6>_I<6> (O<6>)
-     end scope: 'r3/XLXI_4/XLXI_54:O<6>'
-     begin scope: 'r3/XLXI_2:D<6>'
-     LD:D                      0.037          Q_6
-    ----------------------------------------
-    Total                      1.114ns (0.535ns logic, 0.579ns route)
-                                       (48.0% logic, 52.0% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'iar_w_OBUF'
-  Clock period: 1.114ns (frequency: 897.787MHz)
-  Total number of paths / destination ports: 8 / 8
--------------------------------------------------------------------------
-Delay:               1.114ns (Levels of Logic = 3)
-  Source:            iar/XLXI_2/Q_6 (LATCH)
-  Destination:       iar/XLXI_2/Q_6 (LATCH)
-  Source Clock:      iar_w_OBUF falling
-  Destination Clock: iar_w_OBUF falling
-
-  Data Path: iar/XLXI_2/Q_6 to iar/XLXI_2/Q_6
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               1   0.498   0.579  Q_6 (Q_6)
-     end scope: 'iar/XLXI_2:Q<6>'
-     begin scope: 'iar/XLXI_4/XLXI_54:I<6>'
-     BUFT:I->O            14   0.000   0.000  O<6>_I<6> (O<6>)
-     end scope: 'iar/XLXI_4/XLXI_54:O<6>'
-     begin scope: 'iar/XLXI_2:D<6>'
-     LD:D                      0.037          Q_6
-    ----------------------------------------
-    Total                      1.114ns (0.535ns logic, 0.579ns route)
-                                       (48.0% logic, 52.0% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'acc_w_OBUF'
-  Clock period: 4.578ns (frequency: 218.436MHz)
-  Total number of paths / destination ports: 110 / 8
--------------------------------------------------------------------------
-Delay:               4.578ns (Levels of Logic = 7)
-  Source:            acc/XLXI_2/Q_3 (LATCH)
-  Destination:       acc/XLXI_2/Q_3 (LATCH)
-  Source Clock:      acc_w_OBUF falling
-  Destination Clock: acc_w_OBUF falling
-
-  Data Path: acc/XLXI_2/Q_3 to acc/XLXI_2/Q_3
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               1   0.498   0.579  Q_3 (Q_3)
-     end scope: 'acc/XLXI_2:Q<3>'
-     begin scope: 'acc/XLXI_4/XLXI_54:I<3>'
-     BUFT:I->O            22   0.000   1.478  O<3>_I<3> (O<3>)
-     end scope: 'acc/XLXI_4/XLXI_54:O<3>'
-     XNOR2:I1->O           2   0.223   0.616  alu_inst/XLXI_135/XLXI_6/XLXI_1 (alu_inst/XLXI_135/XLXI_6/XLXN_3)
-     INV:I->O              1   0.568   0.579  alu_inst/XLXI_135/XLXI_6/XLXI_6 (alu_inst/XLXN_270<3>)
-     begin scope: 'alu_inst/XLXI_136:I<3>'
-     BUFT:I->O             2   0.000   0.000  O<3>_I<3> (O<3>)
-     end scope: 'alu_inst/XLXI_136:O<3>'
-     begin scope: 'acc/XLXI_2:D<3>'
-     LD:D                      0.037          Q_3
-    ----------------------------------------
-    Total                      4.578ns (1.326ns logic, 3.252ns route)
-                                       (29.0% logic, 71.0% route)
-
-=========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 1.469ns (frequency: 680.735MHz)
+  Clock period: 3.584ns (frequency: 279.030MHz)
+  Total number of paths / destination ports: 253 / 28
+-------------------------------------------------------------------------
+Delay:               3.584ns (Levels of Logic = 3)
+  Source:            XLXI_131/COUNT_5 (FF)
+  Destination:       XLXI_132/COUNT_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: XLXI_131/COUNT_5 to XLXI_132/COUNT_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.447   0.981  COUNT_5 (COUNT_5)
+     LUT6:I0->O            1   0.203   0.684  TC<15>2 (TC<15>1)
+     LUT6:I4->O            6   0.203   0.744  TC<15>3 (TC)
+     end scope: 'XLXI_131:CEO'
+     begin scope: 'XLXI_132:CE'
+     FDCE:CE                   0.322          COUNT_0
+    ----------------------------------------
+    Total                      3.584ns (1.175ns logic, 2.409ns route)
+                                       (32.8% logic, 67.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_132/COUNT_5'
+  Clock period: 1.438ns (frequency: 695.628MHz)
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Delay:               1.469ns (Levels of Logic = 1)
+Delay:               1.438ns (Levels of Logic = 1)
   Source:            clck_gen/XLXI_4/q_tmp (FF)
   Destination:       clck_gen/XLXI_4/q_tmp (FF)
-  Source Clock:      clk falling
-  Destination Clock: clk falling
+  Source Clock:      XLXI_132/COUNT_5 falling
+  Destination Clock: XLXI_132/COUNT_5 falling
 
   Data Path: clck_gen/XLXI_4/q_tmp to clck_gen/XLXI_4/q_tmp
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             5   0.447   0.715  q_tmp (q_tmp)
+     FDCE:C->Q             4   0.447   0.684  q_tmp (q_tmp)
      LUT3:I2->O            1   0.205   0.000  Mmux_q_tmp_q_tmp_MUX_34_o11 (q_tmp_q_tmp_MUX_34_o)
      FDCE:D                    0.102          q_tmp
     ----------------------------------------
-    Total                      1.469ns (0.754ns logic, 0.715ns route)
-                                       (51.3% logic, 48.7% route)
+    Total                      1.438ns (0.754ns logic, 0.684ns route)
+                                       (52.5% logic, 47.5% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clck_gen/XLXI_4/q_tmp'
-  Clock period: 2.705ns (frequency: 369.686MHz)
+  Clock period: 2.790ns (frequency: 358.423MHz)
   Total number of paths / destination ports: 15 / 6
 -------------------------------------------------------------------------
-Delay:               2.705ns (Levels of Logic = 3)
+Delay:               2.790ns (Levels of Logic = 3)
   Source:            cpu_ctl/stp/XLXI_24/COUNT_1 (FF)
   Destination:       cpu_ctl/stp/XLXI_24/COUNT_0 (FF)
   Source Clock:      clck_gen/XLXI_4/q_tmp falling
@@ -911,7 +1165,7 @@ Delay:               2.705ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             6   0.447   0.973  COUNT_1 (COUNT_1)
+     FDCE:C->Q             9   0.447   1.058  COUNT_1 (COUNT_1)
      end scope: 'cpu_ctl/stp/XLXI_24:Q1'
      begin scope: 'cpu_ctl/stp/XLXI_25:A1'
      LUT3:I0->O            3   0.205   0.650  Mmux_d_tmp71 (D6)
@@ -919,731 +1173,173 @@ Delay:               2.705ns (Levels of Logic = 3)
      begin scope: 'cpu_ctl/stp/XLXI_24:CLR'
      FDCE:CLR                  0.430          COUNT_0
     ----------------------------------------
-    Total                      2.705ns (1.082ns logic, 1.623ns route)
-                                       (40.0% logic, 60.0% route)
+    Total                      2.790ns (1.082ns logic, 1.708ns route)
+                                       (38.8% logic, 61.2% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'clkw_OBUF'
-  Total number of paths / destination ports: 64 / 8
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clkr'
+  Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              6.807ns (Levels of Logic = 6)
-  Source:            clk (PAD)
-  Destination:       XLXI_9/XLXI_19 (RAM)
-  Destination Clock: clkw_OBUF rising
+Offset:              5.598ns (Levels of Logic = 3)
+  Source:            rst_in (PAD)
+  Destination:       XLXI_102 (FF)
+  Destination Clock: clkr falling
 
-  Data Path: clk to XLXI_9/XLXI_19
+  Data Path: rst_in to XLXI_102
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             2   1.222   0.961  clk_IBUF (clk_IBUF)
-     OR2:I1->O             5   0.223   1.079  clck_gen/XLXI_9 (clkr_OBUF)
-     AND2:I0->O            2   0.203   0.616  cpu_ctl/XLXI_2 (iar_r_OBUF)
-     INV:I->O              8   0.568   0.802  iar/XLXI_4/XLXI_55 (iar/XLXI_4/XLXN_2)
-     begin scope: 'iar/XLXI_4/XLXI_54:T'
-     BUFT:T->O            22   0.000   1.133  O<3>_I<3> (O<3>)
-     end scope: 'iar/XLXI_4/XLXI_54:O<3>'
-     RAM256X1S:D               0.000          XLXI_9/XLXI_19
+     IBUF:I->O             1   1.222   0.579  rst_in_IBUF (rst_in_IBUF)
+     BUF:I->O              1   0.568   0.579  XLXI_116 (XLXN_233)
+     INV:I->O             66   0.568   1.653  XLXI_117 (rst)
+     FDC_1:CLR                 0.430          XLXI_102
     ----------------------------------------
-    Total                      6.807ns (2.216ns logic, 4.591ns route)
-                                       (32.6% logic, 67.4% route)
+    Total                      5.598ns (2.788ns logic, 2.810ns route)
+                                       (49.8% logic, 50.2% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'ram_a_w_OBUF'
-  Total number of paths / destination ports: 64 / 8
--------------------------------------------------------------------------
-Offset:              5.711ns (Levels of Logic = 7)
-  Source:            clk (PAD)
-  Destination:       XLXI_9/XLXI_15/Q_6 (LATCH)
-  Destination Clock: ram_a_w_OBUF falling
-
-  Data Path: clk to XLXI_9/XLXI_15/Q_6
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             2   1.222   0.961  clk_IBUF (clk_IBUF)
-     OR2:I1->O             5   0.223   1.079  clck_gen/XLXI_9 (clkr_OBUF)
-     AND2:I0->O            2   0.203   0.616  cpu_ctl/XLXI_2 (iar_r_OBUF)
-     INV:I->O              8   0.568   0.802  iar/XLXI_4/XLXI_55 (iar/XLXI_4/XLXN_2)
-     begin scope: 'iar/XLXI_4/XLXI_54:T'
-     BUFT:T->O            14   0.000   0.000  O<7>_I<7> (O<7>)
-     end scope: 'iar/XLXI_4/XLXI_54:O<7>'
-     begin scope: 'XLXI_9/XLXI_15:D<7>'
-     LD:D                      0.037          Q_7
-    ----------------------------------------
-    Total                      5.711ns (2.253ns logic, 3.458ns route)
-                                       (39.4% logic, 60.6% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'rinw'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ctl_r0_w'
   Total number of paths / destination ports: 8 / 8
 -------------------------------------------------------------------------
-Offset:              1.838ns (Levels of Logic = 2)
-  Source:            rind<6> (PAD)
-  Destination:       rin/XLXI_2/Q_6 (LATCH)
-  Destination Clock: rinw falling
+Offset:              3.648ns (Levels of Logic = 2)
+  Source:            XLXI_104/Q_7 (LATCH)
+  Destination:       monitor<7> (PAD)
+  Source Clock:      ctl_r0_w falling
 
-  Data Path: rind<6> to rin/XLXI_2/Q_6
+  Data Path: XLXI_104/Q_7 to monitor<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.579  rind_6_IBUF (rind_6_IBUF)
-     begin scope: 'rin/XLXI_2:D<6>'
-     LD:D                      0.037          Q_6
+     LD:G->Q               1   0.498   0.579  Q_7 (Q_7)
+     end scope: 'XLXI_104:Q<7>'
+     OBUF:I->O                 2.571          monitor_7_OBUF (monitor<7>)
     ----------------------------------------
-    Total                      1.838ns (1.259ns logic, 0.579ns route)
-                                       (68.5% logic, 31.5% route)
+    Total                      3.648ns (3.069ns logic, 0.579ns route)
+                                       (84.1% logic, 15.9% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'r0_w'
-  Total number of paths / destination ports: 64 / 8
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_132/COUNT_5'
+  Total number of paths / destination ports: 177 / 9
 -------------------------------------------------------------------------
-Offset:              5.711ns (Levels of Logic = 7)
-  Source:            clk (PAD)
-  Destination:       r0/XLXI_2/Q_6 (LATCH)
-  Destination Clock: r0_w falling
+Offset:              14.279ns (Levels of Logic = 13)
+  Source:            clck_gen/XLXI_4/q_tmp (FF)
+  Destination:       sysbus<7> (PAD)
+  Source Clock:      XLXI_132/COUNT_5 falling
 
-  Data Path: clk to r0/XLXI_2/Q_6
+  Data Path: clck_gen/XLXI_4/q_tmp to sysbus<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             2   1.222   0.961  clk_IBUF (clk_IBUF)
-     OR2:I1->O             5   0.223   1.079  clck_gen/XLXI_9 (clkr_OBUF)
-     AND2:I0->O            2   0.203   0.616  cpu_ctl/XLXI_2 (iar_r_OBUF)
-     INV:I->O              8   0.568   0.802  iar/XLXI_4/XLXI_55 (iar/XLXI_4/XLXN_2)
-     begin scope: 'iar/XLXI_4/XLXI_54:T'
-     BUFT:T->O            14   0.000   0.000  O<7>_I<7> (O<7>)
-     end scope: 'iar/XLXI_4/XLXI_54:O<7>'
-     begin scope: 'r0/XLXI_2:D<7>'
-     LD:D                      0.037          Q_7
-    ----------------------------------------
-    Total                      5.711ns (2.253ns logic, 3.458ns route)
-                                       (39.4% logic, 60.6% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'r1_w'
-  Total number of paths / destination ports: 64 / 8
--------------------------------------------------------------------------
-Offset:              5.711ns (Levels of Logic = 7)
-  Source:            clk (PAD)
-  Destination:       r1/XLXI_2/Q_6 (LATCH)
-  Destination Clock: r1_w falling
-
-  Data Path: clk to r1/XLXI_2/Q_6
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             2   1.222   0.961  clk_IBUF (clk_IBUF)
-     OR2:I1->O             5   0.223   1.079  clck_gen/XLXI_9 (clkr_OBUF)
-     AND2:I0->O            2   0.203   0.616  cpu_ctl/XLXI_2 (iar_r_OBUF)
-     INV:I->O              8   0.568   0.802  iar/XLXI_4/XLXI_55 (iar/XLXI_4/XLXN_2)
-     begin scope: 'iar/XLXI_4/XLXI_54:T'
-     BUFT:T->O            14   0.000   0.000  O<7>_I<7> (O<7>)
-     end scope: 'iar/XLXI_4/XLXI_54:O<7>'
-     begin scope: 'r1/XLXI_2:D<7>'
-     LD:D                      0.037          Q_7
-    ----------------------------------------
-    Total                      5.711ns (2.253ns logic, 3.458ns route)
-                                       (39.4% logic, 60.6% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'r2_w'
-  Total number of paths / destination ports: 64 / 8
--------------------------------------------------------------------------
-Offset:              5.711ns (Levels of Logic = 7)
-  Source:            clk (PAD)
-  Destination:       r2/XLXI_2/Q_6 (LATCH)
-  Destination Clock: r2_w falling
-
-  Data Path: clk to r2/XLXI_2/Q_6
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             2   1.222   0.961  clk_IBUF (clk_IBUF)
-     OR2:I1->O             5   0.223   1.079  clck_gen/XLXI_9 (clkr_OBUF)
-     AND2:I0->O            2   0.203   0.616  cpu_ctl/XLXI_2 (iar_r_OBUF)
-     INV:I->O              8   0.568   0.802  iar/XLXI_4/XLXI_55 (iar/XLXI_4/XLXN_2)
-     begin scope: 'iar/XLXI_4/XLXI_54:T'
-     BUFT:T->O            14   0.000   0.000  O<7>_I<7> (O<7>)
-     end scope: 'iar/XLXI_4/XLXI_54:O<7>'
-     begin scope: 'r2/XLXI_2:D<7>'
-     LD:D                      0.037          Q_7
-    ----------------------------------------
-    Total                      5.711ns (2.253ns logic, 3.458ns route)
-                                       (39.4% logic, 60.6% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'r3_w'
-  Total number of paths / destination ports: 64 / 8
--------------------------------------------------------------------------
-Offset:              5.711ns (Levels of Logic = 7)
-  Source:            clk (PAD)
-  Destination:       r3/XLXI_2/Q_6 (LATCH)
-  Destination Clock: r3_w falling
-
-  Data Path: clk to r3/XLXI_2/Q_6
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             2   1.222   0.961  clk_IBUF (clk_IBUF)
-     OR2:I1->O             5   0.223   1.079  clck_gen/XLXI_9 (clkr_OBUF)
-     AND2:I0->O            2   0.203   0.616  cpu_ctl/XLXI_2 (iar_r_OBUF)
-     INV:I->O              8   0.568   0.802  iar/XLXI_4/XLXI_55 (iar/XLXI_4/XLXN_2)
-     begin scope: 'iar/XLXI_4/XLXI_54:T'
-     BUFT:T->O            14   0.000   0.000  O<7>_I<7> (O<7>)
-     end scope: 'iar/XLXI_4/XLXI_54:O<7>'
-     begin scope: 'r3/XLXI_2:D<7>'
-     LD:D                      0.037          Q_7
-    ----------------------------------------
-    Total                      5.711ns (2.253ns logic, 3.458ns route)
-                                       (39.4% logic, 60.6% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'temp_w'
-  Total number of paths / destination ports: 64 / 8
--------------------------------------------------------------------------
-Offset:              5.711ns (Levels of Logic = 7)
-  Source:            clk (PAD)
-  Destination:       temp/XLXI_2/Q_6 (LATCH)
-  Destination Clock: temp_w falling
-
-  Data Path: clk to temp/XLXI_2/Q_6
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             2   1.222   0.961  clk_IBUF (clk_IBUF)
-     OR2:I1->O             5   0.223   1.079  clck_gen/XLXI_9 (clkr_OBUF)
-     AND2:I0->O            2   0.203   0.616  cpu_ctl/XLXI_2 (iar_r_OBUF)
-     INV:I->O              8   0.568   0.802  iar/XLXI_4/XLXI_55 (iar/XLXI_4/XLXN_2)
-     begin scope: 'iar/XLXI_4/XLXI_54:T'
-     BUFT:T->O            14   0.000   0.000  O<7>_I<7> (O<7>)
-     end scope: 'iar/XLXI_4/XLXI_54:O<7>'
-     begin scope: 'temp/XLXI_2:D<7>'
-     LD:D                      0.037          Q_7
-    ----------------------------------------
-    Total                      5.711ns (2.253ns logic, 3.458ns route)
-                                       (39.4% logic, 60.6% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'iar_w_OBUF'
-  Total number of paths / destination ports: 64 / 8
--------------------------------------------------------------------------
-Offset:              5.711ns (Levels of Logic = 7)
-  Source:            clk (PAD)
-  Destination:       iar/XLXI_2/Q_6 (LATCH)
-  Destination Clock: iar_w_OBUF falling
-
-  Data Path: clk to iar/XLXI_2/Q_6
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             2   1.222   0.961  clk_IBUF (clk_IBUF)
-     OR2:I1->O             5   0.223   1.079  clck_gen/XLXI_9 (clkr_OBUF)
-     AND2:I0->O            2   0.203   0.616  cpu_ctl/XLXI_2 (iar_r_OBUF)
-     INV:I->O              8   0.568   0.802  iar/XLXI_4/XLXI_55 (iar/XLXI_4/XLXN_2)
-     begin scope: 'iar/XLXI_4/XLXI_54:T'
-     BUFT:T->O            14   0.000   0.000  O<7>_I<7> (O<7>)
-     end scope: 'iar/XLXI_4/XLXI_54:O<7>'
-     begin scope: 'iar/XLXI_2:D<7>'
-     LD:D                      0.037          Q_7
-    ----------------------------------------
-    Total                      5.711ns (2.253ns logic, 3.458ns route)
-                                       (39.4% logic, 60.6% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'ir_w_OBUF'
-  Total number of paths / destination ports: 64 / 8
--------------------------------------------------------------------------
-Offset:              5.711ns (Levels of Logic = 7)
-  Source:            clk (PAD)
-  Destination:       ir/XLXI_2/Q_6 (LATCH)
-  Destination Clock: ir_w_OBUF falling
-
-  Data Path: clk to ir/XLXI_2/Q_6
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             2   1.222   0.961  clk_IBUF (clk_IBUF)
-     OR2:I1->O             5   0.223   1.079  clck_gen/XLXI_9 (clkr_OBUF)
-     AND2:I0->O            2   0.203   0.616  cpu_ctl/XLXI_2 (iar_r_OBUF)
-     INV:I->O              8   0.568   0.802  iar/XLXI_4/XLXI_55 (iar/XLXI_4/XLXN_2)
-     begin scope: 'iar/XLXI_4/XLXI_54:T'
-     BUFT:T->O            14   0.000   0.000  O<7>_I<7> (O<7>)
-     end scope: 'iar/XLXI_4/XLXI_54:O<7>'
-     begin scope: 'ir/XLXI_2:D<7>'
-     LD:D                      0.037          Q_7
-    ----------------------------------------
-    Total                      5.711ns (2.253ns logic, 3.458ns route)
-                                       (39.4% logic, 60.6% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'acc_w_OBUF'
-  Total number of paths / destination ports: 1008 / 8
--------------------------------------------------------------------------
-Offset:              9.937ns (Levels of Logic = 12)
-  Source:            clk (PAD)
-  Destination:       acc/XLXI_2/Q_6 (LATCH)
-  Destination Clock: acc_w_OBUF falling
-
-  Data Path: clk to acc/XLXI_2/Q_6
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             2   1.222   0.961  clk_IBUF (clk_IBUF)
-     OR2:I1->O             5   0.223   1.079  clck_gen/XLXI_9 (clkr_OBUF)
-     AND2:I0->O            3   0.203   0.650  cpu_ctl/XLXI_3 (bus1_OBUF)
-     INV:I->O              1   0.568   0.579  pass_th/inv_one (pass_th/XLXN_32)
-     INV:I->O              8   0.568   0.802  pass_th/buff_origin/XLXI_55 (pass_th/buff_origin/XLXN_2)
-     begin scope: 'pass_th/buff_origin/XLXI_54:T'
-     BUFT:T->O             5   0.000   1.079  O<7>_I<7> (O<7>)
-     end scope: 'pass_th/buff_origin/XLXI_54:O<7>'
-     XNOR2:I0->O           2   0.203   0.616  alu_inst/XLXI_135/XLXI_2/XLXI_1 (alu_inst/XLXI_135/XLXI_2/XLXN_3)
-     INV:I->O              1   0.568   0.579  alu_inst/XLXI_135/XLXI_2/XLXI_6 (alu_inst/XLXN_270<7>)
-     begin scope: 'alu_inst/XLXI_136:I<7>'
-     BUFT:I->O             2   0.000   0.000  O<7>_I<7> (O<7>)
-     end scope: 'alu_inst/XLXI_136:O<7>'
-     begin scope: 'acc/XLXI_2:D<7>'
-     LD:D                      0.037          Q_7
-    ----------------------------------------
-    Total                      9.937ns (3.592ns logic, 6.345ns route)
-                                       (36.1% logic, 63.9% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'clck_gen/XLXI_4/q_tmp'
-  Total number of paths / destination ports: 2436 / 23
--------------------------------------------------------------------------
-Offset:              22.061ns (Levels of Logic = 20)
-  Source:            cpu_ctl/stp/XLXI_24/COUNT_0 (FF)
-  Destination:       alu_gt (PAD)
-  Source Clock:      clck_gen/XLXI_4/q_tmp falling
-
-  Data Path: cpu_ctl/stp/XLXI_24/COUNT_0 to alu_gt
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDCE:C->Q             7   0.447   1.002  COUNT_0 (COUNT_0)
-     end scope: 'cpu_ctl/stp/XLXI_24:Q0'
-     begin scope: 'cpu_ctl/stp/XLXI_25:A0'
-     LUT3:I0->O            7   0.205   1.138  Mmux_d_tmp21 (D1)
-     end scope: 'cpu_ctl/stp/XLXI_25:D1'
-     OR4:I0->O             1   0.203   0.924  cpu_ctl/XLXI_11 (cpu_ctl/XLXN_5)
-     AND2:I1->O            3   0.223   0.650  cpu_ctl/XLXI_3 (bus1_OBUF)
-     INV:I->O              1   0.568   0.579  pass_th/inv_one (pass_th/XLXN_32)
-     INV:I->O              8   0.568   0.802  pass_th/buff_origin/XLXI_55 (pass_th/buff_origin/XLXN_2)
-     begin scope: 'pass_th/buff_origin/XLXI_54:T'
-     BUFT:T->O             5   0.000   0.714  O<0>_I<0> (O<0>)
-     end scope: 'pass_th/buff_origin/XLXI_54:O<0>'
-     INV:I->O              1   0.568   0.944  alu_inst/XLXI_135/XLXI_9/XLXI_5 (alu_inst/XLXI_135/XLXI_9/XLXN_9)
-     AND2:I0->O            1   0.203   0.944  alu_inst/XLXI_135/XLXI_9/XLXI_4 (alu_inst/XLXI_135/XLXI_9/XLXN_8)
-     OR2:I0->O             1   0.203   0.924  alu_inst/XLXI_135/XLXI_9/XLXI_3 (alu_inst/XLXI_135/XLXN_57)
-     OR2:I1->O             1   0.223   0.924  alu_inst/XLXI_135/XLXI_8/XLXI_3 (alu_inst/XLXI_135/XLXN_55)
-     OR2:I1->O             1   0.223   0.924  alu_inst/XLXI_135/XLXI_7/XLXI_3 (alu_inst/XLXI_135/XLXN_51)
-     OR2:I1->O             1   0.223   0.924  alu_inst/XLXI_135/XLXI_6/XLXI_3 (alu_inst/XLXI_135/XLXN_53)
-     OR2:I1->O             1   0.223   0.924  alu_inst/XLXI_135/XLXI_5/XLXI_3 (alu_inst/XLXI_135/XLXN_47)
-     OR2:I1->O             1   0.223   0.924  alu_inst/XLXI_135/XLXI_4/XLXI_3 (alu_inst/XLXI_135/XLXN_45)
-     OR2:I1->O             1   0.223   0.924  alu_inst/XLXI_135/XLXI_3/XLXI_3 (alu_inst/XLXI_135/XLXN_43)
-     OR2:I1->O             1   0.223   0.579  alu_inst/XLXI_135/XLXI_2/XLXI_3 (alu_gt_OBUF)
-     OBUF:I->O                 2.571          alu_gt_OBUF (alu_gt)
-    ----------------------------------------
-    Total                     22.061ns (7.320ns logic, 14.741ns route)
-                                       (33.2% logic, 66.8% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'ir_w_OBUF'
-  Total number of paths / destination ports: 188 / 13
--------------------------------------------------------------------------
-Offset:              11.025ns (Levels of Logic = 14)
-  Source:            ir/XLXI_2/Q_2 (LATCH)
-  Destination:       alu_z (PAD)
-  Source Clock:      ir_w_OBUF falling
-
-  Data Path: ir/XLXI_2/Q_2 to alu_z
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               1   0.498   0.579  Q_2 (Q_2)
-     end scope: 'ir/XLXI_2:Q<2>'
-     begin scope: 'ir/XLXI_4/XLXI_54:I<2>'
-     BUFT:I->O             2   0.000   0.961  O<2>_I<2> (O<2>)
-     end scope: 'ir/XLXI_4/XLXI_54:O<2>'
-     AND2B1:I1->O          1   0.223   0.944  cpu_ctl/XLXI_28 (cpu_ctl/XLXN_31)
-     OR2:I0->O             9   0.203   1.058  cpu_ctl/XLXI_22 (alu_op_1_OBUF)
-     begin scope: 'alu_inst/XLXI_1:A1'
-     LUT3:I0->O            2   0.205   0.616  Mmux_d_tmp31 (D2)
-     end scope: 'alu_inst/XLXI_1:D2'
-     INV:I->O              8   0.568   0.802  alu_inst/XLXI_100 (alu_inst/XLXN_193)
-     begin scope: 'alu_inst/XLXI_97:T'
-     BUFT:T->O             2   0.000   0.229  O<5>_I<5> (O<5>)
-     end scope: 'alu_inst/XLXI_97:O<5>'
-     begin scope: 'alu_inst/XLXI_137/XLXI_1:I2'
+     FDCE:C->Q             4   0.447   1.048  q_tmp (q_tmp)
+     end scope: 'clck_gen/XLXI_4:Q'
+     OR2:I0->O            10   0.203   1.221  clck_gen/XLXI_9 (clkr)
+     AND2:I0->O            1   0.203   0.579  cpu_ctl/XLXI_2 (iar_r)
+     BUF:I->O              1   0.568   0.579  XLXI_130/XLXI_3 (XLXI_130/i<0>)
+     INV:I->O              1   0.568   0.808  XLXI_130/XLXI_2/XLXI_5 (XLXI_130/XLXI_2/XLXN_1)
+     begin scope: 'XLXI_130/XLXI_2/XLXI_4:I7'
      LUT3:I0->O            1   0.205   0.580  O_SW0 (N01)
      LUT6:I5->O            1   0.205   0.579  O (O)
-     end scope: 'alu_inst/XLXI_137/XLXI_1:O'
-     OBUF:I->O                 2.571          alu_z_OBUF (alu_z)
+     end scope: 'XLXI_130/XLXI_2/XLXI_4:O'
+     INV:I->O              8   0.568   0.907  XLXI_130/XLXI_21 (XLXI_130/XLXN_73)
+     begin scope: 'XLXI_130/XLXI_1/XLXI_17:E'
+     LUT2:I0->O            1   0.203   0.579  Mmux_O11 (O)
+     end scope: 'XLXI_130/XLXI_1/XLXI_17:O'
+     BUF:I->O             20   0.568   1.092  XLXI_130/XLXI_1/XLXI_21 (sysbus_3_OBUF)
+     OBUF:I->O                 2.571          sysbus_3_OBUF (sysbus<3>)
     ----------------------------------------
-    Total                     11.025ns (4.678ns logic, 6.347ns route)
-                                       (42.4% logic, 57.6% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'rinw'
-  Total number of paths / destination ports: 152 / 12
--------------------------------------------------------------------------
-Offset:              15.140ns (Levels of Logic = 13)
-  Source:            rin/XLXI_2/Q_0 (LATCH)
-  Destination:       alu_eq (PAD)
-  Source Clock:      rinw falling
-
-  Data Path: rin/XLXI_2/Q_0 to alu_eq
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               1   0.498   0.579  Q_0 (Q_0)
-     end scope: 'rin/XLXI_2:Q<0>'
-     begin scope: 'rin/XLXI_4/XLXI_54:I<0>'
-     BUFT:I->O            22   0.000   1.478  O<0>_I<0> (O<0>)
-     end scope: 'rin/XLXI_4/XLXI_54:O<0>'
-     XNOR2:I1->O           2   0.223   0.981  alu_inst/XLXI_135/XLXI_9/XLXI_1 (alu_inst/XLXI_135/XLXI_9/XLXN_3)
-     AND2:I0->O            1   0.203   0.924  alu_inst/XLXI_135/XLXI_9/XLXI_2 (alu_inst/XLXI_135/XLXN_56)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_8/XLXI_2 (alu_inst/XLXI_135/XLXN_54)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_7/XLXI_2 (alu_inst/XLXI_135/XLXN_48)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_6/XLXI_2 (alu_inst/XLXI_135/XLXN_52)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_5/XLXI_2 (alu_inst/XLXI_135/XLXN_46)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_4/XLXI_2 (alu_inst/XLXI_135/XLXN_44)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_3/XLXI_2 (alu_inst/XLXI_135/XLXN_42)
-     AND2:I1->O            1   0.223   0.579  alu_inst/XLXI_135/XLXI_2/XLXI_2 (alu_eq_OBUF)
-     OBUF:I->O                 2.571          alu_eq_OBUF (alu_eq)
-    ----------------------------------------
-    Total                     15.140ns (5.056ns logic, 10.084ns route)
-                                       (33.4% logic, 66.6% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'r0_w'
-  Total number of paths / destination ports: 152 / 12
--------------------------------------------------------------------------
-Offset:              15.140ns (Levels of Logic = 13)
-  Source:            r0/XLXI_2/Q_0 (LATCH)
-  Destination:       alu_eq (PAD)
-  Source Clock:      r0_w falling
-
-  Data Path: r0/XLXI_2/Q_0 to alu_eq
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               1   0.498   0.579  Q_0 (Q_0)
-     end scope: 'r0/XLXI_2:Q<0>'
-     begin scope: 'r0/XLXI_4/XLXI_54:I<0>'
-     BUFT:I->O            22   0.000   1.478  O<0>_I<0> (O<0>)
-     end scope: 'r0/XLXI_4/XLXI_54:O<0>'
-     XNOR2:I1->O           2   0.223   0.981  alu_inst/XLXI_135/XLXI_9/XLXI_1 (alu_inst/XLXI_135/XLXI_9/XLXN_3)
-     AND2:I0->O            1   0.203   0.924  alu_inst/XLXI_135/XLXI_9/XLXI_2 (alu_inst/XLXI_135/XLXN_56)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_8/XLXI_2 (alu_inst/XLXI_135/XLXN_54)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_7/XLXI_2 (alu_inst/XLXI_135/XLXN_48)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_6/XLXI_2 (alu_inst/XLXI_135/XLXN_52)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_5/XLXI_2 (alu_inst/XLXI_135/XLXN_46)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_4/XLXI_2 (alu_inst/XLXI_135/XLXN_44)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_3/XLXI_2 (alu_inst/XLXI_135/XLXN_42)
-     AND2:I1->O            1   0.223   0.579  alu_inst/XLXI_135/XLXI_2/XLXI_2 (alu_eq_OBUF)
-     OBUF:I->O                 2.571          alu_eq_OBUF (alu_eq)
-    ----------------------------------------
-    Total                     15.140ns (5.056ns logic, 10.084ns route)
-                                       (33.4% logic, 66.6% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'r1_w'
-  Total number of paths / destination ports: 152 / 12
--------------------------------------------------------------------------
-Offset:              15.140ns (Levels of Logic = 13)
-  Source:            r1/XLXI_2/Q_0 (LATCH)
-  Destination:       alu_eq (PAD)
-  Source Clock:      r1_w falling
-
-  Data Path: r1/XLXI_2/Q_0 to alu_eq
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               1   0.498   0.579  Q_0 (Q_0)
-     end scope: 'r1/XLXI_2:Q<0>'
-     begin scope: 'r1/XLXI_4/XLXI_54:I<0>'
-     BUFT:I->O            22   0.000   1.478  O<0>_I<0> (O<0>)
-     end scope: 'r1/XLXI_4/XLXI_54:O<0>'
-     XNOR2:I1->O           2   0.223   0.981  alu_inst/XLXI_135/XLXI_9/XLXI_1 (alu_inst/XLXI_135/XLXI_9/XLXN_3)
-     AND2:I0->O            1   0.203   0.924  alu_inst/XLXI_135/XLXI_9/XLXI_2 (alu_inst/XLXI_135/XLXN_56)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_8/XLXI_2 (alu_inst/XLXI_135/XLXN_54)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_7/XLXI_2 (alu_inst/XLXI_135/XLXN_48)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_6/XLXI_2 (alu_inst/XLXI_135/XLXN_52)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_5/XLXI_2 (alu_inst/XLXI_135/XLXN_46)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_4/XLXI_2 (alu_inst/XLXI_135/XLXN_44)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_3/XLXI_2 (alu_inst/XLXI_135/XLXN_42)
-     AND2:I1->O            1   0.223   0.579  alu_inst/XLXI_135/XLXI_2/XLXI_2 (alu_eq_OBUF)
-     OBUF:I->O                 2.571          alu_eq_OBUF (alu_eq)
-    ----------------------------------------
-    Total                     15.140ns (5.056ns logic, 10.084ns route)
-                                       (33.4% logic, 66.6% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'r2_w'
-  Total number of paths / destination ports: 152 / 12
--------------------------------------------------------------------------
-Offset:              15.140ns (Levels of Logic = 13)
-  Source:            r2/XLXI_2/Q_0 (LATCH)
-  Destination:       alu_eq (PAD)
-  Source Clock:      r2_w falling
-
-  Data Path: r2/XLXI_2/Q_0 to alu_eq
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               1   0.498   0.579  Q_0 (Q_0)
-     end scope: 'r2/XLXI_2:Q<0>'
-     begin scope: 'r2/XLXI_4/XLXI_54:I<0>'
-     BUFT:I->O            22   0.000   1.478  O<0>_I<0> (O<0>)
-     end scope: 'r2/XLXI_4/XLXI_54:O<0>'
-     XNOR2:I1->O           2   0.223   0.981  alu_inst/XLXI_135/XLXI_9/XLXI_1 (alu_inst/XLXI_135/XLXI_9/XLXN_3)
-     AND2:I0->O            1   0.203   0.924  alu_inst/XLXI_135/XLXI_9/XLXI_2 (alu_inst/XLXI_135/XLXN_56)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_8/XLXI_2 (alu_inst/XLXI_135/XLXN_54)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_7/XLXI_2 (alu_inst/XLXI_135/XLXN_48)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_6/XLXI_2 (alu_inst/XLXI_135/XLXN_52)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_5/XLXI_2 (alu_inst/XLXI_135/XLXN_46)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_4/XLXI_2 (alu_inst/XLXI_135/XLXN_44)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_3/XLXI_2 (alu_inst/XLXI_135/XLXN_42)
-     AND2:I1->O            1   0.223   0.579  alu_inst/XLXI_135/XLXI_2/XLXI_2 (alu_eq_OBUF)
-     OBUF:I->O                 2.571          alu_eq_OBUF (alu_eq)
-    ----------------------------------------
-    Total                     15.140ns (5.056ns logic, 10.084ns route)
-                                       (33.4% logic, 66.6% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'r3_w'
-  Total number of paths / destination ports: 152 / 12
--------------------------------------------------------------------------
-Offset:              15.140ns (Levels of Logic = 13)
-  Source:            r3/XLXI_2/Q_0 (LATCH)
-  Destination:       alu_eq (PAD)
-  Source Clock:      r3_w falling
-
-  Data Path: r3/XLXI_2/Q_0 to alu_eq
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               1   0.498   0.579  Q_0 (Q_0)
-     end scope: 'r3/XLXI_2:Q<0>'
-     begin scope: 'r3/XLXI_4/XLXI_54:I<0>'
-     BUFT:I->O            22   0.000   1.478  O<0>_I<0> (O<0>)
-     end scope: 'r3/XLXI_4/XLXI_54:O<0>'
-     XNOR2:I1->O           2   0.223   0.981  alu_inst/XLXI_135/XLXI_9/XLXI_1 (alu_inst/XLXI_135/XLXI_9/XLXN_3)
-     AND2:I0->O            1   0.203   0.924  alu_inst/XLXI_135/XLXI_9/XLXI_2 (alu_inst/XLXI_135/XLXN_56)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_8/XLXI_2 (alu_inst/XLXI_135/XLXN_54)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_7/XLXI_2 (alu_inst/XLXI_135/XLXN_48)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_6/XLXI_2 (alu_inst/XLXI_135/XLXN_52)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_5/XLXI_2 (alu_inst/XLXI_135/XLXN_46)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_4/XLXI_2 (alu_inst/XLXI_135/XLXN_44)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_3/XLXI_2 (alu_inst/XLXI_135/XLXN_42)
-     AND2:I1->O            1   0.223   0.579  alu_inst/XLXI_135/XLXI_2/XLXI_2 (alu_eq_OBUF)
-     OBUF:I->O                 2.571          alu_eq_OBUF (alu_eq)
-    ----------------------------------------
-    Total                     15.140ns (5.056ns logic, 10.084ns route)
-                                       (33.4% logic, 66.6% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'iar_w_OBUF'
-  Total number of paths / destination ports: 152 / 12
--------------------------------------------------------------------------
-Offset:              15.140ns (Levels of Logic = 13)
-  Source:            iar/XLXI_2/Q_0 (LATCH)
-  Destination:       alu_eq (PAD)
-  Source Clock:      iar_w_OBUF falling
-
-  Data Path: iar/XLXI_2/Q_0 to alu_eq
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               1   0.498   0.579  Q_0 (Q_0)
-     end scope: 'iar/XLXI_2:Q<0>'
-     begin scope: 'iar/XLXI_4/XLXI_54:I<0>'
-     BUFT:I->O            22   0.000   1.478  O<0>_I<0> (O<0>)
-     end scope: 'iar/XLXI_4/XLXI_54:O<0>'
-     XNOR2:I1->O           2   0.223   0.981  alu_inst/XLXI_135/XLXI_9/XLXI_1 (alu_inst/XLXI_135/XLXI_9/XLXN_3)
-     AND2:I0->O            1   0.203   0.924  alu_inst/XLXI_135/XLXI_9/XLXI_2 (alu_inst/XLXI_135/XLXN_56)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_8/XLXI_2 (alu_inst/XLXI_135/XLXN_54)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_7/XLXI_2 (alu_inst/XLXI_135/XLXN_48)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_6/XLXI_2 (alu_inst/XLXI_135/XLXN_52)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_5/XLXI_2 (alu_inst/XLXI_135/XLXN_46)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_4/XLXI_2 (alu_inst/XLXI_135/XLXN_44)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_3/XLXI_2 (alu_inst/XLXI_135/XLXN_42)
-     AND2:I1->O            1   0.223   0.579  alu_inst/XLXI_135/XLXI_2/XLXI_2 (alu_eq_OBUF)
-     OBUF:I->O                 2.571          alu_eq_OBUF (alu_eq)
-    ----------------------------------------
-    Total                     15.140ns (5.056ns logic, 10.084ns route)
-                                       (33.4% logic, 66.6% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'acc_w_OBUF'
-  Total number of paths / destination ports: 152 / 12
--------------------------------------------------------------------------
-Offset:              15.140ns (Levels of Logic = 13)
-  Source:            acc/XLXI_2/Q_0 (LATCH)
-  Destination:       alu_eq (PAD)
-  Source Clock:      acc_w_OBUF falling
-
-  Data Path: acc/XLXI_2/Q_0 to alu_eq
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               1   0.498   0.579  Q_0 (Q_0)
-     end scope: 'acc/XLXI_2:Q<0>'
-     begin scope: 'acc/XLXI_4/XLXI_54:I<0>'
-     BUFT:I->O            22   0.000   1.478  O<0>_I<0> (O<0>)
-     end scope: 'acc/XLXI_4/XLXI_54:O<0>'
-     XNOR2:I1->O           2   0.223   0.981  alu_inst/XLXI_135/XLXI_9/XLXI_1 (alu_inst/XLXI_135/XLXI_9/XLXN_3)
-     AND2:I0->O            1   0.203   0.924  alu_inst/XLXI_135/XLXI_9/XLXI_2 (alu_inst/XLXI_135/XLXN_56)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_8/XLXI_2 (alu_inst/XLXI_135/XLXN_54)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_7/XLXI_2 (alu_inst/XLXI_135/XLXN_48)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_6/XLXI_2 (alu_inst/XLXI_135/XLXN_52)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_5/XLXI_2 (alu_inst/XLXI_135/XLXN_46)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_4/XLXI_2 (alu_inst/XLXI_135/XLXN_44)
-     AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_3/XLXI_2 (alu_inst/XLXI_135/XLXN_42)
-     AND2:I1->O            1   0.223   0.579  alu_inst/XLXI_135/XLXI_2/XLXI_2 (alu_eq_OBUF)
-     OBUF:I->O                 2.571          alu_eq_OBUF (alu_eq)
-    ----------------------------------------
-    Total                     15.140ns (5.056ns logic, 10.084ns route)
-                                       (33.4% logic, 66.6% route)
+    Total                     14.279ns (6.309ns logic, 7.970ns route)
+                                       (44.2% logic, 55.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 635 / 23
+  Total number of paths / destination ports: 177 / 9
 -------------------------------------------------------------------------
-Offset:              20.931ns (Levels of Logic = 18)
-  Source:            clck_gen/XLXI_4/q_tmp (FF)
-  Destination:       alu_gt (PAD)
-  Source Clock:      clk falling
+Offset:              14.247ns (Levels of Logic = 13)
+  Source:            XLXI_132/COUNT_5 (FF)
+  Destination:       sysbus<7> (PAD)
+  Source Clock:      clk rising
 
-  Data Path: clck_gen/XLXI_4/q_tmp to alu_gt
+  Data Path: XLXI_132/COUNT_5 to sysbus<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             5   0.447   1.079  q_tmp (q_tmp)
-     end scope: 'clck_gen/XLXI_4:Q'
-     OR2:I0->O             5   0.203   1.079  clck_gen/XLXI_9 (clkr_OBUF)
-     AND2:I0->O            3   0.203   0.650  cpu_ctl/XLXI_3 (bus1_OBUF)
-     INV:I->O              1   0.568   0.579  pass_th/inv_one (pass_th/XLXN_32)
-     INV:I->O              8   0.568   0.802  pass_th/buff_origin/XLXI_55 (pass_th/buff_origin/XLXN_2)
-     begin scope: 'pass_th/buff_origin/XLXI_54:T'
-     BUFT:T->O             5   0.000   0.714  O<0>_I<0> (O<0>)
-     end scope: 'pass_th/buff_origin/XLXI_54:O<0>'
-     INV:I->O              1   0.568   0.944  alu_inst/XLXI_135/XLXI_9/XLXI_5 (alu_inst/XLXI_135/XLXI_9/XLXN_9)
-     AND2:I0->O            1   0.203   0.944  alu_inst/XLXI_135/XLXI_9/XLXI_4 (alu_inst/XLXI_135/XLXI_9/XLXN_8)
-     OR2:I0->O             1   0.203   0.924  alu_inst/XLXI_135/XLXI_9/XLXI_3 (alu_inst/XLXI_135/XLXN_57)
-     OR2:I1->O             1   0.223   0.924  alu_inst/XLXI_135/XLXI_8/XLXI_3 (alu_inst/XLXI_135/XLXN_55)
-     OR2:I1->O             1   0.223   0.924  alu_inst/XLXI_135/XLXI_7/XLXI_3 (alu_inst/XLXI_135/XLXN_51)
-     OR2:I1->O             1   0.223   0.924  alu_inst/XLXI_135/XLXI_6/XLXI_3 (alu_inst/XLXI_135/XLXN_53)
-     OR2:I1->O             1   0.223   0.924  alu_inst/XLXI_135/XLXI_5/XLXI_3 (alu_inst/XLXI_135/XLXN_47)
-     OR2:I1->O             1   0.223   0.924  alu_inst/XLXI_135/XLXI_4/XLXI_3 (alu_inst/XLXI_135/XLXN_45)
-     OR2:I1->O             1   0.223   0.924  alu_inst/XLXI_135/XLXI_3/XLXI_3 (alu_inst/XLXI_135/XLXN_43)
-     OR2:I1->O             1   0.223   0.579  alu_inst/XLXI_135/XLXI_2/XLXI_3 (alu_gt_OBUF)
-     OBUF:I->O                 2.571          alu_gt_OBUF (alu_gt)
+     FDCE:C->Q             3   0.447   0.995  COUNT_5 (COUNT_5)
+     end scope: 'XLXI_132:Q<5>'
+     OR2:I1->O            10   0.223   1.221  clck_gen/XLXI_9 (clkr)
+     AND2:I0->O            1   0.203   0.579  cpu_ctl/XLXI_2 (iar_r)
+     BUF:I->O              1   0.568   0.579  XLXI_130/XLXI_3 (XLXI_130/i<0>)
+     INV:I->O              1   0.568   0.808  XLXI_130/XLXI_2/XLXI_5 (XLXI_130/XLXI_2/XLXN_1)
+     begin scope: 'XLXI_130/XLXI_2/XLXI_4:I7'
+     LUT3:I0->O            1   0.205   0.580  O_SW0 (N01)
+     LUT6:I5->O            1   0.205   0.579  O (O)
+     end scope: 'XLXI_130/XLXI_2/XLXI_4:O'
+     INV:I->O              8   0.568   0.907  XLXI_130/XLXI_21 (XLXI_130/XLXN_73)
+     begin scope: 'XLXI_130/XLXI_1/XLXI_17:E'
+     LUT2:I0->O            1   0.203   0.579  Mmux_O11 (O)
+     end scope: 'XLXI_130/XLXI_1/XLXI_17:O'
+     BUF:I->O             20   0.568   1.092  XLXI_130/XLXI_1/XLXI_21 (sysbus_3_OBUF)
+     OBUF:I->O                 2.571          sysbus_3_OBUF (sysbus<3>)
     ----------------------------------------
-    Total                     20.931ns (7.095ns logic, 13.836ns route)
-                                       (33.9% logic, 66.1% route)
+    Total                     14.247ns (6.329ns logic, 7.918ns route)
+                                       (44.4% logic, 55.6% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'temp_w'
-  Total number of paths / destination ports: 84 / 4
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clck_gen/XLXI_4/q_tmp'
+  Total number of paths / destination ports: 2586 / 9
 -------------------------------------------------------------------------
-Offset:              16.409ns (Levels of Logic = 16)
-  Source:            temp/XLXI_2/Q_0 (LATCH)
-  Destination:       alu_gt (PAD)
-  Source Clock:      temp_w falling
+Offset:              18.812ns (Levels of Logic = 18)
+  Source:            cpu_ctl/stp/XLXI_24/COUNT_2 (FF)
+  Destination:       sysbus<7> (PAD)
+  Source Clock:      clck_gen/XLXI_4/q_tmp falling
 
-  Data Path: temp/XLXI_2/Q_0 to alu_gt
+  Data Path: cpu_ctl/stp/XLXI_24/COUNT_2 to sysbus<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LD:G->Q               1   0.498   0.579  Q_0 (Q_0)
-     end scope: 'temp/XLXI_2:Q<0>'
-     begin scope: 'temp/XLXI_4/XLXI_54:I<0>'
-     BUFT:I->O             1   0.000   0.579  O<0>_I<0> (O<0>)
-     end scope: 'temp/XLXI_4/XLXI_54:O<0>'
-     begin scope: 'pass_th/buff_origin/XLXI_54:I<0>'
-     BUFT:I->O             5   0.000   0.714  O<0>_I<0> (O<0>)
-     end scope: 'pass_th/buff_origin/XLXI_54:O<0>'
-     INV:I->O              1   0.568   0.944  alu_inst/XLXI_135/XLXI_9/XLXI_5 (alu_inst/XLXI_135/XLXI_9/XLXN_9)
-     AND2:I0->O            1   0.203   0.944  alu_inst/XLXI_135/XLXI_9/XLXI_4 (alu_inst/XLXI_135/XLXI_9/XLXN_8)
-     OR2:I0->O             1   0.203   0.924  alu_inst/XLXI_135/XLXI_9/XLXI_3 (alu_inst/XLXI_135/XLXN_57)
-     OR2:I1->O             1   0.223   0.924  alu_inst/XLXI_135/XLXI_8/XLXI_3 (alu_inst/XLXI_135/XLXN_55)
-     OR2:I1->O             1   0.223   0.924  alu_inst/XLXI_135/XLXI_7/XLXI_3 (alu_inst/XLXI_135/XLXN_51)
-     OR2:I1->O             1   0.223   0.924  alu_inst/XLXI_135/XLXI_6/XLXI_3 (alu_inst/XLXI_135/XLXN_53)
-     OR2:I1->O             1   0.223   0.924  alu_inst/XLXI_135/XLXI_5/XLXI_3 (alu_inst/XLXI_135/XLXN_47)
-     OR2:I1->O             1   0.223   0.924  alu_inst/XLXI_135/XLXI_4/XLXI_3 (alu_inst/XLXI_135/XLXN_45)
-     OR2:I1->O             1   0.223   0.924  alu_inst/XLXI_135/XLXI_3/XLXI_3 (alu_inst/XLXI_135/XLXN_43)
-     OR2:I1->O             1   0.223   0.579  alu_inst/XLXI_135/XLXI_2/XLXI_3 (alu_gt_OBUF)
-     OBUF:I->O                 2.571          alu_gt_OBUF (alu_gt)
+     FDCE:C->Q             8   0.447   1.031  COUNT_2 (COUNT_2)
+     end scope: 'cpu_ctl/stp/XLXI_24:Q2'
+     begin scope: 'cpu_ctl/stp/XLXI_25:A2'
+     LUT3:I0->O            7   0.205   1.138  Mmux_d_tmp61 (D5)
+     end scope: 'cpu_ctl/stp/XLXI_25:D5'
+     AND2:I0->O            5   0.203   0.962  cpu_ctl/XLXI_250 (cpu_ctl/alu_binary_s5)
+     OR3:I2->O             4   0.320   1.028  cpu_ctl/XLXI_399 (cpu_ctl/rb_int)
+     AND2:I1->O            1   0.223   0.924  cpu_ctl/XLXI_400 (cpu_ctl/rb0_r)
+     OR2:I1->O             1   0.223   0.924  cpu_ctl/XLXI_407 (cpu_ctl/XLXN_811)
+     AND2:I1->O            1   0.223   0.579  cpu_ctl/XLXI_138 (r0_r)
+     BUF:I->O              3   0.568   0.995  XLXI_130/XLXI_6 (XLXI_130/i<3>)
+     OR4:I1->O             1   0.223   0.579  XLXI_130/XLXI_2/XLXI_2 (XLXI_130/enc_o<1>)
+     BUF:I->O             16   0.568   1.369  XLXI_130/XLXI_15 (XLXI_130/a<1>)
+     begin scope: 'XLXI_130/XLXI_1/XLXI_17:S1'
+     LUT6:I0->O            1   0.203   0.000  Mmux_S3_D15_Mux_0_o_51 (Mmux_S3_D15_Mux_0_o_51)
+     MUXF7:I1->O           1   0.140   0.000  Mmux_S3_D15_Mux_0_o_4_f7 (Mmux_S3_D15_Mux_0_o_4_f7)
+     MUXF8:I0->O           1   0.144   0.580  Mmux_S3_D15_Mux_0_o_2_f8 (S3_D15_Mux_0_o)
+     LUT2:I1->O            1   0.205   0.579  Mmux_O11 (O)
+     end scope: 'XLXI_130/XLXI_1/XLXI_17:O'
+     BUF:I->O             20   0.568   1.092  XLXI_130/XLXI_1/XLXI_21 (sysbus_3_OBUF)
+     OBUF:I->O                 2.571          sysbus_3_OBUF (sysbus<3>)
     ----------------------------------------
-    Total                     16.409ns (5.604ns logic, 10.805ns route)
-                                       (34.2% logic, 65.8% route)
-
-=========================================================================
-Timing constraint: Default path analysis
-  Total number of paths / destination ports: 1403 / 22
--------------------------------------------------------------------------
-Delay:               21.608ns (Levels of Logic = 18)
-  Source:            clk (PAD)
-  Destination:       alu_gt (PAD)
-
-  Data Path: clk to alu_gt
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             2   1.222   0.961  clk_IBUF (clk_IBUF)
-     OR2:I1->O             5   0.223   1.079  clck_gen/XLXI_9 (clkr_OBUF)
-     AND2:I0->O            3   0.203   0.650  cpu_ctl/XLXI_3 (bus1_OBUF)
-     INV:I->O              1   0.568   0.579  pass_th/inv_one (pass_th/XLXN_32)
-     INV:I->O              8   0.568   0.802  pass_th/buff_origin/XLXI_55 (pass_th/buff_origin/XLXN_2)
-     begin scope: 'pass_th/buff_origin/XLXI_54:T'
-     BUFT:T->O             5   0.000   0.714  O<0>_I<0> (O<0>)
-     end scope: 'pass_th/buff_origin/XLXI_54:O<0>'
-     INV:I->O              1   0.568   0.944  alu_inst/XLXI_135/XLXI_9/XLXI_5 (alu_inst/XLXI_135/XLXI_9/XLXN_9)
-     AND2:I0->O            1   0.203   0.944  alu_inst/XLXI_135/XLXI_9/XLXI_4 (alu_inst/XLXI_135/XLXI_9/XLXN_8)
-     OR2:I0->O             1   0.203   0.924  alu_inst/XLXI_135/XLXI_9/XLXI_3 (alu_inst/XLXI_135/XLXN_57)
-     OR2:I1->O             1   0.223   0.924  alu_inst/XLXI_135/XLXI_8/XLXI_3 (alu_inst/XLXI_135/XLXN_55)
-     OR2:I1->O             1   0.223   0.924  alu_inst/XLXI_135/XLXI_7/XLXI_3 (alu_inst/XLXI_135/XLXN_51)
-     OR2:I1->O             1   0.223   0.924  alu_inst/XLXI_135/XLXI_6/XLXI_3 (alu_inst/XLXI_135/XLXN_53)
-     OR2:I1->O             1   0.223   0.924  alu_inst/XLXI_135/XLXI_5/XLXI_3 (alu_inst/XLXI_135/XLXN_47)
-     OR2:I1->O             1   0.223   0.924  alu_inst/XLXI_135/XLXI_4/XLXI_3 (alu_inst/XLXI_135/XLXN_45)
-     OR2:I1->O             1   0.223   0.924  alu_inst/XLXI_135/XLXI_3/XLXI_3 (alu_inst/XLXI_135/XLXN_43)
-     OR2:I1->O             1   0.223   0.579  alu_inst/XLXI_135/XLXI_2/XLXI_3 (alu_gt_OBUF)
-     OBUF:I->O                 2.571          alu_gt_OBUF (alu_gt)
-    ----------------------------------------
-    Total                     21.608ns (7.890ns logic, 13.718ns route)
-                                       (36.5% logic, 63.5% route)
+    Total                     18.812ns (7.034ns logic, 11.778ns route)
+                                       (37.4% logic, 62.6% route)
 
 =========================================================================
 
 Cross Clock Domains Report:
 --------------------------
 
-Clock to Setup on destination clock acc_w_OBUF
----------------------+---------+---------+---------+---------+
-                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------------+---------+---------+---------+---------+
-acc_w_OBUF           |         |         |    4.578|         |
-clck_gen/XLXI_4/q_tmp|         |         |   10.390|         |
-clk                  |         |         |    9.260|         |
-iar_w_OBUF           |         |         |    4.578|         |
-ir_w_OBUF            |         |         |    6.694|         |
-r0_w                 |         |         |    4.578|         |
-r1_w                 |         |         |    4.578|         |
-r2_w                 |         |         |    4.578|         |
-r3_w                 |         |         |    4.578|         |
-rinw                 |         |         |    4.578|         |
-temp_w               |         |         |    4.738|         |
----------------------+---------+---------+---------+---------+
+Clock to Setup on destination clock XLXI_132/COUNT_5
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+XLXI_132/COUNT_5|         |         |    1.438|         |
+----------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clck_gen/XLXI_4/q_tmp
 ---------------------+---------+---------+---------+---------+
                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------+---------+---------+---------+---------+
-clck_gen/XLXI_4/q_tmp|         |         |    2.705|         |
+clck_gen/XLXI_4/q_tmp|         |         |    2.790|         |
 ---------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk
@@ -1651,166 +1347,52 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |         |         |    1.469|         |
+clk            |    3.584|         |         |         |
 ---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock clkw_OBUF
+Clock to Setup on destination clock clkw
 ---------------------+---------+---------+---------+---------+
                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------+---------+---------+---------+---------+
-acc_w_OBUF           |         |    2.210|         |         |
-clck_gen/XLXI_4/q_tmp|         |    7.260|         |         |
-clk                  |         |    6.130|         |         |
-iar_w_OBUF           |         |    2.210|         |         |
-r0_w                 |         |    2.210|         |         |
-r1_w                 |         |    2.210|         |         |
-r2_w                 |         |    2.210|         |         |
-r3_w                 |         |    2.210|         |         |
-ram_a_w_OBUF         |         |    1.300|         |         |
-rinw                 |         |    2.210|         |         |
+XLXI_132/COUNT_5     |         |   11.708|         |         |
+clck_gen/XLXI_4/q_tmp|         |   16.241|         |         |
+clk                  |   11.676|         |         |         |
+ram_a_w              |         |    1.300|         |         |
 ---------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock iar_w_OBUF
+Clock to Setup on destination clock ctl_r0_w
 ---------------------+---------+---------+---------+---------+
                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------+---------+---------+---------+---------+
-acc_w_OBUF           |         |         |    1.114|         |
-clck_gen/XLXI_4/q_tmp|         |         |    6.164|         |
-clk                  |         |         |    5.034|         |
-iar_w_OBUF           |         |         |    1.114|         |
-r0_w                 |         |         |    1.114|         |
-r1_w                 |         |         |    1.114|         |
-r2_w                 |         |         |    1.114|         |
-r3_w                 |         |         |    1.114|         |
-rinw                 |         |         |    1.114|         |
+XLXI_132/COUNT_5     |         |         |   11.745|         |
+clck_gen/XLXI_4/q_tmp|         |         |   16.278|         |
+clk                  |         |         |   11.713|         |
 ---------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock ir_w_OBUF
+Clock to Setup on destination clock ram_a_w
 ---------------------+---------+---------+---------+---------+
                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------+---------+---------+---------+---------+
-acc_w_OBUF           |         |         |    1.114|         |
-clck_gen/XLXI_4/q_tmp|         |         |    6.164|         |
-clk                  |         |         |    5.034|         |
-iar_w_OBUF           |         |         |    1.114|         |
-r0_w                 |         |         |    1.114|         |
-r1_w                 |         |         |    1.114|         |
-r2_w                 |         |         |    1.114|         |
-r3_w                 |         |         |    1.114|         |
-rinw                 |         |         |    1.114|         |
----------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock r0_w
----------------------+---------+---------+---------+---------+
-                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------------+---------+---------+---------+---------+
-acc_w_OBUF           |         |         |    1.114|         |
-clck_gen/XLXI_4/q_tmp|         |         |    6.164|         |
-clk                  |         |         |    5.034|         |
-iar_w_OBUF           |         |         |    1.114|         |
-r0_w                 |         |         |    1.114|         |
-r1_w                 |         |         |    1.114|         |
-r2_w                 |         |         |    1.114|         |
-r3_w                 |         |         |    1.114|         |
-rinw                 |         |         |    1.114|         |
----------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock r1_w
----------------------+---------+---------+---------+---------+
-                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------------+---------+---------+---------+---------+
-acc_w_OBUF           |         |         |    1.114|         |
-clck_gen/XLXI_4/q_tmp|         |         |    6.164|         |
-clk                  |         |         |    5.034|         |
-iar_w_OBUF           |         |         |    1.114|         |
-r0_w                 |         |         |    1.114|         |
-r1_w                 |         |         |    1.114|         |
-r2_w                 |         |         |    1.114|         |
-r3_w                 |         |         |    1.114|         |
-rinw                 |         |         |    1.114|         |
----------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock r2_w
----------------------+---------+---------+---------+---------+
-                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------------+---------+---------+---------+---------+
-acc_w_OBUF           |         |         |    1.114|         |
-clck_gen/XLXI_4/q_tmp|         |         |    6.164|         |
-clk                  |         |         |    5.034|         |
-iar_w_OBUF           |         |         |    1.114|         |
-r0_w                 |         |         |    1.114|         |
-r1_w                 |         |         |    1.114|         |
-r2_w                 |         |         |    1.114|         |
-r3_w                 |         |         |    1.114|         |
-rinw                 |         |         |    1.114|         |
----------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock r3_w
----------------------+---------+---------+---------+---------+
-                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------------+---------+---------+---------+---------+
-acc_w_OBUF           |         |         |    1.114|         |
-clck_gen/XLXI_4/q_tmp|         |         |    6.164|         |
-clk                  |         |         |    5.034|         |
-iar_w_OBUF           |         |         |    1.114|         |
-r0_w                 |         |         |    1.114|         |
-r1_w                 |         |         |    1.114|         |
-r2_w                 |         |         |    1.114|         |
-r3_w                 |         |         |    1.114|         |
-rinw                 |         |         |    1.114|         |
----------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock ram_a_w_OBUF
----------------------+---------+---------+---------+---------+
-                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------------+---------+---------+---------+---------+
-acc_w_OBUF           |         |         |    1.114|         |
-clck_gen/XLXI_4/q_tmp|         |         |    6.164|         |
-clk                  |         |         |    5.034|         |
-iar_w_OBUF           |         |         |    1.114|         |
-r0_w                 |         |         |    1.114|         |
-r1_w                 |         |         |    1.114|         |
-r2_w                 |         |         |    1.114|         |
-r3_w                 |         |         |    1.114|         |
-rinw                 |         |         |    1.114|         |
----------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock temp_w
----------------------+---------+---------+---------+---------+
-                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------------+---------+---------+---------+---------+
-acc_w_OBUF           |         |         |    1.114|         |
-clck_gen/XLXI_4/q_tmp|         |         |    6.164|         |
-clk                  |         |         |    5.034|         |
-iar_w_OBUF           |         |         |    1.114|         |
-r0_w                 |         |         |    1.114|         |
-r1_w                 |         |         |    1.114|         |
-r2_w                 |         |         |    1.114|         |
-r3_w                 |         |         |    1.114|         |
-rinw                 |         |         |    1.114|         |
+XLXI_132/COUNT_5     |         |         |   11.745|         |
+clck_gen/XLXI_4/q_tmp|         |         |   16.278|         |
+clk                  |         |         |   11.713|         |
 ---------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 6.18 secs
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.46 secs
  
 --> 
 
 
-Total memory usage is 607252 kilobytes
+Total memory usage is 610808 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   24 (   0 filtered)
-Number of infos    :   10 (   0 filtered)
+Number of warnings :  218 (   0 filtered)
+Number of infos    :   47 (   0 filtered)
 

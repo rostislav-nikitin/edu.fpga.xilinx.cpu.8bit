@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/bus_muxer.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/bus_muxer.syr" 

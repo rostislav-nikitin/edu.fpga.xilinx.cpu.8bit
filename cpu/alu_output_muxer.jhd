@@ -1,0 +1,3 @@
+MODULE alu_output_muxer
+	SUBMODULE bus_muxer
+		INSTANCE XLXI_14

@@ -1,0 +1,52 @@
+##################################################################################
+## External Clock
+##################################################################################
+NET "clk" TNM_NET = "sys_clk_pin";
+NET "clk" LOC = T8;
+TIMESPEC TS_sys_clk_pin = PERIOD "sys_clk_pin" 50 MHz HIGH 50 %;
+
+##################################################################################
+## Custom reset (external pull-up)
+##################################################################################
+#NET "rst_in" LOC = C3 | IOSTANDARD = "LVCMOS33"; ## RESET pushbutton
+## RESET pushbutton
+NET "rst_in" LOC = C3;
+
+
+##################################################################################
+## LED Pins 
+##################################################################################
+NET "monitor[0]" LOC = P4;
+NET "monitor[1]" LOC = N5;
+NET "monitor[2]" LOC = P5;
+NET "monitor[3]" LOC = M6;
+#NET "monitor[4]" LOC = M6 | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+#NET "monitor[5]" LOC = M6 | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+#NET "monitor[6]" LOC = M6 | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+#NET "monitor[7]" LOC = M6 | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+
+
+
+#NET "clk" LOC = T8;
+#NET "led" LOC = P4;
+
+#NET "sw[0]" LOC = C3 | IOSTANDARD = "LVCMOS33" ;
+#NET "sw[1]" LOC = D3 | IOSTANDARD = "LVCMOS33" ;
+#NET "sw[2]" LOC = E4 | IOSTANDARD = "LVCMOS33" ;
+#NET "sw[3]" LOC = E3 | IOSTANDARD = "LVCMOS33" ;
+
+# PlanAhead Generated IO constraints 
+
+NET "monitor[7]" IOSTANDARD = LVCMOS25;
+NET "monitor[6]" IOSTANDARD = LVCMOS25;
+NET "monitor[5]" IOSTANDARD = LVCMOS25;
+NET "monitor[4]" IOSTANDARD = LVCMOS25;
+NET "monitor[3]" IOSTANDARD = LVCMOS25;
+NET "monitor[2]" IOSTANDARD = LVCMOS25;
+NET "monitor[1]" IOSTANDARD = LVCMOS25;
+
+# PlanAhead Generated physical constraints 
+
+NET "monitor[1]" LOC = N5;
+NET "monitor[3]" LOC = M6;
+NET "monitor[2]" LOC = P5;
