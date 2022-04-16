@@ -53,12 +53,6 @@
         <signal name="XLXN_68" />
         <signal name="XLXN_69" />
         <signal name="XLXN_70" />
-        <signal name="XLXN_71" />
-        <signal name="XLXN_72" />
-        <signal name="XLXN_73" />
-        <signal name="XLXN_74" />
-        <signal name="XLXN_75" />
-        <signal name="XLXN_76" />
         <signal name="XLXN_82" />
         <signal name="cnt_1(6)" />
         <signal name="cnt_1(11)" />
@@ -93,20 +87,15 @@
         <signal name="XLXN_124" />
         <signal name="XLXN_125" />
         <signal name="XLXN_126" />
-        <signal name="XLXN_127" />
         <signal name="XLXN_128" />
         <signal name="XLXN_129" />
         <signal name="XLXN_130" />
-        <signal name="XLXN_131" />
         <signal name="XLXN_132" />
-        <signal name="XLXN_133" />
         <signal name="XLXN_134" />
-        <signal name="XLXN_135" />
         <signal name="XLXN_136" />
         <signal name="XLXN_137" />
         <signal name="XLXN_138" />
         <signal name="XLXN_139" />
-        <signal name="XLXN_140" />
         <signal name="XLXN_141" />
         <signal name="XLXN_142" />
         <signal name="cnt_2(6)" />
@@ -484,7 +473,6 @@
             <wire x2="1360" y1="608" y2="848" x1="1360" />
         </branch>
         <branch name="clr">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="720" y="1184" type="branch" />
             <wire x2="848" y1="1184" y2="1184" x1="720" />
             <wire x2="896" y1="1184" y2="1184" x1="848" />
             <wire x2="896" y1="768" y2="768" x1="848" />
@@ -504,7 +492,14 @@
             <wire x2="1760" y1="1264" y2="1424" x1="1760" />
             <wire x2="1760" y1="1424" y2="1584" x1="1760" />
             <wire x2="1760" y1="1584" y2="1744" x1="1760" />
-            <wire x2="1760" y1="1744" y2="3264" x1="1760" />
+            <wire x2="1760" y1="1744" y2="2144" x1="1760" />
+            <wire x2="1760" y1="2144" y2="2304" x1="1760" />
+            <wire x2="1760" y1="2304" y2="2464" x1="1760" />
+            <wire x2="1760" y1="2464" y2="2624" x1="1760" />
+            <wire x2="1760" y1="2624" y2="2784" x1="1760" />
+            <wire x2="1760" y1="2784" y2="2944" x1="1760" />
+            <wire x2="1760" y1="2944" y2="3104" x1="1760" />
+            <wire x2="1760" y1="3104" y2="3264" x1="1760" />
             <wire x2="2240" y1="320" y2="320" x1="1760" />
             <wire x2="2240" y1="320" y2="752" x1="2240" />
             <wire x2="2240" y1="752" y2="912" x1="2240" />
@@ -514,7 +509,14 @@
             <wire x2="2240" y1="1392" y2="1552" x1="2240" />
             <wire x2="2240" y1="1552" y2="1712" x1="2240" />
             <wire x2="2240" y1="1712" y2="1872" x1="2240" />
-            <wire x2="2240" y1="1872" y2="3392" x1="2240" />
+            <wire x2="2240" y1="1872" y2="2272" x1="2240" />
+            <wire x2="2240" y1="2272" y2="2432" x1="2240" />
+            <wire x2="2240" y1="2432" y2="2592" x1="2240" />
+            <wire x2="2240" y1="2592" y2="2752" x1="2240" />
+            <wire x2="2240" y1="2752" y2="2912" x1="2240" />
+            <wire x2="2240" y1="2912" y2="3072" x1="2240" />
+            <wire x2="2240" y1="3072" y2="3232" x1="2240" />
+            <wire x2="2240" y1="3232" y2="3392" x1="2240" />
         </branch>
         <branch name="cnt_1(15:0)">
             <wire x2="1600" y1="544" y2="544" x1="1280" />
@@ -976,7 +978,22 @@
             <wire x2="1520" y1="960" y2="960" x1="1280" />
             <wire x2="1520" y1="960" y2="1920" x1="1520" />
             <wire x2="1600" y1="1920" y2="1920" x1="1520" />
-            <wire x2="1600" y1="1920" y2="3328" x1="1600" />
+            <wire x2="1600" y1="1920" y2="2080" x1="1600" />
+            <wire x2="1600" y1="2080" y2="2208" x1="1600" />
+            <wire x2="1600" y1="2208" y2="2240" x1="1600" />
+            <wire x2="1600" y1="2240" y2="2368" x1="1600" />
+            <wire x2="1600" y1="2368" y2="2400" x1="1600" />
+            <wire x2="1600" y1="2400" y2="2528" x1="1600" />
+            <wire x2="1600" y1="2528" y2="2560" x1="1600" />
+            <wire x2="1600" y1="2560" y2="2688" x1="1600" />
+            <wire x2="1600" y1="2688" y2="2720" x1="1600" />
+            <wire x2="1600" y1="2720" y2="2848" x1="1600" />
+            <wire x2="1600" y1="2848" y2="2880" x1="1600" />
+            <wire x2="1600" y1="2880" y2="3008" x1="1600" />
+            <wire x2="1600" y1="3008" y2="3040" x1="1600" />
+            <wire x2="1600" y1="3040" y2="3168" x1="1600" />
+            <wire x2="1600" y1="3168" y2="3200" x1="1600" />
+            <wire x2="1600" y1="3200" y2="3328" x1="1600" />
         </branch>
         <branch name="cnt_2(3)">
             <wire x2="2400" y1="2368" y2="2368" x1="1696" />
@@ -1056,5 +1073,6 @@
         </branch>
         <iomarker fontsize="28" x="320" y="1088" name="clk_in" orien="R180" />
         <iomarker fontsize="28" x="320" y="320" name="divider(31:0)" orien="R180" />
+        <text x="196" y="2312">divider=(sum[n=0,31](x_n^(n+1)))*2 where x is an each input divider bus bit</text>
     </sheet>
 </drawing>

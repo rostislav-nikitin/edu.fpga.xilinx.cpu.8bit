@@ -46,14 +46,16 @@
          <ClosedNode>/cpu |home|s0lid|Sources|edu.fpga.xilinx|led_control|led_control|cpu.sch/r3 - reg_8bit</ClosedNode>
          <ClosedNode>/cpu |home|s0lid|Sources|edu.fpga.xilinx|led_control|led_control|cpu.sch/rin - reg_8bit</ClosedNode>
          <ClosedNode>/cpu |home|s0lid|Sources|edu.fpga.xilinx|led_control|led_control|cpu.sch/temp - reg_8bit</ClosedNode>
+         <ClosedNode>/cpu_freq_divider |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|cpu_freq_divider.sch</ClosedNode>
          <ClosedNode>/motherboard |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|motherboard.sch/XLXI_1 - cpu/XLXI_130 - cpu_output_muxer</ClosedNode>
+         <ClosedNode>/motherboard |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|motherboard.sch/XLXI_1 - cpu/XLXI_173 - cpu_freq_divider</ClosedNode>
          <ClosedNode>/motherboard |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|motherboard.sch/XLXI_1 - cpu/alu_inst - alu</ClosedNode>
          <ClosedNode>/motherboard |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|motherboard.sch/XLXI_1 - cpu/cpu_ctl - cpu_control</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem>XLXI_1 - cpu (/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.sch)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >3</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001b9000000020000000000000000000000000200000064ffffffff000000810000000300000002000001b90000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
@@ -80,7 +82,7 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000014f000000040101000100000000000000000000000064ffffffff0000008100000000000000040000004c0000000100000000000000280000000100000000000000770000000100000000000000640000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000038c000000040101000100000000000000000000000064ffffffff0000008100000000000000040000004c0000000100000000000000280000000100000000000000770000000100000000000002a10000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>alu.sch</CurrentItem>
    </ItemView>
@@ -93,7 +95,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000013c000000010001000100000000000000000000000064ffffffff0000008100000000000000010000013c0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000102000000010001000100000000000000000000000064ffffffff000000810000000000000001000001020000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>alu.sch</CurrentItem>
    </ItemView>
@@ -122,16 +124,20 @@
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000013c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000013c0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <SourceProcessView>000000ff0000000000000002000001350000012001000000060100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>
@@ -145,13 +151,12 @@
          <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
          <ClosedNode>Implement Design/Place &amp; Route/Back-annotate Pin Locations</ClosedNode>
          <ClosedNode>Implement Design/Place &amp; Route/Generate IBIS Model</ClosedNode>
-         <ClosedNode>Implement Design/Translate</ClosedNode>
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem></SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >4</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000012c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000012c0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
@@ -176,7 +181,6 @@
          <ClosedNode>/cpu |home|s0lid|Sources|edu.fpga.xilinx|led_control|led_control|cpu.sch/r2 - reg_8bit</ClosedNode>
          <ClosedNode>/cpu |home|s0lid|Sources|edu.fpga.xilinx|led_control|led_control|cpu.sch/r3 - reg_8bit</ClosedNode>
          <ClosedNode>/cpu |home|s0lid|Sources|edu.fpga.xilinx|led_control|led_control|cpu.sch/temp - reg_8bit</ClosedNode>
-         <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_asm_counter.vhd/UUT - cpu</ClosedNode>
          <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_asm_counter.vhd/UUT - cpu/XLXI_105 - reg_8bit</ClosedNode>
          <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_asm_counter.vhd/UUT - cpu/XLXI_106 - reg_8bit</ClosedNode>
          <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_asm_counter.vhd/UUT - cpu/XLXI_107 - reg_8bit</ClosedNode>
@@ -187,6 +191,7 @@
          <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_asm_counter.vhd/UUT - cpu/XLXI_114 - reg_8bit</ClosedNode>
          <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_asm_counter.vhd/UUT - cpu/XLXI_115 - reg_8bit</ClosedNode>
          <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_asm_counter.vhd/UUT - cpu/XLXI_130 - cpu_output_muxer</ClosedNode>
+         <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_asm_counter.vhd/UUT - cpu/XLXI_173 - cpu_freq_divider</ClosedNode>
          <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_asm_counter.vhd/UUT - cpu/alu_inst - alu</ClosedNode>
          <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_asm_counter.vhd/UUT - cpu/cpu_ctl - cpu_control</ClosedNode>
          <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_asm_counter.vhd/UUT - cpu/pass_th - pass_through_or_one</ClosedNode>
@@ -203,6 +208,10 @@
          <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_cpu.vhd/UUT - cpu/r3 - reg_8bit</ClosedNode>
          <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_cpu.vhd/UUT - cpu/rin - reg_8bit</ClosedNode>
          <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_cpu.vhd/UUT - cpu/temp - reg_8bit</ClosedNode>
+         <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_cpu_v2.vhd/UUT - cpu/XLXI_130 - cpu_output_muxer</ClosedNode>
+         <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_cpu_v2.vhd/UUT - cpu/XLXI_173 - cpu_freq_divider</ClosedNode>
+         <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_cpu_v2.vhd/UUT - cpu/alu_inst - alu</ClosedNode>
+         <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_cpu_v2.vhd/UUT - cpu/cpu_ctl - cpu_control</ClosedNode>
          <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx|led_control|led_control|tb_cpu.vhd/UUT - cpu</ClosedNode>
          <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx|led_control|led_control|tb_cpu.vhd/UUT - cpu/acc - reg_8bit</ClosedNode>
          <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx|led_control|led_control|tb_cpu.vhd/UUT - cpu/alu_inst - alu</ClosedNode>
@@ -215,20 +224,22 @@
          <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx|led_control|led_control|tb_cpu.vhd/UUT - cpu/r3 - reg_8bit</ClosedNode>
          <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx|led_control|led_control|tb_cpu.vhd/UUT - cpu/rin - reg_8bit</ClosedNode>
          <ClosedNode>/cpu_cpu_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx|led_control|led_control|tb_cpu.vhd/UUT - cpu/temp - reg_8bit</ClosedNode>
+         <ClosedNode>/cpu_freq_divider_cpu_freq_divider_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_cpu_freq_divider.vhd</ClosedNode>
          <ClosedNode>/cpu_output_muxer_cpu_output_muxer_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_cpu_output_muxer.vhd</ClosedNode>
          <ClosedNode>/encoder8_3_encoder8_3_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_encoder_8_3.vhd</ClosedNode>
+         <ClosedNode>/motherboard |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|motherboard.sch</ClosedNode>
          <ClosedNode>/ram_256bytes_ram_256bytes_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_ram_256bytes.vhd</ClosedNode>
          <ClosedNode>/ram_256bytes_ram_256bytes_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx|led_control|led_control|tb_ram_256bytes.vhd</ClosedNode>
          <ClosedNode>/stepper_stepper_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_stepper.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>cpu_cpu_sch_tb - behavioral (/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/tb_asm_counter.vhd)</SelectedItem>
+         <SelectedItem>cpu_freq_divider_cpu_freq_divider_sch_tb - behavioral (/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/tb_cpu_freq_divider_v2.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >7</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000025f000000020000000000000000000000000200000064ffffffff0000008100000003000000020000025f0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>cpu_cpu_sch_tb - behavioral (/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/tb_asm_counter.vhd)</CurrentItem>
+      <CurrentItem>cpu_freq_divider_cpu_freq_divider_sch_tb - behavioral (/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/tb_cpu_freq_divider_v2.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -280,5 +291,18 @@
       <ViewHeaderState orientation="horizontal" />
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="ManualCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>led_control.vhd (/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/led_control.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000016d000000020000000000000000000000000000000064ffffffff000000810000000000000002000000e80000000100000000000000850000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>led_control.vhd (/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/led_control.vhd)</CurrentItem>
    </ItemView>
 </Project>
