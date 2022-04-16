@@ -95,6 +95,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="cpu.drc" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_JHD" xil_pn:name="cpu.jhd"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="cpu.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_IMPACT_MISC" xil_pn:name="cpu.mcs"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="cpu.ncd" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="cpu.ngc"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="cpu.ngd"/>
@@ -103,6 +104,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="cpu.par" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="cpu.pcf" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cpu.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_IMPACT_MISC" xil_pn:name="cpu.prm"/>
     <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="cpu.ptwx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="cpu.stx"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="cpu.sym" xil_pn:origination="imported"/>
@@ -123,12 +125,57 @@
     </file>
     <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="cpu_control.vhi"/>
     <file xil_pn:fileType="FILE_VHDL" xil_pn:name="cpu_control_drc.vhf"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cpu_cpu_sch_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="cpu_cpu_sch_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="cpu_cpu_sch_tb_isim_beh1.wdb"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cpu_cpu_sch_tb_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="cpu_envsettings.html"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="cpu_fpga_editor.log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="cpu_freq_divider.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="cpu_freq_divider.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="cpu_freq_divider.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="cpu_freq_divider.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="cpu_freq_divider.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_JHD" xil_pn:name="cpu_freq_divider.jhd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="cpu_freq_divider.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="cpu_freq_divider.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="cpu_freq_divider.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="cpu_freq_divider.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="cpu_freq_divider.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="cpu_freq_divider.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="cpu_freq_divider.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="cpu_freq_divider.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cpu_freq_divider.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="cpu_freq_divider.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="cpu_freq_divider.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="cpu_freq_divider.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="cpu_freq_divider.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="cpu_freq_divider.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="cpu_freq_divider.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="cpu_freq_divider.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_VHDL" xil_pn:name="cpu_freq_divider.vhf">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="cpu_freq_divider.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="cpu_freq_divider.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cpu_freq_divider_cpu_freq_divider_sch_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="cpu_freq_divider_cpu_freq_divider_sch_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="cpu_freq_divider_envsettings.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="cpu_freq_divider_fpga_editor.log"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="cpu_freq_divider_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="cpu_freq_divider_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="cpu_freq_divider_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="cpu_freq_divider_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="cpu_freq_divider_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="cpu_freq_divider_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="cpu_freq_divider_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="cpu_freq_divider_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="cpu_freq_divider_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="cpu_freq_divider_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="cpu_freq_divider_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="cpu_freq_divider_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="cpu_freq_divider_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="cpu_freq_divider_xst.xrpt"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="cpu_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="cpu_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="cpu_map.mrp" xil_pn:subbranch="Map"/>
@@ -156,6 +203,41 @@
     </file>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="encoder8_3_encoder8_3_sch_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="encoder8_3_encoder8_3_sch_tb_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="freq_divider.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="freq_divider.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="freq_divider.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="freq_divider.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="freq_divider.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_JHD" xil_pn:name="freq_divider.jhd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="freq_divider.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="freq_divider.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="freq_divider.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="freq_divider.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="freq_divider.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="freq_divider.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="freq_divider.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="freq_divider.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="freq_divider.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="freq_divider.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="freq_divider.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="freq_divider.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="freq_divider.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="freq_divider.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_VHDL" xil_pn:name="freq_divider.vhf">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="freq_divider.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="freq_divider_freq_divider_sch_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="freq_divider_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="freq_divider_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="freq_divider_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="freq_divider_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="freq_divider_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="freq_divider_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="freq_divider_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="freq_divider_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="freq_divider_xst.xrpt"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
@@ -203,6 +285,15 @@
       <branch xil_pn:name="Implementation"/>
       <branch xil_pn:name="BehavioralSim"/>
     </file>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="motherboard.cmd_log"/>
+    <file xil_pn:fileType="FILE_JHD" xil_pn:name="motherboard.jhd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="motherboard.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="motherboard.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="motherboard.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="motherboard.vhf"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="motherboard.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="motherboard_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="motherboard_xst.xrpt"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="netgen"/>
     <file xil_pn:branch="PostMapSimulation" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/map/cpu_map.nlf"/>
     <file xil_pn:branch="PostMapSimulation" xil_pn:fileType="FILE_SDF" xil_pn:name="netgen/map/cpu_map.sdf"/>
@@ -279,26 +370,28 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1649456835" xil_pn:in_ck="7346443563764535844" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1649456835">
+    <transform xil_pn:end_ts="1650066271" xil_pn:in_ck="3571166678771338547" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1650066271">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="led_control.vhd"/>
       <outfile xil_pn:name="tb_alu.vhd"/>
       <outfile xil_pn:name="tb_alu_output_muxer.vhd"/>
-      <outfile xil_pn:name="tb_asm_counter.vhd"/>
       <outfile xil_pn:name="tb_bus_muxer.vhd"/>
       <outfile xil_pn:name="tb_clk_generator.vhd"/>
+      <outfile xil_pn:name="tb_cpu_freq_divider_v2.vhd"/>
       <outfile xil_pn:name="tb_cpu_output_muxer.vhd"/>
+      <outfile xil_pn:name="tb_cpu_v2.vhd"/>
       <outfile xil_pn:name="tb_encoder_8_3.vhd"/>
+      <outfile xil_pn:name="tb_freq_divider.vhd"/>
       <outfile xil_pn:name="tb_pass_through_or_one.vhd"/>
       <outfile xil_pn:name="tb_ram_256bytes.vhd"/>
       <outfile xil_pn:name="tb_stepper.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1649443362" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-8838174429235572988" xil_pn:start_ts="1649443362">
+    <transform xil_pn:end_ts="1650066271" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="8265293932906684330" xil_pn:start_ts="1650066271">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1649458809" xil_pn:in_ck="-2712183171316447307" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-7490580144609136" xil_pn:start_ts="1649458806">
+    <transform xil_pn:end_ts="1650066272" xil_pn:in_ck="-6856565889922703201" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="7027689702031584822" xil_pn:start_ts="1650066271">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -314,8 +407,10 @@
       <outfile xil_pn:name="cmp_8bit.vhf"/>
       <outfile xil_pn:name="cpu.vhf"/>
       <outfile xil_pn:name="cpu_control.vhf"/>
+      <outfile xil_pn:name="cpu_freq_divider.vhf"/>
       <outfile xil_pn:name="cpu_output_muxer.vhf"/>
       <outfile xil_pn:name="encoder8_3.vhf"/>
+      <outfile xil_pn:name="freq_divider.vhf"/>
       <outfile xil_pn:name="lzero.vhf"/>
       <outfile xil_pn:name="one_8bit.vhf"/>
       <outfile xil_pn:name="pass_through_or_one.vhf"/>
@@ -323,11 +418,12 @@
       <outfile xil_pn:name="reg_8bit.vhf"/>
       <outfile xil_pn:name="stepper.vhf"/>
     </transform>
-    <transform xil_pn:end_ts="1649293632" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-6188742590956783781" xil_pn:start_ts="1649293632">
+    <transform xil_pn:end_ts="1650058097" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="4288496974551380718" xil_pn:start_ts="1650058097">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
-    <transform xil_pn:end_ts="1649458809" xil_pn:in_ck="-453087665285300575" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1649458809">
+    <transform xil_pn:end_ts="1650066272" xil_pn:in_ck="1163661998564468803" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1650066272">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -344,8 +440,10 @@
       <outfile xil_pn:name="cmp_8bit.vhf"/>
       <outfile xil_pn:name="cpu.vhf"/>
       <outfile xil_pn:name="cpu_control.vhf"/>
+      <outfile xil_pn:name="cpu_freq_divider.vhf"/>
       <outfile xil_pn:name="cpu_output_muxer.vhf"/>
       <outfile xil_pn:name="encoder8_3.vhf"/>
+      <outfile xil_pn:name="freq_divider.vhf"/>
       <outfile xil_pn:name="led_control.vhd"/>
       <outfile xil_pn:name="lzero.vhf"/>
       <outfile xil_pn:name="one_8bit.vhf"/>
@@ -355,16 +453,18 @@
       <outfile xil_pn:name="stepper.vhf"/>
       <outfile xil_pn:name="tb_alu.vhd"/>
       <outfile xil_pn:name="tb_alu_output_muxer.vhd"/>
-      <outfile xil_pn:name="tb_asm_counter.vhd"/>
       <outfile xil_pn:name="tb_bus_muxer.vhd"/>
       <outfile xil_pn:name="tb_clk_generator.vhd"/>
+      <outfile xil_pn:name="tb_cpu_freq_divider_v2.vhd"/>
       <outfile xil_pn:name="tb_cpu_output_muxer.vhd"/>
+      <outfile xil_pn:name="tb_cpu_v2.vhd"/>
       <outfile xil_pn:name="tb_encoder_8_3.vhd"/>
+      <outfile xil_pn:name="tb_freq_divider.vhd"/>
       <outfile xil_pn:name="tb_pass_through_or_one.vhd"/>
       <outfile xil_pn:name="tb_ram_256bytes.vhd"/>
       <outfile xil_pn:name="tb_stepper.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1649458812" xil_pn:in_ck="-453087665285300575" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-7871951945746904068" xil_pn:start_ts="1649458809">
+    <transform xil_pn:end_ts="1650066274" xil_pn:in_ck="1163661998564468803" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1958176273773233736" xil_pn:start_ts="1650066272">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -372,14 +472,14 @@
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="cpu_cpu_sch_tb_beh.prj"/>
-      <outfile xil_pn:name="cpu_cpu_sch_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="cpu_freq_divider_cpu_freq_divider_sch_tb_beh.prj"/>
+      <outfile xil_pn:name="cpu_freq_divider_cpu_freq_divider_sch_tb_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1649458812" xil_pn:in_ck="-5775952295420000820" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3987568288328311345" xil_pn:start_ts="1649458812">
+    <transform xil_pn:end_ts="1650066274" xil_pn:in_ck="7530873216137611274" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="4503257885917781271" xil_pn:start_ts="1650066274">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
@@ -393,7 +493,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1649460401" xil_pn:in_ck="-2712183171316447307" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="1367477379429764801" xil_pn:start_ts="1649460399">
+    <transform xil_pn:end_ts="1650066778" xil_pn:in_ck="-6856565889922703201" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="1367477379429764801" xil_pn:start_ts="1650066775">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="alu.vhf"/>
@@ -405,9 +505,12 @@
       <outfile xil_pn:name="cmp_8bit.vhf"/>
       <outfile xil_pn:name="cpu.vhf"/>
       <outfile xil_pn:name="cpu_control.vhf"/>
+      <outfile xil_pn:name="cpu_freq_divider.vhf"/>
       <outfile xil_pn:name="cpu_output_muxer.vhf"/>
       <outfile xil_pn:name="encoder8_3.vhf"/>
+      <outfile xil_pn:name="freq_divider.vhf"/>
       <outfile xil_pn:name="lzero.vhf"/>
+      <outfile xil_pn:name="motherboard.vhf"/>
       <outfile xil_pn:name="one_8bit.vhf"/>
       <outfile xil_pn:name="pass_through_or_one.vhf"/>
       <outfile xil_pn:name="ram_256bytes.vhf"/>
@@ -415,27 +518,27 @@
       <outfile xil_pn:name="stepper.vhf"/>
       <outfile xil_pn:name="test_buf.vhf"/>
     </transform>
-    <transform xil_pn:end_ts="1649460401" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-6188742590956783781" xil_pn:start_ts="1649460401">
+    <transform xil_pn:end_ts="1650066778" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-6188742590956783781" xil_pn:start_ts="1650066778">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1649460401" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1649460401">
+    <transform xil_pn:end_ts="1650066778" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1650066778">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1649460401" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="15972280706930101" xil_pn:start_ts="1649460401">
+    <transform xil_pn:end_ts="1650066778" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="15972280706930101" xil_pn:start_ts="1650066778">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1649460401" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3448225648484115155" xil_pn:start_ts="1649460401">
+    <transform xil_pn:end_ts="1650066778" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3448225648484115155" xil_pn:start_ts="1650066778">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1649460401" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-1481173902950176155" xil_pn:start_ts="1649460401">
+    <transform xil_pn:end_ts="1650066778" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-1481173902950176155" xil_pn:start_ts="1650066778">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1649460410" xil_pn:in_ck="-5471437417088562544" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-4897599826394597567" xil_pn:start_ts="1649460401">
+    <transform xil_pn:end_ts="1650066787" xil_pn:in_ck="1382667556841479084" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-4897599826394597567" xil_pn:start_ts="1650066778">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -452,18 +555,21 @@
       <outfile xil_pn:name="cpu.stx"/>
       <outfile xil_pn:name="cpu.syr"/>
       <outfile xil_pn:name="cpu.xst"/>
-      <outfile xil_pn:name="cpu_cpu_sch_tb_beh.prj"/>
       <outfile xil_pn:name="cpu_cpu_sch_tb_stx_beh.prj"/>
+      <outfile xil_pn:name="cpu_freq_divider.ngr"/>
+      <outfile xil_pn:name="cpu_freq_divider.prj"/>
+      <outfile xil_pn:name="cpu_freq_divider_cpu_freq_divider_sch_tb_beh.prj"/>
       <outfile xil_pn:name="cpu_output_muxer_cpu_output_muxer_sch_tb_stx_beh.prj"/>
       <outfile xil_pn:name="cpu_xst.xrpt"/>
+      <outfile xil_pn:name="freq_divider.ngr"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1649460633" xil_pn:in_ck="132379029588" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="3734212952593482" xil_pn:start_ts="1649460633">
+    <transform xil_pn:end_ts="1650066620" xil_pn:in_ck="8052795765427221019" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="3734212952593482" xil_pn:start_ts="1650066620">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1649460639" xil_pn:in_ck="-1712677803316073625" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="2753755713209836595" xil_pn:start_ts="1649460633">
+    <transform xil_pn:end_ts="1650066792" xil_pn:in_ck="-3142496891543699447" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="2753755713209836595" xil_pn:start_ts="1650066787">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_ngo"/>
@@ -472,12 +578,10 @@
       <outfile xil_pn:name="cpu.ngd"/>
       <outfile xil_pn:name="cpu_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1649460649" xil_pn:in_ck="-4402563259197199038" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-3218812312198701449" xil_pn:start_ts="1649460639">
+    <transform xil_pn:end_ts="1650066805" xil_pn:in_ck="-66972272205624282" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-3218812312198701449" xil_pn:start_ts="1650066792">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="cpu.pcf"/>
       <outfile xil_pn:name="cpu_map.map"/>
@@ -488,7 +592,7 @@
       <outfile xil_pn:name="cpu_summary.xml"/>
       <outfile xil_pn:name="cpu_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1649460662" xil_pn:in_ck="-8882413646083453875" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="7044443079611515937" xil_pn:start_ts="1649460649">
+    <transform xil_pn:end_ts="1650066818" xil_pn:in_ck="877856862034550627" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="7044443079611515937" xil_pn:start_ts="1650066805">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
@@ -502,7 +606,7 @@
       <outfile xil_pn:name="cpu_pad.txt"/>
       <outfile xil_pn:name="cpu_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1649460671" xil_pn:in_ck="1262575899513648962" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="-3266310027444107032" xil_pn:start_ts="1649460662">
+    <transform xil_pn:end_ts="1650066827" xil_pn:in_ck="3882112457098223671" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="-3266310027444107032" xil_pn:start_ts="1650066818">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -515,7 +619,7 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1649460662" xil_pn:in_ck="-1104814153059187530" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1649460657">
+    <transform xil_pn:end_ts="1650066818" xil_pn:in_ck="333516196384684434" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1650066813">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

@@ -29,3 +29,5 @@ MODULE cpu
 		INSTANCE XLXI_9
 	SUBMODULE cpu_output_muxer
 		INSTANCE XLXI_130
+	SUBMODULE cpu_freq_divider
+		INSTANCE XLXI_173

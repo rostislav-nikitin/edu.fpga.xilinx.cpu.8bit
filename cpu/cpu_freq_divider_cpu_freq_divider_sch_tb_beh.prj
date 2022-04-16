@@ -1,0 +1,4 @@
+vhdl work "freq_divider.vhf"
+vhdl work "encoder8_3.vhf"
+vhdl work "cpu_freq_divider.vhf"
+vhdl work "tb_cpu_freq_divider_v2.vhd"

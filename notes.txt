@@ -1,0 +1,85 @@
+
+
+2^24+2^22+2^21+2^20+2^19+2^18+2^16+2^14+2^13+2^12+2^11+2^6)
+
+00000001011111010111100001000000
+
+BEBC20
+
+
+017D7840
+00000000010000000000000000000000
+00400000
+
+00000000000011110100001001000000
+
+00000000000011110100001001000000
+1000000₁₀ = F4240₁₆
+
+
+000F4240
+
+
+procedure one_step(signal clk : inout std_logic) is
+	begin
+		for i in 1 to 805306368 loop
+			wait for 10 ns;
+			clk <= '1';
+			wait for 10 ns;
+			clk <= '0';
+		end loop;
+	end one_step;
+	
+	procedure set_reg(
+		signal rin_d : out std_logic_vector(7 downto 0);
+		signal rin_w : out std_logic;
+		signal rin_r : out std_logic;
+		signal reg_w : out std_logic; 
+		constant value : in std_logic_vector(7 downto 0)
+	) is
+	begin
+		wait for 10 ns;
+		rin_d <= value;
+		wait for 10 ns;
+		rin_w <= '1';
+		wait for 10 ns;
+		rin_w <= '0';
+		wait for 10 ns;
+		rin_r <= '1';
+--		
+		wait for 10 ns;
+		reg_w <= '1';
+		wait for 10 ns;
+		reg_w <= '0';
+--		
+		wait for 10 ns;
+		rin_r <= '0';
+	end set_reg;
+	
+	
+	
+tb : PROCESS
+   BEGIN
+		--manual_r0_w <= '0';
+		--manual_r1_w <= '0';
+		rst_in <= '0';
+		wait for 10 ns;
+		rst_in <= '1';
+		wait for 10 ns;
+--==========INIT IAR==========================================
+		--set_reg(rind, rinw, rinr, manual_iar_w, "00000000");
+		one_step(clk);
+		one_step(clk);
+		
+		for i in 1 to 260 loop
+			-- ADD
+			one_step(clk);
+			-- JMP
+			one_step(clk);
+			-- JMPIF
+			one_step(clk);
+		end loop;
+		
+--============================================================
+      WAIT; -- will wait forever
+   END PROCESS;

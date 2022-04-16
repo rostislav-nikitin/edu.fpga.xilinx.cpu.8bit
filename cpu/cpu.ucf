@@ -16,6 +16,9 @@ NET "rst_in" LOC = C3;
 ##################################################################################
 ## LED Pins 
 ##################################################################################
+#NET "monitor[0]" LOC = P4;
+NET "clk_int" LOC = K16 | IOSTANDARD = "LVCMOS33" ;  ##  PIN3
+#NET "clk_one_hz" LOC = J16;
 NET "monitor[0]" LOC = P4;
 NET "monitor[1]" LOC = N5;
 NET "monitor[2]" LOC = P5;

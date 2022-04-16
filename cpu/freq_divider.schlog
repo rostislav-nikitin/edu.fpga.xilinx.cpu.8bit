@@ -1,0 +1,11 @@
+add txwin 196 2312 Text_Value 16 -sn=1
+select figure at 250 2312 8 -branches -sn=1
+select figure at 248 2312 8 -branches -all -sn=1
+BeginGroup -sn=1
+set figure TW|196|2312 traits 0|0|0|0|0|1|LEFT|1|D,D,D|1|Arial|1|16|0 -sn=1
+set txwin TW|196|2312 value "divider=sum[n=0,31](x_n^(n+1)) where x is an each input divider bus bit" -sn=1
+EndGroup -sn=1
+BeginGroup -sn=1
+set figure TW|196|2312 traits 0|0|0|0|0|1|LEFT|1|D,D,D|1|Arial|1|16|0 -sn=1
+set txwin TW|196|2312 value "divider=sum[n=0,31](x_n^(n+1)) where x is an each input divider bus bit" -sn=1
+EndGroup -sn=1

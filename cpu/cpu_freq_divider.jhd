@@ -1,0 +1,5 @@
+MODULE cpu_freq_divider
+	SUBMODULE freq_divider
+		INSTANCE XLXI_1
+	SUBMODULE encoder8_3
+		INSTANCE XLXI_38

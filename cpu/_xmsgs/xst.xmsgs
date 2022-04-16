@@ -5,364 +5,358 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 618: Net &lt;<arg fmt="%s" index="1">XLXN_54</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1401: Net &lt;<arg fmt="%s" index="1">XLXN_54</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 619: Net &lt;<arg fmt="%s" index="1">XLXN_55</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1402: Net &lt;<arg fmt="%s" index="1">XLXN_55</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 620: Net &lt;<arg fmt="%s" index="1">XLXN_56</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1403: Net &lt;<arg fmt="%s" index="1">XLXN_56</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 621: Net &lt;<arg fmt="%s" index="1">XLXN_57</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1404: Net &lt;<arg fmt="%s" index="1">XLXN_57</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 622: Net &lt;<arg fmt="%s" index="1">XLXN_58</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1405: Net &lt;<arg fmt="%s" index="1">XLXN_58</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 623: Net &lt;<arg fmt="%s" index="1">XLXN_59</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1406: Net &lt;<arg fmt="%s" index="1">XLXN_59</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 624: Net &lt;<arg fmt="%s" index="1">XLXN_60</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1407: Net &lt;<arg fmt="%s" index="1">XLXN_60</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 625: Net &lt;<arg fmt="%s" index="1">XLXN_61</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1408: Net &lt;<arg fmt="%s" index="1">XLXN_61</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 626: Net &lt;<arg fmt="%s" index="1">XLXN_70</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1409: Net &lt;<arg fmt="%s" index="1">XLXN_70</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 627: Net &lt;<arg fmt="%s" index="1">XLXN_71</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1410: Net &lt;<arg fmt="%s" index="1">XLXN_71</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 628: Net &lt;<arg fmt="%s" index="1">XLXN_72</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1411: Net &lt;<arg fmt="%s" index="1">XLXN_72</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 629: Net &lt;<arg fmt="%s" index="1">XLXN_73</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1412: Net &lt;<arg fmt="%s" index="1">XLXN_73</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 630: Net &lt;<arg fmt="%s" index="1">XLXN_74</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1413: Net &lt;<arg fmt="%s" index="1">XLXN_74</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 631: Net &lt;<arg fmt="%s" index="1">XLXN_75</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1414: Net &lt;<arg fmt="%s" index="1">XLXN_75</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 632: Net &lt;<arg fmt="%s" index="1">XLXN_76</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1415: Net &lt;<arg fmt="%s" index="1">XLXN_76</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 633: Net &lt;<arg fmt="%s" index="1">XLXN_77</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1416: Net &lt;<arg fmt="%s" index="1">XLXN_77</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 634: Net &lt;<arg fmt="%s" index="1">XLXN_86</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1417: Net &lt;<arg fmt="%s" index="1">XLXN_86</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 635: Net &lt;<arg fmt="%s" index="1">XLXN_87</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1418: Net &lt;<arg fmt="%s" index="1">XLXN_87</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 636: Net &lt;<arg fmt="%s" index="1">XLXN_88</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1419: Net &lt;<arg fmt="%s" index="1">XLXN_88</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 637: Net &lt;<arg fmt="%s" index="1">XLXN_89</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1420: Net &lt;<arg fmt="%s" index="1">XLXN_89</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 638: Net &lt;<arg fmt="%s" index="1">XLXN_90</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1421: Net &lt;<arg fmt="%s" index="1">XLXN_90</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 639: Net &lt;<arg fmt="%s" index="1">XLXN_91</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1422: Net &lt;<arg fmt="%s" index="1">XLXN_91</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 640: Net &lt;<arg fmt="%s" index="1">XLXN_92</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1423: Net &lt;<arg fmt="%s" index="1">XLXN_92</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 641: Net &lt;<arg fmt="%s" index="1">XLXN_93</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1424: Net &lt;<arg fmt="%s" index="1">XLXN_93</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 642: Net &lt;<arg fmt="%s" index="1">XLXN_102</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1425: Net &lt;<arg fmt="%s" index="1">XLXN_102</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 643: Net &lt;<arg fmt="%s" index="1">XLXN_103</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1426: Net &lt;<arg fmt="%s" index="1">XLXN_103</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 644: Net &lt;<arg fmt="%s" index="1">XLXN_104</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1427: Net &lt;<arg fmt="%s" index="1">XLXN_104</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 645: Net &lt;<arg fmt="%s" index="1">XLXN_105</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1428: Net &lt;<arg fmt="%s" index="1">XLXN_105</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 646: Net &lt;<arg fmt="%s" index="1">XLXN_106</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1429: Net &lt;<arg fmt="%s" index="1">XLXN_106</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 647: Net &lt;<arg fmt="%s" index="1">XLXN_107</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1430: Net &lt;<arg fmt="%s" index="1">XLXN_107</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 648: Net &lt;<arg fmt="%s" index="1">XLXN_108</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1431: Net &lt;<arg fmt="%s" index="1">XLXN_108</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 649: Net &lt;<arg fmt="%s" index="1">XLXN_109</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1432: Net &lt;<arg fmt="%s" index="1">XLXN_109</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 650: Net &lt;<arg fmt="%s" index="1">XLXN_118</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1433: Net &lt;<arg fmt="%s" index="1">XLXN_118</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 651: Net &lt;<arg fmt="%s" index="1">XLXN_119</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1434: Net &lt;<arg fmt="%s" index="1">XLXN_119</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 652: Net &lt;<arg fmt="%s" index="1">XLXN_120</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1435: Net &lt;<arg fmt="%s" index="1">XLXN_120</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 653: Net &lt;<arg fmt="%s" index="1">XLXN_121</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1436: Net &lt;<arg fmt="%s" index="1">XLXN_121</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 654: Net &lt;<arg fmt="%s" index="1">XLXN_122</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1437: Net &lt;<arg fmt="%s" index="1">XLXN_122</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 655: Net &lt;<arg fmt="%s" index="1">XLXN_123</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1438: Net &lt;<arg fmt="%s" index="1">XLXN_123</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 656: Net &lt;<arg fmt="%s" index="1">XLXN_124</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1439: Net &lt;<arg fmt="%s" index="1">XLXN_124</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 657: Net &lt;<arg fmt="%s" index="1">XLXN_125</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1440: Net &lt;<arg fmt="%s" index="1">XLXN_125</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 658: Net &lt;<arg fmt="%s" index="1">XLXN_134</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1441: Net &lt;<arg fmt="%s" index="1">XLXN_134</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 659: Net &lt;<arg fmt="%s" index="1">XLXN_135</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1442: Net &lt;<arg fmt="%s" index="1">XLXN_135</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 660: Net &lt;<arg fmt="%s" index="1">XLXN_136</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1443: Net &lt;<arg fmt="%s" index="1">XLXN_136</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 661: Net &lt;<arg fmt="%s" index="1">XLXN_137</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1444: Net &lt;<arg fmt="%s" index="1">XLXN_137</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 662: Net &lt;<arg fmt="%s" index="1">XLXN_138</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1445: Net &lt;<arg fmt="%s" index="1">XLXN_138</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 663: Net &lt;<arg fmt="%s" index="1">XLXN_139</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1446: Net &lt;<arg fmt="%s" index="1">XLXN_139</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 664: Net &lt;<arg fmt="%s" index="1">XLXN_140</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1447: Net &lt;<arg fmt="%s" index="1">XLXN_140</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 665: Net &lt;<arg fmt="%s" index="1">XLXN_141</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1448: Net &lt;<arg fmt="%s" index="1">XLXN_141</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 666: Net &lt;<arg fmt="%s" index="1">XLXN_150</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1449: Net &lt;<arg fmt="%s" index="1">XLXN_150</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 667: Net &lt;<arg fmt="%s" index="1">XLXN_151</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1450: Net &lt;<arg fmt="%s" index="1">XLXN_151</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 668: Net &lt;<arg fmt="%s" index="1">XLXN_152</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1451: Net &lt;<arg fmt="%s" index="1">XLXN_152</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 669: Net &lt;<arg fmt="%s" index="1">XLXN_153</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1452: Net &lt;<arg fmt="%s" index="1">XLXN_153</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 670: Net &lt;<arg fmt="%s" index="1">XLXN_154</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1453: Net &lt;<arg fmt="%s" index="1">XLXN_154</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 671: Net &lt;<arg fmt="%s" index="1">XLXN_155</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1454: Net &lt;<arg fmt="%s" index="1">XLXN_155</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 672: Net &lt;<arg fmt="%s" index="1">XLXN_156</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1455: Net &lt;<arg fmt="%s" index="1">XLXN_156</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 673: Net &lt;<arg fmt="%s" index="1">XLXN_157</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1456: Net &lt;<arg fmt="%s" index="1">XLXN_157</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 674: Net &lt;<arg fmt="%s" index="1">XLXN_166</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1457: Net &lt;<arg fmt="%s" index="1">XLXN_166</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 675: Net &lt;<arg fmt="%s" index="1">XLXN_167</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1458: Net &lt;<arg fmt="%s" index="1">XLXN_167</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 676: Net &lt;<arg fmt="%s" index="1">XLXN_168</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1459: Net &lt;<arg fmt="%s" index="1">XLXN_168</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 677: Net &lt;<arg fmt="%s" index="1">XLXN_169</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1460: Net &lt;<arg fmt="%s" index="1">XLXN_169</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 678: Net &lt;<arg fmt="%s" index="1">XLXN_170</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1461: Net &lt;<arg fmt="%s" index="1">XLXN_170</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 679: Net &lt;<arg fmt="%s" index="1">XLXN_171</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1462: Net &lt;<arg fmt="%s" index="1">XLXN_171</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 680: Net &lt;<arg fmt="%s" index="1">XLXN_172</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1463: Net &lt;<arg fmt="%s" index="1">XLXN_172</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 681: Net &lt;<arg fmt="%s" index="1">XLXN_173</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1464: Net &lt;<arg fmt="%s" index="1">XLXN_173</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 2709: Net &lt;<arg fmt="%s" index="1">XLXI_14_dev7_openSignal[7]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 3280: Net &lt;<arg fmt="%s" index="1">XLXI_14_dev7_openSignal[7]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 2710: Net &lt;<arg fmt="%s" index="1">XLXI_14_dev8_openSignal[7]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 3281: Net &lt;<arg fmt="%s" index="1">XLXI_14_dev8_openSignal[7]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 2711: Net &lt;<arg fmt="%s" index="1">XLXI_14_dev9_openSignal[7]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 3282: Net &lt;<arg fmt="%s" index="1">XLXI_14_dev9_openSignal[7]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 2712: Net &lt;<arg fmt="%s" index="1">XLXI_14_dev10_openSignal[7]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 3283: Net &lt;<arg fmt="%s" index="1">XLXI_14_dev10_openSignal[7]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 2713: Net &lt;<arg fmt="%s" index="1">XLXI_14_dev11_openSignal[7]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 3284: Net &lt;<arg fmt="%s" index="1">XLXI_14_dev11_openSignal[7]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 2714: Net &lt;<arg fmt="%s" index="1">XLXI_14_dev12_openSignal[7]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 3285: Net &lt;<arg fmt="%s" index="1">XLXI_14_dev12_openSignal[7]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 2715: Net &lt;<arg fmt="%s" index="1">XLXI_14_dev13_openSignal[7]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 3286: Net &lt;<arg fmt="%s" index="1">XLXI_14_dev13_openSignal[7]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 2716: Net &lt;<arg fmt="%s" index="1">XLXI_14_dev14_openSignal[7]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 3287: Net &lt;<arg fmt="%s" index="1">XLXI_14_dev14_openSignal[7]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 2717: Net &lt;<arg fmt="%s" index="1">XLXI_14_dev15_openSignal[7]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 3288: Net &lt;<arg fmt="%s" index="1">XLXI_14_dev15_openSignal[7]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1913: Net &lt;<arg fmt="%s" index="1">XLXI_556_I0_openSignal</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 2484: Net &lt;<arg fmt="%s" index="1">XLXI_556_I0_openSignal</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1914: Net &lt;<arg fmt="%s" index="1">XLXI_556_I1_openSignal</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 2485: Net &lt;<arg fmt="%s" index="1">XLXI_556_I1_openSignal</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1915: Net &lt;<arg fmt="%s" index="1">XLXI_556_I2_openSignal</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 2486: Net &lt;<arg fmt="%s" index="1">XLXI_556_I2_openSignal</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1102: Net &lt;<arg fmt="%s" index="1">XLXI_1_dev7_openSignal[7]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1765: Net &lt;<arg fmt="%s" index="1">XLXI_1_dev7_openSignal[7]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1103: Net &lt;<arg fmt="%s" index="1">XLXI_1_dev8_openSignal[7]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1766: Net &lt;<arg fmt="%s" index="1">XLXI_1_dev8_openSignal[7]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1104: Net &lt;<arg fmt="%s" index="1">XLXI_1_dev9_openSignal[7]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1767: Net &lt;<arg fmt="%s" index="1">XLXI_1_dev9_openSignal[7]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1105: Net &lt;<arg fmt="%s" index="1">XLXI_1_dev10_openSignal[7]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1768: Net &lt;<arg fmt="%s" index="1">XLXI_1_dev10_openSignal[7]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1106: Net &lt;<arg fmt="%s" index="1">XLXI_1_dev11_openSignal[7]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1769: Net &lt;<arg fmt="%s" index="1">XLXI_1_dev11_openSignal[7]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1107: Net &lt;<arg fmt="%s" index="1">XLXI_1_dev12_openSignal[7]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1770: Net &lt;<arg fmt="%s" index="1">XLXI_1_dev12_openSignal[7]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1108: Net &lt;<arg fmt="%s" index="1">XLXI_1_dev13_openSignal[7]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1771: Net &lt;<arg fmt="%s" index="1">XLXI_1_dev13_openSignal[7]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1109: Net &lt;<arg fmt="%s" index="1">XLXI_1_dev14_openSignal[7]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1772: Net &lt;<arg fmt="%s" index="1">XLXI_1_dev14_openSignal[7]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1110: Net &lt;<arg fmt="%s" index="1">XLXI_1_dev15_openSignal[7]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1773: Net &lt;<arg fmt="%s" index="1">XLXI_1_dev15_openSignal[7]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 3472: Net &lt;<arg fmt="%s" index="1">rind[7]</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 4047: Net &lt;<arg fmt="%s" index="1">rind[7]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 3473: Net &lt;<arg fmt="%s" index="1">rinr</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 4048: Net &lt;<arg fmt="%s" index="1">rinr</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 3474: Net &lt;<arg fmt="%s" index="1">rinw</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 4049: Net &lt;<arg fmt="%s" index="1">rinw</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3718</arg>: Output port &lt;<arg fmt="%s" index="3">alu</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 4072: Net &lt;<arg fmt="%s" index="1">XLXI_173_external_clk_in_openSignal</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3718</arg>: Output port &lt;<arg fmt="%s" index="3">alu_and</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 4073: Net &lt;<arg fmt="%s" index="1">XLXI_173_manual_clk_in_openSignal</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3718</arg>: Output port &lt;<arg fmt="%s" index="3">alu_lshift</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">4295</arg>: Output port &lt;<arg fmt="%s" index="3">alu</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3718</arg>: Output port &lt;<arg fmt="%s" index="3">alu_not</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">4295</arg>: Output port &lt;<arg fmt="%s" index="3">alu_and</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3718</arg>: Output port &lt;<arg fmt="%s" index="3">alu_or</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">4295</arg>: Output port &lt;<arg fmt="%s" index="3">alu_lshift</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3718</arg>: Output port &lt;<arg fmt="%s" index="3">alu_rshift</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">4295</arg>: Output port &lt;<arg fmt="%s" index="3">alu_not</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3718</arg>: Output port &lt;<arg fmt="%s" index="3">alu_sum</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">4295</arg>: Output port &lt;<arg fmt="%s" index="3">alu_or</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3718</arg>: Output port &lt;<arg fmt="%s" index="3">alu_xor</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">4295</arg>: Output port &lt;<arg fmt="%s" index="3">alu_rshift</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3718</arg>: Output port &lt;<arg fmt="%s" index="3">ground</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">4295</arg>: Output port &lt;<arg fmt="%s" index="3">alu_sum</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3718</arg>: Output port &lt;<arg fmt="%s" index="3">ra_0</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">4295</arg>: Output port &lt;<arg fmt="%s" index="3">alu_xor</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3718</arg>: Output port &lt;<arg fmt="%s" index="3">ra_1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">4295</arg>: Output port &lt;<arg fmt="%s" index="3">ground</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3718</arg>: Output port &lt;<arg fmt="%s" index="3">ra_2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">4295</arg>: Output port &lt;<arg fmt="%s" index="3">ra_0</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3718</arg>: Output port &lt;<arg fmt="%s" index="3">ra_3</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">4295</arg>: Output port &lt;<arg fmt="%s" index="3">ra_1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3718</arg>: Output port &lt;<arg fmt="%s" index="3">rb_0</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">4295</arg>: Output port &lt;<arg fmt="%s" index="3">ra_2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3718</arg>: Output port &lt;<arg fmt="%s" index="3">rb_1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">4295</arg>: Output port &lt;<arg fmt="%s" index="3">ra_3</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3718</arg>: Output port &lt;<arg fmt="%s" index="3">rb_2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">4295</arg>: Output port &lt;<arg fmt="%s" index="3">rb_0</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3718</arg>: Output port &lt;<arg fmt="%s" index="3">rb_3</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">4295</arg>: Output port &lt;<arg fmt="%s" index="3">rb_1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3718</arg>: Output port &lt;<arg fmt="%s" index="3">s1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">4295</arg>: Output port &lt;<arg fmt="%s" index="3">rb_2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3718</arg>: Output port &lt;<arg fmt="%s" index="3">s2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">4295</arg>: Output port &lt;<arg fmt="%s" index="3">rb_3</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3718</arg>: Output port &lt;<arg fmt="%s" index="3">s3</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">4295</arg>: Output port &lt;<arg fmt="%s" index="3">s1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3718</arg>: Output port &lt;<arg fmt="%s" index="3">s4</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">4295</arg>: Output port &lt;<arg fmt="%s" index="3">s2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3718</arg>: Output port &lt;<arg fmt="%s" index="3">s5</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">4295</arg>: Output port &lt;<arg fmt="%s" index="3">s3</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3718</arg>: Output port &lt;<arg fmt="%s" index="3">s6</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">4295</arg>: Output port &lt;<arg fmt="%s" index="3">s4</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3783</arg>: Output port &lt;<arg fmt="%s" index="3">a_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_9</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">4295</arg>: Output port &lt;<arg fmt="%s" index="3">s5</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3843</arg>: Output port &lt;<arg fmt="%s" index="3">G</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_118</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">4295</arg>: Output port &lt;<arg fmt="%s" index="3">s6</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3846</arg>: Output port &lt;<arg fmt="%s" index="3">G</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_119</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">4360</arg>: Output port &lt;<arg fmt="%s" index="3">a_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_9</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3852</arg>: Output port &lt;<arg fmt="%s" index="3">o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_121</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">4420</arg>: Output port &lt;<arg fmt="%s" index="3">G</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_118</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3932</arg>: Output port &lt;<arg fmt="%s" index="3">Q</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_131</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">4423</arg>: Output port &lt;<arg fmt="%s" index="3">G</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_119</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3932</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_131</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">4429</arg>: Output port &lt;<arg fmt="%s" index="3">o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_121</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3940</arg>: Output port &lt;<arg fmt="%s" index="3">CEO</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_132</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3940</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_132</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3954</arg>: Output port &lt;<arg fmt="%s" index="3">G</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_136</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">4509</arg>: Output port &lt;<arg fmt="%s" index="3">G</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_136</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">rind</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
@@ -374,22 +368,28 @@
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">rinw</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3192</arg>: Output port &lt;<arg fmt="%s" index="3">D3</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_173_external_clk_in_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3192</arg>: Output port &lt;<arg fmt="%s" index="3">D4</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_173_manual_clk_in_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3192</arg>: Output port &lt;<arg fmt="%s" index="3">D5</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3763</arg>: Output port &lt;<arg fmt="%s" index="3">D3</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3192</arg>: Output port &lt;<arg fmt="%s" index="3">D6</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3763</arg>: Output port &lt;<arg fmt="%s" index="3">D4</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3192</arg>: Output port &lt;<arg fmt="%s" index="3">D7</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3763</arg>: Output port &lt;<arg fmt="%s" index="3">D5</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3206</arg>: Output port &lt;<arg fmt="%s" index="3">OFL</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_2</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3763</arg>: Output port &lt;<arg fmt="%s" index="3">D6</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3763</arg>: Output port &lt;<arg fmt="%s" index="3">D7</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3777</arg>: Output port &lt;<arg fmt="%s" index="3">OFL</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_2</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_14_dev7_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
@@ -635,13 +635,13 @@
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXN_173</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">2149</arg>: Output port &lt;<arg fmt="%s" index="3">D7</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_39</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">2720</arg>: Output port &lt;<arg fmt="%s" index="3">D7</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_39</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">2290</arg>: Output port &lt;<arg fmt="%s" index="3">D7</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_252</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">2861</arg>: Output port &lt;<arg fmt="%s" index="3">D7</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_252</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">2602</arg>: Output port &lt;<arg fmt="%s" index="3">O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_556</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3173</arg>: Output port &lt;<arg fmt="%s" index="3">O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_556</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_556_I0_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
@@ -653,19 +653,19 @@
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_556_I2_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">1703</arg>: Output port &lt;<arg fmt="%s" index="3">CEO</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_24</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">2274</arg>: Output port &lt;<arg fmt="%s" index="3">CEO</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_24</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">1703</arg>: Output port &lt;<arg fmt="%s" index="3">Q3</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_24</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">2274</arg>: Output port &lt;<arg fmt="%s" index="3">Q3</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_24</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">1703</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_24</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">2274</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_24</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">1714</arg>: Output port &lt;<arg fmt="%s" index="3">D7</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_25</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">2285</arg>: Output port &lt;<arg fmt="%s" index="3">D7</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_25</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">1626</arg>: Output port &lt;<arg fmt="%s" index="3">O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_42</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">2197</arg>: Output port &lt;<arg fmt="%s" index="3">O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_42</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">Q&lt;6&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -758,41 +758,20 @@
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_1_dev15_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
 </msg>
 
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">751</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">759</arg>: Output port &lt;<arg fmt="%s" index="3">CEO</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_2</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">759</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_2</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
 <msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">XLXI_121</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.
 It will be removed from the design.
 </msg>
 
 <msg type="warning" file="Xst" num="2973" delta="old" >All outputs of instance &lt;<arg fmt="%s" index="1">XLXI_121/XLXI_5</arg>&gt; of block &lt;<arg fmt="%s" index="2">LD8CE_HXILINX_cpu</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="3">cpu</arg>&gt;. Underlying logic will be removed.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">COUNT_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XLXI_132</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">COUNT_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XLXI_132</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">COUNT_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XLXI_132</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">COUNT_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XLXI_132</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">COUNT_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XLXI_132</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">COUNT_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XLXI_132</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">COUNT_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XLXI_132</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">COUNT_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XLXI_132</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">COUNT_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XLXI_132</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">COUNT_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XLXI_132</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">COUNT_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu_ctl/stp/XLXI_24</arg>&gt;.
