@@ -83,3 +83,6 @@ tb : PROCESS
 --============================================================
       WAIT; -- will wait forever
    END PROCESS;
+   
+   
+CPU Control:   temp = !one

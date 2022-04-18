@@ -25,8 +25,7 @@
         <signal name="r1_r" />
         <signal name="enc_o(2:0)" />
         <signal name="o(7:0)" />
-        <signal name="a(3:0)">
-        </signal>
+        <signal name="a(3:0)" />
         <signal name="enc_o(0)" />
         <signal name="enc_o(1)" />
         <signal name="enc_o(2)" />
@@ -58,6 +57,7 @@
         <port polarity="Input" name="r1_o(7:0)" />
         <port polarity="Input" name="r2_o(7:0)" />
         <port polarity="Input" name="r3_o(7:0)" />
+        <port polarity="Output" name="g" />
         <blockdef name="bus_muxer">
             <timestamp>2022-4-7T2:5:7</timestamp>
             <rect width="256" x="64" y="-1152" height="1152" />
@@ -207,12 +207,12 @@
         <block symbolname="gnd" name="XLXI_20">
             <blockpin signalname="a(3)" name="G" />
         </block>
+        <block symbolname="gnd" name="XLXI_22">
+            <blockpin signalname="XLXN_20" name="G" />
+        </block>
         <block symbolname="inv" name="XLXI_21">
             <blockpin signalname="g" name="I" />
             <blockpin signalname="XLXN_73" name="O" />
-        </block>
-        <block symbolname="gnd" name="XLXI_22">
-            <blockpin signalname="XLXN_20" name="G" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="7609" height="5382">
@@ -392,17 +392,17 @@
         </branch>
         <iomarker fontsize="28" x="2336" y="880" name="r3_o(7:0)" orien="R180" />
         <branch name="g">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1328" y="304" type="branch" />
             <wire x2="1328" y1="304" y2="304" x1="1280" />
         </branch>
+        <instance x="176" y="1088" name="XLXI_22" orien="R0" />
         <instance x="2096" y="1360" name="XLXI_21" orien="R0" />
-        <branch name="XLXN_73">
-            <wire x2="2400" y1="1328" y2="1328" x1="2320" />
-        </branch>
         <branch name="g">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2000" y="1328" type="branch" />
             <wire x2="2096" y1="1328" y2="1328" x1="2000" />
         </branch>
-        <instance x="176" y="1088" name="XLXI_22" orien="R0" />
+        <branch name="XLXN_73">
+            <wire x2="2400" y1="1328" y2="1328" x1="2320" />
+        </branch>
+        <iomarker fontsize="28" x="1328" y="304" name="g" orien="R0" />
     </sheet>
 </drawing>

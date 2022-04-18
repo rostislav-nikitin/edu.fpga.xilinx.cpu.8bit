@@ -23,21 +23,49 @@ ARCHITECTURE behavioral OF cpu_cpu_sch_tb IS
 
    COMPONENT cpu
    PORT( sysbus	:	OUT	STD_LOGIC_VECTOR (7 DOWNTO 0); 
-          iar_w	:	OUT	STD_LOGIC; 
           monitor	:	OUT	STD_LOGIC_VECTOR (7 DOWNTO 0); 
           rst_in	:	IN	STD_LOGIC; 
-          clk	:	IN	STD_LOGIC);
+          clk	:	IN	STD_LOGIC;
+			 in_r0_r	:	IN	STD_LOGIC; 
+			 in_read_reg_en :	IN	STD_LOGIC; 
+			 cpu_clk_int	:	OUT	STD_LOGIC;
+			 cpu_clkc	:	OUT	STD_LOGIC;
+			 cpu_clkr	:	OUT	STD_LOGIC;
+			 cpu_clkw	:	OUT	STD_LOGIC;
+			 
+			 cpu_s1	:	OUT	STD_LOGIC;
+			 cpu_s2	:	OUT	STD_LOGIC;
+			 cpu_s3	:	OUT	STD_LOGIC;
+			 cpu_s4	:	OUT	STD_LOGIC;
+			 cpu_s5	:	OUT	STD_LOGIC;
+			 cpu_s6	:	OUT	STD_LOGIC;
+			 cpu_r0_r	:	OUT	STD_LOGIC);
    END COMPONENT;
 
    SIGNAL sysbus	:	STD_LOGIC_VECTOR (7 DOWNTO 0);
-   SIGNAL iar_w	:	STD_LOGIC;
    SIGNAL monitor	:	STD_LOGIC_VECTOR (7 DOWNTO 0);
    SIGNAL rst_in	:	STD_LOGIC;
-   SIGNAL clk	:	STD_LOGIC;
+	SIGNAL clk		:	STD_LOGIC;
+	SIGNAL in_r0_r	:	STD_LOGIC; 
+	SIGNAL in_read_reg_en :	STD_LOGIC; 
+   SIGNAL cpu_clk_int	:	STD_LOGIC;
+	SIGNAL cpu_clkc		:	STD_LOGIC;
+	SIGNAL cpu_clkr		:	STD_LOGIC;
+	SIGNAL cpu_clkw		:	STD_LOGIC;
+	
+	SIGNAL cpu_s1		:	STD_LOGIC;
+	SIGNAL cpu_s2		:	STD_LOGIC;
+	SIGNAL cpu_s3		:	STD_LOGIC;
+	SIGNAL cpu_s4		:	STD_LOGIC;
+	SIGNAL cpu_s5		:	STD_LOGIC;
+	SIGNAL cpu_s6		:	STD_LOGIC;
+	
+	SIGNAL cpu_r0_r		:	STD_LOGIC;
 	
 	procedure one_step(signal clk : inout std_logic) is
 	begin
-		for i in 1 to 805306368 loop
+	--805306368
+		for i in 1 to 12 loop
 			wait for 10 ns;
 			clk <= '1';
 			wait for 10 ns;
@@ -51,10 +79,22 @@ BEGIN
 
    UUT: cpu PORT MAP(
 		sysbus => sysbus, 
-		iar_w => iar_w, 
 		monitor => monitor, 
 		rst_in => rst_in, 
-		clk => clk
+		clk => clk,
+		in_r0_r => in_r0_r,
+		in_read_reg_en => in_read_reg_en,
+		cpu_clk_int => cpu_clk_int,
+		cpu_clkc => cpu_clkc,
+		cpu_clkr => cpu_clkr,
+		cpu_clkw => cpu_clkw,
+		cpu_s1 => cpu_s1,
+		cpu_s2 => cpu_s2,
+		cpu_s3 => cpu_s3,
+		cpu_s4 => cpu_s4,
+		cpu_s5 => cpu_s5,
+		cpu_s6 => cpu_s6,
+		cpu_r0_r => cpu_r0_r
    );
 
 -- *** Test Bench - User Defined Section ***
@@ -63,6 +103,9 @@ BEGIN
 		rst_in <= '0';
 		wait for 10 ns;
 		rst_in <= '1';
+		wait for 10 ns;
+		in_r0_r <= '1';
+		in_read_reg_en <= '1';
 		wait for 10 ns;
 --==========INIT IAR==========================================
 		--set_reg(rind, rinw, rinr, manual_iar_w, "00000000");

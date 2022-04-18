@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu_output_muxer.vhf
--- /___/   /\     Timestamp : 04/07/2022 05:27:58
+-- /___/   /\     Timestamp : 04/19/2022 01:50:52
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -243,14 +243,14 @@ architecture BEHAVIORAL of bus_muxer_MUSER_cpu_output_muxer is
    end component;
    attribute BOX_TYPE of BUF : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_35";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_34";
-   attribute HU_SET of XLXI_12 : label is "XLXI_12_36";
-   attribute HU_SET of XLXI_13 : label is "XLXI_13_37";
-   attribute HU_SET of XLXI_14 : label is "XLXI_14_38";
-   attribute HU_SET of XLXI_15 : label is "XLXI_15_39";
-   attribute HU_SET of XLXI_16 : label is "XLXI_16_40";
-   attribute HU_SET of XLXI_17 : label is "XLXI_17_41";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_42";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_41";
+   attribute HU_SET of XLXI_12 : label is "XLXI_12_43";
+   attribute HU_SET of XLXI_13 : label is "XLXI_13_44";
+   attribute HU_SET of XLXI_14 : label is "XLXI_14_45";
+   attribute HU_SET of XLXI_15 : label is "XLXI_15_46";
+   attribute HU_SET of XLXI_16 : label is "XLXI_16_47";
+   attribute HU_SET of XLXI_17 : label is "XLXI_17_48";
 begin
    XLXI_1 : M16_1E_HXILINX_cpu_output_muxer
       port map (D0=>dev0(0),
@@ -530,7 +530,7 @@ architecture BEHAVIORAL of encoder8_3_MUSER_cpu_output_muxer is
    end component;
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_42";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_49";
 begin
    XLXI_1 : OR4
       port map (I0=>i(1),
@@ -621,6 +621,7 @@ entity cpu_output_muxer is
           r2_r  : in    std_logic; 
           r3_o  : in    std_logic_vector (7 downto 0); 
           r3_r  : in    std_logic; 
+          g     : out   std_logic; 
           o     : out   std_logic_vector (7 downto 0));
 end cpu_output_muxer;
 
@@ -628,10 +629,10 @@ architecture BEHAVIORAL of cpu_output_muxer is
    attribute BOX_TYPE   : string ;
    signal a                       : std_logic_vector (3 downto 0);
    signal enc_o                   : std_logic_vector (2 downto 0);
-   signal g                       : std_logic;
    signal i                       : std_logic_vector (7 downto 0);
    signal XLXN_20                 : std_logic;
    signal XLXN_73                 : std_logic;
+   signal g_DUMMY                 : std_logic;
    signal XLXI_1_dev7_openSignal  : std_logic_vector (7 downto 0);
    signal XLXI_1_dev8_openSignal  : std_logic_vector (7 downto 0);
    signal XLXI_1_dev9_openSignal  : std_logic_vector (7 downto 0);
@@ -687,6 +688,7 @@ architecture BEHAVIORAL of cpu_output_muxer is
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
 begin
+   g <= g_DUMMY;
    XLXI_1 : bus_muxer_MUSER_cpu_output_muxer
       port map (a(3 downto 0)=>a(3 downto 0),
                 dev0(7 downto 0)=>iar_o(7 downto 0),
@@ -710,7 +712,7 @@ begin
    
    XLXI_2 : encoder8_3_MUSER_cpu_output_muxer
       port map (i(7 downto 0)=>i(7 downto 0),
-                g=>g,
+                g=>g_DUMMY,
                 o(2 downto 0)=>enc_o(2 downto 0));
    
    XLXI_3 : BUF
@@ -761,7 +763,7 @@ begin
       port map (G=>a(3));
    
    XLXI_21 : INV
-      port map (I=>g,
+      port map (I=>g_DUMMY,
                 O=>XLXN_73);
    
    XLXI_22 : GND
