@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu_output_muxer.vhf
--- /___/   /\     Timestamp : 04/19/2022 01:50:52
+-- /___/   /\     Timestamp : 04/19/2022 23:45:28
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -607,22 +607,24 @@ library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
 entity cpu_output_muxer is
-   port ( acc_o : in    std_logic_vector (7 downto 0); 
-          acc_r : in    std_logic; 
-          iar_o : in    std_logic_vector (7 downto 0); 
-          iar_r : in    std_logic; 
-          mem_o : in    std_logic_vector (7 downto 0); 
-          mem_r : in    std_logic; 
-          r0_o  : in    std_logic_vector (7 downto 0); 
-          r0_r  : in    std_logic; 
-          r1_o  : in    std_logic_vector (7 downto 0); 
-          r1_r  : in    std_logic; 
-          r2_o  : in    std_logic_vector (7 downto 0); 
-          r2_r  : in    std_logic; 
-          r3_o  : in    std_logic_vector (7 downto 0); 
-          r3_r  : in    std_logic; 
-          g     : out   std_logic; 
-          o     : out   std_logic_vector (7 downto 0));
+   port ( acc_o  : in    std_logic_vector (7 downto 0); 
+          acc_r  : in    std_logic; 
+          iar_o  : in    std_logic_vector (7 downto 0); 
+          iar_r  : in    std_logic; 
+          manr_o : in    std_logic_vector (7 downto 0); 
+          manr_r : in    std_logic; 
+          mem_o  : in    std_logic_vector (7 downto 0); 
+          mem_r  : in    std_logic; 
+          r0_o   : in    std_logic_vector (7 downto 0); 
+          r0_r   : in    std_logic; 
+          r1_o   : in    std_logic_vector (7 downto 0); 
+          r1_r   : in    std_logic; 
+          r2_o   : in    std_logic_vector (7 downto 0); 
+          r2_r   : in    std_logic; 
+          r3_o   : in    std_logic_vector (7 downto 0); 
+          r3_r   : in    std_logic; 
+          g      : out   std_logic; 
+          o      : out   std_logic_vector (7 downto 0));
 end cpu_output_muxer;
 
 architecture BEHAVIORAL of cpu_output_muxer is
@@ -630,10 +632,8 @@ architecture BEHAVIORAL of cpu_output_muxer is
    signal a                       : std_logic_vector (3 downto 0);
    signal enc_o                   : std_logic_vector (2 downto 0);
    signal i                       : std_logic_vector (7 downto 0);
-   signal XLXN_20                 : std_logic;
    signal XLXN_73                 : std_logic;
    signal g_DUMMY                 : std_logic;
-   signal XLXI_1_dev7_openSignal  : std_logic_vector (7 downto 0);
    signal XLXI_1_dev8_openSignal  : std_logic_vector (7 downto 0);
    signal XLXI_1_dev9_openSignal  : std_logic_vector (7 downto 0);
    signal XLXI_1_dev10_openSignal : std_logic_vector (7 downto 0);
@@ -698,7 +698,7 @@ begin
                 dev4(7 downto 0)=>r1_o(7 downto 0),
                 dev5(7 downto 0)=>r2_o(7 downto 0),
                 dev6(7 downto 0)=>r3_o(7 downto 0),
-                dev7(7 downto 0)=>XLXI_1_dev7_openSignal(7 downto 0),
+                dev7(7 downto 0)=>manr_o(7 downto 0),
                 dev8(7 downto 0)=>XLXI_1_dev8_openSignal(7 downto 0),
                 dev9(7 downto 0)=>XLXI_1_dev9_openSignal(7 downto 0),
                 dev10(7 downto 0)=>XLXI_1_dev10_openSignal(7 downto 0),
@@ -744,7 +744,7 @@ begin
                 O=>i(6));
    
    XLXI_10 : BUF
-      port map (I=>XLXN_20,
+      port map (I=>manr_r,
                 O=>i(7));
    
    XLXI_14 : BUF
@@ -765,9 +765,6 @@ begin
    XLXI_21 : INV
       port map (I=>g_DUMMY,
                 O=>XLXN_73);
-   
-   XLXI_22 : GND
-      port map (G=>XLXN_20);
    
 end BEHAVIORAL;
 

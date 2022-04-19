@@ -7,12 +7,13 @@
     </attr>
     <netlist>
         <signal name="XLXN_1" />
-        <signal name="clr" />
+        <signal name="rst" />
         <signal name="clkc" />
         <signal name="clkr" />
         <signal name="clkw" />
         <signal name="XLXN_9" />
         <signal name="clk" />
+        <port polarity="Input" name="rst" />
         <port polarity="Output" name="clkc" />
         <port polarity="Output" name="clkr" />
         <port polarity="Output" name="clkw" />
@@ -69,15 +70,6 @@
             <line x2="40" y1="-64" y2="-64" x1="0" />
             <circle r="12" cx="52" cy="-64" />
         </blockdef>
-        <blockdef name="gnd">
-            <timestamp>2000-1-1T10:10:10</timestamp>
-            <line x2="64" y1="-64" y2="-96" x1="64" />
-            <line x2="52" y1="-48" y2="-48" x1="76" />
-            <line x2="60" y1="-32" y2="-32" x1="68" />
-            <line x2="40" y1="-64" y2="-64" x1="88" />
-            <line x2="64" y1="-64" y2="-80" x1="64" />
-            <line x2="64" y1="-128" y2="-96" x1="64" />
-        </blockdef>
         <blockdef name="inv">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-32" y2="-32" x1="0" />
@@ -89,7 +81,7 @@
         </blockdef>
         <block symbolname="fjkc" name="XLXI_4">
             <blockpin signalname="XLXN_9" name="C" />
-            <blockpin signalname="clr" name="CLR" />
+            <blockpin signalname="rst" name="CLR" />
             <blockpin signalname="XLXN_1" name="J" />
             <blockpin signalname="XLXN_1" name="K" />
             <blockpin signalname="clkc" name="Q" />
@@ -107,9 +99,6 @@
             <blockpin signalname="clkc" name="I1" />
             <blockpin signalname="clkw" name="O" />
         </block>
-        <block symbolname="gnd" name="XLXI_11">
-            <blockpin signalname="clr" name="G" />
-        </block>
         <block symbolname="inv" name="XLXI_12">
             <blockpin signalname="clk" name="I" />
             <blockpin signalname="XLXN_9" name="O" />
@@ -125,7 +114,7 @@
             <wire x2="1200" y1="1680" y2="1680" x1="1120" />
         </branch>
         <instance x="976" y="1600" name="XLXI_6" orien="R0" />
-        <branch name="clr">
+        <branch name="rst">
             <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1040" y="2080" type="branch" />
             <wire x2="1200" y1="1968" y2="1968" x1="1040" />
             <wire x2="1040" y1="1968" y2="2080" x1="1040" />
@@ -150,7 +139,6 @@
         </branch>
         <iomarker fontsize="28" x="2080" y="1888" name="clkw" orien="R0" />
         <iomarker fontsize="28" x="2080" y="1744" name="clkc" orien="R0" />
-        <instance x="976" y="2288" name="XLXI_11" orien="R0" />
         <iomarker fontsize="28" x="544" y="1872" name="clk" orien="R180" />
         <branch name="XLXN_9">
             <wire x2="1200" y1="1872" y2="1872" x1="1008" />
@@ -171,5 +159,6 @@
             <wire x2="1600" y1="2080" y2="2096" x1="1600" />
             <wire x2="1696" y1="1920" y2="1920" x1="1600" />
         </branch>
+        <iomarker fontsize="28" x="1040" y="2160" name="rst" orien="R90" />
     </sheet>
 </drawing>

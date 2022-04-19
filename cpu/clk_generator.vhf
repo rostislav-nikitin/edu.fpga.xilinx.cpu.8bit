@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : clk_generator.vhf
--- /___/   /\     Timestamp : 03/30/2022 23:59:50
+-- /___/   /\     Timestamp : 04/20/2022 01:33:47
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -75,6 +75,7 @@ use UNISIM.Vcomponents.ALL;
 
 entity clk_generator is
    port ( clk  : in    std_logic; 
+          rst  : in    std_logic; 
           clkc : out   std_logic; 
           clkr : out   std_logic; 
           clkw : out   std_logic);
@@ -83,7 +84,6 @@ end clk_generator;
 architecture BEHAVIORAL of clk_generator is
    attribute HU_SET     : string ;
    attribute BOX_TYPE   : string ;
-   signal clr        : std_logic;
    signal XLXN_1     : std_logic;
    signal XLXN_9     : std_logic;
    signal clkc_DUMMY : std_logic;
@@ -114,23 +114,18 @@ architecture BEHAVIORAL of clk_generator is
    end component;
    attribute BOX_TYPE of AND2B1 : component is "BLACK_BOX";
    
-   component GND
-      port ( G : out   std_logic);
-   end component;
-   attribute BOX_TYPE of GND : component is "BLACK_BOX";
-   
    component INV
       port ( I : in    std_logic; 
              O : out   std_logic);
    end component;
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_38";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_41";
 begin
    clkc <= clkc_DUMMY;
    XLXI_4 : FJKC_HXILINX_clk_generator
       port map (C=>XLXN_9,
-                CLR=>clr,
+                CLR=>rst,
                 J=>XLXN_1,
                 K=>XLXN_1,
                 Q=>clkc_DUMMY);
@@ -147,9 +142,6 @@ begin
       port map (I0=>clk,
                 I1=>clkc_DUMMY,
                 O=>clkw);
-   
-   XLXI_11 : GND
-      port map (G=>clr);
    
    XLXI_12 : INV
       port map (I=>clk,

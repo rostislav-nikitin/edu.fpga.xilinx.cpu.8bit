@@ -20,7 +20,6 @@
         <signal name="r0_r" />
         <signal name="r2_r" />
         <signal name="r3_r" />
-        <signal name="XLXN_20" />
         <signal name="iar_r" />
         <signal name="r1_r" />
         <signal name="enc_o(2:0)" />
@@ -42,6 +41,8 @@
         <signal name="r3_o(7:0)" />
         <signal name="g" />
         <signal name="XLXN_73" />
+        <signal name="manr_r" />
+        <signal name="manr_o(7:0)" />
         <port polarity="Input" name="acc_r" />
         <port polarity="Input" name="mem_r" />
         <port polarity="Input" name="r0_r" />
@@ -58,6 +59,8 @@
         <port polarity="Input" name="r2_o(7:0)" />
         <port polarity="Input" name="r3_o(7:0)" />
         <port polarity="Output" name="g" />
+        <port polarity="Input" name="manr_r" />
+        <port polarity="Input" name="manr_o(7:0)" />
         <blockdef name="bus_muxer">
             <timestamp>2022-4-7T2:5:7</timestamp>
             <rect width="256" x="64" y="-1152" height="1152" />
@@ -168,7 +171,7 @@
             <blockpin signalname="i(6)" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_10">
-            <blockpin signalname="XLXN_20" name="I" />
+            <blockpin signalname="manr_r" name="I" />
             <blockpin signalname="i(7)" name="O" />
         </block>
         <block symbolname="bus_muxer" name="XLXI_1">
@@ -186,7 +189,7 @@
             <blockpin signalname="r1_o(7:0)" name="dev4(7:0)" />
             <blockpin signalname="r2_o(7:0)" name="dev5(7:0)" />
             <blockpin signalname="r3_o(7:0)" name="dev6(7:0)" />
-            <blockpin name="dev7(7:0)" />
+            <blockpin signalname="manr_o(7:0)" name="dev7(7:0)" />
             <blockpin name="dev8(7:0)" />
             <blockpin name="dev9(7:0)" />
             <blockpin signalname="XLXN_73" name="e" />
@@ -206,9 +209,6 @@
         </block>
         <block symbolname="gnd" name="XLXI_20">
             <blockpin signalname="a(3)" name="G" />
-        </block>
-        <block symbolname="gnd" name="XLXI_22">
-            <blockpin signalname="XLXN_20" name="G" />
         </block>
         <block symbolname="inv" name="XLXI_21">
             <blockpin signalname="g" name="I" />
@@ -284,11 +284,6 @@
         </branch>
         <branch name="r3_r">
             <wire x2="416" y1="800" y2="800" x1="320" />
-        </branch>
-        <branch name="XLXN_20">
-            <wire x2="320" y1="880" y2="880" x1="240" />
-            <wire x2="416" y1="880" y2="880" x1="320" />
-            <wire x2="240" y1="880" y2="960" x1="240" />
         </branch>
         <branch name="iar_r">
             <wire x2="416" y1="320" y2="320" x1="320" />
@@ -394,7 +389,6 @@
         <branch name="g">
             <wire x2="1328" y1="304" y2="304" x1="1280" />
         </branch>
-        <instance x="176" y="1088" name="XLXI_22" orien="R0" />
         <instance x="2096" y="1360" name="XLXI_21" orien="R0" />
         <branch name="g">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2000" y="1328" type="branch" />
@@ -404,5 +398,13 @@
             <wire x2="2400" y1="1328" y2="1328" x1="2320" />
         </branch>
         <iomarker fontsize="28" x="1328" y="304" name="g" orien="R0" />
+        <branch name="manr_r">
+            <wire x2="416" y1="880" y2="880" x1="320" />
+        </branch>
+        <iomarker fontsize="28" x="320" y="880" name="manr_r" orien="R180" />
+        <branch name="manr_o(7:0)">
+            <wire x2="2400" y1="1136" y2="1136" x1="2320" />
+        </branch>
+        <iomarker fontsize="28" x="2320" y="1136" name="manr_o(7:0)" orien="R180" />
     </sheet>
 </drawing>

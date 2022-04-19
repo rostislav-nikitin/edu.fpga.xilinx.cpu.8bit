@@ -23,8 +23,8 @@ Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" int
 Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/tb_cpu_v2.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 111304 KB
-Fuse CPU Usage: 1570 ms
+Fuse Memory Usage: 111508 KB
+Fuse CPU Usage: 1660 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
@@ -84,11 +84,13 @@ Compiling architecture and4_v of entity AND4 [and4_default]
 Compiling architecture behavioral of entity freq_divider_MUSER_cpu [freq_divider_muser_cpu_default]
 Compiling architecture m8_1e_hxilinx_cpu_v of entity M8_1E_HXILINX_cpu [m8_1e_hxilinx_cpu_default]
 Compiling architecture behavioral of entity cpu_freq_divider_MUSER_cpu [cpu_freq_divider_muser_cpu_defau...]
+Compiling architecture and3_v of entity AND3 [and3_default]
 Compiling architecture behavioral of entity cpu [cpu_default]
 Compiling architecture behavioral of entity cpu_cpu_sch_tb
 Time Resolution for simulation is 1ps.
-Compiled 125 VHDL Units
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 127 VHDL Units
 Built simulation executable /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_cpu_sch_tb_isim_beh.exe
-Fuse Memory Usage: 4371736 KB
-Fuse CPU Usage: 2150 ms
-GCC CPU Usage: 3840 ms
+Fuse Memory Usage: 4371820 KB
+Fuse CPU Usage: 2260 ms
+GCC CPU Usage: 3980 ms
