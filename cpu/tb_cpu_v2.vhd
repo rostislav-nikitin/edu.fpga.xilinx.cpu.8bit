@@ -32,13 +32,20 @@ ARCHITECTURE behavioral OF cpu_cpu_sch_tb IS
 			 in_manr_d	:	IN	STD_LOGIC_VECTOR(7 DOWNTO 0); 
 			 
 			 in_r0_r	:	IN	STD_LOGIC; 
+			 in_r0_w	:	IN	STD_LOGIC; 
+			 in_r1_r	:	IN	STD_LOGIC; 
+			 in_r1_w	:	IN	STD_LOGIC; 
+			 in_r2_r	:	IN	STD_LOGIC; 
+			 in_r2_w	:	IN	STD_LOGIC; 
+			 in_r3_r	:	IN	STD_LOGIC; 
+			 in_r3_w	:	IN	STD_LOGIC; 
+			 
 			 in_read_reg_en :	IN	STD_LOGIC; 
 			 in_write_reg_en :	IN	STD_LOGIC; 
 			 cpu_clk_int	:	OUT	STD_LOGIC;
 			 cpu_clkc	:	OUT	STD_LOGIC;
 			 cpu_clkr	:	OUT	STD_LOGIC;
 			 cpu_clkw	:	OUT	STD_LOGIC;
-			 
 		 
 			 cpu_s1	:	OUT	STD_LOGIC;
 			 cpu_s2	:	OUT	STD_LOGIC;
@@ -50,6 +57,14 @@ ARCHITECTURE behavioral OF cpu_cpu_sch_tb IS
 			 sysbus_released	:	OUT	STD_LOGIC;
 			 
 			 cpu_r0_r	:	OUT	STD_LOGIC;
+			 cpu_r0_w	:	OUT	STD_LOGIC;
+			 cpu_r1_r	:	OUT	STD_LOGIC;
+			 cpu_r1_w	:	OUT	STD_LOGIC;
+			 cpu_r2_r	:	OUT	STD_LOGIC;
+			 cpu_r2_w	:	OUT	STD_LOGIC;
+			 cpu_r3_r	:	OUT	STD_LOGIC;
+			 cpu_r3_w	:	OUT	STD_LOGIC;
+			 
 			 manr_w	:	OUT	STD_LOGIC;
 			 manr_r	:	OUT	STD_LOGIC;
 			 manr_o	:	OUT	STD_LOGIC_VECTOR(7 DOWNTO 0);
@@ -69,6 +84,14 @@ ARCHITECTURE behavioral OF cpu_cpu_sch_tb IS
 	SIGNAL in_manr_d		:	STD_LOGIC_VECTOR(7 DOWNTO 0);
 	
 	SIGNAL in_r0_r	:	STD_LOGIC; 
+	SIGNAL in_r0_w	:	STD_LOGIC; 
+	SIGNAL in_r1_r	:	STD_LOGIC; 
+	SIGNAL in_r1_w	:	STD_LOGIC; 
+	SIGNAL in_r2_r	:	STD_LOGIC; 
+	SIGNAL in_r2_w	:	STD_LOGIC; 
+	SIGNAL in_r3_r	:	STD_LOGIC; 
+	SIGNAL in_r3_w	:	STD_LOGIC; 
+	
 	SIGNAL in_read_reg_en :	STD_LOGIC; 
 	SIGNAL in_write_reg_en :	STD_LOGIC; 
    SIGNAL cpu_clk_int	:	STD_LOGIC;
@@ -88,7 +111,15 @@ ARCHITECTURE behavioral OF cpu_cpu_sch_tb IS
 	SIGNAL manr_r			:	STD_LOGIC;
 	SIGNAL manr_w			:	STD_LOGIC;
 	SIGNAL manr_o			:	STD_LOGIC_VECTOR(7 DOWNTO 0);
+	
 	SIGNAL cpu_r0_r		:	STD_LOGIC;
+	SIGNAL cpu_r0_w		:	STD_LOGIC;
+	SIGNAL cpu_r1_r		:	STD_LOGIC;
+	SIGNAL cpu_r1_w		:	STD_LOGIC;
+	SIGNAL cpu_r2_r		:	STD_LOGIC;
+	SIGNAL cpu_r2_w		:	STD_LOGIC;
+	SIGNAL cpu_r3_r		:	STD_LOGIC;
+	SIGNAL cpu_r3_w		:	STD_LOGIC;
 	
 	SIGNAL can_read		:	STD_LOGIC;
 	SIGNAL can_write		:	STD_LOGIC;
@@ -120,6 +151,14 @@ BEGIN
 		in_manr_d => in_manr_d,
 		
 		in_r0_r => in_r0_r,
+		in_r0_w => in_r0_w,
+		in_r1_r => in_r1_r,
+		in_r1_w => in_r1_w,
+		in_r2_r => in_r2_r,
+		in_r2_w => in_r2_w,
+		in_r3_r => in_r3_r,
+		in_r3_w => in_r3_w,
+		
 		in_read_reg_en => in_read_reg_en,
 		in_write_reg_en => in_write_reg_en,
 		cpu_clk_int => cpu_clk_int,
@@ -140,6 +179,14 @@ BEGIN
 		manr_o => manr_o,
 		
 		cpu_r0_r => cpu_r0_r,
+		cpu_r0_w => cpu_r0_w,
+		cpu_r1_r => cpu_r1_r,
+		cpu_r1_w => cpu_r1_w,
+		cpu_r2_r => cpu_r2_r,
+		cpu_r2_w => cpu_r2_w,
+		cpu_r3_r => cpu_r3_r,
+		cpu_r3_w => cpu_r3_w,
+		
 		can_read => can_read,
 		can_write => can_write
    );
@@ -157,6 +204,13 @@ BEGIN
 		in_manr_w <= '0';
 		in_manr_d <= "00000000";
 		in_r0_r <= '0';
+		in_r0_w <= '0';
+		in_r1_r <= '0';
+		in_r1_w <= '0';
+		in_r2_r <= '0';
+		in_r2_w <= '0';
+		in_r3_r <= '0';
+		in_r3_w <= '0';
 		in_read_reg_en <= '1';
 		in_write_reg_en <= '1';
 		wait for 10 ns;
@@ -168,8 +222,33 @@ BEGIN
 		wait for 10 ns;
 		in_manr_r <= '1';
 		wait for 10 ns;
+		in_r0_w <= '1';
+		in_r1_w <= '1';
+		in_r2_w <= '1';
+		in_r3_w <= '1';
+		wait for 10 ns;
+		in_r0_w <= '0';
+		in_r1_w <= '0';
+		in_r2_w <= '0';
+		in_r3_w <= '0';
+		wait for 10 ns;
 		in_manr_r <= '0';
 		wait for 10 ns;
+		in_r0_r <= '1';
+		wait for 10 ns;
+		in_r0_r <= '0';
+		wait for 10 ns;
+		in_r1_r <= '1';
+		wait for 10 ns;
+		in_r1_r <= '0';
+		wait for 10 ns;
+		in_r2_r <= '1';
+		wait for 10 ns;
+		in_r2_r <= '0';
+		wait for 10 ns;
+		in_r3_r <= '1';
+		wait for 10 ns;
+		in_r3_r <= '0';
 --==========INIT IAR==========================================
 		--set_reg(rind, rinw, rinr, manual_iar_w, "00000000");
 		one_step(manual_clk_in);

@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu.vhf
--- /___/   /\     Timestamp : 04/20/2022 01:33:46
+-- /___/   /\     Timestamp : 04/21/2022 01:19:13
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -3992,6 +3992,13 @@ entity cpu is
           in_manr_w       : in    std_logic; 
           in_read_reg_en  : in    std_logic; 
           in_r0_r         : in    std_logic; 
+          in_r0_w         : in    std_logic; 
+          in_r1_r         : in    std_logic; 
+          in_r1_w         : in    std_logic; 
+          in_r2_r         : in    std_logic; 
+          in_r2_w         : in    std_logic; 
+          in_r3_r         : in    std_logic; 
+          in_r3_w         : in    std_logic; 
           in_write_reg_en : in    std_logic; 
           manual_clk_in   : in    std_logic; 
           rst_in          : in    std_logic; 
@@ -4003,6 +4010,13 @@ entity cpu is
           cpu_clkw        : out   std_logic; 
           cpu_clk_int     : out   std_logic; 
           cpu_r0_r        : out   std_logic; 
+          cpu_r0_w        : out   std_logic; 
+          cpu_r1_r        : out   std_logic; 
+          cpu_r1_w        : out   std_logic; 
+          cpu_r2_r        : out   std_logic; 
+          cpu_r2_w        : out   std_logic; 
+          cpu_r3_r        : out   std_logic; 
+          cpu_r3_w        : out   std_logic; 
           cpu_s1          : out   std_logic; 
           cpu_s2          : out   std_logic; 
           cpu_s3          : out   std_logic; 
@@ -4016,15 +4030,8 @@ entity cpu is
           monitor         : out   std_logic_vector (7 downto 0); 
           sysbus          : out   std_logic_vector (7 downto 0); 
           sysbus_released : out   std_logic; 
-          XLXN_272        : out   std_logic; 
-          XLXN_273        : out   std_logic; 
-          XLXN_274        : out   std_logic; 
-          XLXN_275        : out   std_logic; 
-          XLXN_276        : out   std_logic; 
-          XLXN_277        : out   std_logic; 
           XLXN_278        : out   std_logic; 
           XLXN_280        : out   std_logic; 
-          XLXN_281        : out   std_logic; 
           XLXN_282        : out   std_logic);
 end cpu;
 
@@ -4072,7 +4079,6 @@ architecture BEHAVIORAL of cpu is
    signal clk_int                             : std_logic;
    signal flags_o                             : std_logic_vector (3 downto 0);
    signal iar_o                               : std_logic_vector (7 downto 0);
-   signal in_r0_w                             : std_logic;
    signal ir_o                                : std_logic_vector (7 downto 0);
    signal is_clk_external                     : std_logic;
    signal is_clk_high                         : std_logic;
@@ -4081,6 +4087,12 @@ architecture BEHAVIORAL of cpu is
    signal manual_iar_w                        : std_logic;
    signal manual_r0_r                         : std_logic;
    signal manual_r0_w                         : std_logic;
+   signal manual_r1_r                         : std_logic;
+   signal manual_r1_w                         : std_logic;
+   signal manual_r2_r                         : std_logic;
+   signal manual_r2_w                         : std_logic;
+   signal manual_r3_r                         : std_logic;
+   signal manual_r3_w                         : std_logic;
    signal not_reading                         : std_logic;
    signal pto                                 : std_logic_vector (7 downto 0);
    signal ram_a_o                             : std_logic_vector (7 downto 0);
@@ -4090,8 +4102,14 @@ architecture BEHAVIORAL of cpu is
    signal r0_r                                : std_logic;
    signal r0_w                                : std_logic;
    signal r1_o                                : std_logic_vector (7 downto 0);
+   signal r1_r                                : std_logic;
+   signal r1_w                                : std_logic;
    signal r2_o                                : std_logic_vector (7 downto 0);
+   signal r2_r                                : std_logic;
+   signal r2_w                                : std_logic;
    signal r3_o                                : std_logic_vector (7 downto 0);
+   signal r3_r                                : std_logic;
+   signal r3_w                                : std_logic;
    signal temp_o                              : std_logic_vector (7 downto 0);
    signal temp_r                              : std_logic;
    signal XLXN_23                             : std_logic;
@@ -4100,13 +4118,6 @@ architecture BEHAVIORAL of cpu is
    signal XLXN_217                            : std_logic;
    signal XLXN_233                            : std_logic;
    signal XLXN_237                            : std_logic;
-   signal XLXN_262                            : std_logic;
-   signal XLXN_263                            : std_logic;
-   signal XLXN_264                            : std_logic;
-   signal XLXN_265                            : std_logic;
-   signal XLXN_266                            : std_logic;
-   signal XLXN_267                            : std_logic;
-   signal XLXN_268                            : std_logic;
    signal XLXN_269                            : std_logic;
    signal XLXN_270                            : std_logic;
    signal XLXN_279                            : std_logic;
@@ -4524,29 +4535,29 @@ begin
    XLXI_126 : reg_8bit_MUSER_cpu
       port map (clr=>rst,
                 d(7 downto 0)=>sysbus_DUMMY(7 downto 0),
-                r=>cc_r0_r,
-                w=>cc_r0_w,
+                r=>r0_r,
+                w=>r0_w,
                 o(7 downto 0)=>r0_o(7 downto 0));
    
    XLXI_127 : reg_8bit_MUSER_cpu
       port map (clr=>rst,
                 d(7 downto 0)=>sysbus_DUMMY(7 downto 0),
-                r=>cc_r1_r,
-                w=>cc_r1_w,
+                r=>r1_r,
+                w=>r1_w,
                 o(7 downto 0)=>r1_o(7 downto 0));
    
    XLXI_128 : reg_8bit_MUSER_cpu
       port map (clr=>rst,
                 d(7 downto 0)=>sysbus_DUMMY(7 downto 0),
-                r=>cc_r2_r,
-                w=>cc_r2_w,
+                r=>r2_r,
+                w=>r2_w,
                 o(7 downto 0)=>r2_o(7 downto 0));
    
    XLXI_129 : reg_8bit_MUSER_cpu
       port map (clr=>rst,
                 d(7 downto 0)=>sysbus_DUMMY(7 downto 0),
-                r=>cc_r3_r,
-                w=>cc_r3_w,
+                r=>r3_r,
+                w=>r3_w,
                 o(7 downto 0)=>r3_o(7 downto 0));
    
    XLXI_130 : cpu_output_muxer_MUSER_cpu
@@ -4559,13 +4570,13 @@ begin
                 mem_o(7 downto 0)=>ram_o(7 downto 0),
                 mem_r=>cc_ram_r,
                 r0_o(7 downto 0)=>r0_o(7 downto 0),
-                r0_r=>cc_r0_r,
+                r0_r=>r0_r,
                 r1_o(7 downto 0)=>r1_o(7 downto 0),
-                r1_r=>cc_r1_r,
+                r1_r=>r1_r,
                 r2_o(7 downto 0)=>r2_o(7 downto 0),
-                r2_r=>cc_r2_r,
+                r2_r=>r2_r,
                 r3_o(7 downto 0)=>r3_o(7 downto 0),
-                r3_r=>cc_r3_r,
+                r3_r=>r3_r,
                 g=>not_reading,
                 o(7 downto 0)=>sysbus_DUMMY(7 downto 0));
    
@@ -4658,32 +4669,32 @@ begin
                 O=>cpu_r0_r);
    
    XLXI_220 : BUF
-      port map (I=>XLXN_262,
-                O=>XLXN_272);
+      port map (I=>r0_w,
+                O=>cpu_r0_w);
    
    XLXI_221 : BUF
-      port map (I=>XLXN_263,
-                O=>XLXN_273);
+      port map (I=>r1_r,
+                O=>cpu_r1_r);
    
    XLXI_222 : BUF
-      port map (I=>XLXN_264,
-                O=>XLXN_274);
+      port map (I=>r1_w,
+                O=>cpu_r1_w);
    
    XLXI_223 : BUF
-      port map (I=>XLXN_265,
-                O=>XLXN_275);
+      port map (I=>r2_r,
+                O=>cpu_r2_r);
    
    XLXI_224 : BUF
-      port map (I=>XLXN_266,
-                O=>XLXN_276);
+      port map (I=>r2_w,
+                O=>cpu_r2_w);
    
    XLXI_225 : BUF
-      port map (I=>XLXN_267,
-                O=>XLXN_277);
+      port map (I=>r3_r,
+                O=>cpu_r3_r);
    
    XLXI_226 : BUF
-      port map (I=>XLXN_268,
-                O=>XLXN_281);
+      port map (I=>r3_w,
+                O=>cpu_r3_w);
    
    XLXI_227 : BUF
       port map (I=>XLXN_269,
@@ -4732,6 +4743,66 @@ begin
       port map (I0=>can_write_DUMMY,
                 I1=>in_manr_w,
                 O=>manr_w_DUMMY);
+   
+   XLXI_465 : AND2
+      port map (I0=>can_read_DUMMY,
+                I1=>in_r1_r,
+                O=>manual_r1_r);
+   
+   XLXI_466 : OR2
+      port map (I0=>manual_r1_r,
+                I1=>cc_r1_r,
+                O=>r1_r);
+   
+   XLXI_467 : AND2
+      port map (I0=>can_write_DUMMY,
+                I1=>in_r1_w,
+                O=>manual_r1_w);
+   
+   XLXI_468 : OR2
+      port map (I0=>manual_r1_w,
+                I1=>cc_r1_w,
+                O=>r1_w);
+   
+   XLXI_525 : AND2
+      port map (I0=>can_read_DUMMY,
+                I1=>in_r2_r,
+                O=>manual_r2_r);
+   
+   XLXI_526 : OR2
+      port map (I0=>manual_r2_r,
+                I1=>cc_r2_r,
+                O=>r2_r);
+   
+   XLXI_527 : AND2
+      port map (I0=>can_write_DUMMY,
+                I1=>in_r2_w,
+                O=>manual_r2_w);
+   
+   XLXI_528 : OR2
+      port map (I0=>manual_r2_w,
+                I1=>cc_r2_w,
+                O=>r2_w);
+   
+   XLXI_529 : AND2
+      port map (I0=>can_read_DUMMY,
+                I1=>in_r3_r,
+                O=>manual_r3_r);
+   
+   XLXI_530 : OR2
+      port map (I0=>manual_r3_r,
+                I1=>cc_r3_r,
+                O=>r3_r);
+   
+   XLXI_531 : AND2
+      port map (I0=>can_write_DUMMY,
+                I1=>in_r3_w,
+                O=>manual_r3_w);
+   
+   XLXI_532 : OR2
+      port map (I0=>manual_r3_w,
+                I1=>cc_r3_w,
+                O=>r3_w);
    
 end BEHAVIORAL;
 

@@ -10,23 +10,23 @@ Target Device  : xa6slx9
 Target Package : ftg256
 Target Speed   : -3
 Mapper Version : aspartan6 -- $Revision: 1.55 $
-Mapped Date    : Sat Apr 16 02:53:14 2022
+Mapped Date    : Thu Apr 21 01:24:12 2022
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:    6
+Number of warnings:    5
 Slice Logic Utilization:
-  Number of Slice Registers:                   123 out of  11,440    1%
-    Number used as Flip Flops:                  38
-    Number used as Latches:                     84
+  Number of Slice Registers:                    98 out of  11,440    1%
+    Number used as Flip Flops:                   5
+    Number used as Latches:                     92
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                1
-  Number of Slice LUTs:                        223 out of   5,720    3%
-    Number used as logic:                      189 out of   5,720    3%
-      Number using O6 output only:             152
-      Number using O5 output only:              28
-      Number using O5 and O6:                    9
+  Number of Slice LUTs:                        186 out of   5,720    3%
+    Number used as logic:                      154 out of   5,720    2%
+      Number using O6 output only:             147
+      Number using O5 output only:               0
+      Number using O5 and O6:                    7
       Number used as ROM:                        0
     Number used as Memory:                      32 out of   1,440    2%
       Number used as Dual Port RAM:              0
@@ -35,21 +35,17 @@ Slice Logic Utilization:
         Number using O5 output only:             0
         Number using O5 and O6:                  0
       Number used as Shift Register:             0
-    Number used exclusively as route-thrus:      2
-      Number with same-slice register load:      0
-      Number with same-slice carry load:         2
-      Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    85 out of   1,430    5%
-  Nummber of MUXCYs used:                       40 out of   2,860    1%
-  Number of LUT Flip Flop pairs used:          274
-    Number with an unused Flip Flop:           152 out of     274   55%
-    Number with an unused LUT:                  51 out of     274   18%
-    Number of fully used LUT-FF pairs:          71 out of     274   25%
-    Number of unique control sets:              18
+  Number of occupied Slices:                    87 out of   1,430    6%
+  Nummber of MUXCYs used:                        8 out of   2,860    1%
+  Number of LUT Flip Flop pairs used:          240
+    Number with an unused Flip Flop:           143 out of     240   59%
+    Number with an unused LUT:                  54 out of     240   22%
+    Number of fully used LUT-FF pairs:          43 out of     240   17%
+    Number of unique control sets:              16
     Number of slice register sites lost
-      to control set restrictions:              30 out of  11,440    1%
+      to control set restrictions:              23 out of  11,440    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -58,17 +54,15 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        20 out of     186   10%
-    Number of LOCed IOBs:                        7 out of      20   35%
+  Number of bonded IOBs:                        75 out of     186   40%
+    Number of LOCed IOBs:                        6 out of      75    8%
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of      32    0%
   Number of RAMB8BWERs:                          0 out of      64    0%
   Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
   Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
-  Number of BUFG/BUFGMUXs:                       1 out of      16    6%
-    Number used as BUFGs:                        1
-    Number used as BUFGMUX:                      0
+  Number of BUFG/BUFGMUXs:                       0 out of      16    0%
   Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
   Number of ILOGIC2/ISERDES2s:                   0 out of     200    0%
   Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     200    0%
@@ -86,11 +80,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                4.14
+Average Fanout of Non-Clock Nets:                4.17
 
 Peak Memory Usage:  846 MB
-Total REAL time to MAP completion:  10 secs 
-Total CPU time to MAP completion:   10 secs 
+Total REAL time to MAP completion:  21 secs 
+Total CPU time to MAP completion:   21 secs 
 
 Table of Contents
 -----------------
@@ -120,19 +114,16 @@ WARNING:Place:837 - Partially locked IO Bus is found.
    	 Comp: monitor<5>
    	 Comp: monitor<4>
 
-WARNING:PhysDesignRules:372 - Gated clock. Clock net clkw is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net cc_ram_a_w is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net clkr is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_173/XLXI_1/eq is
-   sourced by a combinatorial pin. This is not good design practice. Use the CE
-   pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net ctl_r0_w is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net cc_r0_w is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net ram_a_w is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net clkw is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 
@@ -147,16 +138,16 @@ INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
    1.260 Volts)
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
-INFO:Place:834 - Only a subset of IOs are locked. Out of 20 IOs, 7 are locked
-   and 13 are not locked. If you would like to print the names of these IOs,
+INFO:Place:834 - Only a subset of IOs are locked. Out of 75 IOs, 6 are locked
+   and 69 are not locked. If you would like to print the names of these IOs,
    please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
 INFO:Pack:1650 - Map created a placed design.
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-   4 block(s) removed
-  50 block(s) optimized away
-  17 signal(s) removed
+ 181 block(s) removed
+  48 block(s) optimized away
+ 194 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -173,6 +164,451 @@ the lines that are least indented (begin at the leftmost edge).
 
 Loadless block "XLXI_9/XLXI_42" (BUF) removed.
 Loadless block "cpu_ctl/XLXI_556" (AND) removed.
+The signal "XLXI_173/XLXI_1/XLXI_2/N0" is sourceless and has been removed.
+ Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<0>" (MUX) removed.
+  The signal "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<0>" is sourceless and has
+been removed.
+   Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<1>" (MUX) removed.
+    The signal "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<1>" is sourceless and has
+been removed.
+     Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<2>" (MUX) removed.
+      The signal "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<2>" is sourceless and has
+been removed.
+       Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<3>" (MUX) removed.
+        The signal "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<3>" is sourceless and has
+been removed.
+         Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<4>" (MUX) removed.
+          The signal "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<4>" is sourceless and has
+been removed.
+           Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<5>" (MUX) removed.
+            The signal "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<5>" is sourceless and has
+been removed.
+             Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<6>" (MUX) removed.
+              The signal "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<6>" is sourceless and has
+been removed.
+               Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<7>" (MUX) removed.
+                The signal "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<7>" is sourceless and has
+been removed.
+                 Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<8>" (MUX) removed.
+                  The signal "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<8>" is sourceless and has
+been removed.
+                   Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<9>" (MUX) removed.
+                    The signal "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<9>" is sourceless and has
+been removed.
+                     Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<10>" (MUX) removed.
+                      The signal "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<10>" is sourceless and has
+been removed.
+                       Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<11>" (MUX) removed.
+                        The signal "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<11>" is sourceless and has
+been removed.
+                         Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<12>" (MUX) removed.
+                          The signal "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<12>" is sourceless and has
+been removed.
+                           Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<13>" (MUX) removed.
+                            The signal "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<13>" is sourceless and has
+been removed.
+                             Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<14>" (MUX) removed.
+                              The signal "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<14>" is sourceless and has
+been removed.
+                               Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_xor<15>" (XOR) removed.
+                                The signal "XLXI_173/XLXI_1/XLXI_2/Result<15>" is sourceless and has been
+removed.
+                                 Sourceless block "XLXI_173/XLXI_1/XLXI_2/COUNT_15" (FF) removed.
+                                  The signal "XLXI_173/XLXI_1/cnt_2<15>" is sourceless and has been removed.
+                                   Sourceless block "XLXI_173/XLXI_1/XLXI_148" (XOR) removed.
+                                    The signal "XLXI_173/XLXI_1/XLXN_134" is sourceless and has been removed.
+                                     Sourceless block "XLXI_173/XLXI_1/XLXI_150/O_SW0" (ROM) removed.
+                                      The signal "XLXI_173/XLXI_1/XLXI_150/N01" is sourceless and has been removed.
+                                       Sourceless block "XLXI_173/XLXI_1/XLXI_150/O" (ROM) removed.
+                                        The signal "XLXI_173/XLXI_1/XLXN_161" is sourceless and has been removed.
+                                         Sourceless block "XLXI_173/XLXI_1/XLXI_152" (AND) removed.
+                                          The signal "XLXI_173/XLXI_1/eq" is sourceless and has been removed.
+                                           Sourceless block "XLXI_173/XLXI_1/XLXI_155" (OR) removed.
+                                            The signal "XLXI_173/XLXI_1/clr" is sourceless and has been removed.
+                                             Sourceless block "XLXI_173/XLXI_1/XLXI_2/COUNT_0" (FF) removed.
+                                              The signal "XLXI_173/XLXI_1/cnt_2<0>" is sourceless and has been removed.
+                                               Sourceless block "XLXI_173/XLXI_1/XLXI_133" (XOR) removed.
+                                                The signal "XLXI_173/XLXI_1/XLXN_142" is sourceless and has been removed.
+                                                 Sourceless block "XLXI_173/XLXI_1/XLXI_149/O" (ROM) removed.
+*The signal "XLXI_173/XLXI_1/XLXN_160" is sourceless and has been removed.
+                                               Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_lut<0>_INV_0" (BUF)
+removed.
+                                                The signal "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_lut<0>" is sourceless and has
+been removed.
+                                                 Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_xor<0>" (XOR) removed.
+*The signal "XLXI_173/XLXI_1/XLXI_2/Result<0>" is sourceless and has been
+removed.
+                                             Sourceless block "XLXI_173/XLXI_1/XLXI_2/COUNT_1" (FF) removed.
+                                              The signal "XLXI_173/XLXI_1/cnt_2<1>" is sourceless and has been removed.
+                                               Sourceless block "XLXI_173/XLXI_1/XLXI_141" (XOR) removed.
+                                                The signal "XLXI_173/XLXI_1/XLXN_123" is sourceless and has been removed.
+                                               Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<1>_rt" (ROM) removed.
+                                                The signal "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<1>_rt" is sourceless and has
+been removed.
+                                                 Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_xor<1>" (XOR) removed.
+*The signal "XLXI_173/XLXI_1/XLXI_2/Result<1>" is sourceless and has been
+removed.
+                                             Sourceless block "XLXI_173/XLXI_1/XLXI_2/COUNT_2" (FF) removed.
+                                              The signal "XLXI_173/XLXI_1/cnt_2<2>" is sourceless and has been removed.
+                                               Sourceless block "XLXI_173/XLXI_1/XLXI_134" (XOR) removed.
+                                                The signal "XLXI_173/XLXI_1/XLXN_122" is sourceless and has been removed.
+                                               Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<2>_rt" (ROM) removed.
+                                                The signal "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<2>_rt" is sourceless and has
+been removed.
+                                                 Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_xor<2>" (XOR) removed.
+*The signal "XLXI_173/XLXI_1/XLXI_2/Result<2>" is sourceless and has been
+removed.
+                                             Sourceless block "XLXI_173/XLXI_1/XLXI_2/COUNT_3" (FF) removed.
+                                              The signal "XLXI_173/XLXI_1/cnt_2<3>" is sourceless and has been removed.
+                                               Sourceless block "XLXI_173/XLXI_1/XLXI_142" (XOR) removed.
+                                                The signal "XLXI_173/XLXI_1/XLXN_124" is sourceless and has been removed.
+                                               Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<3>_rt" (ROM) removed.
+                                                The signal "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<3>_rt" is sourceless and has
+been removed.
+                                                 Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_xor<3>" (XOR) removed.
+*The signal "XLXI_173/XLXI_1/XLXI_2/Result<3>" is sourceless and has been
+removed.
+                                             Sourceless block "XLXI_173/XLXI_1/XLXI_2/COUNT_4" (FF) removed.
+                                              The signal "XLXI_173/XLXI_1/cnt_2<4>" is sourceless and has been removed.
+                                               Sourceless block "XLXI_173/XLXI_1/XLXI_135" (XOR) removed.
+                                                The signal "XLXI_173/XLXI_1/XLXN_125" is sourceless and has been removed.
+                                               Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<4>_rt" (ROM) removed.
+                                                The signal "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<4>_rt" is sourceless and has
+been removed.
+                                                 Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_xor<4>" (XOR) removed.
+*The signal "XLXI_173/XLXI_1/XLXI_2/Result<4>" is sourceless and has been
+removed.
+                                             Sourceless block "XLXI_173/XLXI_1/XLXI_2/COUNT_5" (FF) removed.
+                                              The signal "XLXI_173/XLXI_1/cnt_2<5>" is sourceless and has been removed.
+                                               Sourceless block "XLXI_173/XLXI_1/XLXI_143" (XOR) removed.
+                                                The signal "XLXI_173/XLXI_1/XLXN_126" is sourceless and has been removed.
+                                                 Sourceless block "XLXI_173/XLXI_1/XLXI_149/O_SW0" (ROM) removed.
+*The signal "XLXI_173/XLXI_1/XLXI_149/N01" is sourceless and has been removed.
+                                               Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<5>_rt" (ROM) removed.
+                                                The signal "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<5>_rt" is sourceless and has
+been removed.
+                                                 Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_xor<5>" (XOR) removed.
+*The signal "XLXI_173/XLXI_1/XLXI_2/Result<5>" is sourceless and has been
+removed.
+                                             Sourceless block "XLXI_173/XLXI_1/XLXI_2/COUNT_6" (FF) removed.
+                                              The signal "XLXI_173/XLXI_1/cnt_2<6>" is sourceless and has been removed.
+                                               Sourceless block "XLXI_173/XLXI_1/XLXI_136" (XOR) removed.
+                                                The signal "XLXI_173/XLXI_1/XLXN_136" is sourceless and has been removed.
+                                               Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<6>_rt" (ROM) removed.
+                                                The signal "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<6>_rt" is sourceless and has
+been removed.
+                                                 Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_xor<6>" (XOR) removed.
+*The signal "XLXI_173/XLXI_1/XLXI_2/Result<6>" is sourceless and has been
+removed.
+                                             Sourceless block "XLXI_173/XLXI_1/XLXI_2/COUNT_7" (FF) removed.
+                                              The signal "XLXI_173/XLXI_1/cnt_2<7>" is sourceless and has been removed.
+                                               Sourceless block "XLXI_173/XLXI_1/XLXI_144" (XOR) removed.
+                                                The signal "XLXI_173/XLXI_1/XLXN_128" is sourceless and has been removed.
+                                               Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<7>_rt" (ROM) removed.
+                                                The signal "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<7>_rt" is sourceless and has
+been removed.
+                                                 Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_xor<7>" (XOR) removed.
+*The signal "XLXI_173/XLXI_1/XLXI_2/Result<7>" is sourceless and has been
+removed.
+                                             Sourceless block "XLXI_173/XLXI_1/XLXI_2/COUNT_8" (FF) removed.
+                                              The signal "XLXI_173/XLXI_1/cnt_2<8>" is sourceless and has been removed.
+                                               Sourceless block "XLXI_173/XLXI_1/XLXI_137" (XOR) removed.
+                                                The signal "XLXI_173/XLXI_1/XLXN_137" is sourceless and has been removed.
+                                               Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<8>_rt" (ROM) removed.
+                                                The signal "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<8>_rt" is sourceless and has
+been removed.
+                                                 Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_xor<8>" (XOR) removed.
+*The signal "XLXI_173/XLXI_1/XLXI_2/Result<8>" is sourceless and has been
+removed.
+                                             Sourceless block "XLXI_173/XLXI_1/XLXI_2/COUNT_9" (FF) removed.
+                                              The signal "XLXI_173/XLXI_1/cnt_2<9>" is sourceless and has been removed.
+                                               Sourceless block "XLXI_173/XLXI_1/XLXI_145" (XOR) removed.
+                                                The signal "XLXI_173/XLXI_1/XLXN_129" is sourceless and has been removed.
+                                               Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<9>_rt" (ROM) removed.
+                                                The signal "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<9>_rt" is sourceless and has
+been removed.
+                                                 Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_xor<9>" (XOR) removed.
+*The signal "XLXI_173/XLXI_1/XLXI_2/Result<9>" is sourceless and has been
+removed.
+                                             Sourceless block "XLXI_173/XLXI_1/XLXI_2/COUNT_10" (FF) removed.
+                                              The signal "XLXI_173/XLXI_1/cnt_2<10>" is sourceless and has been removed.
+                                               Sourceless block "XLXI_173/XLXI_1/XLXI_138" (XOR) removed.
+                                                The signal "XLXI_173/XLXI_1/XLXN_138" is sourceless and has been removed.
+                                               Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<10>_rt" (ROM) removed.
+                                                The signal "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<10>_rt" is sourceless and has
+been removed.
+                                                 Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_xor<10>" (XOR) removed.
+*The signal "XLXI_173/XLXI_1/XLXI_2/Result<10>" is sourceless and has been
+removed.
+                                             Sourceless block "XLXI_173/XLXI_1/XLXI_2/COUNT_11" (FF) removed.
+                                              The signal "XLXI_173/XLXI_1/cnt_2<11>" is sourceless and has been removed.
+                                               Sourceless block "XLXI_173/XLXI_1/XLXI_146" (XOR) removed.
+                                                The signal "XLXI_173/XLXI_1/XLXN_130" is sourceless and has been removed.
+                                               Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<11>_rt" (ROM) removed.
+                                                The signal "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<11>_rt" is sourceless and has
+been removed.
+                                                 Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_xor<11>" (XOR) removed.
+*The signal "XLXI_173/XLXI_1/XLXI_2/Result<11>" is sourceless and has been
+removed.
+                                             Sourceless block "XLXI_173/XLXI_1/XLXI_2/COUNT_12" (FF) removed.
+                                              The signal "XLXI_173/XLXI_1/cnt_2<12>" is sourceless and has been removed.
+                                               Sourceless block "XLXI_173/XLXI_1/XLXI_139" (XOR) removed.
+                                                The signal "XLXI_173/XLXI_1/XLXN_139" is sourceless and has been removed.
+                                               Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<12>_rt" (ROM) removed.
+                                                The signal "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<12>_rt" is sourceless and has
+been removed.
+                                                 Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_xor<12>" (XOR) removed.
+*The signal "XLXI_173/XLXI_1/XLXI_2/Result<12>" is sourceless and has been
+removed.
+                                             Sourceless block "XLXI_173/XLXI_1/XLXI_2/COUNT_13" (FF) removed.
+                                              The signal "XLXI_173/XLXI_1/cnt_2<13>" is sourceless and has been removed.
+                                               Sourceless block "XLXI_173/XLXI_1/XLXI_147" (XOR) removed.
+                                                The signal "XLXI_173/XLXI_1/XLXN_132" is sourceless and has been removed.
+                                               Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<13>_rt" (ROM) removed.
+                                                The signal "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<13>_rt" is sourceless and has
+been removed.
+                                                 Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_xor<13>" (XOR) removed.
+*The signal "XLXI_173/XLXI_1/XLXI_2/Result<13>" is sourceless and has been
+removed.
+                                             Sourceless block "XLXI_173/XLXI_1/XLXI_2/COUNT_14" (FF) removed.
+                                              The signal "XLXI_173/XLXI_1/cnt_2<14>" is sourceless and has been removed.
+                                               Sourceless block "XLXI_173/XLXI_1/XLXI_140" (XOR) removed.
+                                                The signal "XLXI_173/XLXI_1/XLXN_141" is sourceless and has been removed.
+                                               Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<14>_rt" (ROM) removed.
+                                                The signal "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_cy<14>_rt" is sourceless and has
+been removed.
+                                                 Sourceless block "XLXI_173/XLXI_1/XLXI_2/Mcount_COUNT_xor<14>" (XOR) removed.
+*The signal "XLXI_173/XLXI_1/XLXI_2/Result<14>" is sourceless and has been
+removed.
+                                             Sourceless block "XLXI_173/XLXI_1/XLXI_1/COUNT_0" (FF) removed.
+                                              The signal "XLXI_173/XLXI_1/cnt_1<0>" is sourceless and has been removed.
+                                               Sourceless block "XLXI_173/XLXI_1/XLXI_18" (XOR) removed.
+                                                The signal "XLXI_173/XLXI_1/XLXN_70" is sourceless and has been removed.
+                                                 Sourceless block "XLXI_173/XLXI_1/XLXI_123/O" (ROM) removed.
+*The signal "XLXI_173/XLXI_1/XLXN_82" is sourceless and has been removed.
+                                               Sourceless block "XLXI_173/XLXI_1/XLXI_1/TC<15>3" (ROM) removed.
+                                                The signal "XLXI_173/XLXI_1/XLXN_2" is sourceless and has been removed.
+                                               Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_lut<0>_INV_0" (BUF)
+removed.
+                                                The signal "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_lut<0>" is sourceless and has
+been removed.
+                                                 Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<0>" (MUX) removed.
+*The signal "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<0>" is sourceless and has
+been removed.
+* Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<1>" (MUX) removed.
+*  The signal "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<1>" is sourceless and has
+been removed.
+*   Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<2>" (MUX) removed.
+*    The signal "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<2>" is sourceless and has
+been removed.
+*     Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<3>" (MUX) removed.
+*      The signal "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<3>" is sourceless and has
+been removed.
+*       Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<4>" (MUX) removed.
+*        The signal "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<4>" is sourceless and has
+been removed.
+*         Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<5>" (MUX) removed.
+*          The signal "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<5>" is sourceless and has
+been removed.
+*           Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<6>" (MUX) removed.
+*            The signal "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<6>" is sourceless and has
+been removed.
+*             Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<7>" (MUX) removed.
+*              The signal "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<7>" is sourceless and has
+been removed.
+*               Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<8>" (MUX) removed.
+*                The signal "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<8>" is sourceless and has
+been removed.
+*                 Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<9>" (MUX) removed.
+*                  The signal "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<9>" is sourceless and has
+been removed.
+*                   Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<10>" (MUX) removed.
+*                    The signal "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<10>" is sourceless and has
+been removed.
+*                     Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<11>" (MUX) removed.
+*                      The signal "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<11>" is sourceless and has
+been removed.
+*                       Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<12>" (MUX) removed.
+*                        The signal "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<12>" is sourceless and has
+been removed.
+*                         Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<13>" (MUX) removed.
+*                          The signal "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<13>" is sourceless and has
+been removed.
+*                           Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<14>" (MUX) removed.
+*                            The signal "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<14>" is sourceless and has
+been removed.
+*                             Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_xor<15>" (XOR) removed.
+*                              The signal "XLXI_173/XLXI_1/XLXI_1/Result<15>" is sourceless and has been
+removed.
+*                               Sourceless block "XLXI_173/XLXI_1/XLXI_1/COUNT_15" (FF) removed.
+*                                The signal "XLXI_173/XLXI_1/cnt_1<15>" is sourceless and has been removed.
+*                                 Sourceless block "XLXI_173/XLXI_1/XLXI_122" (XOR) removed.
+*                                  The signal "XLXI_173/XLXI_1/XLXN_64" is sourceless and has been removed.
+*                                   Sourceless block "XLXI_173/XLXI_1/XLXI_124/O_SW0" (ROM) removed.
+*                                    The signal "XLXI_173/XLXI_1/XLXI_124/N01" is sourceless and has been removed.
+*                                     Sourceless block "XLXI_173/XLXI_1/XLXI_124/O" (ROM) removed.
+*                                      The signal "XLXI_173/XLXI_1/XLXN_83" is sourceless and has been removed.
+*                                 Sourceless block "XLXI_173/XLXI_1/XLXI_1/TC<15>1" (ROM) removed.
+*                                  The signal "XLXI_173/XLXI_1/XLXI_1/TC<15>" is sourceless and has been removed.
+*                                 Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_xor<15>_rt" (ROM) removed.
+*                                  The signal "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_xor<15>_rt" is sourceless and
+has been removed.
+*                           Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_xor<14>" (XOR) removed.
+*                            The signal "XLXI_173/XLXI_1/XLXI_1/Result<14>" is sourceless and has been
+removed.
+*                             Sourceless block "XLXI_173/XLXI_1/XLXI_1/COUNT_14" (FF) removed.
+*                              The signal "XLXI_173/XLXI_1/cnt_1<14>" is sourceless and has been removed.
+*                               Sourceless block "XLXI_173/XLXI_1/XLXI_26" (XOR) removed.
+*                                The signal "XLXI_173/XLXI_1/XLXN_69" is sourceless and has been removed.
+*                               Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<14>_rt" (ROM) removed.
+*                                The signal "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<14>_rt" is sourceless and has
+been removed.
+*                         Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_xor<13>" (XOR) removed.
+*                          The signal "XLXI_173/XLXI_1/XLXI_1/Result<13>" is sourceless and has been
+removed.
+*                           Sourceless block "XLXI_173/XLXI_1/XLXI_1/COUNT_13" (FF) removed.
+*                            The signal "XLXI_173/XLXI_1/cnt_1<13>" is sourceless and has been removed.
+*                             Sourceless block "XLXI_173/XLXI_1/XLXI_121" (XOR) removed.
+*                              The signal "XLXI_173/XLXI_1/XLXN_63" is sourceless and has been removed.
+*                             Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<13>_rt" (ROM) removed.
+*                              The signal "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<13>_rt" is sourceless and has
+been removed.
+*                       Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_xor<12>" (XOR) removed.
+*                        The signal "XLXI_173/XLXI_1/XLXI_1/Result<12>" is sourceless and has been
+removed.
+*                         Sourceless block "XLXI_173/XLXI_1/XLXI_1/COUNT_12" (FF) removed.
+*                          The signal "XLXI_173/XLXI_1/cnt_1<12>" is sourceless and has been removed.
+*                           Sourceless block "XLXI_173/XLXI_1/XLXI_25" (XOR) removed.
+*                            The signal "XLXI_173/XLXI_1/XLXN_68" is sourceless and has been removed.
+*                           Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<12>_rt" (ROM) removed.
+*                            The signal "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<12>_rt" is sourceless and has
+been removed.
+*                     Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_xor<11>" (XOR) removed.
+*                      The signal "XLXI_173/XLXI_1/XLXI_1/Result<11>" is sourceless and has been
+removed.
+*                       Sourceless block "XLXI_173/XLXI_1/XLXI_1/COUNT_11" (FF) removed.
+*                        The signal "XLXI_173/XLXI_1/cnt_1<11>" is sourceless and has been removed.
+*                         Sourceless block "XLXI_173/XLXI_1/XLXI_120" (XOR) removed.
+*                          The signal "XLXI_173/XLXI_1/XLXN_62" is sourceless and has been removed.
+*                         Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<11>_rt" (ROM) removed.
+*                          The signal "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<11>_rt" is sourceless and has
+been removed.
+*                   Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_xor<10>" (XOR) removed.
+*                    The signal "XLXI_173/XLXI_1/XLXI_1/Result<10>" is sourceless and has been
+removed.
+*                     Sourceless block "XLXI_173/XLXI_1/XLXI_1/COUNT_10" (FF) removed.
+*                      The signal "XLXI_173/XLXI_1/cnt_1<10>" is sourceless and has been removed.
+*                       Sourceless block "XLXI_173/XLXI_1/XLXI_24" (XOR) removed.
+*                        The signal "XLXI_173/XLXI_1/XLXN_67" is sourceless and has been removed.
+*                       Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<10>_rt" (ROM) removed.
+*                        The signal "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<10>_rt" is sourceless and has
+been removed.
+*                 Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_xor<9>" (XOR) removed.
+*                  The signal "XLXI_173/XLXI_1/XLXI_1/Result<9>" is sourceless and has been
+removed.
+*                   Sourceless block "XLXI_173/XLXI_1/XLXI_1/COUNT_9" (FF) removed.
+*                    The signal "XLXI_173/XLXI_1/cnt_1<9>" is sourceless and has been removed.
+*                     Sourceless block "XLXI_173/XLXI_1/XLXI_119" (XOR) removed.
+*                      The signal "XLXI_173/XLXI_1/XLXN_61" is sourceless and has been removed.
+*                     Sourceless block "XLXI_173/XLXI_1/XLXI_1/TC<15>2" (ROM) removed.
+*                      The signal "XLXI_173/XLXI_1/XLXI_1/TC<15>1" is sourceless and has been removed.
+*                     Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<9>_rt" (ROM) removed.
+*                      The signal "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<9>_rt" is sourceless and has
+been removed.
+*               Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_xor<8>" (XOR) removed.
+*                The signal "XLXI_173/XLXI_1/XLXI_1/Result<8>" is sourceless and has been
+removed.
+*                 Sourceless block "XLXI_173/XLXI_1/XLXI_1/COUNT_8" (FF) removed.
+*                  The signal "XLXI_173/XLXI_1/cnt_1<8>" is sourceless and has been removed.
+*                   Sourceless block "XLXI_173/XLXI_1/XLXI_22" (XOR) removed.
+*                    The signal "XLXI_173/XLXI_1/XLXN_66" is sourceless and has been removed.
+*                   Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<8>_rt" (ROM) removed.
+*                    The signal "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<8>_rt" is sourceless and has
+been removed.
+*             Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_xor<7>" (XOR) removed.
+*              The signal "XLXI_173/XLXI_1/XLXI_1/Result<7>" is sourceless and has been
+removed.
+*               Sourceless block "XLXI_173/XLXI_1/XLXI_1/COUNT_7" (FF) removed.
+*                The signal "XLXI_173/XLXI_1/cnt_1<7>" is sourceless and has been removed.
+*                 Sourceless block "XLXI_173/XLXI_1/XLXI_118" (XOR) removed.
+*                  The signal "XLXI_173/XLXI_1/XLXN_60" is sourceless and has been removed.
+*                   Sourceless block "XLXI_173/XLXI_1/XLXI_123/O_SW0" (ROM) removed.
+*                    The signal "XLXI_173/XLXI_1/XLXI_123/N01" is sourceless and has been removed.
+*                 Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<7>_rt" (ROM) removed.
+*                  The signal "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<7>_rt" is sourceless and has
+been removed.
+*           Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_xor<6>" (XOR) removed.
+*            The signal "XLXI_173/XLXI_1/XLXI_1/Result<6>" is sourceless and has been
+removed.
+*             Sourceless block "XLXI_173/XLXI_1/XLXI_1/COUNT_6" (FF) removed.
+*              The signal "XLXI_173/XLXI_1/cnt_1<6>" is sourceless and has been removed.
+*               Sourceless block "XLXI_173/XLXI_1/XLXI_21" (XOR) removed.
+*                The signal "XLXI_173/XLXI_1/XLXN_65" is sourceless and has been removed.
+*               Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<6>_rt" (ROM) removed.
+*                The signal "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<6>_rt" is sourceless and has
+been removed.
+*         Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_xor<5>" (XOR) removed.
+*          The signal "XLXI_173/XLXI_1/XLXI_1/Result<5>" is sourceless and has been
+removed.
+*           Sourceless block "XLXI_173/XLXI_1/XLXI_1/COUNT_5" (FF) removed.
+*            The signal "XLXI_173/XLXI_1/cnt_1<5>" is sourceless and has been removed.
+*             Sourceless block "XLXI_173/XLXI_1/XLXI_117" (XOR) removed.
+*              The signal "XLXI_173/XLXI_1/XLXN_59" is sourceless and has been removed.
+*             Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<5>_rt" (ROM) removed.
+*              The signal "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<5>_rt" is sourceless and has
+been removed.
+*       Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_xor<4>" (XOR) removed.
+*        The signal "XLXI_173/XLXI_1/XLXI_1/Result<4>" is sourceless and has been
+removed.
+*         Sourceless block "XLXI_173/XLXI_1/XLXI_1/COUNT_4" (FF) removed.
+*          The signal "XLXI_173/XLXI_1/cnt_1<4>" is sourceless and has been removed.
+*           Sourceless block "XLXI_173/XLXI_1/XLXI_20" (XOR) removed.
+*            The signal "XLXI_173/XLXI_1/XLXN_58" is sourceless and has been removed.
+*           Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<4>_rt" (ROM) removed.
+*            The signal "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<4>_rt" is sourceless and has
+been removed.
+*     Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_xor<3>" (XOR) removed.
+*      The signal "XLXI_173/XLXI_1/XLXI_1/Result<3>" is sourceless and has been
+removed.
+*       Sourceless block "XLXI_173/XLXI_1/XLXI_1/COUNT_3" (FF) removed.
+*        The signal "XLXI_173/XLXI_1/cnt_1<3>" is sourceless and has been removed.
+*         Sourceless block "XLXI_173/XLXI_1/XLXI_116" (XOR) removed.
+*          The signal "XLXI_173/XLXI_1/XLXN_57" is sourceless and has been removed.
+*         Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<3>_rt" (ROM) removed.
+*          The signal "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<3>_rt" is sourceless and has
+been removed.
+*   Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_xor<2>" (XOR) removed.
+*    The signal "XLXI_173/XLXI_1/XLXI_1/Result<2>" is sourceless and has been
+removed.
+*     Sourceless block "XLXI_173/XLXI_1/XLXI_1/COUNT_2" (FF) removed.
+*      The signal "XLXI_173/XLXI_1/cnt_1<2>" is sourceless and has been removed.
+*       Sourceless block "XLXI_173/XLXI_1/XLXI_19" (XOR) removed.
+*        The signal "XLXI_173/XLXI_1/XLXN_55" is sourceless and has been removed.
+*       Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<2>_rt" (ROM) removed.
+*        The signal "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<2>_rt" is sourceless and has
+been removed.
+* Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_xor<1>" (XOR) removed.
+*  The signal "XLXI_173/XLXI_1/XLXI_1/Result<1>" is sourceless and has been
+removed.
+*   Sourceless block "XLXI_173/XLXI_1/XLXI_1/COUNT_1" (FF) removed.
+*    The signal "XLXI_173/XLXI_1/cnt_1<1>" is sourceless and has been removed.
+*     Sourceless block "XLXI_173/XLXI_1/XLXI_115" (XOR) removed.
+*      The signal "XLXI_173/XLXI_1/XLXN_56" is sourceless and has been removed.
+*     Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<1>_rt" (ROM) removed.
+*      The signal "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_cy<1>_rt" is sourceless and has
+been removed.
+                                                 Sourceless block "XLXI_173/XLXI_1/XLXI_1/Mcount_COUNT_xor<0>" (XOR) removed.
+*The signal "XLXI_173/XLXI_1/XLXI_1/Result<0>" is sourceless and has been
+removed.
+                                           Sourceless block "XLXI_173/XLXI_1/XLXI_128/q_tmp" (FF) removed.
+                                            The signal "XLXI_173/XLXN_92" is sourceless and has been removed.
+                                             Sourceless block "XLXI_173/XLXI_1/XLXI_128/Mmux_q_tmp_q_tmp_MUX_34_o11_INV_0"
+(BUF) removed.
+                                              The signal "XLXI_173/XLXI_1/XLXI_128/q_tmp_q_tmp_MUX_34_o" is sourceless and has
+been removed.
+The signal "XLXI_173/XLXI_1/XLXI_2/N1" is sourceless and has been removed.
+The signal "XLXI_173/XLXI_1/XLXI_1/N0" is sourceless and has been removed.
+The signal "XLXI_173/XLXI_1/XLXI_1/N1" is sourceless and has been removed.
 The signal "clck_gen/XLXI_4/_n0009_inv" is sourceless and has been removed.
 The signal "XLXI_130/XLXI_1/XLXI_17/Mmux_S3_D15_Mux_0_o_3_f7" is sourceless and
 has been removed.
@@ -206,6 +642,18 @@ The signal "alu_inst/XLXI_138/XLXI_14/XLXI_16/Mmux_S3_D15_Mux_0_o_3_f7" is
 sourceless and has been removed.
 The signal "alu_inst/XLXI_138/XLXI_14/XLXI_17/Mmux_S3_D15_Mux_0_o_3_f7" is
 sourceless and has been removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "clk_IBUF_BUFG" is unused and has been removed.
+ Unused block "clk_IBUF_BUFG" (CKBUF) removed.
+Unused block "XLXI_173/XLXI_1/XLXI_1/XST_GND" (ZERO) removed.
+Unused block "XLXI_173/XLXI_1/XLXI_1/XST_VCC" (ONE) removed.
+Unused block "XLXI_173/XLXI_1/XLXI_2/XST_GND" (ZERO) removed.
+Unused block "XLXI_173/XLXI_1/XLXI_2/XST_VCC" (ONE) removed.
 Unused block "XLXI_7" (PULLUP) removed.
 Unused block "XLXI_8" (PULLUP) removed.
 
@@ -220,12 +668,6 @@ GND 		XLXI_130/XLXI_1/XLXI_15/XST_GND
 GND 		XLXI_130/XLXI_1/XLXI_16/XST_GND
 GND 		XLXI_130/XLXI_1/XLXI_17/XST_GND
 GND 		XLXI_130/XLXI_1/XLXI_2/XST_GND
-BUF 		XLXI_130/XLXI_10
-INV 		XLXI_130/XLXI_2/XLXI_12
-GND 		XLXI_173/XLXI_1/XLXI_1/XST_GND
-VCC 		XLXI_173/XLXI_1/XLXI_1/XST_VCC
-GND 		XLXI_173/XLXI_1/XLXI_2/XST_GND
-VCC 		XLXI_173/XLXI_1/XLXI_2/XST_VCC
 OR4 		XLXI_173/XLXI_38/XLXI_1
 INV 		XLXI_173/XLXI_38/XLXI_10
 INV 		XLXI_173/XLXI_38/XLXI_11
@@ -241,6 +683,8 @@ INV 		XLXI_173/XLXI_38/XLXI_6
 INV 		XLXI_173/XLXI_38/XLXI_7
 INV 		XLXI_173/XLXI_38/XLXI_8
 INV 		XLXI_173/XLXI_38/XLXI_9
+LUT2 		XLXI_173/XLXI_4/Mmux_O1_SW0
+   optimized to 0
 BUF 		XLXI_173/XLXI_40
 BUF 		XLXI_173/XLXI_41
 BUF 		XLXI_173/XLXI_42
@@ -250,6 +694,10 @@ BUF 		XLXI_173/XLXI_45
 BUF 		XLXI_173/XLXI_46
 BUF 		XLXI_173/XLXI_49
 INV 		XLXI_173/XLXI_62
+GND 		XLXI_185
+BUF 		XLXI_227
+BUF 		XLXI_228
+BUF 		XLXI_229
 PULLUP 		alu_inst/XLXI_135/XLXI_11
 PULLDOWN 		alu_inst/XLXI_135/XLXI_12
 GND 		alu_inst/XLXI_138/XLXI_14/XLXI_1/XST_GND
@@ -260,7 +708,6 @@ GND 		alu_inst/XLXI_138/XLXI_14/XLXI_15/XST_GND
 GND 		alu_inst/XLXI_138/XLXI_14/XLXI_16/XST_GND
 GND 		alu_inst/XLXI_138/XLXI_14/XLXI_17/XST_GND
 GND 		alu_inst/XLXI_138/XLXI_14/XLXI_2/XST_GND
-GND 		clck_gen/XLXI_11
 LUT2 		clck_gen/XLXI_4/_n0009_inv1
    optimized to 1
 PULLUP 		clck_gen/XLXI_6
@@ -275,9 +722,63 @@ Section 6 - IOB Properties
 | IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
 |                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| XLXN_278                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| XLXN_280                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| XLXN_282                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| can_read                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| can_write                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | clk                                | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| clk_int                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| cpu_clk                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_clk_int                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_clkc                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_clkr                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_clkw                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_r0_r                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_r0_w                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_r1_r                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_r1_w                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_r2_r                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_r2_w                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_r3_r                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_r3_w                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_s1                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_s2                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_s3                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_s4                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_s5                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_s6                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | iar_w                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| in_manr_d<0>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| in_manr_d<1>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| in_manr_d<2>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| in_manr_d<3>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| in_manr_d<4>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| in_manr_d<5>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| in_manr_d<6>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| in_manr_d<7>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| in_manr_r                          | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| in_manr_w                          | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| in_r0_r                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| in_r0_w                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| in_r1_r                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| in_r1_w                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| in_r2_r                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| in_r2_w                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| in_r3_r                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| in_r3_w                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| in_read_reg_en                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| in_write_reg_en                    | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| manr_o<0>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| manr_o<1>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| manr_o<2>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| manr_o<3>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| manr_o<4>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| manr_o<5>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| manr_o<6>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| manr_o<7>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| manr_r                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| manr_w                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| manual_clk_in                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | monitor<0>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | monitor<1>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | monitor<2>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
@@ -295,6 +796,7 @@ Section 6 - IOB Properties
 | sysbus<5>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | sysbus<6>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | sysbus<7>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sysbus_released                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Section 7 - RPMs
