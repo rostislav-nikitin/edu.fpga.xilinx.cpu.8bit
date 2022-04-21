@@ -89,6 +89,10 @@ ARCHITECTURE behavioral OF cpu_cpu_sch_tb IS
 			 cpu_bus1	:	OUT	STD_LOGIC;
 			 cpu_is_bus1_w	:	OUT	STD_LOGIC;
 			 
+			 cpu_iar_o	:	OUT	STD_LOGIC_VECTOR(7 DOWNTO 0);
+			 cpu_ir_o	:	OUT	STD_LOGIC_VECTOR(7 DOWNTO 0);
+			 cpu_temp_o	:	OUT	STD_LOGIC_VECTOR(7 DOWNTO 0);
+			 
 			 manr_w	:	OUT	STD_LOGIC;
 			 manr_r	:	OUT	STD_LOGIC;
 			 manr_o	:	OUT	STD_LOGIC_VECTOR(7 DOWNTO 0);
@@ -169,6 +173,10 @@ ARCHITECTURE behavioral OF cpu_cpu_sch_tb IS
 	SIGNAL cpu_bus1	:	STD_LOGIC; 
 	SIGNAL cpu_is_bus1_w	:	STD_LOGIC; 
 	
+	SIGNAL cpu_iar_o	:	STD_LOGIC_VECTOR(7 DOWNTO 0);	
+	SIGNAL cpu_ir_o	:	STD_LOGIC_VECTOR(7 DOWNTO 0);
+	SIGNAL cpu_temp_o	:	STD_LOGIC_VECTOR(7 DOWNTO 0);
+	
 	SIGNAL can_read		:	STD_LOGIC;
 	SIGNAL can_write		:	STD_LOGIC;
 	
@@ -217,7 +225,7 @@ BEGIN
 		in_ir_w => in_ir_w,
 		in_ram_a_w => in_ram_a_w,
 		in_bus1 => in_bus1,
-		in_is_bus1_w => in_is_bus1_w,
+		in_is_bus1_w => in_is_bus1_w,		
 		
 		in_read_reg_en => in_read_reg_en,
 		in_write_reg_en => in_write_reg_en,
@@ -258,6 +266,11 @@ BEGIN
 		cpu_ram_a_w => cpu_ram_a_w,
 		cpu_bus1 => cpu_bus1,
 		cpu_is_bus1_w => cpu_is_bus1_w,
+		
+		cpu_iar_o => cpu_iar_o,
+		cpu_ir_o => cpu_ir_o,
+		cpu_temp_o => cpu_temp_o,
+		
 		
 		can_read => can_read,
 		can_write => can_write
