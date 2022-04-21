@@ -1,7 +1,7 @@
 Release 14.3 par P.40xd (lin64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-fedora::  Thu Apr 21 01:24:35 2022
+fedora::  Fri Apr 22 02:09:05 2022
 
 par -w -intstyle ise -ol high -mt off cpu_map.ncd cpu.ncd cpu.pcf 
 
@@ -26,9 +26,9 @@ Slice Logic Utilization:
     Number used as Latches:                     92
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                1
-  Number of Slice LUTs:                        186 out of   5,720    3%
-    Number used as logic:                      154 out of   5,720    2%
-      Number using O6 output only:             147
+  Number of Slice LUTs:                        192 out of   5,720    3%
+    Number used as logic:                      160 out of   5,720    2%
+      Number using O6 output only:             153
       Number using O5 output only:               0
       Number using O5 and O6:                    7
       Number used as ROM:                        0
@@ -41,12 +41,12 @@ Slice Logic Utilization:
       Number used as Shift Register:             0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    87 out of   1,430    6%
+  Number of occupied Slices:                   106 out of   1,430    7%
   Nummber of MUXCYs used:                        8 out of   2,860    1%
-  Number of LUT Flip Flop pairs used:          240
-    Number with an unused Flip Flop:           143 out of     240   59%
-    Number with an unused LUT:                  54 out of     240   22%
-    Number of fully used LUT-FF pairs:          43 out of     240   17%
+  Number of LUT Flip Flop pairs used:          260
+    Number with an unused Flip Flop:           163 out of     260   62%
+    Number with an unused LUT:                  68 out of     260   26%
+    Number of fully used LUT-FF pairs:          29 out of     260   11%
     Number of slice register sites lost
       to control set restrictions:               0 out of  11,440    0%
 
@@ -57,8 +57,8 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        75 out of     186   40%
-    Number of LOCed IOBs:                        6 out of      75    8%
+  Number of bonded IOBs:                       121 out of     186   65%
+    Number of LOCed IOBs:                        6 out of     121    4%
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of      32    0%
@@ -93,28 +93,28 @@ Finished initial Timing Analysis.  REAL time: 3 secs
 Starting Router
 
 
-Phase  1  : 1073 unrouted;      REAL time: 4 secs 
+Phase  1  : 1142 unrouted;      REAL time: 4 secs 
 
-Phase  2  : 1031 unrouted;      REAL time: 4 secs 
+Phase  2  : 1099 unrouted;      REAL time: 4 secs 
 
-Phase  3  : 287 unrouted;      REAL time: 5 secs 
+Phase  3  : 323 unrouted;      REAL time: 5 secs 
 
-Phase  4  : 287 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 6 secs 
+Phase  4  : 323 unrouted; (Setup:0, Hold:1052, Component Switching Limit:0)     REAL time: 6 secs 
 
 Updating file: cpu.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:65, Component Switching Limit:0)     REAL time: 6 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:1558, Component Switching Limit:0)     REAL time: 6 secs 
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:65, Component Switching Limit:0)     REAL time: 6 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:1558, Component Switching Limit:0)     REAL time: 6 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:65, Component Switching Limit:0)     REAL time: 6 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:1558, Component Switching Limit:0)     REAL time: 6 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:65, Component Switching Limit:0)     REAL time: 6 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:1558, Component Switching Limit:0)     REAL time: 6 secs 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 6 secs 
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 7 secs 
 
-Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 6 secs 
-Total REAL time to Router completion: 6 secs 
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 7 secs 
+Total REAL time to Router completion: 7 secs 
 Total CPU time to Router completion: 6 secs 
 
 Partition Implementation Status
@@ -133,17 +133,17 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|          cc_ram_a_w |         Local|      |    3 |  0.427     |  1.151      |
+|                clkw |         Local|      |   21 |  1.090     |  2.978      |
 +---------------------+--------------+------+------+------------+-------------+
-|                clkr |         Local|      |   12 |  0.000     |  1.132      |
+|                clkr |         Local|      |   12 |  0.000     |  1.668      |
 +---------------------+--------------+------+------+------------+-------------+
-|             cc_r0_w |         Local|      |    9 |  3.559     |  4.422      |
+|                clkc |         Local|      |    5 |  0.000     |  1.201      |
 +---------------------+--------------+------+------+------------+-------------+
-|                clkw |         Local|      |   21 |  0.450     |  1.444      |
+|  manual_clk_in_IBUF |         Local|      |    4 |  0.000     |  2.145      |
 +---------------------+--------------+------+------+------------+-------------+
-|  manual_clk_in_IBUF |         Local|      |    4 |  0.000     |  2.569      |
+|             cc_r0_w |         Local|      |    9 |  0.763     |  2.378      |
 +---------------------+--------------+------+------+------------+-------------+
-|                clkc |         Local|      |    5 |  0.000     |  0.751      |
+|             ram_a_w |         Local|      |    5 |  0.636     |  2.863      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -163,8 +163,8 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_ | SETUP       |     2.540ns|    14.920ns|       0|           0
-  pin" 50 MHz HIGH 50%                      | HOLD        |     0.024ns|            |       0|           0
+  TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_ | SETUP       |     0.647ns|    18.706ns|       0|           0
+  pin" 50 MHz HIGH 50%                      | HOLD        |     0.018ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -178,7 +178,7 @@ All signals are completely routed.
 Total REAL time to PAR completion: 7 secs 
 Total CPU time to PAR completion: 7 secs 
 
-Peak Memory Usage:  587 MB
+Peak Memory Usage:  585 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

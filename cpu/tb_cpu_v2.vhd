@@ -40,6 +40,18 @@ ARCHITECTURE behavioral OF cpu_cpu_sch_tb IS
 			 in_r3_r	:	IN	STD_LOGIC; 
 			 in_r3_w	:	IN	STD_LOGIC; 
 			 
+			 in_iar_r	:	IN	STD_LOGIC; 
+			 in_iar_w	:	IN	STD_LOGIC; 
+			 in_temp_w	:	IN	STD_LOGIC; 
+			 in_acc_r	:	IN	STD_LOGIC; 
+			 in_acc_w	:	IN	STD_LOGIC; 
+			 in_ram_r	:	IN	STD_LOGIC; 
+			 in_ram_w	:	IN	STD_LOGIC; 
+			 in_ir_w		:	IN	STD_LOGIC; 
+			 in_ram_a_w	:	IN	STD_LOGIC; 
+			 in_bus1	:	IN	STD_LOGIC; 
+			 in_is_bus1_w	:	IN	STD_LOGIC; 
+			 
 			 in_read_reg_en :	IN	STD_LOGIC; 
 			 in_write_reg_en :	IN	STD_LOGIC; 
 			 cpu_clk_int	:	OUT	STD_LOGIC;
@@ -64,6 +76,18 @@ ARCHITECTURE behavioral OF cpu_cpu_sch_tb IS
 			 cpu_r2_w	:	OUT	STD_LOGIC;
 			 cpu_r3_r	:	OUT	STD_LOGIC;
 			 cpu_r3_w	:	OUT	STD_LOGIC;
+			 
+			 cpu_iar_r	:	OUT	STD_LOGIC;
+			 cpu_iar_w	:	OUT	STD_LOGIC;
+			 cpu_temp_w	:	OUT	STD_LOGIC;
+			 cpu_acc_r	:	OUT	STD_LOGIC;
+			 cpu_acc_w	:	OUT	STD_LOGIC;
+			 cpu_ram_r	:	OUT	STD_LOGIC;
+			 cpu_ram_w	:	OUT	STD_LOGIC;
+			 cpu_ir_w		:	OUT	STD_LOGIC; 
+			 cpu_ram_a_w	:	OUT	STD_LOGIC; 
+			 cpu_bus1	:	OUT	STD_LOGIC;
+			 cpu_is_bus1_w	:	OUT	STD_LOGIC;
 			 
 			 manr_w	:	OUT	STD_LOGIC;
 			 manr_r	:	OUT	STD_LOGIC;
@@ -91,6 +115,18 @@ ARCHITECTURE behavioral OF cpu_cpu_sch_tb IS
 	SIGNAL in_r2_w	:	STD_LOGIC; 
 	SIGNAL in_r3_r	:	STD_LOGIC; 
 	SIGNAL in_r3_w	:	STD_LOGIC; 
+	
+	SIGNAL in_iar_r	:	STD_LOGIC; 
+	SIGNAL in_iar_w	:	STD_LOGIC; 
+	SIGNAL in_temp_w	:	STD_LOGIC; 
+	SIGNAL in_acc_r	:	STD_LOGIC; 
+	SIGNAL in_acc_w	:	STD_LOGIC; 
+	SIGNAL in_ram_r	:	STD_LOGIC; 
+	SIGNAL in_ram_w	:	STD_LOGIC; 
+	SIGNAL in_ir_w		:	STD_LOGIC; 
+	SIGNAL in_ram_a_w	:	STD_LOGIC; 
+	SIGNAL in_bus1	:	STD_LOGIC;
+	SIGNAL in_is_bus1_w	:	STD_LOGIC;
 	
 	SIGNAL in_read_reg_en :	STD_LOGIC; 
 	SIGNAL in_write_reg_en :	STD_LOGIC; 
@@ -120,6 +156,18 @@ ARCHITECTURE behavioral OF cpu_cpu_sch_tb IS
 	SIGNAL cpu_r2_w		:	STD_LOGIC;
 	SIGNAL cpu_r3_r		:	STD_LOGIC;
 	SIGNAL cpu_r3_w		:	STD_LOGIC;
+	
+	SIGNAL cpu_iar_r	:	STD_LOGIC;
+	SIGNAL cpu_iar_w	:	STD_LOGIC;
+	SIGNAL cpu_temp_w	:	STD_LOGIC;
+	SIGNAL cpu_acc_r	:	STD_LOGIC;
+	SIGNAL cpu_acc_w	:	STD_LOGIC;
+	SIGNAL cpu_ram_r	:	STD_LOGIC;
+	SIGNAL cpu_ram_w	:	STD_LOGIC;
+	SIGNAL cpu_ir_w		:	STD_LOGIC; 
+	SIGNAL cpu_ram_a_w	:	STD_LOGIC; 
+	SIGNAL cpu_bus1	:	STD_LOGIC; 
+	SIGNAL cpu_is_bus1_w	:	STD_LOGIC; 
 	
 	SIGNAL can_read		:	STD_LOGIC;
 	SIGNAL can_write		:	STD_LOGIC;
@@ -159,6 +207,18 @@ BEGIN
 		in_r3_r => in_r3_r,
 		in_r3_w => in_r3_w,
 		
+		in_iar_r	=> in_iar_r,
+		in_iar_w	=> in_iar_w,
+		in_temp_w => in_temp_w,
+		in_acc_r => in_acc_r,
+		in_acc_w => in_acc_w,
+		in_ram_r => in_ram_r,
+		in_ram_w => in_ram_w,
+		in_ir_w => in_ir_w,
+		in_ram_a_w => in_ram_a_w,
+		in_bus1 => in_bus1,
+		in_is_bus1_w => in_is_bus1_w,
+		
 		in_read_reg_en => in_read_reg_en,
 		in_write_reg_en => in_write_reg_en,
 		cpu_clk_int => cpu_clk_int,
@@ -187,6 +247,18 @@ BEGIN
 		cpu_r3_r => cpu_r3_r,
 		cpu_r3_w => cpu_r3_w,
 		
+		cpu_iar_r => cpu_iar_r,
+		cpu_iar_w => cpu_iar_w,
+		cpu_temp_w => cpu_temp_w,
+		cpu_acc_r => cpu_acc_r,
+		cpu_acc_w => cpu_acc_w,
+		cpu_ram_r => cpu_ram_r,
+		cpu_ram_w => cpu_ram_w,
+		cpu_ir_w => cpu_ir_w,
+		cpu_ram_a_w => cpu_ram_a_w,
+		cpu_bus1 => cpu_bus1,
+		cpu_is_bus1_w => cpu_is_bus1_w,
+		
 		can_read => can_read,
 		can_write => can_write
    );
@@ -211,6 +283,19 @@ BEGIN
 		in_r2_w <= '0';
 		in_r3_r <= '0';
 		in_r3_w <= '0';
+		
+		in_iar_r	<= '0';
+		in_iar_w <= '0';
+		in_temp_w <= '0';
+		in_acc_r <= '0';
+		in_acc_w <= '0';
+		in_ram_r <= '0';
+		in_ram_w <= '0';
+		in_ir_w <= '0';
+		in_ram_a_w <= '0';
+		in_bus1 <= '0';
+		in_is_bus1_w <= '0';
+		
 		in_read_reg_en <= '1';
 		in_write_reg_en <= '1';
 		wait for 10 ns;
