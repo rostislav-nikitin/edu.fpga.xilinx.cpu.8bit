@@ -279,11 +279,9 @@ BEGIN
 -- *** Test Bench - User Defined Section ***
    tb : PROCESS
    BEGIN
+		in_read_reg_en <= '1';
+		in_write_reg_en <= '1';
 		manual_clk_in <= '0';
-		rst_in <= '0';
-		wait for 10 ns;
-		rst_in <= '1';
-		wait for 10 ns;
 		
 		in_manr_r <= '0';
 		in_manr_w <= '0';
@@ -309,9 +307,11 @@ BEGIN
 		in_bus1 <= '0';
 		in_is_bus1_w <= '0';
 		
-		in_read_reg_en <= '1';
-		in_write_reg_en <= '1';
+		rst_in <= '0';
 		wait for 10 ns;
+		rst_in <= '1';
+		wait for 10 ns;
+		
 		in_manr_d <= "00010011";
 		in_manr_w <= '1';
 		wait for 10 ns;

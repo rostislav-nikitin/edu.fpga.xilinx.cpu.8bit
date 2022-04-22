@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.40xd on Fri Apr 22 02:09:02 2022
+// Written by: Map P.40xd on Sat Apr 23 02:29:20 2022
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -48,11 +48,19 @@ TIMEGRP sys_clk_pin = BEL "XLXI_102" BEL "XLXI_122/XLXI_5/Q_6" BEL
         BEL "XLXI_104/Q_6" BEL "XLXI_104/Q_5" BEL "XLXI_104/Q_4" BEL
         "XLXI_104/Q_3" BEL "XLXI_104/Q_2" BEL "XLXI_104/Q_1" BEL
         "XLXI_104/Q_0" BEL "XLXI_104/Q_7" BEL "XLXI_87/Q2" BEL "XLXI_87/Q1"
-        BEL "XLXI_87/Q0" BEL "XLXI_87/Q3" BEL "sysbus<7>" BEL "sysbus<6>" BEL
-        "sysbus<5>" BEL "sysbus<4>" BEL "sysbus<3>" BEL "sysbus<2>" BEL
-        "sysbus<1>" BEL "sysbus<0>" BEL "can_read" BEL "cpu_acc_r" BEL
-        "cpu_acc_w" BEL "cpu_bus1" BEL "cpu_clk" BEL "cpu_clkr" BEL "cpu_clkw"
-        BEL "cpu_clk_int" BEL "cpu_iar_r" BEL "cpu_iar_w" BEL "cpu_ir_w" BEL
+        BEL "XLXI_87/Q0" BEL "XLXI_87/Q3" BEL "cpu_alu_x<7>" BEL
+        "cpu_alu_x<6>" BEL "cpu_alu_x<5>" BEL "cpu_alu_x<4>" BEL
+        "cpu_alu_x<3>" BEL "cpu_alu_x<2>" BEL "cpu_alu_x<1>" BEL
+        "cpu_alu_x<0>" BEL "cpu_sysbus<7>" BEL "cpu_sysbus<6>" BEL
+        "cpu_sysbus<5>" BEL "cpu_sysbus<4>" BEL "cpu_sysbus<3>" BEL
+        "cpu_sysbus<2>" BEL "cpu_sysbus<1>" BEL "cpu_sysbus<0>" BEL
+        "sysbus<7>" BEL "sysbus<6>" BEL "sysbus<5>" BEL "sysbus<4>" BEL
+        "sysbus<3>" BEL "sysbus<2>" BEL "sysbus<1>" BEL "sysbus<0>" BEL
+        "can_read" BEL "cpu_acc_r" BEL "cpu_acc_w" BEL "cpu_alu_C_in" BEL
+        "cpu_alu_C_out" BEL "cpu_alu_eq" BEL "cpu_alu_gt" BEL "cpu_alu_z" BEL
+        "cpu_bus1" BEL "cpu_clk" BEL "cpu_clkr" BEL "cpu_clkw" BEL
+        "cpu_clk_int" BEL "cpu_C_in_enabled" BEL "cpu_flags_clr" BEL
+        "cpu_flags_w" BEL "cpu_iar_r" BEL "cpu_iar_w" BEL "cpu_ir_w" BEL
         "cpu_ram_a_w" BEL "cpu_ram_r" BEL "cpu_ram_w" BEL "cpu_r0_r" BEL
         "cpu_r0_w" BEL "cpu_r1_r" BEL "cpu_r1_w" BEL "cpu_r2_r" BEL "cpu_r2_w"
         BEL "cpu_r3_r" BEL "cpu_r3_w" BEL "cpu_temp_w" BEL "manr_r" BEL

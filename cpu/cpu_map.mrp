@@ -10,7 +10,7 @@ Target Device  : xa6slx9
 Target Package : ftg256
 Target Speed   : -3
 Mapper Version : aspartan6 -- $Revision: 1.55 $
-Mapped Date    : Fri Apr 22 02:08:16 2022
+Mapped Date    : Sat Apr 23 02:28:27 2022
 
 Design Summary
 --------------
@@ -22,11 +22,11 @@ Slice Logic Utilization:
     Number used as Latches:                     92
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                1
-  Number of Slice LUTs:                        192 out of   5,720    3%
-    Number used as logic:                      160 out of   5,720    2%
-      Number using O6 output only:             153
+  Number of Slice LUTs:                        197 out of   5,720    3%
+    Number used as logic:                      165 out of   5,720    2%
+      Number using O6 output only:             151
       Number using O5 output only:               0
-      Number using O5 and O6:                    7
+      Number using O5 and O6:                   14
       Number used as ROM:                        0
     Number used as Memory:                      32 out of   1,440    2%
       Number used as Dual Port RAM:              0
@@ -37,12 +37,12 @@ Slice Logic Utilization:
       Number used as Shift Register:             0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   106 out of   1,430    7%
+  Number of occupied Slices:                   109 out of   1,430    7%
   Nummber of MUXCYs used:                        8 out of   2,860    1%
-  Number of LUT Flip Flop pairs used:          260
-    Number with an unused Flip Flop:           163 out of     260   62%
-    Number with an unused LUT:                  68 out of     260   26%
-    Number of fully used LUT-FF pairs:          29 out of     260   11%
+  Number of LUT Flip Flop pairs used:          267
+    Number with an unused Flip Flop:           170 out of     267   63%
+    Number with an unused LUT:                  70 out of     267   26%
+    Number of fully used LUT-FF pairs:          27 out of     267   10%
     Number of unique control sets:              16
     Number of slice register sites lost
       to control set restrictions:              23 out of  11,440    1%
@@ -54,8 +54,8 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                       121 out of     186   65%
-    Number of LOCed IOBs:                        6 out of     121    4%
+  Number of bonded IOBs:                       171 out of     186   91%
+    Number of LOCed IOBs:                        6 out of     171    3%
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of      32    0%
@@ -80,11 +80,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                4.15
+Average Fanout of Non-Clock Nets:                4.02
 
 Peak Memory Usage:  847 MB
-Total REAL time to MAP completion:  46 secs 
-Total CPU time to MAP completion:   45 secs 
+Total REAL time to MAP completion:  53 secs 
+Total CPU time to MAP completion:   52 secs 
 
 Table of Contents
 -----------------
@@ -114,16 +114,16 @@ WARNING:Place:837 - Partially locked IO Bus is found.
    	 Comp: monitor<5>
    	 Comp: monitor<4>
 
-WARNING:PhysDesignRules:372 - Gated clock. Clock net clkw is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net ram_a_w is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net clkr is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net cc_r0_w is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net clkw is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net ram_a_w is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net cc_r0_w is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 
@@ -138,15 +138,15 @@ INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
    1.260 Volts)
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
-INFO:Place:834 - Only a subset of IOs are locked. Out of 121 IOs, 6 are locked
-   and 115 are not locked. If you would like to print the names of these IOs,
+INFO:Place:834 - Only a subset of IOs are locked. Out of 171 IOs, 6 are locked
+   and 165 are not locked. If you would like to print the names of these IOs,
    please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
 INFO:Pack:1650 - Map created a placed design.
 
 Section 4 - Removed Logic Summary
 ---------------------------------
  181 block(s) removed
-  49 block(s) optimized away
+  45 block(s) optimized away
  194 signal(s) removed
 
 Section 5 - Removed Logic
@@ -695,10 +695,6 @@ BUF 		XLXI_173/XLXI_46
 BUF 		XLXI_173/XLXI_49
 INV 		XLXI_173/XLXI_62
 GND 		XLXI_185
-BUF 		XLXI_561
-BUF 		XLXI_562
-BUF 		XLXI_563
-BUF 		XLXI_564
 PULLUP 		alu_inst/XLXI_135/XLXI_11
 PULLDOWN 		alu_inst/XLXI_135/XLXI_12
 GND 		alu_inst/XLXI_138/XLXI_14/XLXI_1/XST_GND
@@ -723,21 +719,38 @@ Section 6 - IOB Properties
 | IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
 |                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
-| XLXN_439                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| XLXN_440                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| XLXN_443                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| XLXN_444                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | can_read                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | can_write                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | clk                                | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| cpu_C_in_enabled                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_C_out_flipflop_o               | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | cpu_acc_r                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | cpu_acc_w                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_alu_C_in                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_alu_C_out                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_alu_eq                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_alu_gt                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_alu_x<0>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_alu_x<1>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_alu_x<2>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_alu_x<3>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_alu_x<4>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_alu_x<5>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_alu_x<6>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_alu_x<7>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_alu_z                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | cpu_bus1                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | cpu_clk                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | cpu_clk_int                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | cpu_clkc                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | cpu_clkr                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | cpu_clkw                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_flags_C_out                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_flags_clr                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_flags_eq                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_flags_gt                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_flags_w                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_flags_z                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | cpu_iar_o<0>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | cpu_iar_o<1>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | cpu_iar_o<2>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
@@ -758,6 +771,23 @@ Section 6 - IOB Properties
 | cpu_ir_o<7>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | cpu_ir_w                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | cpu_is_bus1_w                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_op_alt_nop                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_op_alu                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_op_alu_add                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_op_alu_and                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_op_alu_ifjmp                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_op_alu_lshift                  | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_op_alu_nop                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_op_alu_not                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_op_alu_or                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_op_alu_rshift                  | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_op_alu_xor                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_op_flg_clf                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_op_jmp_jmp                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_op_jmp_jmpr                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_op_ls_ld                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_op_ls_ldc                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_op_ls_st                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | cpu_r0_r                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | cpu_r0_w                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | cpu_r1_r                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
@@ -766,6 +796,14 @@ Section 6 - IOB Properties
 | cpu_r2_w                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | cpu_r3_r                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | cpu_r3_w                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_ram_a_o<0>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_ram_a_o<1>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_ram_a_o<2>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_ram_a_o<3>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_ram_a_o<4>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_ram_a_o<5>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_ram_a_o<6>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_ram_a_o<7>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | cpu_ram_a_w                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | cpu_ram_r                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | cpu_ram_w                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
@@ -775,6 +813,14 @@ Section 6 - IOB Properties
 | cpu_s4                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | cpu_s5                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | cpu_s6                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_sysbus<0>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_sysbus<1>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_sysbus<2>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_sysbus<3>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_sysbus<4>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_sysbus<5>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_sysbus<6>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cpu_sysbus<7>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | cpu_temp_o<0>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | cpu_temp_o<1>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | cpu_temp_o<2>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |

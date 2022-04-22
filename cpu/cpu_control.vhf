@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu_control.vhf
--- /___/   /\     Timestamp : 04/04/2022 23:47:23
+-- /___/   /\     Timestamp : 04/23/2022 00:37:20
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -259,8 +259,8 @@ architecture BEHAVIORAL of stepper_MUSER_cpu_control is
    end component;
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_24 : label is "XLXI_24_24";
-   attribute HU_SET of XLXI_25 : label is "XLXI_25_25";
+   attribute HU_SET of XLXI_24 : label is "XLXI_24_42";
+   attribute HU_SET of XLXI_25 : label is "XLXI_25_43";
 begin
    XLXI_21 : VCC
       port map (P=>XLXN_14);
@@ -312,10 +312,12 @@ entity cpu_control is
           ir               : in    std_logic_vector (7 downto 0); 
           acc_r            : out   std_logic; 
           acc_w            : out   std_logic; 
+          alt_nop          : out   std_logic; 
           alu              : out   std_logic; 
           alu_and          : out   std_logic; 
           alu_C_in_enabled : out   std_logic; 
           alu_lshift       : out   std_logic; 
+          alu_nop          : out   std_logic; 
           alu_not          : out   std_logic; 
           alu_op0          : out   std_logic; 
           alu_op1          : out   std_logic; 
@@ -327,21 +329,20 @@ entity cpu_control is
           bus1             : out   std_logic; 
           flags_clr        : out   std_logic; 
           flags_w          : out   std_logic; 
+          flg_clf          : out   std_logic; 
           ground           : out   std_logic; 
           iar_r            : out   std_logic; 
           iar_w            : out   std_logic; 
           ir_w             : out   std_logic; 
+          jmp_ifjmp        : out   std_logic; 
+          jmp_jmp          : out   std_logic; 
+          jmp_jmpr         : out   std_logic; 
+          ls_ld            : out   std_logic; 
+          ls_ldc           : out   std_logic; 
+          ls_st            : out   std_logic; 
           ram_a_w          : out   std_logic; 
           ram_r            : out   std_logic; 
           ram_w            : out   std_logic; 
-          ra_0             : out   std_logic; 
-          ra_1             : out   std_logic; 
-          ra_2             : out   std_logic; 
-          ra_3             : out   std_logic; 
-          rb_0             : out   std_logic; 
-          rb_1             : out   std_logic; 
-          rb_2             : out   std_logic; 
-          rb_3             : out   std_logic; 
           r0_r             : out   std_logic; 
           r0_w             : out   std_logic; 
           r1_r             : out   std_logic; 
@@ -375,29 +376,22 @@ architecture BEHAVIORAL of cpu_control is
    signal flags_gt                        : std_logic;
    signal flags_z                         : std_logic;
    signal flag_equals_op                  : std_logic;
-   signal flg_clf                         : std_logic;
    signal flg_clf_s4                      : std_logic;
-   signal jmp_ifjmp                       : std_logic;
    signal jmp_ifjmp_flag_equals_op        : std_logic;
    signal jmp_ifjmp_flag_equals_op_s4     : std_logic;
    signal jmp_ifjmp_flag_equals_op_s5     : std_logic;
    signal jmp_ifjmp_flag_not_equals_op    : std_logic;
    signal jmp_ifjmp_flag_not_equals_op_s4 : std_logic;
    signal jmp_ifjmp_flag_not_equals_op_s5 : std_logic;
-   signal jmp_jmp                         : std_logic;
-   signal jmp_jmpr                        : std_logic;
    signal jmp_jmpr_s4                     : std_logic;
    signal jmp_jmp_s4                      : std_logic;
    signal jmp_jmp_s5                      : std_logic;
    signal ls_jmp_flg                      : std_logic;
-   signal ls_ld                           : std_logic;
-   signal ls_ldc                          : std_logic;
    signal ls_ldc_s4                       : std_logic;
    signal ls_ldc_s5                       : std_logic;
    signal ls_ldc_s6                       : std_logic;
    signal ls_ldst_s4                      : std_logic;
    signal ls_ld_s5                        : std_logic;
-   signal ls_st                           : std_logic;
    signal ls_st_s5                        : std_logic;
    signal op_c                            : std_logic;
    signal op_eq                           : std_logic;
@@ -405,6 +399,10 @@ architecture BEHAVIORAL of cpu_control is
    signal op_z                            : std_logic;
    signal raw_int                         : std_logic;
    signal ra_int                          : std_logic;
+   signal ra_0                            : std_logic;
+   signal ra_1                            : std_logic;
+   signal ra_2                            : std_logic;
+   signal ra_3                            : std_logic;
    signal ra0_r                           : std_logic;
    signal ra0_w                           : std_logic;
    signal ra1_r                           : std_logic;
@@ -414,6 +412,10 @@ architecture BEHAVIORAL of cpu_control is
    signal ra3_r                           : std_logic;
    signal ra3_w                           : std_logic;
    signal rb_int                          : std_logic;
+   signal rb_0                            : std_logic;
+   signal rb_1                            : std_logic;
+   signal rb_2                            : std_logic;
+   signal rb_3                            : std_logic;
    signal rb0_r                           : std_logic;
    signal rb1_r                           : std_logic;
    signal rb2_r                           : std_logic;
@@ -429,7 +431,6 @@ architecture BEHAVIORAL of cpu_control is
    signal XLXN_30                         : std_logic;
    signal XLXN_31                         : std_logic;
    signal XLXN_32                         : std_logic;
-   signal XLXN_75                         : std_logic;
    signal XLXN_83                         : std_logic;
    signal XLXN_84                         : std_logic;
    signal XLXN_99                         : std_logic;
@@ -452,6 +453,7 @@ architecture BEHAVIORAL of cpu_control is
    signal XLXN_1021                       : std_logic;
    signal XLXN_1034                       : std_logic;
    signal XLXN_1063                       : std_logic;
+   signal jmp_ifjmp_DUMMY                 : std_logic;
    signal alu_sum_DUMMY                   : std_logic;
    signal alu_rshift_DUMMY                : std_logic;
    signal s1_DUMMY                        : std_logic;
@@ -460,21 +462,19 @@ architecture BEHAVIORAL of cpu_control is
    signal s4_DUMMY                        : std_logic;
    signal s5_DUMMY                        : std_logic;
    signal s6_DUMMY                        : std_logic;
+   signal jmp_jmpr_DUMMY                  : std_logic;
    signal alu_and_DUMMY                   : std_logic;
    signal alu_xor_DUMMY                   : std_logic;
    signal alu_or_DUMMY                    : std_logic;
-   signal rb_0_DUMMY                      : std_logic;
-   signal rb_1_DUMMY                      : std_logic;
-   signal rb_2_DUMMY                      : std_logic;
-   signal rb_3_DUMMY                      : std_logic;
+   signal jmp_jmp_DUMMY                   : std_logic;
+   signal flg_clf_DUMMY                   : std_logic;
+   signal ls_ld_DUMMY                     : std_logic;
    signal alu_lshift_DUMMY                : std_logic;
    signal alu_DUMMY                       : std_logic;
    signal ground_DUMMY                    : std_logic;
    signal alu_not_DUMMY                   : std_logic;
-   signal ra_0_DUMMY                      : std_logic;
-   signal ra_1_DUMMY                      : std_logic;
-   signal ra_2_DUMMY                      : std_logic;
-   signal ra_3_DUMMY                      : std_logic;
+   signal ls_ldc_DUMMY                    : std_logic;
+   signal ls_st_DUMMY                     : std_logic;
    signal XLXI_556_I0_openSignal          : std_logic;
    signal XLXI_556_I1_openSignal          : std_logic;
    signal XLXI_556_I2_openSignal          : std_logic;
@@ -594,11 +594,11 @@ architecture BEHAVIORAL of cpu_control is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_39 : label is "XLXI_39_28";
-   attribute HU_SET of XLXI_47 : label is "XLXI_47_26";
-   attribute HU_SET of XLXI_48 : label is "XLXI_48_27";
-   attribute HU_SET of XLXI_252 : label is "XLXI_252_29";
-   attribute HU_SET of XLXI_577 : label is "XLXI_577_30";
+   attribute HU_SET of XLXI_39 : label is "XLXI_39_46";
+   attribute HU_SET of XLXI_47 : label is "XLXI_47_44";
+   attribute HU_SET of XLXI_48 : label is "XLXI_48_45";
+   attribute HU_SET of XLXI_252 : label is "XLXI_252_47";
+   attribute HU_SET of XLXI_577 : label is "XLXI_577_48";
 begin
    alu <= alu_DUMMY;
    alu_and <= alu_and_DUMMY;
@@ -608,15 +608,14 @@ begin
    alu_rshift <= alu_rshift_DUMMY;
    alu_sum <= alu_sum_DUMMY;
    alu_xor <= alu_xor_DUMMY;
+   flg_clf <= flg_clf_DUMMY;
    ground <= ground_DUMMY;
-   ra_0 <= ra_0_DUMMY;
-   ra_1 <= ra_1_DUMMY;
-   ra_2 <= ra_2_DUMMY;
-   ra_3 <= ra_3_DUMMY;
-   rb_0 <= rb_0_DUMMY;
-   rb_1 <= rb_1_DUMMY;
-   rb_2 <= rb_2_DUMMY;
-   rb_3 <= rb_3_DUMMY;
+   jmp_ifjmp <= jmp_ifjmp_DUMMY;
+   jmp_jmp <= jmp_jmp_DUMMY;
+   jmp_jmpr <= jmp_jmpr_DUMMY;
+   ls_ld <= ls_ld_DUMMY;
+   ls_ldc <= ls_ldc_DUMMY;
+   ls_st <= ls_st_DUMMY;
    s1 <= s1_DUMMY;
    s2 <= s2_DUMMY;
    s3 <= s3_DUMMY;
@@ -723,7 +722,7 @@ begin
                 D4=>alu_and_DUMMY,
                 D5=>alu_or_DUMMY,
                 D6=>alu_xor_DUMMY,
-                D7=>XLXN_75);
+                D7=>alu_nop);
    
    XLXI_40 : BUF
       port map (I=>ir(7),
@@ -756,19 +755,19 @@ begin
       port map (A0=>ir(2),
                 A1=>ir(3),
                 E=>XLXN_99,
-                D0=>ra_0_DUMMY,
-                D1=>ra_1_DUMMY,
-                D2=>ra_2_DUMMY,
-                D3=>ra_3_DUMMY);
+                D0=>ra_0,
+                D1=>ra_1,
+                D2=>ra_2,
+                D3=>ra_3);
    
    XLXI_48 : D2_4E_HXILINX_cpu_control
       port map (A0=>ir(0),
                 A1=>ir(1),
                 E=>XLXN_99,
-                D0=>rb_0_DUMMY,
-                D1=>rb_1_DUMMY,
-                D2=>rb_2_DUMMY,
-                D3=>rb_3_DUMMY);
+                D0=>rb_0,
+                D1=>rb_1,
+                D2=>rb_2,
+                D3=>rb_3);
    
    XLXI_52 : VCC
       port map (P=>XLXN_99);
@@ -857,14 +856,14 @@ begin
                 A1=>ir(5),
                 A2=>ir(6),
                 E=>ls_jmp_flg,
-                D0=>ls_ld,
-                D1=>ls_st,
-                D2=>ls_ldc,
-                D3=>jmp_jmpr,
-                D4=>jmp_jmp,
-                D5=>jmp_ifjmp,
-                D6=>flg_clf,
-                D7=>open);
+                D0=>ls_ld_DUMMY,
+                D1=>ls_st_DUMMY,
+                D2=>ls_ldc_DUMMY,
+                D3=>jmp_jmpr_DUMMY,
+                D4=>jmp_jmp_DUMMY,
+                D5=>jmp_ifjmp_DUMMY,
+                D6=>flg_clf_DUMMY,
+                D7=>alt_nop);
    
    XLXI_255 : AND2
       port map (I0=>XLXN_462,
@@ -872,27 +871,27 @@ begin
                 O=>ls_ldst_s4);
    
    XLXI_260 : OR2
-      port map (I0=>ls_st,
-                I1=>ls_ld,
+      port map (I0=>ls_st_DUMMY,
+                I1=>ls_ld_DUMMY,
                 O=>XLXN_462);
    
    XLXI_272 : AND2
-      port map (I0=>ra_0_DUMMY,
+      port map (I0=>ra_0,
                 I1=>ra_int,
                 O=>ra0_r);
    
    XLXI_273 : AND2
-      port map (I0=>ra_1_DUMMY,
+      port map (I0=>ra_1,
                 I1=>ra_int,
                 O=>ra1_r);
    
    XLXI_274 : AND2
-      port map (I0=>ra_2_DUMMY,
+      port map (I0=>ra_2,
                 I1=>ra_int,
                 O=>ra2_r);
    
    XLXI_275 : AND2
-      port map (I0=>ra_3_DUMMY,
+      port map (I0=>ra_3,
                 I1=>ra_int,
                 O=>ra3_r);
    
@@ -914,22 +913,22 @@ begin
                 O=>rb_int);
    
    XLXI_400 : AND2
-      port map (I0=>rb_0_DUMMY,
+      port map (I0=>rb_0,
                 I1=>rb_int,
                 O=>rb0_r);
    
    XLXI_401 : AND2
-      port map (I0=>rb_1_DUMMY,
+      port map (I0=>rb_1,
                 I1=>rb_int,
                 O=>rb1_r);
    
    XLXI_402 : AND2
-      port map (I0=>rb_2_DUMMY,
+      port map (I0=>rb_2,
                 I1=>rb_int,
                 O=>rb2_r);
    
    XLXI_403 : AND2
-      port map (I0=>rb_3_DUMMY,
+      port map (I0=>rb_3,
                 I1=>rb_int,
                 O=>rb3_r);
    
@@ -954,22 +953,22 @@ begin
                 O=>XLXN_814);
    
    XLXI_458 : AND2
-      port map (I0=>ra_0_DUMMY,
+      port map (I0=>ra_0,
                 I1=>raw_int,
                 O=>ra0_w);
    
    XLXI_459 : AND2
-      port map (I0=>ra_1_DUMMY,
+      port map (I0=>ra_1,
                 I1=>raw_int,
                 O=>ra1_w);
    
    XLXI_460 : AND2
-      port map (I0=>ra_2_DUMMY,
+      port map (I0=>ra_2,
                 I1=>raw_int,
                 O=>ra2_w);
    
    XLXI_461 : AND2
-      port map (I0=>ra_3_DUMMY,
+      port map (I0=>ra_3,
                 I1=>raw_int,
                 O=>ra3_w);
    
@@ -1001,12 +1000,12 @@ begin
                 O=>XLXN_155);
    
    XLXI_487 : AND2
-      port map (I0=>ls_ld,
+      port map (I0=>ls_ld_DUMMY,
                 I1=>s5_DUMMY,
                 O=>ls_ld_s5);
    
    XLXI_491 : AND2
-      port map (I0=>ls_st,
+      port map (I0=>ls_st_DUMMY,
                 I1=>s5_DUMMY,
                 O=>ls_st_s5);
    
@@ -1023,27 +1022,27 @@ begin
                 O=>XLXN_981);
    
    XLXI_494 : AND2
-      port map (I0=>ls_ldc,
+      port map (I0=>ls_ldc_DUMMY,
                 I1=>s4_DUMMY,
                 O=>ls_ldc_s4);
    
    XLXI_498 : AND2
-      port map (I0=>ls_ldc,
+      port map (I0=>ls_ldc_DUMMY,
                 I1=>s5_DUMMY,
                 O=>ls_ldc_s5);
    
    XLXI_499 : AND2
-      port map (I0=>ls_ldc,
+      port map (I0=>ls_ldc_DUMMY,
                 I1=>s6_DUMMY,
                 O=>ls_ldc_s6);
    
    XLXI_500 : AND2
-      port map (I0=>jmp_jmpr,
+      port map (I0=>jmp_jmpr_DUMMY,
                 I1=>s4_DUMMY,
                 O=>jmp_jmpr_s4);
    
    XLXI_501 : AND2
-      port map (I0=>jmp_jmp,
+      port map (I0=>jmp_jmp_DUMMY,
                 I1=>s4_DUMMY,
                 O=>jmp_jmp_s4);
    
@@ -1118,7 +1117,7 @@ begin
    
    XLXI_541 : AND2
       port map (I0=>flag_equals_op,
-                I1=>jmp_ifjmp,
+                I1=>jmp_ifjmp_DUMMY,
                 O=>jmp_ifjmp_flag_equals_op);
    
    XLXI_547 : AND2
@@ -1145,7 +1144,7 @@ begin
                 O=>flags_clr);
    
    XLXI_552 : AND2
-      port map (I0=>flg_clf,
+      port map (I0=>flg_clf_DUMMY,
                 I1=>s4_DUMMY,
                 O=>flg_clf_s4);
    
@@ -1197,7 +1196,7 @@ begin
                 O=>XLXN_16);
    
    XLXI_563 : AND2
-      port map (I0=>jmp_jmp,
+      port map (I0=>jmp_jmp_DUMMY,
                 I1=>s5_DUMMY,
                 O=>jmp_jmp_s5);
    
@@ -1213,7 +1212,7 @@ begin
    
    XLXI_573 : AND2
       port map (I0=>XLXN_1063,
-                I1=>jmp_ifjmp,
+                I1=>jmp_ifjmp_DUMMY,
                 O=>jmp_ifjmp_flag_not_equals_op);
    
    XLXI_574 : INV
