@@ -10,7 +10,7 @@ Target Device  : xa6slx9
 Target Package : ftg256
 Target Speed   : -3
 Mapper Version : aspartan6 -- $Revision: 1.55 $
-Mapped Date    : Sat Apr 23 02:28:27 2022
+Mapped Date    : Sat Apr 23 02:53:34 2022
 
 Design Summary
 --------------
@@ -83,8 +83,8 @@ Specific Feature Utilization:
 Average Fanout of Non-Clock Nets:                4.02
 
 Peak Memory Usage:  847 MB
-Total REAL time to MAP completion:  53 secs 
-Total CPU time to MAP completion:   52 secs 
+Total REAL time to MAP completion:  47 secs 
+Total CPU time to MAP completion:   46 secs 
 
 Table of Contents
 -----------------
