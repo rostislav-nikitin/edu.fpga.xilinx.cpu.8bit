@@ -1,0 +1,237 @@
+--------------------------------------------------------------------------------
+Release 14.3 Trace  (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.3/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml vga_v2.twx vga_v2.ncd -o vga_v2.twr vga_v2.pcf -ucf
+vga_v2.ucf
+
+Design file:              vga_v2.ncd
+Physical constraint file: vga_v2.pcf
+Device,package,speed:     xa6slx9,ftg256,I,-3 (PRODUCTION 1.23 2012-10-12)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 
+50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 2 paths analyzed, 2 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   1.730ns.
+--------------------------------------------------------------------------------
+
+Paths for end point clk_div_2 (SLICE_X17Y30.AX), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     18.453ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               sig_clk_div_2 (FF)
+  Destination:          clk_div_2 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      1.488ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.024ns (0.604 - 0.628)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: sig_clk_div_2 to clk_div_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X12Y33.AQ      Tcko                  0.447   sig_clk_div_2
+                                                       sig_clk_div_2
+    SLICE_X12Y33.A6      net (fanout=2)        0.123   sig_clk_div_2
+    SLICE_X12Y33.A       Tilo                  0.203   sig_clk_div_2
+                                                       sig_clk_div_2_BUFG_LUT1_INV_0
+    SLICE_X17Y30.AX      net (fanout=1)        0.652   sig_clk_div_2_BUFG_LUT1
+    SLICE_X17Y30.CLK     Tdick                 0.063   clk_div_2_OBUF
+                                                       clk_div_2
+    -------------------------------------------------  ---------------------------
+    Total                                      1.488ns (0.713ns logic, 0.775ns route)
+                                                       (47.9% logic, 52.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point sig_clk_div_2 (SLICE_X12Y33.A6), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     19.106ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               sig_clk_div_2 (FF)
+  Destination:          sig_clk_div_2 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      0.859ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: sig_clk_div_2 to sig_clk_div_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X12Y33.AQ      Tcko                  0.447   sig_clk_div_2
+                                                       sig_clk_div_2
+    SLICE_X12Y33.A6      net (fanout=2)        0.123   sig_clk_div_2
+    SLICE_X12Y33.CLK     Tas                   0.289   sig_clk_div_2
+                                                       sig_clk_div_2_BUFG_LUT1_INV_0
+                                                       sig_clk_div_2
+    -------------------------------------------------  ---------------------------
+    Total                                      0.859ns (0.736ns logic, 0.123ns route)
+                                                       (85.7% logic, 14.3% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point sig_clk_div_2 (SLICE_X12Y33.A6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.452ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               sig_clk_div_2 (FF)
+  Destination:          sig_clk_div_2 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.452ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: sig_clk_div_2 to sig_clk_div_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X12Y33.AQ      Tcko                  0.234   sig_clk_div_2
+                                                       sig_clk_div_2
+    SLICE_X12Y33.A6      net (fanout=2)        0.021   sig_clk_div_2
+    SLICE_X12Y33.CLK     Tah         (-Th)    -0.197   sig_clk_div_2
+                                                       sig_clk_div_2_BUFG_LUT1_INV_0
+                                                       sig_clk_div_2
+    -------------------------------------------------  ---------------------------
+    Total                                      0.452ns (0.431ns logic, 0.021ns route)
+                                                       (95.4% logic, 4.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point clk_div_2 (SLICE_X17Y30.AX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.821ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               sig_clk_div_2 (FF)
+  Destination:          clk_div_2 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.829ns (Levels of Logic = 1)
+  Clock Path Skew:      0.008ns (0.328 - 0.320)
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: sig_clk_div_2 to clk_div_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X12Y33.AQ      Tcko                  0.234   sig_clk_div_2
+                                                       sig_clk_div_2
+    SLICE_X12Y33.A6      net (fanout=2)        0.021   sig_clk_div_2
+    SLICE_X12Y33.A       Tilo                  0.156   sig_clk_div_2
+                                                       sig_clk_div_2_BUFG_LUT1_INV_0
+    SLICE_X17Y30.AX      net (fanout=1)        0.359   sig_clk_div_2_BUFG_LUT1
+    SLICE_X17Y30.CLK     Tckdi       (-Th)    -0.059   clk_div_2_OBUF
+                                                       clk_div_2
+    -------------------------------------------------  ---------------------------
+    Total                                      0.829ns (0.449ns logic, 0.380ns route)
+                                                       (54.2% logic, 45.8% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 18.270ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 1.730ns (578.035MHz) (Tbcper_I)
+  Physical resource: clk_BUFGP/BUFG/I0
+  Logical resource: clk_BUFGP/BUFG/I0
+  Location pin: BUFGMUX_X3Y13.I0
+  Clock network: clk_BUFGP/IBUFG
+--------------------------------------------------------------------------------
+Slack: 19.595ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 0.405ns (2469.136MHz) (Tcp)
+  Physical resource: sig_clk_div_2/CLK
+  Logical resource: sig_clk_div_2/CK
+  Location pin: SLICE_X12Y33.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 19.606ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 0.394ns (2538.071MHz) (Tcp)
+  Physical resource: clk_div_2_OBUF/CLK
+  Logical resource: clk_div_2/CK
+  Location pin: SLICE_X17Y30.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    1.547|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 2 paths, 0 nets, and 5 connections
+
+Design statistics:
+   Minimum period:   1.730ns{1}   (Maximum frequency: 578.035MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Mon Apr 25 01:11:03 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 378 MB
+
+
+

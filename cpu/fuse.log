@@ -1,22 +1,21 @@
-Running: /opt/Xilinx/14.3/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/tb_vga_test_isim_beh.exe -prj /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/tb_vga_test_beh.prj work.tb_vga_test 
+Running: /opt/Xilinx/14.3/ISE_DS/ISE/bin/lin64/unwrapped/fuse -relaunch -intstyle "ise" -incremental -lib "secureip" -o "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/tb_vga_v2_isim_beh.exe" -prj "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/tb_vga_v2_beh.prj" "work.tb_vga_v2" 
 ISim P.40xd (signature 0xfbc00daa)
 Number of CPUs detected in this system: 32
 Turning on mult-threading, number of parallel sub-compilation jobs: 64 
 Determining compilation order of HDL files
-Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/vga_test.vhd" into library work
-Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/tb_vga_test.vhd" into library work
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/vga_v2.vhd" into library work
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/tb_vga_v2.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 84868 KB
+Fuse Memory Usage: 83156 KB
 Fuse CPU Usage: 1130 ms
 Compiling package standard
 Compiling package std_logic_1164
-Compiling package numeric_std
-Compiling architecture behavioral of entity vga_test [vga_test_default]
-Compiling architecture behavior of entity tb_vga_test
+Compiling architecture behavioral of entity vga_v2 [vga_v2_default]
+Compiling architecture behavior of entity tb_vga_v2
 Time Resolution for simulation is 1ps.
-Compiled 6 VHDL Units
-Built simulation executable /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/tb_vga_test_isim_beh.exe
-Fuse Memory Usage: 4326516 KB
-Fuse CPU Usage: 1250 ms
-GCC CPU Usage: 1640 ms
+Compiled 5 VHDL Units
+Built simulation executable /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/tb_vga_v2_isim_beh.exe
+Fuse Memory Usage: 4319000 KB
+Fuse CPU Usage: 1170 ms
+GCC CPU Usage: 180 ms

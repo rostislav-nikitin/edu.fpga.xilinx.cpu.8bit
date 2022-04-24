@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/tb_vga_test_isim_beh.exe" -prj "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/tb_vga_test_beh.prj" "work.tb_vga_test" 
+-intstyle "ise" -incremental -lib "secureip" -o "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/tb_vga_v2_isim_beh.exe" -prj "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/tb_vga_v2_beh.prj" "work.tb_vga_v2" 
