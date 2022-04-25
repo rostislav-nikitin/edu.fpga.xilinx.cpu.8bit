@@ -445,3 +445,5 @@ par -w -intstyle ise -ol high -mt off cpu_map.ncd cpu.ncd cpu.pcf
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
 bitgen -intstyle ise -f cpu.ut cpu.ncd 
 xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.syr" 

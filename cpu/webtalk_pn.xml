@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Tue Apr 26 00:12:56 2022">
+<application name="pn" timeStamp="Tue Apr 26 02:04:37 2022">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="904B833959A352B0FF1B2D1201703EB3" type="project"/>
 <property name="ProjectIteration" value="146" type="project"/>
@@ -17,7 +17,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_LastAppliedStrategy" value="Xilinx Default (unlocked)" type="design"/>
 <property name="PROP_ManualCompileOrderImp" value="false" type="design"/>
 <property name="PROP_PropSpecInProjFile" value="Store all values" type="design"/>
-<property name="PROP_SelectedInstanceHierarchicalPath" value="/tb_vga_v2" type="process"/>
+<property name="PROP_SelectedInstanceHierarchicalPath" value="/cpu_cpu_sch_tb/UUT" type="process"/>
 <property name="PROP_Simulator" value="ISim (VHDL/Verilog)" type="design"/>
 <property name="PROP_SynthTopFile" value="changed" type="process"/>
 <property name="PROP_Top_Level_Module_Type" value="HDL" type="design"/>
@@ -30,7 +30,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
 <property name="PROP_lockPinsUcfFile" value="changed" type="process"/>
-<property name="PROP_selectedSimRootSourceNode_behav" value="work.tb_vga_v2" type="process"/>
+<property name="PROP_selectedSimRootSourceNode_behav" value="work.cpu" type="process"/>
 <property name="PROP_xilxBitgCfg_Rate_spartan6" value="26" type="process"/>
 <property name="PROP_xilxBitgCfg_Unused" value="Float" type="process"/>
 <property name="PROP_xilxBitgStart_IntDone" value="true" type="process"/>

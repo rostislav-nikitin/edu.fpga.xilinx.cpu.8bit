@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu.vhf
--- /___/   /\     Timestamp : 04/26/2022 01:54:20
+-- /___/   /\     Timestamp : 04/26/2022 02:09:56
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -4268,7 +4268,6 @@ architecture BEHAVIORAL of cpu is
    signal manr_o_DUMMY                        : std_logic_vector (7 downto 0);
    signal manr_r_DUMMY                        : std_logic;
    signal manr_w_DUMMY                        : std_logic;
-   signal cpu_sysbus_DUMMY                    : std_logic_vector (7 downto 0);
    signal XLXI_173_external_clk_in_openSignal : std_logic;
    component alu_MUSER_cpu
       port ( a     : in    std_logic_vector (7 downto 0); 
@@ -4497,7 +4496,6 @@ architecture BEHAVIORAL of cpu is
    attribute HU_SET of XLXI_104 : label is "XLXI_104_40";
    attribute HU_SET of XLXI_571 : label is "XLXI_571_41";
 begin
-   cpu_sysbus(7 downto 0) <= cpu_sysbus_DUMMY(7 downto 0);
    manr_o(7 downto 0) <= manr_o_DUMMY(7 downto 0);
    manr_r <= manr_r_DUMMY;
    manr_w <= manr_w_DUMMY;
@@ -5206,10 +5204,6 @@ begin
       port map (I=>alu_C_out_flipflop_o,
                 O=>cpu_C_out_flipflop_o);
    
-   XLXI_758 : buf_8bit_MUSER_cpu
-      port map (i(7 downto 0)=>sysbus(7 downto 0),
-                o(7 downto 0)=>cpu_sysbus_DUMMY(7 downto 0));
-   
    XLXI_799 : buf_8bit_MUSER_cpu
       port map (i(7 downto 0)=>ram_a_o(7 downto 0),
                 o(7 downto 0)=>cpu_ram_a_o(7 downto 0));
@@ -5220,7 +5214,7 @@ begin
    
    XLXI_860 : buf_8bit_MUSER_cpu
       port map (i(7 downto 0)=>sysbus(7 downto 0),
-                o(7 downto 0)=>cpu_sysbus_DUMMY(7 downto 0));
+                o(7 downto 0)=>cpu_sysbus(7 downto 0));
    
    XLXI_901 : BUF
       port map (I=>can_read,

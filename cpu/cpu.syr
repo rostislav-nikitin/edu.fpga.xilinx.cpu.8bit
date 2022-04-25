@@ -12,7 +12,7 @@ Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> 
 Reading design: cpu.prj
@@ -469,7 +469,7 @@ Elaborating entity <M8_1E_HXILINX_cpu> (architecture <M8_1E_HXILINX_cpu_V>) from
 INFO:HDLCompiler:679 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 201. Case statement is complete. others clause is never selected
 
 Elaborating entity <buf_8bit_MUSER_cpu> (architecture <BEHAVIORAL>) from library <work>.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 4272: Net <XLXI_173_external_clk_in_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 4271: Net <XLXI_173_external_clk_in_openSignal> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -480,9 +480,10 @@ Synthesizing Unit <cpu>.
     Set property "HU_SET = XLXI_87_39" for instance <XLXI_87>.
     Set property "HU_SET = XLXI_104_40" for instance <XLXI_104>.
     Set property "HU_SET = XLXI_571_41" for instance <XLXI_571>.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 4525: Output port <ground> of the instance <cpu_ctl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 4709: Output port <g> of the instance <XLXI_130> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 4729: Output port <G> of the instance <XLXI_136> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 4520: Output port <ground> of the instance <cpu_ctl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 4704: Output port <g> of the instance <XLXI_130> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 4724: Output port <G> of the instance <XLXI_136> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" line 5215: Output port <o> of the instance <XLXI_860> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <XLXI_173_external_clk_in_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	no macro.
@@ -1025,13 +1026,13 @@ Top Level Output File Name         : cpu.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 731
+# BELS                             : 734
 #      AND2                        : 108
 #      AND2B1                      : 1
 #      AND3                        : 1
 #      AND3B1                      : 4
 #      AND4                        : 1
-#      BUF                         : 174
+#      BUF                         : 177
 #      GND                         : 19
 #      INV                         : 53
 #      LUT1                        : 29
@@ -1059,9 +1060,9 @@ Primitive and Black Box Usage:
 #      RAM256X1S                   : 8
 # Clock Buffers                    : 1
 #      BUFG                        : 1
-# IO Buffers                       : 171
+# IO Buffers                       : 155
 #      IBUF                        : 34
-#      OBUF                        : 137
+#      OBUF                        : 121
 # Others                           : 5
 #      PULLDOWN                    : 1
 #      PULLUP                      : 4
@@ -1087,8 +1088,8 @@ Slice Logic Distribution:
    Number of unique control sets:        18
 
 IO Utilization: 
- Number of IOs:                         171
- Number of bonded IOBs:                 171  out of    186    91%  
+ Number of IOs:                         155
+ Number of bonded IOBs:                 155  out of    186    83%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
@@ -1138,9 +1139,9 @@ Timing Summary:
 Speed Grade: -3
 
    Minimum period: 7.515ns (Maximum Frequency: 133.063MHz)
-   Minimum input arrival time before clock: 17.425ns
-   Maximum output required time after clock: 31.626ns
-   Maximum combinational path delay: 31.502ns
+   Minimum input arrival time before clock: 17.405ns
+   Maximum output required time after clock: 31.606ns
+   Maximum combinational path delay: 31.482ns
 
 Timing Details:
 ---------------
@@ -1338,7 +1339,7 @@ Offset:              5.671ns (Levels of Logic = 4)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clkw'
   Total number of paths / destination ports: 1280 / 16
 -------------------------------------------------------------------------
-Offset:              17.388ns (Levels of Logic = 17)
+Offset:              17.368ns (Levels of Logic = 17)
   Source:            manual_clk_in (PAD)
   Destination:       XLXI_9/XLXI_23 (RAM)
   Destination Clock: clkw rising
@@ -1352,8 +1353,8 @@ Offset:              17.388ns (Levels of Logic = 17)
      LUT6:I2->O            4   0.203   1.028  Mmux_O1 (O)
      end scope: 'XLXI_173/XLXI_4:O'
      OR2:I1->O            12   0.223   0.908  clck_gen/XLXI_9 (clkr)
-     INV:I->O              2   0.568   0.981  XLXI_212 (sysbus_released_OBUF)
-     AND3:I0->O            9   0.203   1.194  XLXI_326 (can_read_OBUF)
+     INV:I->O              2   0.568   0.981  XLXI_212 (sysbus_released)
+     AND3:I0->O            9   0.203   1.194  XLXI_326 (can_read)
      AND2:I0->O            1   0.203   0.944  XLXI_545 (manual_acc_r)
      OR2:I0->O             2   0.203   0.616  XLXI_546 (acc_r)
      BUF:I->O              2   0.568   0.616  XLXI_130/XLXI_4 (XLXI_130/i<1>)
@@ -1366,17 +1367,17 @@ Offset:              17.388ns (Levels of Logic = 17)
      begin scope: 'XLXI_130/XLXI_1/XLXI_17:E'
      LUT2:I0->O            1   0.203   0.579  Mmux_O11 (O)
      end scope: 'XLXI_130/XLXI_1/XLXI_17:O'
-     BUF:I->O             21   0.568   1.113  XLXI_130/XLXI_1/XLXI_21 (sysbus_3_OBUF)
+     BUF:I->O             20   0.568   1.092  XLXI_130/XLXI_1/XLXI_21 (sysbus<3>)
      RAM256X1S:D               0.000          XLXI_9/XLXI_19
     ----------------------------------------
-    Total                     17.388ns (5.710ns logic, 11.678ns route)
-                                       (32.8% logic, 67.2% route)
+    Total                     17.368ns (5.710ns logic, 11.658ns route)
+                                       (32.9% logic, 67.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'ram_a_w'
   Total number of paths / destination ports: 1248 / 8
 -------------------------------------------------------------------------
-Offset:              17.425ns (Levels of Logic = 18)
+Offset:              17.405ns (Levels of Logic = 18)
   Source:            manual_clk_in (PAD)
   Destination:       XLXI_9/XLXI_15/Q_6 (LATCH)
   Destination Clock: ram_a_w falling
@@ -1390,8 +1391,8 @@ Offset:              17.425ns (Levels of Logic = 18)
      LUT6:I2->O            4   0.203   1.028  Mmux_O1 (O)
      end scope: 'XLXI_173/XLXI_4:O'
      OR2:I1->O            12   0.223   0.908  clck_gen/XLXI_9 (clkr)
-     INV:I->O              2   0.568   0.981  XLXI_212 (sysbus_released_OBUF)
-     AND3:I0->O            9   0.203   1.194  XLXI_326 (can_read_OBUF)
+     INV:I->O              2   0.568   0.981  XLXI_212 (sysbus_released)
+     AND3:I0->O            9   0.203   1.194  XLXI_326 (can_read)
      AND2:I0->O            1   0.203   0.944  XLXI_545 (manual_acc_r)
      OR2:I0->O             2   0.203   0.616  XLXI_546 (acc_r)
      BUF:I->O              2   0.568   0.616  XLXI_130/XLXI_4 (XLXI_130/i<1>)
@@ -1404,18 +1405,18 @@ Offset:              17.425ns (Levels of Logic = 18)
      begin scope: 'XLXI_130/XLXI_1/XLXI_17:E'
      LUT2:I0->O            1   0.203   0.579  Mmux_O11 (O)
      end scope: 'XLXI_130/XLXI_1/XLXI_17:O'
-     BUF:I->O             21   0.568   1.113  XLXI_130/XLXI_1/XLXI_21 (sysbus_3_OBUF)
+     BUF:I->O             20   0.568   1.092  XLXI_130/XLXI_1/XLXI_21 (sysbus<3>)
      begin scope: 'XLXI_9/XLXI_15:D<3>'
      LD:D                      0.037          Q_3
     ----------------------------------------
-    Total                     17.425ns (5.747ns logic, 11.678ns route)
+    Total                     17.405ns (5.747ns logic, 11.658ns route)
                                        (33.0% logic, 67.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'cc_r0_w'
   Total number of paths / destination ports: 1248 / 8
 -------------------------------------------------------------------------
-Offset:              17.425ns (Levels of Logic = 18)
+Offset:              17.405ns (Levels of Logic = 18)
   Source:            manual_clk_in (PAD)
   Destination:       XLXI_104/Q_6 (LATCH)
   Destination Clock: cc_r0_w falling
@@ -1429,8 +1430,8 @@ Offset:              17.425ns (Levels of Logic = 18)
      LUT6:I2->O            4   0.203   1.028  Mmux_O1 (O)
      end scope: 'XLXI_173/XLXI_4:O'
      OR2:I1->O            12   0.223   0.908  clck_gen/XLXI_9 (clkr)
-     INV:I->O              2   0.568   0.981  XLXI_212 (sysbus_released_OBUF)
-     AND3:I0->O            9   0.203   1.194  XLXI_326 (can_read_OBUF)
+     INV:I->O              2   0.568   0.981  XLXI_212 (sysbus_released)
+     AND3:I0->O            9   0.203   1.194  XLXI_326 (can_read)
      AND2:I0->O            1   0.203   0.944  XLXI_545 (manual_acc_r)
      OR2:I0->O             2   0.203   0.616  XLXI_546 (acc_r)
      BUF:I->O              2   0.568   0.616  XLXI_130/XLXI_4 (XLXI_130/i<1>)
@@ -1443,11 +1444,11 @@ Offset:              17.425ns (Levels of Logic = 18)
      begin scope: 'XLXI_130/XLXI_1/XLXI_17:E'
      LUT2:I0->O            1   0.203   0.579  Mmux_O11 (O)
      end scope: 'XLXI_130/XLXI_1/XLXI_17:O'
-     BUF:I->O             21   0.568   1.113  XLXI_130/XLXI_1/XLXI_21 (sysbus_3_OBUF)
+     BUF:I->O             20   0.568   1.092  XLXI_130/XLXI_1/XLXI_21 (sysbus<3>)
      begin scope: 'XLXI_104:D<3>'
      LD:D                      0.037          Q_3
     ----------------------------------------
-    Total                     17.425ns (5.747ns logic, 11.678ns route)
+    Total                     17.405ns (5.747ns logic, 11.658ns route)
                                        (33.0% logic, 67.0% route)
 
 =========================================================================
@@ -1480,9 +1481,9 @@ Offset:              9.668ns (Levels of Logic = 9)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_173/XLXI_4/O'
-  Total number of paths / destination ports: 8530 / 56
+  Total number of paths / destination ports: 7730 / 40
 -------------------------------------------------------------------------
-Offset:              29.729ns (Levels of Logic = 26)
+Offset:              29.709ns (Levels of Logic = 26)
   Source:            clck_gen/XLXI_4/q_tmp (FF)
   Destination:       cpu_alu_eq (PAD)
   Source Clock:      XLXI_173/XLXI_4/O falling
@@ -1494,8 +1495,8 @@ Offset:              29.729ns (Levels of Logic = 26)
      FDCE:C->Q             5   0.447   1.079  q_tmp (q_tmp)
      end scope: 'clck_gen/XLXI_4:Q'
      OR2:I0->O            12   0.203   0.908  clck_gen/XLXI_9 (clkr)
-     INV:I->O              2   0.568   0.981  XLXI_212 (sysbus_released_OBUF)
-     AND3:I0->O            9   0.203   1.194  XLXI_326 (can_read_OBUF)
+     INV:I->O              2   0.568   0.981  XLXI_212 (sysbus_released)
+     AND3:I0->O            9   0.203   1.194  XLXI_326 (can_read)
      AND2:I0->O            1   0.203   0.944  XLXI_545 (manual_acc_r)
      OR2:I0->O             2   0.203   0.616  XLXI_546 (acc_r)
      BUF:I->O              2   0.568   0.616  XLXI_130/XLXI_4 (XLXI_130/i<1>)
@@ -1508,7 +1509,7 @@ Offset:              29.729ns (Levels of Logic = 26)
      begin scope: 'XLXI_130/XLXI_1/XLXI_1:E'
      LUT2:I0->O            1   0.203   0.579  Mmux_O11 (O)
      end scope: 'XLXI_130/XLXI_1/XLXI_1:O'
-     BUF:I->O             21   0.568   1.458  XLXI_130/XLXI_1/XLXI_18 (sysbus_0_OBUF)
+     BUF:I->O             20   0.568   1.437  XLXI_130/XLXI_1/XLXI_18 (sysbus<0>)
      XNOR2:I1->O           2   0.223   0.981  alu_inst/XLXI_135/XLXI_9/XLXI_1 (alu_inst/XLXI_135/XLXI_9/XLXN_3)
      AND2:I0->O            1   0.203   0.924  alu_inst/XLXI_135/XLXI_9/XLXI_2 (alu_inst/XLXI_135/XLXN_56)
      AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_8/XLXI_2 (alu_inst/XLXI_135/XLXN_54)
@@ -1521,14 +1522,14 @@ Offset:              29.729ns (Levels of Logic = 26)
      BUF:I->O              1   0.568   0.579  XLXI_666 (cpu_alu_eq_OBUF)
      OBUF:I->O                 2.571          cpu_alu_eq_OBUF (cpu_alu_eq)
     ----------------------------------------
-    Total                     29.729ns (9.838ns logic, 19.891ns route)
+    Total                     29.709ns (9.838ns logic, 19.871ns route)
                                        (33.1% logic, 66.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_173/XLXI_1/eq'
-  Total number of paths / destination ports: 8530 / 56
+  Total number of paths / destination ports: 7730 / 40
 -------------------------------------------------------------------------
-Offset:              30.520ns (Levels of Logic = 28)
+Offset:              30.499ns (Levels of Logic = 28)
   Source:            XLXI_173/XLXI_1/XLXI_128/q_tmp (FF)
   Destination:       cpu_alu_eq (PAD)
   Source Clock:      XLXI_173/XLXI_1/eq rising
@@ -1543,8 +1544,8 @@ Offset:              30.520ns (Levels of Logic = 28)
      LUT6:I5->O            4   0.205   1.028  Mmux_O1 (O)
      end scope: 'XLXI_173/XLXI_4:O'
      OR2:I1->O            12   0.223   0.908  clck_gen/XLXI_9 (clkr)
-     INV:I->O              2   0.568   0.981  XLXI_212 (sysbus_released_OBUF)
-     AND3:I0->O            9   0.203   1.194  XLXI_326 (can_read_OBUF)
+     INV:I->O              2   0.568   0.981  XLXI_212 (sysbus_released)
+     AND3:I0->O            9   0.203   1.194  XLXI_326 (can_read)
      AND2:I0->O            1   0.203   0.944  XLXI_545 (manual_acc_r)
      OR2:I0->O             2   0.203   0.616  XLXI_546 (acc_r)
      BUF:I->O              2   0.568   0.616  XLXI_130/XLXI_4 (XLXI_130/i<1>)
@@ -1557,7 +1558,7 @@ Offset:              30.520ns (Levels of Logic = 28)
      begin scope: 'XLXI_130/XLXI_1/XLXI_1:E'
      LUT2:I0->O            1   0.203   0.579  Mmux_O11 (O)
      end scope: 'XLXI_130/XLXI_1/XLXI_1:O'
-     BUF:I->O             21   0.568   1.458  XLXI_130/XLXI_1/XLXI_18 (sysbus_0_OBUF)
+     BUF:I->O             20   0.568   1.437  XLXI_130/XLXI_1/XLXI_18 (sysbus<0>)
      XNOR2:I1->O           2   0.223   0.981  alu_inst/XLXI_135/XLXI_9/XLXI_1 (alu_inst/XLXI_135/XLXI_9/XLXN_3)
      AND2:I0->O            1   0.203   0.924  alu_inst/XLXI_135/XLXI_9/XLXI_2 (alu_inst/XLXI_135/XLXN_56)
      AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_8/XLXI_2 (alu_inst/XLXI_135/XLXN_54)
@@ -1570,14 +1571,14 @@ Offset:              30.520ns (Levels of Logic = 28)
      BUF:I->O              1   0.568   0.579  XLXI_666 (cpu_alu_eq_OBUF)
      OBUF:I->O                 2.571          cpu_alu_eq_OBUF (cpu_alu_eq)
     ----------------------------------------
-    Total                     30.520ns (10.063ns logic, 20.457ns route)
+    Total                     30.499ns (10.063ns logic, 20.436ns route)
                                        (33.0% logic, 67.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clck_gen/XLXI_4/q_tmp'
-  Total number of paths / destination ports: 55434 / 56
+  Total number of paths / destination ports: 50298 / 40
 -------------------------------------------------------------------------
-Offset:              31.626ns (Levels of Logic = 29)
+Offset:              31.606ns (Levels of Logic = 29)
   Source:            cpu_ctl/stp/XLXI_24/COUNT_0 (FF)
   Destination:       cpu_alu_eq (PAD)
   Source Clock:      clck_gen/XLXI_4/q_tmp falling
@@ -1606,7 +1607,7 @@ Offset:              31.626ns (Levels of Logic = 29)
      MUXF8:I0->O           1   0.144   0.580  Mmux_S3_D15_Mux_0_o_2_f8 (S3_D15_Mux_0_o)
      LUT2:I1->O            1   0.205   0.579  Mmux_O11 (O)
      end scope: 'XLXI_130/XLXI_1/XLXI_1:O'
-     BUF:I->O             21   0.568   1.458  XLXI_130/XLXI_1/XLXI_18 (sysbus_0_OBUF)
+     BUF:I->O             20   0.568   1.437  XLXI_130/XLXI_1/XLXI_18 (sysbus<0>)
      XNOR2:I1->O           2   0.223   0.981  alu_inst/XLXI_135/XLXI_9/XLXI_1 (alu_inst/XLXI_135/XLXI_9/XLXN_3)
      AND2:I0->O            1   0.203   0.924  alu_inst/XLXI_135/XLXI_9/XLXI_2 (alu_inst/XLXI_135/XLXN_56)
      AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_8/XLXI_2 (alu_inst/XLXI_135/XLXN_54)
@@ -1619,7 +1620,7 @@ Offset:              31.626ns (Levels of Logic = 29)
      BUF:I->O              1   0.568   0.579  XLXI_666 (cpu_alu_eq_OBUF)
      OBUF:I->O                 2.571          cpu_alu_eq_OBUF (cpu_alu_eq)
     ----------------------------------------
-    Total                     31.626ns (9.735ns logic, 21.891ns route)
+    Total                     31.606ns (9.735ns logic, 21.871ns route)
                                        (30.8% logic, 69.2% route)
 
 =========================================================================
@@ -1665,9 +1666,9 @@ Offset:              3.648ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 26680 / 60
+  Total number of paths / destination ports: 24184 / 44
 -------------------------------------------------------------------------
-Delay:               31.502ns (Levels of Logic = 28)
+Delay:               31.482ns (Levels of Logic = 28)
   Source:            manual_clk_in (PAD)
   Destination:       cpu_alu_eq (PAD)
 
@@ -1680,8 +1681,8 @@ Delay:               31.502ns (Levels of Logic = 28)
      LUT6:I2->O            4   0.203   1.028  Mmux_O1 (O)
      end scope: 'XLXI_173/XLXI_4:O'
      OR2:I1->O            12   0.223   0.908  clck_gen/XLXI_9 (clkr)
-     INV:I->O              2   0.568   0.981  XLXI_212 (sysbus_released_OBUF)
-     AND3:I0->O            9   0.203   1.194  XLXI_326 (can_read_OBUF)
+     INV:I->O              2   0.568   0.981  XLXI_212 (sysbus_released)
+     AND3:I0->O            9   0.203   1.194  XLXI_326 (can_read)
      AND2:I0->O            1   0.203   0.944  XLXI_545 (manual_acc_r)
      OR2:I0->O             2   0.203   0.616  XLXI_546 (acc_r)
      BUF:I->O              2   0.568   0.616  XLXI_130/XLXI_4 (XLXI_130/i<1>)
@@ -1694,7 +1695,7 @@ Delay:               31.502ns (Levels of Logic = 28)
      begin scope: 'XLXI_130/XLXI_1/XLXI_1:E'
      LUT2:I0->O            1   0.203   0.579  Mmux_O11 (O)
      end scope: 'XLXI_130/XLXI_1/XLXI_1:O'
-     BUF:I->O             21   0.568   1.458  XLXI_130/XLXI_1/XLXI_18 (sysbus_0_OBUF)
+     BUF:I->O             20   0.568   1.437  XLXI_130/XLXI_1/XLXI_18 (sysbus<0>)
      XNOR2:I1->O           2   0.223   0.981  alu_inst/XLXI_135/XLXI_9/XLXI_1 (alu_inst/XLXI_135/XLXI_9/XLXN_3)
      AND2:I0->O            1   0.203   0.924  alu_inst/XLXI_135/XLXI_9/XLXI_2 (alu_inst/XLXI_135/XLXN_56)
      AND2:I1->O            1   0.223   0.924  alu_inst/XLXI_135/XLXI_8/XLXI_2 (alu_inst/XLXI_135/XLXN_54)
@@ -1707,7 +1708,7 @@ Delay:               31.502ns (Levels of Logic = 28)
      BUF:I->O              1   0.568   0.579  XLXI_666 (cpu_alu_eq_OBUF)
      OBUF:I->O                 2.571          cpu_alu_eq_OBUF (cpu_alu_eq)
     ----------------------------------------
-    Total                     31.502ns (10.836ns logic, 20.666ns route)
+    Total                     31.482ns (10.836ns logic, 20.646ns route)
                                        (34.4% logic, 65.6% route)
 
 =========================================================================
@@ -1736,9 +1737,9 @@ Clock to Setup on destination clock cc_r0_w
                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------+---------+---------+---------+---------+
-XLXI_173/XLXI_1/eq   |         |         |   16.443|         |
-XLXI_173/XLXI_4/O    |         |         |   15.652|         |
-clck_gen/XLXI_4/q_tmp|         |         |   17.549|         |
+XLXI_173/XLXI_1/eq   |         |         |   16.422|         |
+XLXI_173/XLXI_4/O    |         |         |   15.631|         |
+clck_gen/XLXI_4/q_tmp|         |         |   17.529|         |
 ---------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clck_gen/XLXI_4/q_tmp
@@ -1762,9 +1763,9 @@ Clock to Setup on destination clock clkw
                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------+---------+---------+---------+---------+
-XLXI_173/XLXI_1/eq   |   16.406|         |         |         |
-XLXI_173/XLXI_4/O    |         |   15.615|         |         |
-clck_gen/XLXI_4/q_tmp|         |   17.512|         |         |
+XLXI_173/XLXI_1/eq   |   16.385|         |         |         |
+XLXI_173/XLXI_4/O    |         |   15.594|         |         |
+clck_gen/XLXI_4/q_tmp|         |   17.492|         |         |
 ram_a_w              |         |    1.327|         |         |
 ---------------------+---------+---------+---------+---------+
 
@@ -1773,23 +1774,23 @@ Clock to Setup on destination clock ram_a_w
                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------+---------+---------+---------+---------+
-XLXI_173/XLXI_1/eq   |         |         |   16.443|         |
-XLXI_173/XLXI_4/O    |         |         |   15.652|         |
-clck_gen/XLXI_4/q_tmp|         |         |   17.549|         |
+XLXI_173/XLXI_1/eq   |         |         |   16.422|         |
+XLXI_173/XLXI_4/O    |         |         |   15.631|         |
+clck_gen/XLXI_4/q_tmp|         |         |   17.529|         |
 ---------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 7.11 secs
+Total CPU time to Xst completion: 7.15 secs
  
 --> 
 
 
-Total memory usage is 612312 kilobytes
+Total memory usage is 612320 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  200 (   0 filtered)
-Number of infos    :   19 (   0 filtered)
+Number of infos    :   20 (   0 filtered)
 

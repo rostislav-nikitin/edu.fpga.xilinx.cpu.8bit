@@ -1,4 +1,4 @@
-Running: /opt/Xilinx/14.3/ISE_DS/ISE/bin/lin64/unwrapped/fuse -relaunch -intstyle "ise" -incremental -lib "secureip" -o "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_cpu_sch_tb_isim_beh.exe" -prj "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_cpu_sch_tb_beh.prj" "work.cpu_cpu_sch_tb" 
+Running: /opt/Xilinx/14.3/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_cpu_sch_tb_isim_beh.exe -prj /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_cpu_sch_tb_beh.prj work.cpu_cpu_sch_tb 
 ISim P.40xd (signature 0xfbc00daa)
 Number of CPUs detected in this system: 32
 Turning on mult-threading, number of parallel sub-compilation jobs: 64 
@@ -25,7 +25,7 @@ Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/tb_cpu_v2.vh
 Starting static elaboration
 Completed static elaboration
 Fuse Memory Usage: 111940 KB
-Fuse CPU Usage: 1660 ms
+Fuse CPU Usage: 1690 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
@@ -93,6 +93,6 @@ Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
 Compiled 129 VHDL Units
 Built simulation executable /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_cpu_sch_tb_isim_beh.exe
-Fuse Memory Usage: 4372424 KB
-Fuse CPU Usage: 2120 ms
-GCC CPU Usage: 390 ms
+Fuse Memory Usage: 4372416 KB
+Fuse CPU Usage: 2300 ms
+GCC CPU Usage: 11350 ms

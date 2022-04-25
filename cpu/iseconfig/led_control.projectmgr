@@ -154,13 +154,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Synthesize - XST</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >3</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000012c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000012c0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Synthesize - XST</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
@@ -232,7 +232,6 @@
          <ClosedNode>/cpu_output_muxer_cpu_output_muxer_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_cpu_output_muxer.vhd</ClosedNode>
          <ClosedNode>/encoder8_3_encoder8_3_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_encoder_8_3.vhd</ClosedNode>
          <ClosedNode>/freq_divider_freq_divider_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_freq_divider.vhd</ClosedNode>
-         <ClosedNode>/motherboard |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|motherboard.sch</ClosedNode>
          <ClosedNode>/motherboard |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|motherboard.sch/XLXI_1 - cpu</ClosedNode>
          <ClosedNode>/pass_through_or_one_pass_through_or_one_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_pass_through_or_one.vhd</ClosedNode>
          <ClosedNode>/ram_256bytes_ram_256bytes_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_ram_256bytes.vhd</ClosedNode>
@@ -269,13 +268,13 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000013c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000013c0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
       <ClosedNodes>
