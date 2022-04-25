@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu.vhf
--- /___/   /\     Timestamp : 04/23/2022 02:28:06
+-- /___/   /\     Timestamp : 04/26/2022 01:54:20
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -4068,8 +4068,6 @@ entity cpu is
           in_write_reg_en      : in    std_logic; 
           manual_clk_in        : in    std_logic; 
           rst_in               : in    std_logic; 
-          can_read             : out   std_logic; 
-          can_write            : out   std_logic; 
           cpu_acc_r            : out   std_logic; 
           cpu_acc_w            : out   std_logic; 
           cpu_alu_C_in         : out   std_logic; 
@@ -4079,6 +4077,8 @@ entity cpu is
           cpu_alu_x            : out   std_logic_vector (7 downto 0); 
           cpu_alu_z            : out   std_logic; 
           cpu_bus1             : out   std_logic; 
+          cpu_can_read         : out   std_logic; 
+          cpu_can_write        : out   std_logic; 
           cpu_clk              : out   std_logic; 
           cpu_clkc             : out   std_logic; 
           cpu_clkr             : out   std_logic; 
@@ -4102,7 +4102,6 @@ entity cpu is
           cpu_op_alu           : out   std_logic; 
           cpu_op_alu_add       : out   std_logic; 
           cpu_op_alu_and       : out   std_logic; 
-          cpu_op_alu_ifjmp     : out   std_logic; 
           cpu_op_alu_lshift    : out   std_logic; 
           cpu_op_alu_nop       : out   std_logic; 
           cpu_op_alu_not       : out   std_logic; 
@@ -4110,6 +4109,7 @@ entity cpu is
           cpu_op_alu_rshift    : out   std_logic; 
           cpu_op_alu_xor       : out   std_logic; 
           cpu_op_flg_clf       : out   std_logic; 
+          cpu_op_jmp_ifjmp     : out   std_logic; 
           cpu_op_jmp_jmp       : out   std_logic; 
           cpu_op_jmp_jmpr      : out   std_logic; 
           cpu_op_ls_ld         : out   std_logic; 
@@ -4128,6 +4128,7 @@ entity cpu is
           cpu_r3_r             : out   std_logic; 
           cpu_r3_w             : out   std_logic; 
           cpu_sysbus           : out   std_logic_vector (7 downto 0); 
+          cpu_sysbus_released  : out   std_logic; 
           cpu_s1               : out   std_logic; 
           cpu_s2               : out   std_logic; 
           cpu_s3               : out   std_logic; 
@@ -4139,9 +4140,7 @@ entity cpu is
           manr_o               : out   std_logic_vector (7 downto 0); 
           manr_r               : out   std_logic; 
           manr_w               : out   std_logic; 
-          monitor              : out   std_logic_vector (7 downto 0); 
-          sysbus               : out   std_logic_vector (7 downto 0); 
-          sysbus_released      : out   std_logic);
+          monitor              : out   std_logic_vector (7 downto 0));
 end cpu;
 
 architecture BEHAVIORAL of cpu is
@@ -4159,6 +4158,8 @@ architecture BEHAVIORAL of cpu is
    signal alu_x                               : std_logic_vector (7 downto 0);
    signal alu_z                               : std_logic;
    signal bus1                                : std_logic;
+   signal can_read                            : std_logic;
+   signal can_write                           : std_logic;
    signal cc_acc_r                            : std_logic;
    signal cc_acc_w                            : std_logic;
    signal cc_alu_op                           : std_logic_vector (2 downto 0);
@@ -4255,6 +4256,8 @@ architecture BEHAVIORAL of cpu is
    signal r3_o                                : std_logic_vector (7 downto 0);
    signal r3_r                                : std_logic;
    signal r3_w                                : std_logic;
+   signal sysbus                              : std_logic_vector (7 downto 0);
+   signal sysbus_released                     : std_logic;
    signal temp_o                              : std_logic_vector (7 downto 0);
    signal temp_r                              : std_logic;
    signal temp_w                              : std_logic;
@@ -4262,13 +4265,10 @@ architecture BEHAVIORAL of cpu is
    signal XLXN_194                            : std_logic;
    signal XLXN_217                            : std_logic;
    signal XLXN_233                            : std_logic;
-   signal sysbus_DUMMY                        : std_logic_vector (7 downto 0);
    signal manr_o_DUMMY                        : std_logic_vector (7 downto 0);
    signal manr_r_DUMMY                        : std_logic;
    signal manr_w_DUMMY                        : std_logic;
-   signal sysbus_released_DUMMY               : std_logic;
-   signal can_read_DUMMY                      : std_logic;
-   signal can_write_DUMMY                     : std_logic;
+   signal cpu_sysbus_DUMMY                    : std_logic_vector (7 downto 0);
    signal XLXI_173_external_clk_in_openSignal : std_logic;
    component alu_MUSER_cpu
       port ( a     : in    std_logic_vector (7 downto 0); 
@@ -4497,15 +4497,12 @@ architecture BEHAVIORAL of cpu is
    attribute HU_SET of XLXI_104 : label is "XLXI_104_40";
    attribute HU_SET of XLXI_571 : label is "XLXI_571_41";
 begin
-   can_read <= can_read_DUMMY;
-   can_write <= can_write_DUMMY;
+   cpu_sysbus(7 downto 0) <= cpu_sysbus_DUMMY(7 downto 0);
    manr_o(7 downto 0) <= manr_o_DUMMY(7 downto 0);
    manr_r <= manr_r_DUMMY;
    manr_w <= manr_w_DUMMY;
-   sysbus(7 downto 0) <= sysbus_DUMMY(7 downto 0);
-   sysbus_released <= sysbus_released_DUMMY;
    alu_inst : alu_MUSER_cpu
-      port map (a(7 downto 0)=>sysbus_DUMMY(7 downto 0),
+      port map (a(7 downto 0)=>sysbus(7 downto 0),
                 b(7 downto 0)=>pto(7 downto 0),
                 C_in=>alu_C_in,
                 op(2 downto 0)=>cc_alu_op(2 downto 0),
@@ -4589,9 +4586,9 @@ begin
       port map (O=>temp_r);
    
    XLXI_9 : ram_256bytes_MUSER_cpu
-      port map (a(7 downto 0)=>sysbus_DUMMY(7 downto 0),
+      port map (a(7 downto 0)=>sysbus(7 downto 0),
                 a_w=>ram_a_w,
-                i(7 downto 0)=>sysbus_DUMMY(7 downto 0),
+                i(7 downto 0)=>sysbus(7 downto 0),
                 i_r=>ram_r,
                 i_w=>ram_w,
                 i_wclk=>clkw,
@@ -4631,7 +4628,7 @@ begin
                 O=>XLXN_217);
    
    XLXI_104 : LD8_HXILINX_cpu
-      port map (D(7 downto 0)=>sysbus_DUMMY(7 downto 0),
+      port map (D(7 downto 0)=>sysbus(7 downto 0),
                 G=>cc_r0_w,
                 Q(7 downto 0)=>monitor(7 downto 0));
    
@@ -4652,21 +4649,21 @@ begin
    
    XLXI_122 : reg_8bit_MUSER_cpu
       port map (clr=>rst,
-                d(7 downto 0)=>sysbus_DUMMY(7 downto 0),
+                d(7 downto 0)=>sysbus(7 downto 0),
                 r=>iar_r,
                 w=>iar_w,
                 o(7 downto 0)=>iar_o(7 downto 0));
    
    XLXI_123 : reg_8bit_MUSER_cpu
       port map (clr=>rst,
-                d(7 downto 0)=>sysbus_DUMMY(7 downto 0),
+                d(7 downto 0)=>sysbus(7 downto 0),
                 r=>XLXN_23,
                 w=>cc_ir_w,
                 o(7 downto 0)=>ir_o(7 downto 0));
    
    XLXI_124 : reg_8bit_MUSER_cpu
       port map (clr=>rst,
-                d(7 downto 0)=>sysbus_DUMMY(7 downto 0),
+                d(7 downto 0)=>sysbus(7 downto 0),
                 r=>temp_r,
                 w=>temp_w,
                 o(7 downto 0)=>temp_o(7 downto 0));
@@ -4680,28 +4677,28 @@ begin
    
    XLXI_126 : reg_8bit_MUSER_cpu
       port map (clr=>rst,
-                d(7 downto 0)=>sysbus_DUMMY(7 downto 0),
+                d(7 downto 0)=>sysbus(7 downto 0),
                 r=>r0_r,
                 w=>r0_w,
                 o(7 downto 0)=>r0_o(7 downto 0));
    
    XLXI_127 : reg_8bit_MUSER_cpu
       port map (clr=>rst,
-                d(7 downto 0)=>sysbus_DUMMY(7 downto 0),
+                d(7 downto 0)=>sysbus(7 downto 0),
                 r=>r1_r,
                 w=>r1_w,
                 o(7 downto 0)=>r1_o(7 downto 0));
    
    XLXI_128 : reg_8bit_MUSER_cpu
       port map (clr=>rst,
-                d(7 downto 0)=>sysbus_DUMMY(7 downto 0),
+                d(7 downto 0)=>sysbus(7 downto 0),
                 r=>r2_r,
                 w=>r2_w,
                 o(7 downto 0)=>r2_o(7 downto 0));
    
    XLXI_129 : reg_8bit_MUSER_cpu
       port map (clr=>rst,
-                d(7 downto 0)=>sysbus_DUMMY(7 downto 0),
+                d(7 downto 0)=>sysbus(7 downto 0),
                 r=>r3_r,
                 w=>r3_w,
                 o(7 downto 0)=>r3_o(7 downto 0));
@@ -4724,7 +4721,7 @@ begin
                 r3_o(7 downto 0)=>r3_o(7 downto 0),
                 r3_r=>r3_r,
                 g=>not_reading,
-                o(7 downto 0)=>sysbus_DUMMY(7 downto 0));
+                o(7 downto 0)=>sysbus(7 downto 0));
    
    XLXI_136 : GND
       port map (G=>open);
@@ -4798,7 +4795,7 @@ begin
    
    XLXI_212 : INV
       port map (I=>clkr,
-                O=>sysbus_released_DUMMY);
+                O=>sysbus_released);
    
    XLXI_218 : OR2
       port map (I0=>manual_r0_r,
@@ -4850,13 +4847,13 @@ begin
                 O=>cpu_temp_w);
    
    XLXI_326 : AND3
-      port map (I0=>sysbus_released_DUMMY,
+      port map (I0=>sysbus_released,
                 I1=>is_clk_manual,
                 I2=>in_read_reg_en,
-                O=>can_read_DUMMY);
+                O=>can_read);
    
    XLXI_371 : AND2
-      port map (I0=>can_read_DUMMY,
+      port map (I0=>can_read,
                 I1=>in_r0_r,
                 O=>manual_r0_r);
    
@@ -4868,25 +4865,25 @@ begin
    XLXI_380 : AND2
       port map (I0=>is_clk_manual,
                 I1=>in_write_reg_en,
-                O=>can_write_DUMMY);
+                O=>can_write);
    
    XLXI_381 : AND2
-      port map (I0=>can_write_DUMMY,
+      port map (I0=>can_write,
                 I1=>in_r0_w,
                 O=>manual_r0_w);
    
    XLXI_390 : AND2
-      port map (I0=>can_read_DUMMY,
+      port map (I0=>can_read,
                 I1=>in_manr_r,
                 O=>manr_r_DUMMY);
    
    XLXI_394 : AND2
-      port map (I0=>can_write_DUMMY,
+      port map (I0=>can_write,
                 I1=>in_manr_w,
                 O=>manr_w_DUMMY);
    
    XLXI_465 : AND2
-      port map (I0=>can_read_DUMMY,
+      port map (I0=>can_read,
                 I1=>in_r1_r,
                 O=>manual_r1_r);
    
@@ -4896,7 +4893,7 @@ begin
                 O=>r1_r);
    
    XLXI_467 : AND2
-      port map (I0=>can_write_DUMMY,
+      port map (I0=>can_write,
                 I1=>in_r1_w,
                 O=>manual_r1_w);
    
@@ -4906,7 +4903,7 @@ begin
                 O=>r1_w);
    
    XLXI_525 : AND2
-      port map (I0=>can_read_DUMMY,
+      port map (I0=>can_read,
                 I1=>in_r2_r,
                 O=>manual_r2_r);
    
@@ -4916,7 +4913,7 @@ begin
                 O=>r2_r);
    
    XLXI_527 : AND2
-      port map (I0=>can_write_DUMMY,
+      port map (I0=>can_write,
                 I1=>in_r2_w,
                 O=>manual_r2_w);
    
@@ -4926,7 +4923,7 @@ begin
                 O=>r2_w);
    
    XLXI_529 : AND2
-      port map (I0=>can_read_DUMMY,
+      port map (I0=>can_read,
                 I1=>in_r3_r,
                 O=>manual_r3_r);
    
@@ -4936,7 +4933,7 @@ begin
                 O=>r3_r);
    
    XLXI_531 : AND2
-      port map (I0=>can_write_DUMMY,
+      port map (I0=>can_write,
                 I1=>in_r3_w,
                 O=>manual_r3_w);
    
@@ -4946,7 +4943,7 @@ begin
                 O=>r3_w);
    
    XLXI_533 : AND2
-      port map (I0=>can_read_DUMMY,
+      port map (I0=>can_read,
                 I1=>in_iar_r,
                 O=>manual_iar_r);
    
@@ -4956,7 +4953,7 @@ begin
                 O=>iar_r);
    
    XLXI_535 : AND2
-      port map (I0=>can_write_DUMMY,
+      port map (I0=>can_write,
                 I1=>in_iar_w,
                 O=>manual_iar_w);
    
@@ -4966,7 +4963,7 @@ begin
                 O=>iar_w);
    
    XLXI_537 : AND2
-      port map (I0=>can_write_DUMMY,
+      port map (I0=>can_write,
                 I1=>in_temp_w,
                 O=>manual_temp_w);
    
@@ -4976,7 +4973,7 @@ begin
                 O=>temp_w);
    
    XLXI_545 : AND2
-      port map (I0=>can_read_DUMMY,
+      port map (I0=>can_read,
                 I1=>in_acc_r,
                 O=>manual_acc_r);
    
@@ -4986,7 +4983,7 @@ begin
                 O=>acc_r);
    
    XLXI_547 : AND2
-      port map (I0=>can_write_DUMMY,
+      port map (I0=>can_write,
                 I1=>in_acc_w,
                 O=>manual_acc_w);
    
@@ -4996,7 +4993,7 @@ begin
                 O=>acc_w);
    
    XLXI_549 : AND2
-      port map (I0=>can_read_DUMMY,
+      port map (I0=>can_read,
                 I1=>in_ram_r,
                 O=>manual_ram_r);
    
@@ -5006,7 +5003,7 @@ begin
                 O=>ram_r);
    
    XLXI_551 : AND2
-      port map (I0=>can_write_DUMMY,
+      port map (I0=>can_write,
                 I1=>in_ram_w,
                 O=>manual_ram_w);
    
@@ -5064,7 +5061,7 @@ begin
                 O=>cpu_op_alu_add);
    
    XLXI_565 : AND2
-      port map (I0=>can_write_DUMMY,
+      port map (I0=>can_write,
                 I1=>in_ir_w,
                 O=>manual_ir_w);
    
@@ -5074,7 +5071,7 @@ begin
                 O=>ir_w);
    
    XLXI_567 : AND2
-      port map (I0=>can_write_DUMMY,
+      port map (I0=>can_write,
                 I1=>in_ram_a_w,
                 O=>manual_ram_a_w);
    
@@ -5151,7 +5148,7 @@ begin
    
    XLXI_660 : BUF
       port map (I=>cc_dbg_jmp_ifjmp,
-                O=>cpu_op_alu_ifjmp);
+                O=>cpu_op_jmp_ifjmp);
    
    XLXI_661 : BUF
       port map (I=>cc_dbg_flg_clf,
@@ -5210,12 +5207,28 @@ begin
                 O=>cpu_C_out_flipflop_o);
    
    XLXI_758 : buf_8bit_MUSER_cpu
-      port map (i(7 downto 0)=>sysbus_DUMMY(7 downto 0),
-                o(7 downto 0)=>cpu_sysbus(7 downto 0));
+      port map (i(7 downto 0)=>sysbus(7 downto 0),
+                o(7 downto 0)=>cpu_sysbus_DUMMY(7 downto 0));
    
    XLXI_799 : buf_8bit_MUSER_cpu
       port map (i(7 downto 0)=>ram_a_o(7 downto 0),
                 o(7 downto 0)=>cpu_ram_a_o(7 downto 0));
+   
+   XLXI_844 : BUF
+      port map (I=>sysbus_released,
+                O=>cpu_sysbus_released);
+   
+   XLXI_860 : buf_8bit_MUSER_cpu
+      port map (i(7 downto 0)=>sysbus(7 downto 0),
+                o(7 downto 0)=>cpu_sysbus_DUMMY(7 downto 0));
+   
+   XLXI_901 : BUF
+      port map (I=>can_read,
+                O=>cpu_can_read);
+   
+   XLXI_903 : BUF
+      port map (I=>can_write,
+                O=>cpu_can_write);
    
 end BEHAVIORAL;
 

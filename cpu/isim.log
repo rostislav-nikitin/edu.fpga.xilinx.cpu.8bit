@@ -1,5 +1,5 @@
 ISim log file
-Running: /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/tb_vga_v2_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_cpu_sch_tb_isim_beh1.wdb 
+Running: /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_cpu_sch_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_cpu_sch_tb_isim_beh1.wdb 
 ISim P.40xd (signature 0xfbc00daa)
 This is a Full version of ISim.
 Time resolution is 1 ps
@@ -7,10 +7,30 @@ Time resolution is 1 ps
 # wave add /
 # run 60 s
 Simulator is doing circuit initialization process.
+at 0 ps, Instance /cpu_cpu_sch_tb/UUT/alu_inst/XLXI_2/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /cpu_cpu_sch_tb/UUT/alu_inst/XLXI_2/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /cpu_cpu_sch_tb/UUT/alu_inst/XLXI_2/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /cpu_cpu_sch_tb/UUT/alu_inst/XLXI_2/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 Finished circuit initialization process.
+at 0 ps, Instance /cpu_cpu_sch_tb/UUT/alu_inst/XLXI_2/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /cpu_cpu_sch_tb/UUT/alu_inst/XLXI_2/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /cpu_cpu_sch_tb/UUT/alu_inst/XLXI_2/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /cpu_cpu_sch_tb/UUT/alu_inst/XLXI_2/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /cpu_cpu_sch_tb/UUT/alu_inst/XLXI_2/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /cpu_cpu_sch_tb/UUT/alu_inst/XLXI_2/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 ISim P.40xd (signature 0xfbc00daa)
 This is a Full version of ISim.
 # run 60 s
 Simulator is doing circuit initialization process.
+at 0 ps, Instance /cpu_cpu_sch_tb/UUT/alu_inst/XLXI_2/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /cpu_cpu_sch_tb/UUT/alu_inst/XLXI_2/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /cpu_cpu_sch_tb/UUT/alu_inst/XLXI_2/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /cpu_cpu_sch_tb/UUT/alu_inst/XLXI_2/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 Finished circuit initialization process.
+at 0 ps, Instance /cpu_cpu_sch_tb/UUT/alu_inst/XLXI_2/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /cpu_cpu_sch_tb/UUT/alu_inst/XLXI_2/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /cpu_cpu_sch_tb/UUT/alu_inst/XLXI_2/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /cpu_cpu_sch_tb/UUT/alu_inst/XLXI_2/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /cpu_cpu_sch_tb/UUT/alu_inst/XLXI_2/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /cpu_cpu_sch_tb/UUT/alu_inst/XLXI_2/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 # exit 0
