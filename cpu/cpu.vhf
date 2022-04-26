@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu.vhf
--- /___/   /\     Timestamp : 04/26/2022 02:09:56
+-- /___/   /\     Timestamp : 04/26/2022 21:52:09
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -4041,10 +4041,12 @@ library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
 entity cpu is
-   port ( clk                  : in    std_logic; 
-          in_acc_r             : in    std_logic; 
+   port ( in_acc_r             : in    std_logic; 
           in_acc_w             : in    std_logic; 
           in_bus1              : in    std_logic; 
+          in_clk               : in    std_logic; 
+          in_clk_external      : in    std_logic; 
+          in_clk_manual        : in    std_logic; 
           in_iar_r             : in    std_logic; 
           in_iar_w             : in    std_logic; 
           in_ir_w              : in    std_logic; 
@@ -4056,6 +4058,7 @@ entity cpu is
           in_ram_r             : in    std_logic; 
           in_ram_w             : in    std_logic; 
           in_read_reg_en       : in    std_logic; 
+          in_rst               : in    std_logic; 
           in_r0_r              : in    std_logic; 
           in_r0_w              : in    std_logic; 
           in_r1_r              : in    std_logic; 
@@ -4066,209 +4069,206 @@ entity cpu is
           in_r3_w              : in    std_logic; 
           in_temp_w            : in    std_logic; 
           in_write_reg_en      : in    std_logic; 
-          manual_clk_in        : in    std_logic; 
-          rst_in               : in    std_logic; 
-          cpu_acc_r            : out   std_logic; 
-          cpu_acc_w            : out   std_logic; 
-          cpu_alu_C_in         : out   std_logic; 
-          cpu_alu_C_out        : out   std_logic; 
-          cpu_alu_eq           : out   std_logic; 
-          cpu_alu_gt           : out   std_logic; 
-          cpu_alu_x            : out   std_logic_vector (7 downto 0); 
-          cpu_alu_z            : out   std_logic; 
-          cpu_bus1             : out   std_logic; 
-          cpu_can_read         : out   std_logic; 
-          cpu_can_write        : out   std_logic; 
-          cpu_clk              : out   std_logic; 
-          cpu_clkc             : out   std_logic; 
-          cpu_clkr             : out   std_logic; 
-          cpu_clkw             : out   std_logic; 
-          cpu_clk_int          : out   std_logic; 
-          cpu_C_in_enabled     : out   std_logic; 
-          cpu_C_out_flipflop_o : out   std_logic; 
-          cpu_flags_clr        : out   std_logic; 
-          cpu_flags_C_out      : out   std_logic; 
-          cpu_flags_eq         : out   std_logic; 
-          cpu_flags_gt         : out   std_logic; 
-          cpu_flags_w          : out   std_logic; 
-          cpu_flags_z          : out   std_logic; 
-          cpu_iar_o            : out   std_logic_vector (7 downto 0); 
-          cpu_iar_r            : out   std_logic; 
-          cpu_iar_w            : out   std_logic; 
-          cpu_ir_o             : out   std_logic_vector (7 downto 0); 
-          cpu_ir_w             : out   std_logic; 
-          cpu_is_bus1_w        : out   std_logic; 
-          cpu_op_alt_nop       : out   std_logic; 
-          cpu_op_alu           : out   std_logic; 
-          cpu_op_alu_add       : out   std_logic; 
-          cpu_op_alu_and       : out   std_logic; 
-          cpu_op_alu_lshift    : out   std_logic; 
-          cpu_op_alu_nop       : out   std_logic; 
-          cpu_op_alu_not       : out   std_logic; 
-          cpu_op_alu_or        : out   std_logic; 
-          cpu_op_alu_rshift    : out   std_logic; 
-          cpu_op_alu_xor       : out   std_logic; 
-          cpu_op_flg_clf       : out   std_logic; 
-          cpu_op_jmp_ifjmp     : out   std_logic; 
-          cpu_op_jmp_jmp       : out   std_logic; 
-          cpu_op_jmp_jmpr      : out   std_logic; 
-          cpu_op_ls_ld         : out   std_logic; 
-          cpu_op_ls_ldc        : out   std_logic; 
-          cpu_op_ls_st         : out   std_logic; 
-          cpu_ram_a_o          : out   std_logic_vector (7 downto 0); 
-          cpu_ram_a_w          : out   std_logic; 
-          cpu_ram_r            : out   std_logic; 
-          cpu_ram_w            : out   std_logic; 
-          cpu_r0_r             : out   std_logic; 
-          cpu_r0_w             : out   std_logic; 
-          cpu_r1_r             : out   std_logic; 
-          cpu_r1_w             : out   std_logic; 
-          cpu_r2_r             : out   std_logic; 
-          cpu_r2_w             : out   std_logic; 
-          cpu_r3_r             : out   std_logic; 
-          cpu_r3_w             : out   std_logic; 
-          cpu_sysbus           : out   std_logic_vector (7 downto 0); 
-          cpu_sysbus_released  : out   std_logic; 
-          cpu_s1               : out   std_logic; 
-          cpu_s2               : out   std_logic; 
-          cpu_s3               : out   std_logic; 
-          cpu_s4               : out   std_logic; 
-          cpu_s5               : out   std_logic; 
-          cpu_s6               : out   std_logic; 
-          cpu_temp_o           : out   std_logic_vector (7 downto 0); 
-          cpu_temp_w           : out   std_logic; 
           manr_o               : out   std_logic_vector (7 downto 0); 
           manr_r               : out   std_logic; 
           manr_w               : out   std_logic; 
-          monitor              : out   std_logic_vector (7 downto 0));
+          monitor              : out   std_logic_vector (7 downto 0); 
+          out_acc_r            : out   std_logic; 
+          out_acc_w            : out   std_logic; 
+          out_alu_C_in         : out   std_logic; 
+          out_alu_C_out        : out   std_logic; 
+          out_alu_eq           : out   std_logic; 
+          out_alu_gt           : out   std_logic; 
+          out_alu_x            : out   std_logic_vector (7 downto 0); 
+          out_alu_z            : out   std_logic; 
+          out_bus1             : out   std_logic; 
+          out_can_read         : out   std_logic; 
+          out_can_write        : out   std_logic; 
+          out_clk              : out   std_logic; 
+          out_clkc             : out   std_logic; 
+          out_clkr             : out   std_logic; 
+          out_clkw             : out   std_logic; 
+          out_clk_int          : out   std_logic; 
+          out_C_in_enabled     : out   std_logic; 
+          out_C_out_flipflop_o : out   std_logic; 
+          out_flags_clr        : out   std_logic; 
+          out_flags_C_out      : out   std_logic; 
+          out_flags_eq         : out   std_logic; 
+          out_flags_gt         : out   std_logic; 
+          out_flags_w          : out   std_logic; 
+          out_flags_z          : out   std_logic; 
+          out_iar_o            : out   std_logic_vector (7 downto 0); 
+          out_iar_r            : out   std_logic; 
+          out_iar_w            : out   std_logic; 
+          out_ir_o             : out   std_logic_vector (7 downto 0); 
+          out_ir_w             : out   std_logic; 
+          out_is_bus1_w        : out   std_logic; 
+          out_op_alt_nop       : out   std_logic; 
+          out_op_alu           : out   std_logic; 
+          out_op_alu_add       : out   std_logic; 
+          out_op_alu_and       : out   std_logic; 
+          out_op_alu_lshift    : out   std_logic; 
+          out_op_alu_nop       : out   std_logic; 
+          out_op_alu_not       : out   std_logic; 
+          out_op_alu_or        : out   std_logic; 
+          out_op_alu_rshift    : out   std_logic; 
+          out_op_alu_xor       : out   std_logic; 
+          out_op_flg_clf       : out   std_logic; 
+          out_op_jmp_ifjmp     : out   std_logic; 
+          out_op_jmp_jmp       : out   std_logic; 
+          out_op_jmp_jmpr      : out   std_logic; 
+          out_op_ls_ld         : out   std_logic; 
+          out_op_ls_ldc        : out   std_logic; 
+          out_op_ls_st         : out   std_logic; 
+          out_ram_a_o          : out   std_logic_vector (7 downto 0); 
+          out_ram_a_w          : out   std_logic; 
+          out_ram_r            : out   std_logic; 
+          out_ram_w            : out   std_logic; 
+          out_r0_r             : out   std_logic; 
+          out_r0_w             : out   std_logic; 
+          out_r1_r             : out   std_logic; 
+          out_r1_w             : out   std_logic; 
+          out_r2_r             : out   std_logic; 
+          out_r2_w             : out   std_logic; 
+          out_r3_r             : out   std_logic; 
+          out_r3_w             : out   std_logic; 
+          out_sysbus           : out   std_logic_vector (7 downto 0); 
+          out_sysbus_released  : out   std_logic; 
+          out_s1               : out   std_logic; 
+          out_s2               : out   std_logic; 
+          out_s3               : out   std_logic; 
+          out_s4               : out   std_logic; 
+          out_s5               : out   std_logic; 
+          out_s6               : out   std_logic; 
+          out_temp_o           : out   std_logic_vector (7 downto 0); 
+          out_temp_w           : out   std_logic);
 end cpu;
 
 architecture BEHAVIORAL of cpu is
    attribute BOX_TYPE   : string ;
    attribute HU_SET     : string ;
-   signal acc_o                               : std_logic_vector (7 downto 0);
-   signal acc_r                               : std_logic;
-   signal acc_w                               : std_logic;
-   signal alu_C_in                            : std_logic;
-   signal alu_C_in_enabled                    : std_logic;
-   signal alu_C_out                           : std_logic;
-   signal alu_C_out_flipflop_o                : std_logic;
-   signal alu_eq                              : std_logic;
-   signal alu_gt                              : std_logic;
-   signal alu_x                               : std_logic_vector (7 downto 0);
-   signal alu_z                               : std_logic;
-   signal bus1                                : std_logic;
-   signal can_read                            : std_logic;
-   signal can_write                           : std_logic;
-   signal cc_acc_r                            : std_logic;
-   signal cc_acc_w                            : std_logic;
-   signal cc_alu_op                           : std_logic_vector (2 downto 0);
-   signal cc_bus1                             : std_logic;
-   signal cc_dbg_alt_nop                      : std_logic;
-   signal cc_dbg_alu                          : std_logic;
-   signal cc_dbg_alu_and                      : std_logic;
-   signal cc_dbg_alu_lshift                   : std_logic;
-   signal cc_dbg_alu_nop                      : std_logic;
-   signal cc_dbg_alu_not                      : std_logic;
-   signal cc_dbg_alu_or                       : std_logic;
-   signal cc_dbg_alu_rshift                   : std_logic;
-   signal cc_dbg_alu_sum                      : std_logic;
-   signal cc_dbg_alu_xor                      : std_logic;
-   signal cc_dbg_flg_clf                      : std_logic;
-   signal cc_dbg_jmp_ifjmp                    : std_logic;
-   signal cc_dbg_jmp_jmp                      : std_logic;
-   signal cc_dbg_jmp_jmpr                     : std_logic;
-   signal cc_dbg_ls_ld                        : std_logic;
-   signal cc_dbg_ls_ldc                       : std_logic;
-   signal cc_dbg_ls_st                        : std_logic;
-   signal cc_dbg_s1                           : std_logic;
-   signal cc_dbg_s2                           : std_logic;
-   signal cc_dbg_s3                           : std_logic;
-   signal cc_dbg_s4                           : std_logic;
-   signal cc_dbg_s5                           : std_logic;
-   signal cc_dbg_s6                           : std_logic;
-   signal cc_flags_clr                        : std_logic;
-   signal cc_flags_w                          : std_logic;
-   signal cc_iar_r                            : std_logic;
-   signal cc_iar_w                            : std_logic;
-   signal cc_ir_w                             : std_logic;
-   signal cc_ram_a_w                          : std_logic;
-   signal cc_ram_r                            : std_logic;
-   signal cc_ram_w                            : std_logic;
-   signal cc_r0_r                             : std_logic;
-   signal cc_r0_w                             : std_logic;
-   signal cc_r1_r                             : std_logic;
-   signal cc_r1_w                             : std_logic;
-   signal cc_r2_r                             : std_logic;
-   signal cc_r2_w                             : std_logic;
-   signal cc_r3_r                             : std_logic;
-   signal cc_r3_w                             : std_logic;
-   signal cc_temp_w                           : std_logic;
-   signal clkc                                : std_logic;
-   signal clkr                                : std_logic;
-   signal clkw                                : std_logic;
-   signal clk_int                             : std_logic;
-   signal flags_o                             : std_logic_vector (3 downto 0);
-   signal ground                              : std_logic;
-   signal iar_o                               : std_logic_vector (7 downto 0);
-   signal iar_r                               : std_logic;
-   signal iar_w                               : std_logic;
-   signal ir_o                                : std_logic_vector (7 downto 0);
-   signal ir_w                                : std_logic;
-   signal is_clk_external                     : std_logic;
-   signal is_clk_high                         : std_logic;
-   signal is_clk_low                          : std_logic;
-   signal is_clk_manual                       : std_logic;
-   signal manual_acc_r                        : std_logic;
-   signal manual_acc_w                        : std_logic;
-   signal manual_iar_r                        : std_logic;
-   signal manual_iar_w                        : std_logic;
-   signal manual_ir_w                         : std_logic;
-   signal manual_ram_a_w                      : std_logic;
-   signal manual_ram_r                        : std_logic;
-   signal manual_ram_w                        : std_logic;
-   signal manual_r0_r                         : std_logic;
-   signal manual_r0_w                         : std_logic;
-   signal manual_r1_r                         : std_logic;
-   signal manual_r1_w                         : std_logic;
-   signal manual_r2_r                         : std_logic;
-   signal manual_r2_w                         : std_logic;
-   signal manual_r3_r                         : std_logic;
-   signal manual_r3_w                         : std_logic;
-   signal manual_temp_w                       : std_logic;
-   signal not_reading                         : std_logic;
-   signal pto                                 : std_logic_vector (7 downto 0);
-   signal ram_a_o                             : std_logic_vector (7 downto 0);
-   signal ram_a_w                             : std_logic;
-   signal ram_o                               : std_logic_vector (7 downto 0);
-   signal ram_r                               : std_logic;
-   signal ram_w                               : std_logic;
-   signal rst                                 : std_logic;
-   signal r0_o                                : std_logic_vector (7 downto 0);
-   signal r0_r                                : std_logic;
-   signal r0_w                                : std_logic;
-   signal r1_o                                : std_logic_vector (7 downto 0);
-   signal r1_r                                : std_logic;
-   signal r1_w                                : std_logic;
-   signal r2_o                                : std_logic_vector (7 downto 0);
-   signal r2_r                                : std_logic;
-   signal r2_w                                : std_logic;
-   signal r3_o                                : std_logic_vector (7 downto 0);
-   signal r3_r                                : std_logic;
-   signal r3_w                                : std_logic;
-   signal sysbus                              : std_logic_vector (7 downto 0);
-   signal sysbus_released                     : std_logic;
-   signal temp_o                              : std_logic_vector (7 downto 0);
-   signal temp_r                              : std_logic;
-   signal temp_w                              : std_logic;
-   signal XLXN_23                             : std_logic;
-   signal XLXN_194                            : std_logic;
-   signal XLXN_217                            : std_logic;
-   signal XLXN_233                            : std_logic;
-   signal manr_o_DUMMY                        : std_logic_vector (7 downto 0);
-   signal manr_r_DUMMY                        : std_logic;
-   signal manr_w_DUMMY                        : std_logic;
-   signal XLXI_173_external_clk_in_openSignal : std_logic;
+   signal acc_o                : std_logic_vector (7 downto 0);
+   signal acc_r                : std_logic;
+   signal acc_w                : std_logic;
+   signal alu_C_in             : std_logic;
+   signal alu_C_in_enabled     : std_logic;
+   signal alu_C_out            : std_logic;
+   signal alu_C_out_flipflop_o : std_logic;
+   signal alu_eq               : std_logic;
+   signal alu_gt               : std_logic;
+   signal alu_x                : std_logic_vector (7 downto 0);
+   signal alu_z                : std_logic;
+   signal bus1                 : std_logic;
+   signal can_read             : std_logic;
+   signal can_write            : std_logic;
+   signal cc_acc_r             : std_logic;
+   signal cc_acc_w             : std_logic;
+   signal cc_alu_op            : std_logic_vector (2 downto 0);
+   signal cc_bus1              : std_logic;
+   signal cc_dbg_alt_nop       : std_logic;
+   signal cc_dbg_alu           : std_logic;
+   signal cc_dbg_alu_and       : std_logic;
+   signal cc_dbg_alu_lshift    : std_logic;
+   signal cc_dbg_alu_nop       : std_logic;
+   signal cc_dbg_alu_not       : std_logic;
+   signal cc_dbg_alu_or        : std_logic;
+   signal cc_dbg_alu_rshift    : std_logic;
+   signal cc_dbg_alu_sum       : std_logic;
+   signal cc_dbg_alu_xor       : std_logic;
+   signal cc_dbg_flg_clf       : std_logic;
+   signal cc_dbg_jmp_ifjmp     : std_logic;
+   signal cc_dbg_jmp_jmp       : std_logic;
+   signal cc_dbg_jmp_jmpr      : std_logic;
+   signal cc_dbg_ls_ld         : std_logic;
+   signal cc_dbg_ls_ldc        : std_logic;
+   signal cc_dbg_ls_st         : std_logic;
+   signal cc_dbg_s1            : std_logic;
+   signal cc_dbg_s2            : std_logic;
+   signal cc_dbg_s3            : std_logic;
+   signal cc_dbg_s4            : std_logic;
+   signal cc_dbg_s5            : std_logic;
+   signal cc_dbg_s6            : std_logic;
+   signal cc_flags_clr         : std_logic;
+   signal cc_flags_w           : std_logic;
+   signal cc_iar_r             : std_logic;
+   signal cc_iar_w             : std_logic;
+   signal cc_ir_w              : std_logic;
+   signal cc_ram_a_w           : std_logic;
+   signal cc_ram_r             : std_logic;
+   signal cc_ram_w             : std_logic;
+   signal cc_r0_r              : std_logic;
+   signal cc_r0_w              : std_logic;
+   signal cc_r1_r              : std_logic;
+   signal cc_r1_w              : std_logic;
+   signal cc_r2_r              : std_logic;
+   signal cc_r2_w              : std_logic;
+   signal cc_r3_r              : std_logic;
+   signal cc_r3_w              : std_logic;
+   signal cc_temp_w            : std_logic;
+   signal clkc                 : std_logic;
+   signal clkr                 : std_logic;
+   signal clkw                 : std_logic;
+   signal clk_int              : std_logic;
+   signal flags_o              : std_logic_vector (3 downto 0);
+   signal ground               : std_logic;
+   signal iar_o                : std_logic_vector (7 downto 0);
+   signal iar_r                : std_logic;
+   signal iar_w                : std_logic;
+   signal ir_o                 : std_logic_vector (7 downto 0);
+   signal ir_w                 : std_logic;
+   signal is_clk_external      : std_logic;
+   signal is_clk_high          : std_logic;
+   signal is_clk_low           : std_logic;
+   signal is_clk_manual        : std_logic;
+   signal manual_acc_r         : std_logic;
+   signal manual_acc_w         : std_logic;
+   signal manual_iar_r         : std_logic;
+   signal manual_iar_w         : std_logic;
+   signal manual_ir_w          : std_logic;
+   signal manual_ram_a_w       : std_logic;
+   signal manual_ram_r         : std_logic;
+   signal manual_ram_w         : std_logic;
+   signal manual_r0_r          : std_logic;
+   signal manual_r0_w          : std_logic;
+   signal manual_r1_r          : std_logic;
+   signal manual_r1_w          : std_logic;
+   signal manual_r2_r          : std_logic;
+   signal manual_r2_w          : std_logic;
+   signal manual_r3_r          : std_logic;
+   signal manual_r3_w          : std_logic;
+   signal manual_temp_w        : std_logic;
+   signal not_reading          : std_logic;
+   signal pto                  : std_logic_vector (7 downto 0);
+   signal ram_a_o              : std_logic_vector (7 downto 0);
+   signal ram_a_w              : std_logic;
+   signal ram_o                : std_logic_vector (7 downto 0);
+   signal ram_r                : std_logic;
+   signal ram_w                : std_logic;
+   signal rst                  : std_logic;
+   signal r0_o                 : std_logic_vector (7 downto 0);
+   signal r0_r                 : std_logic;
+   signal r0_w                 : std_logic;
+   signal r1_o                 : std_logic_vector (7 downto 0);
+   signal r1_r                 : std_logic;
+   signal r1_w                 : std_logic;
+   signal r2_o                 : std_logic_vector (7 downto 0);
+   signal r2_r                 : std_logic;
+   signal r2_w                 : std_logic;
+   signal r3_o                 : std_logic_vector (7 downto 0);
+   signal r3_r                 : std_logic;
+   signal r3_w                 : std_logic;
+   signal sysbus               : std_logic_vector (7 downto 0);
+   signal sysbus_released      : std_logic;
+   signal temp_o               : std_logic_vector (7 downto 0);
+   signal temp_r               : std_logic;
+   signal temp_w               : std_logic;
+   signal XLXN_23              : std_logic;
+   signal XLXN_194             : std_logic;
+   signal XLXN_217             : std_logic;
+   signal XLXN_233             : std_logic;
+   signal manr_o_DUMMY         : std_logic_vector (7 downto 0);
+   signal manr_r_DUMMY         : std_logic;
+   signal manr_w_DUMMY         : std_logic;
    component alu_MUSER_cpu
       port ( a     : in    std_logic_vector (7 downto 0); 
              b     : in    std_logic_vector (7 downto 0); 
@@ -4631,7 +4631,7 @@ begin
                 Q(7 downto 0)=>monitor(7 downto 0));
    
    XLXI_116 : BUF
-      port map (I=>rst_in,
+      port map (I=>in_rst,
                 O=>XLXN_233);
    
    XLXI_117 : INV
@@ -4725,13 +4725,13 @@ begin
       port map (G=>open);
    
    XLXI_173 : cpu_freq_divider_MUSER_cpu
-      port map (clk_in=>clk,
+      port map (clk_in=>in_clk,
                 external=>is_clk_external,
-                external_clk_in=>XLXI_173_external_clk_in_openSignal,
+                external_clk_in=>in_clk_external,
                 high=>is_clk_high,
                 low=>is_clk_low,
                 manual=>is_clk_manual,
-                manual_clk_in=>manual_clk_in,
+                manual_clk_in=>in_clk_manual,
                 rst=>rst,
                 clk_out=>clk_int);
    
@@ -4748,48 +4748,48 @@ begin
       port map (P=>is_clk_manual);
    
    XLXI_187 : BUF
-      port map (I=>clk,
-                O=>cpu_clk);
+      port map (I=>in_clk,
+                O=>out_clk);
    
    XLXI_188 : BUF
       port map (I=>clk_int,
-                O=>cpu_clk_int);
+                O=>out_clk_int);
    
    XLXI_189 : BUF
       port map (I=>clkc,
-                O=>cpu_clkc);
+                O=>out_clkc);
    
    XLXI_190 : BUF
       port map (I=>clkr,
-                O=>cpu_clkr);
+                O=>out_clkr);
    
    XLXI_191 : BUF
       port map (I=>clkw,
-                O=>cpu_clkw);
+                O=>out_clkw);
    
    XLXI_192 : BUF
       port map (I=>cc_dbg_s1,
-                O=>cpu_s1);
+                O=>out_s1);
    
    XLXI_193 : BUF
       port map (I=>cc_dbg_s2,
-                O=>cpu_s2);
+                O=>out_s2);
    
    XLXI_194 : BUF
       port map (I=>cc_dbg_s3,
-                O=>cpu_s3);
+                O=>out_s3);
    
    XLXI_195 : BUF
       port map (I=>cc_dbg_s4,
-                O=>cpu_s4);
+                O=>out_s4);
    
    XLXI_196 : BUF
       port map (I=>cc_dbg_s5,
-                O=>cpu_s5);
+                O=>out_s5);
    
    XLXI_207 : BUF
       port map (I=>cc_dbg_s6,
-                O=>cpu_s6);
+                O=>out_s6);
    
    XLXI_212 : INV
       port map (I=>clkr,
@@ -4802,47 +4802,47 @@ begin
    
    XLXI_219 : BUF
       port map (I=>r0_r,
-                O=>cpu_r0_r);
+                O=>out_r0_r);
    
    XLXI_220 : BUF
       port map (I=>r0_w,
-                O=>cpu_r0_w);
+                O=>out_r0_w);
    
    XLXI_221 : BUF
       port map (I=>r1_r,
-                O=>cpu_r1_r);
+                O=>out_r1_r);
    
    XLXI_222 : BUF
       port map (I=>r1_w,
-                O=>cpu_r1_w);
+                O=>out_r1_w);
    
    XLXI_223 : BUF
       port map (I=>r2_r,
-                O=>cpu_r2_r);
+                O=>out_r2_r);
    
    XLXI_224 : BUF
       port map (I=>r2_w,
-                O=>cpu_r2_w);
+                O=>out_r2_w);
    
    XLXI_225 : BUF
       port map (I=>r3_r,
-                O=>cpu_r3_r);
+                O=>out_r3_r);
    
    XLXI_226 : BUF
       port map (I=>r3_w,
-                O=>cpu_r3_w);
+                O=>out_r3_w);
    
    XLXI_227 : BUF
       port map (I=>iar_r,
-                O=>cpu_iar_r);
+                O=>out_iar_r);
    
    XLXI_228 : BUF
       port map (I=>iar_w,
-                O=>cpu_iar_w);
+                O=>out_iar_w);
    
    XLXI_229 : BUF
       port map (I=>temp_w,
-                O=>cpu_temp_w);
+                O=>out_temp_w);
    
    XLXI_326 : AND3
       port map (I0=>sysbus_released,
@@ -5012,51 +5012,51 @@ begin
    
    XLXI_553 : BUF
       port map (I=>acc_r,
-                O=>cpu_acc_r);
+                O=>out_acc_r);
    
    XLXI_554 : BUF
       port map (I=>acc_w,
-                O=>cpu_acc_w);
+                O=>out_acc_w);
    
    XLXI_555 : BUF
       port map (I=>ram_r,
-                O=>cpu_ram_r);
+                O=>out_ram_r);
    
    XLXI_556 : BUF
       port map (I=>ram_w,
-                O=>cpu_ram_w);
+                O=>out_ram_w);
    
    XLXI_557 : BUF
       port map (I=>ir_w,
-                O=>cpu_ir_w);
+                O=>out_ir_w);
    
    XLXI_558 : BUF
       port map (I=>ram_a_w,
-                O=>cpu_ram_a_w);
+                O=>out_ram_a_w);
    
    XLXI_559 : BUF
       port map (I=>bus1,
-                O=>cpu_bus1);
+                O=>out_bus1);
    
    XLXI_560 : BUF
       port map (I=>in_is_bus1_w,
-                O=>cpu_is_bus1_w);
+                O=>out_is_bus1_w);
    
    XLXI_561 : BUF
       port map (I=>cc_flags_w,
-                O=>cpu_flags_w);
+                O=>out_flags_w);
    
    XLXI_562 : BUF
       port map (I=>cc_flags_clr,
-                O=>cpu_flags_clr);
+                O=>out_flags_clr);
    
    XLXI_563 : BUF
       port map (I=>cc_dbg_alu,
-                O=>cpu_op_alu);
+                O=>out_op_alu);
    
    XLXI_564 : BUF
       port map (I=>cc_dbg_alu_sum,
-                O=>cpu_op_alu_add);
+                O=>out_op_alu_add);
    
    XLXI_565 : AND2
       port map (I0=>can_write,
@@ -5086,143 +5086,143 @@ begin
    
    XLXI_574 : buf_8bit_MUSER_cpu
       port map (i(7 downto 0)=>iar_o(7 downto 0),
-                o(7 downto 0)=>cpu_iar_o(7 downto 0));
+                o(7 downto 0)=>out_iar_o(7 downto 0));
    
    XLXI_575 : buf_8bit_MUSER_cpu
       port map (i(7 downto 0)=>ir_o(7 downto 0),
-                o(7 downto 0)=>cpu_ir_o(7 downto 0));
+                o(7 downto 0)=>out_ir_o(7 downto 0));
    
    XLXI_576 : buf_8bit_MUSER_cpu
       port map (i(7 downto 0)=>temp_o(7 downto 0),
-                o(7 downto 0)=>cpu_temp_o(7 downto 0));
+                o(7 downto 0)=>out_temp_o(7 downto 0));
    
    XLXI_648 : BUF
       port map (I=>cc_dbg_alu_lshift,
-                O=>cpu_op_alu_lshift);
+                O=>out_op_alu_lshift);
    
    XLXI_649 : BUF
       port map (I=>cc_dbg_alu_rshift,
-                O=>cpu_op_alu_rshift);
+                O=>out_op_alu_rshift);
    
    XLXI_650 : BUF
       port map (I=>cc_dbg_alu_not,
-                O=>cpu_op_alu_not);
+                O=>out_op_alu_not);
    
    XLXI_651 : BUF
       port map (I=>cc_dbg_alu_and,
-                O=>cpu_op_alu_and);
+                O=>out_op_alu_and);
    
    XLXI_652 : BUF
       port map (I=>cc_dbg_alu_or,
-                O=>cpu_op_alu_or);
+                O=>out_op_alu_or);
    
    XLXI_653 : BUF
       port map (I=>cc_dbg_alu_xor,
-                O=>cpu_op_alu_xor);
+                O=>out_op_alu_xor);
    
    XLXI_654 : BUF
       port map (I=>cc_dbg_alu_nop,
-                O=>cpu_op_alu_nop);
+                O=>out_op_alu_nop);
    
    XLXI_655 : BUF
       port map (I=>cc_dbg_ls_ld,
-                O=>cpu_op_ls_ld);
+                O=>out_op_ls_ld);
    
    XLXI_656 : BUF
       port map (I=>cc_dbg_ls_st,
-                O=>cpu_op_ls_st);
+                O=>out_op_ls_st);
    
    XLXI_657 : BUF
       port map (I=>cc_dbg_ls_ldc,
-                O=>cpu_op_ls_ldc);
+                O=>out_op_ls_ldc);
    
    XLXI_658 : BUF
       port map (I=>cc_dbg_jmp_jmpr,
-                O=>cpu_op_jmp_jmpr);
+                O=>out_op_jmp_jmpr);
    
    XLXI_659 : BUF
       port map (I=>cc_dbg_jmp_jmp,
-                O=>cpu_op_jmp_jmp);
+                O=>out_op_jmp_jmp);
    
    XLXI_660 : BUF
       port map (I=>cc_dbg_jmp_ifjmp,
-                O=>cpu_op_jmp_ifjmp);
+                O=>out_op_jmp_ifjmp);
    
    XLXI_661 : BUF
       port map (I=>cc_dbg_flg_clf,
-                O=>cpu_op_flg_clf);
+                O=>out_op_flg_clf);
    
    XLXI_662 : BUF
       port map (I=>cc_dbg_alt_nop,
-                O=>cpu_op_alt_nop);
+                O=>out_op_alt_nop);
    
    XLXI_664 : BUF
       port map (I=>alu_C_in,
-                O=>cpu_alu_C_in);
+                O=>out_alu_C_in);
    
    XLXI_665 : BUF
       port map (I=>alu_gt,
-                O=>cpu_alu_gt);
+                O=>out_alu_gt);
    
    XLXI_666 : BUF
       port map (I=>alu_eq,
-                O=>cpu_alu_eq);
+                O=>out_alu_eq);
    
    XLXI_667 : BUF
       port map (I=>alu_z,
-                O=>cpu_alu_z);
+                O=>out_alu_z);
    
    XLXI_668 : BUF
       port map (I=>alu_C_out,
-                O=>cpu_alu_C_out);
+                O=>out_alu_C_out);
    
    XLXI_669 : BUF
       port map (I=>flags_o(0),
-                O=>cpu_flags_C_out);
+                O=>out_flags_C_out);
    
    XLXI_670 : BUF
       port map (I=>flags_o(1),
-                O=>cpu_flags_gt);
+                O=>out_flags_gt);
    
    XLXI_671 : BUF
       port map (I=>flags_o(2),
-                O=>cpu_flags_eq);
+                O=>out_flags_eq);
    
    XLXI_675 : buf_8bit_MUSER_cpu
       port map (i(7 downto 0)=>alu_x(7 downto 0),
-                o(7 downto 0)=>cpu_alu_x(7 downto 0));
+                o(7 downto 0)=>out_alu_x(7 downto 0));
    
    XLXI_679 : BUF
       port map (I=>flags_o(3),
-                O=>cpu_flags_z);
+                O=>out_flags_z);
    
    XLXI_680 : BUF
       port map (I=>alu_C_in_enabled,
-                O=>cpu_C_in_enabled);
+                O=>out_C_in_enabled);
    
    XLXI_681 : BUF
       port map (I=>alu_C_out_flipflop_o,
-                O=>cpu_C_out_flipflop_o);
+                O=>out_C_out_flipflop_o);
    
    XLXI_799 : buf_8bit_MUSER_cpu
       port map (i(7 downto 0)=>ram_a_o(7 downto 0),
-                o(7 downto 0)=>cpu_ram_a_o(7 downto 0));
+                o(7 downto 0)=>out_ram_a_o(7 downto 0));
    
    XLXI_844 : BUF
       port map (I=>sysbus_released,
-                O=>cpu_sysbus_released);
+                O=>out_sysbus_released);
    
    XLXI_860 : buf_8bit_MUSER_cpu
       port map (i(7 downto 0)=>sysbus(7 downto 0),
-                o(7 downto 0)=>cpu_sysbus(7 downto 0));
+                o(7 downto 0)=>out_sysbus(7 downto 0));
    
    XLXI_901 : BUF
       port map (I=>can_read,
-                O=>cpu_can_read);
+                O=>out_can_read);
    
    XLXI_903 : BUF
       port map (I=>can_write,
-                O=>cpu_can_write);
+                O=>out_can_write);
    
 end BEHAVIORAL;
 

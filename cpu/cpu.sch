@@ -54,8 +54,6 @@
         <signal name="rst" />
         <signal name="XLXN_217" />
         <signal name="monitor(7:0)" />
-        <signal name="rst_in" />
-        <signal name="XLXN_233" />
         <signal name="r1_o(7:0)" />
         <signal name="iar_o(7:0)" />
         <signal name="r2_o(7:0)" />
@@ -64,7 +62,6 @@
         <signal name="ram_o(7:0)" />
         <signal name="r0_o(7:0)" />
         <signal name="clk_int" />
-        <signal name="clk" />
         <signal name="is_clk_high" />
         <signal name="is_clk_low" />
         <signal name="is_clk_manual" />
@@ -91,7 +88,6 @@
         <signal name="manr_w" />
         <signal name="in_manr_w" />
         <signal name="manr_r" />
-        <signal name="manual_clk_in" />
         <signal name="manual_r0_r" />
         <signal name="manual_r0_w" />
         <signal name="in_r1_r" />
@@ -163,79 +159,82 @@
         <signal name="cc_dbg_alu_nop" />
         <signal name="cc_dbg_alu" />
         <signal name="cc_dbg_alu_lshift" />
-        <signal name="cpu_op_alu_add" />
-        <signal name="cpu_op_alu" />
-        <signal name="cpu_op_alu_lshift" />
-        <signal name="cpu_op_alu_rshift" />
-        <signal name="cpu_op_alu_and" />
-        <signal name="cpu_op_alu_xor" />
-        <signal name="cpu_op_alu_not" />
-        <signal name="cpu_op_alu_or" />
-        <signal name="cpu_op_alu_nop" />
-        <signal name="cpu_op_ls_st" />
-        <signal name="cpu_op_ls_ld" />
-        <signal name="cpu_op_ls_ldc" />
-        <signal name="cpu_op_jmp_jmpr" />
-        <signal name="cpu_op_jmp_ifjmp" />
-        <signal name="cpu_op_jmp_jmp" />
-        <signal name="cpu_op_flg_clf" />
-        <signal name="cpu_op_alt_nop" />
-        <signal name="cpu_alu_gt" />
-        <signal name="cpu_alu_C_in" />
-        <signal name="cpu_alu_z" />
-        <signal name="cpu_alu_C_out" />
-        <signal name="cpu_alu_x(7:0)" />
-        <signal name="cpu_alu_eq" />
-        <signal name="cpu_flags_C_out" />
-        <signal name="cpu_flags_gt" />
-        <signal name="cpu_flags_eq" />
-        <signal name="cpu_flags_z" />
-        <signal name="cpu_C_in_enabled" />
-        <signal name="cpu_C_out_flipflop_o" />
-        <signal name="cpu_iar_o(7:0)" />
-        <signal name="cpu_temp_o(7:0)" />
-        <signal name="cpu_ir_o(7:0)" />
-        <signal name="cpu_sysbus(7:0)" />
-        <signal name="cpu_ram_a_o(7:0)" />
-        <signal name="cpu_clk" />
-        <signal name="cpu_clk_int" />
-        <signal name="cpu_clkc" />
-        <signal name="cpu_clkr" />
-        <signal name="cpu_clkw" />
-        <signal name="cpu_iar_w" />
-        <signal name="cpu_iar_r" />
-        <signal name="cpu_flags_w" />
-        <signal name="cpu_flags_clr" />
-        <signal name="cpu_s1" />
-        <signal name="cpu_s2" />
-        <signal name="cpu_s4" />
-        <signal name="cpu_s6" />
-        <signal name="cpu_s3" />
-        <signal name="cpu_s5" />
-        <signal name="cpu_sysbus_released" />
-        <signal name="cpu_r0_r" />
-        <signal name="cpu_r0_w" />
-        <signal name="cpu_r1_r" />
-        <signal name="cpu_r1_w" />
-        <signal name="cpu_r2_r" />
-        <signal name="cpu_r2_w" />
-        <signal name="cpu_r3_r" />
-        <signal name="cpu_r3_w" />
-        <signal name="cpu_ir_w" />
-        <signal name="cpu_is_bus1_w" />
-        <signal name="cpu_bus1" />
-        <signal name="cpu_acc_w" />
-        <signal name="cpu_acc_r" />
-        <signal name="cpu_temp_w" />
-        <signal name="cpu_ram_w" />
-        <signal name="cpu_ram_r" />
-        <signal name="cpu_ram_a_w" />
-        <signal name="cpu_can_read" />
-        <signal name="cpu_can_write" />
+        <signal name="out_op_alu_add" />
+        <signal name="out_op_alu" />
+        <signal name="out_op_alu_lshift" />
+        <signal name="out_op_alu_rshift" />
+        <signal name="out_op_alu_and" />
+        <signal name="out_op_alu_xor" />
+        <signal name="out_op_alu_not" />
+        <signal name="out_op_alu_or" />
+        <signal name="out_op_alu_nop" />
+        <signal name="out_op_ls_st" />
+        <signal name="out_op_ls_ld" />
+        <signal name="out_op_ls_ldc" />
+        <signal name="out_op_jmp_jmpr" />
+        <signal name="out_op_jmp_ifjmp" />
+        <signal name="out_op_jmp_jmp" />
+        <signal name="out_op_flg_clf" />
+        <signal name="out_op_alt_nop" />
+        <signal name="out_alu_gt" />
+        <signal name="out_alu_C_in" />
+        <signal name="out_alu_z" />
+        <signal name="out_alu_C_out" />
+        <signal name="out_alu_x(7:0)" />
+        <signal name="out_alu_eq" />
+        <signal name="out_flags_C_out" />
+        <signal name="out_flags_gt" />
+        <signal name="out_flags_eq" />
+        <signal name="out_flags_z" />
+        <signal name="out_C_in_enabled" />
+        <signal name="out_C_out_flipflop_o" />
+        <signal name="out_iar_o(7:0)" />
+        <signal name="out_temp_o(7:0)" />
+        <signal name="out_ir_o(7:0)" />
+        <signal name="out_sysbus(7:0)" />
+        <signal name="out_ram_a_o(7:0)" />
+        <signal name="out_clk" />
+        <signal name="out_clk_int" />
+        <signal name="out_clkc" />
+        <signal name="out_clkr" />
+        <signal name="out_clkw" />
+        <signal name="out_iar_w" />
+        <signal name="out_iar_r" />
+        <signal name="out_flags_w" />
+        <signal name="out_flags_clr" />
+        <signal name="out_s1" />
+        <signal name="out_s2" />
+        <signal name="out_s4" />
+        <signal name="out_s6" />
+        <signal name="out_s3" />
+        <signal name="out_s5" />
+        <signal name="out_sysbus_released" />
+        <signal name="out_r0_r" />
+        <signal name="out_r0_w" />
+        <signal name="out_r1_r" />
+        <signal name="out_r1_w" />
+        <signal name="out_r2_r" />
+        <signal name="out_r2_w" />
+        <signal name="out_r3_r" />
+        <signal name="out_r3_w" />
+        <signal name="out_ir_w" />
+        <signal name="out_is_bus1_w" />
+        <signal name="out_bus1" />
+        <signal name="out_acc_w" />
+        <signal name="out_acc_r" />
+        <signal name="out_temp_w" />
+        <signal name="out_ram_w" />
+        <signal name="out_ram_r" />
+        <signal name="out_ram_a_w" />
+        <signal name="out_can_read" />
+        <signal name="out_can_write" />
+        <signal name="in_clk" />
+        <signal name="in_clk_manual" />
+        <signal name="in_clk_external" />
+        <signal name="in_rst" />
+        <signal name="XLXN_233" />
         <port polarity="Input" name="in_manr_d(7:0)" />
         <port polarity="Output" name="monitor(7:0)" />
-        <port polarity="Input" name="rst_in" />
-        <port polarity="Input" name="clk" />
         <port polarity="Input" name="in_r0_r" />
         <port polarity="Input" name="in_read_reg_en" />
         <port polarity="Input" name="in_write_reg_en" />
@@ -245,7 +244,6 @@
         <port polarity="Output" name="manr_w" />
         <port polarity="Input" name="in_manr_w" />
         <port polarity="Output" name="manr_r" />
-        <port polarity="Input" name="manual_clk_in" />
         <port polarity="Input" name="in_r1_r" />
         <port polarity="Input" name="in_r1_w" />
         <port polarity="Input" name="in_r2_r" />
@@ -263,75 +261,79 @@
         <port polarity="Input" name="in_ram_a_w" />
         <port polarity="Input" name="in_bus1" />
         <port polarity="Input" name="in_is_bus1_w" />
-        <port polarity="Output" name="cpu_op_alu_add" />
-        <port polarity="Output" name="cpu_op_alu" />
-        <port polarity="Output" name="cpu_op_alu_lshift" />
-        <port polarity="Output" name="cpu_op_alu_rshift" />
-        <port polarity="Output" name="cpu_op_alu_and" />
-        <port polarity="Output" name="cpu_op_alu_xor" />
-        <port polarity="Output" name="cpu_op_alu_not" />
-        <port polarity="Output" name="cpu_op_alu_or" />
-        <port polarity="Output" name="cpu_op_alu_nop" />
-        <port polarity="Output" name="cpu_op_ls_st" />
-        <port polarity="Output" name="cpu_op_ls_ld" />
-        <port polarity="Output" name="cpu_op_ls_ldc" />
-        <port polarity="Output" name="cpu_op_jmp_jmpr" />
-        <port polarity="Output" name="cpu_op_jmp_ifjmp" />
-        <port polarity="Output" name="cpu_op_jmp_jmp" />
-        <port polarity="Output" name="cpu_op_flg_clf" />
-        <port polarity="Output" name="cpu_op_alt_nop" />
-        <port polarity="Output" name="cpu_alu_gt" />
-        <port polarity="Output" name="cpu_alu_C_in" />
-        <port polarity="Output" name="cpu_alu_z" />
-        <port polarity="Output" name="cpu_alu_C_out" />
-        <port polarity="Output" name="cpu_alu_x(7:0)" />
-        <port polarity="Output" name="cpu_alu_eq" />
-        <port polarity="Output" name="cpu_flags_C_out" />
-        <port polarity="Output" name="cpu_flags_gt" />
-        <port polarity="Output" name="cpu_flags_eq" />
-        <port polarity="Output" name="cpu_flags_z" />
-        <port polarity="Output" name="cpu_C_in_enabled" />
-        <port polarity="Output" name="cpu_C_out_flipflop_o" />
-        <port polarity="Output" name="cpu_iar_o(7:0)" />
-        <port polarity="Output" name="cpu_temp_o(7:0)" />
-        <port polarity="Output" name="cpu_ir_o(7:0)" />
-        <port polarity="Output" name="cpu_sysbus(7:0)" />
-        <port polarity="Output" name="cpu_ram_a_o(7:0)" />
-        <port polarity="Output" name="cpu_clk" />
-        <port polarity="Output" name="cpu_clk_int" />
-        <port polarity="Output" name="cpu_clkc" />
-        <port polarity="Output" name="cpu_clkr" />
-        <port polarity="Output" name="cpu_clkw" />
-        <port polarity="Output" name="cpu_iar_w" />
-        <port polarity="Output" name="cpu_iar_r" />
-        <port polarity="Output" name="cpu_flags_w" />
-        <port polarity="Output" name="cpu_flags_clr" />
-        <port polarity="Output" name="cpu_s1" />
-        <port polarity="Output" name="cpu_s2" />
-        <port polarity="Output" name="cpu_s4" />
-        <port polarity="Output" name="cpu_s6" />
-        <port polarity="Output" name="cpu_s3" />
-        <port polarity="Output" name="cpu_s5" />
-        <port polarity="Output" name="cpu_sysbus_released" />
-        <port polarity="Output" name="cpu_r0_r" />
-        <port polarity="Output" name="cpu_r0_w" />
-        <port polarity="Output" name="cpu_r1_r" />
-        <port polarity="Output" name="cpu_r1_w" />
-        <port polarity="Output" name="cpu_r2_r" />
-        <port polarity="Output" name="cpu_r2_w" />
-        <port polarity="Output" name="cpu_r3_r" />
-        <port polarity="Output" name="cpu_r3_w" />
-        <port polarity="Output" name="cpu_ir_w" />
-        <port polarity="Output" name="cpu_is_bus1_w" />
-        <port polarity="Output" name="cpu_bus1" />
-        <port polarity="Output" name="cpu_acc_w" />
-        <port polarity="Output" name="cpu_acc_r" />
-        <port polarity="Output" name="cpu_temp_w" />
-        <port polarity="Output" name="cpu_ram_w" />
-        <port polarity="Output" name="cpu_ram_r" />
-        <port polarity="Output" name="cpu_ram_a_w" />
-        <port polarity="Output" name="cpu_can_read" />
-        <port polarity="Output" name="cpu_can_write" />
+        <port polarity="Output" name="out_op_alu_add" />
+        <port polarity="Output" name="out_op_alu" />
+        <port polarity="Output" name="out_op_alu_lshift" />
+        <port polarity="Output" name="out_op_alu_rshift" />
+        <port polarity="Output" name="out_op_alu_and" />
+        <port polarity="Output" name="out_op_alu_xor" />
+        <port polarity="Output" name="out_op_alu_not" />
+        <port polarity="Output" name="out_op_alu_or" />
+        <port polarity="Output" name="out_op_alu_nop" />
+        <port polarity="Output" name="out_op_ls_st" />
+        <port polarity="Output" name="out_op_ls_ld" />
+        <port polarity="Output" name="out_op_ls_ldc" />
+        <port polarity="Output" name="out_op_jmp_jmpr" />
+        <port polarity="Output" name="out_op_jmp_ifjmp" />
+        <port polarity="Output" name="out_op_jmp_jmp" />
+        <port polarity="Output" name="out_op_flg_clf" />
+        <port polarity="Output" name="out_op_alt_nop" />
+        <port polarity="Output" name="out_alu_gt" />
+        <port polarity="Output" name="out_alu_C_in" />
+        <port polarity="Output" name="out_alu_z" />
+        <port polarity="Output" name="out_alu_C_out" />
+        <port polarity="Output" name="out_alu_x(7:0)" />
+        <port polarity="Output" name="out_alu_eq" />
+        <port polarity="Output" name="out_flags_C_out" />
+        <port polarity="Output" name="out_flags_gt" />
+        <port polarity="Output" name="out_flags_eq" />
+        <port polarity="Output" name="out_flags_z" />
+        <port polarity="Output" name="out_C_in_enabled" />
+        <port polarity="Output" name="out_C_out_flipflop_o" />
+        <port polarity="Output" name="out_iar_o(7:0)" />
+        <port polarity="Output" name="out_temp_o(7:0)" />
+        <port polarity="Output" name="out_ir_o(7:0)" />
+        <port polarity="Output" name="out_sysbus(7:0)" />
+        <port polarity="Output" name="out_ram_a_o(7:0)" />
+        <port polarity="Output" name="out_clk" />
+        <port polarity="Output" name="out_clk_int" />
+        <port polarity="Output" name="out_clkc" />
+        <port polarity="Output" name="out_clkr" />
+        <port polarity="Output" name="out_clkw" />
+        <port polarity="Output" name="out_iar_w" />
+        <port polarity="Output" name="out_iar_r" />
+        <port polarity="Output" name="out_flags_w" />
+        <port polarity="Output" name="out_flags_clr" />
+        <port polarity="Output" name="out_s1" />
+        <port polarity="Output" name="out_s2" />
+        <port polarity="Output" name="out_s4" />
+        <port polarity="Output" name="out_s6" />
+        <port polarity="Output" name="out_s3" />
+        <port polarity="Output" name="out_s5" />
+        <port polarity="Output" name="out_sysbus_released" />
+        <port polarity="Output" name="out_r0_r" />
+        <port polarity="Output" name="out_r0_w" />
+        <port polarity="Output" name="out_r1_r" />
+        <port polarity="Output" name="out_r1_w" />
+        <port polarity="Output" name="out_r2_r" />
+        <port polarity="Output" name="out_r2_w" />
+        <port polarity="Output" name="out_r3_r" />
+        <port polarity="Output" name="out_r3_w" />
+        <port polarity="Output" name="out_ir_w" />
+        <port polarity="Output" name="out_is_bus1_w" />
+        <port polarity="Output" name="out_bus1" />
+        <port polarity="Output" name="out_acc_w" />
+        <port polarity="Output" name="out_acc_r" />
+        <port polarity="Output" name="out_temp_w" />
+        <port polarity="Output" name="out_ram_w" />
+        <port polarity="Output" name="out_ram_r" />
+        <port polarity="Output" name="out_ram_a_w" />
+        <port polarity="Output" name="out_can_read" />
+        <port polarity="Output" name="out_can_write" />
+        <port polarity="Input" name="in_clk" />
+        <port polarity="Input" name="in_clk_manual" />
+        <port polarity="Input" name="in_clk_external" />
+        <port polarity="Input" name="in_rst" />
         <blockdef name="alu">
             <timestamp>2022-4-8T18:49:12</timestamp>
             <rect width="256" x="64" y="-320" height="320" />
@@ -756,14 +758,6 @@
             <blockpin signalname="pto(7:0)" name="o(7:0)" />
             <blockpin signalname="bus1" name="one" />
         </block>
-        <block symbolname="buf" name="XLXI_116">
-            <blockpin signalname="rst_in" name="I" />
-            <blockpin signalname="XLXN_233" name="O" />
-        </block>
-        <block symbolname="inv" name="XLXI_117">
-            <blockpin signalname="XLXN_233" name="I" />
-            <blockpin signalname="rst" name="O" />
-        </block>
         <block symbolname="reg_8bit" name="XLXI_121">
             <blockpin signalname="rst" name="clr" />
             <blockpin signalname="in_manr_d(7:0)" name="d(7:0)" />
@@ -864,14 +858,14 @@
             <blockpin signalname="clkw" name="clkw" />
         </block>
         <block symbolname="cpu_freq_divider" name="XLXI_173">
-            <blockpin signalname="clk" name="clk_in" />
+            <blockpin signalname="in_clk" name="clk_in" />
             <blockpin signalname="clk_int" name="clk_out" />
             <blockpin signalname="is_clk_external" name="external" />
-            <blockpin name="external_clk_in" />
+            <blockpin signalname="in_clk_external" name="external_clk_in" />
             <blockpin signalname="is_clk_high" name="high" />
             <blockpin signalname="is_clk_low" name="low" />
             <blockpin signalname="is_clk_manual" name="manual" />
-            <blockpin signalname="manual_clk_in" name="manual_clk_in" />
+            <blockpin signalname="in_clk_manual" name="manual_clk_in" />
             <blockpin signalname="rst" name="rst" />
         </block>
         <block symbolname="gnd" name="XLXI_183">
@@ -1089,279 +1083,287 @@
         </block>
         <block symbolname="buf" name="XLXI_563">
             <blockpin signalname="cc_dbg_alu" name="I" />
-            <blockpin signalname="cpu_op_alu" name="O" />
+            <blockpin signalname="out_op_alu" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_564">
             <blockpin signalname="cc_dbg_alu_sum" name="I" />
-            <blockpin signalname="cpu_op_alu_add" name="O" />
+            <blockpin signalname="out_op_alu_add" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_648">
             <blockpin signalname="cc_dbg_alu_lshift" name="I" />
-            <blockpin signalname="cpu_op_alu_lshift" name="O" />
+            <blockpin signalname="out_op_alu_lshift" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_649">
             <blockpin signalname="cc_dbg_alu_rshift" name="I" />
-            <blockpin signalname="cpu_op_alu_rshift" name="O" />
+            <blockpin signalname="out_op_alu_rshift" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_650">
             <blockpin signalname="cc_dbg_alu_not" name="I" />
-            <blockpin signalname="cpu_op_alu_not" name="O" />
+            <blockpin signalname="out_op_alu_not" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_651">
             <blockpin signalname="cc_dbg_alu_and" name="I" />
-            <blockpin signalname="cpu_op_alu_and" name="O" />
+            <blockpin signalname="out_op_alu_and" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_652">
             <blockpin signalname="cc_dbg_alu_or" name="I" />
-            <blockpin signalname="cpu_op_alu_or" name="O" />
+            <blockpin signalname="out_op_alu_or" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_653">
             <blockpin signalname="cc_dbg_alu_xor" name="I" />
-            <blockpin signalname="cpu_op_alu_xor" name="O" />
+            <blockpin signalname="out_op_alu_xor" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_654">
             <blockpin signalname="cc_dbg_alu_nop" name="I" />
-            <blockpin signalname="cpu_op_alu_nop" name="O" />
+            <blockpin signalname="out_op_alu_nop" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_655">
             <blockpin signalname="cc_dbg_ls_ld" name="I" />
-            <blockpin signalname="cpu_op_ls_ld" name="O" />
+            <blockpin signalname="out_op_ls_ld" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_656">
             <blockpin signalname="cc_dbg_ls_st" name="I" />
-            <blockpin signalname="cpu_op_ls_st" name="O" />
+            <blockpin signalname="out_op_ls_st" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_657">
             <blockpin signalname="cc_dbg_ls_ldc" name="I" />
-            <blockpin signalname="cpu_op_ls_ldc" name="O" />
+            <blockpin signalname="out_op_ls_ldc" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_658">
             <blockpin signalname="cc_dbg_jmp_jmpr" name="I" />
-            <blockpin signalname="cpu_op_jmp_jmpr" name="O" />
+            <blockpin signalname="out_op_jmp_jmpr" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_659">
             <blockpin signalname="cc_dbg_jmp_jmp" name="I" />
-            <blockpin signalname="cpu_op_jmp_jmp" name="O" />
+            <blockpin signalname="out_op_jmp_jmp" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_660">
             <blockpin signalname="cc_dbg_jmp_ifjmp" name="I" />
-            <blockpin signalname="cpu_op_jmp_ifjmp" name="O" />
+            <blockpin signalname="out_op_jmp_ifjmp" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_661">
             <blockpin signalname="cc_dbg_flg_clf" name="I" />
-            <blockpin signalname="cpu_op_flg_clf" name="O" />
+            <blockpin signalname="out_op_flg_clf" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_662">
             <blockpin signalname="cc_dbg_alt_nop" name="I" />
-            <blockpin signalname="cpu_op_alt_nop" name="O" />
+            <blockpin signalname="out_op_alt_nop" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_664">
             <blockpin signalname="alu_C_in" name="I" />
-            <blockpin signalname="cpu_alu_C_in" name="O" />
+            <blockpin signalname="out_alu_C_in" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_665">
             <blockpin signalname="alu_gt" name="I" />
-            <blockpin signalname="cpu_alu_gt" name="O" />
+            <blockpin signalname="out_alu_gt" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_666">
             <blockpin signalname="alu_eq" name="I" />
-            <blockpin signalname="cpu_alu_eq" name="O" />
+            <blockpin signalname="out_alu_eq" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_667">
             <blockpin signalname="alu_z" name="I" />
-            <blockpin signalname="cpu_alu_z" name="O" />
+            <blockpin signalname="out_alu_z" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_668">
             <blockpin signalname="alu_C_out" name="I" />
-            <blockpin signalname="cpu_alu_C_out" name="O" />
+            <blockpin signalname="out_alu_C_out" name="O" />
         </block>
         <block symbolname="buf_8bit" name="XLXI_675">
             <blockpin signalname="alu_x(7:0)" name="i(7:0)" />
-            <blockpin signalname="cpu_alu_x(7:0)" name="o(7:0)" />
+            <blockpin signalname="out_alu_x(7:0)" name="o(7:0)" />
         </block>
         <block symbolname="buf" name="XLXI_669">
             <blockpin signalname="flags_o(0)" name="I" />
-            <blockpin signalname="cpu_flags_C_out" name="O" />
+            <blockpin signalname="out_flags_C_out" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_670">
             <blockpin signalname="flags_o(1)" name="I" />
-            <blockpin signalname="cpu_flags_gt" name="O" />
+            <blockpin signalname="out_flags_gt" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_671">
             <blockpin signalname="flags_o(2)" name="I" />
-            <blockpin signalname="cpu_flags_eq" name="O" />
+            <blockpin signalname="out_flags_eq" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_679">
             <blockpin signalname="flags_o(3)" name="I" />
-            <blockpin signalname="cpu_flags_z" name="O" />
+            <blockpin signalname="out_flags_z" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_680">
             <blockpin signalname="alu_C_in_enabled" name="I" />
-            <blockpin signalname="cpu_C_in_enabled" name="O" />
+            <blockpin signalname="out_C_in_enabled" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_681">
             <blockpin signalname="alu_C_out_flipflop_o" name="I" />
-            <blockpin signalname="cpu_C_out_flipflop_o" name="O" />
+            <blockpin signalname="out_C_out_flipflop_o" name="O" />
         </block>
         <block symbolname="buf_8bit" name="XLXI_576">
             <blockpin signalname="temp_o(7:0)" name="i(7:0)" />
-            <blockpin signalname="cpu_temp_o(7:0)" name="o(7:0)" />
+            <blockpin signalname="out_temp_o(7:0)" name="o(7:0)" />
         </block>
         <block symbolname="buf_8bit" name="XLXI_575">
             <blockpin signalname="ir_o(7:0)" name="i(7:0)" />
-            <blockpin signalname="cpu_ir_o(7:0)" name="o(7:0)" />
+            <blockpin signalname="out_ir_o(7:0)" name="o(7:0)" />
         </block>
         <block symbolname="buf_8bit" name="XLXI_574">
             <blockpin signalname="iar_o(7:0)" name="i(7:0)" />
-            <blockpin signalname="cpu_iar_o(7:0)" name="o(7:0)" />
+            <blockpin signalname="out_iar_o(7:0)" name="o(7:0)" />
         </block>
         <block symbolname="buf_8bit" name="XLXI_799">
             <blockpin signalname="ram_a_o(7:0)" name="i(7:0)" />
-            <blockpin signalname="cpu_ram_a_o(7:0)" name="o(7:0)" />
+            <blockpin signalname="out_ram_a_o(7:0)" name="o(7:0)" />
         </block>
         <block symbolname="buf" name="XLXI_187">
-            <blockpin signalname="clk" name="I" />
-            <blockpin signalname="cpu_clk" name="O" />
+            <blockpin signalname="in_clk" name="I" />
+            <blockpin signalname="out_clk" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_188">
             <blockpin signalname="clk_int" name="I" />
-            <blockpin signalname="cpu_clk_int" name="O" />
+            <blockpin signalname="out_clk_int" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_189">
             <blockpin signalname="clkc" name="I" />
-            <blockpin signalname="cpu_clkc" name="O" />
+            <blockpin signalname="out_clkc" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_190">
             <blockpin signalname="clkr" name="I" />
-            <blockpin signalname="cpu_clkr" name="O" />
+            <blockpin signalname="out_clkr" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_191">
             <blockpin signalname="clkw" name="I" />
-            <blockpin signalname="cpu_clkw" name="O" />
+            <blockpin signalname="out_clkw" name="O" />
         </block>
         <block symbolname="buf_8bit" name="XLXI_860">
             <blockpin signalname="sysbus(7:0)" name="i(7:0)" />
-            <blockpin signalname="cpu_sysbus(7:0)" name="o(7:0)" />
+            <blockpin signalname="out_sysbus(7:0)" name="o(7:0)" />
         </block>
         <block symbolname="buf" name="XLXI_227">
             <blockpin signalname="iar_r" name="I" />
-            <blockpin signalname="cpu_iar_r" name="O" />
+            <blockpin signalname="out_iar_r" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_228">
             <blockpin signalname="iar_w" name="I" />
-            <blockpin signalname="cpu_iar_w" name="O" />
+            <blockpin signalname="out_iar_w" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_561">
             <blockpin signalname="cc_flags_w" name="I" />
-            <blockpin signalname="cpu_flags_w" name="O" />
+            <blockpin signalname="out_flags_w" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_562">
             <blockpin signalname="cc_flags_clr" name="I" />
-            <blockpin signalname="cpu_flags_clr" name="O" />
+            <blockpin signalname="out_flags_clr" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_192">
             <blockpin signalname="cc_dbg_s1" name="I" />
-            <blockpin signalname="cpu_s1" name="O" />
+            <blockpin signalname="out_s1" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_193">
             <blockpin signalname="cc_dbg_s2" name="I" />
-            <blockpin signalname="cpu_s2" name="O" />
+            <blockpin signalname="out_s2" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_194">
             <blockpin signalname="cc_dbg_s3" name="I" />
-            <blockpin signalname="cpu_s3" name="O" />
+            <blockpin signalname="out_s3" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_195">
             <blockpin signalname="cc_dbg_s4" name="I" />
-            <blockpin signalname="cpu_s4" name="O" />
+            <blockpin signalname="out_s4" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_196">
             <blockpin signalname="cc_dbg_s5" name="I" />
-            <blockpin signalname="cpu_s5" name="O" />
+            <blockpin signalname="out_s5" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_207">
             <blockpin signalname="cc_dbg_s6" name="I" />
-            <blockpin signalname="cpu_s6" name="O" />
+            <blockpin signalname="out_s6" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_844">
             <blockpin signalname="sysbus_released" name="I" />
-            <blockpin signalname="cpu_sysbus_released" name="O" />
+            <blockpin signalname="out_sysbus_released" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_219">
             <blockpin signalname="r0_r" name="I" />
-            <blockpin signalname="cpu_r0_r" name="O" />
+            <blockpin signalname="out_r0_r" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_220">
             <blockpin signalname="r0_w" name="I" />
-            <blockpin signalname="cpu_r0_w" name="O" />
+            <blockpin signalname="out_r0_w" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_221">
             <blockpin signalname="r1_r" name="I" />
-            <blockpin signalname="cpu_r1_r" name="O" />
+            <blockpin signalname="out_r1_r" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_222">
             <blockpin signalname="r1_w" name="I" />
-            <blockpin signalname="cpu_r1_w" name="O" />
+            <blockpin signalname="out_r1_w" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_223">
             <blockpin signalname="r2_r" name="I" />
-            <blockpin signalname="cpu_r2_r" name="O" />
+            <blockpin signalname="out_r2_r" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_224">
             <blockpin signalname="r2_w" name="I" />
-            <blockpin signalname="cpu_r2_w" name="O" />
+            <blockpin signalname="out_r2_w" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_225">
             <blockpin signalname="r3_r" name="I" />
-            <blockpin signalname="cpu_r3_r" name="O" />
+            <blockpin signalname="out_r3_r" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_226">
             <blockpin signalname="r3_w" name="I" />
-            <blockpin signalname="cpu_r3_w" name="O" />
+            <blockpin signalname="out_r3_w" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_557">
             <blockpin signalname="ir_w" name="I" />
-            <blockpin signalname="cpu_ir_w" name="O" />
+            <blockpin signalname="out_ir_w" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_560">
             <blockpin signalname="in_is_bus1_w" name="I" />
-            <blockpin signalname="cpu_is_bus1_w" name="O" />
+            <blockpin signalname="out_is_bus1_w" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_559">
             <blockpin signalname="bus1" name="I" />
-            <blockpin signalname="cpu_bus1" name="O" />
+            <blockpin signalname="out_bus1" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_554">
             <blockpin signalname="acc_w" name="I" />
-            <blockpin signalname="cpu_acc_w" name="O" />
+            <blockpin signalname="out_acc_w" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_553">
             <blockpin signalname="acc_r" name="I" />
-            <blockpin signalname="cpu_acc_r" name="O" />
+            <blockpin signalname="out_acc_r" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_229">
             <blockpin signalname="temp_w" name="I" />
-            <blockpin signalname="cpu_temp_w" name="O" />
+            <blockpin signalname="out_temp_w" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_555">
             <blockpin signalname="ram_r" name="I" />
-            <blockpin signalname="cpu_ram_r" name="O" />
+            <blockpin signalname="out_ram_r" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_556">
             <blockpin signalname="ram_w" name="I" />
-            <blockpin signalname="cpu_ram_w" name="O" />
+            <blockpin signalname="out_ram_w" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_558">
             <blockpin signalname="ram_a_w" name="I" />
-            <blockpin signalname="cpu_ram_a_w" name="O" />
+            <blockpin signalname="out_ram_a_w" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_901">
             <blockpin signalname="can_read" name="I" />
-            <blockpin signalname="cpu_can_read" name="O" />
+            <blockpin signalname="out_can_read" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_903">
             <blockpin signalname="can_write" name="I" />
-            <blockpin signalname="cpu_can_write" name="O" />
+            <blockpin signalname="out_can_write" name="O" />
+        </block>
+        <block symbolname="buf" name="XLXI_116">
+            <blockpin signalname="in_rst" name="I" />
+            <blockpin signalname="XLXN_233" name="O" />
+        </block>
+        <block symbolname="inv" name="XLXI_117">
+            <blockpin signalname="XLXN_233" name="I" />
+            <blockpin signalname="rst" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="7609" height="5382">
@@ -1677,19 +1679,6 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="128" y="384" type="branch" />
             <wire x2="176" y1="384" y2="384" x1="128" />
         </branch>
-        <instance x="320" y="2832" name="XLXI_116" orien="R0" />
-        <instance x="640" y="2832" name="XLXI_117" orien="R0" />
-        <branch name="rst_in">
-            <wire x2="320" y1="2800" y2="2800" x1="240" />
-        </branch>
-        <branch name="XLXN_233">
-            <wire x2="640" y1="2800" y2="2800" x1="544" />
-        </branch>
-        <branch name="rst">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="960" y="2800" type="branch" />
-            <wire x2="960" y1="2800" y2="2800" x1="864" />
-        </branch>
-        <iomarker fontsize="28" x="240" y="2800" name="rst_in" orien="R180" />
         <instance x="416" y="3456" name="XLXI_121" orien="R0">
         </instance>
         <instance x="1520" y="3456" name="XLXI_122" orien="R0">
@@ -1772,7 +1761,8 @@
         <instance x="1360" y="1520" name="clck_gen" orien="R0">
             <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="0" y="0" type="instance" />
         </instance>
-        <branch name="clk">
+        <branch name="in_clk">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="256" y="1488" type="branch" />
             <wire x2="320" y1="1488" y2="1488" x1="256" />
         </branch>
         <branch name="rst">
@@ -1801,7 +1791,6 @@
         </branch>
         <instance x="320" y="1968" name="XLXI_173" orien="R0">
         </instance>
-        <iomarker fontsize="28" x="256" y="1488" name="clk" orien="R180" />
         <instance x="128" y="1872" name="XLXI_184" orien="R90" />
         <instance x="128" y="1744" name="XLXI_185" orien="R90" />
         <branch name="cc_dbg_s3">
@@ -1966,20 +1955,10 @@
             <wire x2="1856" y1="3920" y2="3920" x1="1776" />
         </branch>
         <iomarker fontsize="28" x="2176" y="3728" name="manr_r" orien="R0" />
-        <branch name="in_write_reg_en">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="608" y="3632" type="branch" />
-            <wire x2="608" y1="3632" y2="3632" x1="448" />
-        </branch>
-        <iomarker fontsize="28" x="448" y="3632" name="in_write_reg_en" orien="R180" />
-        <branch name="in_read_reg_en">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="608" y="3584" type="branch" />
-            <wire x2="608" y1="3584" y2="3584" x1="448" />
-        </branch>
-        <iomarker fontsize="28" x="448" y="3584" name="in_read_reg_en" orien="R180" />
-        <branch name="manual_clk_in">
+        <branch name="in_clk_manual">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="256" y="1552" type="branch" />
             <wire x2="320" y1="1552" y2="1552" x1="256" />
         </branch>
-        <iomarker fontsize="28" x="256" y="1552" name="manual_clk_in" orien="R180" />
         <instance x="256" y="1936" name="XLXI_186" orien="R270" />
         <instance x="128" y="1680" name="XLXI_183" orien="R90" />
         <iomarker fontsize="28" x="2176" y="3888" name="manr_w" orien="R0" />
@@ -2318,73 +2297,6 @@
             <wire x2="656" y1="4880" y2="4880" x1="560" />
             <wire x2="704" y1="4880" y2="4880" x1="656" />
         </branch>
-        <branch name="in_manr_r">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="608" y="3728" type="branch" />
-            <wire x2="592" y1="3728" y2="3728" x1="448" />
-            <wire x2="608" y1="3728" y2="3728" x1="592" />
-        </branch>
-        <branch name="in_manr_w">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="608" y="3776" type="branch" />
-            <wire x2="592" y1="3776" y2="3776" x1="448" />
-            <wire x2="608" y1="3776" y2="3776" x1="592" />
-        </branch>
-        <branch name="in_manr_d(7:0)">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="608" y="3824" type="branch" />
-            <wire x2="608" y1="3824" y2="3824" x1="448" />
-        </branch>
-        <iomarker fontsize="28" x="448" y="3728" name="in_manr_r" orien="R180" />
-        <iomarker fontsize="28" x="448" y="3776" name="in_manr_w" orien="R180" />
-        <iomarker fontsize="28" x="448" y="3824" name="in_manr_d(7:0)" orien="R180" />
-        <branch name="in_r0_r">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="576" y="3920" type="branch" />
-            <wire x2="576" y1="3920" y2="3920" x1="416" />
-        </branch>
-        <branch name="in_r0_w">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="576" y="3968" type="branch" />
-            <wire x2="576" y1="3968" y2="3968" x1="416" />
-        </branch>
-        <branch name="in_r1_r">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="576" y="4032" type="branch" />
-            <wire x2="576" y1="4032" y2="4032" x1="416" />
-        </branch>
-        <branch name="in_r1_w">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="576" y="4080" type="branch" />
-            <wire x2="576" y1="4080" y2="4080" x1="416" />
-        </branch>
-        <branch name="in_r2_r">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="576" y="4144" type="branch" />
-            <wire x2="576" y1="4144" y2="4144" x1="416" />
-        </branch>
-        <branch name="in_r2_w">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="576" y="4192" type="branch" />
-            <wire x2="576" y1="4192" y2="4192" x1="416" />
-        </branch>
-        <branch name="in_r3_r">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="576" y="4256" type="branch" />
-            <wire x2="576" y1="4256" y2="4256" x1="416" />
-        </branch>
-        <branch name="in_r3_w">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="576" y="4304" type="branch" />
-            <wire x2="576" y1="4304" y2="4304" x1="416" />
-        </branch>
-        <branch name="in_iar_r">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="576" y="4368" type="branch" />
-            <wire x2="576" y1="4368" y2="4368" x1="416" />
-        </branch>
-        <branch name="in_iar_w">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="576" y="4416" type="branch" />
-            <wire x2="576" y1="4416" y2="4416" x1="416" />
-        </branch>
-        <iomarker fontsize="28" x="416" y="3920" name="in_r0_r" orien="R180" />
-        <iomarker fontsize="28" x="416" y="3968" name="in_r0_w" orien="R180" />
-        <iomarker fontsize="28" x="416" y="4032" name="in_r1_r" orien="R180" />
-        <iomarker fontsize="28" x="416" y="4080" name="in_r1_w" orien="R180" />
-        <iomarker fontsize="28" x="416" y="4144" name="in_r2_r" orien="R180" />
-        <iomarker fontsize="28" x="416" y="4192" name="in_r2_w" orien="R180" />
-        <iomarker fontsize="28" x="416" y="4256" name="in_r3_r" orien="R180" />
-        <iomarker fontsize="28" x="416" y="4304" name="in_r3_w" orien="R180" />
-        <iomarker fontsize="28" x="416" y="4368" name="in_iar_r" orien="R180" />
-        <iomarker fontsize="28" x="416" y="4416" name="in_iar_w" orien="R180" />
         <branch name="in_acc_r">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5040" y="3696" type="branch" />
             <wire x2="5120" y1="3696" y2="3696" x1="5040" />
@@ -2589,26 +2501,6 @@
             <wire x2="3392" y1="5104" y2="5104" x1="3296" />
         </branch>
         <instance x="3392" y="5264" name="XLXI_571" orien="R0" />
-        <branch name="in_acc_r">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="576" y="4480" type="branch" />
-            <wire x2="576" y1="4480" y2="4480" x1="416" />
-        </branch>
-        <branch name="in_acc_w">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="576" y="4528" type="branch" />
-            <wire x2="576" y1="4528" y2="4528" x1="416" />
-        </branch>
-        <branch name="in_ram_r">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="576" y="4592" type="branch" />
-            <wire x2="576" y1="4592" y2="4592" x1="416" />
-        </branch>
-        <branch name="in_ram_w">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="576" y="4640" type="branch" />
-            <wire x2="576" y1="4640" y2="4640" x1="416" />
-        </branch>
-        <iomarker fontsize="28" x="416" y="4480" name="in_acc_r" orien="R180" />
-        <iomarker fontsize="28" x="416" y="4528" name="in_acc_w" orien="R180" />
-        <iomarker fontsize="28" x="416" y="4592" name="in_ram_r" orien="R180" />
-        <iomarker fontsize="28" x="416" y="4640" name="in_ram_w" orien="R180" />
         <branch name="cc_r1_r">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3696" y="1456" type="branch" />
             <wire x2="3680" y1="1456" y2="1456" x1="3648" />
@@ -2826,10 +2718,10 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6240" y="3296" type="branch" />
             <wire x2="6336" y1="3296" y2="3296" x1="6240" />
         </branch>
-        <branch name="cpu_op_alu_add">
+        <branch name="out_op_alu_add">
             <wire x2="6720" y1="3296" y2="3296" x1="6560" />
         </branch>
-        <branch name="cpu_op_alu">
+        <branch name="out_op_alu">
             <wire x2="6720" y1="3232" y2="3232" x1="6560" />
         </branch>
         <instance x="6336" y="3392" name="XLXI_648" orien="R0" />
@@ -2857,13 +2749,13 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6240" y="3616" type="branch" />
             <wire x2="6336" y1="3616" y2="3616" x1="6240" />
         </branch>
-        <branch name="cpu_op_alu_lshift">
+        <branch name="out_op_alu_lshift">
             <wire x2="6720" y1="3360" y2="3360" x1="6560" />
         </branch>
-        <branch name="cpu_op_alu_rshift">
+        <branch name="out_op_alu_rshift">
             <wire x2="6720" y1="3424" y2="3424" x1="6560" />
         </branch>
-        <branch name="cpu_op_alu_and">
+        <branch name="out_op_alu_and">
             <wire x2="6720" y1="3552" y2="3552" x1="6560" />
         </branch>
         <instance x="6336" y="3712" name="XLXI_653" orien="R0" />
@@ -2871,13 +2763,13 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6240" y="3680" type="branch" />
             <wire x2="6336" y1="3680" y2="3680" x1="6240" />
         </branch>
-        <branch name="cpu_op_alu_xor">
+        <branch name="out_op_alu_xor">
             <wire x2="6720" y1="3680" y2="3680" x1="6560" />
         </branch>
-        <branch name="cpu_op_alu_not">
+        <branch name="out_op_alu_not">
             <wire x2="6720" y1="3488" y2="3488" x1="6560" />
         </branch>
-        <branch name="cpu_op_alu_or">
+        <branch name="out_op_alu_or">
             <wire x2="6720" y1="3616" y2="3616" x1="6560" />
         </branch>
         <instance x="6336" y="3776" name="XLXI_654" orien="R0" />
@@ -2885,7 +2777,7 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6240" y="3744" type="branch" />
             <wire x2="6336" y1="3744" y2="3744" x1="6240" />
         </branch>
-        <branch name="cpu_op_alu_nop">
+        <branch name="out_op_alu_nop">
             <wire x2="6720" y1="3744" y2="3744" x1="6560" />
         </branch>
         <instance x="6336" y="3904" name="XLXI_655" orien="R0" />
@@ -2898,10 +2790,10 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6240" y="3936" type="branch" />
             <wire x2="6336" y1="3936" y2="3936" x1="6240" />
         </branch>
-        <branch name="cpu_op_ls_st">
+        <branch name="out_op_ls_st">
             <wire x2="6720" y1="3936" y2="3936" x1="6560" />
         </branch>
-        <branch name="cpu_op_ls_ld">
+        <branch name="out_op_ls_ld">
             <wire x2="6720" y1="3872" y2="3872" x1="6560" />
         </branch>
         <instance x="6336" y="4032" name="XLXI_657" orien="R0" />
@@ -2925,13 +2817,13 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6240" y="4256" type="branch" />
             <wire x2="6336" y1="4256" y2="4256" x1="6240" />
         </branch>
-        <branch name="cpu_op_ls_ldc">
+        <branch name="out_op_ls_ldc">
             <wire x2="6720" y1="4000" y2="4000" x1="6560" />
         </branch>
-        <branch name="cpu_op_jmp_jmpr">
+        <branch name="out_op_jmp_jmpr">
             <wire x2="6720" y1="4064" y2="4064" x1="6560" />
         </branch>
-        <branch name="cpu_op_jmp_ifjmp">
+        <branch name="out_op_jmp_ifjmp">
             <wire x2="6720" y1="4192" y2="4192" x1="6560" />
         </branch>
         <instance x="6336" y="4352" name="XLXI_662" orien="R0" />
@@ -2939,17 +2831,17 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6240" y="4320" type="branch" />
             <wire x2="6336" y1="4320" y2="4320" x1="6240" />
         </branch>
-        <branch name="cpu_op_jmp_jmp">
+        <branch name="out_op_jmp_jmp">
             <wire x2="6720" y1="4128" y2="4128" x1="6560" />
         </branch>
         <branch name="cc_dbg_ls_ldc">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6240" y="4000" type="branch" />
             <wire x2="6336" y1="4000" y2="4000" x1="6240" />
         </branch>
-        <branch name="cpu_op_flg_clf">
+        <branch name="out_op_flg_clf">
             <wire x2="6720" y1="4256" y2="4256" x1="6560" />
         </branch>
-        <branch name="cpu_op_alt_nop">
+        <branch name="out_op_alt_nop">
             <wire x2="6592" y1="4320" y2="4320" x1="6560" />
             <wire x2="6720" y1="4320" y2="4320" x1="6592" />
         </branch>
@@ -2963,10 +2855,10 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6240" y="4624" type="branch" />
             <wire x2="6336" y1="4624" y2="4624" x1="6240" />
         </branch>
-        <branch name="cpu_alu_gt">
+        <branch name="out_alu_gt">
             <wire x2="6720" y1="4624" y2="4624" x1="6560" />
         </branch>
-        <branch name="cpu_alu_C_in">
+        <branch name="out_alu_C_in">
             <wire x2="6720" y1="4560" y2="4560" x1="6560" />
         </branch>
         <instance x="6336" y="4720" name="XLXI_666" orien="R0" />
@@ -2976,10 +2868,10 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6240" y="4816" type="branch" />
             <wire x2="6336" y1="4816" y2="4816" x1="6240" />
         </branch>
-        <branch name="cpu_alu_z">
+        <branch name="out_alu_z">
             <wire x2="6720" y1="4752" y2="4752" x1="6560" />
         </branch>
-        <branch name="cpu_alu_C_out">
+        <branch name="out_alu_C_out">
             <wire x2="6720" y1="4816" y2="4816" x1="6560" />
         </branch>
         <branch name="alu_eq">
@@ -2994,12 +2886,12 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6240" y="4960" type="branch" />
             <wire x2="6336" y1="4960" y2="4960" x1="6240" />
         </branch>
-        <branch name="cpu_alu_x(7:0)">
+        <branch name="out_alu_x(7:0)">
             <wire x2="6800" y1="4960" y2="4960" x1="6720" />
         </branch>
         <instance x="6336" y="4992" name="XLXI_675" orien="R0">
         </instance>
-        <branch name="cpu_alu_eq">
+        <branch name="out_alu_eq">
             <wire x2="6720" y1="4688" y2="4688" x1="6560" />
         </branch>
         <instance x="6336" y="5136" name="XLXI_669" orien="R0" />
@@ -3014,7 +2906,7 @@
             <wire x2="6240" y1="5168" y2="5168" x1="5984" />
             <wire x2="6336" y1="5168" y2="5168" x1="6240" />
         </branch>
-        <branch name="cpu_flags_C_out">
+        <branch name="out_flags_C_out">
             <wire x2="6720" y1="5104" y2="5104" x1="6560" />
         </branch>
         <instance x="6336" y="5264" name="XLXI_671" orien="R0" />
@@ -3023,10 +2915,10 @@
             <wire x2="6240" y1="5232" y2="5232" x1="5984" />
             <wire x2="6336" y1="5232" y2="5232" x1="6240" />
         </branch>
-        <branch name="cpu_flags_gt">
+        <branch name="out_flags_gt">
             <wire x2="6720" y1="5168" y2="5168" x1="6560" />
         </branch>
-        <branch name="cpu_flags_eq">
+        <branch name="out_flags_eq">
             <wire x2="6592" y1="5232" y2="5232" x1="6560" />
             <wire x2="6720" y1="5232" y2="5232" x1="6592" />
         </branch>
@@ -3036,7 +2928,7 @@
             <wire x2="6240" y1="5296" y2="5296" x1="5984" />
             <wire x2="6336" y1="5296" y2="5296" x1="6240" />
         </branch>
-        <branch name="cpu_flags_z">
+        <branch name="out_flags_z">
             <wire x2="6592" y1="5296" y2="5296" x1="6560" />
             <wire x2="6720" y1="5296" y2="5296" x1="6592" />
         </branch>
@@ -3056,46 +2948,46 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6240" y="4496" type="branch" />
             <wire x2="6336" y1="4496" y2="4496" x1="6240" />
         </branch>
-        <branch name="cpu_C_in_enabled">
+        <branch name="out_C_in_enabled">
             <wire x2="6720" y1="4496" y2="4496" x1="6560" />
         </branch>
         <branch name="alu_C_out_flipflop_o">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6240" y="4432" type="branch" />
             <wire x2="6336" y1="4432" y2="4432" x1="6240" />
         </branch>
-        <branch name="cpu_C_out_flipflop_o">
+        <branch name="out_C_out_flipflop_o">
             <wire x2="6720" y1="4432" y2="4432" x1="6560" />
         </branch>
         <instance x="6336" y="4464" name="XLXI_681" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="3232" name="cpu_op_alu" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="3296" name="cpu_op_alu_add" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="3360" name="cpu_op_alu_lshift" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="3424" name="cpu_op_alu_rshift" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="3488" name="cpu_op_alu_not" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="3552" name="cpu_op_alu_and" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="3616" name="cpu_op_alu_or" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="3680" name="cpu_op_alu_xor" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="3744" name="cpu_op_alu_nop" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="3872" name="cpu_op_ls_ld" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="3936" name="cpu_op_ls_st" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="4000" name="cpu_op_ls_ldc" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="4064" name="cpu_op_jmp_jmpr" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="4128" name="cpu_op_jmp_jmp" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="4192" name="cpu_op_jmp_ifjmp" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="4256" name="cpu_op_flg_clf" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="4320" name="cpu_op_alt_nop" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="4560" name="cpu_alu_C_in" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="4624" name="cpu_alu_gt" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="4688" name="cpu_alu_eq" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="4752" name="cpu_alu_z" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="4816" name="cpu_alu_C_out" orien="R0" />
-        <iomarker fontsize="28" x="6800" y="4960" name="cpu_alu_x(7:0)" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="5104" name="cpu_flags_C_out" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="5168" name="cpu_flags_gt" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="5232" name="cpu_flags_eq" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="5296" name="cpu_flags_z" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="4496" name="cpu_C_in_enabled" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="4432" name="cpu_C_out_flipflop_o" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="3232" name="out_op_alu" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="3296" name="out_op_alu_add" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="3360" name="out_op_alu_lshift" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="3424" name="out_op_alu_rshift" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="3488" name="out_op_alu_not" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="3552" name="out_op_alu_and" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="3616" name="out_op_alu_or" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="3680" name="out_op_alu_xor" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="3744" name="out_op_alu_nop" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="3872" name="out_op_ls_ld" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="3936" name="out_op_ls_st" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="4000" name="out_op_ls_ldc" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="4064" name="out_op_jmp_jmpr" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="4128" name="out_op_jmp_jmp" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="4192" name="out_op_jmp_ifjmp" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="4256" name="out_op_flg_clf" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="4320" name="out_op_alt_nop" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="4560" name="out_alu_C_in" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="4624" name="out_alu_gt" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="4688" name="out_alu_eq" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="4752" name="out_alu_z" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="4816" name="out_alu_C_out" orien="R0" />
+        <iomarker fontsize="28" x="6800" y="4960" name="out_alu_x(7:0)" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="5104" name="out_flags_C_out" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="5168" name="out_flags_gt" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="5232" name="out_flags_eq" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="5296" name="out_flags_z" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="4496" name="out_C_in_enabled" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="4432" name="out_C_out_flipflop_o" orien="R0" />
         <instance x="6336" y="2976" name="XLXI_576" orien="R0">
         </instance>
         <instance x="6336" y="2816" name="XLXI_575" orien="R0">
@@ -3104,7 +2996,7 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6240" y="2624" type="branch" />
             <wire x2="6336" y1="2624" y2="2624" x1="6240" />
         </branch>
-        <branch name="cpu_iar_o(7:0)">
+        <branch name="out_iar_o(7:0)">
             <wire x2="6800" y1="2624" y2="2624" x1="6720" />
         </branch>
         <branch name="ir_o(7:0)">
@@ -3115,10 +3007,10 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6240" y="2944" type="branch" />
             <wire x2="6336" y1="2944" y2="2944" x1="6240" />
         </branch>
-        <branch name="cpu_temp_o(7:0)">
+        <branch name="out_temp_o(7:0)">
             <wire x2="6800" y1="2944" y2="2944" x1="6720" />
         </branch>
-        <branch name="cpu_ir_o(7:0)">
+        <branch name="out_ir_o(7:0)">
             <wire x2="6800" y1="2784" y2="2784" x1="6720" />
         </branch>
         <instance x="6336" y="2656" name="XLXI_574" orien="R0">
@@ -3127,21 +3019,21 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6240" y="3104" type="branch" />
             <wire x2="6336" y1="3104" y2="3104" x1="6240" />
         </branch>
-        <branch name="cpu_ram_a_o(7:0)">
+        <branch name="out_ram_a_o(7:0)">
             <wire x2="6800" y1="3104" y2="3104" x1="6720" />
         </branch>
         <instance x="6336" y="3136" name="XLXI_799" orien="R0">
         </instance>
-        <iomarker fontsize="28" x="6800" y="2624" name="cpu_iar_o(7:0)" orien="R0" />
-        <iomarker fontsize="28" x="6800" y="2784" name="cpu_ir_o(7:0)" orien="R0" />
-        <iomarker fontsize="28" x="6800" y="2944" name="cpu_temp_o(7:0)" orien="R0" />
-        <iomarker fontsize="28" x="6800" y="3104" name="cpu_ram_a_o(7:0)" orien="R0" />
+        <iomarker fontsize="28" x="6800" y="2624" name="out_iar_o(7:0)" orien="R0" />
+        <iomarker fontsize="28" x="6800" y="2784" name="out_ir_o(7:0)" orien="R0" />
+        <iomarker fontsize="28" x="6800" y="2944" name="out_temp_o(7:0)" orien="R0" />
+        <iomarker fontsize="28" x="6800" y="3104" name="out_ram_a_o(7:0)" orien="R0" />
         <instance x="6336" y="192" name="XLXI_187" orien="R0" />
         <instance x="6336" y="256" name="XLXI_188" orien="R0" />
         <instance x="6336" y="320" name="XLXI_189" orien="R0" />
         <instance x="6336" y="384" name="XLXI_190" orien="R0" />
         <instance x="6336" y="448" name="XLXI_191" orien="R0" />
-        <branch name="clk">
+        <branch name="in_clk">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6240" y="160" type="branch" />
             <wire x2="6336" y1="160" y2="160" x1="6240" />
         </branch>
@@ -3161,22 +3053,22 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6240" y="416" type="branch" />
             <wire x2="6336" y1="416" y2="416" x1="6240" />
         </branch>
-        <branch name="cpu_clk">
+        <branch name="out_clk">
             <wire x2="6720" y1="160" y2="160" x1="6560" />
         </branch>
-        <branch name="cpu_clk_int">
+        <branch name="out_clk_int">
             <wire x2="6720" y1="224" y2="224" x1="6560" />
         </branch>
-        <branch name="cpu_clkc">
+        <branch name="out_clkc">
             <wire x2="6720" y1="288" y2="288" x1="6560" />
         </branch>
-        <branch name="cpu_clkr">
+        <branch name="out_clkr">
             <wire x2="6720" y1="352" y2="352" x1="6560" />
         </branch>
-        <branch name="cpu_clkw">
+        <branch name="out_clkw">
             <wire x2="6720" y1="416" y2="416" x1="6560" />
         </branch>
-        <branch name="cpu_sysbus(7:0)">
+        <branch name="out_sysbus(7:0)">
             <wire x2="6736" y1="80" y2="80" x1="6720" />
             <wire x2="6800" y1="80" y2="80" x1="6736" />
         </branch>
@@ -3186,11 +3078,11 @@
         </branch>
         <instance x="6336" y="112" name="XLXI_860" orien="R0">
         </instance>
-        <iomarker fontsize="28" x="6720" y="160" name="cpu_clk" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="224" name="cpu_clk_int" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="288" name="cpu_clkc" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="352" name="cpu_clkr" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="416" name="cpu_clkw" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="160" name="out_clk" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="224" name="out_clk_int" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="288" name="out_clkc" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="352" name="out_clkr" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="416" name="out_clkw" orien="R0" />
         <instance x="6336" y="1696" name="XLXI_227" orien="R0" />
         <instance x="6336" y="1760" name="XLXI_228" orien="R0" />
         <branch name="iar_r">
@@ -3201,10 +3093,10 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6240" y="1728" type="branch" />
             <wire x2="6336" y1="1728" y2="1728" x1="6240" />
         </branch>
-        <branch name="cpu_iar_w">
+        <branch name="out_iar_w">
             <wire x2="6720" y1="1728" y2="1728" x1="6560" />
         </branch>
-        <branch name="cpu_iar_r">
+        <branch name="out_iar_r">
             <wire x2="6720" y1="1664" y2="1664" x1="6560" />
         </branch>
         <instance x="6336" y="2400" name="XLXI_561" orien="R0" />
@@ -3216,10 +3108,10 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6240" y="2432" type="branch" />
             <wire x2="6336" y1="2432" y2="2432" x1="6240" />
         </branch>
-        <branch name="cpu_flags_w">
+        <branch name="out_flags_w">
             <wire x2="6720" y1="2368" y2="2368" x1="6560" />
         </branch>
-        <branch name="cpu_flags_clr">
+        <branch name="out_flags_clr">
             <wire x2="6720" y1="2432" y2="2432" x1="6560" />
         </branch>
         <instance x="6336" y="2464" name="XLXI_562" orien="R0" />
@@ -3248,13 +3140,13 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6240" y="992" type="branch" />
             <wire x2="6336" y1="992" y2="992" x1="6240" />
         </branch>
-        <branch name="cpu_s1">
+        <branch name="out_s1">
             <wire x2="6720" y1="736" y2="736" x1="6560" />
         </branch>
-        <branch name="cpu_s2">
+        <branch name="out_s2">
             <wire x2="6720" y1="800" y2="800" x1="6560" />
         </branch>
-        <branch name="cpu_s4">
+        <branch name="out_s4">
             <wire x2="6720" y1="928" y2="928" x1="6560" />
         </branch>
         <instance x="6336" y="1088" name="XLXI_207" orien="R0" />
@@ -3262,20 +3154,20 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6240" y="1056" type="branch" />
             <wire x2="6336" y1="1056" y2="1056" x1="6240" />
         </branch>
-        <branch name="cpu_s6">
+        <branch name="out_s6">
             <wire x2="6720" y1="1056" y2="1056" x1="6560" />
         </branch>
-        <branch name="cpu_s3">
+        <branch name="out_s3">
             <wire x2="6720" y1="864" y2="864" x1="6560" />
         </branch>
-        <branch name="cpu_s5">
+        <branch name="out_s5">
             <wire x2="6720" y1="992" y2="992" x1="6560" />
         </branch>
         <branch name="sysbus_released">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6240" y="672" type="branch" />
             <wire x2="6336" y1="672" y2="672" x1="6240" />
         </branch>
-        <branch name="cpu_sysbus_released">
+        <branch name="out_sysbus_released">
             <wire x2="6720" y1="672" y2="672" x1="6560" />
         </branch>
         <instance x="6336" y="704" name="XLXI_844" orien="R0" />
@@ -3318,28 +3210,28 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6240" y="1584" type="branch" />
             <wire x2="6336" y1="1584" y2="1584" x1="6240" />
         </branch>
-        <branch name="cpu_r0_r">
+        <branch name="out_r0_r">
             <wire x2="6720" y1="1136" y2="1136" x1="6560" />
         </branch>
-        <branch name="cpu_r0_w">
+        <branch name="out_r0_w">
             <wire x2="6720" y1="1200" y2="1200" x1="6560" />
         </branch>
-        <branch name="cpu_r1_r">
+        <branch name="out_r1_r">
             <wire x2="6720" y1="1264" y2="1264" x1="6560" />
         </branch>
-        <branch name="cpu_r1_w">
+        <branch name="out_r1_w">
             <wire x2="6720" y1="1328" y2="1328" x1="6560" />
         </branch>
-        <branch name="cpu_r2_r">
+        <branch name="out_r2_r">
             <wire x2="6720" y1="1392" y2="1392" x1="6560" />
         </branch>
-        <branch name="cpu_r2_w">
+        <branch name="out_r2_w">
             <wire x2="6720" y1="1456" y2="1456" x1="6560" />
         </branch>
-        <branch name="cpu_r3_r">
+        <branch name="out_r3_r">
             <wire x2="6720" y1="1520" y2="1520" x1="6560" />
         </branch>
-        <branch name="cpu_r3_w">
+        <branch name="out_r3_w">
             <wire x2="6720" y1="1584" y2="1584" x1="6560" />
         </branch>
         <instance x="6336" y="1616" name="XLXI_226" orien="R0" />
@@ -3348,7 +3240,7 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6240" y="1792" type="branch" />
             <wire x2="6336" y1="1792" y2="1792" x1="6240" />
         </branch>
-        <branch name="cpu_ir_w">
+        <branch name="out_ir_w">
             <wire x2="6720" y1="1792" y2="1792" x1="6560" />
         </branch>
         <instance x="6336" y="1888" name="XLXI_560" orien="R0" />
@@ -3356,7 +3248,7 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6240" y="1856" type="branch" />
             <wire x2="6336" y1="1856" y2="1856" x1="6240" />
         </branch>
-        <branch name="cpu_is_bus1_w">
+        <branch name="out_is_bus1_w">
             <wire x2="6720" y1="1856" y2="1856" x1="6560" />
         </branch>
         <instance x="6336" y="1952" name="XLXI_559" orien="R0" />
@@ -3364,7 +3256,7 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6240" y="1920" type="branch" />
             <wire x2="6336" y1="1920" y2="1920" x1="6240" />
         </branch>
-        <branch name="cpu_bus1">
+        <branch name="out_bus1">
             <wire x2="6720" y1="1920" y2="1920" x1="6560" />
         </branch>
         <instance x="6336" y="2144" name="XLXI_554" orien="R0" />
@@ -3372,10 +3264,10 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6240" y="2112" type="branch" />
             <wire x2="6336" y1="2112" y2="2112" x1="6240" />
         </branch>
-        <branch name="cpu_acc_w">
+        <branch name="out_acc_w">
             <wire x2="6720" y1="2112" y2="2112" x1="6560" />
         </branch>
-        <branch name="cpu_acc_r">
+        <branch name="out_acc_r">
             <wire x2="6720" y1="2048" y2="2048" x1="6560" />
         </branch>
         <instance x="6336" y="2080" name="XLXI_553" orien="R0" />
@@ -3384,7 +3276,7 @@
             <wire x2="6320" y1="2048" y2="2048" x1="6240" />
             <wire x2="6336" y1="2048" y2="2048" x1="6320" />
         </branch>
-        <branch name="cpu_temp_w">
+        <branch name="out_temp_w">
             <wire x2="6720" y1="1984" y2="1984" x1="6560" />
         </branch>
         <instance x="6336" y="2016" name="XLXI_229" orien="R0" />
@@ -3402,10 +3294,10 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6240" y="2304" type="branch" />
             <wire x2="6336" y1="2304" y2="2304" x1="6240" />
         </branch>
-        <branch name="cpu_ram_w">
+        <branch name="out_ram_w">
             <wire x2="6720" y1="2304" y2="2304" x1="6560" />
         </branch>
-        <branch name="cpu_ram_r">
+        <branch name="out_ram_r">
             <wire x2="6720" y1="2240" y2="2240" x1="6560" />
         </branch>
         <instance x="6336" y="2208" name="XLXI_558" orien="R0" />
@@ -3413,42 +3305,42 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6240" y="2176" type="branch" />
             <wire x2="6336" y1="2176" y2="2176" x1="6240" />
         </branch>
-        <branch name="cpu_ram_a_w">
+        <branch name="out_ram_a_w">
             <wire x2="6720" y1="2176" y2="2176" x1="6560" />
         </branch>
-        <iomarker fontsize="28" x="6720" y="1664" name="cpu_iar_r" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="1728" name="cpu_iar_w" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="2368" name="cpu_flags_w" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="2432" name="cpu_flags_clr" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="736" name="cpu_s1" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="800" name="cpu_s2" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="864" name="cpu_s3" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="928" name="cpu_s4" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="992" name="cpu_s5" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="1056" name="cpu_s6" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="672" name="cpu_sysbus_released" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="1136" name="cpu_r0_r" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="1264" name="cpu_r1_r" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="1328" name="cpu_r1_w" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="1392" name="cpu_r2_r" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="1456" name="cpu_r2_w" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="1520" name="cpu_r3_r" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="1584" name="cpu_r3_w" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="1200" name="cpu_r0_w" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="1792" name="cpu_ir_w" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="1856" name="cpu_is_bus1_w" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="1920" name="cpu_bus1" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="2112" name="cpu_acc_w" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="2048" name="cpu_acc_r" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="1984" name="cpu_temp_w" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="2240" name="cpu_ram_r" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="2304" name="cpu_ram_w" orien="R0" />
-        <iomarker fontsize="28" x="6720" y="2176" name="cpu_ram_a_w" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="1664" name="out_iar_r" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="1728" name="out_iar_w" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="2368" name="out_flags_w" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="2432" name="out_flags_clr" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="736" name="out_s1" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="800" name="out_s2" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="864" name="out_s3" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="928" name="out_s4" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="992" name="out_s5" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="1056" name="out_s6" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="672" name="out_sysbus_released" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="1136" name="out_r0_r" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="1264" name="out_r1_r" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="1328" name="out_r1_w" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="1392" name="out_r2_r" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="1456" name="out_r2_w" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="1520" name="out_r3_r" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="1584" name="out_r3_w" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="1200" name="out_r0_w" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="1792" name="out_ir_w" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="1856" name="out_is_bus1_w" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="1920" name="out_bus1" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="2112" name="out_acc_w" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="2048" name="out_acc_r" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="1984" name="out_temp_w" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="2240" name="out_ram_r" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="2304" name="out_ram_w" orien="R0" />
+        <iomarker fontsize="28" x="6720" y="2176" name="out_ram_a_w" orien="R0" />
         <branch name="can_read">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6240" y="512" type="branch" />
             <wire x2="6336" y1="512" y2="512" x1="6240" />
         </branch>
-        <branch name="cpu_can_read">
+        <branch name="out_can_read">
             <wire x2="6576" y1="512" y2="512" x1="6560" />
             <wire x2="6592" y1="512" y2="512" x1="6576" />
         </branch>
@@ -3457,13 +3349,142 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6240" y="576" type="branch" />
             <wire x2="6336" y1="576" y2="576" x1="6240" />
         </branch>
-        <branch name="cpu_can_write">
+        <branch name="out_can_write">
             <wire x2="6576" y1="576" y2="576" x1="6560" />
             <wire x2="6592" y1="576" y2="576" x1="6576" />
         </branch>
         <instance x="6336" y="608" name="XLXI_903" orien="R0" />
-        <iomarker fontsize="28" x="6592" y="512" name="cpu_can_read" orien="R0" />
-        <iomarker fontsize="28" x="6592" y="576" name="cpu_can_write" orien="R0" />
-        <iomarker fontsize="28" x="6800" y="80" name="cpu_sysbus(7:0)" orien="R0" />
+        <iomarker fontsize="28" x="6592" y="512" name="out_can_read" orien="R0" />
+        <iomarker fontsize="28" x="6592" y="576" name="out_can_write" orien="R0" />
+        <iomarker fontsize="28" x="6800" y="80" name="out_sysbus(7:0)" orien="R0" />
+        <branch name="in_clk_external">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="256" y="1680" type="branch" />
+            <wire x2="320" y1="1680" y2="1680" x1="256" />
+        </branch>
+        <branch name="in_manr_r">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="608" y="3856" type="branch" />
+            <wire x2="592" y1="3856" y2="3856" x1="448" />
+            <wire x2="608" y1="3856" y2="3856" x1="592" />
+        </branch>
+        <branch name="in_manr_w">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="608" y="3904" type="branch" />
+            <wire x2="592" y1="3904" y2="3904" x1="448" />
+            <wire x2="608" y1="3904" y2="3904" x1="592" />
+        </branch>
+        <branch name="in_manr_d(7:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="608" y="3952" type="branch" />
+            <wire x2="608" y1="3952" y2="3952" x1="448" />
+        </branch>
+        <branch name="in_r0_r">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="576" y="4048" type="branch" />
+            <wire x2="576" y1="4048" y2="4048" x1="416" />
+        </branch>
+        <branch name="in_r0_w">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="576" y="4096" type="branch" />
+            <wire x2="576" y1="4096" y2="4096" x1="416" />
+        </branch>
+        <branch name="in_r1_r">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="576" y="4160" type="branch" />
+            <wire x2="576" y1="4160" y2="4160" x1="416" />
+        </branch>
+        <branch name="in_r1_w">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="576" y="4208" type="branch" />
+            <wire x2="576" y1="4208" y2="4208" x1="416" />
+        </branch>
+        <branch name="in_r2_r">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="576" y="4272" type="branch" />
+            <wire x2="576" y1="4272" y2="4272" x1="416" />
+        </branch>
+        <branch name="in_r2_w">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="576" y="4320" type="branch" />
+            <wire x2="576" y1="4320" y2="4320" x1="416" />
+        </branch>
+        <branch name="in_r3_r">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="576" y="4384" type="branch" />
+            <wire x2="576" y1="4384" y2="4384" x1="416" />
+        </branch>
+        <branch name="in_r3_w">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="576" y="4432" type="branch" />
+            <wire x2="576" y1="4432" y2="4432" x1="416" />
+        </branch>
+        <branch name="in_iar_r">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="576" y="4496" type="branch" />
+            <wire x2="576" y1="4496" y2="4496" x1="416" />
+        </branch>
+        <branch name="in_iar_w">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="576" y="4544" type="branch" />
+            <wire x2="576" y1="4544" y2="4544" x1="416" />
+        </branch>
+        <branch name="in_acc_r">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="576" y="4608" type="branch" />
+            <wire x2="576" y1="4608" y2="4608" x1="416" />
+        </branch>
+        <branch name="in_acc_w">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="576" y="4656" type="branch" />
+            <wire x2="576" y1="4656" y2="4656" x1="416" />
+        </branch>
+        <branch name="in_ram_r">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="576" y="4720" type="branch" />
+            <wire x2="576" y1="4720" y2="4720" x1="416" />
+        </branch>
+        <branch name="in_ram_w">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="576" y="4768" type="branch" />
+            <wire x2="576" y1="4768" y2="4768" x1="416" />
+        </branch>
+        <iomarker fontsize="28" x="448" y="3856" name="in_manr_r" orien="R180" />
+        <iomarker fontsize="28" x="448" y="3904" name="in_manr_w" orien="R180" />
+        <iomarker fontsize="28" x="448" y="3952" name="in_manr_d(7:0)" orien="R180" />
+        <iomarker fontsize="28" x="416" y="4048" name="in_r0_r" orien="R180" />
+        <iomarker fontsize="28" x="416" y="4096" name="in_r0_w" orien="R180" />
+        <iomarker fontsize="28" x="416" y="4160" name="in_r1_r" orien="R180" />
+        <iomarker fontsize="28" x="416" y="4208" name="in_r1_w" orien="R180" />
+        <iomarker fontsize="28" x="416" y="4272" name="in_r2_r" orien="R180" />
+        <iomarker fontsize="28" x="416" y="4320" name="in_r2_w" orien="R180" />
+        <iomarker fontsize="28" x="416" y="4384" name="in_r3_r" orien="R180" />
+        <iomarker fontsize="28" x="416" y="4432" name="in_r3_w" orien="R180" />
+        <iomarker fontsize="28" x="416" y="4496" name="in_iar_r" orien="R180" />
+        <iomarker fontsize="28" x="416" y="4544" name="in_iar_w" orien="R180" />
+        <iomarker fontsize="28" x="416" y="4608" name="in_acc_r" orien="R180" />
+        <iomarker fontsize="28" x="416" y="4656" name="in_acc_w" orien="R180" />
+        <iomarker fontsize="28" x="416" y="4720" name="in_ram_r" orien="R180" />
+        <iomarker fontsize="28" x="416" y="4768" name="in_ram_w" orien="R180" />
+        <branch name="in_write_reg_en">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="608" y="3776" type="branch" />
+            <wire x2="608" y1="3776" y2="3776" x1="448" />
+        </branch>
+        <branch name="in_read_reg_en">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="608" y="3728" type="branch" />
+            <wire x2="608" y1="3728" y2="3728" x1="448" />
+        </branch>
+        <iomarker fontsize="28" x="448" y="3776" name="in_write_reg_en" orien="R180" />
+        <iomarker fontsize="28" x="448" y="3728" name="in_read_reg_en" orien="R180" />
+        <branch name="in_clk">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="608" y="3568" type="branch" />
+            <wire x2="608" y1="3568" y2="3568" x1="448" />
+        </branch>
+        <branch name="in_clk_manual">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="608" y="3616" type="branch" />
+            <wire x2="608" y1="3616" y2="3616" x1="448" />
+        </branch>
+        <branch name="in_clk_external">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="608" y="3664" type="branch" />
+            <wire x2="608" y1="3664" y2="3664" x1="448" />
+        </branch>
+        <iomarker fontsize="28" x="448" y="3568" name="in_clk" orien="R180" />
+        <iomarker fontsize="28" x="448" y="3616" name="in_clk_manual" orien="R180" />
+        <iomarker fontsize="28" x="448" y="3664" name="in_clk_external" orien="R180" />
+        <instance x="1008" y="4224" name="XLXI_116" orien="R0" />
+        <instance x="1328" y="4224" name="XLXI_117" orien="R0" />
+        <branch name="in_rst">
+            <wire x2="1008" y1="4192" y2="4192" x1="928" />
+        </branch>
+        <branch name="XLXN_233">
+            <wire x2="1328" y1="4192" y2="4192" x1="1232" />
+        </branch>
+        <branch name="rst">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1648" y="4192" type="branch" />
+            <wire x2="1648" y1="4192" y2="4192" x1="1552" />
+        </branch>
+        <iomarker fontsize="28" x="928" y="4192" name="in_rst" orien="R180" />
     </sheet>
 </drawing>

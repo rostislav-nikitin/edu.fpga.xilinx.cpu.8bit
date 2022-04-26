@@ -257,22 +257,13 @@
 <msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 1822: Net &lt;<arg fmt="%s" index="1">XLXI_1_dev15_openSignal[7]</arg>&gt; does not have a driver.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" Line 4271: Net &lt;<arg fmt="%s" index="1">XLXI_173_external_clk_in_openSignal</arg>&gt; does not have a driver.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">4520</arg>: Output port &lt;<arg fmt="%s" index="3">ground</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">4520</arg>: Output port &lt;<arg fmt="%s" index="3">ground</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpu_ctl</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">4704</arg>: Output port &lt;<arg fmt="%s" index="3">g</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_130</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">4704</arg>: Output port &lt;<arg fmt="%s" index="3">g</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_130</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">4724</arg>: Output port &lt;<arg fmt="%s" index="3">G</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_136</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">5215</arg>: Output port &lt;<arg fmt="%s" index="3">o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_860</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXI_173_external_clk_in_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">4724</arg>: Output port &lt;<arg fmt="%s" index="3">G</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_136</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">3809</arg>: Output port &lt;<arg fmt="%s" index="3">D3</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
@@ -659,10 +650,10 @@
 <msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf</arg>&quot; line <arg fmt="%s" index="2">815</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_2</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">COUNT_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu_ctl/stp/XLXI_24</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">COUNT_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpu_ctl/stp/XLXI_24</arg>&gt;.
 </msg>
 
-<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 </msg>
 
 </messages>

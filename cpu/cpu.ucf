@@ -1,8 +1,8 @@
 ##################################################################################
 ## External Clock
 ##################################################################################
-NET "clk" TNM_NET = "sys_clk_pin";
-NET "clk" LOC = T8;
+NET "in_clk" TNM_NET = "sys_clk_pin";
+NET "in_clk" LOC = T8;
 TIMESPEC TS_sys_clk_pin = PERIOD "sys_clk_pin" 50 MHz HIGH 50 %;
 
 ##################################################################################
@@ -10,14 +10,14 @@ TIMESPEC TS_sys_clk_pin = PERIOD "sys_clk_pin" 50 MHz HIGH 50 %;
 ##################################################################################
 #NET "rst_in" LOC = C3 | IOSTANDARD = "LVCMOS33"; ## RESET pushbutton
 ## RESET pushbutton
-NET "rst_in" LOC = C3;
+NET "in_rst" LOC = C3;
 
 
 ##################################################################################
 ## LED Pins 
 ##################################################################################
 #NET "monitor[0]" LOC = P4;
-NET "clk_int" LOC = K16 | IOSTANDARD = "LVCMOS33" ;  ##  PIN3
+NET "out_clk_int" LOC = K16 | IOSTANDARD = "LVCMOS33" ;  ##  PIN3
 #NET "clk_one_hz" LOC = J16;
 NET "monitor[0]" LOC = P4;
 NET "monitor[1]" LOC = N5;

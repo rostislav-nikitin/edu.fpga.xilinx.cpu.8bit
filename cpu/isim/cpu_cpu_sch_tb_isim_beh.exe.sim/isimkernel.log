@@ -2,27 +2,27 @@ Command line:
    cpu_cpu_sch_tb_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  32971
+     -socket  39807
 
-Tue Apr 26 02:10:05 2022
+Tue Apr 26 21:54:42 2022
 
 
  Elaboration Time: 0.05 sec
 
- Current Memory Usage: 178.864 Meg
+ Current Memory Usage: 178.868 Meg
 
- Total Signals          : 2972
+ Total Signals          : 2973
  Total Nets             : 3262
- Total Signal Drivers   : 673
+ Total Signal Drivers   : 674
  Total Blocks           : 596
  Total Primitive Blocks : 555
  Total Processes        : 644
  Total Traceable Variables  : 141
  Total Scalar Nets and Variables : 10084
 
- Total Simulation Time: 1.47 sec
+ Total Simulation Time: 1.73 sec
 
- Current Memory Usage: 254.366 Meg
+ Current Memory Usage: 254.37 Meg
 
-Tue Apr 26 02:10:43 2022
+Tue Apr 26 21:55:42 2022
 
