@@ -31,23 +31,6 @@
             <line x2="80" y1="-112" y2="-128" x1="64" />
             <rect width="256" x="64" y="-384" height="320" />
         </blockdef>
-        <blockdef name="pullup">
-            <timestamp>2000-1-1T10:10:10</timestamp>
-            <line x2="64" y1="-108" y2="-128" x1="64" />
-            <line x2="64" y1="-104" y2="-108" x1="80" />
-            <line x2="80" y1="-88" y2="-104" x1="48" />
-            <line x2="48" y1="-72" y2="-88" x1="80" />
-            <line x2="80" y1="-56" y2="-72" x1="48" />
-            <line x2="48" y1="-48" y2="-56" x1="64" />
-            <line x2="64" y1="-32" y2="-48" x1="64" />
-            <line x2="64" y1="-56" y2="-48" x1="48" />
-            <line x2="48" y1="-72" y2="-56" x1="80" />
-            <line x2="80" y1="-88" y2="-72" x1="48" />
-            <line x2="48" y1="-104" y2="-88" x1="80" />
-            <line x2="80" y1="-108" y2="-104" x1="64" />
-            <line x2="64" y1="0" y2="-32" x1="64" />
-            <line x2="32" y1="-128" y2="-128" x1="96" />
-        </blockdef>
         <blockdef name="or2">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-64" y2="-64" x1="0" />
@@ -79,15 +62,18 @@
             <line x2="64" y1="0" y2="-64" x1="64" />
             <circle r="16" cx="144" cy="-32" />
         </blockdef>
+        <blockdef name="vcc">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-32" y2="-64" x1="64" />
+            <line x2="64" y1="0" y2="-32" x1="64" />
+            <line x2="32" y1="-64" y2="-64" x1="96" />
+        </blockdef>
         <block symbolname="fjkc" name="XLXI_4">
             <blockpin signalname="XLXN_9" name="C" />
             <blockpin signalname="rst" name="CLR" />
             <blockpin signalname="XLXN_1" name="J" />
             <blockpin signalname="XLXN_1" name="K" />
             <blockpin signalname="clkc" name="Q" />
-        </block>
-        <block symbolname="pullup" name="XLXI_6">
-            <blockpin signalname="XLXN_1" name="O" />
         </block>
         <block symbolname="or2" name="XLXI_9">
             <blockpin signalname="clkc" name="I0" />
@@ -103,6 +89,9 @@
             <blockpin signalname="clk" name="I" />
             <blockpin signalname="XLXN_9" name="O" />
         </block>
+        <block symbolname="vcc" name="XLXI_13">
+            <blockpin signalname="XLXN_1" name="P" />
+        </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
         <instance x="1200" y="2000" name="XLXI_4" orien="R0" />
@@ -113,7 +102,6 @@
             <wire x2="1200" y1="1744" y2="1744" x1="1120" />
             <wire x2="1200" y1="1680" y2="1680" x1="1120" />
         </branch>
-        <instance x="976" y="1600" name="XLXI_6" orien="R0" />
         <branch name="rst">
             <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1040" y="2080" type="branch" />
             <wire x2="1200" y1="1968" y2="1968" x1="1040" />
@@ -160,5 +148,6 @@
             <wire x2="1696" y1="1920" y2="1920" x1="1600" />
         </branch>
         <iomarker fontsize="28" x="1040" y="2160" name="rst" orien="R90" />
+        <instance x="976" y="1600" name="XLXI_13" orien="R0" />
     </sheet>
 </drawing>

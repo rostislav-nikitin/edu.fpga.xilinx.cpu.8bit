@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator P.40xd
+# Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION P.40xd
+DATE             4/28/2022 -  1:44
+SOURCE          /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/3Mhz_reset.mcs
+DEVICE          2048K
+DATA_WIDTH      1
+FILL_DATA       0xFF
+SIGNATURE       0x1AB71F7C
+START_ADDRESS   0x00000000 END_ADDRESS 0x0005327B DIRECTION_UP   "/home/s0lid/Sources/temp/temp/test.bit" xa6slx9ftg256

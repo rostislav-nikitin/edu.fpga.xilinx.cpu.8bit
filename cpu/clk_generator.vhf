@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : clk_generator.vhf
--- /___/   /\     Timestamp : 04/20/2022 01:33:47
+-- /___/   /\     Timestamp : 04/28/2022 01:29:05
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -95,11 +95,6 @@ architecture BEHAVIORAL of clk_generator is
              Q   : out   std_logic);
    end component;
    
-   component PULLUP
-      port ( O : out   std_logic);
-   end component;
-   attribute BOX_TYPE of PULLUP : component is "BLACK_BOX";
-   
    component OR2
       port ( I0 : in    std_logic; 
              I1 : in    std_logic; 
@@ -120,7 +115,12 @@ architecture BEHAVIORAL of clk_generator is
    end component;
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_41";
+   component VCC
+      port ( P : out   std_logic);
+   end component;
+   attribute BOX_TYPE of VCC : component is "BLACK_BOX";
+   
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_36";
 begin
    clkc <= clkc_DUMMY;
    XLXI_4 : FJKC_HXILINX_clk_generator
@@ -129,9 +129,6 @@ begin
                 J=>XLXN_1,
                 K=>XLXN_1,
                 Q=>clkc_DUMMY);
-   
-   XLXI_6 : PULLUP
-      port map (O=>XLXN_1);
    
    XLXI_9 : OR2
       port map (I0=>clkc_DUMMY,
@@ -146,6 +143,9 @@ begin
    XLXI_12 : INV
       port map (I=>clk,
                 O=>XLXN_9);
+   
+   XLXI_13 : VCC
+      port map (P=>XLXN_1);
    
 end BEHAVIORAL;
 

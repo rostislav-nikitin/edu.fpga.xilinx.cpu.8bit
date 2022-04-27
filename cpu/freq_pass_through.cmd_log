@@ -1,0 +1,27 @@
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/freq_pass_through.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/freq_pass_through.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/freq_pass_through.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/freq_pass_through.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc freq_pass_through.ucf -p xa6slx9-ftg256-3 freq_pass_through.ngc freq_pass_through.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o freq_pass_through_map.ncd freq_pass_through.ngd freq_pass_through.pcf 
+par -w -intstyle ise -ol high -mt off freq_pass_through_map.ncd freq_pass_through.ncd freq_pass_through.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml freq_pass_through.twx freq_pass_through.ncd -o freq_pass_through.twr freq_pass_through.pcf -ucf freq_pass_through.ucf 
+bitgen -intstyle ise -f freq_pass_through.ut freq_pass_through.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc freq_pass_through.ucf -p xa6slx9-ftg256-3 freq_pass_through.ngc freq_pass_through.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o freq_pass_through_map.ncd freq_pass_through.ngd freq_pass_through.pcf 
+par -w -intstyle ise -ol high -mt off freq_pass_through_map.ncd freq_pass_through.ncd freq_pass_through.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml freq_pass_through.twx freq_pass_through.ncd -o freq_pass_through.twr freq_pass_through.pcf -ucf freq_pass_through.ucf 
+bitgen -intstyle ise -f freq_pass_through.ut freq_pass_through.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc freq_pass_through.ucf -p xa6slx9-ftg256-3 freq_pass_through.ngc freq_pass_through.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o freq_pass_through_map.ncd freq_pass_through.ngd freq_pass_through.pcf 
+par -w -intstyle ise -ol high -mt off freq_pass_through_map.ncd freq_pass_through.ncd freq_pass_through.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml freq_pass_through.twx freq_pass_through.ncd -o freq_pass_through.twr freq_pass_through.pcf -ucf freq_pass_through.ucf 
+bitgen -intstyle ise -f freq_pass_through.ut freq_pass_through.ncd 
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o freq_pass_through_map.ncd freq_pass_through.ngd freq_pass_through.pcf 
+par -w -intstyle ise -ol high -mt off freq_pass_through_map.ncd freq_pass_through.ncd freq_pass_through.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml freq_pass_through.twx freq_pass_through.ncd -o freq_pass_through.twr freq_pass_through.pcf -ucf freq_pass_through.ucf 
+bitgen -intstyle ise -f freq_pass_through.ut freq_pass_through.ncd 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/freq_pass_through.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/freq_pass_through.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc freq_pass_through.ucf -p xa6slx9-ftg256-3 freq_pass_through.ngc freq_pass_through.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o freq_pass_through_map.ncd freq_pass_through.ngd freq_pass_through.pcf 
+par -w -intstyle ise -ol high -mt off freq_pass_through_map.ncd freq_pass_through.ncd freq_pass_through.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml freq_pass_through.twx freq_pass_through.ncd -o freq_pass_through.twr freq_pass_through.pcf -ucf freq_pass_through.ucf 
+bitgen -intstyle ise -f freq_pass_through.ut freq_pass_through.ncd 

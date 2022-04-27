@@ -1,0 +1,520 @@
+Release 14.3 - xst P.40xd (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Reading design: cpu_facade_cpu_facade_sch_tb.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "cpu_facade_cpu_facade_sch_tb.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "cpu_facade_cpu_facade_sch_tb"
+Output Format                      : NGC
+Target Device                      : xa6slx9-3-ftg256
+
+---- Source Options
+Top Module Name                    : cpu_facade_cpu_facade_sch_tb
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cmp_1bit.vhf" into library work
+Parsing entity <cmp_1bit>.
+Parsing architecture <BEHAVIORAL> of entity <cmp_1bit>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/bus_muxer.vhf" into library work
+Parsing entity <M16_1E_HXILINX_bus_muxer>.
+Parsing architecture <M16_1E_HXILINX_bus_muxer_V> of entity <m16_1e_hxilinx_bus_muxer>.
+Parsing entity <bus_muxer>.
+Parsing architecture <BEHAVIORAL> of entity <bus_muxer>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/stepper.vhf" into library work
+Parsing entity <CB4CE_HXILINX_stepper>.
+Parsing architecture <Behavioral> of entity <cb4ce_hxilinx_stepper>.
+Parsing entity <D3_8E_HXILINX_stepper>.
+Parsing architecture <D3_8E_HXILINX_stepper_V> of entity <d3_8e_hxilinx_stepper>.
+Parsing entity <stepper>.
+Parsing architecture <BEHAVIORAL> of entity <stepper>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/lzero.vhf" into library work
+Parsing entity <NOR8_HXILINX_lzero>.
+Parsing architecture <NOR8_HXILINX_lzero_V> of entity <nor8_hxilinx_lzero>.
+Parsing entity <lzero>.
+Parsing architecture <BEHAVIORAL> of entity <lzero>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/encoder8_3.vhf" into library work
+Parsing entity <AND8_HXILINX_encoder8_3>.
+Parsing architecture <AND8_HXILINX_encoder8_3_V> of entity <and8_hxilinx_encoder8_3>.
+Parsing entity <encoder8_3>.
+Parsing architecture <BEHAVIORAL> of entity <encoder8_3>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cmp_8bit.vhf" into library work
+Parsing entity <cmp_1bit_MUSER_cmp_8bit>.
+Parsing architecture <BEHAVIORAL> of entity <cmp_1bit_muser_cmp_8bit>.
+Parsing entity <cmp_8bit>.
+Parsing architecture <BEHAVIORAL> of entity <cmp_8bit>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/alu_output_muxer.vhf" into library work
+Parsing entity <M16_1E_HXILINX_alu_output_muxer>.
+Parsing architecture <M16_1E_HXILINX_alu_output_muxer_V> of entity <m16_1e_hxilinx_alu_output_muxer>.
+Parsing entity <bus_muxer_MUSER_alu_output_muxer>.
+Parsing architecture <BEHAVIORAL> of entity <bus_muxer_muser_alu_output_muxer>.
+Parsing entity <alu_output_muxer>.
+Parsing architecture <BEHAVIORAL> of entity <alu_output_muxer>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/reg_8bit.vhf" into library work
+Parsing entity <LD8CE_HXILINX_reg_8bit>.
+Parsing architecture <Behavioral> of entity <ld8ce_hxilinx_reg_8bit>.
+Parsing entity <reg_8bit>.
+Parsing architecture <BEHAVIORAL> of entity <reg_8bit>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/ram_256bytes.vhf" into library work
+Parsing entity <LD8_HXILINX_ram_256bytes>.
+Parsing architecture <Behavioral> of entity <ld8_hxilinx_ram_256bytes>.
+Parsing entity <ram_256bytes>.
+Parsing architecture <BEHAVIORAL> of entity <ram_256bytes>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/pass_through_or_one.vhf" into library work
+Parsing entity <M2_1_HXILINX_pass_through_or_one>.
+Parsing architecture <M2_1_HXILINX_pass_through_or_one_V> of entity <m2_1_hxilinx_pass_through_or_one>.
+Parsing entity <pass_through_or_one>.
+Parsing architecture <BEHAVIORAL> of entity <pass_through_or_one>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_output_muxer.vhf" into library work
+Parsing entity <M16_1E_HXILINX_cpu_output_muxer>.
+Parsing architecture <M16_1E_HXILINX_cpu_output_muxer_V> of entity <m16_1e_hxilinx_cpu_output_muxer>.
+Parsing entity <AND8_HXILINX_cpu_output_muxer>.
+Parsing architecture <AND8_HXILINX_cpu_output_muxer_V> of entity <and8_hxilinx_cpu_output_muxer>.
+Parsing entity <bus_muxer_MUSER_cpu_output_muxer>.
+Parsing architecture <BEHAVIORAL> of entity <bus_muxer_muser_cpu_output_muxer>.
+Parsing entity <encoder8_3_MUSER_cpu_output_muxer>.
+Parsing architecture <BEHAVIORAL> of entity <encoder8_3_muser_cpu_output_muxer>.
+Parsing entity <cpu_output_muxer>.
+Parsing architecture <BEHAVIORAL> of entity <cpu_output_muxer>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_control.vhf" into library work
+Parsing entity <CB4CE_HXILINX_cpu_control>.
+Parsing architecture <Behavioral> of entity <cb4ce_hxilinx_cpu_control>.
+Parsing entity <OR6_HXILINX_cpu_control>.
+Parsing architecture <OR6_HXILINX_cpu_control_V> of entity <or6_hxilinx_cpu_control>.
+Parsing entity <D3_8E_HXILINX_cpu_control>.
+Parsing architecture <D3_8E_HXILINX_cpu_control_V> of entity <d3_8e_hxilinx_cpu_control>.
+Parsing entity <D2_4E_HXILINX_cpu_control>.
+Parsing architecture <D2_4E_HXILINX_cpu_control_V> of entity <d2_4e_hxilinx_cpu_control>.
+Parsing entity <stepper_MUSER_cpu_control>.
+Parsing architecture <BEHAVIORAL> of entity <stepper_muser_cpu_control>.
+Parsing entity <cpu_control>.
+Parsing architecture <BEHAVIORAL> of entity <cpu_control>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/clk_generator.vhf" into library work
+Parsing entity <FJKC_HXILINX_clk_generator>.
+Parsing architecture <Behavioral> of entity <fjkc_hxilinx_clk_generator>.
+Parsing entity <clk_generator>.
+Parsing architecture <BEHAVIORAL> of entity <clk_generator>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/buf_8bit.vhf" into library work
+Parsing entity <buf_8bit>.
+Parsing architecture <BEHAVIORAL> of entity <buf_8bit>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/alu.vhf" into library work
+Parsing entity <ADD8_HXILINX_alu>.
+Parsing architecture <ADD8_HXILINX_alu_V> of entity <add8_hxilinx_alu>.
+Parsing entity <NOR8_HXILINX_alu>.
+Parsing architecture <NOR8_HXILINX_alu_V> of entity <nor8_hxilinx_alu>.
+Parsing entity <INV8_HXILINX_alu>.
+Parsing architecture <INV8_HXILINX_alu_V> of entity <inv8_hxilinx_alu>.
+Parsing entity <D3_8E_HXILINX_alu>.
+Parsing architecture <D3_8E_HXILINX_alu_V> of entity <d3_8e_hxilinx_alu>.
+Parsing entity <M16_1E_HXILINX_alu>.
+Parsing architecture <M16_1E_HXILINX_alu_V> of entity <m16_1e_hxilinx_alu>.
+Parsing entity <bus_muxer_MUSER_alu>.
+Parsing architecture <BEHAVIORAL> of entity <bus_muxer_muser_alu>.
+Parsing entity <alu_output_muxer_MUSER_alu>.
+Parsing architecture <BEHAVIORAL> of entity <alu_output_muxer_muser_alu>.
+Parsing entity <lzero_MUSER_alu>.
+Parsing architecture <BEHAVIORAL> of entity <lzero_muser_alu>.
+Parsing entity <cmp_1bit_MUSER_alu>.
+Parsing architecture <BEHAVIORAL> of entity <cmp_1bit_muser_alu>.
+Parsing entity <cmp_8bit_MUSER_alu>.
+Parsing architecture <BEHAVIORAL> of entity <cmp_8bit_muser_alu>.
+Parsing entity <alu>.
+Parsing architecture <BEHAVIORAL> of entity <alu>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" into library work
+Parsing entity <LD8CE_HXILINX_cpu>.
+Parsing architecture <Behavioral> of entity <ld8ce_hxilinx_cpu>.
+Parsing entity <CB4CE_HXILINX_cpu>.
+Parsing architecture <Behavioral> of entity <cb4ce_hxilinx_cpu>.
+Parsing entity <LD8_HXILINX_cpu>.
+Parsing architecture <Behavioral> of entity <ld8_hxilinx_cpu>.
+Parsing entity <ADD8_HXILINX_cpu>.
+Parsing architecture <ADD8_HXILINX_cpu_V> of entity <add8_hxilinx_cpu>.
+Parsing entity <NOR8_HXILINX_cpu>.
+Parsing architecture <NOR8_HXILINX_cpu_V> of entity <nor8_hxilinx_cpu>.
+Parsing entity <INV8_HXILINX_cpu>.
+Parsing architecture <INV8_HXILINX_cpu_V> of entity <inv8_hxilinx_cpu>.
+Parsing entity <OR6_HXILINX_cpu>.
+Parsing architecture <OR6_HXILINX_cpu_V> of entity <or6_hxilinx_cpu>.
+Parsing entity <LD4CE_HXILINX_cpu>.
+Parsing architecture <Behavioral> of entity <ld4ce_hxilinx_cpu>.
+Parsing entity <CB16CE_HXILINX_cpu>.
+Parsing architecture <Behavioral> of entity <cb16ce_hxilinx_cpu>.
+Parsing entity <D3_8E_HXILINX_cpu>.
+Parsing architecture <D3_8E_HXILINX_cpu_V> of entity <d3_8e_hxilinx_cpu>.
+Parsing entity <M16_1E_HXILINX_cpu>.
+Parsing architecture <M16_1E_HXILINX_cpu_V> of entity <m16_1e_hxilinx_cpu>.
+Parsing entity <FJKC_HXILINX_cpu>.
+Parsing architecture <Behavioral> of entity <fjkc_hxilinx_cpu>.
+Parsing entity <D2_4E_HXILINX_cpu>.
+Parsing architecture <D2_4E_HXILINX_cpu_V> of entity <d2_4e_hxilinx_cpu>.
+Parsing entity <M2_1_HXILINX_cpu>.
+Parsing architecture <M2_1_HXILINX_cpu_V> of entity <m2_1_hxilinx_cpu>.
+Parsing entity <AND8_HXILINX_cpu>.
+Parsing architecture <AND8_HXILINX_cpu_V> of entity <and8_hxilinx_cpu>.
+Parsing entity <buf_8bit_MUSER_cpu>.
+Parsing architecture <BEHAVIORAL> of entity <buf_8bit_muser_cpu>.
+Parsing entity <clk_generator_MUSER_cpu>.
+Parsing architecture <BEHAVIORAL> of entity <clk_generator_muser_cpu>.
+Parsing entity <bus_muxer_MUSER_cpu>.
+Parsing architecture <BEHAVIORAL> of entity <bus_muxer_muser_cpu>.
+Parsing entity <encoder8_3_MUSER_cpu>.
+Parsing architecture <BEHAVIORAL> of entity <encoder8_3_muser_cpu>.
+Parsing entity <cpu_output_muxer_MUSER_cpu>.
+Parsing architecture <BEHAVIORAL> of entity <cpu_output_muxer_muser_cpu>.
+Parsing entity <reg_8bit_MUSER_cpu>.
+Parsing architecture <BEHAVIORAL> of entity <reg_8bit_muser_cpu>.
+Parsing entity <pass_through_or_one_MUSER_cpu>.
+Parsing architecture <BEHAVIORAL> of entity <pass_through_or_one_muser_cpu>.
+Parsing entity <ram_256bytes_MUSER_cpu>.
+Parsing architecture <BEHAVIORAL> of entity <ram_256bytes_muser_cpu>.
+Parsing entity <stepper_MUSER_cpu>.
+Parsing architecture <BEHAVIORAL> of entity <stepper_muser_cpu>.
+Parsing entity <cpu_control_MUSER_cpu>.
+Parsing architecture <BEHAVIORAL> of entity <cpu_control_muser_cpu>.
+Parsing entity <alu_output_muxer_MUSER_cpu>.
+Parsing architecture <BEHAVIORAL> of entity <alu_output_muxer_muser_cpu>.
+Parsing entity <lzero_MUSER_cpu>.
+Parsing architecture <BEHAVIORAL> of entity <lzero_muser_cpu>.
+Parsing entity <cmp_1bit_MUSER_cpu>.
+Parsing architecture <BEHAVIORAL> of entity <cmp_1bit_muser_cpu>.
+Parsing entity <cmp_8bit_MUSER_cpu>.
+Parsing architecture <BEHAVIORAL> of entity <cmp_8bit_muser_cpu>.
+Parsing entity <alu_MUSER_cpu>.
+Parsing architecture <BEHAVIORAL> of entity <alu_muser_cpu>.
+Parsing entity <cpu>.
+Parsing architecture <BEHAVIORAL> of entity <cpu>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" into library work
+Parsing entity <LD8CE_HXILINX_cpu_facade>.
+Parsing architecture <Behavioral> of entity <ld8ce_hxilinx_cpu_facade>.
+Parsing entity <CB4CE_HXILINX_cpu_facade>.
+Parsing architecture <Behavioral> of entity <cb4ce_hxilinx_cpu_facade>.
+Parsing entity <LD8_HXILINX_cpu_facade>.
+Parsing architecture <Behavioral> of entity <ld8_hxilinx_cpu_facade>.
+Parsing entity <ADD8_HXILINX_cpu_facade>.
+Parsing architecture <ADD8_HXILINX_cpu_facade_V> of entity <add8_hxilinx_cpu_facade>.
+Parsing entity <NOR8_HXILINX_cpu_facade>.
+Parsing architecture <NOR8_HXILINX_cpu_facade_V> of entity <nor8_hxilinx_cpu_facade>.
+Parsing entity <INV8_HXILINX_cpu_facade>.
+Parsing architecture <INV8_HXILINX_cpu_facade_V> of entity <inv8_hxilinx_cpu_facade>.
+Parsing entity <OR6_HXILINX_cpu_facade>.
+Parsing architecture <OR6_HXILINX_cpu_facade_V> of entity <or6_hxilinx_cpu_facade>.
+Parsing entity <LD4CE_HXILINX_cpu_facade>.
+Parsing architecture <Behavioral> of entity <ld4ce_hxilinx_cpu_facade>.
+Parsing entity <CB16CE_HXILINX_cpu_facade>.
+Parsing architecture <Behavioral> of entity <cb16ce_hxilinx_cpu_facade>.
+Parsing entity <D3_8E_HXILINX_cpu_facade>.
+Parsing architecture <D3_8E_HXILINX_cpu_facade_V> of entity <d3_8e_hxilinx_cpu_facade>.
+Parsing entity <M16_1E_HXILINX_cpu_facade>.
+Parsing architecture <M16_1E_HXILINX_cpu_facade_V> of entity <m16_1e_hxilinx_cpu_facade>.
+Parsing entity <FJKC_HXILINX_cpu_facade>.
+Parsing architecture <Behavioral> of entity <fjkc_hxilinx_cpu_facade>.
+Parsing entity <D2_4E_HXILINX_cpu_facade>.
+Parsing architecture <D2_4E_HXILINX_cpu_facade_V> of entity <d2_4e_hxilinx_cpu_facade>.
+Parsing entity <M2_1_HXILINX_cpu_facade>.
+Parsing architecture <M2_1_HXILINX_cpu_facade_V> of entity <m2_1_hxilinx_cpu_facade>.
+Parsing entity <AND8_HXILINX_cpu_facade>.
+Parsing architecture <AND8_HXILINX_cpu_facade_V> of entity <and8_hxilinx_cpu_facade>.
+Parsing entity <buf_8bit_MUSER_cpu_facade>.
+Parsing architecture <BEHAVIORAL> of entity <buf_8bit_muser_cpu_facade>.
+Parsing entity <clk_generator_MUSER_cpu_facade>.
+Parsing architecture <BEHAVIORAL> of entity <clk_generator_muser_cpu_facade>.
+Parsing entity <bus_muxer_MUSER_cpu_facade>.
+Parsing architecture <BEHAVIORAL> of entity <bus_muxer_muser_cpu_facade>.
+Parsing entity <encoder8_3_MUSER_cpu_facade>.
+Parsing architecture <BEHAVIORAL> of entity <encoder8_3_muser_cpu_facade>.
+Parsing entity <cpu_output_muxer_MUSER_cpu_facade>.
+Parsing architecture <BEHAVIORAL> of entity <cpu_output_muxer_muser_cpu_facade>.
+Parsing entity <reg_8bit_MUSER_cpu_facade>.
+Parsing architecture <BEHAVIORAL> of entity <reg_8bit_muser_cpu_facade>.
+Parsing entity <pass_through_or_one_MUSER_cpu_facade>.
+Parsing architecture <BEHAVIORAL> of entity <pass_through_or_one_muser_cpu_facade>.
+Parsing entity <ram_256bytes_MUSER_cpu_facade>.
+Parsing architecture <BEHAVIORAL> of entity <ram_256bytes_muser_cpu_facade>.
+Parsing entity <stepper_MUSER_cpu_facade>.
+Parsing architecture <BEHAVIORAL> of entity <stepper_muser_cpu_facade>.
+Parsing entity <cpu_control_MUSER_cpu_facade>.
+Parsing architecture <BEHAVIORAL> of entity <cpu_control_muser_cpu_facade>.
+Parsing entity <alu_output_muxer_MUSER_cpu_facade>.
+Parsing architecture <BEHAVIORAL> of entity <alu_output_muxer_muser_cpu_facade>.
+Parsing entity <lzero_MUSER_cpu_facade>.
+Parsing architecture <BEHAVIORAL> of entity <lzero_muser_cpu_facade>.
+Parsing entity <cmp_1bit_MUSER_cpu_facade>.
+Parsing architecture <BEHAVIORAL> of entity <cmp_1bit_muser_cpu_facade>.
+Parsing entity <cmp_8bit_MUSER_cpu_facade>.
+Parsing architecture <BEHAVIORAL> of entity <cmp_8bit_muser_cpu_facade>.
+Parsing entity <alu_MUSER_cpu_facade>.
+Parsing architecture <BEHAVIORAL> of entity <alu_muser_cpu_facade>.
+Parsing entity <cpu_MUSER_cpu_facade>.
+Parsing architecture <BEHAVIORAL> of entity <cpu_muser_cpu_facade>.
+Parsing entity <cpu_facade>.
+Parsing architecture <BEHAVIORAL> of entity <cpu_facade>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/tb_cpu_facade.vhd" into library work
+Parsing entity <cpu_facade_cpu_facade_sch_tb>.
+Parsing architecture <behavioral> of entity <cpu_facade_cpu_facade_sch_tb>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <cpu_facade_cpu_facade_sch_tb> (architecture <behavioral>) from library <work>.
+
+Elaborating entity <cpu_facade> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <cpu_MUSER_cpu_facade> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <alu_MUSER_cpu_facade> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <D3_8E_HXILINX_cpu_facade> (architecture <D3_8E_HXILINX_cpu_facade_V>) from library <work>.
+INFO:HDLCompiler:679 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 353. Case statement is complete. others clause is never selected
+
+Elaborating entity <ADD8_HXILINX_cpu_facade> (architecture <ADD8_HXILINX_cpu_facade_V>) from library <work>.
+
+Elaborating entity <INV8_HXILINX_cpu_facade> (architecture <INV8_HXILINX_cpu_facade_V>) from library <work>.
+
+Elaborating entity <cmp_8bit_MUSER_cpu_facade> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <cmp_1bit_MUSER_cpu_facade> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <lzero_MUSER_cpu_facade> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <NOR8_HXILINX_cpu_facade> (architecture <NOR8_HXILINX_cpu_facade_V>) from library <work>.
+
+Elaborating entity <alu_output_muxer_MUSER_cpu_facade> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <bus_muxer_MUSER_cpu_facade> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <M16_1E_HXILINX_cpu_facade> (architecture <M16_1E_HXILINX_cpu_facade_V>) from library <work>.
+INFO:HDLCompiler:679 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 428. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 758: Net <XLXN_54> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 759: Net <XLXN_55> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 760: Net <XLXN_56> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 761: Net <XLXN_57> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 762: Net <XLXN_58> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 763: Net <XLXN_59> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 764: Net <XLXN_60> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 765: Net <XLXN_61> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 766: Net <XLXN_70> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 767: Net <XLXN_71> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 768: Net <XLXN_72> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 769: Net <XLXN_73> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 770: Net <XLXN_74> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 771: Net <XLXN_75> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 772: Net <XLXN_76> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 773: Net <XLXN_77> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 774: Net <XLXN_86> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 775: Net <XLXN_87> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 776: Net <XLXN_88> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 777: Net <XLXN_89> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 778: Net <XLXN_90> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 779: Net <XLXN_91> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 780: Net <XLXN_92> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 781: Net <XLXN_93> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 782: Net <XLXN_102> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 783: Net <XLXN_103> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 784: Net <XLXN_104> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 785: Net <XLXN_105> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 786: Net <XLXN_106> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 787: Net <XLXN_107> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 788: Net <XLXN_108> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 789: Net <XLXN_109> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 790: Net <XLXN_118> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 791: Net <XLXN_119> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 792: Net <XLXN_120> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 793: Net <XLXN_121> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 794: Net <XLXN_122> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 795: Net <XLXN_123> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 796: Net <XLXN_124> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 797: Net <XLXN_125> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 798: Net <XLXN_134> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 799: Net <XLXN_135> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 800: Net <XLXN_136> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 801: Net <XLXN_137> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 802: Net <XLXN_138> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 803: Net <XLXN_139> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 804: Net <XLXN_140> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 805: Net <XLXN_141> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 806: Net <XLXN_150> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 807: Net <XLXN_151> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 808: Net <XLXN_152> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 809: Net <XLXN_153> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 810: Net <XLXN_154> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 811: Net <XLXN_155> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 812: Net <XLXN_156> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 813: Net <XLXN_157> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 814: Net <XLXN_166> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 815: Net <XLXN_167> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 816: Net <XLXN_168> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 817: Net <XLXN_169> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 818: Net <XLXN_170> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 819: Net <XLXN_171> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 820: Net <XLXN_172> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 821: Net <XLXN_173> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 2755: Net <XLXI_14_dev7_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 2756: Net <XLXI_14_dev8_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 2757: Net <XLXI_14_dev9_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 2758: Net <XLXI_14_dev10_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 2759: Net <XLXI_14_dev11_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 2760: Net <XLXI_14_dev12_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 2761: Net <XLXI_14_dev13_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 2762: Net <XLXI_14_dev14_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 2763: Net <XLXI_14_dev15_openSignal[7]> does not have a driver.
+
+Elaborating entity <clk_generator_MUSER_cpu_facade> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <FJKC_HXILINX_cpu_facade> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <cpu_control_MUSER_cpu_facade> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <stepper_MUSER_cpu_facade> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <CB4CE_HXILINX_cpu_facade> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <D2_4E_HXILINX_cpu_facade> (architecture <D2_4E_HXILINX_cpu_facade_V>) from library <work>.
+INFO:HDLCompiler:679 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 515. Case statement is complete. others clause is never selected
+
+Elaborating entity <OR6_HXILINX_cpu_facade> (architecture <OR6_HXILINX_cpu_facade_V>) from library <work>.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1960: Net <XLXI_556_I0_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1961: Net <XLXI_556_I1_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1962: Net <XLXI_556_I2_openSignal> does not have a driver.
+
+Elaborating entity <pass_through_or_one_MUSER_cpu_facade> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <M2_1_HXILINX_cpu_facade> (architecture <M2_1_HXILINX_cpu_facade_V>) from library <work>.
+INFO:HDLCompiler:679 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 549. Case statement is complete. others clause is never selected
+
+Elaborating entity <ram_256bytes_MUSER_cpu_facade> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <LD8_HXILINX_cpu_facade> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <LD4CE_HXILINX_cpu_facade> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <reg_8bit_MUSER_cpu_facade> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <LD8CE_HXILINX_cpu_facade> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <cpu_output_muxer_MUSER_cpu_facade> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <encoder8_3_MUSER_cpu_facade> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <AND8_HXILINX_cpu_facade> (architecture <AND8_HXILINX_cpu_facade_V>) from library <work>.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1244: Net <XLXI_1_dev8_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1245: Net <XLXI_1_dev9_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1246: Net <XLXI_1_dev10_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1247: Net <XLXI_1_dev11_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1248: Net <XLXI_1_dev12_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1249: Net <XLXI_1_dev13_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1250: Net <XLXI_1_dev14_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1251: Net <XLXI_1_dev15_openSignal[7]> does not have a driver.
+
+Elaborating entity <buf_8bit_MUSER_cpu_facade> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <CB16CE_HXILINX_cpu_facade> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 4698: Net <XLXI_1_clk_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 4699: Net <XLXI_1_in_clk_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 4700: Net <XLXI_1_in_manr_d_openSignal[7]> does not have a driver.
+ERROR:HDLCompiler:890 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/tb_cpu_facade.vhd" Line 64: wait statement without UNTIL clause not supported for synthesis
+Netlist cpu_facade_cpu_facade_sch_tb(behavioral) remains a blackbox, due to errors in its contents
+--> 
+
+
+Total memory usage is 536752 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :   87 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

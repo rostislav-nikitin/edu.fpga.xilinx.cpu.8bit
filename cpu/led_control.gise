@@ -163,9 +163,16 @@
     </file>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="cpu_facade.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="cpu_facade.xst"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="cpu_facade_cpu_facade_sch_tb.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="cpu_facade_cpu_facade_sch_tb.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cpu_facade_cpu_facade_sch_tb.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="cpu_facade_cpu_facade_sch_tb.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="cpu_facade_cpu_facade_sch_tb.xst"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cpu_facade_cpu_facade_sch_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="cpu_facade_cpu_facade_sch_tb_isim_beh.exe"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cpu_facade_cpu_facade_sch_tb_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="cpu_facade_cpu_facade_sch_tb_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="cpu_facade_cpu_facade_sch_tb_xst.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="cpu_facade_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="cpu_facade_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="cpu_facade_map.map" xil_pn:subbranch="Map"/>
@@ -289,6 +296,46 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="freq_divider_pad.txt" xil_pn:subbranch="Par"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="freq_divider_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="freq_divider_xst.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="freq_pass_through.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="freq_pass_through.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="freq_pass_through.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="freq_pass_through.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="freq_pass_through.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_JHD" xil_pn:name="freq_pass_through.jhd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="freq_pass_through.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="freq_pass_through.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="freq_pass_through.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="freq_pass_through.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="freq_pass_through.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="freq_pass_through.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="freq_pass_through.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="freq_pass_through.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="freq_pass_through.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="freq_pass_through.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="freq_pass_through.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="freq_pass_through.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="freq_pass_through.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="freq_pass_through.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="freq_pass_through.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="freq_pass_through.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="freq_pass_through.vhf"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="freq_pass_through.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="freq_pass_through.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="freq_pass_through_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="freq_pass_through_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="freq_pass_through_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="freq_pass_through_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="freq_pass_through_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="freq_pass_through_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="freq_pass_through_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="freq_pass_through_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="freq_pass_through_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="freq_pass_through_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="freq_pass_through_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="freq_pass_through_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="freq_pass_through_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="freq_pass_through_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="freq_pass_through_xst.xrpt"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
@@ -538,6 +585,7 @@
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="alu.vhf"/>
@@ -563,6 +611,7 @@
     <transform xil_pn:end_ts="1651028707" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="511171098359809102" xil_pn:start_ts="1651028707">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
     <transform xil_pn:end_ts="1651028794" xil_pn:in_ck="-1517570500836628755" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1651028794">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -642,7 +691,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1651043977" xil_pn:in_ck="-5660957855543940507" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-7907286487292473996" xil_pn:start_ts="1651043974">
+    <transform xil_pn:end_ts="1651103445" xil_pn:in_ck="1210092276819959605" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-7907286487292473996" xil_pn:start_ts="1651103440">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="alu.vhf"/>
@@ -665,27 +714,27 @@
       <outfile xil_pn:name="reg_8bit.vhf"/>
       <outfile xil_pn:name="stepper.vhf"/>
     </transform>
-    <transform xil_pn:end_ts="1651028416" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="511171098359809102" xil_pn:start_ts="1651028416">
+    <transform xil_pn:end_ts="1651101157" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="511171098359809102" xil_pn:start_ts="1651101157">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1651028416" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1651028416">
+    <transform xil_pn:end_ts="1651101157" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1651101157">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1651028416" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-3574267445159216664" xil_pn:start_ts="1651028416">
+    <transform xil_pn:end_ts="1651101157" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-3574267445159216664" xil_pn:start_ts="1651101157">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1651028416" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3448225648484115155" xil_pn:start_ts="1651028416">
+    <transform xil_pn:end_ts="1651101157" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3448225648484115155" xil_pn:start_ts="1651101157">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1651028416" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-8932811663397328872" xil_pn:start_ts="1651028416">
+    <transform xil_pn:end_ts="1651101157" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-8932811663397328872" xil_pn:start_ts="1651101157">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1651043987" xil_pn:in_ck="-4811449834421052374" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="4276192236071561300" xil_pn:start_ts="1651043977">
+    <transform xil_pn:end_ts="1651103454" xil_pn:in_ck="8126766077877476000" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="4276192236071561300" xil_pn:start_ts="1651103445">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -703,17 +752,20 @@
       <outfile xil_pn:name="cpu_facade.stx"/>
       <outfile xil_pn:name="cpu_facade.syr"/>
       <outfile xil_pn:name="cpu_facade.xst"/>
+      <outfile xil_pn:name="cpu_facade_cpu_facade_sch_tb.prj"/>
       <outfile xil_pn:name="cpu_facade_cpu_facade_sch_tb_beh.prj"/>
       <outfile xil_pn:name="cpu_facade_cpu_facade_sch_tb_stx_beh.prj"/>
       <outfile xil_pn:name="cpu_facade_xst.xrpt"/>
+      <outfile xil_pn:name="cpu_freq_divider.ngr"/>
+      <outfile xil_pn:name="freq_divider.ngr"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1651043987" xil_pn:in_ck="-3581349743804290296" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="8767202880640062749" xil_pn:start_ts="1651043987">
+    <transform xil_pn:end_ts="1651103722" xil_pn:in_ck="-5345843020445293224" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="8767202880640062749" xil_pn:start_ts="1651103722">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1651043992" xil_pn:in_ck="5817923713372298565" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-2185965895533636794" xil_pn:start_ts="1651043987">
+    <transform xil_pn:end_ts="1651103727" xil_pn:in_ck="2777967915367443231" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-2185965895533636794" xil_pn:start_ts="1651103722">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_ngo"/>
@@ -722,7 +774,7 @@
       <outfile xil_pn:name="cpu_facade.ngd"/>
       <outfile xil_pn:name="cpu_facade_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1651044002" xil_pn:in_ck="7059033226084334277" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-3218812312198701449" xil_pn:start_ts="1651043992">
+    <transform xil_pn:end_ts="1651103737" xil_pn:in_ck="-350245427074811872" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-3218812312198701449" xil_pn:start_ts="1651103727">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -736,7 +788,7 @@
       <outfile xil_pn:name="cpu_facade_summary.xml"/>
       <outfile xil_pn:name="cpu_facade_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1651044015" xil_pn:in_ck="-7018108376547541491" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="7044443079611515937" xil_pn:start_ts="1651044002">
+    <transform xil_pn:end_ts="1651103748" xil_pn:in_ck="9180574834623365121" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="7044443079611515937" xil_pn:start_ts="1651103737">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
@@ -750,7 +802,7 @@
       <outfile xil_pn:name="cpu_facade_pad.txt"/>
       <outfile xil_pn:name="cpu_facade_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1651044024" xil_pn:in_ck="554836510438837277" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="-3266310027444107032" xil_pn:start_ts="1651044015">
+    <transform xil_pn:end_ts="1651103755" xil_pn:in_ck="-4590173024735647356" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="-3266310027444107032" xil_pn:start_ts="1651103748">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -763,17 +815,7 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1651040149" xil_pn:in_ck="8869551476276230436" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="3013362611380892931" xil_pn:start_ts="1651040147">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
-    </transform>
-    <transform xil_pn:end_ts="1651044015" xil_pn:in_ck="-3563508517345934683" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1651044010">
+    <transform xil_pn:end_ts="1651103748" xil_pn:in_ck="8136051799467941244" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1651103744">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
