@@ -1,0 +1,14 @@
+//! **************************************************************************
+// Written by: Map P.40xd on Wed Apr 27 06:07:38 2022
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "monitor<0>" LOCATE = SITE "P4" LEVEL 1;
+COMP "in_rst" LOCATE = SITE "C3" LEVEL 1;
+COMP "monitor<1>" LOCATE = SITE "N5" LEVEL 1;
+COMP "monitor<2>" LOCATE = SITE "P5" LEVEL 1;
+COMP "monitor<3>" LOCATE = SITE "M6" LEVEL 1;
+COMP "in_clk_manual" LOCATE = SITE "D3" LEVEL 1;
+COMP "out_clk_int" LOCATE = SITE "K16" LEVEL 1;
+SCHEMATIC END;
+

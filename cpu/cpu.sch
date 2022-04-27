@@ -2619,13 +2619,15 @@
         <branch name="cc_alu_op(2)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="4112" y="1136" type="branch" />
             <wire x2="4112" y1="1200" y2="1200" x1="3648" />
-            <wire x2="4160" y1="1136" y2="1136" x1="4112" />
             <wire x2="4112" y1="1136" y2="1200" x1="4112" />
+            <wire x2="4144" y1="1136" y2="1136" x1="4112" />
+            <wire x2="4160" y1="1136" y2="1136" x1="4144" />
         </branch>
         <branch name="cc_alu_op(2:0)">
-            <attrtext style="alignment:SOFT-VRIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4256" y="1136" type="branch" />
+            <attrtext style="alignment:SOFT-VRIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4256" y="1264" type="branch" />
             <wire x2="4256" y1="1008" y2="1072" x1="4256" />
             <wire x2="4256" y1="1072" y2="1136" x1="4256" />
+            <wire x2="4256" y1="1136" y2="1264" x1="4256" />
         </branch>
         <bustap x2="4160" y1="1072" y2="1072" x1="4256" />
         <bustap x2="4160" y1="1008" y2="1008" x1="4256" />
@@ -3486,5 +3488,6 @@
             <wire x2="1648" y1="4192" y2="4192" x1="1552" />
         </branch>
         <iomarker fontsize="28" x="928" y="4192" name="in_rst" orien="R180" />
+        <bustap x2="4160" y1="1136" y2="1136" x1="4256" />
     </sheet>
 </drawing>

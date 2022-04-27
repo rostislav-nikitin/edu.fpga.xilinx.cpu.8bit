@@ -129,11 +129,56 @@
     </file>
     <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="cpu_control.vhi"/>
     <file xil_pn:fileType="FILE_VHDL" xil_pn:name="cpu_control_drc.vhf"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cpu_cpu_sch_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="cpu_cpu_sch_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="cpu_cpu_sch_tb_isim_beh1.wdb"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cpu_cpu_sch_tb_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="cpu_envsettings.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="cpu_facade.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="cpu_facade.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="cpu_facade.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="cpu_facade.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="cpu_facade.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_JHD" xil_pn:name="cpu_facade.jhd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="cpu_facade.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_IMPACT_MISC" xil_pn:name="cpu_facade.mcs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="cpu_facade.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="cpu_facade.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="cpu_facade.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="cpu_facade.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="cpu_facade.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="cpu_facade.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="cpu_facade.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cpu_facade.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_IMPACT_MISC" xil_pn:name="cpu_facade.prm"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="cpu_facade.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="cpu_facade.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="cpu_facade.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="cpu_facade.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="cpu_facade.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="cpu_facade.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="cpu_facade.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_VHDL" xil_pn:name="cpu_facade.vhf">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="cpu_facade.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="cpu_facade.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cpu_facade_cpu_facade_sch_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="cpu_facade_cpu_facade_sch_tb_isim_beh.exe"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cpu_facade_cpu_facade_sch_tb_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="cpu_facade_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="cpu_facade_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="cpu_facade_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="cpu_facade_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="cpu_facade_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="cpu_facade_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="cpu_facade_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="cpu_facade_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="cpu_facade_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="cpu_facade_par.xrpt"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="cpu_facade_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="cpu_facade_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="cpu_facade_xst.xrpt"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="cpu_fpga_editor.log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="cpu_freq_divider.bgn" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="cpu_freq_divider.bit" xil_pn:subbranch="FPGAConfiguration"/>
@@ -458,7 +503,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1650999272" xil_pn:in_ck="4819049413875320875" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1650999272">
+    <transform xil_pn:end_ts="1651028794" xil_pn:in_ck="-1506574198279630325" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1651028794">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="led_control.vhd"/>
@@ -466,6 +511,7 @@
       <outfile xil_pn:name="tb_alu_output_muxer.vhd"/>
       <outfile xil_pn:name="tb_bus_muxer.vhd"/>
       <outfile xil_pn:name="tb_clk_generator.vhd"/>
+      <outfile xil_pn:name="tb_cpu_facade.vhd"/>
       <outfile xil_pn:name="tb_cpu_freq_divider_v2.vhd"/>
       <outfile xil_pn:name="tb_cpu_output_muxer.vhd"/>
       <outfile xil_pn:name="tb_cpu_v2.vhd"/>
@@ -480,11 +526,11 @@
       <outfile xil_pn:name="vga_test.vhd"/>
       <outfile xil_pn:name="vga_v2.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1650927174" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-8838174429235572988" xil_pn:start_ts="1650927174">
+    <transform xil_pn:end_ts="1651028769" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="9060393684414823402" xil_pn:start_ts="1651028769">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1650999131" xil_pn:in_ck="2097545964833812286" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-7490580144609136" xil_pn:start_ts="1650999127">
+    <transform xil_pn:end_ts="1651028771" xil_pn:in_ck="-5660957855543940507" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-631705441205409162" xil_pn:start_ts="1651028769">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="alu.vhf"/>
@@ -496,6 +542,7 @@
       <outfile xil_pn:name="cmp_8bit.vhf"/>
       <outfile xil_pn:name="cpu.vhf"/>
       <outfile xil_pn:name="cpu_control.vhf"/>
+      <outfile xil_pn:name="cpu_facade.vhf"/>
       <outfile xil_pn:name="cpu_freq_divider.vhf"/>
       <outfile xil_pn:name="cpu_output_muxer.vhf"/>
       <outfile xil_pn:name="encoder8_3.vhf"/>
@@ -506,11 +553,11 @@
       <outfile xil_pn:name="reg_8bit.vhf"/>
       <outfile xil_pn:name="stepper.vhf"/>
     </transform>
-    <transform xil_pn:end_ts="1650927177" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-6188742590956783781" xil_pn:start_ts="1650927177">
+    <transform xil_pn:end_ts="1651028707" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="511171098359809102" xil_pn:start_ts="1651028707">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1650999275" xil_pn:in_ck="-4758233869137180960" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1650999275">
+    <transform xil_pn:end_ts="1651028794" xil_pn:in_ck="-1517570500836628755" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1651028794">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="alu.vhf"/>
@@ -523,6 +570,7 @@
       <outfile xil_pn:name="cmp_8bit.vhf"/>
       <outfile xil_pn:name="cpu.vhf"/>
       <outfile xil_pn:name="cpu_control.vhf"/>
+      <outfile xil_pn:name="cpu_facade.vhf"/>
       <outfile xil_pn:name="cpu_freq_divider.vhf"/>
       <outfile xil_pn:name="cpu_output_muxer.vhf"/>
       <outfile xil_pn:name="encoder8_3.vhf"/>
@@ -538,6 +586,7 @@
       <outfile xil_pn:name="tb_alu_output_muxer.vhd"/>
       <outfile xil_pn:name="tb_bus_muxer.vhd"/>
       <outfile xil_pn:name="tb_clk_generator.vhd"/>
+      <outfile xil_pn:name="tb_cpu_facade.vhd"/>
       <outfile xil_pn:name="tb_cpu_freq_divider_v2.vhd"/>
       <outfile xil_pn:name="tb_cpu_output_muxer.vhd"/>
       <outfile xil_pn:name="tb_cpu_v2.vhd"/>
@@ -552,18 +601,18 @@
       <outfile xil_pn:name="vga_test.vhd"/>
       <outfile xil_pn:name="vga_v2.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1650999280" xil_pn:in_ck="-4758233869137180960" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-7871951945746904068" xil_pn:start_ts="1650999275">
+    <transform xil_pn:end_ts="1651028799" xil_pn:in_ck="-1517570500836628755" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="561969673573141832" xil_pn:start_ts="1651028794">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="cpu_cpu_sch_tb_beh.prj"/>
-      <outfile xil_pn:name="cpu_cpu_sch_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="cpu_facade_cpu_facade_sch_tb_beh.prj"/>
+      <outfile xil_pn:name="cpu_facade_cpu_facade_sch_tb_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1650999280" xil_pn:in_ck="-7483465307308211744" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3987568288328311345" xil_pn:start_ts="1650999280">
+    <transform xil_pn:end_ts="1651028799" xil_pn:in_ck="3136380887093869270" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-1984110355124121257" xil_pn:start_ts="1651028799">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -575,7 +624,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1650999406" xil_pn:in_ck="2097545964833812286" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="1367477379429764801" xil_pn:start_ts="1650999405">
+    <transform xil_pn:end_ts="1651028416" xil_pn:in_ck="-5660957855543940507" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-7907286487292473996" xil_pn:start_ts="1651028412">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="alu.vhf"/>
@@ -587,6 +636,7 @@
       <outfile xil_pn:name="cmp_8bit.vhf"/>
       <outfile xil_pn:name="cpu.vhf"/>
       <outfile xil_pn:name="cpu_control.vhf"/>
+      <outfile xil_pn:name="cpu_facade.vhf"/>
       <outfile xil_pn:name="cpu_freq_divider.vhf"/>
       <outfile xil_pn:name="cpu_output_muxer.vhf"/>
       <outfile xil_pn:name="encoder8_3.vhf"/>
@@ -597,27 +647,27 @@
       <outfile xil_pn:name="reg_8bit.vhf"/>
       <outfile xil_pn:name="stepper.vhf"/>
     </transform>
-    <transform xil_pn:end_ts="1650921176" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-6188742590956783781" xil_pn:start_ts="1650921176">
+    <transform xil_pn:end_ts="1651028416" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="511171098359809102" xil_pn:start_ts="1651028416">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1650921176" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1650921176">
+    <transform xil_pn:end_ts="1651028416" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1651028416">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1650921176" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="15972280706930101" xil_pn:start_ts="1650921176">
+    <transform xil_pn:end_ts="1651028416" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-3574267445159216664" xil_pn:start_ts="1651028416">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1650921176" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3448225648484115155" xil_pn:start_ts="1650921176">
+    <transform xil_pn:end_ts="1651028416" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3448225648484115155" xil_pn:start_ts="1651028416">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1650921176" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-1481173902950176155" xil_pn:start_ts="1650921176">
+    <transform xil_pn:end_ts="1651028416" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-8932811663397328872" xil_pn:start_ts="1651028416">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1650999416" xil_pn:in_ck="-7754004777061472835" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-4897599826394597567" xil_pn:start_ts="1650999406">
+    <transform xil_pn:end_ts="1651028842" xil_pn:in_ck="-4811449834421052374" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="4276192236071561300" xil_pn:start_ts="1651028832">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -626,84 +676,91 @@
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="alu.ngr"/>
       <outfile xil_pn:name="bus_muxer.ngr"/>
-      <outfile xil_pn:name="cpu.jhd"/>
-      <outfile xil_pn:name="cpu.lso"/>
-      <outfile xil_pn:name="cpu.ngc"/>
       <outfile xil_pn:name="cpu.ngr"/>
-      <outfile xil_pn:name="cpu.prj"/>
-      <outfile xil_pn:name="cpu.stx"/>
-      <outfile xil_pn:name="cpu.syr"/>
-      <outfile xil_pn:name="cpu.xst"/>
-      <outfile xil_pn:name="cpu_cpu_sch_tb_beh.prj"/>
-      <outfile xil_pn:name="cpu_cpu_sch_tb_stx_beh.prj"/>
+      <outfile xil_pn:name="cpu_facade.jhd"/>
+      <outfile xil_pn:name="cpu_facade.lso"/>
+      <outfile xil_pn:name="cpu_facade.ngc"/>
+      <outfile xil_pn:name="cpu_facade.ngr"/>
+      <outfile xil_pn:name="cpu_facade.prj"/>
+      <outfile xil_pn:name="cpu_facade.stx"/>
+      <outfile xil_pn:name="cpu_facade.syr"/>
+      <outfile xil_pn:name="cpu_facade.xst"/>
+      <outfile xil_pn:name="cpu_facade_cpu_facade_sch_tb_beh.prj"/>
+      <outfile xil_pn:name="cpu_facade_cpu_facade_sch_tb_stx_beh.prj"/>
+      <outfile xil_pn:name="cpu_facade_xst.xrpt"/>
       <outfile xil_pn:name="cpu_freq_divider.ngr"/>
-      <outfile xil_pn:name="cpu_freq_divider.prj"/>
-      <outfile xil_pn:name="cpu_output_muxer_cpu_output_muxer_sch_tb_stx_beh.prj"/>
-      <outfile xil_pn:name="cpu_xst.xrpt"/>
       <outfile xil_pn:name="freq_divider.ngr"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1650999525" xil_pn:in_ck="-5880712746656998731" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="3734212952593482" xil_pn:start_ts="1650999525">
+    <transform xil_pn:end_ts="1651028426" xil_pn:in_ck="5093464627925952348" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="8767202880640062749" xil_pn:start_ts="1651028426">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1650999530" xil_pn:in_ck="138970617898180113" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="2753755713209836595" xil_pn:start_ts="1650999525">
+    <transform xil_pn:end_ts="1651028848" xil_pn:in_ck="3195257202417114713" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-2185965895533636794" xil_pn:start_ts="1651028842">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
-      <outfile xil_pn:name="cpu.bld"/>
-      <outfile xil_pn:name="cpu.ngd"/>
-      <outfile xil_pn:name="cpu_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="cpu_facade.bld"/>
+      <outfile xil_pn:name="cpu_facade.ngd"/>
+      <outfile xil_pn:name="cpu_facade_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1650999592" xil_pn:in_ck="6482952661122063952" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-3218812312198701449" xil_pn:start_ts="1650999530">
+    <transform xil_pn:end_ts="1651028858" xil_pn:in_ck="630803622391110890" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-3218812312198701449" xil_pn:start_ts="1651028848">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
-      <outfile xil_pn:name="cpu.pcf"/>
-      <outfile xil_pn:name="cpu_map.map"/>
-      <outfile xil_pn:name="cpu_map.mrp"/>
-      <outfile xil_pn:name="cpu_map.ncd"/>
-      <outfile xil_pn:name="cpu_map.ngm"/>
-      <outfile xil_pn:name="cpu_map.xrpt"/>
-      <outfile xil_pn:name="cpu_summary.xml"/>
-      <outfile xil_pn:name="cpu_usage.xml"/>
+      <outfile xil_pn:name="cpu_facade.pcf"/>
+      <outfile xil_pn:name="cpu_facade_map.map"/>
+      <outfile xil_pn:name="cpu_facade_map.mrp"/>
+      <outfile xil_pn:name="cpu_facade_map.ncd"/>
+      <outfile xil_pn:name="cpu_facade_map.ngm"/>
+      <outfile xil_pn:name="cpu_facade_map.xrpt"/>
+      <outfile xil_pn:name="cpu_facade_summary.xml"/>
+      <outfile xil_pn:name="cpu_facade_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1650999609" xil_pn:in_ck="-8871617423231262081" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="7044443079611515937" xil_pn:start_ts="1650999592">
+    <transform xil_pn:end_ts="1651028872" xil_pn:in_ck="-3716672706472879687" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="7044443079611515937" xil_pn:start_ts="1651028858">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
-      <outfile xil_pn:name="cpu.ncd"/>
-      <outfile xil_pn:name="cpu.pad"/>
-      <outfile xil_pn:name="cpu.par"/>
-      <outfile xil_pn:name="cpu.ptwx"/>
-      <outfile xil_pn:name="cpu.unroutes"/>
-      <outfile xil_pn:name="cpu.xpi"/>
-      <outfile xil_pn:name="cpu_pad.csv"/>
-      <outfile xil_pn:name="cpu_pad.txt"/>
-      <outfile xil_pn:name="cpu_par.xrpt"/>
+      <outfile xil_pn:name="cpu_facade.ncd"/>
+      <outfile xil_pn:name="cpu_facade.pad"/>
+      <outfile xil_pn:name="cpu_facade.par"/>
+      <outfile xil_pn:name="cpu_facade.ptwx"/>
+      <outfile xil_pn:name="cpu_facade.unroutes"/>
+      <outfile xil_pn:name="cpu_facade.xpi"/>
+      <outfile xil_pn:name="cpu_facade_pad.csv"/>
+      <outfile xil_pn:name="cpu_facade_pad.txt"/>
+      <outfile xil_pn:name="cpu_facade_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1650999618" xil_pn:in_ck="985582498372983551" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="-3266310027444107032" xil_pn:start_ts="1650999609">
+    <transform xil_pn:end_ts="1651028881" xil_pn:in_ck="965982044367977842" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="-3266310027444107032" xil_pn:start_ts="1651028872">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
-      <outfile xil_pn:name="cpu.bgn"/>
-      <outfile xil_pn:name="cpu.bit"/>
-      <outfile xil_pn:name="cpu.drc"/>
-      <outfile xil_pn:name="cpu.ut"/>
+      <outfile xil_pn:name="cpu_facade.bgn"/>
+      <outfile xil_pn:name="cpu_facade.bit"/>
+      <outfile xil_pn:name="cpu_facade.drc"/>
+      <outfile xil_pn:name="cpu_facade.ut"/>
       <outfile xil_pn:name="usage_statistics_webtalk.html"/>
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1650999609" xil_pn:in_ck="4017416340092057524" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1650999604">
+    <transform xil_pn:end_ts="1651028471" xil_pn:in_ck="4622824193102280815" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="3013362611380892931" xil_pn:start_ts="1651028466">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="cpu_facade.mcs"/>
+      <outfile xil_pn:name="cpu_facade.prm"/>
+    </transform>
+    <transform xil_pn:end_ts="1651028872" xil_pn:in_ck="2741023692510679758" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1651028867">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
-      <outfile xil_pn:name="cpu.twr"/>
-      <outfile xil_pn:name="cpu.twx"/>
+      <outfile xil_pn:name="cpu_facade.twr"/>
+      <outfile xil_pn:name="cpu_facade.twx"/>
     </transform>
   </transforms>
 

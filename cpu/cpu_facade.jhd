@@ -1,0 +1,3 @@
+MODULE cpu_facade
+	SUBMODULE cpu
+		INSTANCE XLXI_1

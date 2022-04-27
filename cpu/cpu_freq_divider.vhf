@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu_freq_divider.vhf
--- /___/   /\     Timestamp : 04/19/2022 00:30:59
+-- /___/   /\     Timestamp : 04/27/2022 06:00:15
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -299,13 +299,13 @@ architecture BEHAVIORAL of freq_divider_MUSER_cpu_freq_divider is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_42";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_41";
-   attribute HU_SET of XLXI_123 : label is "XLXI_123_43";
-   attribute HU_SET of XLXI_124 : label is "XLXI_124_44";
-   attribute HU_SET of XLXI_128 : label is "XLXI_128_47";
-   attribute HU_SET of XLXI_149 : label is "XLXI_149_45";
-   attribute HU_SET of XLXI_150 : label is "XLXI_150_46";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_43";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_42";
+   attribute HU_SET of XLXI_123 : label is "XLXI_123_44";
+   attribute HU_SET of XLXI_124 : label is "XLXI_124_45";
+   attribute HU_SET of XLXI_128 : label is "XLXI_128_48";
+   attribute HU_SET of XLXI_149 : label is "XLXI_149_46";
+   attribute HU_SET of XLXI_150 : label is "XLXI_150_47";
 begin
    XLXI_1 : CB16CE_HXILINX_cpu_freq_divider
       port map (C=>clk_in,
@@ -606,7 +606,7 @@ architecture BEHAVIORAL of encoder8_3_MUSER_cpu_freq_divider is
    end component;
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_48";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_49";
 begin
    XLXI_1 : OR4
       port map (I0=>i(1),
@@ -751,7 +751,7 @@ architecture BEHAVIORAL of cpu_freq_divider is
    end component;
    attribute BOX_TYPE of GND : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_49";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_50";
 begin
    XLXN_1(31 downto 0) <= x"000F4240";
    XLXI_1 : freq_divider_MUSER_cpu_freq_divider

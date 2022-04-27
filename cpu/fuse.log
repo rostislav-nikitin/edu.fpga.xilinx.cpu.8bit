@@ -1,4 +1,4 @@
-Running: /opt/Xilinx/14.3/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_cpu_sch_tb_isim_beh.exe -prj /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_cpu_sch_tb_beh.prj work.cpu_cpu_sch_tb 
+Running: /opt/Xilinx/14.3/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade_cpu_facade_sch_tb_isim_beh.exe -prj /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade_cpu_facade_sch_tb_beh.prj work.cpu_facade_cpu_facade_sch_tb 
 ISim P.40xd (signature 0xfbc00daa)
 Number of CPUs detected in this system: 32
 Turning on mult-threading, number of parallel sub-compilation jobs: 64 
@@ -21,77 +21,80 @@ Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/clk_generato
 Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/buf_8bit.vhf" into library work
 Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/alu.vhf" into library work
 Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" into library work
-Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/tb_cpu_v2.vhd" into library work
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" into library work
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/tb_cpu_facade.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 111940 KB
-Fuse CPU Usage: 1650 ms
+Fuse Memory Usage: 113864 KB
+Fuse CPU Usage: 1790 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
 Compiling package vcomponents
 Compiling package std_logic_arith
 Compiling package std_logic_unsigned
-Compiling architecture d3_8e_hxilinx_cpu_v of entity D3_8E_HXILINX_cpu [d3_8e_hxilinx_cpu_default]
-Compiling architecture add8_hxilinx_cpu_v of entity ADD8_HXILINX_cpu [add8_hxilinx_cpu_default]
+Compiling architecture d3_8e_hxilinx_cpu_facade_v of entity D3_8E_HXILINX_cpu_facade [d3_8e_hxilinx_cpu_facade_default]
+Compiling architecture add8_hxilinx_cpu_facade_v of entity ADD8_HXILINX_cpu_facade [add8_hxilinx_cpu_facade_default]
 Compiling architecture buf_v of entity BUF [buf_default]
 Compiling architecture vcc_v of entity VCC [vcc_default]
 Compiling architecture and2_v of entity AND2 [and2_default]
 Compiling architecture or3_v of entity OR3 [or3_default]
-Compiling architecture inv8_hxilinx_cpu_v of entity INV8_HXILINX_cpu [inv8_hxilinx_cpu_default]
+Compiling architecture inv8_hxilinx_cpu_facade_v of entity INV8_HXILINX_cpu_facade [inv8_hxilinx_cpu_facade_default]
 Compiling architecture or2_v of entity OR2 [or2_default]
 Compiling architecture xnor2_v of entity XNOR2 [xnor2_default]
 Compiling architecture inv_v of entity INV [inv_default]
-Compiling architecture behavioral of entity cmp_1bit_MUSER_cpu [cmp_1bit_muser_cpu_default]
+Compiling architecture behavioral of entity cmp_1bit_MUSER_cpu_facade [cmp_1bit_muser_cpu_facade_defaul...]
 Compiling architecture pullup_v of entity PULLUP [pullup_default]
 Compiling architecture pulldown_v of entity PULLDOWN [pulldown_default]
-Compiling architecture behavioral of entity cmp_8bit_MUSER_cpu [cmp_8bit_muser_cpu_default]
-Compiling architecture nor8_hxilinx_cpu_v of entity NOR8_HXILINX_cpu [nor8_hxilinx_cpu_default]
-Compiling architecture behavioral of entity lzero_MUSER_cpu [lzero_muser_cpu_default]
-Compiling architecture m16_1e_hxilinx_cpu_v of entity M16_1E_HXILINX_cpu [m16_1e_hxilinx_cpu_default]
-Compiling architecture behavioral of entity bus_muxer_MUSER_cpu [bus_muxer_muser_cpu_default]
+Compiling architecture behavioral of entity cmp_8bit_MUSER_cpu_facade [cmp_8bit_muser_cpu_facade_defaul...]
+Compiling architecture nor8_hxilinx_cpu_facade_v of entity NOR8_HXILINX_cpu_facade [nor8_hxilinx_cpu_facade_default]
+Compiling architecture behavioral of entity lzero_MUSER_cpu_facade [lzero_muser_cpu_facade_default]
+Compiling architecture m16_1e_hxilinx_cpu_facade_v of entity M16_1E_HXILINX_cpu_facade [m16_1e_hxilinx_cpu_facade_defaul...]
+Compiling architecture behavioral of entity bus_muxer_MUSER_cpu_facade [bus_muxer_muser_cpu_facade_defau...]
 Compiling architecture gnd_v of entity GND [gnd_default]
-Compiling architecture behavioral of entity alu_output_muxer_MUSER_cpu [alu_output_muxer_muser_cpu_defau...]
-Compiling architecture behavioral of entity alu_MUSER_cpu [alu_muser_cpu_default]
-Compiling architecture behavioral of entity FJKC_HXILINX_cpu [\FJKC_HXILINX_cpu('0')\]
+Compiling architecture behavioral of entity alu_output_muxer_MUSER_cpu_facade [alu_output_muxer_muser_cpu_facad...]
+Compiling architecture behavioral of entity alu_MUSER_cpu_facade [alu_muser_cpu_facade_default]
+Compiling architecture behavioral of entity FJKC_HXILINX_cpu_facade [\FJKC_HXILINX_cpu_facade('0')\]
 Compiling architecture and2b1_v of entity AND2B1 [and2b1_default]
-Compiling architecture behavioral of entity clk_generator_MUSER_cpu [clk_generator_muser_cpu_default]
-Compiling architecture behavioral of entity CB4CE_HXILINX_cpu [cb4ce_hxilinx_cpu_default]
-Compiling architecture behavioral of entity stepper_MUSER_cpu [stepper_muser_cpu_default]
+Compiling architecture behavioral of entity clk_generator_MUSER_cpu_facade [clk_generator_muser_cpu_facade_d...]
+Compiling architecture behavioral of entity CB4CE_HXILINX_cpu_facade [cb4ce_hxilinx_cpu_facade_default]
+Compiling architecture behavioral of entity stepper_MUSER_cpu_facade [stepper_muser_cpu_facade_default]
 Compiling architecture or4_v of entity OR4 [or4_default]
-Compiling architecture d2_4e_hxilinx_cpu_v of entity D2_4E_HXILINX_cpu [d2_4e_hxilinx_cpu_default]
+Compiling architecture d2_4e_hxilinx_cpu_facade_v of entity D2_4E_HXILINX_cpu_facade [d2_4e_hxilinx_cpu_facade_default]
 Compiling architecture or5_v of entity OR5 [or5_default]
 Compiling architecture and3b1_v of entity AND3B1 [and3b1_default]
-Compiling architecture or6_hxilinx_cpu_v of entity OR6_HXILINX_cpu [or6_hxilinx_cpu_default]
-Compiling architecture behavioral of entity cpu_control_MUSER_cpu [cpu_control_muser_cpu_default]
-Compiling architecture m2_1_hxilinx_cpu_v of entity M2_1_HXILINX_cpu [m2_1_hxilinx_cpu_default]
-Compiling architecture behavioral of entity pass_through_or_one_MUSER_cpu [pass_through_or_one_muser_cpu_de...]
+Compiling architecture or6_hxilinx_cpu_facade_v of entity OR6_HXILINX_cpu_facade [or6_hxilinx_cpu_facade_default]
+Compiling architecture behavioral of entity cpu_control_MUSER_cpu_facade [cpu_control_muser_cpu_facade_def...]
+Compiling architecture m2_1_hxilinx_cpu_facade_v of entity M2_1_HXILINX_cpu_facade [m2_1_hxilinx_cpu_facade_default]
+Compiling architecture behavioral of entity pass_through_or_one_MUSER_cpu_facade [pass_through_or_one_muser_cpu_fa...]
 Compiling package textio
 Compiling package vital_timing
 Compiling package vital_primitives
 Compiling package vpkg
 Compiling architecture ram256x1s_v of entity RAM256X1S [\RAM256X1S("00000000000000000000...]
-Compiling architecture behavioral of entity LD8_HXILINX_cpu [ld8_hxilinx_cpu_default]
-Compiling architecture behavioral of entity ram_256bytes_MUSER_cpu [ram_256bytes_muser_cpu_default]
-Compiling architecture behavioral of entity LD4CE_HXILINX_cpu [ld4ce_hxilinx_cpu_default]
+Compiling architecture behavioral of entity LD8_HXILINX_cpu_facade [ld8_hxilinx_cpu_facade_default]
+Compiling architecture behavioral of entity ram_256bytes_MUSER_cpu_facade [ram_256bytes_muser_cpu_facade_de...]
+Compiling architecture behavioral of entity LD4CE_HXILINX_cpu_facade [ld4ce_hxilinx_cpu_facade_default]
 Compiling architecture fdc_1_v of entity FDC_1 [\FDC_1('0')\]
-Compiling architecture behavioral of entity LD8CE_HXILINX_cpu [ld8ce_hxilinx_cpu_default]
-Compiling architecture behavioral of entity reg_8bit_MUSER_cpu [reg_8bit_muser_cpu_default]
-Compiling architecture and8_hxilinx_cpu_v of entity AND8_HXILINX_cpu [and8_hxilinx_cpu_default]
-Compiling architecture behavioral of entity encoder8_3_MUSER_cpu [encoder8_3_muser_cpu_default]
-Compiling architecture behavioral of entity cpu_output_muxer_MUSER_cpu [cpu_output_muxer_muser_cpu_defau...]
-Compiling architecture behavioral of entity CB16CE_HXILINX_cpu [cb16ce_hxilinx_cpu_default]
+Compiling architecture behavioral of entity LD8CE_HXILINX_cpu_facade [ld8ce_hxilinx_cpu_facade_default]
+Compiling architecture behavioral of entity reg_8bit_MUSER_cpu_facade [reg_8bit_muser_cpu_facade_defaul...]
+Compiling architecture and8_hxilinx_cpu_facade_v of entity AND8_HXILINX_cpu_facade [and8_hxilinx_cpu_facade_default]
+Compiling architecture behavioral of entity encoder8_3_MUSER_cpu_facade [encoder8_3_muser_cpu_facade_defa...]
+Compiling architecture behavioral of entity cpu_output_muxer_MUSER_cpu_facade [cpu_output_muxer_muser_cpu_facad...]
+Compiling architecture behavioral of entity CB16CE_HXILINX_cpu_facade [cb16ce_hxilinx_cpu_facade_defaul...]
 Compiling architecture and4_v of entity AND4 [and4_default]
-Compiling architecture behavioral of entity freq_divider_MUSER_cpu [freq_divider_muser_cpu_default]
-Compiling architecture m8_1e_hxilinx_cpu_v of entity M8_1E_HXILINX_cpu [m8_1e_hxilinx_cpu_default]
-Compiling architecture behavioral of entity cpu_freq_divider_MUSER_cpu [cpu_freq_divider_muser_cpu_defau...]
+Compiling architecture behavioral of entity freq_divider_MUSER_cpu_facade [freq_divider_muser_cpu_facade_de...]
+Compiling architecture m8_1e_hxilinx_cpu_facade_v of entity M8_1E_HXILINX_cpu_facade [m8_1e_hxilinx_cpu_facade_default]
+Compiling architecture behavioral of entity cpu_freq_divider_MUSER_cpu_facade [cpu_freq_divider_muser_cpu_facad...]
 Compiling architecture and3_v of entity AND3 [and3_default]
-Compiling architecture behavioral of entity buf_8bit_MUSER_cpu [buf_8bit_muser_cpu_default]
-Compiling architecture behavioral of entity cpu [cpu_default]
-Compiling architecture behavioral of entity cpu_cpu_sch_tb
+Compiling architecture behavioral of entity buf_8bit_MUSER_cpu_facade [buf_8bit_muser_cpu_facade_defaul...]
+Compiling architecture behavioral of entity cpu_MUSER_cpu_facade [cpu_muser_cpu_facade_default]
+Compiling architecture behavioral of entity cpu_facade [cpu_facade_default]
+Compiling architecture behavioral of entity cpu_facade_cpu_facade_sch_tb
 Time Resolution for simulation is 1ps.
-Compiled 129 VHDL Units
-Built simulation executable /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_cpu_sch_tb_isim_beh.exe
-Fuse Memory Usage: 4372420 KB
-Fuse CPU Usage: 2270 ms
-GCC CPU Usage: 11250 ms
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 131 VHDL Units
+Built simulation executable /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade_cpu_facade_sch_tb_isim_beh.exe
+Fuse Memory Usage: 4374372 KB
+Fuse CPU Usage: 2400 ms
+GCC CPU Usage: 11390 ms
