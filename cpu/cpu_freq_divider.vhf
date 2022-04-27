@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu_freq_divider.vhf
--- /___/   /\     Timestamp : 04/27/2022 06:00:15
+-- /___/   /\     Timestamp : 04/27/2022 08:31:50
 -- \   \  /  \ 
 --  \___\/\___\ 
 --

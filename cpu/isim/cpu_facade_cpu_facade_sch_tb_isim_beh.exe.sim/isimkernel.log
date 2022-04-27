@@ -2,12 +2,12 @@ Command line:
    cpu_facade_cpu_facade_sch_tb_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  60655
+     -socket  35331
 
-Wed Apr 27 06:06:42 2022
+Wed Apr 27 06:56:39 2022
 
 
- Elaboration Time: 0.06 sec
+ Elaboration Time: 0.05 sec
 
  Current Memory Usage: 178.868 Meg
 
@@ -20,9 +20,9 @@ Wed Apr 27 06:06:42 2022
  Total Traceable Variables  : 141
  Total Scalar Nets and Variables : 10061
 
- Total Simulation Time: 0.97 sec
+ Total Simulation Time: 0.89 sec
 
  Current Memory Usage: 254.37 Meg
 
-Wed Apr 27 06:07:02 2022
+Wed Apr 27 06:56:42 2022
 

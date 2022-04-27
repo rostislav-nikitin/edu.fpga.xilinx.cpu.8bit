@@ -233,8 +233,19 @@
         <signal name="in_clk_external" />
         <signal name="in_rst" />
         <signal name="XLXN_233" />
+        <signal name="clk" />
+        <signal name="XLXN_236" />
+        <signal name="clk_div(15:0)" />
+        <signal name="clk_div(3)" />
+        <signal name="XLXN_240" />
+        <signal name="XLXN_245" />
         <port polarity="Input" name="in_manr_d(7:0)" />
         <port polarity="Output" name="monitor(7:0)" />
+        <port polarity="Output" name="clk_int" />
+        <port polarity="Input" name="is_clk_high" />
+        <port polarity="Input" name="is_clk_low" />
+        <port polarity="Input" name="is_clk_manual" />
+        <port polarity="Input" name="is_clk_external" />
         <port polarity="Input" name="in_r0_r" />
         <port polarity="Input" name="in_read_reg_en" />
         <port polarity="Input" name="in_write_reg_en" />
@@ -334,6 +345,7 @@
         <port polarity="Input" name="in_clk_manual" />
         <port polarity="Input" name="in_clk_external" />
         <port polarity="Input" name="in_rst" />
+        <port polarity="Input" name="clk" />
         <blockdef name="alu">
             <timestamp>2022-4-8T18:49:12</timestamp>
             <rect width="256" x="64" y="-320" height="320" />
@@ -595,19 +607,6 @@
             <rect width="24" x="276" y="-64" height="64" />
             <line x2="160" y1="-64" y2="0" x1="160" />
         </blockdef>
-        <blockdef name="cpu_freq_divider">
-            <timestamp>2022-4-15T23:37:23</timestamp>
-            <rect width="256" x="64" y="-512" height="512" />
-            <line x2="0" y1="-480" y2="-480" x1="64" />
-            <line x2="384" y1="-480" y2="-480" x1="320" />
-            <line x2="0" y1="-32" y2="-32" x1="64" />
-            <line x2="0" y1="-288" y2="-288" x1="64" />
-            <line x2="0" y1="-224" y2="-224" x1="64" />
-            <line x2="0" y1="-160" y2="-160" x1="64" />
-            <line x2="0" y1="-96" y2="-96" x1="64" />
-            <line x2="0" y1="-416" y2="-416" x1="64" />
-            <line x2="0" y1="-352" y2="-352" x1="64" />
-        </blockdef>
         <blockdef name="and3">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-64" y2="-64" x1="0" />
@@ -639,6 +638,21 @@
             <rect width="64" x="0" y="-44" height="24" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
             <rect width="64" x="320" y="-44" height="24" />
+        </blockdef>
+        <blockdef name="cb16ce">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="320" y1="-192" y2="-192" x1="384" />
+            <rect width="64" x="320" y="-268" height="24" />
+            <line x2="320" y1="-256" y2="-256" x1="384" />
+            <line x2="64" y1="-192" y2="-192" x1="0" />
+            <line x2="64" y1="-32" y2="-32" x1="192" />
+            <line x2="192" y1="-64" y2="-32" x1="192" />
+            <line x2="64" y1="-128" y2="-144" x1="80" />
+            <line x2="80" y1="-112" y2="-128" x1="64" />
+            <line x2="64" y1="-128" y2="-128" x1="0" />
+            <line x2="64" y1="-32" y2="-32" x1="0" />
+            <line x2="320" y1="-128" y2="-128" x1="384" />
+            <rect width="256" x="64" y="-320" height="256" />
         </blockdef>
         <block symbolname="alu" name="alu_inst">
             <blockpin signalname="sysbus(7:0)" name="a(7:0)" />
@@ -856,29 +870,6 @@
             <blockpin signalname="clkr" name="clkr" />
             <blockpin signalname="clkc" name="clkc" />
             <blockpin signalname="clkw" name="clkw" />
-        </block>
-        <block symbolname="cpu_freq_divider" name="XLXI_173">
-            <blockpin signalname="in_clk" name="clk_in" />
-            <blockpin signalname="clk_int" name="clk_out" />
-            <blockpin signalname="is_clk_external" name="external" />
-            <blockpin signalname="in_clk_external" name="external_clk_in" />
-            <blockpin signalname="is_clk_high" name="high" />
-            <blockpin signalname="is_clk_low" name="low" />
-            <blockpin signalname="is_clk_manual" name="manual" />
-            <blockpin signalname="in_clk_manual" name="manual_clk_in" />
-            <blockpin signalname="rst" name="rst" />
-        </block>
-        <block symbolname="gnd" name="XLXI_183">
-            <blockpin signalname="is_clk_high" name="G" />
-        </block>
-        <block symbolname="gnd" name="XLXI_184">
-            <blockpin signalname="is_clk_external" name="G" />
-        </block>
-        <block symbolname="gnd" name="XLXI_185">
-            <blockpin signalname="is_clk_low" name="G" />
-        </block>
-        <block symbolname="vcc" name="XLXI_186">
-            <blockpin signalname="is_clk_manual" name="P" />
         </block>
         <block symbolname="and2" name="XLXI_390">
             <blockpin signalname="can_read" name="I0" />
@@ -1217,10 +1208,6 @@
             <blockpin signalname="in_clk" name="I" />
             <blockpin signalname="out_clk" name="O" />
         </block>
-        <block symbolname="buf" name="XLXI_188">
-            <blockpin signalname="clk_int" name="I" />
-            <blockpin signalname="out_clk_int" name="O" />
-        </block>
         <block symbolname="buf" name="XLXI_189">
             <blockpin signalname="clkc" name="I" />
             <blockpin signalname="out_clkc" name="O" />
@@ -1365,6 +1352,38 @@
             <blockpin signalname="XLXN_233" name="I" />
             <blockpin signalname="rst" name="O" />
         </block>
+        <block symbolname="cb16ce" name="XLXI_905">
+            <blockpin signalname="in_clk_manual" name="C" />
+            <blockpin signalname="XLXN_245" name="CE" />
+            <blockpin signalname="XLXN_240" name="CLR" />
+            <blockpin signalname="XLXN_236" name="CEO" />
+            <blockpin name="Q(15:0)" />
+            <blockpin name="TC" />
+        </block>
+        <block symbolname="cb16ce" name="XLXI_906">
+            <blockpin signalname="in_clk_manual" name="C" />
+            <blockpin signalname="XLXN_236" name="CE" />
+            <blockpin signalname="XLXN_240" name="CLR" />
+            <blockpin name="CEO" />
+            <blockpin signalname="clk_div(15:0)" name="Q(15:0)" />
+            <blockpin name="TC" />
+        </block>
+        <block symbolname="buf" name="XLXI_907">
+            <blockpin signalname="clk_div(3)" name="I" />
+            <blockpin signalname="clk_int" name="O" />
+        </block>
+        <block symbolname="or2" name="XLXI_908">
+            <blockpin signalname="clk_div(3)" name="I0" />
+            <blockpin signalname="rst" name="I1" />
+            <blockpin signalname="XLXN_240" name="O" />
+        </block>
+        <block symbolname="vcc" name="XLXI_909">
+            <blockpin signalname="XLXN_245" name="P" />
+        </block>
+        <block symbolname="buf" name="XLXI_910">
+            <blockpin signalname="clk_int" name="I" />
+            <blockpin signalname="out_clk_int" name="O" />
+        </block>
     </netlist>
     <sheet sheetnum="1" width="7609" height="5382">
         <attr value="CM" name="LengthUnitName" />
@@ -1445,13 +1464,8 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3040" y="528" type="branch" />
             <wire x2="2976" y1="320" y2="320" x1="2944" />
             <wire x2="2944" y1="320" y2="528" x1="2944" />
-            <wire x2="3040" y1="528" y2="528" x1="2944" />
-        </branch>
-        <branch name="r3_r">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3040" y="576" type="branch" />
-            <wire x2="2976" y1="192" y2="192" x1="2928" />
-            <wire x2="2928" y1="192" y2="576" x1="2928" />
-            <wire x2="3040" y1="576" y2="576" x1="2928" />
+            <wire x2="3024" y1="528" y2="528" x1="2944" />
+            <wire x2="3040" y1="528" y2="528" x1="3024" />
         </branch>
         <branch name="pto(7:0)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="720" y="512" type="branch" />
@@ -1577,10 +1591,9 @@
         <branch name="alu_C_out_flipflop_o">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1424" y="1632" type="branch" />
             <wire x2="1392" y1="1680" y2="1680" x1="1360" />
-            <wire x2="1392" y1="1632" y2="1664" x1="1392" />
-            <wire x2="1392" y1="1664" y2="1680" x1="1392" />
             <wire x2="1424" y1="1632" y2="1632" x1="1392" />
             <wire x2="1440" y1="1632" y2="1632" x1="1424" />
+            <wire x2="1392" y1="1632" y2="1680" x1="1392" />
         </branch>
         <branch name="flags_o(0)">
             <wire x2="832" y1="2160" y2="2160" x1="800" />
@@ -1673,7 +1686,8 @@
         </branch>
         <branch name="rst">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2896" y="384" type="branch" />
-            <wire x2="2976" y1="384" y2="384" x1="2896" />
+            <wire x2="2912" y1="384" y2="384" x1="2896" />
+            <wire x2="2976" y1="384" y2="384" x1="2912" />
         </branch>
         <branch name="rst">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="128" y="384" type="branch" />
@@ -1713,7 +1727,8 @@
         </branch>
         <branch name="r3_o(7:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3392" y="192" type="branch" />
-            <wire x2="3392" y1="192" y2="192" x1="3360" />
+            <wire x2="3376" y1="192" y2="192" x1="3360" />
+            <wire x2="3392" y1="192" y2="192" x1="3376" />
         </branch>
         <branch name="acc_o(7:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="640" y="1152" type="branch" />
@@ -1761,38 +1776,6 @@
         <instance x="1360" y="1520" name="clck_gen" orien="R0">
             <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="0" y="0" type="instance" />
         </instance>
-        <branch name="in_clk">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="256" y="1488" type="branch" />
-            <wire x2="320" y1="1488" y2="1488" x1="256" />
-        </branch>
-        <branch name="rst">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="272" y="1616" type="branch" />
-            <wire x2="320" y1="1616" y2="1616" x1="272" />
-        </branch>
-        <branch name="is_clk_high">
-            <wire x2="320" y1="1744" y2="1744" x1="256" />
-        </branch>
-        <branch name="is_clk_low">
-            <wire x2="320" y1="1808" y2="1808" x1="256" />
-        </branch>
-        <branch name="is_clk_manual">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="272" y="1872" type="branch" />
-            <wire x2="272" y1="1872" y2="1872" x1="256" />
-            <wire x2="320" y1="1872" y2="1872" x1="272" />
-        </branch>
-        <branch name="is_clk_external">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="272" y="1936" type="branch" />
-            <wire x2="272" y1="1936" y2="1936" x1="256" />
-            <wire x2="320" y1="1936" y2="1936" x1="272" />
-        </branch>
-        <branch name="clk_int">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="832" y="1488" type="branch" />
-            <wire x2="832" y1="1488" y2="1488" x1="704" />
-        </branch>
-        <instance x="320" y="1968" name="XLXI_173" orien="R0">
-        </instance>
-        <instance x="128" y="1872" name="XLXI_184" orien="R90" />
-        <instance x="128" y="1744" name="XLXI_185" orien="R90" />
         <branch name="cc_dbg_s3">
             <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="2208" y="800" type="branch" />
             <wire x2="2208" y1="800" y2="848" x1="2208" />
@@ -1955,12 +1938,6 @@
             <wire x2="1856" y1="3920" y2="3920" x1="1776" />
         </branch>
         <iomarker fontsize="28" x="2176" y="3728" name="manr_r" orien="R0" />
-        <branch name="in_clk_manual">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="256" y="1552" type="branch" />
-            <wire x2="320" y1="1552" y2="1552" x1="256" />
-        </branch>
-        <instance x="256" y="1936" name="XLXI_186" orien="R270" />
-        <instance x="128" y="1680" name="XLXI_183" orien="R90" />
         <iomarker fontsize="28" x="2176" y="3888" name="manr_w" orien="R0" />
         <branch name="rst">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1280" y="1424" type="branch" />
@@ -2004,8 +1981,7 @@
         </branch>
         <branch name="r0_w">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2976" y="4192" type="branch" />
-            <wire x2="2944" y1="4192" y2="4192" x1="2912" />
-            <wire x2="2976" y1="4192" y2="4192" x1="2944" />
+            <wire x2="2976" y1="4192" y2="4192" x1="2912" />
         </branch>
         <branch name="in_r0_w">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2576" y="4016" type="branch" />
@@ -2057,8 +2033,7 @@
         </branch>
         <branch name="r1_w">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2976" y="4912" type="branch" />
-            <wire x2="2944" y1="4912" y2="4912" x1="2912" />
-            <wire x2="2976" y1="4912" y2="4912" x1="2944" />
+            <wire x2="2976" y1="4912" y2="4912" x1="2912" />
         </branch>
         <branch name="in_r1_w">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2576" y="4736" type="branch" />
@@ -2119,8 +2094,7 @@
         </branch>
         <branch name="r2_w">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3776" y="4192" type="branch" />
-            <wire x2="3744" y1="4192" y2="4192" x1="3712" />
-            <wire x2="3776" y1="4192" y2="4192" x1="3744" />
+            <wire x2="3776" y1="4192" y2="4192" x1="3712" />
         </branch>
         <branch name="in_r2_w">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3376" y="4016" type="branch" />
@@ -2172,8 +2146,7 @@
         </branch>
         <branch name="r3_w">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3776" y="4912" type="branch" />
-            <wire x2="3744" y1="4912" y2="4912" x1="3712" />
-            <wire x2="3776" y1="4912" y2="4912" x1="3744" />
+            <wire x2="3776" y1="4912" y2="4912" x1="3712" />
         </branch>
         <branch name="in_r3_w">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3376" y="4736" type="branch" />
@@ -2225,8 +2198,7 @@
         </branch>
         <branch name="iar_w">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4640" y="4192" type="branch" />
-            <wire x2="4608" y1="4192" y2="4192" x1="4576" />
-            <wire x2="4640" y1="4192" y2="4192" x1="4608" />
+            <wire x2="4640" y1="4192" y2="4192" x1="4576" />
         </branch>
         <branch name="in_iar_w">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4240" y="4016" type="branch" />
@@ -2294,8 +2266,7 @@
         </branch>
         <branch name="sysbus_released">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="704" y="4880" type="branch" />
-            <wire x2="656" y1="4880" y2="4880" x1="560" />
-            <wire x2="704" y1="4880" y2="4880" x1="656" />
+            <wire x2="704" y1="4880" y2="4880" x1="560" />
         </branch>
         <branch name="in_acc_r">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5040" y="3696" type="branch" />
@@ -2331,8 +2302,7 @@
         </branch>
         <branch name="acc_w">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="5440" y="4192" type="branch" />
-            <wire x2="5408" y1="4192" y2="4192" x1="5376" />
-            <wire x2="5440" y1="4192" y2="4192" x1="5408" />
+            <wire x2="5440" y1="4192" y2="4192" x1="5376" />
         </branch>
         <branch name="in_acc_w">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5040" y="4016" type="branch" />
@@ -2384,8 +2354,7 @@
         </branch>
         <branch name="ram_w">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="5440" y="4912" type="branch" />
-            <wire x2="5408" y1="4912" y2="4912" x1="5376" />
-            <wire x2="5440" y1="4912" y2="4912" x1="5408" />
+            <wire x2="5440" y1="4912" y2="4912" x1="5376" />
         </branch>
         <branch name="in_ram_w">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5040" y="4736" type="branch" />
@@ -2482,29 +2451,24 @@
         <iomarker fontsize="28" x="1024" y="4064" name="in_is_bus1_w" orien="R180" />
         <branch name="bus1">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3792" y="5136" type="branch" />
-            <wire x2="3776" y1="5136" y2="5136" x1="3712" />
-            <wire x2="3792" y1="5136" y2="5136" x1="3776" />
+            <wire x2="3792" y1="5136" y2="5136" x1="3712" />
         </branch>
         <branch name="in_is_bus1_w">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3280" y="5232" type="branch" />
-            <wire x2="3296" y1="5232" y2="5232" x1="3280" />
-            <wire x2="3392" y1="5232" y2="5232" x1="3296" />
+            <wire x2="3392" y1="5232" y2="5232" x1="3280" />
         </branch>
         <branch name="in_bus1">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3280" y="5168" type="branch" />
-            <wire x2="3296" y1="5168" y2="5168" x1="3280" />
-            <wire x2="3392" y1="5168" y2="5168" x1="3296" />
+            <wire x2="3392" y1="5168" y2="5168" x1="3280" />
         </branch>
         <branch name="cc_bus1">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3280" y="5104" type="branch" />
-            <wire x2="3296" y1="5104" y2="5104" x1="3280" />
-            <wire x2="3392" y1="5104" y2="5104" x1="3296" />
+            <wire x2="3392" y1="5104" y2="5104" x1="3280" />
         </branch>
         <instance x="3392" y="5264" name="XLXI_571" orien="R0" />
         <branch name="cc_r1_r">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3696" y="1456" type="branch" />
-            <wire x2="3680" y1="1456" y2="1456" x1="3648" />
-            <wire x2="3696" y1="1456" y2="1456" x1="3680" />
+            <wire x2="3696" y1="1456" y2="1456" x1="3648" />
         </branch>
         <branch name="cc_dbg_s1">
             <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="2080" y="800" type="branch" />
@@ -2620,8 +2584,7 @@
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="4112" y="1136" type="branch" />
             <wire x2="4112" y1="1200" y2="1200" x1="3648" />
             <wire x2="4112" y1="1136" y2="1200" x1="4112" />
-            <wire x2="4144" y1="1136" y2="1136" x1="4112" />
-            <wire x2="4160" y1="1136" y2="1136" x1="4144" />
+            <wire x2="4160" y1="1136" y2="1136" x1="4112" />
         </branch>
         <branch name="cc_alu_op(2:0)">
             <attrtext style="alignment:SOFT-VRIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4256" y="1264" type="branch" />
@@ -2677,8 +2640,7 @@
         </branch>
         <branch name="cc_dbg_alu_rshift">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3696" y="1968" type="branch" />
-            <wire x2="3664" y1="1968" y2="1968" x1="3648" />
-            <wire x2="3696" y1="1968" y2="1968" x1="3664" />
+            <wire x2="3696" y1="1968" y2="1968" x1="3648" />
         </branch>
         <branch name="cc_dbg_alu_not">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3696" y="2032" type="branch" />
@@ -2690,8 +2652,7 @@
         </branch>
         <branch name="cc_dbg_alu_or">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3696" y="2224" type="branch" />
-            <wire x2="3664" y1="2224" y2="2224" x1="3648" />
-            <wire x2="3696" y1="2224" y2="2224" x1="3664" />
+            <wire x2="3696" y1="2224" y2="2224" x1="3648" />
         </branch>
         <branch name="cc_dbg_alu_xor">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3696" y="2288" type="branch" />
@@ -2707,8 +2668,7 @@
         </branch>
         <branch name="cc_dbg_alu_lshift">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3696" y="1904" type="branch" />
-            <wire x2="3664" y1="1904" y2="1904" x1="3648" />
-            <wire x2="3696" y1="1904" y2="1904" x1="3664" />
+            <wire x2="3696" y1="1904" y2="1904" x1="3648" />
         </branch>
         <instance x="6336" y="3264" name="XLXI_563" orien="R0" />
         <branch name="cc_dbg_alu">
@@ -2844,8 +2804,7 @@
             <wire x2="6720" y1="4256" y2="4256" x1="6560" />
         </branch>
         <branch name="out_op_alt_nop">
-            <wire x2="6592" y1="4320" y2="4320" x1="6560" />
-            <wire x2="6720" y1="4320" y2="4320" x1="6592" />
+            <wire x2="6720" y1="4320" y2="4320" x1="6560" />
         </branch>
         <instance x="6336" y="4592" name="XLXI_664" orien="R0" />
         <branch name="alu_C_in">
@@ -2921,8 +2880,7 @@
             <wire x2="6720" y1="5168" y2="5168" x1="6560" />
         </branch>
         <branch name="out_flags_eq">
-            <wire x2="6592" y1="5232" y2="5232" x1="6560" />
-            <wire x2="6720" y1="5232" y2="5232" x1="6592" />
+            <wire x2="6720" y1="5232" y2="5232" x1="6560" />
         </branch>
         <instance x="6336" y="5328" name="XLXI_679" orien="R0" />
         <branch name="flags_o(3)">
@@ -2931,8 +2889,7 @@
             <wire x2="6336" y1="5296" y2="5296" x1="6240" />
         </branch>
         <branch name="out_flags_z">
-            <wire x2="6592" y1="5296" y2="5296" x1="6560" />
-            <wire x2="6720" y1="5296" y2="5296" x1="6592" />
+            <wire x2="6720" y1="5296" y2="5296" x1="6560" />
         </branch>
         <branch name="flags_o(3:0)">
             <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="5888" y="5056" type="branch" />
@@ -3031,7 +2988,6 @@
         <iomarker fontsize="28" x="6800" y="2944" name="out_temp_o(7:0)" orien="R0" />
         <iomarker fontsize="28" x="6800" y="3104" name="out_ram_a_o(7:0)" orien="R0" />
         <instance x="6336" y="192" name="XLXI_187" orien="R0" />
-        <instance x="6336" y="256" name="XLXI_188" orien="R0" />
         <instance x="6336" y="320" name="XLXI_189" orien="R0" />
         <instance x="6336" y="384" name="XLXI_190" orien="R0" />
         <instance x="6336" y="448" name="XLXI_191" orien="R0" />
@@ -3071,8 +3027,7 @@
             <wire x2="6720" y1="416" y2="416" x1="6560" />
         </branch>
         <branch name="out_sysbus(7:0)">
-            <wire x2="6736" y1="80" y2="80" x1="6720" />
-            <wire x2="6800" y1="80" y2="80" x1="6736" />
+            <wire x2="6800" y1="80" y2="80" x1="6720" />
         </branch>
         <branch name="sysbus(7:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6240" y="80" type="branch" />
@@ -3275,8 +3230,7 @@
         <instance x="6336" y="2080" name="XLXI_553" orien="R0" />
         <branch name="acc_r">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6240" y="2048" type="branch" />
-            <wire x2="6320" y1="2048" y2="2048" x1="6240" />
-            <wire x2="6336" y1="2048" y2="2048" x1="6320" />
+            <wire x2="6336" y1="2048" y2="2048" x1="6240" />
         </branch>
         <branch name="out_temp_w">
             <wire x2="6720" y1="1984" y2="1984" x1="6560" />
@@ -3343,8 +3297,7 @@
             <wire x2="6336" y1="512" y2="512" x1="6240" />
         </branch>
         <branch name="out_can_read">
-            <wire x2="6576" y1="512" y2="512" x1="6560" />
-            <wire x2="6592" y1="512" y2="512" x1="6576" />
+            <wire x2="6592" y1="512" y2="512" x1="6560" />
         </branch>
         <instance x="6336" y="544" name="XLXI_901" orien="R0" />
         <branch name="can_write">
@@ -3352,26 +3305,19 @@
             <wire x2="6336" y1="576" y2="576" x1="6240" />
         </branch>
         <branch name="out_can_write">
-            <wire x2="6576" y1="576" y2="576" x1="6560" />
-            <wire x2="6592" y1="576" y2="576" x1="6576" />
+            <wire x2="6592" y1="576" y2="576" x1="6560" />
         </branch>
         <instance x="6336" y="608" name="XLXI_903" orien="R0" />
         <iomarker fontsize="28" x="6592" y="512" name="out_can_read" orien="R0" />
         <iomarker fontsize="28" x="6592" y="576" name="out_can_write" orien="R0" />
         <iomarker fontsize="28" x="6800" y="80" name="out_sysbus(7:0)" orien="R0" />
-        <branch name="in_clk_external">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="256" y="1680" type="branch" />
-            <wire x2="320" y1="1680" y2="1680" x1="256" />
-        </branch>
         <branch name="in_manr_r">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="608" y="3856" type="branch" />
-            <wire x2="592" y1="3856" y2="3856" x1="448" />
-            <wire x2="608" y1="3856" y2="3856" x1="592" />
+            <wire x2="608" y1="3856" y2="3856" x1="448" />
         </branch>
         <branch name="in_manr_w">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="608" y="3904" type="branch" />
-            <wire x2="592" y1="3904" y2="3904" x1="448" />
-            <wire x2="608" y1="3904" y2="3904" x1="592" />
+            <wire x2="608" y1="3904" y2="3904" x1="448" />
         </branch>
         <branch name="in_manr_d(7:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="608" y="3952" type="branch" />
@@ -3489,5 +3435,89 @@
         </branch>
         <iomarker fontsize="28" x="928" y="4192" name="in_rst" orien="R180" />
         <bustap x2="4160" y1="1136" y2="1136" x1="4256" />
+        <branch name="is_clk_manual">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1200" y="3600" type="branch" />
+            <wire x2="1200" y1="3600" y2="3600" x1="1040" />
+        </branch>
+        <iomarker fontsize="28" x="1040" y="3600" name="is_clk_manual" orien="R180" />
+        <branch name="is_clk_low">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1200" y="3648" type="branch" />
+            <wire x2="1200" y1="3648" y2="3648" x1="1040" />
+        </branch>
+        <iomarker fontsize="28" x="1040" y="3648" name="is_clk_low" orien="R180" />
+        <branch name="is_clk_high">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1200" y="3696" type="branch" />
+            <wire x2="1200" y1="3696" y2="3696" x1="1040" />
+        </branch>
+        <iomarker fontsize="28" x="1040" y="3696" name="is_clk_high" orien="R180" />
+        <branch name="is_clk_external">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1200" y="3744" type="branch" />
+            <wire x2="1200" y1="3744" y2="3744" x1="1040" />
+        </branch>
+        <iomarker fontsize="28" x="1040" y="3744" name="is_clk_external" orien="R180" />
+        <branch name="clk">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="112" y="3680" type="branch" />
+            <wire x2="112" y1="3680" y2="3680" x1="48" />
+        </branch>
+        <iomarker fontsize="28" x="48" y="3680" name="clk" orien="R180" />
+        <branch name="r3_r">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3040" y="576" type="branch" />
+            <wire x2="2976" y1="192" y2="192" x1="2928" />
+            <wire x2="2928" y1="192" y2="576" x1="2928" />
+            <wire x2="3024" y1="576" y2="576" x1="2928" />
+            <wire x2="3040" y1="576" y2="576" x1="3024" />
+        </branch>
+        <instance x="1360" y="2432" name="XLXI_905" orien="R0" />
+        <instance x="1344" y="2784" name="XLXI_906" orien="R0" />
+        <branch name="XLXN_236">
+            <wire x2="1840" y1="2432" y2="2432" x1="1312" />
+            <wire x2="1312" y1="2432" y2="2592" x1="1312" />
+            <wire x2="1344" y1="2592" y2="2592" x1="1312" />
+            <wire x2="1840" y1="2240" y2="2240" x1="1744" />
+            <wire x2="1840" y1="2240" y2="2432" x1="1840" />
+        </branch>
+        <branch name="in_clk_manual">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1200" y="2304" type="branch" />
+            <wire x2="1280" y1="2304" y2="2304" x1="1200" />
+            <wire x2="1280" y1="2304" y2="2656" x1="1280" />
+            <wire x2="1344" y1="2656" y2="2656" x1="1280" />
+            <wire x2="1360" y1="2304" y2="2304" x1="1280" />
+        </branch>
+        <branch name="clk_div(15:0)">
+            <wire x2="1808" y1="2528" y2="2528" x1="1728" />
+            <wire x2="1808" y1="2528" y2="2592" x1="1808" />
+            <wire x2="1808" y1="2592" y2="2752" x1="1808" />
+        </branch>
+        <bustap x2="1904" y1="2592" y2="2592" x1="1808" />
+        <branch name="clk_div(3)">
+            <wire x2="896" y1="2784" y2="2784" x1="880" />
+            <wire x2="992" y1="2784" y2="2784" x1="896" />
+            <wire x2="880" y1="2784" y2="2880" x1="880" />
+            <wire x2="1920" y1="2880" y2="2880" x1="880" />
+            <wire x2="2000" y1="2880" y2="2880" x1="1920" />
+            <wire x2="1920" y1="2592" y2="2592" x1="1904" />
+            <wire x2="1920" y1="2592" y2="2880" x1="1920" />
+        </branch>
+        <instance x="2000" y="2912" name="XLXI_907" orien="R0" />
+        <instance x="992" y="2848" name="XLXI_908" orien="R0" />
+        <branch name="XLXN_240">
+            <wire x2="1296" y1="2752" y2="2752" x1="1248" />
+            <wire x2="1344" y1="2752" y2="2752" x1="1296" />
+            <wire x2="1360" y1="2400" y2="2400" x1="1296" />
+            <wire x2="1296" y1="2400" y2="2752" x1="1296" />
+        </branch>
+        <branch name="rst">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="880" y="2720" type="branch" />
+            <wire x2="992" y1="2720" y2="2720" x1="880" />
+        </branch>
+        <branch name="clk_int">
+            <wire x2="2320" y1="2880" y2="2880" x1="2224" />
+        </branch>
+        <branch name="XLXN_245">
+            <wire x2="1360" y1="2240" y2="2240" x1="1280" />
+        </branch>
+        <instance x="1280" y="2304" name="XLXI_909" orien="R270" />
+        <instance x="6336" y="256" name="XLXI_910" orien="R0" />
+        <iomarker fontsize="28" x="2320" y="2880" name="clk_int" orien="R0" />
     </sheet>
 </drawing>

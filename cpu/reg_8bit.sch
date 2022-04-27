@@ -6,17 +6,17 @@
         <trait edittrait="all:0" />
     </attr>
     <netlist>
-        <signal name="r" />
         <signal name="d(7:0)" />
         <signal name="w" />
         <signal name="XLXN_2" />
         <signal name="o(7:0)" />
         <signal name="clr" />
-        <port polarity="Input" name="r" />
+        <signal name="r" />
         <port polarity="Input" name="d(7:0)" />
         <port polarity="Input" name="w" />
         <port polarity="Output" name="o(7:0)" />
         <port polarity="Input" name="clr" />
+        <port polarity="Input" name="r" />
         <blockdef name="ld8ce">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <rect width="64" x="0" y="-268" height="24" />
@@ -48,11 +48,6 @@
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
-        <branch name="r">
-            <wire x2="1040" y1="960" y2="960" x1="480" />
-            <wire x2="1040" y1="960" y2="1072" x1="1040" />
-        </branch>
-        <iomarker fontsize="28" x="480" y="960" name="r" orien="R180" />
         <branch name="d(7:0)">
             <wire x2="608" y1="1136" y2="1136" x1="480" />
         </branch>
@@ -76,5 +71,10 @@
             <wire x2="400" y1="1360" y2="1360" x1="240" />
             <wire x2="608" y1="1360" y2="1360" x1="400" />
         </branch>
+        <branch name="r">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="992" y="928" type="branch" />
+            <wire x2="992" y1="928" y2="928" x1="688" />
+        </branch>
+        <iomarker fontsize="28" x="688" y="928" name="r" orien="R180" />
     </sheet>
 </drawing>

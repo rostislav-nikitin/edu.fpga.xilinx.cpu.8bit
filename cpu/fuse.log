@@ -26,7 +26,7 @@ Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/tb_cpu_facad
 Starting static elaboration
 Completed static elaboration
 Fuse Memory Usage: 113864 KB
-Fuse CPU Usage: 1790 ms
+Fuse CPU Usage: 1730 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
@@ -96,5 +96,5 @@ Waiting for 1 sub-compilation(s) to finish...
 Compiled 131 VHDL Units
 Built simulation executable /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade_cpu_facade_sch_tb_isim_beh.exe
 Fuse Memory Usage: 4374372 KB
-Fuse CPU Usage: 2400 ms
-GCC CPU Usage: 11390 ms
+Fuse CPU Usage: 2340 ms
+GCC CPU Usage: 4310 ms

@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : reg_8bit.vhf
--- /___/   /\     Timestamp : 04/09/2022 02:00:09
+-- /___/   /\     Timestamp : 04/27/2022 09:35:07
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -82,7 +82,7 @@ architecture BEHAVIORAL of reg_8bit is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_35";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_0";
 begin
    XLXI_5 : LD8CE_HXILINX_reg_8bit
       port map (CLR=>clr,
