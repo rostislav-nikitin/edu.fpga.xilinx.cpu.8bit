@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu_facade.vhf
--- /___/   /\     Timestamp : 04/28/2022 03:01:10
+-- /___/   /\     Timestamp : 04/28/2022 03:37:06
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -740,13 +740,13 @@ architecture BEHAVIORAL of freq_divider_MUSER_cpu_facade is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_1";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_0";
-   attribute HU_SET of XLXI_123 : label is "XLXI_123_2";
-   attribute HU_SET of XLXI_124 : label is "XLXI_124_3";
-   attribute HU_SET of XLXI_128 : label is "XLXI_128_6";
-   attribute HU_SET of XLXI_149 : label is "XLXI_149_4";
-   attribute HU_SET of XLXI_150 : label is "XLXI_150_5";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_45";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_44";
+   attribute HU_SET of XLXI_123 : label is "XLXI_123_46";
+   attribute HU_SET of XLXI_124 : label is "XLXI_124_47";
+   attribute HU_SET of XLXI_128 : label is "XLXI_128_50";
+   attribute HU_SET of XLXI_149 : label is "XLXI_149_48";
+   attribute HU_SET of XLXI_150 : label is "XLXI_150_49";
 begin
    XLXI_1 : CB16CE_HXILINX_cpu_facade
       port map (C=>clk_in,
@@ -1047,7 +1047,7 @@ architecture BEHAVIORAL of encoder8_3_MUSER_cpu_facade is
    end component;
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_7";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_51";
 begin
    XLXI_1 : OR4
       port map (I0=>i(1),
@@ -1192,7 +1192,7 @@ architecture BEHAVIORAL of cpu_freq_divider_MUSER_cpu_facade is
    end component;
    attribute BOX_TYPE of GND : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_8";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_52";
 begin
    XLXN_1(31 downto 0) <= x"000F4240";
    XLXI_1 : freq_divider_MUSER_cpu_facade
@@ -1376,7 +1376,7 @@ architecture BEHAVIORAL of clk_generator_MUSER_cpu_facade is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_9";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_53";
 begin
    clkc <= clkc_DUMMY;
    XLXI_4 : FJKC_HXILINX_cpu_facade
@@ -1541,14 +1541,14 @@ architecture BEHAVIORAL of bus_muxer_MUSER_cpu_facade is
    end component;
    attribute BOX_TYPE of BUF : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_11";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_10";
-   attribute HU_SET of XLXI_12 : label is "XLXI_12_12";
-   attribute HU_SET of XLXI_13 : label is "XLXI_13_13";
-   attribute HU_SET of XLXI_14 : label is "XLXI_14_14";
-   attribute HU_SET of XLXI_15 : label is "XLXI_15_15";
-   attribute HU_SET of XLXI_16 : label is "XLXI_16_16";
-   attribute HU_SET of XLXI_17 : label is "XLXI_17_17";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_55";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_54";
+   attribute HU_SET of XLXI_12 : label is "XLXI_12_56";
+   attribute HU_SET of XLXI_13 : label is "XLXI_13_57";
+   attribute HU_SET of XLXI_14 : label is "XLXI_14_58";
+   attribute HU_SET of XLXI_15 : label is "XLXI_15_59";
+   attribute HU_SET of XLXI_16 : label is "XLXI_16_60";
+   attribute HU_SET of XLXI_17 : label is "XLXI_17_61";
 begin
    XLXI_1 : M16_1E_HXILINX_cpu_facade
       port map (D0=>dev0(0),
@@ -1979,7 +1979,7 @@ architecture BEHAVIORAL of reg_8bit_MUSER_cpu_facade is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_18";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_62";
 begin
    XLXI_5 : LD8CE_HXILINX_cpu_facade
       port map (CLR=>clr,
@@ -2018,14 +2018,14 @@ architecture BEHAVIORAL of pass_through_or_one_MUSER_cpu_facade is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_19";
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_20";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_21";
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_22";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_23";
-   attribute HU_SET of XLXI_7 : label is "XLXI_7_24";
-   attribute HU_SET of XLXI_8 : label is "XLXI_8_25";
-   attribute HU_SET of XLXI_13 : label is "XLXI_13_26";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_63";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_64";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_65";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_66";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_67";
+   attribute HU_SET of XLXI_7 : label is "XLXI_7_68";
+   attribute HU_SET of XLXI_8 : label is "XLXI_8_69";
+   attribute HU_SET of XLXI_13 : label is "XLXI_13_70";
 begin
    const_one <= '1';
    const_zero <= '0';
@@ -2133,7 +2133,7 @@ architecture BEHAVIORAL of ram_256bytes_MUSER_cpu_facade is
    
    attribute INIT of XLXI_1 : label is 
          "0000000000000000000000000000000000000000000000000000000000000072";
-   attribute HU_SET of XLXI_15 : label is "XLXI_15_27";
+   attribute HU_SET of XLXI_15 : label is "XLXI_15_71";
    attribute INIT of XLXI_18 : label is 
          "0000000000000000000000000000000000000000000000000000000000000901";
    attribute INIT of XLXI_19 : label is 
@@ -2312,8 +2312,8 @@ architecture BEHAVIORAL of stepper_MUSER_cpu_facade is
    end component;
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_24 : label is "XLXI_24_28";
-   attribute HU_SET of XLXI_25 : label is "XLXI_25_29";
+   attribute HU_SET of XLXI_24 : label is "XLXI_24_72";
+   attribute HU_SET of XLXI_25 : label is "XLXI_25_73";
 begin
    XLXI_21 : VCC
       port map (P=>XLXN_14);
@@ -2647,11 +2647,11 @@ architecture BEHAVIORAL of cpu_control_MUSER_cpu_facade is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_39 : label is "XLXI_39_32";
-   attribute HU_SET of XLXI_47 : label is "XLXI_47_30";
-   attribute HU_SET of XLXI_48 : label is "XLXI_48_31";
-   attribute HU_SET of XLXI_252 : label is "XLXI_252_33";
-   attribute HU_SET of XLXI_577 : label is "XLXI_577_34";
+   attribute HU_SET of XLXI_39 : label is "XLXI_39_76";
+   attribute HU_SET of XLXI_47 : label is "XLXI_47_74";
+   attribute HU_SET of XLXI_48 : label is "XLXI_48_75";
+   attribute HU_SET of XLXI_252 : label is "XLXI_252_77";
+   attribute HU_SET of XLXI_577 : label is "XLXI_577_78";
 begin
    alu <= alu_DUMMY;
    alu_and <= alu_and_DUMMY;
@@ -3439,7 +3439,7 @@ architecture BEHAVIORAL of lzero_MUSER_cpu_facade is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_35";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_79";
 begin
    XLXI_1 : NOR8_HXILINX_cpu_facade
       port map (I0=>a(7),
@@ -3802,9 +3802,9 @@ architecture BEHAVIORAL of alu_MUSER_cpu_facade is
              xor_o : in    std_logic_vector (7 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_36";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_37";
-   attribute HU_SET of XLXI_102 : label is "XLXI_102_38";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_80";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_81";
+   attribute HU_SET of XLXI_102 : label is "XLXI_102_82";
 begin
    XLXI_1 : D3_8E_HXILINX_cpu_facade
       port map (A0=>op(0),
@@ -4212,6 +4212,7 @@ architecture BEHAVIORAL of cpu_MUSER_cpu_facade is
    signal clkr                 : std_logic;
    signal clkw                 : std_logic;
    signal clk_internal         : std_logic;
+   signal clk_low              : std_logic;
    signal flags_o              : std_logic_vector (3 downto 0);
    signal freq_div_1           : std_logic_vector (15 downto 0);
    signal ground               : std_logic;
@@ -4269,6 +4270,8 @@ architecture BEHAVIORAL of cpu_MUSER_cpu_facade is
    signal XLXN_234             : std_logic;
    signal XLXN_235             : std_logic;
    signal XLXN_239             : std_logic;
+   signal XLXN_247             : std_logic;
+   signal XLXN_252             : std_logic;
    signal manr_o_DUMMY         : std_logic_vector (7 downto 0);
    signal manr_r_DUMMY         : std_logic;
    signal manr_w_DUMMY         : std_logic;
@@ -4504,11 +4507,11 @@ architecture BEHAVIORAL of cpu_MUSER_cpu_facade is
              TC  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_87 : label is "XLXI_87_39";
-   attribute HU_SET of XLXI_104 : label is "XLXI_104_40";
-   attribute HU_SET of XLXI_571 : label is "XLXI_571_41";
-   attribute HU_SET of XLXI_914 : label is "XLXI_914_42";
-   attribute HU_SET of XLXI_917 : label is "XLXI_917_43";
+   attribute HU_SET of XLXI_87 : label is "XLXI_87_83";
+   attribute HU_SET of XLXI_104 : label is "XLXI_104_84";
+   attribute HU_SET of XLXI_571 : label is "XLXI_571_85";
+   attribute HU_SET of XLXI_914 : label is "XLXI_914_86";
+   attribute HU_SET of XLXI_917 : label is "XLXI_917_87";
 begin
    manr_o(7 downto 0) <= manr_o_DUMMY(7 downto 0);
    manr_r <= manr_r_DUMMY;
@@ -5235,7 +5238,7 @@ begin
    
    XLXI_916 : BUF
       port map (I=>freq_div_1(3),
-                O=>clk_internal);
+                O=>clk_low);
    
    XLXI_917 : CB16CE_HXILINX_cpu_facade
       port map (C=>in_clk,
@@ -5244,6 +5247,21 @@ begin
                 CEO=>open,
                 Q(15 downto 0)=>freq_div_1(15 downto 0),
                 TC=>open);
+   
+   XLXI_918 : AND2
+      port map (I0=>in_clk_manual,
+                I1=>in_is_clk_manual,
+                O=>XLXN_247);
+   
+   XLXI_919 : AND2
+      port map (I0=>clk_low,
+                I1=>in_is_clk_low,
+                O=>XLXN_252);
+   
+   XLXI_924 : OR2
+      port map (I0=>XLXN_252,
+                I1=>XLXN_247,
+                O=>clk_internal);
    
 end BEHAVIORAL;
 
@@ -5257,6 +5275,8 @@ use UNISIM.Vcomponents.ALL;
 
 entity cpu_facade is
    port ( in_clk           : in    std_logic; 
+          in_clk_manual    : in    std_logic; 
+          in_is_clk_low    : in    std_logic; 
           in_rst           : in    std_logic; 
           monitor          : out   std_logic_vector (7 downto 0); 
           out_clkc         : out   std_logic; 
@@ -5267,12 +5287,12 @@ end cpu_facade;
 
 architecture BEHAVIORAL of cpu_facade is
    attribute BOX_TYPE   : string ;
+   signal in_is_clk_manual            : std_logic;
    signal out_s1                      : std_logic;
    signal out_s2                      : std_logic;
    signal out_s3                      : std_logic;
    signal out_s4                      : std_logic;
    signal XLXN_46                     : std_logic;
-   signal XLXN_47                     : std_logic;
    signal XLXN_49                     : std_logic;
    signal XLXI_7_in_manr_d_openSignal : std_logic_vector (7 downto 0);
    component cpu_MUSER_cpu_facade
@@ -5387,10 +5407,11 @@ architecture BEHAVIORAL of cpu_facade is
    end component;
    attribute BOX_TYPE of GND : component is "BLACK_BOX";
    
-   component VCC
-      port ( P : out   std_logic);
+   component INV
+      port ( I : in    std_logic; 
+             O : out   std_logic);
    end component;
-   attribute BOX_TYPE of VCC : component is "BLACK_BOX";
+   attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
 begin
    XLXI_7 : cpu_MUSER_cpu_facade
@@ -5399,15 +5420,15 @@ begin
                 in_bus1=>XLXN_46,
                 in_clk=>in_clk,
                 in_clk_external=>XLXN_46,
-                in_clk_manual=>XLXN_46,
+                in_clk_manual=>in_clk_manual,
                 in_iar_r=>XLXN_46,
                 in_iar_w=>XLXN_46,
                 in_ir_w=>XLXN_46,
                 in_is_bus1_w=>XLXN_46,
                 in_is_clk_external=>XLXN_46,
                 in_is_clk_high=>XLXN_46,
-                in_is_clk_low=>XLXN_47,
-                in_is_clk_manual=>XLXN_46,
+                in_is_clk_low=>in_is_clk_low,
+                in_is_clk_manual=>in_is_clk_manual,
                 in_manr_d(7 downto 0)=>XLXI_7_in_manr_d_openSignal(7 downto 0),
                 in_manr_r=>XLXN_46,
                 in_manr_w=>XLXN_46,
@@ -5505,8 +5526,9 @@ begin
    XLXI_9 : GND
       port map (G=>XLXN_49);
    
-   XLXI_10 : VCC
-      port map (P=>XLXN_47);
+   XLXI_11 : INV
+      port map (I=>in_is_clk_low,
+                O=>in_is_clk_manual);
    
 end BEHAVIORAL;
 

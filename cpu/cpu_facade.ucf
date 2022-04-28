@@ -5,6 +5,8 @@ NET "in_clk" TNM_NET = "sys_clk_pin";
 NET "in_clk" LOC = T8;
 TIMESPEC TS_sys_clk_pin = PERIOD "sys_clk_pin" 50 MHz HIGH 50 %;
 
+#NET "in_clk" LOC = D3 | CLOCK_DEDICATED_ROUTE = FALSE;
+#NET "in_clk" CLOCK_DEDICATED_ROUTE = FALSE;
 #NET "in_clk_manual" CLOCK_DEDICATED_ROUTE = FALSE;
 #NET "in_clk_manual" LOC = D3;
 
@@ -15,6 +17,8 @@ TIMESPEC TS_sys_clk_pin = PERIOD "sys_clk_pin" 50 MHz HIGH 50 %;
 #NET "rst_in" LOC = C3 | IOSTANDARD = "LVCMOS33"; ## RESET pushbutton
 ## RESET pushbutton
 NET "in_rst" LOC = C3;
+NET "in_is_clk_low" LOC = D3;
+NET "in_clk_manual" LOC = E4;
 
 ##################################################################################
 ## LED Pins 

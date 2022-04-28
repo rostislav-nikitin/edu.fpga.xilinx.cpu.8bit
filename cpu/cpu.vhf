@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu.vhf
--- /___/   /\     Timestamp : 04/28/2022 02:50:42
+-- /___/   /\     Timestamp : 04/28/2022 03:37:05
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -4212,6 +4212,7 @@ architecture BEHAVIORAL of cpu is
    signal clkr                 : std_logic;
    signal clkw                 : std_logic;
    signal clk_internal         : std_logic;
+   signal clk_low              : std_logic;
    signal flags_o              : std_logic_vector (3 downto 0);
    signal freq_div_1           : std_logic_vector (15 downto 0);
    signal ground               : std_logic;
@@ -4269,6 +4270,8 @@ architecture BEHAVIORAL of cpu is
    signal XLXN_234             : std_logic;
    signal XLXN_235             : std_logic;
    signal XLXN_239             : std_logic;
+   signal XLXN_247             : std_logic;
+   signal XLXN_252             : std_logic;
    signal manr_o_DUMMY         : std_logic_vector (7 downto 0);
    signal manr_r_DUMMY         : std_logic;
    signal manr_w_DUMMY         : std_logic;
@@ -5235,7 +5238,7 @@ begin
    
    XLXI_916 : BUF
       port map (I=>freq_div_1(3),
-                O=>clk_internal);
+                O=>clk_low);
    
    XLXI_917 : CB16CE_HXILINX_cpu
       port map (C=>in_clk,
@@ -5244,6 +5247,21 @@ begin
                 CEO=>open,
                 Q(15 downto 0)=>freq_div_1(15 downto 0),
                 TC=>open);
+   
+   XLXI_918 : AND2
+      port map (I0=>in_clk_manual,
+                I1=>in_is_clk_manual,
+                O=>XLXN_247);
+   
+   XLXI_919 : AND2
+      port map (I0=>clk_low,
+                I1=>in_is_clk_low,
+                O=>XLXN_252);
+   
+   XLXI_924 : OR2
+      port map (I0=>XLXN_252,
+                I1=>XLXN_247,
+                O=>clk_internal);
    
 end BEHAVIORAL;
 

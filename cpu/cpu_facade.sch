@@ -7,7 +7,7 @@
     </attr>
     <netlist>
         <signal name="XLXN_46" />
-        <signal name="XLXN_47" />
+        <signal name="in_is_clk_low" />
         <signal name="XLXN_49" />
         <signal name="in_clk" />
         <signal name="out_clk_internal" />
@@ -20,6 +20,9 @@
         <signal name="out_clkc" />
         <signal name="out_clkr" />
         <signal name="out_clkw" />
+        <signal name="in_clk_manual" />
+        <signal name="in_is_clk_manual" />
+        <port polarity="Input" name="in_is_clk_low" />
         <port polarity="Input" name="in_clk" />
         <port polarity="Output" name="out_clk_internal" />
         <port polarity="Input" name="in_rst" />
@@ -27,8 +30,9 @@
         <port polarity="Output" name="out_clkc" />
         <port polarity="Output" name="out_clkr" />
         <port polarity="Output" name="out_clkw" />
+        <port polarity="Input" name="in_clk_manual" />
         <blockdef name="cpu">
-            <timestamp>2022-4-27T23:50:13</timestamp>
+            <timestamp>2022-4-28T0:36:41</timestamp>
             <rect width="2304" x="64" y="-2368" height="2304" />
             <line x2="864" y1="-64" y2="0" x1="864" />
             <line x2="928" y1="-64" y2="0" x1="928" />
@@ -153,11 +157,14 @@
             <line x2="64" y1="-64" y2="-80" x1="64" />
             <line x2="64" y1="-128" y2="-96" x1="64" />
         </blockdef>
-        <blockdef name="vcc">
+        <blockdef name="inv">
             <timestamp>2000-1-1T10:10:10</timestamp>
-            <line x2="64" y1="-32" y2="-64" x1="64" />
-            <line x2="64" y1="0" y2="-32" x1="64" />
-            <line x2="32" y1="-64" y2="-64" x1="96" />
+            <line x2="64" y1="-32" y2="-32" x1="0" />
+            <line x2="160" y1="-32" y2="-32" x1="224" />
+            <line x2="128" y1="-64" y2="-32" x1="64" />
+            <line x2="64" y1="-32" y2="0" x1="128" />
+            <line x2="64" y1="0" y2="-64" x1="64" />
+            <circle r="16" cx="144" cy="-32" />
         </blockdef>
         <block symbolname="cpu" name="XLXI_7">
             <blockpin signalname="XLXN_46" name="in_acc_r" />
@@ -165,15 +172,15 @@
             <blockpin signalname="XLXN_46" name="in_bus1" />
             <blockpin signalname="in_clk" name="in_clk" />
             <blockpin signalname="XLXN_46" name="in_clk_external" />
-            <blockpin signalname="XLXN_46" name="in_clk_manual" />
+            <blockpin signalname="in_clk_manual" name="in_clk_manual" />
             <blockpin signalname="XLXN_46" name="in_iar_r" />
             <blockpin signalname="XLXN_46" name="in_iar_w" />
             <blockpin signalname="XLXN_46" name="in_ir_w" />
             <blockpin signalname="XLXN_46" name="in_is_bus1_w" />
             <blockpin signalname="XLXN_46" name="in_is_clk_external" />
             <blockpin signalname="XLXN_46" name="in_is_clk_high" />
-            <blockpin signalname="XLXN_47" name="in_is_clk_low" />
-            <blockpin signalname="XLXN_46" name="in_is_clk_manual" />
+            <blockpin signalname="in_is_clk_low" name="in_is_clk_low" />
+            <blockpin signalname="in_is_clk_manual" name="in_is_clk_manual" />
             <blockpin name="in_manr_d(7:0)" />
             <blockpin signalname="XLXN_46" name="in_manr_r" />
             <blockpin signalname="XLXN_46" name="in_manr_w" />
@@ -271,8 +278,9 @@
         <block symbolname="gnd" name="XLXI_9">
             <blockpin signalname="XLXN_49" name="G" />
         </block>
-        <block symbolname="vcc" name="XLXI_10">
-            <blockpin signalname="XLXN_47" name="P" />
+        <block symbolname="inv" name="XLXI_11">
+            <blockpin signalname="in_is_clk_low" name="I" />
+            <blockpin signalname="in_is_clk_manual" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="64000" height="64000">
@@ -282,10 +290,6 @@
         </instance>
         <instance x="576" y="3488" name="XLXI_8" orien="R0" />
         <branch name="XLXN_46">
-            <wire x2="736" y1="752" y2="752" x1="160" />
-            <wire x2="160" y1="752" y2="816" x1="160" />
-            <wire x2="736" y1="816" y2="816" x1="160" />
-            <wire x2="160" y1="816" y2="944" x1="160" />
             <wire x2="736" y1="944" y2="944" x1="160" />
             <wire x2="160" y1="944" y2="1008" x1="160" />
             <wire x2="736" y1="1008" y2="1008" x1="160" />
@@ -342,9 +346,9 @@
             <wire x2="1728" y1="3024" y2="3200" x1="1728" />
             <wire x2="1792" y1="3024" y2="3200" x1="1792" />
         </branch>
-        <branch name="XLXN_47">
-            <wire x2="576" y1="880" y2="880" x1="560" />
-            <wire x2="736" y1="880" y2="880" x1="576" />
+        <branch name="in_is_clk_low">
+            <wire x2="720" y1="880" y2="880" x1="384" />
+            <wire x2="736" y1="880" y2="880" x1="720" />
         </branch>
         <branch name="XLXN_49">
             <wire x2="3680" y1="1520" y2="1520" x1="3168" />
@@ -353,7 +357,6 @@
             <wire x2="3680" y1="1712" y2="1712" x1="3168" />
         </branch>
         <instance x="3616" y="1968" name="XLXI_9" orien="R0" />
-        <instance x="560" y="944" name="XLXI_10" orien="R270" />
         <branch name="in_clk">
             <wire x2="576" y1="688" y2="688" x1="560" />
             <wire x2="736" y1="688" y2="688" x1="576" />
@@ -409,5 +412,23 @@
         </branch>
         <iomarker fontsize="28" x="1088" y="480" name="out_clkr" orien="R270" />
         <iomarker fontsize="28" x="1152" y="480" name="out_clkw" orien="R270" />
+        <branch name="in_clk_manual">
+            <wire x2="736" y1="816" y2="816" x1="640" />
+        </branch>
+        <instance x="320" y="512" name="XLXI_11" orien="R0" />
+        <branch name="in_is_clk_manual">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="640" y="480" type="branch" />
+            <wire x2="640" y1="480" y2="480" x1="544" />
+        </branch>
+        <branch name="in_is_clk_low">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="240" y="480" type="branch" />
+            <wire x2="320" y1="480" y2="480" x1="240" />
+        </branch>
+        <iomarker fontsize="28" x="384" y="880" name="in_is_clk_low" orien="R180" />
+        <iomarker fontsize="28" x="640" y="816" name="in_clk_manual" orien="R180" />
+        <branch name="in_is_clk_manual">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="640" y="752" type="branch" />
+            <wire x2="736" y1="752" y2="752" x1="640" />
+        </branch>
     </sheet>
 </drawing>

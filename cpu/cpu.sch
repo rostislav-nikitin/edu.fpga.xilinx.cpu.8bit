@@ -234,11 +234,12 @@
         <signal name="out_clk_internal" />
         <signal name="XLXN_234" />
         <signal name="XLXN_235" />
-        <signal name="XLXN_238" />
         <signal name="XLXN_239" />
         <signal name="freq_div_1(3)" />
         <signal name="freq_div_1(15:0)" />
-        <signal name="XLXN_244" />
+        <signal name="XLXN_247" />
+        <signal name="XLXN_252" />
+        <signal name="clk_low" />
         <port polarity="Input" name="in_manr_d(7:0)" />
         <port polarity="Output" name="monitor(7:0)" />
         <port polarity="Input" name="in_is_clk_high" />
@@ -1386,7 +1387,7 @@
         </block>
         <block symbolname="buf" name="XLXI_916">
             <blockpin signalname="freq_div_1(3)" name="I" />
-            <blockpin signalname="clk_internal" name="O" />
+            <blockpin signalname="clk_low" name="O" />
         </block>
         <block symbolname="cb16ce" name="XLXI_917">
             <blockpin signalname="in_clk" name="C" />
@@ -1395,6 +1396,21 @@
             <blockpin name="CEO" />
             <blockpin signalname="freq_div_1(15:0)" name="Q(15:0)" />
             <blockpin name="TC" />
+        </block>
+        <block symbolname="and2" name="XLXI_918">
+            <blockpin signalname="in_clk_manual" name="I0" />
+            <blockpin signalname="in_is_clk_manual" name="I1" />
+            <blockpin signalname="XLXN_247" name="O" />
+        </block>
+        <block symbolname="and2" name="XLXI_919">
+            <blockpin signalname="clk_low" name="I0" />
+            <blockpin signalname="in_is_clk_low" name="I1" />
+            <blockpin signalname="XLXN_252" name="O" />
+        </block>
+        <block symbolname="or2" name="XLXI_924">
+            <blockpin signalname="XLXN_252" name="I0" />
+            <blockpin signalname="XLXN_247" name="I1" />
+            <blockpin signalname="clk_internal" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="7609" height="5382">
@@ -3530,13 +3546,41 @@
         <branch name="freq_div_1(3)">
             <wire x2="3936" y1="3152" y2="3152" x1="3744" />
         </branch>
-        <branch name="clk_internal">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4256" y="3152" type="branch" />
-            <wire x2="4256" y1="3152" y2="3152" x1="4160" />
-        </branch>
         <branch name="freq_div_1(15:0)">
             <wire x2="3648" y1="3152" y2="3152" x1="3424" />
         </branch>
         <instance x="3936" y="3184" name="XLXI_916" orien="R0" />
+        <instance x="4480" y="3088" name="XLXI_918" orien="R0" />
+        <instance x="4480" y="3216" name="XLXI_919" orien="R0" />
+        <instance x="4880" y="3152" name="XLXI_924" orien="R0" />
+        <branch name="XLXN_247">
+            <wire x2="4816" y1="2992" y2="2992" x1="4736" />
+            <wire x2="4816" y1="2992" y2="3024" x1="4816" />
+            <wire x2="4880" y1="3024" y2="3024" x1="4816" />
+        </branch>
+        <branch name="XLXN_252">
+            <wire x2="4816" y1="3120" y2="3120" x1="4736" />
+            <wire x2="4816" y1="3088" y2="3120" x1="4816" />
+            <wire x2="4880" y1="3088" y2="3088" x1="4816" />
+        </branch>
+        <branch name="in_is_clk_manual">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4400" y="2960" type="branch" />
+            <wire x2="4480" y1="2960" y2="2960" x1="4400" />
+        </branch>
+        <branch name="in_is_clk_low">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4400" y="3088" type="branch" />
+            <wire x2="4480" y1="3088" y2="3088" x1="4400" />
+        </branch>
+        <branch name="clk_low">
+            <wire x2="4480" y1="3152" y2="3152" x1="4160" />
+        </branch>
+        <branch name="in_clk_manual">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4400" y="3024" type="branch" />
+            <wire x2="4480" y1="3024" y2="3024" x1="4400" />
+        </branch>
+        <branch name="clk_internal">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="5280" y="3056" type="branch" />
+            <wire x2="5280" y1="3056" y2="3056" x1="5136" />
+        </branch>
     </sheet>
 </drawing>
