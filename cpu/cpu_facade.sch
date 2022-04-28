@@ -17,10 +17,16 @@
         <signal name="out_s3" />
         <signal name="out_s4" />
         <signal name="monitor(7:0)" />
+        <signal name="out_clkc" />
+        <signal name="out_clkr" />
+        <signal name="out_clkw" />
         <port polarity="Input" name="in_clk" />
         <port polarity="Output" name="out_clk_internal" />
         <port polarity="Input" name="in_rst" />
         <port polarity="Output" name="monitor(7:0)" />
+        <port polarity="Output" name="out_clkc" />
+        <port polarity="Output" name="out_clkr" />
+        <port polarity="Output" name="out_clkw" />
         <blockdef name="cpu">
             <timestamp>2022-4-27T23:50:13</timestamp>
             <rect width="2304" x="64" y="-2368" height="2304" />
@@ -201,9 +207,9 @@
             <blockpin name="out_bus1" />
             <blockpin name="out_can_read" />
             <blockpin name="out_can_write" />
-            <blockpin name="out_clkc" />
-            <blockpin name="out_clkr" />
-            <blockpin name="out_clkw" />
+            <blockpin signalname="out_clkc" name="out_clkc" />
+            <blockpin signalname="out_clkr" name="out_clkr" />
+            <blockpin signalname="out_clkw" name="out_clkw" />
             <blockpin signalname="out_clk_internal" name="out_clk_internal" />
             <blockpin name="out_C_in_enabled" />
             <blockpin name="out_C_out_flipflop_o" />
@@ -388,5 +394,20 @@
             <wire x2="960" y1="480" y2="496" x1="960" />
             <wire x2="960" y1="496" y2="592" x1="960" />
         </branch>
+        <branch name="out_clkc">
+            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1024" y="288" type="branch" />
+            <wire x2="1024" y1="240" y2="288" x1="1024" />
+            <wire x2="1024" y1="288" y2="480" x1="1024" />
+            <wire x2="1024" y1="480" y2="592" x1="1024" />
+        </branch>
+        <iomarker fontsize="28" x="1024" y="240" name="out_clkc" orien="R270" />
+        <branch name="out_clkr">
+            <wire x2="1088" y1="480" y2="592" x1="1088" />
+        </branch>
+        <branch name="out_clkw">
+            <wire x2="1152" y1="480" y2="592" x1="1152" />
+        </branch>
+        <iomarker fontsize="28" x="1088" y="480" name="out_clkr" orien="R270" />
+        <iomarker fontsize="28" x="1152" y="480" name="out_clkw" orien="R270" />
     </sheet>
 </drawing>
