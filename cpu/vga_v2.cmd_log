@@ -153,3 +153,9 @@ map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -reg
 par -w -intstyle ise -ol high -mt off vga_v2_map.ncd vga_v2.ncd vga_v2.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_v2.twx vga_v2.ncd -o vga_v2.twr vga_v2.pcf -ucf vga_v2.ucf 
 bitgen -intstyle ise -f vga_v2.ut vga_v2.ncd 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/vga_v2.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/vga_v2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc vga_v2.ucf -p xa6slx9-ftg256-3 vga_v2.ngc vga_v2.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_v2_map.ncd vga_v2.ngd vga_v2.pcf 
+par -w -intstyle ise -ol high -mt off vga_v2_map.ncd vga_v2.ncd vga_v2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_v2.twx vga_v2.ncd -o vga_v2.twr vga_v2.pcf -ucf vga_v2.ucf 
+bitgen -intstyle ise -f vga_v2.ut vga_v2.ncd 

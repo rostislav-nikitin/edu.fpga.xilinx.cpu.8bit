@@ -10,7 +10,7 @@ Target Device  : xa6slx9
 Target Package : ftg256
 Target Speed   : -3
 Mapper Version : aspartan6 -- $Revision: 1.55 $
-Mapped Date    : Mon Apr 25 01:10:44 2022
+Mapped Date    : Thu Apr 28 03:57:56 2022
 
 Mapping design into LUTs...
 Running directed packing...
@@ -19,8 +19,8 @@ Updating timing models...
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 4 secs 
-Total CPU  time at the beginning of Placer: 4 secs 
+Total REAL time at the beginning of Placer: 5 secs 
+Total CPU  time at the beginning of Placer: 5 secs 
 
 Phase 1.1  Initial Placement Analysis
 Phase 1.1  Initial Placement Analysis (Checksum:be6c135c) REAL time: 5 secs 
@@ -51,10 +51,10 @@ Phase 8.5  Local Placement Optimization (Checksum:cc1b4ab9) REAL time: 5 secs
 Phase 9.8  Global Placement
 ...............................
 ............
-Phase 9.8  Global Placement (Checksum:43aac619) REAL time: 5 secs 
+Phase 9.8  Global Placement (Checksum:43aac619) REAL time: 6 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:43aac619) REAL time: 5 secs 
+Phase 10.5  Local Placement Optimization (Checksum:43aac619) REAL time: 6 secs 
 
 Phase 11.18  Placement Optimization
 Phase 11.18  Placement Optimization (Checksum:43a8f341) REAL time: 6 secs 
