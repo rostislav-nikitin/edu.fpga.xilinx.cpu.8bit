@@ -23,6 +23,8 @@
         <signal name="in_clk_manual" />
         <signal name="in_is_clk_manual" />
         <signal name="out_r0_w" />
+        <signal name="out_s6" />
+        <signal name="out_s5" />
         <port polarity="Input" name="in_is_clk_low" />
         <port polarity="Input" name="in_clk" />
         <port polarity="Output" name="out_clk_internal" />
@@ -267,8 +269,8 @@
             <blockpin signalname="out_s2" name="out_s2" />
             <blockpin signalname="out_s3" name="out_s3" />
             <blockpin signalname="out_s4" name="out_s4" />
-            <blockpin name="out_s5" />
-            <blockpin name="out_s6" />
+            <blockpin signalname="out_s5" name="out_s5" />
+            <blockpin signalname="out_s6" name="out_s6" />
             <blockpin name="out_sysbus(7:0)" />
             <blockpin name="out_sysbus_released" />
             <blockpin name="out_temp_o(7:0)" />
@@ -436,5 +438,13 @@
             <wire x2="1856" y1="400" y2="592" x1="1856" />
         </branch>
         <iomarker fontsize="28" x="1856" y="400" name="out_r0_w" orien="R270" />
+        <branch name="out_s6">
+            <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="1728" y="400" type="branch" />
+            <wire x2="1728" y1="400" y2="592" x1="1728" />
+        </branch>
+        <branch name="out_s5">
+            <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="1664" y="400" type="branch" />
+            <wire x2="1664" y1="400" y2="592" x1="1664" />
+        </branch>
     </sheet>
 </drawing>

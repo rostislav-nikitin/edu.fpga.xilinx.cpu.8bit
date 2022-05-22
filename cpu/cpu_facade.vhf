@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu_facade.vhf
--- /___/   /\     Timestamp : 05/22/2022 12:00:00
+-- /___/   /\     Timestamp : 05/22/2022 16:44:36
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -5292,6 +5292,8 @@ architecture BEHAVIORAL of cpu_facade is
    signal out_s2                      : std_logic;
    signal out_s3                      : std_logic;
    signal out_s4                      : std_logic;
+   signal out_s5                      : std_logic;
+   signal out_s6                      : std_logic;
    signal XLXN_46                     : std_logic;
    signal XLXN_49                     : std_logic;
    signal XLXI_7_in_manr_d_openSignal : std_logic_vector (7 downto 0);
@@ -5515,8 +5517,8 @@ begin
                 out_s2=>out_s2,
                 out_s3=>out_s3,
                 out_s4=>out_s4,
-                out_s5=>open,
-                out_s6=>open,
+                out_s5=>out_s5,
+                out_s6=>out_s6,
                 out_temp_o=>open,
                 out_temp_w=>open);
    

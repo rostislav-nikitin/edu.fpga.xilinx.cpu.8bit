@@ -28,7 +28,7 @@ NET "out_clk_internal" LOC = A4;  ##  PIN3
 NET "out_clkc" LOC = A5;  ##  PIN3
 NET "out_clkr" LOC = A6;  ##  PIN3
 NET "out_clkw" LOC = B8;  ##  PIN3
-NET "out_r0_w" LOC = C8;  ##  PIN3
+NET "out_r0_w" LOC = C8                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ;  ##  PIN3
 
 #NET "out_s1" LOC = P4;  ##  PIN3
 #NET "out_s2" LOC = N5;  ##  PIN3

@@ -1,7 +1,7 @@
 Release 14.3 par P.40xd (lin64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-fedora::  Sun May 22 12:00:28 2022
+fedora::  Sun May 22 16:45:04 2022
 
 par -w -intstyle ise -ol high -mt off cpu_facade_map.ncd cpu_facade.ncd
 cpu_facade.pcf 
@@ -100,13 +100,13 @@ Finished initial Timing Analysis.  REAL time: 3 secs
 Starting Router
 
 
-Phase  1  : 1036 unrouted;      REAL time: 4 secs 
+Phase  1  : 1036 unrouted;      REAL time: 3 secs 
 
 Phase  2  : 978 unrouted;      REAL time: 4 secs 
 
 Phase  3  : 297 unrouted;      REAL time: 4 secs 
 
-Phase  4  : 297 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 5 secs 
+Phase  4  : 297 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 4 secs 
 
 Updating file: cpu_facade.ncd with current fully routed design.
 
