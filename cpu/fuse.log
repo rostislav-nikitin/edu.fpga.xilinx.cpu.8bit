@@ -25,8 +25,8 @@ Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.v
 Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/tb_cpu_facade.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 113864 KB
-Fuse CPU Usage: 1730 ms
+Fuse Memory Usage: 114096 KB
+Fuse CPU Usage: 1740 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
@@ -81,13 +81,13 @@ Compiling architecture behavioral of entity reg_8bit_MUSER_cpu_facade [reg_8bit_
 Compiling architecture and8_hxilinx_cpu_facade_v of entity AND8_HXILINX_cpu_facade [and8_hxilinx_cpu_facade_default]
 Compiling architecture behavioral of entity encoder8_3_MUSER_cpu_facade [encoder8_3_muser_cpu_facade_defa...]
 Compiling architecture behavioral of entity cpu_output_muxer_MUSER_cpu_facade [cpu_output_muxer_muser_cpu_facad...]
+Compiling architecture and3_v of entity AND3 [and3_default]
+Compiling architecture behavioral of entity buf_8bit_MUSER_cpu_facade [buf_8bit_muser_cpu_facade_defaul...]
 Compiling architecture behavioral of entity CB16CE_HXILINX_cpu_facade [cb16ce_hxilinx_cpu_facade_defaul...]
 Compiling architecture and4_v of entity AND4 [and4_default]
 Compiling architecture behavioral of entity freq_divider_MUSER_cpu_facade [freq_divider_muser_cpu_facade_de...]
 Compiling architecture m8_1e_hxilinx_cpu_facade_v of entity M8_1E_HXILINX_cpu_facade [m8_1e_hxilinx_cpu_facade_default]
 Compiling architecture behavioral of entity cpu_freq_divider_MUSER_cpu_facade [cpu_freq_divider_muser_cpu_facad...]
-Compiling architecture and3_v of entity AND3 [and3_default]
-Compiling architecture behavioral of entity buf_8bit_MUSER_cpu_facade [buf_8bit_muser_cpu_facade_defaul...]
 Compiling architecture behavioral of entity cpu_MUSER_cpu_facade [cpu_muser_cpu_facade_default]
 Compiling architecture behavioral of entity cpu_facade [cpu_facade_default]
 Compiling architecture behavioral of entity cpu_facade_cpu_facade_sch_tb
@@ -95,6 +95,6 @@ Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
 Compiled 131 VHDL Units
 Built simulation executable /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade_cpu_facade_sch_tb_isim_beh.exe
-Fuse Memory Usage: 4374372 KB
-Fuse CPU Usage: 2340 ms
-GCC CPU Usage: 4310 ms
+Fuse Memory Usage: 4374440 KB
+Fuse CPU Usage: 2320 ms
+GCC CPU Usage: 4100 ms

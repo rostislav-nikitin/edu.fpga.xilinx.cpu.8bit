@@ -10,7 +10,7 @@ Target Device  : xa6slx9
 Target Package : ftg256
 Target Speed   : -3
 Mapper Version : aspartan6 -- $Revision: 1.55 $
-Mapped Date    : Thu Apr 28 03:37:24 2022
+Mapped Date    : Sun May 22 12:00:19 2022
 
 Design Summary
 --------------
@@ -41,12 +41,12 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    73 out of   1,430    5%
+  Number of occupied Slices:                    76 out of   1,430    5%
   Nummber of MUXCYs used:                       28 out of   2,860    1%
-  Number of LUT Flip Flop pairs used:          222
-    Number with an unused Flip Flop:           113 out of     222   50%
-    Number with an unused LUT:                  22 out of     222    9%
-    Number of fully used LUT-FF pairs:          87 out of     222   39%
+  Number of LUT Flip Flop pairs used:          230
+    Number with an unused Flip Flop:           121 out of     230   52%
+    Number with an unused LUT:                  30 out of     230   13%
+    Number of fully used LUT-FF pairs:          79 out of     230   34%
     Number of unique control sets:              17
     Number of slice register sites lost
       to control set restrictions:              27 out of  11,440    1%
@@ -58,8 +58,8 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        16 out of     186    8%
-    Number of LOCed IOBs:                       12 out of      16   75%
+  Number of bonded IOBs:                        17 out of     186    9%
+    Number of LOCed IOBs:                       13 out of      17   76%
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of      32    0%
@@ -86,11 +86,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                4.16
+Average Fanout of Non-Clock Nets:                4.17
 
-Peak Memory Usage:  843 MB
-Total REAL time to MAP completion:  6 secs 
-Total CPU time to MAP completion:   5 secs 
+Peak Memory Usage:  842 MB
+Total REAL time to MAP completion:  7 secs 
+Total CPU time to MAP completion:   7 secs 
 
 Table of Contents
 -----------------
@@ -123,11 +123,11 @@ WARNING:Place:837 - Partially locked IO Bus is found.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_7/clkr is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_7/cc_r0_w is sourced
-   by a combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_7/clkw is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_7/cc_r0_w is sourced
+   by a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_7/cc_ram_a_w is
    sourced by a combinatorial pin. This is not good design practice. Use the CE
@@ -147,14 +147,14 @@ INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
    1.260 Volts)
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
-INFO:Place:834 - Only a subset of IOs are locked. Out of 16 IOs, 12 are locked
+INFO:Place:834 - Only a subset of IOs are locked. Out of 17 IOs, 13 are locked
    and 4 are not locked. If you would like to print the names of these IOs,
    please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
 INFO:Pack:1650 - Map created a placed design.
 
 Section 4 - Removed Logic Summary
 ---------------------------------
- 312 block(s) removed
+ 311 block(s) removed
   46 block(s) optimized away
  213 signal(s) removed
 
@@ -178,7 +178,6 @@ Loadless block "XLXI_7/XLXI_195" (BUF) removed.
 Loadless block "XLXI_7/XLXI_196" (BUF) removed.
 Loadless block "XLXI_7/XLXI_207" (BUF) removed.
 Loadless block "XLXI_7/XLXI_219" (BUF) removed.
-Loadless block "XLXI_7/XLXI_220" (BUF) removed.
 Loadless block "XLXI_7/XLXI_221" (BUF) removed.
 Loadless block "XLXI_7/XLXI_222" (BUF) removed.
 Loadless block "XLXI_7/XLXI_223" (BUF) removed.
@@ -997,6 +996,7 @@ Section 6 - IOB Properties
 | out_clkc                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | out_clkr                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | out_clkw                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| out_r0_w                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Section 7 - RPMs

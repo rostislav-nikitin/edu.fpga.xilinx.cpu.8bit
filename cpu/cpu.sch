@@ -234,12 +234,12 @@
         <signal name="out_clk_internal" />
         <signal name="XLXN_234" />
         <signal name="XLXN_235" />
-        <signal name="XLXN_239" />
         <signal name="freq_div_1(3)" />
         <signal name="freq_div_1(15:0)" />
         <signal name="XLXN_247" />
         <signal name="XLXN_252" />
         <signal name="clk_low" />
+        <signal name="XLXN_253" />
         <port polarity="Input" name="in_manr_d(7:0)" />
         <port polarity="Output" name="monitor(7:0)" />
         <port polarity="Input" name="in_is_clk_high" />
@@ -1392,7 +1392,7 @@
         <block symbolname="cb16ce" name="XLXI_917">
             <blockpin signalname="in_clk" name="C" />
             <blockpin signalname="XLXN_235" name="CE" />
-            <blockpin signalname="XLXN_239" name="CLR" />
+            <blockpin signalname="rst" name="CLR" />
             <blockpin name="CEO" />
             <blockpin signalname="freq_div_1(15:0)" name="Q(15:0)" />
             <blockpin name="TC" />
@@ -3516,18 +3516,13 @@
         <branch name="XLXN_234">
             <wire x2="2720" y1="2800" y2="2800" x1="2480" />
         </branch>
-        <branch name="in_clk">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2480" y="2864" type="branch" />
-            <wire x2="2560" y1="2864" y2="2864" x1="2480" />
-            <wire x2="2720" y1="2864" y2="2864" x1="2560" />
-            <wire x2="2560" y1="2864" y2="3040" x1="2560" />
-            <wire x2="2880" y1="3040" y2="3040" x1="2560" />
-            <wire x2="2880" y1="3040" y2="3280" x1="2880" />
-            <wire x2="3040" y1="3280" y2="3280" x1="2880" />
-        </branch>
         <branch name="rst">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2480" y="2960" type="branch" />
-            <wire x2="2720" y1="2960" y2="2960" x1="2480" />
+            <wire x2="2704" y1="2960" y2="2960" x1="2480" />
+            <wire x2="2720" y1="2960" y2="2960" x1="2704" />
+            <wire x2="2704" y1="2960" y2="3312" x1="2704" />
+            <wire x2="2704" y1="3312" y2="3376" x1="2704" />
+            <wire x2="3040" y1="3376" y2="3376" x1="2704" />
         </branch>
         <instance x="2480" y="2864" name="XLXI_915" orien="R270" />
         <branch name="XLXN_235">
@@ -3538,10 +3533,6 @@
             <wire x2="3360" y1="2800" y2="3008" x1="3360" />
         </branch>
         <instance x="3040" y="3408" name="XLXI_917" orien="R0" />
-        <branch name="XLXN_239">
-            <wire x2="2832" y1="2960" y2="3376" x1="2832" />
-            <wire x2="3040" y1="3376" y2="3376" x1="2832" />
-        </branch>
         <bustap x2="3744" y1="3152" y2="3152" x1="3648" />
         <branch name="freq_div_1(3)">
             <wire x2="3936" y1="3152" y2="3152" x1="3744" />
@@ -3581,6 +3572,16 @@
         <branch name="clk_internal">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="5280" y="3056" type="branch" />
             <wire x2="5280" y1="3056" y2="3056" x1="5136" />
+        </branch>
+        <branch name="in_clk">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2480" y="2864" type="branch" />
+            <wire x2="2560" y1="2864" y2="2864" x1="2480" />
+            <wire x2="2720" y1="2864" y2="2864" x1="2560" />
+            <wire x2="2560" y1="2864" y2="3040" x1="2560" />
+            <wire x2="2720" y1="3040" y2="3040" x1="2560" />
+            <wire x2="2880" y1="3040" y2="3040" x1="2720" />
+            <wire x2="2880" y1="3040" y2="3280" x1="2880" />
+            <wire x2="3040" y1="3280" y2="3280" x1="2880" />
         </branch>
     </sheet>
 </drawing>

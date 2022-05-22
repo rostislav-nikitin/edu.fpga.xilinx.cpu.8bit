@@ -22,6 +22,7 @@
         <signal name="out_clkw" />
         <signal name="in_clk_manual" />
         <signal name="in_is_clk_manual" />
+        <signal name="out_r0_w" />
         <port polarity="Input" name="in_is_clk_low" />
         <port polarity="Input" name="in_clk" />
         <port polarity="Output" name="out_clk_internal" />
@@ -31,6 +32,7 @@
         <port polarity="Output" name="out_clkr" />
         <port polarity="Output" name="out_clkw" />
         <port polarity="Input" name="in_clk_manual" />
+        <port polarity="Output" name="out_r0_w" />
         <blockdef name="cpu">
             <timestamp>2022-4-28T0:36:41</timestamp>
             <rect width="2304" x="64" y="-2368" height="2304" />
@@ -250,7 +252,7 @@
             <blockpin name="out_op_ls_ldc" />
             <blockpin name="out_op_ls_st" />
             <blockpin name="out_r0_r" />
-            <blockpin name="out_r0_w" />
+            <blockpin signalname="out_r0_w" name="out_r0_w" />
             <blockpin name="out_r1_r" />
             <blockpin name="out_r1_w" />
             <blockpin name="out_r2_r" />
@@ -430,5 +432,9 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="640" y="752" type="branch" />
             <wire x2="736" y1="752" y2="752" x1="640" />
         </branch>
+        <branch name="out_r0_w">
+            <wire x2="1856" y1="400" y2="592" x1="1856" />
+        </branch>
+        <iomarker fontsize="28" x="1856" y="400" name="out_r0_w" orien="R270" />
     </sheet>
 </drawing>

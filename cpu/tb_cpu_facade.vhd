@@ -22,17 +22,19 @@ END cpu_facade_cpu_facade_sch_tb;
 ARCHITECTURE behavioral OF cpu_facade_cpu_facade_sch_tb IS 
 
    COMPONENT cpu_facade
-   PORT( --in_clk:	IN	STD_LOGIC; 
+   PORT(  in_clk:	IN	STD_LOGIC; 
+			 in_is_clk_low:	IN	STD_LOGIC; 
 			 in_clk_manual:	IN	STD_LOGIC; 
           in_rst	:	IN	STD_LOGIC; 
-          out_clk_int	:	OUT	STD_LOGIC; 
+          out_clk_internal	:	OUT	STD_LOGIC; 
           monitor	:	OUT	STD_LOGIC_VECTOR (7 DOWNTO 0));
    END COMPONENT;
 
-	--SIGNAL in_clk	:	STD_LOGIC;
+	SIGNAL in_clk	:	STD_LOGIC;
+	SIGNAL in_is_clk_low :	STD_LOGIC; 
 	SIGNAL in_clk_manual	:	STD_LOGIC;
    SIGNAL in_rst	:	STD_LOGIC;
-   SIGNAL out_clk_int	:	STD_LOGIC;
+   SIGNAL out_clk_internal	:	STD_LOGIC;
    SIGNAL monitor	:	STD_LOGIC_VECTOR (7 DOWNTO 0);
 	
 	procedure one_step(signal clk : inout std_logic) is
@@ -50,15 +52,18 @@ BEGIN
 
    UUT: cpu_facade PORT MAP(
 		in_clk_manual => in_clk_manual, 
-		--in_clk => in_clk, 
+		in_clk => in_clk, 
+		in_is_clk_low => in_is_clk_low,
 		in_rst => in_rst, 
-		out_clk_int => out_clk_int, 
+		out_clk_internal => out_clk_internal, 
 		monitor => monitor
    );
 
 -- *** Test Bench - User Defined Section ***
    tb : PROCESS
    BEGIN
+		in_clk <='0';
+		in_is_clk_low <='0';
 		in_clk_manual <='0';
 		in_rst <= '0';
 		wait for 10 ns;

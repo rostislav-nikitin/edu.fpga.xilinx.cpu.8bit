@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu.vhf
--- /___/   /\     Timestamp : 04/28/2022 03:37:05
+-- /___/   /\     Timestamp : 05/22/2022 11:35:07
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -4269,7 +4269,6 @@ architecture BEHAVIORAL of cpu is
    signal XLXN_233             : std_logic;
    signal XLXN_234             : std_logic;
    signal XLXN_235             : std_logic;
-   signal XLXN_239             : std_logic;
    signal XLXN_247             : std_logic;
    signal XLXN_252             : std_logic;
    signal manr_o_DUMMY         : std_logic_vector (7 downto 0);
@@ -5243,7 +5242,7 @@ begin
    XLXI_917 : CB16CE_HXILINX_cpu
       port map (C=>in_clk,
                 CE=>XLXN_235,
-                CLR=>XLXN_239,
+                CLR=>rst,
                 CEO=>open,
                 Q(15 downto 0)=>freq_div_1(15 downto 0),
                 TC=>open);

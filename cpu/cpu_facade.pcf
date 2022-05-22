@@ -1,9 +1,9 @@
 //! **************************************************************************
-// Written by: Map P.40xd on Thu Apr 28 03:37:30 2022
+// Written by: Map P.40xd on Sun May 22 12:00:26 2022
 //! **************************************************************************
 
 SCHEMATIC START;
-COMP "out_clkw" LOCATE = SITE "P16" LEVEL 1;
+COMP "out_clkw" LOCATE = SITE "B8" LEVEL 1;
 COMP "in_is_clk_low" LOCATE = SITE "D3" LEVEL 1;
 COMP "monitor<0>" LOCATE = SITE "P4" LEVEL 1;
 COMP "in_rst" LOCATE = SITE "C3" LEVEL 1;
@@ -12,9 +12,10 @@ COMP "monitor<2>" LOCATE = SITE "P5" LEVEL 1;
 COMP "monitor<3>" LOCATE = SITE "M6" LEVEL 1;
 COMP "in_clk" LOCATE = SITE "T8" LEVEL 1;
 COMP "in_clk_manual" LOCATE = SITE "E4" LEVEL 1;
-COMP "out_clk_internal" LOCATE = SITE "K16" LEVEL 1;
-COMP "out_clkc" LOCATE = SITE "L16" LEVEL 1;
-COMP "out_clkr" LOCATE = SITE "M15" LEVEL 1;
+COMP "out_r0_w" LOCATE = SITE "C8" LEVEL 1;
+COMP "out_clk_internal" LOCATE = SITE "A4" LEVEL 1;
+COMP "out_clkc" LOCATE = SITE "A5" LEVEL 1;
+COMP "out_clkr" LOCATE = SITE "A6" LEVEL 1;
 TIMEGRP sys_clk_pin = BEL "XLXI_7/XLXI_917/COUNT_0" BEL
         "XLXI_7/XLXI_917/COUNT_1" BEL "XLXI_7/XLXI_917/COUNT_2" BEL
         "XLXI_7/XLXI_917/COUNT_3" BEL "XLXI_7/XLXI_914/COUNT_0" BEL
