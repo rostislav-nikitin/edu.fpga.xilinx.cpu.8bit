@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu_facade.vhf
--- /___/   /\     Timestamp : 05/22/2022 16:49:21
+-- /___/   /\     Timestamp : 05/22/2022 21:28:39
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -5276,6 +5276,7 @@ entity cpu_facade is
    port ( in_clk           : in    std_logic; 
           in_clk_manual    : in    std_logic; 
           in_is_clk_low    : in    std_logic; 
+          in_is_clk_manual : in    std_logic; 
           in_rst           : in    std_logic; 
           monitor          : out   std_logic_vector (7 downto 0); 
           out_clkc         : out   std_logic; 
@@ -5293,9 +5294,11 @@ end cpu_facade;
 
 architecture BEHAVIORAL of cpu_facade is
    attribute BOX_TYPE   : string ;
-   signal in_is_clk_manual            : std_logic;
    signal XLXN_46                     : std_logic;
    signal XLXN_49                     : std_logic;
+   signal XLXN_52                     : std_logic;
+   signal XLXN_55                     : std_logic;
+   signal XLXN_57                     : std_logic;
    signal XLXI_7_in_manr_d_openSignal : std_logic_vector (7 downto 0);
    component cpu_MUSER_cpu_facade
       port ( in_acc_r             : in    std_logic; 
@@ -5422,15 +5425,15 @@ begin
                 in_bus1=>XLXN_46,
                 in_clk=>in_clk,
                 in_clk_external=>XLXN_46,
-                in_clk_manual=>in_clk_manual,
+                in_clk_manual=>XLXN_57,
                 in_iar_r=>XLXN_46,
                 in_iar_w=>XLXN_46,
                 in_ir_w=>XLXN_46,
                 in_is_bus1_w=>XLXN_46,
                 in_is_clk_external=>XLXN_46,
                 in_is_clk_high=>XLXN_46,
-                in_is_clk_low=>in_is_clk_low,
-                in_is_clk_manual=>in_is_clk_manual,
+                in_is_clk_low=>XLXN_52,
+                in_is_clk_manual=>XLXN_55,
                 in_manr_d(7 downto 0)=>XLXI_7_in_manr_d_openSignal(7 downto 0),
                 in_manr_r=>XLXN_46,
                 in_manr_w=>XLXN_46,
@@ -5528,9 +5531,17 @@ begin
    XLXI_9 : GND
       port map (G=>XLXN_49);
    
-   XLXI_11 : INV
+   XLXI_12 : INV
       port map (I=>in_is_clk_low,
-                O=>in_is_clk_manual);
+                O=>XLXN_52);
+   
+   XLXI_14 : INV
+      port map (I=>in_is_clk_manual,
+                O=>XLXN_55);
+   
+   XLXI_15 : INV
+      port map (I=>in_clk_manual,
+                O=>XLXN_57);
    
 end BEHAVIORAL;
 

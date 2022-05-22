@@ -34,6 +34,13 @@ NET "out_s3" LOC = A11;  ##  PIN3
 NET "out_s4" LOC = B12;  ##  PIN3
 NET "out_s5" LOC = A14;  ##  PIN3
 NET "out_s6" LOC = B15;  ##  PIN3
+
+NET "in_is_clk_low" LOC = B5;  ##  PIN3
+#NET "" LOC = B6  ##  PIN3
+#NET "out_s6" LOC = A7;  ##  PIN3
+#NET "out_s6" LOC = A8;  ##  PIN3
+NET "in_is_clk_manual" LOC = A9;  ##  PIN3
+NET "in_clk_manual" LOC = B10;  ##  PIN3
 #NET "out_r0_w" LOC = C15;  ##  PIN3
 
 #NET "out_s1" LOC = P4;  ##  PIN3
