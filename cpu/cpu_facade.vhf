@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu_facade.vhf
--- /___/   /\     Timestamp : 05/22/2022 16:44:36
+-- /___/   /\     Timestamp : 05/22/2022 16:49:21
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -5282,18 +5282,18 @@ entity cpu_facade is
           out_clkr         : out   std_logic; 
           out_clkw         : out   std_logic; 
           out_clk_internal : out   std_logic; 
-          out_r0_w         : out   std_logic);
+          out_r0_w         : out   std_logic; 
+          out_s1           : out   std_logic; 
+          out_s2           : out   std_logic; 
+          out_s3           : out   std_logic; 
+          out_s4           : out   std_logic; 
+          out_s5           : out   std_logic; 
+          out_s6           : out   std_logic);
 end cpu_facade;
 
 architecture BEHAVIORAL of cpu_facade is
    attribute BOX_TYPE   : string ;
    signal in_is_clk_manual            : std_logic;
-   signal out_s1                      : std_logic;
-   signal out_s2                      : std_logic;
-   signal out_s3                      : std_logic;
-   signal out_s4                      : std_logic;
-   signal out_s5                      : std_logic;
-   signal out_s6                      : std_logic;
    signal XLXN_46                     : std_logic;
    signal XLXN_49                     : std_logic;
    signal XLXI_7_in_manr_d_openSignal : std_logic_vector (7 downto 0);

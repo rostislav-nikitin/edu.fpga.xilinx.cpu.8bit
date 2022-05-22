@@ -29,12 +29,18 @@
         <port polarity="Input" name="in_clk" />
         <port polarity="Output" name="out_clk_internal" />
         <port polarity="Input" name="in_rst" />
+        <port polarity="Output" name="out_s1" />
+        <port polarity="Output" name="out_s2" />
+        <port polarity="Output" name="out_s3" />
+        <port polarity="Output" name="out_s4" />
         <port polarity="Output" name="monitor(7:0)" />
         <port polarity="Output" name="out_clkc" />
         <port polarity="Output" name="out_clkr" />
         <port polarity="Output" name="out_clkw" />
         <port polarity="Input" name="in_clk_manual" />
         <port polarity="Output" name="out_r0_w" />
+        <port polarity="Output" name="out_s6" />
+        <port polarity="Output" name="out_s5" />
         <blockdef name="cpu">
             <timestamp>2022-4-28T0:36:41</timestamp>
             <rect width="2304" x="64" y="-2368" height="2304" />
@@ -377,22 +383,18 @@
         </branch>
         <iomarker fontsize="28" x="1088" y="3088" name="in_rst" orien="R90" />
         <branch name="out_s1">
-            <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="1408" y="400" type="branch" />
             <wire x2="1408" y1="400" y2="416" x1="1408" />
             <wire x2="1408" y1="416" y2="592" x1="1408" />
         </branch>
         <branch name="out_s2">
-            <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="1472" y="400" type="branch" />
             <wire x2="1472" y1="400" y2="416" x1="1472" />
             <wire x2="1472" y1="416" y2="592" x1="1472" />
         </branch>
         <branch name="out_s3">
-            <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="1536" y="400" type="branch" />
             <wire x2="1536" y1="400" y2="416" x1="1536" />
             <wire x2="1536" y1="416" y2="592" x1="1536" />
         </branch>
         <branch name="out_s4">
-            <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="1600" y="400" type="branch" />
             <wire x2="1600" y1="400" y2="416" x1="1600" />
             <wire x2="1600" y1="416" y2="592" x1="1600" />
         </branch>
@@ -439,12 +441,16 @@
         </branch>
         <iomarker fontsize="28" x="1856" y="400" name="out_r0_w" orien="R270" />
         <branch name="out_s6">
-            <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="1728" y="400" type="branch" />
             <wire x2="1728" y1="400" y2="592" x1="1728" />
         </branch>
         <branch name="out_s5">
-            <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="1664" y="400" type="branch" />
             <wire x2="1664" y1="400" y2="592" x1="1664" />
         </branch>
+        <iomarker fontsize="28" x="1408" y="400" name="out_s1" orien="R270" />
+        <iomarker fontsize="28" x="1472" y="400" name="out_s2" orien="R270" />
+        <iomarker fontsize="28" x="1536" y="400" name="out_s3" orien="R270" />
+        <iomarker fontsize="28" x="1600" y="400" name="out_s4" orien="R270" />
+        <iomarker fontsize="28" x="1664" y="400" name="out_s5" orien="R270" />
+        <iomarker fontsize="28" x="1728" y="400" name="out_s6" orien="R270" />
     </sheet>
 </drawing>

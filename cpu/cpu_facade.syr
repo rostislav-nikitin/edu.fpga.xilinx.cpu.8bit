@@ -609,12 +609,6 @@ INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf
 INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5419: Output port <out_r3_r> of the instance <XLXI_7> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5419: Output port <out_r3_w> of the instance <XLXI_7> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5419: Output port <out_sysbus_released> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5419: Output port <out_s1> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5419: Output port <out_s2> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5419: Output port <out_s3> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5419: Output port <out_s4> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5419: Output port <out_s5> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5419: Output port <out_s6> of the instance <XLXI_7> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5419: Output port <out_temp_w> of the instance <XLXI_7> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5528: Output port <G> of the instance <XLXI_9> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <XLXI_7_in_manr_d_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
@@ -1250,9 +1244,9 @@ Primitive and Black Box Usage:
 #      RAM256X1S                   : 8
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 16
+# IO Buffers                       : 22
 #      IBUF                        : 3
-#      OBUF                        : 13
+#      OBUF                        : 19
 # Others                           : 4
 #      PULLDOWN                    : 1
 #      PULLUP                      : 3
@@ -1278,8 +1272,8 @@ Slice Logic Distribution:
    Number of unique control sets:        18
 
 IO Utilization: 
- Number of IOs:                          17
- Number of bonded IOBs:                  17  out of    186     9%  
+ Number of IOs:                          23
+ Number of bonded IOBs:                  23  out of    186    12%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
@@ -1669,7 +1663,7 @@ Offset:              12.582ns (Levels of Logic = 9)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_7/clck_gen/XLXI_4/q_tmp'
-  Total number of paths / destination ports: 9 / 1
+  Total number of paths / destination ports: 27 / 7
 -------------------------------------------------------------------------
 Offset:              13.724ns (Levels of Logic = 11)
   Source:            XLXI_7/cpu_ctl/stp/XLXI_24/COUNT_2 (FF)
@@ -1786,14 +1780,14 @@ in_clk         |    7.478|         |         |         |
 
 
 Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.97 secs
+Total CPU time to Xst completion: 6.88 secs
  
 --> 
 
 
-Total memory usage is 614528 kilobytes
+Total memory usage is 614452 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  232 (   0 filtered)
-Number of infos    :   91 (   0 filtered)
+Number of infos    :   85 (   0 filtered)
 
