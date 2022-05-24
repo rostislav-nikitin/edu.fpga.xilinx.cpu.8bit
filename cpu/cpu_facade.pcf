@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.40xd on Sun May 22 21:29:04 2022
+// Written by: Map P.40xd on Tue May 24 06:13:17 2022
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -18,8 +18,12 @@ COMP "out_s4" LOCATE = SITE "B12" LEVEL 1;
 COMP "out_s5" LOCATE = SITE "A14" LEVEL 1;
 COMP "out_s6" LOCATE = SITE "B15" LEVEL 1;
 COMP "in_clk_manual" LOCATE = SITE "B10" LEVEL 1;
+COMP "out_flags_eq" LOCATE = SITE "M4" LEVEL 1;
+COMP "out_flags_C_out" LOCATE = SITE "N4" LEVEL 1;
+COMP "out_flags_gt" LOCATE = SITE "N6" LEVEL 1;
 COMP "out_clk_internal" LOCATE = SITE "A4" LEVEL 1;
 COMP "out_clkc" LOCATE = SITE "A5" LEVEL 1;
+COMP "out_flags_z" LOCATE = SITE "R2" LEVEL 1;
 COMP "in_is_clk_manual" LOCATE = SITE "A9" LEVEL 1;
 COMP "out_clkr" LOCATE = SITE "A6" LEVEL 1;
 TIMEGRP sys_clk_pin = BEL "XLXI_7/XLXI_917/COUNT_0" BEL

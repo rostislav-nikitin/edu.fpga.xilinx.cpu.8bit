@@ -35,6 +35,12 @@ NET "out_s4" LOC = B12;  ##  PIN3
 NET "out_s5" LOC = A14;  ##  PIN3
 NET "out_s6" LOC = B15;  ##  PIN3
 
+NET "out_flags_C_out" LOC = N4;  ##  PIN3
+NET "out_flags_gt" LOC = N6;  ##  PIN3
+NET "out_flags_eq" LOC = M4;  ##  PIN3
+NET "out_flags_z" LOC = R2;  ##  PIN3
+
+
 NET "in_is_clk_low" LOC = B5;  ##  PIN3
 #NET "" LOC = B6  ##  PIN3
 #NET "out_s6" LOC = A7;  ##  PIN3

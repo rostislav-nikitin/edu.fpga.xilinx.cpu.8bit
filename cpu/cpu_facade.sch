@@ -28,6 +28,10 @@
         <signal name="XLXN_55" />
         <signal name="XLXN_57" />
         <signal name="in_clk_manual" />
+        <signal name="out_flags_C_out" />
+        <signal name="out_flags_gt" />
+        <signal name="out_flags_eq" />
+        <signal name="out_flags_z" />
         <port polarity="Input" name="in_is_clk_low" />
         <port polarity="Input" name="in_clk" />
         <port polarity="Output" name="out_clk_internal" />
@@ -45,6 +49,10 @@
         <port polarity="Output" name="out_s6" />
         <port polarity="Output" name="out_s5" />
         <port polarity="Input" name="in_clk_manual" />
+        <port polarity="Output" name="out_flags_C_out" />
+        <port polarity="Output" name="out_flags_gt" />
+        <port polarity="Output" name="out_flags_eq" />
+        <port polarity="Output" name="out_flags_z" />
         <blockdef name="cpu">
             <timestamp>2022-4-28T0:36:41</timestamp>
             <rect width="2304" x="64" y="-2368" height="2304" />
@@ -235,11 +243,11 @@
             <blockpin name="out_C_in_enabled" />
             <blockpin name="out_C_out_flipflop_o" />
             <blockpin name="out_flags_clr" />
-            <blockpin name="out_flags_C_out" />
-            <blockpin name="out_flags_eq" />
-            <blockpin name="out_flags_gt" />
+            <blockpin signalname="out_flags_C_out" name="out_flags_C_out" />
+            <blockpin signalname="out_flags_eq" name="out_flags_eq" />
+            <blockpin signalname="out_flags_gt" name="out_flags_gt" />
             <blockpin name="out_flags_w" />
-            <blockpin name="out_flags_z" />
+            <blockpin signalname="out_flags_z" name="out_flags_z" />
             <blockpin name="out_iar_o(7:0)" />
             <blockpin name="out_iar_r" />
             <blockpin name="out_iar_w" />
@@ -467,5 +475,21 @@
         <branch name="in_clk_manual">
             <wire x2="464" y1="816" y2="816" x1="368" />
         </branch>
+        <branch name="out_flags_C_out">
+            <wire x2="3360" y1="2736" y2="2736" x1="3168" />
+        </branch>
+        <branch name="out_flags_gt">
+            <wire x2="3360" y1="2800" y2="2800" x1="3168" />
+        </branch>
+        <branch name="out_flags_eq">
+            <wire x2="3360" y1="2864" y2="2864" x1="3168" />
+        </branch>
+        <branch name="out_flags_z">
+            <wire x2="3360" y1="2928" y2="2928" x1="3168" />
+        </branch>
+        <iomarker fontsize="28" x="3360" y="2736" name="out_flags_C_out" orien="R0" />
+        <iomarker fontsize="28" x="3360" y="2800" name="out_flags_gt" orien="R0" />
+        <iomarker fontsize="28" x="3360" y="2864" name="out_flags_eq" orien="R0" />
+        <iomarker fontsize="28" x="3360" y="2928" name="out_flags_z" orien="R0" />
     </sheet>
 </drawing>

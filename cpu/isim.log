@@ -18,3 +18,4 @@ at 0 ps, Instance /cpu_facade_cpu_facade_sch_tb/UUT/XLXI_7/alu_inst/XLXI_2/ : Wa
 at 0 ps, Instance /cpu_facade_cpu_facade_sch_tb/UUT/XLXI_7/alu_inst/XLXI_2/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 at 0 ps, Instance /cpu_facade_cpu_facade_sch_tb/UUT/XLXI_7/alu_inst/XLXI_2/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 at 0 ps, Instance /cpu_facade_cpu_facade_sch_tb/UUT/XLXI_7/alu_inst/XLXI_2/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# exit 0
