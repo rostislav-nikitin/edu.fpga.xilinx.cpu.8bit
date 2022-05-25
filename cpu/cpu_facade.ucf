@@ -40,6 +40,15 @@ NET "out_flags_gt" LOC = N6;  ##  PIN3
 NET "out_flags_eq" LOC = M4;  ##  PIN3
 NET "out_flags_z" LOC = R2;  ##  PIN3
 
+NET "out_sysbus[7]" LOC = R5;  ##  PIN3
+NET "out_sysbus[6]" LOC = T6;  ##  PIN3
+NET "out_sysbus[5]" LOC = T7;  ##  PIN3
+NET "out_sysbus[4]" LOC = T9;  ##  PIN3
+NET "out_sysbus[3]" LOC = T12;  ##  PIN3
+NET "out_sysbus[2]" LOC = T13;  ##  PIN3
+NET "out_sysbus[1]" LOC = R14;  ##  PIN3
+NET "out_sysbus[0]" LOC = R15;  ##  PIN3
+
 
 NET "in_is_clk_low" LOC = B5;  ##  PIN3
 #NET "" LOC = B6  ##  PIN3

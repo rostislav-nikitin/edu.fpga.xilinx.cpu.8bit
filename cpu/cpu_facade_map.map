@@ -10,7 +10,7 @@ Target Device  : xa6slx9
 Target Package : ftg256
 Target Speed   : -3
 Mapper Version : aspartan6 -- $Revision: 1.55 $
-Mapped Date    : Tue May 24 06:13:10 2022
+Mapped Date    : Wed May 25 06:36:45 2022
 
 Mapping design into LUTs...
 Running directed packing...
@@ -23,7 +23,7 @@ Total REAL time at the beginning of Placer: 5 secs
 Total CPU  time at the beginning of Placer: 5 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:7a396f8b) REAL time: 5 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:88916de3) REAL time: 5 secs 
 
 Phase 2.7  Design Feasibility Check
 WARNING:Place:837 - Partially locked IO Bus is found. 
@@ -33,48 +33,48 @@ WARNING:Place:837 - Partially locked IO Bus is found.
    	 Comp: monitor<5>
    	 Comp: monitor<4>
 
-INFO:Place:834 - Only a subset of IOs are locked. Out of 28 IOs, 23 are locked
+INFO:Place:834 - Only a subset of IOs are locked. Out of 36 IOs, 31 are locked
    and 5 are not locked. If you would like to print the names of these IOs,
    please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
-Phase 2.7  Design Feasibility Check (Checksum:7a396f8b) REAL time: 5 secs 
+Phase 2.7  Design Feasibility Check (Checksum:88916de3) REAL time: 5 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:7a396f8b) REAL time: 5 secs 
+Phase 3.31  Local Placement Optimization (Checksum:88916de3) REAL time: 5 secs 
 
 Phase 4.2  Initial Placement for Architecture Specific Features
 ....
 Phase 4.2  Initial Placement for Architecture Specific Features
-(Checksum:fcf2e993) REAL time: 6 secs 
+(Checksum:ef8d6a51) REAL time: 6 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:fcf2e993) REAL time: 6 secs 
+Phase 5.36  Local Placement Optimization (Checksum:ef8d6a51) REAL time: 6 secs 
 
 Phase 6.30  Global Clock Region Assignment
-Phase 6.30  Global Clock Region Assignment (Checksum:fcf2e993) REAL time: 6 secs 
+Phase 6.30  Global Clock Region Assignment (Checksum:ef8d6a51) REAL time: 6 secs 
 
 Phase 7.3  Local Placement Optimization
-...
-Phase 7.3  Local Placement Optimization (Checksum:5630201b) REAL time: 6 secs 
+....
+Phase 7.3  Local Placement Optimization (Checksum:6146b461) REAL time: 6 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:5630201b) REAL time: 6 secs 
+Phase 8.5  Local Placement Optimization (Checksum:6146b461) REAL time: 6 secs 
 
 Phase 9.8  Global Placement
 .............
-.........
-Phase 9.8  Global Placement (Checksum:c85685f4) REAL time: 6 secs 
+......
+Phase 9.8  Global Placement (Checksum:dfcedfa) REAL time: 7 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:c85685f4) REAL time: 6 secs 
+Phase 10.5  Local Placement Optimization (Checksum:dfcedfa) REAL time: 7 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:6aab141c) REAL time: 7 secs 
+Phase 11.18  Placement Optimization (Checksum:9008de9a) REAL time: 7 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:6aab141c) REAL time: 7 secs 
+Phase 12.5  Local Placement Optimization (Checksum:9008de9a) REAL time: 7 secs 
 
 Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:6aab141c) REAL time: 7 secs 
+Phase 13.34  Placement Validation (Checksum:9008de9a) REAL time: 7 secs 
 
 Total REAL time to Placer completion: 7 secs 
 Total CPU  time to Placer completion: 7 secs 
@@ -83,18 +83,18 @@ Writing output files...
 WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_7/clkw is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_7/cc_ram_a_w is
-   sourced by a combinatorial pin. This is not good design practice. Use the CE
-   pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_7/clkr is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_7/cc_r0_w is sourced
-   by a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_7/clk_internal is
    sourced by a combinatorial pin. This is not good design practice. Use the CE
    pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_7/cc_ram_a_w is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_7/cc_r0_w is sourced
+   by a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
 
 Design Summary
 --------------
@@ -127,12 +127,12 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    79 out of   1,430    5%
+  Number of occupied Slices:                    80 out of   1,430    5%
   Nummber of MUXCYs used:                       28 out of   2,860    1%
-  Number of LUT Flip Flop pairs used:          238
-    Number with an unused Flip Flop:           129 out of     238   54%
-    Number with an unused LUT:                  38 out of     238   15%
-    Number of fully used LUT-FF pairs:          71 out of     238   29%
+  Number of LUT Flip Flop pairs used:          240
+    Number with an unused Flip Flop:           131 out of     240   54%
+    Number with an unused LUT:                  40 out of     240   16%
+    Number of fully used LUT-FF pairs:          69 out of     240   28%
     Number of unique control sets:              17
     Number of slice register sites lost
       to control set restrictions:              27 out of  11,440    1%
@@ -144,8 +144,8 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        28 out of     186   15%
-    Number of LOCed IOBs:                       23 out of      28   82%
+  Number of bonded IOBs:                        36 out of     186   19%
+    Number of LOCed IOBs:                       31 out of      36   86%
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of      32    0%
@@ -172,10 +172,10 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                4.20
+Average Fanout of Non-Clock Nets:                4.24
 
 Peak Memory Usage:  844 MB
-Total REAL time to MAP completion:  7 secs 
+Total REAL time to MAP completion:  8 secs 
 Total CPU time to MAP completion:   7 secs 
 
 Mapping completed.

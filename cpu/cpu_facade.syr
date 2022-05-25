@@ -542,7 +542,7 @@ Elaborating entity <CB16CE_HXILINX_cpu_facade> (architecture <Behavioral>) from 
 
 Elaborating entity <M8_1E_HXILINX_cpu_facade> (architecture <M8_1E_HXILINX_cpu_facade_V>) from library <work>.
 INFO:HDLCompiler:679 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 201. Case statement is complete. others clause is never selected
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 5306: Net <XLXI_7_in_manr_d_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 5307: Net <XLXI_7_in_manr_d_openSignal[7]> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -550,63 +550,62 @@ WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_
 
 Synthesizing Unit <cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <manr_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_alu_x> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_iar_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_ir_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_ram_a_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_sysbus> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_temp_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <manr_r> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <manr_w> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_acc_r> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_acc_w> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_alu_C_in> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_alu_C_out> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_alu_eq> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_alu_gt> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_alu_z> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_bus1> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_can_read> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_can_write> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_C_in_enabled> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_C_out_flipflop_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_flags_clr> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_flags_w> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_iar_r> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_iar_w> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_ir_w> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_is_bus1_w> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_op_alt_nop> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_op_alu> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_op_alu_add> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_op_alu_and> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_op_alu_lshift> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_op_alu_nop> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_op_alu_not> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_op_alu_or> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_op_alu_rshift> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_op_alu_xor> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_op_flg_clf> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_op_jmp_ifjmp> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_op_jmp_jmp> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_op_jmp_jmpr> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_op_ls_ld> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_op_ls_ldc> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_op_ls_st> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_ram_a_w> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_ram_r> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_ram_w> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_r0_r> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_r1_r> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_r1_w> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_r2_r> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_r2_w> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_r3_r> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_r3_w> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_sysbus_released> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5426: Output port <out_temp_w> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5535: Output port <G> of the instance <XLXI_9> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <manr_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_alu_x> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_iar_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_ir_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_ram_a_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_temp_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <manr_r> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <manr_w> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_acc_r> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_acc_w> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_alu_C_in> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_alu_C_out> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_alu_eq> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_alu_gt> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_alu_z> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_bus1> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_can_read> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_can_write> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_C_in_enabled> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_C_out_flipflop_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_flags_clr> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_flags_w> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_iar_r> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_iar_w> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_ir_w> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_is_bus1_w> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_op_alt_nop> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_op_alu> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_op_alu_add> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_op_alu_and> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_op_alu_lshift> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_op_alu_nop> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_op_alu_not> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_op_alu_or> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_op_alu_rshift> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_op_alu_xor> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_op_flg_clf> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_op_jmp_ifjmp> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_op_jmp_jmp> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_op_jmp_jmpr> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_op_ls_ld> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_op_ls_ldc> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_op_ls_st> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_ram_a_w> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_ram_r> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_ram_w> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_r0_r> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_r1_r> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_r1_w> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_r2_r> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_r2_w> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_r3_r> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_r3_w> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_sysbus_released> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5427: Output port <out_temp_w> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5536: Output port <G> of the instance <XLXI_9> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <XLXI_7_in_manr_d_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	no macro.
@@ -1240,9 +1239,9 @@ Primitive and Black Box Usage:
 #      RAM256X1S                   : 8
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 27
+# IO Buffers                       : 35
 #      IBUF                        : 4
-#      OBUF                        : 23
+#      OBUF                        : 31
 # Others                           : 4
 #      PULLDOWN                    : 1
 #      PULLUP                      : 3
@@ -1268,8 +1267,8 @@ Slice Logic Distribution:
    Number of unique control sets:        18
 
 IO Utilization: 
- Number of IOs:                          28
- Number of bonded IOBs:                  28  out of    186    15%  
+ Number of IOs:                          36
+ Number of bonded IOBs:                  36  out of    186    19%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
@@ -1319,8 +1318,8 @@ Speed Grade: -3
 
    Minimum period: 7.478ns (Maximum Frequency: 133.729MHz)
    Minimum input arrival time before clock: 19.953ns
-   Maximum output required time after clock: 13.724ns
-   Maximum combinational path delay: 13.461ns
+   Maximum output required time after clock: 22.755ns
+   Maximum combinational path delay: 23.634ns
 
 Timing Details:
 ---------------
@@ -1608,38 +1607,51 @@ Offset:              3.648ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_7/clk_internal'
-  Total number of paths / destination ports: 4 / 4
+  Total number of paths / destination ports: 404 / 12
 -------------------------------------------------------------------------
-Offset:              9.173ns (Levels of Logic = 6)
+Offset:              19.346ns (Levels of Logic = 17)
   Source:            XLXI_7/clck_gen/XLXI_4/q_tmp (FF)
-  Destination:       out_r0_w (PAD)
+  Destination:       out_sysbus<7> (PAD)
   Source Clock:      XLXI_7/clk_internal falling
 
-  Data Path: XLXI_7/clck_gen/XLXI_4/q_tmp to out_r0_w
+  Data Path: XLXI_7/clck_gen/XLXI_4/q_tmp to out_sysbus<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              5   0.447   1.059  q_tmp (q_tmp)
+     FDC:C->Q              5   0.447   1.079  q_tmp (q_tmp)
      end scope: 'XLXI_7/clck_gen/XLXI_4:Q'
-     AND2B1:I1->O         13   0.223   1.277  XLXI_7/clck_gen/XLXI_10 (XLXI_7/clkw)
-     AND2:I1->O            9   0.223   1.174  XLXI_7/cpu_ctl/XLXI_80 (XLXI_7/cc_r0_w)
-     OR2:I1->O             9   0.223   0.829  XLXI_7/XLXI_375 (XLXI_7/r0_w)
-     BUF:I->O              1   0.568   0.579  XLXI_7/XLXI_220 (out_r0_w_OBUF)
-     OBUF:I->O                 2.571          out_r0_w_OBUF (out_r0_w)
+     OR2:I0->O            12   0.203   0.908  XLXI_7/clck_gen/XLXI_9 (XLXI_7/clkr)
+     INV:I->O              2   0.568   0.981  XLXI_7/XLXI_212 (XLXI_7/sysbus_released)
+     AND3:I0->O            9   0.203   1.194  XLXI_7/XLXI_326 (XLXI_7/can_read)
+     AND2:I0->O            1   0.203   0.944  XLXI_7/XLXI_525 (XLXI_7/manual_r2_r)
+     OR2:I0->O             2   0.203   0.616  XLXI_7/XLXI_526 (XLXI_7/r2_r)
+     BUF:I->O              3   0.568   0.650  XLXI_7/XLXI_130/XLXI_8 (XLXI_7/XLXI_130/i<5>)
+     INV:I->O              1   0.568   0.808  XLXI_7/XLXI_130/XLXI_2/XLXI_10 (XLXI_7/XLXI_130/XLXI_2/XLXN_6)
+     begin scope: 'XLXI_7/XLXI_130/XLXI_2/XLXI_4:I2'
+     LUT3:I0->O            1   0.205   0.580  O_SW0 (N01)
+     LUT6:I5->O            1   0.205   0.579  O (O)
+     end scope: 'XLXI_7/XLXI_130/XLXI_2/XLXI_4:O'
+     INV:I->O              8   0.568   0.907  XLXI_7/XLXI_130/XLXI_21 (XLXI_7/XLXI_130/XLXN_73)
+     begin scope: 'XLXI_7/XLXI_130/XLXI_1/XLXI_17:E'
+     LUT2:I0->O            1   0.203   0.579  Mmux_O11 (O)
+     end scope: 'XLXI_7/XLXI_130/XLXI_1/XLXI_17:O'
+     BUF:I->O             20   0.568   1.092  XLXI_7/XLXI_130/XLXI_1/XLXI_21 (XLXI_7/sysbus<3>)
+     BUF:I->O              1   0.568   0.579  XLXI_7/XLXI_860/XLXI_79 (out_sysbus_3_OBUF)
+     OBUF:I->O                 2.571          out_sysbus_3_OBUF (out_sysbus<3>)
     ----------------------------------------
-    Total                      9.173ns (4.255ns logic, 4.918ns route)
-                                       (46.4% logic, 53.6% route)
+    Total                     19.346ns (7.851ns logic, 11.495ns route)
+                                       (40.6% logic, 59.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'in_clk'
-  Total number of paths / destination ports: 4 / 4
+  Total number of paths / destination ports: 404 / 12
 -------------------------------------------------------------------------
-Offset:              12.582ns (Levels of Logic = 9)
+Offset:              22.755ns (Levels of Logic = 20)
   Source:            XLXI_7/XLXI_917/COUNT_3 (FF)
-  Destination:       out_r0_w (PAD)
+  Destination:       out_sysbus<7> (PAD)
   Source Clock:      in_clk rising
 
-  Data Path: XLXI_7/XLXI_917/COUNT_3 to out_r0_w
+  Data Path: XLXI_7/XLXI_917/COUNT_3 to out_sysbus<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -1647,70 +1659,107 @@ Offset:              12.582ns (Levels of Logic = 9)
      end scope: 'XLXI_7/XLXI_917:Q<3>'
      BUF:I->O              1   0.568   0.944  XLXI_7/XLXI_916 (XLXI_7/clk_low)
      AND2:I0->O            1   0.203   0.944  XLXI_7/XLXI_919 (XLXI_7/XLXN_252)
-     OR2:I0->O             4   0.203   1.048  XLXI_7/XLXI_924 (XLXI_7/clk_internal)
-     AND2B1:I0->O         13   0.203   1.277  XLXI_7/clck_gen/XLXI_10 (XLXI_7/clkw)
-     AND2:I1->O            9   0.223   1.174  XLXI_7/cpu_ctl/XLXI_80 (XLXI_7/cc_r0_w)
-     OR2:I1->O             9   0.223   0.829  XLXI_7/XLXI_375 (XLXI_7/r0_w)
-     BUF:I->O              1   0.568   0.579  XLXI_7/XLXI_220 (out_r0_w_OBUF)
-     OBUF:I->O                 2.571          out_r0_w_OBUF (out_r0_w)
+     OR2:I0->O             4   0.203   1.028  XLXI_7/XLXI_924 (XLXI_7/clk_internal)
+     OR2:I1->O            12   0.223   0.908  XLXI_7/clck_gen/XLXI_9 (XLXI_7/clkr)
+     INV:I->O              2   0.568   0.981  XLXI_7/XLXI_212 (XLXI_7/sysbus_released)
+     AND3:I0->O            9   0.203   1.194  XLXI_7/XLXI_326 (XLXI_7/can_read)
+     AND2:I0->O            1   0.203   0.944  XLXI_7/XLXI_525 (XLXI_7/manual_r2_r)
+     OR2:I0->O             2   0.203   0.616  XLXI_7/XLXI_526 (XLXI_7/r2_r)
+     BUF:I->O              3   0.568   0.650  XLXI_7/XLXI_130/XLXI_8 (XLXI_7/XLXI_130/i<5>)
+     INV:I->O              1   0.568   0.808  XLXI_7/XLXI_130/XLXI_2/XLXI_10 (XLXI_7/XLXI_130/XLXI_2/XLXN_6)
+     begin scope: 'XLXI_7/XLXI_130/XLXI_2/XLXI_4:I2'
+     LUT3:I0->O            1   0.205   0.580  O_SW0 (N01)
+     LUT6:I5->O            1   0.205   0.579  O (O)
+     end scope: 'XLXI_7/XLXI_130/XLXI_2/XLXI_4:O'
+     INV:I->O              8   0.568   0.907  XLXI_7/XLXI_130/XLXI_21 (XLXI_7/XLXI_130/XLXN_73)
+     begin scope: 'XLXI_7/XLXI_130/XLXI_1/XLXI_17:E'
+     LUT2:I0->O            1   0.203   0.579  Mmux_O11 (O)
+     end scope: 'XLXI_7/XLXI_130/XLXI_1/XLXI_17:O'
+     BUF:I->O             20   0.568   1.092  XLXI_7/XLXI_130/XLXI_1/XLXI_21 (XLXI_7/sysbus<3>)
+     BUF:I->O              1   0.568   0.579  XLXI_7/XLXI_860/XLXI_79 (out_sysbus_3_OBUF)
+     OBUF:I->O                 2.571          out_sysbus_3_OBUF (out_sysbus<3>)
     ----------------------------------------
-    Total                     12.582ns (5.209ns logic, 7.373ns route)
-                                       (41.4% logic, 58.6% route)
+    Total                     22.755ns (8.845ns logic, 13.910ns route)
+                                       (38.9% logic, 61.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_7/clck_gen/XLXI_4/q_tmp'
-  Total number of paths / destination ports: 27 / 7
+  Total number of paths / destination ports: 2595 / 15
 -------------------------------------------------------------------------
-Offset:              13.724ns (Levels of Logic = 11)
-  Source:            XLXI_7/cpu_ctl/stp/XLXI_24/COUNT_2 (FF)
-  Destination:       out_r0_w (PAD)
+Offset:              21.476ns (Levels of Logic = 20)
+  Source:            XLXI_7/cpu_ctl/stp/XLXI_24/COUNT_0 (FF)
+  Destination:       out_sysbus<7> (PAD)
   Source Clock:      XLXI_7/clck_gen/XLXI_4/q_tmp falling
 
-  Data Path: XLXI_7/cpu_ctl/stp/XLXI_24/COUNT_2 to out_r0_w
+  Data Path: XLXI_7/cpu_ctl/stp/XLXI_24/COUNT_0 to out_sysbus<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             8   0.447   1.031  COUNT_2 (COUNT_2)
-     end scope: 'XLXI_7/cpu_ctl/stp/XLXI_24:Q2'
-     begin scope: 'XLXI_7/cpu_ctl/stp/XLXI_25:A2'
-     LUT3:I0->O            8   0.205   1.147  Mmux_d_tmp61 (D5)
-     end scope: 'XLXI_7/cpu_ctl/stp/XLXI_25:D5'
-     AND2:I1->O            2   0.223   0.864  XLXI_7/cpu_ctl/XLXI_487 (XLXI_7/cpu_ctl/ls_ld_s5)
-     OR4:I2->O             4   0.320   1.028  XLXI_7/cpu_ctl/XLXI_465 (XLXI_7/cpu_ctl/raw_int)
-     AND2:I1->O            1   0.223   0.924  XLXI_7/cpu_ctl/XLXI_458 (XLXI_7/cpu_ctl/ra0_w)
-     OR2:I1->O             1   0.223   0.944  XLXI_7/cpu_ctl/XLXI_475 (XLXI_7/cpu_ctl/XLXN_158)
-     AND2:I0->O            9   0.203   1.174  XLXI_7/cpu_ctl/XLXI_80 (XLXI_7/cc_r0_w)
-     OR2:I1->O             9   0.223   0.829  XLXI_7/XLXI_375 (XLXI_7/r0_w)
-     BUF:I->O              1   0.568   0.579  XLXI_7/XLXI_220 (out_r0_w_OBUF)
-     OBUF:I->O                 2.571          out_r0_w_OBUF (out_r0_w)
+     FDCE:C->Q            10   0.447   1.085  COUNT_0 (COUNT_0)
+     end scope: 'XLXI_7/cpu_ctl/stp/XLXI_24:Q0'
+     begin scope: 'XLXI_7/cpu_ctl/stp/XLXI_25:A0'
+     LUT3:I0->O           11   0.205   1.227  Mmux_d_tmp51 (D4)
+     end scope: 'XLXI_7/cpu_ctl/stp/XLXI_25:D4'
+     AND2:I1->O            2   0.223   0.961  XLXI_7/cpu_ctl/XLXI_255 (XLXI_7/cpu_ctl/ls_ldst_s4)
+     OR3:I1->O             4   0.223   1.028  XLXI_7/cpu_ctl/XLXI_399 (XLXI_7/cpu_ctl/rb_int)
+     AND2:I1->O            1   0.223   0.924  XLXI_7/cpu_ctl/XLXI_402 (XLXI_7/cpu_ctl/rb2_r)
+     OR2:I1->O             1   0.223   0.924  XLXI_7/cpu_ctl/XLXI_409 (XLXI_7/cpu_ctl/XLXN_813)
+     AND2:I1->O            1   0.223   0.924  XLXI_7/cpu_ctl/XLXI_140 (XLXI_7/cc_r2_r)
+     OR2:I1->O             2   0.223   0.616  XLXI_7/XLXI_526 (XLXI_7/r2_r)
+     BUF:I->O              3   0.568   0.650  XLXI_7/XLXI_130/XLXI_8 (XLXI_7/XLXI_130/i<5>)
+     INV:I->O              1   0.568   0.808  XLXI_7/XLXI_130/XLXI_2/XLXI_10 (XLXI_7/XLXI_130/XLXI_2/XLXN_6)
+     begin scope: 'XLXI_7/XLXI_130/XLXI_2/XLXI_4:I2'
+     LUT3:I0->O            1   0.205   0.580  O_SW0 (N01)
+     LUT6:I5->O            1   0.205   0.579  O (O)
+     end scope: 'XLXI_7/XLXI_130/XLXI_2/XLXI_4:O'
+     INV:I->O              8   0.568   0.907  XLXI_7/XLXI_130/XLXI_21 (XLXI_7/XLXI_130/XLXN_73)
+     begin scope: 'XLXI_7/XLXI_130/XLXI_1/XLXI_17:E'
+     LUT2:I0->O            1   0.203   0.579  Mmux_O11 (O)
+     end scope: 'XLXI_7/XLXI_130/XLXI_1/XLXI_17:O'
+     BUF:I->O             20   0.568   1.092  XLXI_7/XLXI_130/XLXI_1/XLXI_21 (XLXI_7/sysbus<3>)
+     BUF:I->O              1   0.568   0.579  XLXI_7/XLXI_860/XLXI_79 (out_sysbus_3_OBUF)
+     OBUF:I->O                 2.571          out_sysbus_3_OBUF (out_sysbus<3>)
     ----------------------------------------
-    Total                     13.724ns (5.206ns logic, 8.518ns route)
-                                       (37.9% logic, 62.1% route)
+    Total                     21.476ns (8.014ns logic, 13.462ns route)
+                                       (37.3% logic, 62.7% route)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 13 / 4
+  Total number of paths / destination ports: 1437 / 12
 -------------------------------------------------------------------------
-Delay:               13.461ns (Levels of Logic = 9)
+Delay:               23.634ns (Levels of Logic = 20)
   Source:            in_is_clk_manual (PAD)
-  Destination:       out_r0_w (PAD)
+  Destination:       out_sysbus<7> (PAD)
 
-  Data Path: in_is_clk_manual to out_r0_w
+  Data Path: in_is_clk_manual to out_sysbus<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             1   1.222   0.579  in_is_clk_manual_IBUF (in_is_clk_manual_IBUF)
      INV:I->O              4   0.568   1.028  XLXI_14 (XLXN_55)
      AND2:I1->O            1   0.223   0.924  XLXI_7/XLXI_918 (XLXI_7/XLXN_247)
-     OR2:I1->O             4   0.223   1.048  XLXI_7/XLXI_924 (XLXI_7/clk_internal)
-     AND2B1:I0->O         13   0.203   1.277  XLXI_7/clck_gen/XLXI_10 (XLXI_7/clkw)
-     AND2:I1->O            9   0.223   1.174  XLXI_7/cpu_ctl/XLXI_80 (XLXI_7/cc_r0_w)
-     OR2:I1->O             9   0.223   0.829  XLXI_7/XLXI_375 (XLXI_7/r0_w)
-     BUF:I->O              1   0.568   0.579  XLXI_7/XLXI_220 (out_r0_w_OBUF)
-     OBUF:I->O                 2.571          out_r0_w_OBUF (out_r0_w)
+     OR2:I1->O             4   0.223   1.028  XLXI_7/XLXI_924 (XLXI_7/clk_internal)
+     OR2:I1->O            12   0.223   0.908  XLXI_7/clck_gen/XLXI_9 (XLXI_7/clkr)
+     INV:I->O              2   0.568   0.981  XLXI_7/XLXI_212 (XLXI_7/sysbus_released)
+     AND3:I0->O            9   0.203   1.194  XLXI_7/XLXI_326 (XLXI_7/can_read)
+     AND2:I0->O            1   0.203   0.944  XLXI_7/XLXI_525 (XLXI_7/manual_r2_r)
+     OR2:I0->O             2   0.203   0.616  XLXI_7/XLXI_526 (XLXI_7/r2_r)
+     BUF:I->O              3   0.568   0.650  XLXI_7/XLXI_130/XLXI_8 (XLXI_7/XLXI_130/i<5>)
+     INV:I->O              1   0.568   0.808  XLXI_7/XLXI_130/XLXI_2/XLXI_10 (XLXI_7/XLXI_130/XLXI_2/XLXN_6)
+     begin scope: 'XLXI_7/XLXI_130/XLXI_2/XLXI_4:I2'
+     LUT3:I0->O            1   0.205   0.580  O_SW0 (N01)
+     LUT6:I5->O            1   0.205   0.579  O (O)
+     end scope: 'XLXI_7/XLXI_130/XLXI_2/XLXI_4:O'
+     INV:I->O              8   0.568   0.907  XLXI_7/XLXI_130/XLXI_21 (XLXI_7/XLXI_130/XLXN_73)
+     begin scope: 'XLXI_7/XLXI_130/XLXI_1/XLXI_17:E'
+     LUT2:I0->O            1   0.203   0.579  Mmux_O11 (O)
+     end scope: 'XLXI_7/XLXI_130/XLXI_1/XLXI_17:O'
+     BUF:I->O             20   0.568   1.092  XLXI_7/XLXI_130/XLXI_1/XLXI_21 (XLXI_7/sysbus<3>)
+     BUF:I->O              1   0.568   0.579  XLXI_7/XLXI_860/XLXI_79 (out_sysbus_3_OBUF)
+     OBUF:I->O                 2.571          out_sysbus_3_OBUF (out_sysbus<3>)
     ----------------------------------------
-    Total                     13.461ns (6.024ns logic, 7.437ns route)
-                                       (44.8% logic, 55.2% route)
+    Total                     23.634ns (9.660ns logic, 13.974ns route)
+                                       (40.9% logic, 59.1% route)
 
 =========================================================================
 
@@ -1776,14 +1825,14 @@ in_clk         |    7.478|         |         |         |
 
 
 Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.92 secs
  
 --> 
 
 
-Total memory usage is 614516 kilobytes
+Total memory usage is 614532 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  232 (   0 filtered)
-Number of infos    :   81 (   0 filtered)
+Number of infos    :   80 (   0 filtered)
 

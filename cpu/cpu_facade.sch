@@ -32,6 +32,7 @@
         <signal name="out_flags_gt" />
         <signal name="out_flags_eq" />
         <signal name="out_flags_z" />
+        <signal name="out_sysbus(7:0)" />
         <port polarity="Input" name="in_is_clk_low" />
         <port polarity="Input" name="in_clk" />
         <port polarity="Output" name="out_clk_internal" />
@@ -53,6 +54,7 @@
         <port polarity="Output" name="out_flags_gt" />
         <port polarity="Output" name="out_flags_eq" />
         <port polarity="Output" name="out_flags_z" />
+        <port polarity="Output" name="out_sysbus(7:0)" />
         <blockdef name="cpu">
             <timestamp>2022-4-28T0:36:41</timestamp>
             <rect width="2304" x="64" y="-2368" height="2304" />
@@ -289,7 +291,7 @@
             <blockpin signalname="out_s4" name="out_s4" />
             <blockpin signalname="out_s5" name="out_s5" />
             <blockpin signalname="out_s6" name="out_s6" />
-            <blockpin name="out_sysbus(7:0)" />
+            <blockpin signalname="out_sysbus(7:0)" name="out_sysbus(7:0)" />
             <blockpin name="out_sysbus_released" />
             <blockpin name="out_temp_o(7:0)" />
             <blockpin name="out_temp_w" />
@@ -491,5 +493,9 @@
         <iomarker fontsize="28" x="3360" y="2800" name="out_flags_gt" orien="R0" />
         <iomarker fontsize="28" x="3360" y="2864" name="out_flags_eq" orien="R0" />
         <iomarker fontsize="28" x="3360" y="2928" name="out_flags_z" orien="R0" />
+        <branch name="out_sysbus(7:0)">
+            <wire x2="832" y1="480" y2="592" x1="832" />
+        </branch>
+        <iomarker fontsize="28" x="832" y="480" name="out_sysbus(7:0)" orien="R270" />
     </sheet>
 </drawing>

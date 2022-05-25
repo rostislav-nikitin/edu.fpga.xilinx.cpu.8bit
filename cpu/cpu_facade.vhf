@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu_facade.vhf
--- /___/   /\     Timestamp : 05/24/2022 06:12:51
+-- /___/   /\     Timestamp : 05/25/2022 06:36:27
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -5288,6 +5288,7 @@ entity cpu_facade is
           out_flags_gt     : out   std_logic; 
           out_flags_z      : out   std_logic; 
           out_r0_w         : out   std_logic; 
+          out_sysbus       : out   std_logic_vector (7 downto 0); 
           out_s1           : out   std_logic; 
           out_s2           : out   std_logic; 
           out_s3           : out   std_logic; 
@@ -5518,7 +5519,7 @@ begin
                 out_r2_w=>open,
                 out_r3_r=>open,
                 out_r3_w=>open,
-                out_sysbus=>open,
+                out_sysbus(7 downto 0)=>out_sysbus(7 downto 0),
                 out_sysbus_released=>open,
                 out_s1=>out_s1,
                 out_s2=>out_s2,
