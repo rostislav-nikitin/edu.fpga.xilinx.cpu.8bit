@@ -1,2 +1,42 @@
-select figure at 2087 2739 8 -branches -sn=1
-select figure at 7869 3565 8 -branches -sn=1
+add autowire 736 1072 640 1072 8 -sn=1
+select figure at 695 1071 8 -branches -sn=1
+name branch at 640 1072 8 in_read_reg_en -sn=1
+add iomarker 640 1072 0 Unknown Unknown -sn=1
+undo
+undo
+undo
+undo
+add autowire 736 1072 640 1072 8 -sn=1
+undo
+add instance inv 464 1104 R0 -sn=1
+add autowire 736 1072 688 1072 8 -sn=1
+add autowire 464 1072 400 1072 8 -sn=1
+select figure at 434 1068 8 -branches -sn=1
+name branch at 400 1072 8 in_read_en -sn=1
+name branch at 400 1072 8 in_read_reg_en -sn=1
+select figure at 53 989 8 -branches -sn=1
+select figure at 1844 3467 8 -branches -sn=1
+add instance inv 864 3472 R270 -sn=1
+add instance inv 1056 3472 R270 -sn=1
+add instance inv 1248 3472 R270 -sn=1
+add instance inv 1376 3472 R270 -sn=1
+add instance inv 1504 3472 R270 -sn=1
+add instance inv 1632 3472 R270 -sn=1
+add instance inv 1760 3472 R270 -sn=1
+select figure at 846 3387 8 -branches -sn=1
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+redo
+redo
+redo
+redo
+redo
+redo
+redo
+redo

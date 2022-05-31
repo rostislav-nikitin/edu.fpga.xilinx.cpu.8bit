@@ -56,7 +56,25 @@ NET "in_is_clk_low" LOC = B5;  ##  PIN3
 #NET "out_s6" LOC = A8;  ##  PIN3
 NET "in_is_clk_manual" LOC = A9;  ##  PIN3
 NET "in_clk_manual" LOC = B10;  ##  PIN3
-#NET "out_r0_w" LOC = C15;  ##  PIN3
+NET "out_r0_w" LOC = D16;  ##  PIN3
+
+
+#NET "input" LOC = A12;  ##  PIN3 
+NET "in_r3_r" LOC = A13;  ##  PIN3 
+NET "in_r2_r" LOC = B14;  ##  PIN3 
+NET "in_r1_r" LOC = B16;  ##  PIN3 
+NET "in_r0_r" LOC = C16;  ##  PIN3 
+NET "in_ram_r" LOC = E15;  ##  PIN3 
+NET "in_acc_r" LOC = E11;  ##  PIN3 
+#NET "in_ir_r" LOC = D11;  ##  PIN3 
+NET "in_iar_r" LOC = F15;  ##  PIN3 
+#NET "none" LOC = G16;  ##  PIN3  
+
+NET "in_read_reg_en" LOC = H16;  ##  PIN3
+
+NET "out_can_read" LOC = C15;  ##  PIN3
+
+
 
 #NET "out_s1" LOC = P4;  ##  PIN3
 #NET "out_s2" LOC = N5;  ##  PIN3

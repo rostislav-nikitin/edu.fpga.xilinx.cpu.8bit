@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu_facade.vhf
--- /___/   /\     Timestamp : 05/25/2022 06:36:27
+-- /___/   /\     Timestamp : 05/31/2022 09:50:59
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -5273,12 +5273,21 @@ library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
 entity cpu_facade is
-   port ( in_clk           : in    std_logic; 
+   port ( in_acc_r         : in    std_logic; 
+          in_clk           : in    std_logic; 
           in_clk_manual    : in    std_logic; 
+          in_iar_r         : in    std_logic; 
           in_is_clk_low    : in    std_logic; 
           in_is_clk_manual : in    std_logic; 
+          in_ram_r         : in    std_logic; 
+          in_read_reg_en   : in    std_logic; 
           in_rst           : in    std_logic; 
+          in_r0_r          : in    std_logic; 
+          in_r1_r          : in    std_logic; 
+          in_r2_r          : in    std_logic; 
+          in_r3_r          : in    std_logic; 
           monitor          : out   std_logic_vector (7 downto 0); 
+          out_can_read     : out   std_logic; 
           out_clkc         : out   std_logic; 
           out_clkr         : out   std_logic; 
           out_clkw         : out   std_logic; 
@@ -5304,6 +5313,14 @@ architecture BEHAVIORAL of cpu_facade is
    signal XLXN_52                     : std_logic;
    signal XLXN_55                     : std_logic;
    signal XLXN_57                     : std_logic;
+   signal XLXN_60                     : std_logic;
+   signal XLXN_61                     : std_logic;
+   signal XLXN_62                     : std_logic;
+   signal XLXN_63                     : std_logic;
+   signal XLXN_64                     : std_logic;
+   signal XLXN_65                     : std_logic;
+   signal XLXN_66                     : std_logic;
+   signal XLXN_67                     : std_logic;
    signal XLXI_7_in_manr_d_openSignal : std_logic_vector (7 downto 0);
    component cpu_MUSER_cpu_facade
       port ( in_acc_r             : in    std_logic; 
@@ -5425,13 +5442,13 @@ architecture BEHAVIORAL of cpu_facade is
    
 begin
    XLXI_7 : cpu_MUSER_cpu_facade
-      port map (in_acc_r=>XLXN_46,
+      port map (in_acc_r=>XLXN_66,
                 in_acc_w=>XLXN_46,
                 in_bus1=>XLXN_46,
                 in_clk=>in_clk,
                 in_clk_external=>XLXN_46,
                 in_clk_manual=>XLXN_57,
-                in_iar_r=>XLXN_46,
+                in_iar_r=>XLXN_65,
                 in_iar_w=>XLXN_46,
                 in_ir_w=>XLXN_46,
                 in_is_bus1_w=>XLXN_46,
@@ -5443,17 +5460,17 @@ begin
                 in_manr_r=>XLXN_46,
                 in_manr_w=>XLXN_46,
                 in_ram_a_w=>XLXN_46,
-                in_ram_r=>XLXN_46,
+                in_ram_r=>XLXN_67,
                 in_ram_w=>XLXN_46,
-                in_read_reg_en=>XLXN_46,
+                in_read_reg_en=>XLXN_60,
                 in_rst=>in_rst,
-                in_r0_r=>XLXN_46,
+                in_r0_r=>XLXN_63,
                 in_r0_w=>XLXN_46,
-                in_r1_r=>XLXN_46,
+                in_r1_r=>XLXN_61,
                 in_r1_w=>XLXN_46,
-                in_r2_r=>XLXN_46,
+                in_r2_r=>XLXN_62,
                 in_r2_w=>XLXN_46,
-                in_r3_r=>XLXN_46,
+                in_r3_r=>XLXN_64,
                 in_r3_w=>XLXN_46,
                 in_temp_w=>XLXN_46,
                 in_write_reg_en=>XLXN_46,
@@ -5470,7 +5487,7 @@ begin
                 out_alu_x=>open,
                 out_alu_z=>open,
                 out_bus1=>open,
-                out_can_read=>open,
+                out_can_read=>out_can_read,
                 out_can_write=>open,
                 out_clkc=>out_clkc,
                 out_clkr=>out_clkr,
@@ -5547,6 +5564,38 @@ begin
    XLXI_15 : INV
       port map (I=>in_clk_manual,
                 O=>XLXN_57);
+   
+   XLXI_16 : INV
+      port map (I=>in_read_reg_en,
+                O=>XLXN_60);
+   
+   XLXI_24 : INV
+      port map (I=>in_r1_r,
+                O=>XLXN_61);
+   
+   XLXI_25 : INV
+      port map (I=>in_r0_r,
+                O=>XLXN_63);
+   
+   XLXI_26 : INV
+      port map (I=>in_r2_r,
+                O=>XLXN_62);
+   
+   XLXI_27 : INV
+      port map (I=>in_r3_r,
+                O=>XLXN_64);
+   
+   XLXI_28 : INV
+      port map (I=>in_iar_r,
+                O=>XLXN_65);
+   
+   XLXI_29 : INV
+      port map (I=>in_acc_r,
+                O=>XLXN_66);
+   
+   XLXI_30 : INV
+      port map (I=>in_ram_r,
+                O=>XLXN_67);
    
 end BEHAVIORAL;
 

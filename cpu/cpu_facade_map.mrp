@@ -10,7 +10,7 @@ Target Device  : xa6slx9
 Target Package : ftg256
 Target Speed   : -3
 Mapper Version : aspartan6 -- $Revision: 1.55 $
-Mapped Date    : Wed May 25 06:36:45 2022
+Mapped Date    : Tue May 31 10:18:56 2022
 
 Design Summary
 --------------
@@ -22,9 +22,9 @@ Slice Logic Utilization:
     Number used as Latches:                     84
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                1
-  Number of Slice LUTs:                        200 out of   5,720    3%
-    Number used as logic:                      166 out of   5,720    2%
-      Number using O6 output only:             140
+  Number of Slice LUTs:                        208 out of   5,720    3%
+    Number used as logic:                      174 out of   5,720    3%
+      Number using O6 output only:             148
       Number using O5 output only:              16
       Number using O5 and O6:                   10
       Number used as ROM:                        0
@@ -41,12 +41,12 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    80 out of   1,430    5%
+  Number of occupied Slices:                   100 out of   1,430    6%
   Nummber of MUXCYs used:                       28 out of   2,860    1%
-  Number of LUT Flip Flop pairs used:          240
-    Number with an unused Flip Flop:           131 out of     240   54%
-    Number with an unused LUT:                  40 out of     240   16%
-    Number of fully used LUT-FF pairs:          69 out of     240   28%
+  Number of LUT Flip Flop pairs used:          264
+    Number with an unused Flip Flop:           155 out of     264   58%
+    Number with an unused LUT:                  56 out of     264   21%
+    Number of fully used LUT-FF pairs:          53 out of     264   20%
     Number of unique control sets:              17
     Number of slice register sites lost
       to control set restrictions:              27 out of  11,440    1%
@@ -58,8 +58,8 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        36 out of     186   19%
-    Number of LOCed IOBs:                       31 out of      36   86%
+  Number of bonded IOBs:                        45 out of     186   24%
+    Number of LOCed IOBs:                       41 out of      45   91%
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of      32    0%
@@ -86,10 +86,10 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                4.24
+Average Fanout of Non-Clock Nets:                4.07
 
 Peak Memory Usage:  844 MB
-Total REAL time to MAP completion:  8 secs 
+Total REAL time to MAP completion:  7 secs 
 Total CPU time to MAP completion:   7 secs 
 
 Table of Contents
@@ -120,21 +120,21 @@ WARNING:Place:837 - Partially locked IO Bus is found.
    	 Comp: monitor<5>
    	 Comp: monitor<4>
 
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_7/cc_r0_w is sourced
+   by a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_7/clkw is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_7/cc_ram_a_w is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_7/clkr is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_7/clk_internal is
    sourced by a combinatorial pin. This is not good design practice. Use the CE
    pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_7/cc_ram_a_w is
-   sourced by a combinatorial pin. This is not good design practice. Use the CE
-   pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_7/cc_r0_w is sourced
-   by a combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
 
 Section 3 - Informational
 -------------------------
@@ -147,16 +147,16 @@ INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
    1.260 Volts)
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
-INFO:Place:834 - Only a subset of IOs are locked. Out of 36 IOs, 31 are locked
-   and 5 are not locked. If you would like to print the names of these IOs,
+INFO:Place:834 - Only a subset of IOs are locked. Out of 45 IOs, 41 are locked
+   and 4 are not locked. If you would like to print the names of these IOs,
    please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
 INFO:Pack:1650 - Map created a placed design.
 
 Section 4 - Removed Logic Summary
 ---------------------------------
- 293 block(s) removed
-  46 block(s) optimized away
- 213 signal(s) removed
+ 291 block(s) removed
+  38 block(s) optimized away
+ 212 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -265,10 +265,7 @@ Loadless block "XLXI_7/XLXI_799/XLXI_81" (BUF) removed.
 Loadless block "XLXI_7/XLXI_799/XLXI_82" (BUF) removed.
 Loadless block "XLXI_7/XLXI_799/XLXI_83" (BUF) removed.
 Loadless block "XLXI_7/XLXI_844" (BUF) removed.
- The signal "XLXI_7/sysbus_released" is loadless and has been removed.
-  Loadless block "XLXI_7/XLXI_212" (BUF) removed.
 Loadless block "XLXI_7/XLXI_9/XLXI_42" (BUF) removed.
-Loadless block "XLXI_7/XLXI_901" (BUF) removed.
 Loadless block "XLXI_7/XLXI_903" (BUF) removed.
 Loadless block "XLXI_7/XLXI_912/XLXI_38/XLXI_1" (OR) removed.
  The signal "XLXI_7/XLXI_912/enc_in<1>" is loadless and has been removed.
@@ -916,23 +913,15 @@ GND 		XLXI_7/XLXI_130/XLXI_1/XLXI_17/XST_GND
 GND 		XLXI_7/XLXI_130/XLXI_1/XLXI_2/XST_GND
 BUF 		XLXI_7/XLXI_130/XLXI_10
 INV 		XLXI_7/XLXI_130/XLXI_2/XLXI_12
-AND3 		XLXI_7/XLXI_326
-AND2 		XLXI_7/XLXI_371
 AND2 		XLXI_7/XLXI_380
 AND2 		XLXI_7/XLXI_381
 AND2 		XLXI_7/XLXI_390
-AND2 		XLXI_7/XLXI_465
 AND2 		XLXI_7/XLXI_467
-AND2 		XLXI_7/XLXI_525
 AND2 		XLXI_7/XLXI_527
-AND2 		XLXI_7/XLXI_529
 AND2 		XLXI_7/XLXI_531
-AND2 		XLXI_7/XLXI_533
 AND2 		XLXI_7/XLXI_535
 AND2 		XLXI_7/XLXI_537
-AND2 		XLXI_7/XLXI_545
 AND2 		XLXI_7/XLXI_547
-AND2 		XLXI_7/XLXI_549
 AND2 		XLXI_7/XLXI_551
 AND2 		XLXI_7/XLXI_567
 GND 		XLXI_7/XLXI_914/XST_GND
@@ -962,10 +951,18 @@ Section 6 - IOB Properties
 | IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
 |                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| in_acc_r                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | in_clk                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | in_clk_manual                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| in_iar_r                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | in_is_clk_low                      | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | in_is_clk_manual                   | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| in_r0_r                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| in_r1_r                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| in_r2_r                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| in_r3_r                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| in_ram_r                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| in_read_reg_en                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | in_rst                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | monitor<0>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | monitor<1>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
@@ -975,6 +972,7 @@ Section 6 - IOB Properties
 | monitor<5>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | monitor<6>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | monitor<7>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| out_can_read                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | out_clk_internal                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | out_clkc                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | out_clkr                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
