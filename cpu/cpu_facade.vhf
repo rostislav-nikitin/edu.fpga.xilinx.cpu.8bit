@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu_facade.vhf
--- /___/   /\     Timestamp : 05/31/2022 09:50:59
+-- /___/   /\     Timestamp : 06/01/2022 23:09:42
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -5287,6 +5287,9 @@ entity cpu_facade is
           in_r2_r          : in    std_logic; 
           in_r3_r          : in    std_logic; 
           monitor          : out   std_logic_vector (7 downto 0); 
+          out_acc_r        : out   std_logic; 
+          out_acc_w        : out   std_logic; 
+          out_bus1         : out   std_logic; 
           out_can_read     : out   std_logic; 
           out_clkc         : out   std_logic; 
           out_clkr         : out   std_logic; 
@@ -5295,15 +5298,30 @@ entity cpu_facade is
           out_flags_C_out  : out   std_logic; 
           out_flags_eq     : out   std_logic; 
           out_flags_gt     : out   std_logic; 
+          out_flags_w      : out   std_logic; 
           out_flags_z      : out   std_logic; 
+          out_iar_r        : out   std_logic; 
+          out_iar_w        : out   std_logic; 
+          out_ir_w         : out   std_logic; 
+          out_ram_a_w      : out   std_logic; 
+          out_ram_r        : out   std_logic; 
+          out_ram_w        : out   std_logic; 
+          out_r0_r         : out   std_logic; 
           out_r0_w         : out   std_logic; 
+          out_r1_r         : out   std_logic; 
+          out_r1_w         : out   std_logic; 
+          out_r2_r         : out   std_logic; 
+          out_r2_w         : out   std_logic; 
+          out_r3_r         : out   std_logic; 
+          out_r3_w         : out   std_logic; 
           out_sysbus       : out   std_logic_vector (7 downto 0); 
           out_s1           : out   std_logic; 
           out_s2           : out   std_logic; 
           out_s3           : out   std_logic; 
           out_s4           : out   std_logic; 
           out_s5           : out   std_logic; 
-          out_s6           : out   std_logic);
+          out_s6           : out   std_logic; 
+          out_temp_w       : out   std_logic);
 end cpu_facade;
 
 architecture BEHAVIORAL of cpu_facade is
@@ -5478,15 +5496,15 @@ begin
                 manr_r=>XLXN_49,
                 manr_w=>XLXN_49,
                 monitor(7 downto 0)=>monitor(7 downto 0),
-                out_acc_r=>open,
-                out_acc_w=>open,
+                out_acc_r=>out_acc_r,
+                out_acc_w=>out_acc_w,
                 out_alu_C_in=>open,
                 out_alu_C_out=>open,
                 out_alu_eq=>open,
                 out_alu_gt=>open,
                 out_alu_x=>open,
                 out_alu_z=>open,
-                out_bus1=>open,
+                out_bus1=>out_bus1,
                 out_can_read=>out_can_read,
                 out_can_write=>open,
                 out_clkc=>out_clkc,
@@ -5499,13 +5517,13 @@ begin
                 out_flags_C_out=>out_flags_C_out,
                 out_flags_eq=>out_flags_eq,
                 out_flags_gt=>out_flags_gt,
-                out_flags_w=>open,
+                out_flags_w=>out_flags_w,
                 out_flags_z=>out_flags_z,
                 out_iar_o=>open,
-                out_iar_r=>open,
-                out_iar_w=>open,
+                out_iar_r=>out_iar_r,
+                out_iar_w=>out_iar_w,
                 out_ir_o=>open,
-                out_ir_w=>open,
+                out_ir_w=>out_ir_w,
                 out_is_bus1_w=>open,
                 out_op_alt_nop=>open,
                 out_op_alu=>open,
@@ -5525,17 +5543,17 @@ begin
                 out_op_ls_ldc=>open,
                 out_op_ls_st=>open,
                 out_ram_a_o=>open,
-                out_ram_a_w=>open,
-                out_ram_r=>open,
-                out_ram_w=>open,
-                out_r0_r=>open,
+                out_ram_a_w=>out_ram_a_w,
+                out_ram_r=>out_ram_r,
+                out_ram_w=>out_ram_w,
+                out_r0_r=>out_r0_r,
                 out_r0_w=>out_r0_w,
-                out_r1_r=>open,
-                out_r1_w=>open,
-                out_r2_r=>open,
-                out_r2_w=>open,
-                out_r3_r=>open,
-                out_r3_w=>open,
+                out_r1_r=>out_r1_r,
+                out_r1_w=>out_r1_w,
+                out_r2_r=>out_r2_r,
+                out_r2_w=>out_r2_w,
+                out_r3_r=>out_r3_r,
+                out_r3_w=>out_r3_w,
                 out_sysbus(7 downto 0)=>out_sysbus(7 downto 0),
                 out_sysbus_released=>open,
                 out_s1=>out_s1,
@@ -5545,7 +5563,7 @@ begin
                 out_s5=>out_s5,
                 out_s6=>out_s6,
                 out_temp_o=>open,
-                out_temp_w=>open);
+                out_temp_w=>out_temp_w);
    
    XLXI_8 : GND
       port map (G=>XLXN_46);

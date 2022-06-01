@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="NgdBuild" timeStamp="Tue May 31 10:18:53 2022">
+  <application stringID="NgdBuild" timeStamp="Thu Jun  2 00:01:51 2022">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -33,11 +33,11 @@
         <column stringID="speed"/>
         <row stringID="row" value="0">
           <item stringID="arch" value="Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz"/>
-          <item stringID="speed" value="3400.000 MHz"/>
+          <item stringID="speed" value="2200.000 MHz"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="arch" value="Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz"/>
-          <item stringID="speed" value="1200.000 MHz"/>
+          <item stringID="speed" value="1900.000 MHz"/>
         </row>
       </table>
     </section>
@@ -81,7 +81,7 @@
         <item dataType="int" stringID="NGDBUILD_NUM_MUXCY" value="56"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MUXF7" value="16"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MUXF8" value="16"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="32"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="50"/>
         <item dataType="int" stringID="NGDBUILD_NUM_OR2" value="52"/>
         <item dataType="int" stringID="NGDBUILD_NUM_OR3" value="4"/>
         <item dataType="int" stringID="NGDBUILD_NUM_OR4" value="14"/>
@@ -118,7 +118,7 @@
         <item dataType="int" stringID="NGDBUILD_NUM_MUXCY" value="56"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MUXF7" value="16"/>
         <item dataType="int" stringID="NGDBUILD_NUM_MUXF8" value="16"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="32"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="50"/>
         <item dataType="int" stringID="NGDBUILD_NUM_OR2" value="52"/>
         <item dataType="int" stringID="NGDBUILD_NUM_OR3" value="4"/>
         <item dataType="int" stringID="NGDBUILD_NUM_OR4" value="14"/>

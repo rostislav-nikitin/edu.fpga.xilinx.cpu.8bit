@@ -50,6 +50,24 @@
         <signal name="in_iar_r" />
         <signal name="in_acc_r" />
         <signal name="in_ram_r" />
+        <signal name="out_r0_r" />
+        <signal name="out_r1_r" />
+        <signal name="out_r2_r" />
+        <signal name="out_r3_r" />
+        <signal name="out_iar_r" />
+        <signal name="out_acc_r" />
+        <signal name="out_ram_r" />
+        <signal name="out_bus1" />
+        <signal name="out_r1_w" />
+        <signal name="out_r2_w" />
+        <signal name="out_r3_w" />
+        <signal name="out_iar_w" />
+        <signal name="out_ir_w" />
+        <signal name="out_temp_w" />
+        <signal name="out_acc_w" />
+        <signal name="out_ram_a_w" />
+        <signal name="out_ram_w" />
+        <signal name="out_flags_w" />
         <port polarity="Input" name="in_is_clk_low" />
         <port polarity="Input" name="in_clk" />
         <port polarity="Output" name="out_clk_internal" />
@@ -81,6 +99,24 @@
         <port polarity="Input" name="in_iar_r" />
         <port polarity="Input" name="in_acc_r" />
         <port polarity="Input" name="in_ram_r" />
+        <port polarity="Output" name="out_r0_r" />
+        <port polarity="Output" name="out_r1_r" />
+        <port polarity="Output" name="out_r2_r" />
+        <port polarity="Output" name="out_r3_r" />
+        <port polarity="Output" name="out_iar_r" />
+        <port polarity="Output" name="out_acc_r" />
+        <port polarity="Output" name="out_ram_r" />
+        <port polarity="Output" name="out_bus1" />
+        <port polarity="Output" name="out_r1_w" />
+        <port polarity="Output" name="out_r2_w" />
+        <port polarity="Output" name="out_r3_w" />
+        <port polarity="Output" name="out_iar_w" />
+        <port polarity="Output" name="out_ir_w" />
+        <port polarity="Output" name="out_temp_w" />
+        <port polarity="Output" name="out_acc_w" />
+        <port polarity="Output" name="out_ram_a_w" />
+        <port polarity="Output" name="out_ram_w" />
+        <port polarity="Output" name="out_flags_w" />
         <blockdef name="cpu">
             <timestamp>2022-4-28T0:36:41</timestamp>
             <rect width="2304" x="64" y="-2368" height="2304" />
@@ -253,15 +289,15 @@
             <blockpin signalname="XLXN_49" name="manr_r" />
             <blockpin signalname="XLXN_49" name="manr_w" />
             <blockpin signalname="monitor(7:0)" name="monitor(7:0)" />
-            <blockpin name="out_acc_r" />
-            <blockpin name="out_acc_w" />
+            <blockpin signalname="out_acc_r" name="out_acc_r" />
+            <blockpin signalname="out_acc_w" name="out_acc_w" />
             <blockpin name="out_alu_C_in" />
             <blockpin name="out_alu_C_out" />
             <blockpin name="out_alu_eq" />
             <blockpin name="out_alu_gt" />
             <blockpin name="out_alu_x(7:0)" />
             <blockpin name="out_alu_z" />
-            <blockpin name="out_bus1" />
+            <blockpin signalname="out_bus1" name="out_bus1" />
             <blockpin signalname="out_can_read" name="out_can_read" />
             <blockpin name="out_can_write" />
             <blockpin signalname="out_clkc" name="out_clkc" />
@@ -274,13 +310,13 @@
             <blockpin signalname="out_flags_C_out" name="out_flags_C_out" />
             <blockpin signalname="out_flags_eq" name="out_flags_eq" />
             <blockpin signalname="out_flags_gt" name="out_flags_gt" />
-            <blockpin name="out_flags_w" />
+            <blockpin signalname="out_flags_w" name="out_flags_w" />
             <blockpin signalname="out_flags_z" name="out_flags_z" />
             <blockpin name="out_iar_o(7:0)" />
-            <blockpin name="out_iar_r" />
-            <blockpin name="out_iar_w" />
+            <blockpin signalname="out_iar_r" name="out_iar_r" />
+            <blockpin signalname="out_iar_w" name="out_iar_w" />
             <blockpin name="out_ir_o(7:0)" />
-            <blockpin name="out_ir_w" />
+            <blockpin signalname="out_ir_w" name="out_ir_w" />
             <blockpin name="out_is_bus1_w" />
             <blockpin name="out_op_alt_nop" />
             <blockpin name="out_op_alu" />
@@ -299,18 +335,18 @@
             <blockpin name="out_op_ls_ld" />
             <blockpin name="out_op_ls_ldc" />
             <blockpin name="out_op_ls_st" />
-            <blockpin name="out_r0_r" />
+            <blockpin signalname="out_r0_r" name="out_r0_r" />
             <blockpin signalname="out_r0_w" name="out_r0_w" />
-            <blockpin name="out_r1_r" />
-            <blockpin name="out_r1_w" />
-            <blockpin name="out_r2_r" />
-            <blockpin name="out_r2_w" />
-            <blockpin name="out_r3_r" />
-            <blockpin name="out_r3_w" />
+            <blockpin signalname="out_r1_r" name="out_r1_r" />
+            <blockpin signalname="out_r1_w" name="out_r1_w" />
+            <blockpin signalname="out_r2_r" name="out_r2_r" />
+            <blockpin signalname="out_r2_w" name="out_r2_w" />
+            <blockpin signalname="out_r3_r" name="out_r3_r" />
+            <blockpin signalname="out_r3_w" name="out_r3_w" />
             <blockpin name="out_ram_a_o(7:0)" />
-            <blockpin name="out_ram_a_w" />
-            <blockpin name="out_ram_r" />
-            <blockpin name="out_ram_w" />
+            <blockpin signalname="out_ram_a_w" name="out_ram_a_w" />
+            <blockpin signalname="out_ram_r" name="out_ram_r" />
+            <blockpin signalname="out_ram_w" name="out_ram_w" />
             <blockpin signalname="out_s1" name="out_s1" />
             <blockpin signalname="out_s2" name="out_s2" />
             <blockpin signalname="out_s3" name="out_s3" />
@@ -320,7 +356,7 @@
             <blockpin signalname="out_sysbus(7:0)" name="out_sysbus(7:0)" />
             <blockpin name="out_sysbus_released" />
             <blockpin name="out_temp_o(7:0)" />
-            <blockpin name="out_temp_w" />
+            <blockpin signalname="out_temp_w" name="out_temp_w" />
         </block>
         <block symbolname="gnd" name="XLXI_8">
             <blockpin signalname="XLXN_46" name="G" />
@@ -598,5 +634,77 @@
         <iomarker fontsize="28" x="1600" y="3328" name="in_acc_r" orien="R90" />
         <iomarker fontsize="28" x="1728" y="3328" name="in_ram_r" orien="R90" />
         <iomarker fontsize="28" x="1088" y="3344" name="in_rst" orien="R90" />
+        <branch name="out_r0_r">
+            <wire x2="1792" y1="400" y2="592" x1="1792" />
+        </branch>
+        <branch name="out_r1_r">
+            <wire x2="1920" y1="400" y2="592" x1="1920" />
+        </branch>
+        <branch name="out_r2_r">
+            <wire x2="2048" y1="400" y2="592" x1="2048" />
+        </branch>
+        <branch name="out_r3_r">
+            <wire x2="2176" y1="400" y2="592" x1="2176" />
+        </branch>
+        <branch name="out_iar_r">
+            <wire x2="2304" y1="400" y2="592" x1="2304" />
+        </branch>
+        <branch name="out_acc_r">
+            <wire x2="2688" y1="400" y2="592" x1="2688" />
+        </branch>
+        <branch name="out_ram_r">
+            <wire x2="2880" y1="400" y2="592" x1="2880" />
+        </branch>
+        <iomarker fontsize="28" x="1792" y="400" name="out_r0_r" orien="R270" />
+        <iomarker fontsize="28" x="1920" y="400" name="out_r1_r" orien="R270" />
+        <iomarker fontsize="28" x="2048" y="400" name="out_r2_r" orien="R270" />
+        <iomarker fontsize="28" x="2176" y="400" name="out_r3_r" orien="R270" />
+        <iomarker fontsize="28" x="2304" y="400" name="out_iar_r" orien="R270" />
+        <iomarker fontsize="28" x="2688" y="400" name="out_acc_r" orien="R270" />
+        <iomarker fontsize="28" x="2880" y="400" name="out_ram_r" orien="R270" />
+        <branch name="out_bus1">
+            <wire x2="2560" y1="400" y2="592" x1="2560" />
+        </branch>
+        <iomarker fontsize="28" x="2560" y="400" name="out_bus1" orien="R270" />
+        <branch name="out_r1_w">
+            <wire x2="1984" y1="400" y2="592" x1="1984" />
+        </branch>
+        <branch name="out_r2_w">
+            <wire x2="2112" y1="400" y2="592" x1="2112" />
+        </branch>
+        <branch name="out_r3_w">
+            <wire x2="2240" y1="400" y2="592" x1="2240" />
+        </branch>
+        <branch name="out_iar_w">
+            <wire x2="2368" y1="400" y2="592" x1="2368" />
+        </branch>
+        <branch name="out_ir_w">
+            <wire x2="2432" y1="400" y2="592" x1="2432" />
+        </branch>
+        <branch name="out_temp_w">
+            <wire x2="2624" y1="400" y2="592" x1="2624" />
+        </branch>
+        <branch name="out_acc_w">
+            <wire x2="2752" y1="400" y2="592" x1="2752" />
+        </branch>
+        <branch name="out_ram_a_w">
+            <wire x2="2816" y1="400" y2="592" x1="2816" />
+        </branch>
+        <branch name="out_ram_w">
+            <wire x2="2944" y1="400" y2="592" x1="2944" />
+        </branch>
+        <branch name="out_flags_w">
+            <wire x2="3008" y1="400" y2="592" x1="3008" />
+        </branch>
+        <iomarker fontsize="28" x="1984" y="400" name="out_r1_w" orien="R270" />
+        <iomarker fontsize="28" x="2112" y="400" name="out_r2_w" orien="R270" />
+        <iomarker fontsize="28" x="2240" y="400" name="out_r3_w" orien="R270" />
+        <iomarker fontsize="28" x="2368" y="400" name="out_iar_w" orien="R270" />
+        <iomarker fontsize="28" x="2432" y="400" name="out_ir_w" orien="R270" />
+        <iomarker fontsize="28" x="2624" y="400" name="out_temp_w" orien="R270" />
+        <iomarker fontsize="28" x="2752" y="400" name="out_acc_w" orien="R270" />
+        <iomarker fontsize="28" x="2816" y="400" name="out_ram_a_w" orien="R270" />
+        <iomarker fontsize="28" x="2944" y="400" name="out_ram_w" orien="R270" />
+        <iomarker fontsize="28" x="3008" y="400" name="out_flags_w" orien="R270" />
     </sheet>
 </drawing>
