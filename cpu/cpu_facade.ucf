@@ -113,6 +113,16 @@ NET "out_iar_w" LOC = H15;
 #NET "out_clkr" LOC = P16;  ##  PIN3
 #NET "out_clkw" LOC = R16;  ##  PIN3
 
+NET "in_input[0]" LOC = J16;
+NET "in_input[1]" LOC = K15;
+NET "in_input[2]" LOC = M16;
+NET "in_input[3]" LOC = N16;
+NET "in_input[4]" LOC = P15;
+NET "in_input[5]" LOC = M15;
+NET "in_input[6]" LOC = L16;
+NET "in_input[7]" LOC = K16;
+
+
 NET "monitor[0]" LOC = P4;
 NET "monitor[1]" LOC = N5;
 NET "monitor[2]" LOC = P5;

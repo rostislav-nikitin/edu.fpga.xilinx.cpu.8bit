@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu_facade.vhf
--- /___/   /\     Timestamp : 06/01/2022 23:09:42
+-- /___/   /\     Timestamp : 06/03/2022 00:57:11
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -5277,6 +5277,7 @@ entity cpu_facade is
           in_clk           : in    std_logic; 
           in_clk_manual    : in    std_logic; 
           in_iar_r         : in    std_logic; 
+          in_input         : in    std_logic_vector (7 downto 0); 
           in_is_clk_low    : in    std_logic; 
           in_is_clk_manual : in    std_logic; 
           in_ram_r         : in    std_logic; 

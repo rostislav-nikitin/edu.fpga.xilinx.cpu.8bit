@@ -68,6 +68,7 @@
         <signal name="out_ram_a_w" />
         <signal name="out_ram_w" />
         <signal name="out_flags_w" />
+        <signal name="in_input(7:0)" />
         <port polarity="Input" name="in_is_clk_low" />
         <port polarity="Input" name="in_clk" />
         <port polarity="Output" name="out_clk_internal" />
@@ -117,6 +118,7 @@
         <port polarity="Output" name="out_ram_a_w" />
         <port polarity="Output" name="out_ram_w" />
         <port polarity="Output" name="out_flags_w" />
+        <port polarity="Input" name="in_input(7:0)" />
         <blockdef name="cpu">
             <timestamp>2022-4-28T0:36:41</timestamp>
             <rect width="2304" x="64" y="-2368" height="2304" />
@@ -706,5 +708,9 @@
         <iomarker fontsize="28" x="2816" y="400" name="out_ram_a_w" orien="R270" />
         <iomarker fontsize="28" x="2944" y="400" name="out_ram_w" orien="R270" />
         <iomarker fontsize="28" x="3008" y="400" name="out_flags_w" orien="R270" />
+        <branch name="in_input(7:0)">
+            <wire x2="560" y1="480" y2="480" x1="400" />
+        </branch>
+        <iomarker fontsize="28" x="400" y="480" name="in_input(7:0)" orien="R180" />
     </sheet>
 </drawing>

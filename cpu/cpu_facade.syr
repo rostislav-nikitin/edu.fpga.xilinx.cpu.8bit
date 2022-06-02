@@ -542,7 +542,7 @@ Elaborating entity <CB16CE_HXILINX_cpu_facade> (architecture <Behavioral>) from 
 
 Elaborating entity <M8_1E_HXILINX_cpu_facade> (architecture <M8_1E_HXILINX_cpu_facade_V>) from library <work>.
 INFO:HDLCompiler:679 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 201. Case statement is complete. others clause is never selected
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 5342: Net <XLXI_7_in_manr_d_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 5343: Net <XLXI_7_in_manr_d_openSignal[7]> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -550,43 +550,44 @@ WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_
 
 Synthesizing Unit <cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5462: Output port <manr_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5462: Output port <out_alu_x> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5462: Output port <out_iar_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5462: Output port <out_ir_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5462: Output port <out_ram_a_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5462: Output port <out_temp_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5462: Output port <manr_r> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5462: Output port <manr_w> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5462: Output port <out_alu_C_in> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5462: Output port <out_alu_C_out> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5462: Output port <out_alu_eq> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5462: Output port <out_alu_gt> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5462: Output port <out_alu_z> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5462: Output port <out_can_write> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5462: Output port <out_C_in_enabled> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5462: Output port <out_C_out_flipflop_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5462: Output port <out_flags_clr> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5462: Output port <out_is_bus1_w> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5462: Output port <out_op_alt_nop> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5462: Output port <out_op_alu> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5462: Output port <out_op_alu_add> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5462: Output port <out_op_alu_and> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5462: Output port <out_op_alu_lshift> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5462: Output port <out_op_alu_nop> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5462: Output port <out_op_alu_not> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5462: Output port <out_op_alu_or> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5462: Output port <out_op_alu_rshift> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5462: Output port <out_op_alu_xor> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5462: Output port <out_op_flg_clf> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5462: Output port <out_op_jmp_ifjmp> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5462: Output port <out_op_jmp_jmp> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5462: Output port <out_op_jmp_jmpr> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5462: Output port <out_op_ls_ld> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5462: Output port <out_op_ls_ldc> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5462: Output port <out_op_ls_st> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5462: Output port <out_sysbus_released> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5571: Output port <G> of the instance <XLXI_9> is unconnected or connected to loadless signal.
+WARNING:Xst:647 - Input <in_input> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5463: Output port <manr_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5463: Output port <out_alu_x> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5463: Output port <out_iar_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5463: Output port <out_ir_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5463: Output port <out_ram_a_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5463: Output port <out_temp_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5463: Output port <manr_r> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5463: Output port <manr_w> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5463: Output port <out_alu_C_in> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5463: Output port <out_alu_C_out> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5463: Output port <out_alu_eq> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5463: Output port <out_alu_gt> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5463: Output port <out_alu_z> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5463: Output port <out_can_write> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5463: Output port <out_C_in_enabled> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5463: Output port <out_C_out_flipflop_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5463: Output port <out_flags_clr> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5463: Output port <out_is_bus1_w> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5463: Output port <out_op_alt_nop> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5463: Output port <out_op_alu> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5463: Output port <out_op_alu_add> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5463: Output port <out_op_alu_and> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5463: Output port <out_op_alu_lshift> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5463: Output port <out_op_alu_nop> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5463: Output port <out_op_alu_not> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5463: Output port <out_op_alu_or> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5463: Output port <out_op_alu_rshift> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5463: Output port <out_op_alu_xor> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5463: Output port <out_op_flg_clf> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5463: Output port <out_op_jmp_ifjmp> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5463: Output port <out_op_jmp_jmp> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5463: Output port <out_op_jmp_jmpr> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5463: Output port <out_op_ls_ld> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5463: Output port <out_op_ls_ldc> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5463: Output port <out_op_ls_st> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5463: Output port <out_sysbus_released> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5572: Output port <G> of the instance <XLXI_9> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <XLXI_7_in_manr_d_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	no macro.
@@ -1248,7 +1249,7 @@ Slice Logic Distribution:
    Number of unique control sets:        18
 
 IO Utilization: 
- Number of IOs:                          63
+ Number of IOs:                          71
  Number of bonded IOBs:                  63  out of    186    33%  
 
 Specific Feature Utilization:
@@ -1806,14 +1807,14 @@ in_clk         |    7.478|         |         |         |
 
 
 Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.99 secs
+Total CPU time to Xst completion: 7.13 secs
  
 --> 
 
 
-Total memory usage is 614500 kilobytes
+Total memory usage is 614504 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  232 (   0 filtered)
+Number of warnings :  233 (   0 filtered)
 Number of infos    :   61 (   0 filtered)
 
