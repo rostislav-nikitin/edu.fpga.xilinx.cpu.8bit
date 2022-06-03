@@ -59,7 +59,7 @@ NET "in_clk_manual" LOC = B10;  ##  PIN3
 #NET "out_r0_w" LOC = D16;  ##  PIN3
 
 
-#NET "input" LOC = A12;  ##  PIN3 
+NET "in_manual_input_r" LOC = A12;  ##  PIN3 
 NET "in_r3_r" LOC = A13;  ##  PIN3 
 NET "in_r2_r" LOC = B14;  ##  PIN3 
 NET "in_r1_r" LOC = B16;  ##  PIN3 
@@ -113,24 +113,24 @@ NET "out_iar_w" LOC = H15;
 #NET "out_clkr" LOC = P16;  ##  PIN3
 #NET "out_clkw" LOC = R16;  ##  PIN3
 
-NET "in_input[0]" LOC = J16;
-NET "in_input[1]" LOC = K15;
-NET "in_input[2]" LOC = M16;
-NET "in_input[3]" LOC = N16;
-NET "in_input[4]" LOC = P15;
-NET "in_input[5]" LOC = M15;
-NET "in_input[6]" LOC = L16;
-NET "in_input[7]" LOC = K16;
+NET "in_manual_input_o[0]" LOC = J16;
+NET "in_manual_input_o[1]" LOC = K15;
+NET "in_manual_input_o[2]" LOC = M16;
+NET "in_manual_input_o[3]" LOC = N16;
+NET "in_manual_input_o[4]" LOC = P15;
+NET "in_manual_input_o[5]" LOC = M15;
+NET "in_manual_input_o[6]" LOC = L16;
+NET "in_manual_input_o[7]" LOC = K16;
 
 
 NET "monitor[0]" LOC = P4;
 NET "monitor[1]" LOC = N5;
 NET "monitor[2]" LOC = P5;
 NET "monitor[3]" LOC = M6;
-NET "monitor[4]" LOC = D6;
-NET "monitor[5]" LOC = E7;
-NET "monitor[6]" LOC = D5;
-NET "monitor[7]" LOC = C6;
+NET "monitor[4]" LOC = C7;
+NET "monitor[5]" LOC = E6;
+NET "monitor[6]" LOC = C5;
+NET "monitor[7]" LOC = F7;
 
 #NET "monitor[0]" LOC = P4;
 #NET "monitor[1]" LOC = N5;

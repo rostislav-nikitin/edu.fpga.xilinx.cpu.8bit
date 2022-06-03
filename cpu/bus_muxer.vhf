@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : bus_muxer.vhf
--- /___/   /\     Timestamp : 04/07/2022 05:12:18
+-- /___/   /\     Timestamp : 06/03/2022 03:12:29
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -123,7 +123,6 @@ architecture BEHAVIORAL of bus_muxer is
    signal o5       : std_logic;
    signal o6       : std_logic;
    signal o7       : std_logic;
-   signal XLXN_54  : std_logic;
    signal XLXN_55  : std_logic;
    signal XLXN_56  : std_logic;
    signal XLXN_57  : std_logic;
@@ -131,7 +130,6 @@ architecture BEHAVIORAL of bus_muxer is
    signal XLXN_59  : std_logic;
    signal XLXN_60  : std_logic;
    signal XLXN_61  : std_logic;
-   signal XLXN_70  : std_logic;
    signal XLXN_71  : std_logic;
    signal XLXN_72  : std_logic;
    signal XLXN_73  : std_logic;
@@ -139,7 +137,6 @@ architecture BEHAVIORAL of bus_muxer is
    signal XLXN_75  : std_logic;
    signal XLXN_76  : std_logic;
    signal XLXN_77  : std_logic;
-   signal XLXN_86  : std_logic;
    signal XLXN_87  : std_logic;
    signal XLXN_88  : std_logic;
    signal XLXN_89  : std_logic;
@@ -147,7 +144,6 @@ architecture BEHAVIORAL of bus_muxer is
    signal XLXN_91  : std_logic;
    signal XLXN_92  : std_logic;
    signal XLXN_93  : std_logic;
-   signal XLXN_102 : std_logic;
    signal XLXN_103 : std_logic;
    signal XLXN_104 : std_logic;
    signal XLXN_105 : std_logic;
@@ -155,7 +151,6 @@ architecture BEHAVIORAL of bus_muxer is
    signal XLXN_107 : std_logic;
    signal XLXN_108 : std_logic;
    signal XLXN_109 : std_logic;
-   signal XLXN_118 : std_logic;
    signal XLXN_119 : std_logic;
    signal XLXN_120 : std_logic;
    signal XLXN_121 : std_logic;
@@ -163,7 +158,6 @@ architecture BEHAVIORAL of bus_muxer is
    signal XLXN_123 : std_logic;
    signal XLXN_124 : std_logic;
    signal XLXN_125 : std_logic;
-   signal XLXN_134 : std_logic;
    signal XLXN_135 : std_logic;
    signal XLXN_136 : std_logic;
    signal XLXN_137 : std_logic;
@@ -171,7 +165,6 @@ architecture BEHAVIORAL of bus_muxer is
    signal XLXN_139 : std_logic;
    signal XLXN_140 : std_logic;
    signal XLXN_141 : std_logic;
-   signal XLXN_150 : std_logic;
    signal XLXN_151 : std_logic;
    signal XLXN_152 : std_logic;
    signal XLXN_153 : std_logic;
@@ -179,7 +172,6 @@ architecture BEHAVIORAL of bus_muxer is
    signal XLXN_155 : std_logic;
    signal XLXN_156 : std_logic;
    signal XLXN_157 : std_logic;
-   signal XLXN_166 : std_logic;
    signal XLXN_167 : std_logic;
    signal XLXN_168 : std_logic;
    signal XLXN_169 : std_logic;
@@ -218,14 +210,14 @@ architecture BEHAVIORAL of bus_muxer is
    end component;
    attribute BOX_TYPE of BUF : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_1";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_0";
-   attribute HU_SET of XLXI_12 : label is "XLXI_12_2";
-   attribute HU_SET of XLXI_13 : label is "XLXI_13_3";
-   attribute HU_SET of XLXI_14 : label is "XLXI_14_4";
-   attribute HU_SET of XLXI_15 : label is "XLXI_15_5";
-   attribute HU_SET of XLXI_16 : label is "XLXI_16_6";
-   attribute HU_SET of XLXI_17 : label is "XLXI_17_7";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_50";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_49";
+   attribute HU_SET of XLXI_12 : label is "XLXI_12_51";
+   attribute HU_SET of XLXI_13 : label is "XLXI_13_52";
+   attribute HU_SET of XLXI_14 : label is "XLXI_14_53";
+   attribute HU_SET of XLXI_15 : label is "XLXI_15_54";
+   attribute HU_SET of XLXI_16 : label is "XLXI_16_55";
+   attribute HU_SET of XLXI_17 : label is "XLXI_17_56";
 begin
    XLXI_1 : M16_1E_HXILINX_bus_muxer
       port map (D0=>dev0(0),
@@ -236,7 +228,7 @@ begin
                 D5=>dev5(0),
                 D6=>dev6(0),
                 D7=>dev7(0),
-                D8=>XLXN_54,
+                D8=>dev8(0),
                 D9=>XLXN_55,
                 D10=>XLXN_56,
                 D11=>XLXN_57,
@@ -260,7 +252,7 @@ begin
                 D5=>dev5(4),
                 D6=>dev6(4),
                 D7=>dev7(4),
-                D8=>XLXN_70,
+                D8=>dev8(4),
                 D9=>XLXN_71,
                 D10=>XLXN_72,
                 D11=>XLXN_73,
@@ -284,7 +276,7 @@ begin
                 D5=>dev5(5),
                 D6=>dev6(5),
                 D7=>dev7(5),
-                D8=>XLXN_102,
+                D8=>dev8(5),
                 D9=>XLXN_103,
                 D10=>XLXN_104,
                 D11=>XLXN_105,
@@ -308,7 +300,7 @@ begin
                 D5=>dev5(1),
                 D6=>dev6(1),
                 D7=>dev7(1),
-                D8=>XLXN_86,
+                D8=>dev8(1),
                 D9=>XLXN_87,
                 D10=>XLXN_88,
                 D11=>XLXN_89,
@@ -332,7 +324,7 @@ begin
                 D5=>dev5(6),
                 D6=>dev6(6),
                 D7=>dev7(6),
-                D8=>XLXN_134,
+                D8=>dev8(6),
                 D9=>XLXN_135,
                 D10=>XLXN_136,
                 D11=>XLXN_137,
@@ -356,7 +348,7 @@ begin
                 D5=>dev5(2),
                 D6=>dev6(2),
                 D7=>dev7(2),
-                D8=>XLXN_118,
+                D8=>dev8(2),
                 D9=>XLXN_119,
                 D10=>XLXN_120,
                 D11=>XLXN_121,
@@ -380,7 +372,7 @@ begin
                 D5=>dev5(7),
                 D6=>dev6(7),
                 D7=>dev7(7),
-                D8=>XLXN_166,
+                D8=>dev8(7),
                 D9=>XLXN_167,
                 D10=>XLXN_168,
                 D11=>XLXN_169,
@@ -404,7 +396,7 @@ begin
                 D5=>dev5(3),
                 D6=>dev6(3),
                 D7=>dev7(3),
-                D8=>XLXN_150,
+                D8=>dev8(3),
                 D9=>XLXN_151,
                 D10=>XLXN_152,
                 D11=>XLXN_153,

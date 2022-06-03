@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="bus_muxer">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2022-4-7T2:5:1</timestamp>
+    <timestamp>2022-6-3T0:8:33</timestamp>
     <pin polarity="Input" x="0" y="-1120" name="a(3:0)" />
     <pin polarity="Input" x="0" y="-800" name="dev0(7:0)" />
     <pin polarity="Input" x="0" y="-544" name="dev1(7:0)" />

@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu_output_muxer.vhf
--- /___/   /\     Timestamp : 04/19/2022 23:45:28
+-- /___/   /\     Timestamp : 06/03/2022 03:12:30
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -18,6 +18,64 @@
 --    This vhdl netlist is translated from an ECS schematic. It can be 
 --    synthesized and simulated, but it should not be modified. 
 --
+----- CELL AND16_HXILINX_cpu_output_muxer -----
+  
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity AND16_HXILINX_cpu_output_muxer is
+  
+port(
+    O  : out std_logic;
+
+    I0  : in std_logic;
+    I1  : in std_logic;
+    I2  : in std_logic;
+    I3  : in std_logic;
+    I4  : in std_logic;
+    I5  : in std_logic;
+    I6  : in std_logic;
+    I7  : in std_logic;
+    I8  : in std_logic;
+    I9  : in std_logic;
+    I10  : in std_logic;
+    I11  : in std_logic;
+    I12  : in std_logic;
+    I13  : in std_logic;
+    I14  : in std_logic;
+    I15  : in std_logic
+  );
+end AND16_HXILINX_cpu_output_muxer;
+
+architecture AND16_HXILINX_cpu_output_muxer_V of AND16_HXILINX_cpu_output_muxer is
+begin
+  O <= I0 and I1 and I2 and I3 and I4 and I5 and I6 and I7 and I8 and I9 and I10 and I11 and I12 and I13 and I14 and I15;
+end AND16_HXILINX_cpu_output_muxer_V;
+----- CELL OR8_HXILINX_cpu_output_muxer -----
+  
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity OR8_HXILINX_cpu_output_muxer is
+  
+port(
+    O  : out std_logic;
+
+    I0  : in std_logic;
+    I1  : in std_logic;
+    I2  : in std_logic;
+    I3  : in std_logic;
+    I4  : in std_logic;
+    I5  : in std_logic;
+    I6  : in std_logic;
+    I7  : in std_logic
+  );
+end OR8_HXILINX_cpu_output_muxer;
+
+architecture OR8_HXILINX_cpu_output_muxer_V of OR8_HXILINX_cpu_output_muxer is
+begin
+  O <= (I0 or I1 or I2 or I3 or I4 or I5 or I6 or I7);
+end OR8_HXILINX_cpu_output_muxer_V;
 ----- CELL M16_1E_HXILINX_cpu_output_muxer -----
   
 library IEEE;
@@ -83,31 +141,212 @@ begin
     end if;
     end process; 
 end M16_1E_HXILINX_cpu_output_muxer_V;
------ CELL AND8_HXILINX_cpu_output_muxer -----
-  
-library IEEE;
-use IEEE.STD_LOGIC_1164.all;
 
-entity AND8_HXILINX_cpu_output_muxer is
-  
-port(
-    O  : out std_logic;
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
 
-    I0  : in std_logic;
-    I1  : in std_logic;
-    I2  : in std_logic;
-    I3  : in std_logic;
-    I4  : in std_logic;
-    I5  : in std_logic;
-    I6  : in std_logic;
-    I7  : in std_logic
-  );
-end AND8_HXILINX_cpu_output_muxer;
+entity encoder16_4_MUSER_cpu_output_muxer is
+   port ( i : in    std_logic_vector (15 downto 0); 
+          g : out   std_logic; 
+          o : out   std_logic_vector (3 downto 0));
+end encoder16_4_MUSER_cpu_output_muxer;
 
-architecture AND8_HXILINX_cpu_output_muxer_V of AND8_HXILINX_cpu_output_muxer is
+architecture BEHAVIORAL of encoder16_4_MUSER_cpu_output_muxer is
+   attribute BOX_TYPE   : string ;
+   attribute HU_SET     : string ;
+   signal XLXN_1  : std_logic;
+   signal XLXN_6  : std_logic;
+   signal XLXN_19 : std_logic;
+   signal XLXN_20 : std_logic;
+   signal XLXN_21 : std_logic;
+   signal XLXN_22 : std_logic;
+   signal XLXN_24 : std_logic;
+   signal XLXN_25 : std_logic;
+   signal XLXN_83 : std_logic;
+   signal XLXN_84 : std_logic;
+   signal XLXN_85 : std_logic;
+   signal XLXN_86 : std_logic;
+   signal XLXN_91 : std_logic;
+   signal XLXN_92 : std_logic;
+   signal XLXN_93 : std_logic;
+   signal XLXN_94 : std_logic;
+   component INV
+      port ( I : in    std_logic; 
+             O : out   std_logic);
+   end component;
+   attribute BOX_TYPE of INV : component is "BLACK_BOX";
+   
+   component AND16_HXILINX_cpu_output_muxer
+      port ( I0  : in    std_logic; 
+             I1  : in    std_logic; 
+             I10 : in    std_logic; 
+             I11 : in    std_logic; 
+             I12 : in    std_logic; 
+             I13 : in    std_logic; 
+             I14 : in    std_logic; 
+             I15 : in    std_logic; 
+             I2  : in    std_logic; 
+             I3  : in    std_logic; 
+             I4  : in    std_logic; 
+             I5  : in    std_logic; 
+             I6  : in    std_logic; 
+             I7  : in    std_logic; 
+             I8  : in    std_logic; 
+             I9  : in    std_logic; 
+             O   : out   std_logic);
+   end component;
+   
+   component OR8_HXILINX_cpu_output_muxer
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             I2 : in    std_logic; 
+             I3 : in    std_logic; 
+             I4 : in    std_logic; 
+             I5 : in    std_logic; 
+             I6 : in    std_logic; 
+             I7 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   
+   attribute HU_SET of XLXI_25 : label is "XLXI_25_57";
+   attribute HU_SET of XLXI_48 : label is "XLXI_48_58";
+   attribute HU_SET of XLXI_49 : label is "XLXI_49_59";
+   attribute HU_SET of XLXI_50 : label is "XLXI_50_60";
+   attribute HU_SET of XLXI_59 : label is "XLXI_59_61";
 begin
-  O <= I0 and I1 and I2 and I3 and I4 and I5 and I6 and I7;
-end AND8_HXILINX_cpu_output_muxer_V;
+   XLXI_5 : INV
+      port map (I=>i(4),
+                O=>XLXN_1);
+   
+   XLXI_6 : INV
+      port map (I=>i(5),
+                O=>XLXN_19);
+   
+   XLXI_7 : INV
+      port map (I=>i(6),
+                O=>XLXN_20);
+   
+   XLXI_8 : INV
+      port map (I=>i(7),
+                O=>XLXN_21);
+   
+   XLXI_9 : INV
+      port map (I=>i(8),
+                O=>XLXN_22);
+   
+   XLXI_10 : INV
+      port map (I=>i(9),
+                O=>XLXN_6);
+   
+   XLXI_11 : INV
+      port map (I=>i(10),
+                O=>XLXN_24);
+   
+   XLXI_12 : INV
+      port map (I=>i(11),
+                O=>XLXN_25);
+   
+   XLXI_25 : AND16_HXILINX_cpu_output_muxer
+      port map (I0=>XLXN_94,
+                I1=>XLXN_93,
+                I2=>XLXN_92,
+                I3=>XLXN_91,
+                I4=>XLXN_25,
+                I5=>XLXN_24,
+                I6=>XLXN_6,
+                I7=>XLXN_22,
+                I8=>XLXN_21,
+                I9=>XLXN_20,
+                I10=>XLXN_19,
+                I11=>XLXN_1,
+                I12=>XLXN_86,
+                I13=>XLXN_85,
+                I14=>XLXN_84,
+                I15=>XLXN_83,
+                O=>g);
+   
+   XLXI_33 : INV
+      port map (I=>i(0),
+                O=>XLXN_83);
+   
+   XLXI_34 : INV
+      port map (I=>i(1),
+                O=>XLXN_84);
+   
+   XLXI_35 : INV
+      port map (I=>i(2),
+                O=>XLXN_85);
+   
+   XLXI_36 : INV
+      port map (I=>i(3),
+                O=>XLXN_86);
+   
+   XLXI_37 : INV
+      port map (I=>i(12),
+                O=>XLXN_91);
+   
+   XLXI_38 : INV
+      port map (I=>i(13),
+                O=>XLXN_92);
+   
+   XLXI_39 : INV
+      port map (I=>i(14),
+                O=>XLXN_93);
+   
+   XLXI_40 : INV
+      port map (I=>i(15),
+                O=>XLXN_94);
+   
+   XLXI_48 : OR8_HXILINX_cpu_output_muxer
+      port map (I0=>i(15),
+                I1=>i(13),
+                I2=>i(11),
+                I3=>i(9),
+                I4=>i(7),
+                I5=>i(5),
+                I6=>i(3),
+                I7=>i(1),
+                O=>o(0));
+   
+   XLXI_49 : OR8_HXILINX_cpu_output_muxer
+      port map (I0=>i(15),
+                I1=>i(14),
+                I2=>i(11),
+                I3=>i(10),
+                I4=>i(7),
+                I5=>i(6),
+                I6=>i(3),
+                I7=>i(2),
+                O=>o(1));
+   
+   XLXI_50 : OR8_HXILINX_cpu_output_muxer
+      port map (I0=>i(15),
+                I1=>i(14),
+                I2=>i(13),
+                I3=>i(12),
+                I4=>i(7),
+                I5=>i(6),
+                I6=>i(5),
+                I7=>i(4),
+                O=>o(2));
+   
+   XLXI_59 : OR8_HXILINX_cpu_output_muxer
+      port map (I0=>i(15),
+                I1=>i(14),
+                I2=>i(13),
+                I3=>i(12),
+                I4=>i(11),
+                I5=>i(10),
+                I6=>i(9),
+                I7=>i(8),
+                O=>o(3));
+   
+end BEHAVIORAL;
+
+
 
 library ieee;
 use ieee.std_logic_1164.ALL;
@@ -148,7 +387,6 @@ architecture BEHAVIORAL of bus_muxer_MUSER_cpu_output_muxer is
    signal o5       : std_logic;
    signal o6       : std_logic;
    signal o7       : std_logic;
-   signal XLXN_54  : std_logic;
    signal XLXN_55  : std_logic;
    signal XLXN_56  : std_logic;
    signal XLXN_57  : std_logic;
@@ -156,7 +394,6 @@ architecture BEHAVIORAL of bus_muxer_MUSER_cpu_output_muxer is
    signal XLXN_59  : std_logic;
    signal XLXN_60  : std_logic;
    signal XLXN_61  : std_logic;
-   signal XLXN_70  : std_logic;
    signal XLXN_71  : std_logic;
    signal XLXN_72  : std_logic;
    signal XLXN_73  : std_logic;
@@ -164,7 +401,6 @@ architecture BEHAVIORAL of bus_muxer_MUSER_cpu_output_muxer is
    signal XLXN_75  : std_logic;
    signal XLXN_76  : std_logic;
    signal XLXN_77  : std_logic;
-   signal XLXN_86  : std_logic;
    signal XLXN_87  : std_logic;
    signal XLXN_88  : std_logic;
    signal XLXN_89  : std_logic;
@@ -172,7 +408,6 @@ architecture BEHAVIORAL of bus_muxer_MUSER_cpu_output_muxer is
    signal XLXN_91  : std_logic;
    signal XLXN_92  : std_logic;
    signal XLXN_93  : std_logic;
-   signal XLXN_102 : std_logic;
    signal XLXN_103 : std_logic;
    signal XLXN_104 : std_logic;
    signal XLXN_105 : std_logic;
@@ -180,7 +415,6 @@ architecture BEHAVIORAL of bus_muxer_MUSER_cpu_output_muxer is
    signal XLXN_107 : std_logic;
    signal XLXN_108 : std_logic;
    signal XLXN_109 : std_logic;
-   signal XLXN_118 : std_logic;
    signal XLXN_119 : std_logic;
    signal XLXN_120 : std_logic;
    signal XLXN_121 : std_logic;
@@ -188,7 +422,6 @@ architecture BEHAVIORAL of bus_muxer_MUSER_cpu_output_muxer is
    signal XLXN_123 : std_logic;
    signal XLXN_124 : std_logic;
    signal XLXN_125 : std_logic;
-   signal XLXN_134 : std_logic;
    signal XLXN_135 : std_logic;
    signal XLXN_136 : std_logic;
    signal XLXN_137 : std_logic;
@@ -196,7 +429,6 @@ architecture BEHAVIORAL of bus_muxer_MUSER_cpu_output_muxer is
    signal XLXN_139 : std_logic;
    signal XLXN_140 : std_logic;
    signal XLXN_141 : std_logic;
-   signal XLXN_150 : std_logic;
    signal XLXN_151 : std_logic;
    signal XLXN_152 : std_logic;
    signal XLXN_153 : std_logic;
@@ -204,7 +436,6 @@ architecture BEHAVIORAL of bus_muxer_MUSER_cpu_output_muxer is
    signal XLXN_155 : std_logic;
    signal XLXN_156 : std_logic;
    signal XLXN_157 : std_logic;
-   signal XLXN_166 : std_logic;
    signal XLXN_167 : std_logic;
    signal XLXN_168 : std_logic;
    signal XLXN_169 : std_logic;
@@ -243,14 +474,14 @@ architecture BEHAVIORAL of bus_muxer_MUSER_cpu_output_muxer is
    end component;
    attribute BOX_TYPE of BUF : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_42";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_41";
-   attribute HU_SET of XLXI_12 : label is "XLXI_12_43";
-   attribute HU_SET of XLXI_13 : label is "XLXI_13_44";
-   attribute HU_SET of XLXI_14 : label is "XLXI_14_45";
-   attribute HU_SET of XLXI_15 : label is "XLXI_15_46";
-   attribute HU_SET of XLXI_16 : label is "XLXI_16_47";
-   attribute HU_SET of XLXI_17 : label is "XLXI_17_48";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_63";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_62";
+   attribute HU_SET of XLXI_12 : label is "XLXI_12_64";
+   attribute HU_SET of XLXI_13 : label is "XLXI_13_65";
+   attribute HU_SET of XLXI_14 : label is "XLXI_14_66";
+   attribute HU_SET of XLXI_15 : label is "XLXI_15_67";
+   attribute HU_SET of XLXI_16 : label is "XLXI_16_68";
+   attribute HU_SET of XLXI_17 : label is "XLXI_17_69";
 begin
    XLXI_1 : M16_1E_HXILINX_cpu_output_muxer
       port map (D0=>dev0(0),
@@ -261,7 +492,7 @@ begin
                 D5=>dev5(0),
                 D6=>dev6(0),
                 D7=>dev7(0),
-                D8=>XLXN_54,
+                D8=>dev8(0),
                 D9=>XLXN_55,
                 D10=>XLXN_56,
                 D11=>XLXN_57,
@@ -285,7 +516,7 @@ begin
                 D5=>dev5(4),
                 D6=>dev6(4),
                 D7=>dev7(4),
-                D8=>XLXN_70,
+                D8=>dev8(4),
                 D9=>XLXN_71,
                 D10=>XLXN_72,
                 D11=>XLXN_73,
@@ -309,7 +540,7 @@ begin
                 D5=>dev5(5),
                 D6=>dev6(5),
                 D7=>dev7(5),
-                D8=>XLXN_102,
+                D8=>dev8(5),
                 D9=>XLXN_103,
                 D10=>XLXN_104,
                 D11=>XLXN_105,
@@ -333,7 +564,7 @@ begin
                 D5=>dev5(1),
                 D6=>dev6(1),
                 D7=>dev7(1),
-                D8=>XLXN_86,
+                D8=>dev8(1),
                 D9=>XLXN_87,
                 D10=>XLXN_88,
                 D11=>XLXN_89,
@@ -357,7 +588,7 @@ begin
                 D5=>dev5(6),
                 D6=>dev6(6),
                 D7=>dev7(6),
-                D8=>XLXN_134,
+                D8=>dev8(6),
                 D9=>XLXN_135,
                 D10=>XLXN_136,
                 D11=>XLXN_137,
@@ -381,7 +612,7 @@ begin
                 D5=>dev5(2),
                 D6=>dev6(2),
                 D7=>dev7(2),
-                D8=>XLXN_118,
+                D8=>dev8(2),
                 D9=>XLXN_119,
                 D10=>XLXN_120,
                 D11=>XLXN_121,
@@ -405,7 +636,7 @@ begin
                 D5=>dev5(7),
                 D6=>dev6(7),
                 D7=>dev7(7),
-                D8=>XLXN_166,
+                D8=>dev8(7),
                 D9=>XLXN_167,
                 D10=>XLXN_168,
                 D11=>XLXN_169,
@@ -429,7 +660,7 @@ begin
                 D5=>dev5(3),
                 D6=>dev6(3),
                 D7=>dev7(3),
-                D8=>XLXN_150,
+                D8=>dev8(3),
                 D9=>XLXN_151,
                 D10=>XLXN_152,
                 D11=>XLXN_153,
@@ -486,155 +717,37 @@ use ieee.numeric_std.ALL;
 library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
-entity encoder8_3_MUSER_cpu_output_muxer is
-   port ( i : in    std_logic_vector (7 downto 0); 
-          g : out   std_logic; 
-          o : out   std_logic_vector (2 downto 0));
-end encoder8_3_MUSER_cpu_output_muxer;
-
-architecture BEHAVIORAL of encoder8_3_MUSER_cpu_output_muxer is
-   attribute BOX_TYPE   : string ;
-   attribute HU_SET     : string ;
-   signal XLXN_1 : std_logic;
-   signal XLXN_2 : std_logic;
-   signal XLXN_3 : std_logic;
-   signal XLXN_4 : std_logic;
-   signal XLXN_5 : std_logic;
-   signal XLXN_6 : std_logic;
-   signal XLXN_7 : std_logic;
-   signal XLXN_8 : std_logic;
-   component OR4
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             I2 : in    std_logic; 
-             I3 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of OR4 : component is "BLACK_BOX";
-   
-   component AND8_HXILINX_cpu_output_muxer
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             I2 : in    std_logic; 
-             I3 : in    std_logic; 
-             I4 : in    std_logic; 
-             I5 : in    std_logic; 
-             I6 : in    std_logic; 
-             I7 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   
-   component INV
-      port ( I : in    std_logic; 
-             O : out   std_logic);
-   end component;
-   attribute BOX_TYPE of INV : component is "BLACK_BOX";
-   
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_49";
-begin
-   XLXI_1 : OR4
-      port map (I0=>i(1),
-                I1=>i(3),
-                I2=>i(5),
-                I3=>i(7),
-                O=>o(0));
-   
-   XLXI_2 : OR4
-      port map (I0=>i(2),
-                I1=>i(3),
-                I2=>i(6),
-                I3=>i(7),
-                O=>o(1));
-   
-   XLXI_3 : OR4
-      port map (I0=>i(4),
-                I1=>i(5),
-                I2=>i(6),
-                I3=>i(7),
-                O=>o(2));
-   
-   XLXI_4 : AND8_HXILINX_cpu_output_muxer
-      port map (I0=>XLXN_8,
-                I1=>XLXN_7,
-                I2=>XLXN_6,
-                I3=>XLXN_5,
-                I4=>XLXN_4,
-                I5=>XLXN_3,
-                I6=>XLXN_2,
-                I7=>XLXN_1,
-                O=>g);
-   
-   XLXI_5 : INV
-      port map (I=>i(0),
-                O=>XLXN_1);
-   
-   XLXI_6 : INV
-      port map (I=>i(1),
-                O=>XLXN_2);
-   
-   XLXI_7 : INV
-      port map (I=>i(2),
-                O=>XLXN_3);
-   
-   XLXI_8 : INV
-      port map (I=>i(3),
-                O=>XLXN_4);
-   
-   XLXI_9 : INV
-      port map (I=>i(4),
-                O=>XLXN_5);
-   
-   XLXI_10 : INV
-      port map (I=>i(5),
-                O=>XLXN_6);
-   
-   XLXI_11 : INV
-      port map (I=>i(6),
-                O=>XLXN_7);
-   
-   XLXI_12 : INV
-      port map (I=>i(7),
-                O=>XLXN_8);
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
 entity cpu_output_muxer is
-   port ( acc_o  : in    std_logic_vector (7 downto 0); 
-          acc_r  : in    std_logic; 
-          iar_o  : in    std_logic_vector (7 downto 0); 
-          iar_r  : in    std_logic; 
-          manr_o : in    std_logic_vector (7 downto 0); 
-          manr_r : in    std_logic; 
-          mem_o  : in    std_logic_vector (7 downto 0); 
-          mem_r  : in    std_logic; 
-          r0_o   : in    std_logic_vector (7 downto 0); 
-          r0_r   : in    std_logic; 
-          r1_o   : in    std_logic_vector (7 downto 0); 
-          r1_r   : in    std_logic; 
-          r2_o   : in    std_logic_vector (7 downto 0); 
-          r2_r   : in    std_logic; 
-          r3_o   : in    std_logic_vector (7 downto 0); 
-          r3_r   : in    std_logic; 
-          g      : out   std_logic; 
-          o      : out   std_logic_vector (7 downto 0));
+   port ( acc_o          : in    std_logic_vector (7 downto 0); 
+          acc_r          : in    std_logic; 
+          iar_o          : in    std_logic_vector (7 downto 0); 
+          iar_r          : in    std_logic; 
+          manr_o         : in    std_logic_vector (7 downto 0); 
+          manr_r         : in    std_logic; 
+          manual_input_o : in    std_logic_vector (7 downto 0); 
+          manual_input_r : in    std_logic; 
+          mem_o          : in    std_logic_vector (7 downto 0); 
+          mem_r          : in    std_logic; 
+          r0_o           : in    std_logic_vector (7 downto 0); 
+          r0_r           : in    std_logic; 
+          r1_o           : in    std_logic_vector (7 downto 0); 
+          r1_r           : in    std_logic; 
+          r2_o           : in    std_logic_vector (7 downto 0); 
+          r2_r           : in    std_logic; 
+          r3_o           : in    std_logic_vector (7 downto 0); 
+          r3_r           : in    std_logic; 
+          g              : out   std_logic; 
+          o              : out   std_logic_vector (7 downto 0));
 end cpu_output_muxer;
 
 architecture BEHAVIORAL of cpu_output_muxer is
    attribute BOX_TYPE   : string ;
    signal a                       : std_logic_vector (3 downto 0);
-   signal enc_o                   : std_logic_vector (2 downto 0);
-   signal i                       : std_logic_vector (7 downto 0);
+   signal enc_o                   : std_logic_vector (3 downto 0);
+   signal i                       : std_logic_vector (15 downto 0);
    signal XLXN_73                 : std_logic;
+   signal XLXN_86                 : std_logic;
    signal g_DUMMY                 : std_logic;
-   signal XLXI_1_dev8_openSignal  : std_logic_vector (7 downto 0);
    signal XLXI_1_dev9_openSignal  : std_logic_vector (7 downto 0);
    signal XLXI_1_dev10_openSignal : std_logic_vector (7 downto 0);
    signal XLXI_1_dev11_openSignal : std_logic_vector (7 downto 0);
@@ -664,28 +777,28 @@ architecture BEHAVIORAL of cpu_output_muxer is
              o     : out   std_logic_vector (7 downto 0));
    end component;
    
-   component encoder8_3_MUSER_cpu_output_muxer
-      port ( g : out   std_logic; 
-             i : in    std_logic_vector (7 downto 0); 
-             o : out   std_logic_vector (2 downto 0));
-   end component;
-   
    component BUF
       port ( I : in    std_logic; 
              O : out   std_logic);
    end component;
    attribute BOX_TYPE of BUF : component is "BLACK_BOX";
    
-   component GND
-      port ( G : out   std_logic);
-   end component;
-   attribute BOX_TYPE of GND : component is "BLACK_BOX";
-   
    component INV
       port ( I : in    std_logic; 
              O : out   std_logic);
    end component;
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
+   
+   component encoder16_4_MUSER_cpu_output_muxer
+      port ( g : out   std_logic; 
+             i : in    std_logic_vector (15 downto 0); 
+             o : out   std_logic_vector (3 downto 0));
+   end component;
+   
+   component GND
+      port ( G : out   std_logic);
+   end component;
+   attribute BOX_TYPE of GND : component is "BLACK_BOX";
    
 begin
    g <= g_DUMMY;
@@ -699,7 +812,7 @@ begin
                 dev5(7 downto 0)=>r2_o(7 downto 0),
                 dev6(7 downto 0)=>r3_o(7 downto 0),
                 dev7(7 downto 0)=>manr_o(7 downto 0),
-                dev8(7 downto 0)=>XLXI_1_dev8_openSignal(7 downto 0),
+                dev8(7 downto 0)=>manual_input_o(7 downto 0),
                 dev9(7 downto 0)=>XLXI_1_dev9_openSignal(7 downto 0),
                 dev10(7 downto 0)=>XLXI_1_dev10_openSignal(7 downto 0),
                 dev11(7 downto 0)=>XLXI_1_dev11_openSignal(7 downto 0),
@@ -709,11 +822,6 @@ begin
                 dev15(7 downto 0)=>XLXI_1_dev15_openSignal(7 downto 0),
                 e=>XLXN_73,
                 o(7 downto 0)=>o(7 downto 0));
-   
-   XLXI_2 : encoder8_3_MUSER_cpu_output_muxer
-      port map (i(7 downto 0)=>i(7 downto 0),
-                g=>g_DUMMY,
-                o(2 downto 0)=>enc_o(2 downto 0));
    
    XLXI_3 : BUF
       port map (I=>iar_r,
@@ -759,12 +867,53 @@ begin
       port map (I=>enc_o(2),
                 O=>a(2));
    
-   XLXI_20 : GND
-      port map (G=>a(3));
-   
    XLXI_21 : INV
       port map (I=>g_DUMMY,
                 O=>XLXN_73);
+   
+   XLXI_22 : encoder16_4_MUSER_cpu_output_muxer
+      port map (i(15 downto 0)=>i(15 downto 0),
+                g=>g_DUMMY,
+                o(3 downto 0)=>enc_o(3 downto 0));
+   
+   XLXI_23 : BUF
+      port map (I=>enc_o(3),
+                O=>a(3));
+   
+   XLXI_24 : BUF
+      port map (I=>manual_input_r,
+                O=>i(8));
+   
+   XLXI_25 : BUF
+      port map (I=>XLXN_86,
+                O=>i(9));
+   
+   XLXI_32 : BUF
+      port map (I=>XLXN_86,
+                O=>i(10));
+   
+   XLXI_33 : BUF
+      port map (I=>XLXN_86,
+                O=>i(11));
+   
+   XLXI_34 : BUF
+      port map (I=>XLXN_86,
+                O=>i(12));
+   
+   XLXI_35 : BUF
+      port map (I=>XLXN_86,
+                O=>i(13));
+   
+   XLXI_36 : BUF
+      port map (I=>XLXN_86,
+                O=>i(14));
+   
+   XLXI_37 : BUF
+      port map (I=>XLXN_86,
+                O=>i(15));
+   
+   XLXI_38 : GND
+      port map (G=>XLXN_86);
    
 end BEHAVIORAL;
 

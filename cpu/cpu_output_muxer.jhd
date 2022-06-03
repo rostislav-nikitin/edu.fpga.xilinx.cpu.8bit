@@ -1,5 +1,5 @@
 MODULE cpu_output_muxer
 	SUBMODULE bus_muxer
 		INSTANCE XLXI_1
-	SUBMODULE encoder8_3
-		INSTANCE XLXI_2
+	SUBMODULE encoder16_4
+		INSTANCE XLXI_22

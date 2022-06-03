@@ -50,6 +50,9 @@
          <ClosedNode>/cpu_facade_cpu_facade_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_cpu_facade.vhd/UUT - cpu_facade/XLXI_1 - cpu/alu_inst - alu/XLXI_135 - cmp_8bit</ClosedNode>
          <ClosedNode>/cpu_facade_cpu_facade_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_cpu_facade.vhd/UUT - cpu_facade/XLXI_1 - cpu/alu_inst - alu/XLXI_138 - alu_output_muxer</ClosedNode>
          <ClosedNode>/cpu_facade_cpu_facade_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_cpu_facade.vhd/UUT - cpu_facade/XLXI_7 - cpu</ClosedNode>
+         <ClosedNode>/cpu_facade_cpu_facade_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_cpu_facade.vhd/UUT - cpu_facade/XLXI_7 - cpu/XLXI_912 - cpu_freq_divider</ClosedNode>
+         <ClosedNode>/cpu_facade_cpu_facade_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_cpu_facade.vhd/UUT - cpu_facade/XLXI_7 - cpu/alu_inst - alu/XLXI_135 - cmp_8bit</ClosedNode>
+         <ClosedNode>/cpu_facade_cpu_facade_sch_tb - behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|tb_cpu_facade.vhd/UUT - cpu_facade/XLXI_7 - cpu/cpu_ctl - cpu_control</ClosedNode>
          <ClosedNode>/cpu_freq_divider |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|cpu_freq_divider.sch</ClosedNode>
          <ClosedNode>/motherboard |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|motherboard.sch/XLXI_1 - cpu</ClosedNode>
          <ClosedNode>/motherboard |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|cpu|motherboard.sch/XLXI_1 - cpu/XLXI_130 - cpu_output_muxer</ClosedNode>
@@ -121,13 +124,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000013c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000013c0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
       <ClosedNodes>

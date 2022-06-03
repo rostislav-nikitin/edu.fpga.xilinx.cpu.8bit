@@ -91,7 +91,6 @@
         <signal name="o(6)" />
         <signal name="o(7)" />
         <signal name="o(4)" />
-        <signal name="XLXN_54" />
         <signal name="XLXN_55" />
         <signal name="XLXN_56" />
         <signal name="XLXN_57" />
@@ -99,7 +98,6 @@
         <signal name="XLXN_59" />
         <signal name="XLXN_60" />
         <signal name="XLXN_61" />
-        <signal name="XLXN_70" />
         <signal name="XLXN_71" />
         <signal name="XLXN_72" />
         <signal name="XLXN_73" />
@@ -107,7 +105,6 @@
         <signal name="XLXN_75" />
         <signal name="XLXN_76" />
         <signal name="XLXN_77" />
-        <signal name="XLXN_86" />
         <signal name="XLXN_87" />
         <signal name="XLXN_88" />
         <signal name="XLXN_89" />
@@ -115,7 +112,6 @@
         <signal name="XLXN_91" />
         <signal name="XLXN_92" />
         <signal name="XLXN_93" />
-        <signal name="XLXN_102" />
         <signal name="XLXN_103" />
         <signal name="XLXN_104" />
         <signal name="XLXN_105" />
@@ -123,7 +119,6 @@
         <signal name="XLXN_107" />
         <signal name="XLXN_108" />
         <signal name="XLXN_109" />
-        <signal name="XLXN_118" />
         <signal name="XLXN_119" />
         <signal name="XLXN_120" />
         <signal name="XLXN_121" />
@@ -131,7 +126,6 @@
         <signal name="XLXN_123" />
         <signal name="XLXN_124" />
         <signal name="XLXN_125" />
-        <signal name="XLXN_134" />
         <signal name="XLXN_135" />
         <signal name="XLXN_136" />
         <signal name="XLXN_137" />
@@ -139,7 +133,6 @@
         <signal name="XLXN_139" />
         <signal name="XLXN_140" />
         <signal name="XLXN_141" />
-        <signal name="XLXN_150" />
         <signal name="XLXN_151" />
         <signal name="XLXN_152" />
         <signal name="XLXN_153" />
@@ -147,7 +140,6 @@
         <signal name="XLXN_155" />
         <signal name="XLXN_156" />
         <signal name="XLXN_157" />
-        <signal name="XLXN_166" />
         <signal name="XLXN_167" />
         <signal name="XLXN_168" />
         <signal name="XLXN_169" />
@@ -350,7 +342,7 @@
             <blockpin signalname="dev5(4)" name="D5" />
             <blockpin signalname="dev6(4)" name="D6" />
             <blockpin signalname="dev7(4)" name="D7" />
-            <blockpin signalname="XLXN_70" name="D8" />
+            <blockpin signalname="dev8(4)" name="D8" />
             <blockpin signalname="XLXN_71" name="D9" />
             <blockpin signalname="e" name="E" />
             <blockpin signalname="a(0)" name="S0" />
@@ -374,7 +366,7 @@
             <blockpin signalname="dev5(0)" name="D5" />
             <blockpin signalname="dev6(0)" name="D6" />
             <blockpin signalname="dev7(0)" name="D7" />
-            <blockpin signalname="XLXN_54" name="D8" />
+            <blockpin signalname="dev8(0)" name="D8" />
             <blockpin signalname="XLXN_55" name="D9" />
             <blockpin signalname="e" name="E" />
             <blockpin signalname="a(0)" name="S0" />
@@ -398,7 +390,7 @@
             <blockpin signalname="dev5(5)" name="D5" />
             <blockpin signalname="dev6(5)" name="D6" />
             <blockpin signalname="dev7(5)" name="D7" />
-            <blockpin signalname="XLXN_102" name="D8" />
+            <blockpin signalname="dev8(5)" name="D8" />
             <blockpin signalname="XLXN_103" name="D9" />
             <blockpin signalname="e" name="E" />
             <blockpin signalname="a(0)" name="S0" />
@@ -422,7 +414,7 @@
             <blockpin signalname="dev5(1)" name="D5" />
             <blockpin signalname="dev6(1)" name="D6" />
             <blockpin signalname="dev7(1)" name="D7" />
-            <blockpin signalname="XLXN_86" name="D8" />
+            <blockpin signalname="dev8(1)" name="D8" />
             <blockpin signalname="XLXN_87" name="D9" />
             <blockpin signalname="e" name="E" />
             <blockpin signalname="a(0)" name="S0" />
@@ -446,7 +438,7 @@
             <blockpin signalname="dev5(6)" name="D5" />
             <blockpin signalname="dev6(6)" name="D6" />
             <blockpin signalname="dev7(6)" name="D7" />
-            <blockpin signalname="XLXN_134" name="D8" />
+            <blockpin signalname="dev8(6)" name="D8" />
             <blockpin signalname="XLXN_135" name="D9" />
             <blockpin signalname="e" name="E" />
             <blockpin signalname="a(0)" name="S0" />
@@ -470,7 +462,7 @@
             <blockpin signalname="dev5(2)" name="D5" />
             <blockpin signalname="dev6(2)" name="D6" />
             <blockpin signalname="dev7(2)" name="D7" />
-            <blockpin signalname="XLXN_118" name="D8" />
+            <blockpin signalname="dev8(2)" name="D8" />
             <blockpin signalname="XLXN_119" name="D9" />
             <blockpin signalname="e" name="E" />
             <blockpin signalname="a(0)" name="S0" />
@@ -494,7 +486,7 @@
             <blockpin signalname="dev5(7)" name="D5" />
             <blockpin signalname="dev6(7)" name="D6" />
             <blockpin signalname="dev7(7)" name="D7" />
-            <blockpin signalname="XLXN_166" name="D8" />
+            <blockpin signalname="dev8(7)" name="D8" />
             <blockpin signalname="XLXN_167" name="D9" />
             <blockpin signalname="e" name="E" />
             <blockpin signalname="a(0)" name="S0" />
@@ -518,7 +510,7 @@
             <blockpin signalname="dev5(3)" name="D5" />
             <blockpin signalname="dev6(3)" name="D6" />
             <blockpin signalname="dev7(3)" name="D7" />
-            <blockpin signalname="XLXN_150" name="D8" />
+            <blockpin signalname="dev8(3)" name="D8" />
             <blockpin signalname="XLXN_151" name="D9" />
             <blockpin signalname="e" name="E" />
             <blockpin signalname="a(0)" name="S0" />
@@ -1053,7 +1045,8 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2224" y="960" type="branch" />
             <wire x2="2368" y1="960" y2="960" x1="2224" />
         </branch>
-        <branch name="XLXN_54">
+        <branch name="dev8(0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2224" y="1024" type="branch" />
             <wire x2="2368" y1="1024" y2="1024" x1="2224" />
         </branch>
         <branch name="XLXN_55">
@@ -1108,9 +1101,6 @@
         <branch name="dev7(4)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2224" y="2640" type="branch" />
             <wire x2="2368" y1="2640" y2="2640" x1="2224" />
-        </branch>
-        <branch name="XLXN_70">
-            <wire x2="2368" y1="2704" y2="2704" x1="2224" />
         </branch>
         <branch name="XLXN_71">
             <wire x2="2368" y1="2768" y2="2768" x1="2224" />
@@ -1167,7 +1157,8 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3248" y="960" type="branch" />
             <wire x2="3392" y1="960" y2="960" x1="3248" />
         </branch>
-        <branch name="XLXN_86">
+        <branch name="dev8(1)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3248" y="1024" type="branch" />
             <wire x2="3392" y1="1024" y2="1024" x1="3248" />
         </branch>
         <branch name="XLXN_87">
@@ -1223,7 +1214,8 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3248" y="2640" type="branch" />
             <wire x2="3392" y1="2640" y2="2640" x1="3248" />
         </branch>
-        <branch name="XLXN_102">
+        <branch name="dev8(5)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3248" y="2704" type="branch" />
             <wire x2="3392" y1="2704" y2="2704" x1="3248" />
         </branch>
         <branch name="XLXN_103">
@@ -1320,7 +1312,8 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4304" y="2640" type="branch" />
             <wire x2="4448" y1="2640" y2="2640" x1="4304" />
         </branch>
-        <branch name="XLXN_134">
+        <branch name="dev8(6)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4304" y="2704" type="branch" />
             <wire x2="4448" y1="2704" y2="2704" x1="4304" />
         </branch>
         <branch name="XLXN_135">
@@ -1378,7 +1371,8 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5328" y="960" type="branch" />
             <wire x2="5472" y1="960" y2="960" x1="5328" />
         </branch>
-        <branch name="XLXN_150">
+        <branch name="dev8(3)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5328" y="1024" type="branch" />
             <wire x2="5472" y1="1024" y2="1024" x1="5328" />
         </branch>
         <branch name="XLXN_151">
@@ -1434,7 +1428,8 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5328" y="2640" type="branch" />
             <wire x2="5472" y1="2640" y2="2640" x1="5328" />
         </branch>
-        <branch name="XLXN_166">
+        <branch name="dev8(7)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5328" y="2704" type="branch" />
             <wire x2="5472" y1="2704" y2="2704" x1="5328" />
         </branch>
         <branch name="XLXN_167">
@@ -2007,7 +2002,8 @@
         <branch name="XLXN_119">
             <wire x2="4448" y1="1088" y2="1088" x1="4304" />
         </branch>
-        <branch name="XLXN_118">
+        <branch name="dev8(2)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4304" y="1024" type="branch" />
             <wire x2="4448" y1="1024" y2="1024" x1="4304" />
         </branch>
         <branch name="XLXN_125">
@@ -2149,5 +2145,9 @@
             <wire x2="1744" y1="1680" y2="1680" x1="1680" />
         </branch>
         <iomarker fontsize="28" x="1040" y="240" name="e" orien="R180" />
+        <branch name="dev8(4)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2224" y="2704" type="branch" />
+            <wire x2="2368" y1="2704" y2="2704" x1="2224" />
+        </branch>
     </sheet>
 </drawing>

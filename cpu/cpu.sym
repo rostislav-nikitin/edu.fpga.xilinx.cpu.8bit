@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="cpu">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2022-4-28T0:36:36</timestamp>
-    <pin polarity="Input" x="864" y="0" name="in_acc_r" />
-    <pin polarity="Input" x="928" y="0" name="in_acc_w" />
+    <timestamp>2022-6-3T0:29:30</timestamp>
+    <pin polarity="Input" x="928" y="0" name="in_acc_r" />
+    <pin polarity="Input" x="992" y="0" name="in_acc_w" />
     <pin polarity="Input" x="0" y="-1376" name="in_bus1" />
     <pin polarity="Input" x="0" y="-2336" name="in_clk" />
     <pin polarity="Input" x="0" y="-2080" name="in_clk_external" />
     <pin polarity="Input" x="0" y="-2208" name="in_clk_manual" />
-    <pin polarity="Input" x="736" y="0" name="in_iar_r" />
-    <pin polarity="Input" x="800" y="0" name="in_iar_w" />
+    <pin polarity="Input" x="800" y="0" name="in_iar_r" />
+    <pin polarity="Input" x="864" y="0" name="in_iar_w" />
     <pin polarity="Input" x="0" y="-1568" name="in_ir_w" />
-    <pin polarity="Input" x="160" y="0" name="in_is_bus1_w" />
+    <pin polarity="Input" x="96" y="0" name="in_is_bus1_w" />
     <pin polarity="Input" x="0" y="-1888" name="in_is_clk_external" />
     <pin polarity="Input" x="0" y="-2016" name="in_is_clk_high" />
     <pin polarity="Input" x="0" y="-2144" name="in_is_clk_low" />
@@ -19,19 +19,21 @@
     <pin polarity="Input" x="0" y="-1504" name="in_manr_d(7:0)" />
     <pin polarity="Input" x="0" y="-1760" name="in_manr_r" />
     <pin polarity="Input" x="0" y="-1632" name="in_manr_w" />
-    <pin polarity="Input" x="96" y="0" name="in_r0_r" />
-    <pin polarity="Input" x="224" y="0" name="in_r0_w" />
-    <pin polarity="Input" x="288" y="0" name="in_r1_r" />
-    <pin polarity="Input" x="416" y="0" name="in_r1_w" />
-    <pin polarity="Input" x="480" y="0" name="in_r2_r" />
-    <pin polarity="Input" x="544" y="0" name="in_r2_w" />
+    <pin polarity="Input" x="736" y="0" name="in_manual_input_o(7:0)" />
+    <pin polarity="Input" x="544" y="0" name="in_manual_input_r" />
+    <pin polarity="Input" x="0" y="-1312" name="in_r0_r" />
+    <pin polarity="Input" x="160" y="0" name="in_r0_w" />
+    <pin polarity="Input" x="224" y="0" name="in_r1_r" />
+    <pin polarity="Input" x="352" y="0" name="in_r1_w" />
+    <pin polarity="Input" x="416" y="0" name="in_r2_r" />
+    <pin polarity="Input" x="480" y="0" name="in_r2_w" />
     <pin polarity="Input" x="608" y="0" name="in_r3_r" />
     <pin polarity="Input" x="672" y="0" name="in_r3_w" />
     <pin polarity="Input" x="0" y="-1440" name="in_ram_a_w" />
-    <pin polarity="Input" x="992" y="0" name="in_ram_r" />
-    <pin polarity="Input" x="1056" y="0" name="in_ram_w" />
+    <pin polarity="Input" x="1056" y="0" name="in_ram_r" />
+    <pin polarity="Input" x="1120" y="0" name="in_ram_w" />
     <pin polarity="Input" x="0" y="-1952" name="in_read_reg_en" />
-    <pin polarity="Input" x="352" y="0" name="in_rst" />
+    <pin polarity="Input" x="288" y="0" name="in_rst" />
     <pin polarity="Input" x="0" y="-1696" name="in_temp_w" />
     <pin polarity="Input" x="0" y="-1824" name="in_write_reg_en" />
     <pin polarity="Output" x="2432" y="-2016" name="manr_o(7:0)" />
@@ -109,10 +111,10 @@
     <graph>
         <rect width="2304" x="64" y="-2368" height="2304" />
         <attrtext style="alignment:CENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="1216" y="-1216" type="symbol" />
-        <line x2="864" y1="-64" y2="0" x1="864" />
-        <attrtext style="alignment:VLEFT;fontsize:24;fontname:Arial" attrname="PinName" x="864" y="-72" type="pin in_acc_r" />
         <line x2="928" y1="-64" y2="0" x1="928" />
-        <attrtext style="alignment:VLEFT;fontsize:24;fontname:Arial" attrname="PinName" x="928" y="-72" type="pin in_acc_w" />
+        <attrtext style="alignment:VLEFT;fontsize:24;fontname:Arial" attrname="PinName" x="928" y="-72" type="pin in_acc_r" />
+        <line x2="992" y1="-64" y2="0" x1="992" />
+        <attrtext style="alignment:VLEFT;fontsize:24;fontname:Arial" attrname="PinName" x="992" y="-72" type="pin in_acc_w" />
         <line x2="0" y1="-1376" y2="-1376" x1="64" />
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1376" type="pin in_bus1" />
         <line x2="0" y1="-2336" y2="-2336" x1="64" />
@@ -121,14 +123,14 @@
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-2080" type="pin in_clk_external" />
         <line x2="0" y1="-2208" y2="-2208" x1="64" />
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-2208" type="pin in_clk_manual" />
-        <line x2="736" y1="-64" y2="0" x1="736" />
-        <attrtext style="alignment:VLEFT;fontsize:24;fontname:Arial" attrname="PinName" x="736" y="-72" type="pin in_iar_r" />
         <line x2="800" y1="-64" y2="0" x1="800" />
-        <attrtext style="alignment:VLEFT;fontsize:24;fontname:Arial" attrname="PinName" x="800" y="-72" type="pin in_iar_w" />
+        <attrtext style="alignment:VLEFT;fontsize:24;fontname:Arial" attrname="PinName" x="800" y="-72" type="pin in_iar_r" />
+        <line x2="864" y1="-64" y2="0" x1="864" />
+        <attrtext style="alignment:VLEFT;fontsize:24;fontname:Arial" attrname="PinName" x="864" y="-72" type="pin in_iar_w" />
         <line x2="0" y1="-1568" y2="-1568" x1="64" />
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1568" type="pin in_ir_w" />
-        <line x2="160" y1="-64" y2="0" x1="160" />
-        <attrtext style="alignment:VLEFT;fontsize:24;fontname:Arial" attrname="PinName" x="160" y="-72" type="pin in_is_bus1_w" />
+        <line x2="96" y1="-64" y2="0" x1="96" />
+        <attrtext style="alignment:VLEFT;fontsize:24;fontname:Arial" attrname="PinName" x="96" y="-72" type="pin in_is_bus1_w" />
         <line x2="0" y1="-1888" y2="-1888" x1="64" />
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1888" type="pin in_is_clk_external" />
         <line x2="0" y1="-2016" y2="-2016" x1="64" />
@@ -144,32 +146,37 @@
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1760" type="pin in_manr_r" />
         <line x2="0" y1="-1632" y2="-1632" x1="64" />
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1632" type="pin in_manr_w" />
-        <line x2="96" y1="-64" y2="0" x1="96" />
-        <attrtext style="alignment:VLEFT;fontsize:24;fontname:Arial" attrname="PinName" x="96" y="-72" type="pin in_r0_r" />
-        <line x2="224" y1="-64" y2="0" x1="224" />
-        <attrtext style="alignment:VLEFT;fontsize:24;fontname:Arial" attrname="PinName" x="224" y="-72" type="pin in_r0_w" />
-        <line x2="288" y1="-64" y2="0" x1="288" />
-        <attrtext style="alignment:VLEFT;fontsize:24;fontname:Arial" attrname="PinName" x="288" y="-72" type="pin in_r1_r" />
-        <line x2="416" y1="-64" y2="0" x1="416" />
-        <attrtext style="alignment:VLEFT;fontsize:24;fontname:Arial" attrname="PinName" x="416" y="-72" type="pin in_r1_w" />
-        <line x2="480" y1="-64" y2="0" x1="480" />
-        <attrtext style="alignment:VLEFT;fontsize:24;fontname:Arial" attrname="PinName" x="480" y="-72" type="pin in_r2_r" />
+        <line x2="736" y1="-64" y2="0" x1="736" />
+        <attrtext style="alignment:VLEFT;fontsize:24;fontname:Arial" attrname="PinName" x="736" y="-72" type="pin in_manual_input_o(7:0)" />
+        <rect width="24" x="724" y="-64" height="64" />
         <line x2="544" y1="-64" y2="0" x1="544" />
-        <attrtext style="alignment:VLEFT;fontsize:24;fontname:Arial" attrname="PinName" x="544" y="-72" type="pin in_r2_w" />
+        <attrtext style="alignment:VLEFT;fontsize:24;fontname:Arial" attrname="PinName" x="544" y="-72" type="pin in_manual_input_r" />
+        <line x2="0" y1="-1312" y2="-1312" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1312" type="pin in_r0_r" />
+        <line x2="160" y1="-64" y2="0" x1="160" />
+        <attrtext style="alignment:VLEFT;fontsize:24;fontname:Arial" attrname="PinName" x="160" y="-72" type="pin in_r0_w" />
+        <line x2="224" y1="-64" y2="0" x1="224" />
+        <attrtext style="alignment:VLEFT;fontsize:24;fontname:Arial" attrname="PinName" x="224" y="-72" type="pin in_r1_r" />
+        <line x2="352" y1="-64" y2="0" x1="352" />
+        <attrtext style="alignment:VLEFT;fontsize:24;fontname:Arial" attrname="PinName" x="352" y="-72" type="pin in_r1_w" />
+        <line x2="416" y1="-64" y2="0" x1="416" />
+        <attrtext style="alignment:VLEFT;fontsize:24;fontname:Arial" attrname="PinName" x="416" y="-72" type="pin in_r2_r" />
+        <line x2="480" y1="-64" y2="0" x1="480" />
+        <attrtext style="alignment:VLEFT;fontsize:24;fontname:Arial" attrname="PinName" x="480" y="-72" type="pin in_r2_w" />
         <line x2="608" y1="-64" y2="0" x1="608" />
         <attrtext style="alignment:VLEFT;fontsize:24;fontname:Arial" attrname="PinName" x="608" y="-72" type="pin in_r3_r" />
         <line x2="672" y1="-64" y2="0" x1="672" />
         <attrtext style="alignment:VLEFT;fontsize:24;fontname:Arial" attrname="PinName" x="672" y="-72" type="pin in_r3_w" />
         <line x2="0" y1="-1440" y2="-1440" x1="64" />
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1440" type="pin in_ram_a_w" />
-        <line x2="992" y1="-64" y2="0" x1="992" />
-        <attrtext style="alignment:VLEFT;fontsize:24;fontname:Arial" attrname="PinName" x="992" y="-72" type="pin in_ram_r" />
         <line x2="1056" y1="-64" y2="0" x1="1056" />
-        <attrtext style="alignment:VLEFT;fontsize:24;fontname:Arial" attrname="PinName" x="1056" y="-72" type="pin in_ram_w" />
+        <attrtext style="alignment:VLEFT;fontsize:24;fontname:Arial" attrname="PinName" x="1056" y="-72" type="pin in_ram_r" />
+        <line x2="1120" y1="-64" y2="0" x1="1120" />
+        <attrtext style="alignment:VLEFT;fontsize:24;fontname:Arial" attrname="PinName" x="1120" y="-72" type="pin in_ram_w" />
         <line x2="0" y1="-1952" y2="-1952" x1="64" />
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1952" type="pin in_read_reg_en" />
-        <line x2="352" y1="-64" y2="0" x1="352" />
-        <attrtext style="alignment:VLEFT;fontsize:24;fontname:Arial" attrname="PinName" x="352" y="-72" type="pin in_rst" />
+        <line x2="288" y1="-64" y2="0" x1="288" />
+        <attrtext style="alignment:VLEFT;fontsize:24;fontname:Arial" attrname="PinName" x="288" y="-72" type="pin in_rst" />
         <line x2="0" y1="-1696" y2="-1696" x1="64" />
         <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1696" type="pin in_temp_w" />
         <line x2="0" y1="-1824" y2="-1824" x1="64" />
