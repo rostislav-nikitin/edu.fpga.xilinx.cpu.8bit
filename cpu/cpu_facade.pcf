@@ -1,8 +1,9 @@
 //! **************************************************************************
-// Written by: Map P.40xd on Fri Jun 03 03:33:58 2022
+// Written by: Map P.40xd on Tue Jun 07 04:06:04 2022
 //! **************************************************************************
 
 SCHEMATIC START;
+COMP "in_is_bus1_w" LOCATE = SITE "H11" LEVEL 1;
 COMP "in_is_clk_low" LOCATE = SITE "B5" LEVEL 1;
 COMP "in_manual_input_r" LOCATE = SITE "A12" LEVEL 1;
 COMP "monitor<0>" LOCATE = SITE "P4" LEVEL 1;
@@ -13,21 +14,33 @@ COMP "monitor<4>" LOCATE = SITE "C7" LEVEL 1;
 COMP "monitor<5>" LOCATE = SITE "E6" LEVEL 1;
 COMP "monitor<6>" LOCATE = SITE "C5" LEVEL 1;
 COMP "monitor<7>" LOCATE = SITE "F7" LEVEL 1;
+COMP "out_can_write" LOCATE = SITE "L14" LEVEL 1;
 COMP "in_read_reg_en" LOCATE = SITE "H16" LEVEL 1;
 COMP "in_r0_r" LOCATE = SITE "C16" LEVEL 1;
 COMP "in_r1_r" LOCATE = SITE "B16" LEVEL 1;
+COMP "in_r0_w" LOCATE = SITE "K14" LEVEL 1;
 COMP "in_r2_r" LOCATE = SITE "B14" LEVEL 1;
+COMP "in_r1_w" LOCATE = SITE "J12" LEVEL 1;
 COMP "in_r3_r" LOCATE = SITE "A13" LEVEL 1;
+COMP "in_r2_w" LOCATE = SITE "J14" LEVEL 1;
+COMP "in_r3_w" LOCATE = SITE "G11" LEVEL 1;
+COMP "in_bus1" LOCATE = SITE "E12" LEVEL 1;
+COMP "in_ir_w" LOCATE = SITE "G12" LEVEL 1;
+COMP "in_temp_w" LOCATE = SITE "J13" LEVEL 1;
 COMP "in_is_clk_manual" LOCATE = SITE "A9" LEVEL 1;
 COMP "out_temp_w" LOCATE = SITE "C9" LEVEL 1;
 COMP "out_flags_C_out" LOCATE = SITE "N4" LEVEL 1;
+COMP "out_is_bus1_w" LOCATE = SITE "G14" LEVEL 1;
 COMP "out_can_read" LOCATE = SITE "C15" LEVEL 1;
 COMP "in_acc_r" LOCATE = SITE "E11" LEVEL 1;
+COMP "in_acc_w" LOCATE = SITE "F12" LEVEL 1;
 COMP "in_clk" LOCATE = SITE "T8" LEVEL 1;
-COMP "in_rst" LOCATE = SITE "C3" LEVEL 1;
+COMP "in_rst" LOCATE = SITE "D16" LEVEL 1;
 COMP "in_iar_r" LOCATE = SITE "F15" LEVEL 1;
+COMP "in_iar_w" LOCATE = SITE "H13" LEVEL 1;
 COMP "in_ram_r" LOCATE = SITE "E15" LEVEL 1;
 COMP "in_clk_manual" LOCATE = SITE "B10" LEVEL 1;
+COMP "in_ram_w" LOCATE = SITE "F13" LEVEL 1;
 COMP "out_acc_r" LOCATE = SITE "R7" LEVEL 1;
 COMP "out_flags_eq" LOCATE = SITE "M4" LEVEL 1;
 COMP "out_acc_w" LOCATE = SITE "F16" LEVEL 1;
@@ -42,6 +55,8 @@ COMP "out_iar_r" LOCATE = SITE "L8" LEVEL 1;
 COMP "out_iar_w" LOCATE = SITE "H15" LEVEL 1;
 COMP "out_ram_r" LOCATE = SITE "T5" LEVEL 1;
 COMP "out_ram_w" LOCATE = SITE "E16" LEVEL 1;
+COMP "in_ram_a_w" LOCATE = SITE "H14" LEVEL 1;
+COMP "in_write_reg_en" LOCATE = SITE "K12" LEVEL 1;
 COMP "out_r0_r" LOCATE = SITE "R1" LEVEL 1;
 COMP "out_r1_r" LOCATE = SITE "P2" LEVEL 1;
 COMP "out_r0_w" LOCATE = SITE "T15" LEVEL 1;

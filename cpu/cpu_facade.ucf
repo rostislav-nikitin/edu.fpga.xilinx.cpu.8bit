@@ -16,7 +16,8 @@ TIMESPEC TS_sys_clk_pin = PERIOD "sys_clk_pin" 50 MHz HIGH 50 %;
 ##################################################################################
 #NET "rst_in" LOC = C3 | IOSTANDARD = "LVCMOS33"; ## RESET pushbutton
 ## RESET pushbutton
-NET "in_rst" LOC = C3;
+#NET "in_rst" LOC = C3;
+NET "in_rst" LOC = D16 ;
 NET "in_is_clk_low" LOC = D3;
 NET "in_clk_manual" LOC = E4;
 
@@ -100,6 +101,35 @@ NET "out_ir_w" LOC = C10;
 NET "out_ram_w" LOC = E16;
 NET "out_acc_w" LOC = F16;
 NET "out_iar_w" LOC = H15;
+
+
+
+
+
+NET "in_write_reg_en" LOC = K12;
+NET "out_can_write" LOC = L14;
+
+NET "in_temp_w" LOC = J13;
+NET "in_r0_w" LOC = K14;
+NET "in_r1_w" LOC = J12;
+NET "in_r2_w" LOC = J14;
+NET "in_r3_w" LOC = G11;
+
+NET "in_is_bus1_w" LOC = H11;
+NET "in_iar_w" LOC = H13;
+NET "in_ir_w" LOC = G12; 
+NET "in_acc_w" LOC = F12;
+NET "in_ram_a_w" LOC = H14;
+
+NET "in_ram_w" LOC = F13;
+NET "out_is_bus1_w" LOC = G14;
+NET "in_bus1" LOC = E12;
+
+
+#F14 -- free
+
+
+
 
 
 #NET "out_s1" LOC = P4;  ##  PIN3
