@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu.vhf
--- /___/   /\     Timestamp : 06/03/2022 03:29:53
+-- /___/   /\     Timestamp : 06/08/2022 00:16:32
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -4904,7 +4904,7 @@ begin
                 i(7 downto 0)=>sysbus(7 downto 0),
                 i_r=>ram_r,
                 i_w=>ram_w,
-                i_wclk=>clkw,
+                i_wclk=>in_clk,
                 a_o(7 downto 0)=>ram_a_o(7 downto 0),
                 o(7 downto 0)=>ram_o(7 downto 0));
    

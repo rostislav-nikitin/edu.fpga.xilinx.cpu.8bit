@@ -4,15 +4,15 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> 
 Reading design: cpu_facade.prj
@@ -248,6 +248,11 @@ Parsing entity <cmp_8bit_MUSER_alu>.
 Parsing architecture <BEHAVIORAL> of entity <cmp_8bit_muser_alu>.
 Parsing entity <alu>.
 Parsing architecture <BEHAVIORAL> of entity <alu>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/debouncer.vhf" into library work
+Parsing entity <CB16CE_HXILINX_debouncer>.
+Parsing architecture <Behavioral> of entity <cb16ce_hxilinx_debouncer>.
+Parsing entity <debouncer>.
+Parsing architecture <BEHAVIORAL> of entity <debouncer>.
 Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" into library work
 Parsing entity <LD8CE_HXILINX_cpu>.
 Parsing architecture <Behavioral> of entity <ld8ce_hxilinx_cpu>.
@@ -360,6 +365,8 @@ Parsing entity <M2_1_HXILINX_cpu_facade>.
 Parsing architecture <M2_1_HXILINX_cpu_facade_V> of entity <m2_1_hxilinx_cpu_facade>.
 Parsing entity <AND8_HXILINX_cpu_facade>.
 Parsing architecture <AND8_HXILINX_cpu_facade_V> of entity <and8_hxilinx_cpu_facade>.
+Parsing entity <debouncer_MUSER_cpu_facade>.
+Parsing architecture <BEHAVIORAL> of entity <debouncer_muser_cpu_facade>.
 Parsing entity <freq_divider_MUSER_cpu_facade>.
 Parsing architecture <BEHAVIORAL> of entity <freq_divider_muser_cpu_facade>.
 Parsing entity <encoder8_3_MUSER_cpu_facade>.
@@ -432,71 +439,71 @@ Elaborating entity <bus_muxer_MUSER_cpu_facade> (architecture <BEHAVIORAL>) from
 
 Elaborating entity <M16_1E_HXILINX_cpu_facade> (architecture <M16_1E_HXILINX_cpu_facade_V>) from library <work>.
 INFO:HDLCompiler:679 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 534. Case statement is complete. others clause is never selected
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1713: Net <XLXN_55> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1714: Net <XLXN_56> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1715: Net <XLXN_57> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1716: Net <XLXN_58> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1717: Net <XLXN_59> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1718: Net <XLXN_60> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1719: Net <XLXN_61> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1720: Net <XLXN_71> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1721: Net <XLXN_72> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1722: Net <XLXN_73> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1723: Net <XLXN_74> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1724: Net <XLXN_75> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1725: Net <XLXN_76> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1726: Net <XLXN_77> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1727: Net <XLXN_87> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1728: Net <XLXN_88> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1729: Net <XLXN_89> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1730: Net <XLXN_90> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1731: Net <XLXN_91> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1732: Net <XLXN_92> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1733: Net <XLXN_93> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1734: Net <XLXN_103> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1735: Net <XLXN_104> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1736: Net <XLXN_105> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1737: Net <XLXN_106> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1738: Net <XLXN_107> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1739: Net <XLXN_108> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1740: Net <XLXN_109> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1741: Net <XLXN_119> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1742: Net <XLXN_120> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1743: Net <XLXN_121> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1744: Net <XLXN_122> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1745: Net <XLXN_123> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1746: Net <XLXN_124> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1747: Net <XLXN_125> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1748: Net <XLXN_135> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1749: Net <XLXN_136> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1750: Net <XLXN_137> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1751: Net <XLXN_138> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1752: Net <XLXN_139> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1753: Net <XLXN_140> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1754: Net <XLXN_141> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1755: Net <XLXN_151> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1756: Net <XLXN_152> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1757: Net <XLXN_153> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1758: Net <XLXN_154> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1759: Net <XLXN_155> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1760: Net <XLXN_156> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1761: Net <XLXN_157> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1762: Net <XLXN_167> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1763: Net <XLXN_168> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1764: Net <XLXN_169> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1765: Net <XLXN_170> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1766: Net <XLXN_171> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1767: Net <XLXN_172> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1768: Net <XLXN_173> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 3620: Net <XLXI_14_dev7_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 3621: Net <XLXI_14_dev8_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 3622: Net <XLXI_14_dev9_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 3623: Net <XLXI_14_dev10_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 3624: Net <XLXI_14_dev11_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 3625: Net <XLXI_14_dev12_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 3626: Net <XLXI_14_dev13_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 3627: Net <XLXI_14_dev14_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 3628: Net <XLXI_14_dev15_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1781: Net <XLXN_55> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1782: Net <XLXN_56> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1783: Net <XLXN_57> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1784: Net <XLXN_58> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1785: Net <XLXN_59> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1786: Net <XLXN_60> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1787: Net <XLXN_61> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1788: Net <XLXN_71> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1789: Net <XLXN_72> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1790: Net <XLXN_73> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1791: Net <XLXN_74> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1792: Net <XLXN_75> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1793: Net <XLXN_76> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1794: Net <XLXN_77> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1795: Net <XLXN_87> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1796: Net <XLXN_88> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1797: Net <XLXN_89> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1798: Net <XLXN_90> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1799: Net <XLXN_91> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1800: Net <XLXN_92> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1801: Net <XLXN_93> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1802: Net <XLXN_103> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1803: Net <XLXN_104> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1804: Net <XLXN_105> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1805: Net <XLXN_106> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1806: Net <XLXN_107> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1807: Net <XLXN_108> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1808: Net <XLXN_109> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1809: Net <XLXN_119> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1810: Net <XLXN_120> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1811: Net <XLXN_121> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1812: Net <XLXN_122> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1813: Net <XLXN_123> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1814: Net <XLXN_124> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1815: Net <XLXN_125> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1816: Net <XLXN_135> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1817: Net <XLXN_136> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1818: Net <XLXN_137> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1819: Net <XLXN_138> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1820: Net <XLXN_139> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1821: Net <XLXN_140> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1822: Net <XLXN_141> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1823: Net <XLXN_151> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1824: Net <XLXN_152> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1825: Net <XLXN_153> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1826: Net <XLXN_154> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1827: Net <XLXN_155> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1828: Net <XLXN_156> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1829: Net <XLXN_157> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1830: Net <XLXN_167> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1831: Net <XLXN_168> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1832: Net <XLXN_169> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1833: Net <XLXN_170> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1834: Net <XLXN_171> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1835: Net <XLXN_172> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1836: Net <XLXN_173> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 3688: Net <XLXI_14_dev7_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 3689: Net <XLXI_14_dev8_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 3690: Net <XLXI_14_dev9_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 3691: Net <XLXI_14_dev10_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 3692: Net <XLXI_14_dev11_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 3693: Net <XLXI_14_dev12_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 3694: Net <XLXI_14_dev13_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 3695: Net <XLXI_14_dev14_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 3696: Net <XLXI_14_dev15_openSignal[7]> does not have a driver.
 
 Elaborating entity <clk_generator_MUSER_cpu_facade> (architecture <BEHAVIORAL>) from library <work>.
 
@@ -512,9 +519,9 @@ Elaborating entity <D2_4E_HXILINX_cpu_facade> (architecture <D2_4E_HXILINX_cpu_f
 INFO:HDLCompiler:679 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 621. Case statement is complete. others clause is never selected
 
 Elaborating entity <OR6_HXILINX_cpu_facade> (architecture <OR6_HXILINX_cpu_facade_V>) from library <work>.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 2825: Net <XLXI_556_I0_openSignal> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 2826: Net <XLXI_556_I1_openSignal> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 2827: Net <XLXI_556_I2_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 2893: Net <XLXI_556_I0_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 2894: Net <XLXI_556_I1_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 2895: Net <XLXI_556_I2_openSignal> does not have a driver.
 
 Elaborating entity <pass_through_or_one_MUSER_cpu_facade> (architecture <BEHAVIORAL>) from library <work>.
 
@@ -538,13 +545,13 @@ Elaborating entity <encoder16_4_MUSER_cpu_facade> (architecture <BEHAVIORAL>) fr
 Elaborating entity <AND16_HXILINX_cpu_facade> (architecture <AND16_HXILINX_cpu_facade_V>) from library <work>.
 
 Elaborating entity <OR8_HXILINX_cpu_facade> (architecture <OR8_HXILINX_cpu_facade_V>) from library <work>.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 2074: Net <XLXI_1_dev9_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 2075: Net <XLXI_1_dev10_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 2076: Net <XLXI_1_dev11_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 2077: Net <XLXI_1_dev12_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 2078: Net <XLXI_1_dev13_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 2079: Net <XLXI_1_dev14_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 2080: Net <XLXI_1_dev15_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 2142: Net <XLXI_1_dev9_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 2143: Net <XLXI_1_dev10_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 2144: Net <XLXI_1_dev11_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 2145: Net <XLXI_1_dev12_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 2146: Net <XLXI_1_dev13_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 2147: Net <XLXI_1_dev14_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 2148: Net <XLXI_1_dev15_openSignal[7]> does not have a driver.
 
 Elaborating entity <buf_8bit_MUSER_cpu_facade> (architecture <BEHAVIORAL>) from library <work>.
 
@@ -560,7 +567,9 @@ Elaborating entity <M8_1E_HXILINX_cpu_facade> (architecture <M8_1E_HXILINX_cpu_f
 INFO:HDLCompiler:679 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 234. Case statement is complete. others clause is never selected
 
 Elaborating entity <encoder8_3_MUSER_cpu_facade> (architecture <BEHAVIORAL>) from library <work>.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 5681: Net <XLXI_7_in_manr_d_openSignal[7]> does not have a driver.
+
+Elaborating entity <debouncer_MUSER_cpu_facade> (architecture <BEHAVIORAL>) from library <work>.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 5752: Net <XLXI_7_in_manr_d_openSignal[7]> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -568,42 +577,43 @@ WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_
 
 Synthesizing Unit <cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_34_49" for instance <XLXI_34>.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5809: Output port <manr_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5809: Output port <out_alu_x> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5809: Output port <out_iar_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5809: Output port <out_ir_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5809: Output port <out_ram_a_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5809: Output port <out_temp_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5809: Output port <manr_r> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5809: Output port <manr_w> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5809: Output port <out_alu_C_in> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5809: Output port <out_alu_C_out> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5809: Output port <out_alu_eq> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5809: Output port <out_alu_gt> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5809: Output port <out_alu_z> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5809: Output port <out_C_in_enabled> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5809: Output port <out_C_out_flipflop_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5809: Output port <out_flags_clr> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5809: Output port <out_op_alt_nop> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5809: Output port <out_op_alu> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5809: Output port <out_op_alu_add> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5809: Output port <out_op_alu_and> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5809: Output port <out_op_alu_lshift> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5809: Output port <out_op_alu_nop> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5809: Output port <out_op_alu_not> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5809: Output port <out_op_alu_or> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5809: Output port <out_op_alu_rshift> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5809: Output port <out_op_alu_xor> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5809: Output port <out_op_flg_clf> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5809: Output port <out_op_jmp_ifjmp> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5809: Output port <out_op_jmp_jmp> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5809: Output port <out_op_jmp_jmpr> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5809: Output port <out_op_ls_ld> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5809: Output port <out_op_ls_ldc> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5809: Output port <out_op_ls_st> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5809: Output port <out_sysbus_released> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5920: Output port <G> of the instance <XLXI_9> is unconnected or connected to loadless signal.
+    Set property "HU_SET = XLXI_34_51" for instance <XLXI_34>.
+    Set property "HU_SET = XLXI_53_52" for instance <XLXI_53>.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5900: Output port <manr_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5900: Output port <out_alu_x> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5900: Output port <out_iar_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5900: Output port <out_ir_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5900: Output port <out_ram_a_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5900: Output port <out_temp_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5900: Output port <manr_r> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5900: Output port <manr_w> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5900: Output port <out_alu_C_in> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5900: Output port <out_alu_C_out> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5900: Output port <out_alu_eq> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5900: Output port <out_alu_gt> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5900: Output port <out_alu_z> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5900: Output port <out_C_in_enabled> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5900: Output port <out_C_out_flipflop_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5900: Output port <out_flags_clr> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5900: Output port <out_op_alt_nop> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5900: Output port <out_op_alu> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5900: Output port <out_op_alu_add> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5900: Output port <out_op_alu_and> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5900: Output port <out_op_alu_lshift> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5900: Output port <out_op_alu_nop> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5900: Output port <out_op_alu_not> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5900: Output port <out_op_alu_or> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5900: Output port <out_op_alu_rshift> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5900: Output port <out_op_alu_xor> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5900: Output port <out_op_flg_clf> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5900: Output port <out_op_jmp_ifjmp> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5900: Output port <out_op_jmp_jmp> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5900: Output port <out_op_jmp_jmpr> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5900: Output port <out_op_ls_ld> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5900: Output port <out_op_ls_ldc> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5900: Output port <out_op_ls_st> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5900: Output port <out_sysbus_released> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 6011: Output port <G> of the instance <XLXI_9> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <XLXI_7_in_manr_d_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	no macro.
@@ -611,34 +621,34 @@ Unit <cpu_facade> synthesized.
 
 Synthesizing Unit <cpu_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_87_44" for instance <XLXI_87>.
-    Set property "HU_SET = XLXI_104_45" for instance <XLXI_104>.
-    Set property "HU_SET = XLXI_571_46" for instance <XLXI_571>.
-    Set property "HU_SET = XLXI_914_47" for instance <XLXI_914>.
-    Set property "HU_SET = XLXI_917_48" for instance <XLXI_917>.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 4835: Output port <ground> of the instance <cpu_ctl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5019: Output port <g> of the instance <XLXI_130> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5041: Output port <G> of the instance <XLXI_136> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5513: Output port <clk_out> of the instance <XLXI_912> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5528: Output port <Q> of the instance <XLXI_914> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5528: Output port <TC> of the instance <XLXI_914> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5543: Output port <CEO> of the instance <XLXI_917> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5543: Output port <TC> of the instance <XLXI_917> is unconnected or connected to loadless signal.
+    Set property "HU_SET = XLXI_87_46" for instance <XLXI_87>.
+    Set property "HU_SET = XLXI_104_47" for instance <XLXI_104>.
+    Set property "HU_SET = XLXI_571_48" for instance <XLXI_571>.
+    Set property "HU_SET = XLXI_914_49" for instance <XLXI_914>.
+    Set property "HU_SET = XLXI_917_50" for instance <XLXI_917>.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 4903: Output port <ground> of the instance <cpu_ctl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5087: Output port <g> of the instance <XLXI_130> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5109: Output port <G> of the instance <XLXI_136> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5581: Output port <clk_out> of the instance <XLXI_912> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5596: Output port <Q> of the instance <XLXI_914> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5596: Output port <TC> of the instance <XLXI_914> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5611: Output port <CEO> of the instance <XLXI_917> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5611: Output port <TC> of the instance <XLXI_917> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <cpu_MUSER_cpu_facade> synthesized.
 
 Synthesizing Unit <alu_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_1_41" for instance <XLXI_1>.
-    Set property "HU_SET = XLXI_2_42" for instance <XLXI_2>.
-    Set property "HU_SET = XLXI_102_43" for instance <XLXI_102>.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 4103: Output port <D3> of the instance <XLXI_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 4103: Output port <D4> of the instance <XLXI_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 4103: Output port <D5> of the instance <XLXI_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 4103: Output port <D6> of the instance <XLXI_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 4103: Output port <D7> of the instance <XLXI_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 4117: Output port <OFL> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+    Set property "HU_SET = XLXI_1_43" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_2_44" for instance <XLXI_2>.
+    Set property "HU_SET = XLXI_102_45" for instance <XLXI_102>.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 4171: Output port <D3> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 4171: Output port <D4> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 4171: Output port <D5> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 4171: Output port <D6> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 4171: Output port <D7> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 4185: Output port <OFL> of the instance <XLXI_2> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <alu_MUSER_cpu_facade> synthesized.
@@ -677,7 +687,7 @@ Unit <cmp_1bit_MUSER_cpu_facade> synthesized.
 
 Synthesizing Unit <lzero_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_1_40" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_1_42" for instance <XLXI_1>.
     Summary:
 	no macro.
 Unit <lzero_MUSER_cpu_facade> synthesized.
@@ -705,14 +715,14 @@ Unit <alu_output_muxer_MUSER_cpu_facade> synthesized.
 
 Synthesizing Unit <bus_muxer_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_1_16" for instance <XLXI_1>.
-    Set property "HU_SET = XLXI_2_15" for instance <XLXI_2>.
-    Set property "HU_SET = XLXI_12_17" for instance <XLXI_12>.
-    Set property "HU_SET = XLXI_13_18" for instance <XLXI_13>.
-    Set property "HU_SET = XLXI_14_19" for instance <XLXI_14>.
-    Set property "HU_SET = XLXI_15_20" for instance <XLXI_15>.
-    Set property "HU_SET = XLXI_16_21" for instance <XLXI_16>.
-    Set property "HU_SET = XLXI_17_22" for instance <XLXI_17>.
+    Set property "HU_SET = XLXI_1_18" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_2_17" for instance <XLXI_2>.
+    Set property "HU_SET = XLXI_12_19" for instance <XLXI_12>.
+    Set property "HU_SET = XLXI_13_20" for instance <XLXI_13>.
+    Set property "HU_SET = XLXI_14_21" for instance <XLXI_14>.
+    Set property "HU_SET = XLXI_15_22" for instance <XLXI_15>.
+    Set property "HU_SET = XLXI_16_23" for instance <XLXI_16>.
+    Set property "HU_SET = XLXI_17_24" for instance <XLXI_17>.
 WARNING:Xst:647 - Input <dev9> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <dev10> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <dev11> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -789,7 +799,7 @@ Unit <M16_1E_HXILINX_cpu_facade> synthesized.
 
 Synthesizing Unit <clk_generator_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_4_9" for instance <XLXI_4>.
+    Set property "HU_SET = XLXI_4_11" for instance <XLXI_4>.
     Summary:
 	no macro.
 Unit <clk_generator_MUSER_cpu_facade> synthesized.
@@ -805,12 +815,12 @@ Unit <FJKC_HXILINX_cpu_facade> synthesized.
 
 Synthesizing Unit <cpu_control_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_39_37" for instance <XLXI_39>.
-    Set property "HU_SET = XLXI_47_35" for instance <XLXI_47>.
-    Set property "HU_SET = XLXI_48_36" for instance <XLXI_48>.
-    Set property "HU_SET = XLXI_252_38" for instance <XLXI_252>.
-    Set property "HU_SET = XLXI_577_39" for instance <XLXI_577>.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 3513: Output port <O> of the instance <XLXI_556> is unconnected or connected to loadless signal.
+    Set property "HU_SET = XLXI_39_39" for instance <XLXI_39>.
+    Set property "HU_SET = XLXI_47_37" for instance <XLXI_47>.
+    Set property "HU_SET = XLXI_48_38" for instance <XLXI_48>.
+    Set property "HU_SET = XLXI_252_40" for instance <XLXI_252>.
+    Set property "HU_SET = XLXI_577_41" for instance <XLXI_577>.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 3581: Output port <O> of the instance <XLXI_556> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <XLXI_556_I0_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <XLXI_556_I1_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <XLXI_556_I2_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
@@ -820,12 +830,12 @@ Unit <cpu_control_MUSER_cpu_facade> synthesized.
 
 Synthesizing Unit <stepper_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_24_33" for instance <XLXI_24>.
-    Set property "HU_SET = XLXI_25_34" for instance <XLXI_25>.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 2615: Output port <CEO> of the instance <XLXI_24> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 2615: Output port <Q3> of the instance <XLXI_24> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 2615: Output port <TC> of the instance <XLXI_24> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 2626: Output port <D7> of the instance <XLXI_25> is unconnected or connected to loadless signal.
+    Set property "HU_SET = XLXI_24_35" for instance <XLXI_24>.
+    Set property "HU_SET = XLXI_25_36" for instance <XLXI_25>.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 2683: Output port <CEO> of the instance <XLXI_24> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 2683: Output port <Q3> of the instance <XLXI_24> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 2683: Output port <TC> of the instance <XLXI_24> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 2694: Output port <D7> of the instance <XLXI_25> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <stepper_MUSER_cpu_facade> synthesized.
@@ -853,14 +863,14 @@ Unit <OR6_HXILINX_cpu_facade> synthesized.
 
 Synthesizing Unit <pass_through_or_one_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_1_24" for instance <XLXI_1>.
-    Set property "HU_SET = XLXI_3_25" for instance <XLXI_3>.
-    Set property "HU_SET = XLXI_4_26" for instance <XLXI_4>.
-    Set property "HU_SET = XLXI_5_27" for instance <XLXI_5>.
-    Set property "HU_SET = XLXI_6_28" for instance <XLXI_6>.
-    Set property "HU_SET = XLXI_7_29" for instance <XLXI_7>.
-    Set property "HU_SET = XLXI_8_30" for instance <XLXI_8>.
-    Set property "HU_SET = XLXI_13_31" for instance <XLXI_13>.
+    Set property "HU_SET = XLXI_1_26" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_3_27" for instance <XLXI_3>.
+    Set property "HU_SET = XLXI_4_28" for instance <XLXI_4>.
+    Set property "HU_SET = XLXI_5_29" for instance <XLXI_5>.
+    Set property "HU_SET = XLXI_6_30" for instance <XLXI_6>.
+    Set property "HU_SET = XLXI_7_31" for instance <XLXI_7>.
+    Set property "HU_SET = XLXI_8_32" for instance <XLXI_8>.
+    Set property "HU_SET = XLXI_13_33" for instance <XLXI_13>.
     Summary:
 	no macro.
 Unit <pass_through_or_one_MUSER_cpu_facade> synthesized.
@@ -874,7 +884,7 @@ Unit <M2_1_HXILINX_cpu_facade> synthesized.
 Synthesizing Unit <ram_256bytes_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
     Set property "INIT = 0000000000000000000000000000000000000000000000000000000000000072" for instance <XLXI_1>.
-    Set property "HU_SET = XLXI_15_32" for instance <XLXI_15>.
+    Set property "HU_SET = XLXI_15_34" for instance <XLXI_15>.
     Set property "INIT = 0000000000000000000000000000000000000000000000000000000000000000" for instance <XLXI_17>.
     Set property "INIT = 0000000000000000000000000000000000000000000000000000000000000901" for instance <XLXI_18>.
     Set property "INIT = 0000000000000000000000000000000000000000000000000000000000000040" for instance <XLXI_19>.
@@ -882,7 +892,7 @@ Synthesizing Unit <ram_256bytes_MUSER_cpu_facade>.
     Set property "INIT = 0000000000000000000000000000000000000000000000000000000000000205" for instance <XLXI_21>.
     Set property "INIT = 00000000000000000000000000000000000000000000000000000000000006A0" for instance <XLXI_22>.
     Set property "INIT = 0000000000000000000000000000000000000000000000000000000000000010" for instance <XLXI_23>.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 2538: Output port <O> of the instance <XLXI_42> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 2606: Output port <O> of the instance <XLXI_42> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <ram_256bytes_MUSER_cpu_facade> synthesized.
@@ -913,7 +923,7 @@ Unit <LD4CE_HXILINX_cpu_facade> synthesized.
 
 Synthesizing Unit <reg_8bit_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_5_23" for instance <XLXI_5>.
+    Set property "HU_SET = XLXI_5_25" for instance <XLXI_5>.
 WARNING:Xst:647 - Input <r> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
 	no macro.
@@ -948,11 +958,11 @@ Unit <cpu_output_muxer_MUSER_cpu_facade> synthesized.
 
 Synthesizing Unit <encoder16_4_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_25_10" for instance <XLXI_25>.
-    Set property "HU_SET = XLXI_48_11" for instance <XLXI_48>.
-    Set property "HU_SET = XLXI_49_12" for instance <XLXI_49>.
-    Set property "HU_SET = XLXI_50_13" for instance <XLXI_50>.
-    Set property "HU_SET = XLXI_59_14" for instance <XLXI_59>.
+    Set property "HU_SET = XLXI_25_12" for instance <XLXI_25>.
+    Set property "HU_SET = XLXI_48_13" for instance <XLXI_48>.
+    Set property "HU_SET = XLXI_49_14" for instance <XLXI_49>.
+    Set property "HU_SET = XLXI_50_15" for instance <XLXI_50>.
+    Set property "HU_SET = XLXI_59_16" for instance <XLXI_59>.
     Summary:
 	no macro.
 Unit <encoder16_4_MUSER_cpu_facade> synthesized.
@@ -977,23 +987,23 @@ Unit <buf_8bit_MUSER_cpu_facade> synthesized.
 
 Synthesizing Unit <cpu_freq_divider_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_4_8" for instance <XLXI_4>.
+    Set property "HU_SET = XLXI_4_10" for instance <XLXI_4>.
     Summary:
 	no macro.
 Unit <cpu_freq_divider_MUSER_cpu_facade> synthesized.
 
 Synthesizing Unit <freq_divider_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_1_1" for instance <XLXI_1>.
-    Set property "HU_SET = XLXI_2_0" for instance <XLXI_2>.
-    Set property "HU_SET = XLXI_123_2" for instance <XLXI_123>.
-    Set property "HU_SET = XLXI_124_3" for instance <XLXI_124>.
-    Set property "HU_SET = XLXI_128_6" for instance <XLXI_128>.
-    Set property "HU_SET = XLXI_149_4" for instance <XLXI_149>.
-    Set property "HU_SET = XLXI_150_5" for instance <XLXI_150>.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 809: Output port <TC> of the instance <XLXI_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 817: Output port <CEO> of the instance <XLXI_2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 817: Output port <TC> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+    Set property "HU_SET = XLXI_1_3" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_2_2" for instance <XLXI_2>.
+    Set property "HU_SET = XLXI_123_4" for instance <XLXI_123>.
+    Set property "HU_SET = XLXI_124_5" for instance <XLXI_124>.
+    Set property "HU_SET = XLXI_128_8" for instance <XLXI_128>.
+    Set property "HU_SET = XLXI_149_6" for instance <XLXI_149>.
+    Set property "HU_SET = XLXI_150_7" for instance <XLXI_150>.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 877: Output port <TC> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 885: Output port <CEO> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 885: Output port <TC> of the instance <XLXI_2> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <freq_divider_MUSER_cpu_facade> synthesized.
@@ -1022,28 +1032,40 @@ Unit <M8_1E_HXILINX_cpu_facade> synthesized.
 
 Synthesizing Unit <encoder8_3_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_4_7" for instance <XLXI_4>.
+    Set property "HU_SET = XLXI_4_9" for instance <XLXI_4>.
     Summary:
 	no macro.
 Unit <encoder8_3_MUSER_cpu_facade> synthesized.
+
+Synthesizing Unit <debouncer_MUSER_cpu_facade>.
+    Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
+    Set property "HU_SET = XLXI_1_0" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_2_1" for instance <XLXI_2>.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 726: Output port <Q> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 726: Output port <TC> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 734: Output port <CEO> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 734: Output port <TC> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <debouncer_MUSER_cpu_facade> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 7
- 16-bit adder                                          : 4
+# Adders/Subtractors                                   : 9
+ 16-bit adder                                          : 6
  4-bit adder                                           : 1
  9-bit adder                                           : 2
-# Registers                                            : 7
- 1-bit register                                        : 2
- 16-bit register                                       : 4
+# Registers                                            : 10
+ 1-bit register                                        : 3
+ 16-bit register                                       : 6
  4-bit register                                        : 1
 # Latches                                              : 92
  1-bit latch                                           : 92
-# Multiplexers                                         : 53
+# Multiplexers                                         : 55
  1-bit 16-to-1 multiplexer                             : 16
- 1-bit 2-to-1 multiplexer                              : 30
+ 1-bit 2-to-1 multiplexer                              : 32
  1-bit 8-to-1 multiplexer                              : 1
  4-bit 2-to-1 multiplexer                              : 2
  8-bit 2-to-1 multiplexer                              : 4
@@ -1081,14 +1103,14 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # Adders/Subtractors                                   : 1
  9-bit adder carry in                                  : 1
-# Counters                                             : 5
- 16-bit up counter                                     : 4
+# Counters                                             : 7
+ 16-bit up counter                                     : 6
  4-bit up counter                                      : 1
-# Registers                                            : 3
- Flip-Flops                                            : 3
-# Multiplexers                                         : 44
+# Registers                                            : 4
+ Flip-Flops                                            : 4
+# Multiplexers                                         : 46
  1-bit 16-to-1 multiplexer                             : 16
- 1-bit 2-to-1 multiplexer                              : 21
+ 1-bit 2-to-1 multiplexer                              : 23
  1-bit 8-to-1 multiplexer                              : 1
  4-bit 2-to-1 multiplexer                              : 2
  8-bit 2-to-1 multiplexer                              : 4
@@ -1109,6 +1131,10 @@ Optimizing unit <bus_muxer_MUSER_cpu_facade> ...
 
 Optimizing unit <encoder16_4_MUSER_cpu_facade> ...
 
+Optimizing unit <ram_256bytes_MUSER_cpu_facade> ...
+
+Optimizing unit <LD8_HXILINX_cpu_facade> ...
+
 Optimizing unit <cpu_freq_divider_MUSER_cpu_facade> ...
 
 Optimizing unit <freq_divider_MUSER_cpu_facade> ...
@@ -1118,10 +1144,6 @@ Optimizing unit <encoder8_3_MUSER_cpu_facade> ...
 Optimizing unit <alu_MUSER_cpu_facade> ...
 
 Optimizing unit <cmp_8bit_MUSER_cpu_facade> ...
-
-Optimizing unit <ram_256bytes_MUSER_cpu_facade> ...
-
-Optimizing unit <LD8_HXILINX_cpu_facade> ...
 
 Optimizing unit <LD8CE_HXILINX_cpu_facade> ...
 
@@ -1182,6 +1204,14 @@ WARNING:Xst:2677 - Node <COUNT_12> of sequential type is unconnected in block <X
 WARNING:Xst:2677 - Node <COUNT_13> of sequential type is unconnected in block <XLXI_7/XLXI_917>.
 WARNING:Xst:2677 - Node <COUNT_14> of sequential type is unconnected in block <XLXI_7/XLXI_917>.
 WARNING:Xst:2677 - Node <COUNT_15> of sequential type is unconnected in block <XLXI_7/XLXI_917>.
+WARNING:Xst:2677 - Node <COUNT_8> of sequential type is unconnected in block <XLXI_51/XLXI_2>.
+WARNING:Xst:2677 - Node <COUNT_9> of sequential type is unconnected in block <XLXI_51/XLXI_2>.
+WARNING:Xst:2677 - Node <COUNT_10> of sequential type is unconnected in block <XLXI_51/XLXI_2>.
+WARNING:Xst:2677 - Node <COUNT_11> of sequential type is unconnected in block <XLXI_51/XLXI_2>.
+WARNING:Xst:2677 - Node <COUNT_12> of sequential type is unconnected in block <XLXI_51/XLXI_2>.
+WARNING:Xst:2677 - Node <COUNT_13> of sequential type is unconnected in block <XLXI_51/XLXI_2>.
+WARNING:Xst:2677 - Node <COUNT_14> of sequential type is unconnected in block <XLXI_51/XLXI_2>.
+WARNING:Xst:2677 - Node <COUNT_15> of sequential type is unconnected in block <XLXI_51/XLXI_2>.
 WARNING:Xst:1290 - Hierarchical block <XLXI_7/XLXI_912/XLXI_1/XLXI_128> is unconnected in block <cpu_facade>.
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <XLXI_7/XLXI_912/XLXI_4> is unconnected in block <cpu_facade>.
@@ -1198,8 +1228,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 57
- Flip-Flops                                            : 57
+# Registers                                            : 82
+ Flip-Flops                                            : 82
 
 =========================================================================
 
@@ -1222,35 +1252,35 @@ Top Level Output File Name         : cpu_facade.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 872
+# BELS                             : 950
 #      AND2                        : 111
 #      AND2B1                      : 1
 #      AND3                        : 1
 #      AND3B1                      : 4
 #      AND4                        : 1
-#      BUF                         : 186
-#      GND                         : 22
-#      INV                         : 96
-#      LUT1                        : 46
+#      BUF                         : 187
+#      GND                         : 24
+#      INV                         : 99
+#      LUT1                        : 67
 #      LUT2                        : 33
 #      LUT3                        : 22
 #      LUT4                        : 18
 #      LUT5                        : 1
-#      LUT6                        : 58
-#      MUXCY                       : 56
+#      LUT6                        : 61
+#      MUXCY                       : 78
 #      MUXF7                       : 24
 #      MUXF8                       : 16
 #      OR2                         : 52
 #      OR3                         : 4
 #      OR4                         : 11
 #      OR5                         : 4
-#      VCC                         : 5
+#      VCC                         : 7
 #      XNOR2                       : 40
-#      XORCY                       : 60
-# FlipFlops/Latches                : 141
-#      FDC                         : 1
+#      XORCY                       : 84
+# FlipFlops/Latches                : 166
+#      FDC                         : 2
 #      FDC_1                       : 1
-#      FDCE                        : 55
+#      FDCE                        : 79
 #      LD                          : 16
 #      LDCE                        : 68
 # RAMS                             : 8
@@ -1271,18 +1301,18 @@ Selected Device : xa6slx9ftg256-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             141  out of  11440     1%  
- Number of Slice LUTs:                  306  out of   5720     5%  
-    Number used as Logic:               274  out of   5720     4%  
+ Number of Slice Registers:             166  out of  11440     1%  
+ Number of Slice LUTs:                  333  out of   5720     5%  
+    Number used as Logic:               301  out of   5720     5%  
     Number used as Memory:               32  out of   1440     2%  
        Number used as RAM:               32
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    447
-   Number with an unused Flip Flop:     306  out of    447    68%  
-   Number with an unused LUT:           141  out of    447    31%  
-   Number of fully used LUT-FF pairs:     0  out of    447     0%  
-   Number of unique control sets:        18
+ Number of LUT Flip Flop pairs used:    499
+   Number with an unused Flip Flop:     333  out of    499    66%  
+   Number with an unused LUT:           166  out of    499    33%  
+   Number of fully used LUT-FF pairs:     0  out of    499     0%  
+   Number of unique control sets:        21
 
 IO Utilization: 
  Number of IOs:                          87
@@ -1313,15 +1343,15 @@ Clock Information:
 Clock Signal                            | Clock buffer(FF name)                   | Load  |
 ----------------------------------------+-----------------------------------------+-------+
 XLXI_7/clkr(XLXI_7/clck_gen/XLXI_9:O)   | NONE(*)(XLXI_7/XLXI_102)                | 1     |
-in_clk                                  | BUFGP                                   | 52    |
-XLXI_7/clk_internal(XLXI_7/XLXI_924:O)  | NONE(*)(XLXI_7/clck_gen/XLXI_4/q_tmp)   | 1     |
-XLXI_7/clkw(XLXI_7/clck_gen/XLXI_10:O)  | NONE(*)(XLXI_7/XLXI_9/XLXI_23)          | 8     |
+in_clk                                  | BUFGP                                   | 84    |
 XLXI_7/ram_a_w(XLXI_7/XLXI_568:O)       | NONE(*)(XLXI_7/XLXI_9/XLXI_15/Q_6)      | 8     |
 XLXI_7/cc_r0_w(XLXI_7/cpu_ctl/XLXI_80:O)| NONE(*)(XLXI_7/XLXI_104/Q_6)            | 8     |
-N0                                      | NONE(XLXI_7/XLXI_122/XLXI_5/Q_6)        | 68    |
+XLXI_7/clk_internal(XLXI_7/XLXI_924:O)  | NONE(*)(XLXI_7/clck_gen/XLXI_4/q_tmp)   | 1     |
+XLXI_51/XLXI_2/COUNT_7                  | NONE(XLXI_53/q_tmp)                     | 1     |
+XLXI_51/XLXN_4                          | NONE(XLXI_7/XLXI_122/XLXI_5/Q_6)        | 68    |
 XLXI_7/clck_gen/XLXI_4/q_tmp            | NONE(XLXI_7/cpu_ctl/stp/XLXI_24/COUNT_0)| 3     |
 ----------------------------------------+-----------------------------------------+-------+
-(*) These 5 clock signal(s) are generated by combinatorial logic,
+(*) These 4 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -1334,10 +1364,10 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 7.478ns (Maximum Frequency: 133.729MHz)
-   Minimum input arrival time before clock: 19.997ns
-   Maximum output required time after clock: 22.800ns
-   Maximum combinational path delay: 23.678ns
+   Minimum period: 18.929ns (Maximum Frequency: 52.830MHz)
+   Minimum input arrival time before clock: 19.844ns
+   Maximum output required time after clock: 22.647ns
+   Maximum combinational path delay: 23.525ns
 
 Timing Details:
 ---------------
@@ -1345,33 +1375,44 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'in_clk'
-  Clock period: 7.478ns (frequency: 133.729MHz)
-  Total number of paths / destination ports: 1762 / 104
+  Clock period: 18.929ns (frequency: 52.830MHz)
+  Total number of paths / destination ports: 2654 / 152
 -------------------------------------------------------------------------
-Delay:               7.478ns (Levels of Logic = 7)
-  Source:            XLXI_7/XLXI_912/XLXI_1/XLXI_1/COUNT_13 (FF)
-  Destination:       XLXI_7/XLXI_912/XLXI_1/XLXI_2/COUNT_0 (FF)
+Delay:               18.929ns (Levels of Logic = 18)
+  Source:            XLXI_7/XLXI_917/COUNT_3 (FF)
+  Destination:       XLXI_7/XLXI_9/XLXI_23 (RAM)
   Source Clock:      in_clk rising
   Destination Clock: in_clk rising
 
-  Data Path: XLXI_7/XLXI_912/XLXI_1/XLXI_1/COUNT_13 to XLXI_7/XLXI_912/XLXI_1/XLXI_2/COUNT_0
+  Data Path: XLXI_7/XLXI_917/COUNT_3 to XLXI_7/XLXI_9/XLXI_23
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             3   0.447   0.995  COUNT_13 (COUNT_13)
-     end scope: 'XLXI_7/XLXI_912/XLXI_1/XLXI_1:Q<13>'
-     XNOR2:I1->O           1   0.223   0.808  XLXI_7/XLXI_912/XLXI_1/XLXI_121 (XLXI_7/XLXI_912/XLXI_1/XLXN_63)
-     begin scope: 'XLXI_7/XLXI_912/XLXI_1/XLXI_124:I2'
-     LUT3:I0->O            1   0.205   0.580  O_SW0 (N01)
-     LUT6:I5->O            1   0.205   0.827  O (O)
-     end scope: 'XLXI_7/XLXI_912/XLXI_1/XLXI_124:O'
-     AND4:I2->O            1   0.320   0.944  XLXI_7/XLXI_912/XLXI_1/XLXI_152 (XLXI_7/XLXI_912/XLXI_1/eq)
-     OR2:I0->O            32   0.203   1.291  XLXI_7/XLXI_912/XLXI_1/XLXI_155 (XLXI_7/XLXI_912/XLXI_1/clr)
-     begin scope: 'XLXI_7/XLXI_912/XLXI_1/XLXI_2:CLR'
-     FDCE:CLR                  0.430          COUNT_0
+     FDCE:C->Q             1   0.447   0.579  COUNT_3 (COUNT_3)
+     end scope: 'XLXI_7/XLXI_917:Q<3>'
+     BUF:I->O              1   0.568   0.944  XLXI_7/XLXI_916 (XLXI_7/clk_low)
+     AND2:I0->O            1   0.203   0.944  XLXI_7/XLXI_919 (XLXI_7/XLXN_252)
+     OR2:I0->O             4   0.203   1.028  XLXI_7/XLXI_924 (XLXI_7/clk_internal)
+     OR2:I1->O            12   0.223   0.908  XLXI_7/clck_gen/XLXI_9 (XLXI_7/clkr)
+     INV:I->O              2   0.568   0.981  XLXI_7/XLXI_212 (XLXI_7/sysbus_released)
+     AND3:I0->O           10   0.203   1.221  XLXI_7/XLXI_326 (XLXI_7/can_read)
+     AND2:I0->O            1   0.203   0.944  XLXI_7/XLXI_465 (XLXI_7/manual_r1_r)
+     OR2:I0->O             2   0.203   0.616  XLXI_7/XLXI_466 (XLXI_7/r1_r)
+     BUF:I->O              2   0.568   0.616  XLXI_7/XLXI_130/XLXI_7 (XLXI_7/XLXI_130/i<4>)
+     INV:I->O              1   0.568   0.808  XLXI_7/XLXI_130/XLXI_22/XLXI_5 (XLXI_7/XLXI_130/XLXI_22/XLXN_1)
+     begin scope: 'XLXI_7/XLXI_130/XLXI_22/XLXI_25:I11'
+     LUT4:I1->O            1   0.205   0.580  O3 (O3)
+     LUT5:I4->O            1   0.205   0.579  O4 (O)
+     end scope: 'XLXI_7/XLXI_130/XLXI_22/XLXI_25:O'
+     INV:I->O              8   0.568   0.803  XLXI_7/XLXI_130/XLXI_21 (XLXI_7/XLXI_130/XLXN_73)
+     begin scope: 'XLXI_7/XLXI_130/XLXI_1/XLXI_17:E'
+     LUT2:I1->O            1   0.205   0.579  Mmux_O11 (O)
+     end scope: 'XLXI_7/XLXI_130/XLXI_1/XLXI_17:O'
+     BUF:I->O             20   0.568   1.092  XLXI_7/XLXI_130/XLXI_1/XLXI_21 (XLXI_7/sysbus<3>)
+     RAM256X1S:D               0.000          XLXI_7/XLXI_9/XLXI_19
     ----------------------------------------
-    Total                      7.478ns (2.033ns logic, 5.445ns route)
-                                       (27.2% logic, 72.8% route)
+    Total                     18.929ns (5.708ns logic, 13.221ns route)
+                                       (30.2% logic, 69.8% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'XLXI_7/clk_internal'
@@ -1394,6 +1435,28 @@ Delay:               2.048ns (Levels of Logic = 1)
     ----------------------------------------
     Total                      2.048ns (0.755ns logic, 1.293ns route)
                                        (36.9% logic, 63.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_51/XLXI_2/COUNT_7'
+  Clock period: 1.950ns (frequency: 512.794MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.950ns (Levels of Logic = 1)
+  Source:            XLXI_53/q_tmp (FF)
+  Destination:       XLXI_53/q_tmp (FF)
+  Source Clock:      XLXI_51/XLXI_2/COUNT_7 rising
+  Destination Clock: XLXI_51/XLXI_2/COUNT_7 rising
+
+  Data Path: XLXI_53/q_tmp to XLXI_53/q_tmp
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.447   0.616  q_tmp (q_tmp)
+     INV:I->O              1   0.206   0.579  Mmux_q_tmp_q_tmp_MUX_34_o11_INV_0 (q_tmp_q_tmp_MUX_34_o)
+     FDC:D                     0.102          q_tmp
+    ----------------------------------------
+    Total                      1.950ns (0.755ns logic, 1.195ns route)
+                                       (38.7% logic, 61.3% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'XLXI_7/clck_gen/XLXI_4/q_tmp'
@@ -1425,7 +1488,7 @@ Delay:               2.790ns (Levels of Logic = 3)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_7/clkr'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              5.743ns (Levels of Logic = 3)
+Offset:              5.781ns (Levels of Logic = 3)
   Source:            in_rst (PAD)
   Destination:       XLXI_7/XLXI_102 (FF)
   Destination Clock: XLXI_7/clkr falling
@@ -1434,67 +1497,22 @@ Offset:              5.743ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.579  in_rst_IBUF (in_rst_IBUF)
+     IBUF:I->O             2   1.222   0.616  in_rst_IBUF (in_rst_IBUF)
      BUF:I->O              1   0.568   0.579  XLXI_7/XLXI_116 (XLXI_7/XLXN_233)
      INV:I->O             88   0.568   1.798  XLXI_7/XLXI_117 (XLXI_7/rst)
      FDC_1:CLR                 0.430          XLXI_7/XLXI_102
     ----------------------------------------
-    Total                      5.743ns (2.788ns logic, 2.955ns route)
-                                       (48.5% logic, 51.5% route)
+    Total                      5.781ns (2.788ns logic, 2.993ns route)
+                                       (48.2% logic, 51.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'in_clk'
-  Total number of paths / destination ports: 52 / 52
+  Total number of paths / destination ports: 2228 / 92
 -------------------------------------------------------------------------
-Offset:              7.603ns (Levels of Logic = 5)
-  Source:            in_rst (PAD)
-  Destination:       XLXI_7/XLXI_912/XLXI_1/XLXI_2/COUNT_0 (FF)
-  Destination Clock: in_clk rising
-
-  Data Path: in_rst to XLXI_7/XLXI_912/XLXI_1/XLXI_2/COUNT_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.579  in_rst_IBUF (in_rst_IBUF)
-     BUF:I->O              1   0.568   0.579  XLXI_7/XLXI_116 (XLXI_7/XLXN_233)
-     INV:I->O             88   0.568   2.143  XLXI_7/XLXI_117 (XLXI_7/rst)
-     OR2:I1->O            32   0.223   1.291  XLXI_7/XLXI_912/XLXI_1/XLXI_155 (XLXI_7/XLXI_912/XLXI_1/clr)
-     begin scope: 'XLXI_7/XLXI_912/XLXI_1/XLXI_2:CLR'
-     FDCE:CLR                  0.430          COUNT_0
-    ----------------------------------------
-    Total                      7.603ns (3.011ns logic, 4.592ns route)
-                                       (39.6% logic, 60.4% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_7/clk_internal'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              5.743ns (Levels of Logic = 4)
-  Source:            in_rst (PAD)
-  Destination:       XLXI_7/clck_gen/XLXI_4/q_tmp (FF)
-  Destination Clock: XLXI_7/clk_internal falling
-
-  Data Path: in_rst to XLXI_7/clck_gen/XLXI_4/q_tmp
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.579  in_rst_IBUF (in_rst_IBUF)
-     BUF:I->O              1   0.568   0.579  XLXI_7/XLXI_116 (XLXI_7/XLXN_233)
-     INV:I->O             88   0.568   1.798  XLXI_7/XLXI_117 (XLXI_7/rst)
-     begin scope: 'XLXI_7/clck_gen/XLXI_4:CLR'
-     FDC:CLR                   0.430          q_tmp
-    ----------------------------------------
-    Total                      5.743ns (2.788ns logic, 2.955ns route)
-                                       (48.5% logic, 51.5% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_7/clkw'
-  Total number of paths / destination ports: 2744 / 16
--------------------------------------------------------------------------
-Offset:              19.960ns (Levels of Logic = 18)
+Offset:              19.807ns (Levels of Logic = 18)
   Source:            in_is_clk_manual (PAD)
   Destination:       XLXI_7/XLXI_9/XLXI_23 (RAM)
-  Destination Clock: XLXI_7/clkw rising
+  Destination Clock: in_clk rising
 
   Data Path: in_is_clk_manual to XLXI_7/XLXI_9/XLXI_23
                                 Gate     Net
@@ -1507,29 +1525,29 @@ Offset:              19.960ns (Levels of Logic = 18)
      OR2:I1->O            12   0.223   0.908  XLXI_7/clck_gen/XLXI_9 (XLXI_7/clkr)
      INV:I->O              2   0.568   0.981  XLXI_7/XLXI_212 (XLXI_7/sysbus_released)
      AND3:I0->O           10   0.203   1.221  XLXI_7/XLXI_326 (XLXI_7/can_read)
-     AND2:I0->O            1   0.203   0.944  XLXI_7/XLXI_525 (XLXI_7/manual_r2_r)
-     OR2:I0->O             2   0.203   0.616  XLXI_7/XLXI_526 (XLXI_7/r2_r)
-     BUF:I->O              3   0.568   0.650  XLXI_7/XLXI_130/XLXI_8 (XLXI_7/XLXI_130/i<5>)
-     INV:I->O              1   0.568   0.827  XLXI_7/XLXI_130/XLXI_22/XLXI_6 (XLXI_7/XLXI_130/XLXI_22/XLXN_19)
-     begin scope: 'XLXI_7/XLXI_130/XLXI_22/XLXI_25:I10'
-     LUT4:I0->O            1   0.203   0.580  O3 (O3)
+     AND2:I0->O            1   0.203   0.944  XLXI_7/XLXI_465 (XLXI_7/manual_r1_r)
+     OR2:I0->O             2   0.203   0.616  XLXI_7/XLXI_466 (XLXI_7/r1_r)
+     BUF:I->O              2   0.568   0.616  XLXI_7/XLXI_130/XLXI_7 (XLXI_7/XLXI_130/i<4>)
+     INV:I->O              1   0.568   0.808  XLXI_7/XLXI_130/XLXI_22/XLXI_5 (XLXI_7/XLXI_130/XLXI_22/XLXN_1)
+     begin scope: 'XLXI_7/XLXI_130/XLXI_22/XLXI_25:I11'
+     LUT4:I1->O            1   0.205   0.580  O3 (O3)
      LUT5:I4->O            1   0.205   0.579  O4 (O)
      end scope: 'XLXI_7/XLXI_130/XLXI_22/XLXI_25:O'
-     INV:I->O              8   0.568   0.907  XLXI_7/XLXI_130/XLXI_21 (XLXI_7/XLXI_130/XLXN_73)
+     INV:I->O              8   0.568   0.803  XLXI_7/XLXI_130/XLXI_21 (XLXI_7/XLXI_130/XLXN_73)
      begin scope: 'XLXI_7/XLXI_130/XLXI_1/XLXI_17:E'
-     LUT2:I0->O            1   0.203   0.579  Mmux_O11 (O)
+     LUT2:I1->O            1   0.205   0.579  Mmux_O11 (O)
      end scope: 'XLXI_7/XLXI_130/XLXI_1/XLXI_17:O'
      BUF:I->O             20   0.568   1.092  XLXI_7/XLXI_130/XLXI_1/XLXI_21 (XLXI_7/sysbus<3>)
      RAM256X1S:D               0.000          XLXI_7/XLXI_9/XLXI_19
     ----------------------------------------
-    Total                     19.960ns (6.519ns logic, 13.441ns route)
-                                       (32.7% logic, 67.3% route)
+    Total                     19.807ns (6.523ns logic, 13.284ns route)
+                                       (32.9% logic, 67.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_7/ram_a_w'
-  Total number of paths / destination ports: 2696 / 8
+  Total number of paths / destination ports: 2112 / 8
 -------------------------------------------------------------------------
-Offset:              19.997ns (Levels of Logic = 19)
+Offset:              19.844ns (Levels of Logic = 19)
   Source:            in_is_clk_manual (PAD)
   Destination:       XLXI_7/XLXI_9/XLXI_15/Q_6 (LATCH)
   Destination Clock: XLXI_7/ram_a_w falling
@@ -1545,30 +1563,30 @@ Offset:              19.997ns (Levels of Logic = 19)
      OR2:I1->O            12   0.223   0.908  XLXI_7/clck_gen/XLXI_9 (XLXI_7/clkr)
      INV:I->O              2   0.568   0.981  XLXI_7/XLXI_212 (XLXI_7/sysbus_released)
      AND3:I0->O           10   0.203   1.221  XLXI_7/XLXI_326 (XLXI_7/can_read)
-     AND2:I0->O            1   0.203   0.944  XLXI_7/XLXI_525 (XLXI_7/manual_r2_r)
-     OR2:I0->O             2   0.203   0.616  XLXI_7/XLXI_526 (XLXI_7/r2_r)
-     BUF:I->O              3   0.568   0.650  XLXI_7/XLXI_130/XLXI_8 (XLXI_7/XLXI_130/i<5>)
-     INV:I->O              1   0.568   0.827  XLXI_7/XLXI_130/XLXI_22/XLXI_6 (XLXI_7/XLXI_130/XLXI_22/XLXN_19)
-     begin scope: 'XLXI_7/XLXI_130/XLXI_22/XLXI_25:I10'
-     LUT4:I0->O            1   0.203   0.580  O3 (O3)
+     AND2:I0->O            1   0.203   0.944  XLXI_7/XLXI_465 (XLXI_7/manual_r1_r)
+     OR2:I0->O             2   0.203   0.616  XLXI_7/XLXI_466 (XLXI_7/r1_r)
+     BUF:I->O              2   0.568   0.616  XLXI_7/XLXI_130/XLXI_7 (XLXI_7/XLXI_130/i<4>)
+     INV:I->O              1   0.568   0.808  XLXI_7/XLXI_130/XLXI_22/XLXI_5 (XLXI_7/XLXI_130/XLXI_22/XLXN_1)
+     begin scope: 'XLXI_7/XLXI_130/XLXI_22/XLXI_25:I11'
+     LUT4:I1->O            1   0.205   0.580  O3 (O3)
      LUT5:I4->O            1   0.205   0.579  O4 (O)
      end scope: 'XLXI_7/XLXI_130/XLXI_22/XLXI_25:O'
-     INV:I->O              8   0.568   0.907  XLXI_7/XLXI_130/XLXI_21 (XLXI_7/XLXI_130/XLXN_73)
+     INV:I->O              8   0.568   0.803  XLXI_7/XLXI_130/XLXI_21 (XLXI_7/XLXI_130/XLXN_73)
      begin scope: 'XLXI_7/XLXI_130/XLXI_1/XLXI_17:E'
-     LUT2:I0->O            1   0.203   0.579  Mmux_O11 (O)
+     LUT2:I1->O            1   0.205   0.579  Mmux_O11 (O)
      end scope: 'XLXI_7/XLXI_130/XLXI_1/XLXI_17:O'
      BUF:I->O             20   0.568   1.092  XLXI_7/XLXI_130/XLXI_1/XLXI_21 (XLXI_7/sysbus<3>)
      begin scope: 'XLXI_7/XLXI_9/XLXI_15:D<3>'
      LD:D                      0.037          Q_3
     ----------------------------------------
-    Total                     19.997ns (6.556ns logic, 13.441ns route)
-                                       (32.8% logic, 67.2% route)
+    Total                     19.844ns (6.560ns logic, 13.284ns route)
+                                       (33.1% logic, 66.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_7/cc_r0_w'
-  Total number of paths / destination ports: 2696 / 8
+  Total number of paths / destination ports: 2112 / 8
 -------------------------------------------------------------------------
-Offset:              19.997ns (Levels of Logic = 19)
+Offset:              19.844ns (Levels of Logic = 19)
   Source:            in_is_clk_manual (PAD)
   Destination:       XLXI_7/XLXI_104/Q_6 (LATCH)
   Destination Clock: XLXI_7/cc_r0_w falling
@@ -1584,24 +1602,67 @@ Offset:              19.997ns (Levels of Logic = 19)
      OR2:I1->O            12   0.223   0.908  XLXI_7/clck_gen/XLXI_9 (XLXI_7/clkr)
      INV:I->O              2   0.568   0.981  XLXI_7/XLXI_212 (XLXI_7/sysbus_released)
      AND3:I0->O           10   0.203   1.221  XLXI_7/XLXI_326 (XLXI_7/can_read)
-     AND2:I0->O            1   0.203   0.944  XLXI_7/XLXI_525 (XLXI_7/manual_r2_r)
-     OR2:I0->O             2   0.203   0.616  XLXI_7/XLXI_526 (XLXI_7/r2_r)
-     BUF:I->O              3   0.568   0.650  XLXI_7/XLXI_130/XLXI_8 (XLXI_7/XLXI_130/i<5>)
-     INV:I->O              1   0.568   0.827  XLXI_7/XLXI_130/XLXI_22/XLXI_6 (XLXI_7/XLXI_130/XLXI_22/XLXN_19)
-     begin scope: 'XLXI_7/XLXI_130/XLXI_22/XLXI_25:I10'
-     LUT4:I0->O            1   0.203   0.580  O3 (O3)
+     AND2:I0->O            1   0.203   0.944  XLXI_7/XLXI_465 (XLXI_7/manual_r1_r)
+     OR2:I0->O             2   0.203   0.616  XLXI_7/XLXI_466 (XLXI_7/r1_r)
+     BUF:I->O              2   0.568   0.616  XLXI_7/XLXI_130/XLXI_7 (XLXI_7/XLXI_130/i<4>)
+     INV:I->O              1   0.568   0.808  XLXI_7/XLXI_130/XLXI_22/XLXI_5 (XLXI_7/XLXI_130/XLXI_22/XLXN_1)
+     begin scope: 'XLXI_7/XLXI_130/XLXI_22/XLXI_25:I11'
+     LUT4:I1->O            1   0.205   0.580  O3 (O3)
      LUT5:I4->O            1   0.205   0.579  O4 (O)
      end scope: 'XLXI_7/XLXI_130/XLXI_22/XLXI_25:O'
-     INV:I->O              8   0.568   0.907  XLXI_7/XLXI_130/XLXI_21 (XLXI_7/XLXI_130/XLXN_73)
+     INV:I->O              8   0.568   0.803  XLXI_7/XLXI_130/XLXI_21 (XLXI_7/XLXI_130/XLXN_73)
      begin scope: 'XLXI_7/XLXI_130/XLXI_1/XLXI_17:E'
-     LUT2:I0->O            1   0.203   0.579  Mmux_O11 (O)
+     LUT2:I1->O            1   0.205   0.579  Mmux_O11 (O)
      end scope: 'XLXI_7/XLXI_130/XLXI_1/XLXI_17:O'
      BUF:I->O             20   0.568   1.092  XLXI_7/XLXI_130/XLXI_1/XLXI_21 (XLXI_7/sysbus<3>)
      begin scope: 'XLXI_7/XLXI_104:D<3>'
      LD:D                      0.037          Q_3
     ----------------------------------------
-    Total                     19.997ns (6.556ns logic, 13.441ns route)
-                                       (32.8% logic, 67.2% route)
+    Total                     19.844ns (6.560ns logic, 13.284ns route)
+                                       (33.1% logic, 66.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_7/clk_internal'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.781ns (Levels of Logic = 4)
+  Source:            in_rst (PAD)
+  Destination:       XLXI_7/clck_gen/XLXI_4/q_tmp (FF)
+  Destination Clock: XLXI_7/clk_internal falling
+
+  Data Path: in_rst to XLXI_7/clck_gen/XLXI_4/q_tmp
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.616  in_rst_IBUF (in_rst_IBUF)
+     BUF:I->O              1   0.568   0.579  XLXI_7/XLXI_116 (XLXI_7/XLXN_233)
+     INV:I->O             88   0.568   1.798  XLXI_7/XLXI_117 (XLXI_7/rst)
+     begin scope: 'XLXI_7/clck_gen/XLXI_4:CLR'
+     FDC:CLR                   0.430          q_tmp
+    ----------------------------------------
+    Total                      5.781ns (2.788ns logic, 2.993ns route)
+                                       (48.2% logic, 51.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_51/XLXI_2/COUNT_7'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.415ns (Levels of Logic = 3)
+  Source:            in_rst (PAD)
+  Destination:       XLXI_53/q_tmp (FF)
+  Destination Clock: XLXI_51/XLXI_2/COUNT_7 rising
+
+  Data Path: in_rst to XLXI_53/q_tmp
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.616  in_rst_IBUF (in_rst_IBUF)
+     INV:I->O              1   0.568   0.579  XLXI_88 (XLXN_209)
+     begin scope: 'XLXI_53:CLR'
+     FDC:CLR                   0.430          q_tmp
+    ----------------------------------------
+    Total                      3.415ns (2.220ns logic, 1.195ns route)
+                                       (65.0% logic, 35.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_7/cc_r0_w'
@@ -1624,10 +1685,51 @@ Offset:              3.648ns (Levels of Logic = 2)
                                        (84.1% logic, 15.9% route)
 
 =========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_7/clck_gen/XLXI_4/q_tmp'
+  Total number of paths / destination ports: 3852 / 33
+-------------------------------------------------------------------------
+Offset:              21.340ns (Levels of Logic = 20)
+  Source:            XLXI_7/cpu_ctl/stp/XLXI_24/COUNT_0 (FF)
+  Destination:       out_sysbus<7> (PAD)
+  Source Clock:      XLXI_7/clck_gen/XLXI_4/q_tmp falling
+
+  Data Path: XLXI_7/cpu_ctl/stp/XLXI_24/COUNT_0 to out_sysbus<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            10   0.447   1.085  COUNT_0 (COUNT_0)
+     end scope: 'XLXI_7/cpu_ctl/stp/XLXI_24:Q0'
+     begin scope: 'XLXI_7/cpu_ctl/stp/XLXI_25:A0'
+     LUT3:I0->O           11   0.205   1.227  Mmux_d_tmp51 (D4)
+     end scope: 'XLXI_7/cpu_ctl/stp/XLXI_25:D4'
+     AND2:I1->O            2   0.223   0.961  XLXI_7/cpu_ctl/XLXI_255 (XLXI_7/cpu_ctl/ls_ldst_s4)
+     OR3:I1->O             4   0.223   1.028  XLXI_7/cpu_ctl/XLXI_399 (XLXI_7/cpu_ctl/rb_int)
+     AND2:I1->O            1   0.223   0.924  XLXI_7/cpu_ctl/XLXI_401 (XLXI_7/cpu_ctl/rb1_r)
+     OR2:I1->O             1   0.223   0.924  XLXI_7/cpu_ctl/XLXI_408 (XLXI_7/cpu_ctl/XLXN_812)
+     AND2:I1->O            1   0.223   0.924  XLXI_7/cpu_ctl/XLXI_139 (XLXI_7/cc_r1_r)
+     OR2:I1->O             2   0.223   0.616  XLXI_7/XLXI_466 (XLXI_7/r1_r)
+     BUF:I->O              2   0.568   0.616  XLXI_7/XLXI_130/XLXI_7 (XLXI_7/XLXI_130/i<4>)
+     INV:I->O              1   0.568   0.808  XLXI_7/XLXI_130/XLXI_22/XLXI_5 (XLXI_7/XLXI_130/XLXI_22/XLXN_1)
+     begin scope: 'XLXI_7/XLXI_130/XLXI_22/XLXI_25:I11'
+     LUT4:I1->O            1   0.205   0.580  O3 (O3)
+     LUT5:I4->O            1   0.205   0.579  O4 (O)
+     end scope: 'XLXI_7/XLXI_130/XLXI_22/XLXI_25:O'
+     INV:I->O              8   0.568   0.803  XLXI_7/XLXI_130/XLXI_21 (XLXI_7/XLXI_130/XLXN_73)
+     begin scope: 'XLXI_7/XLXI_130/XLXI_1/XLXI_17:E'
+     LUT2:I1->O            1   0.205   0.579  Mmux_O11 (O)
+     end scope: 'XLXI_7/XLXI_130/XLXI_1/XLXI_17:O'
+     BUF:I->O             20   0.568   1.092  XLXI_7/XLXI_130/XLXI_1/XLXI_21 (XLXI_7/sysbus<3>)
+     BUF:I->O              1   0.568   0.579  XLXI_7/XLXI_860/XLXI_79 (out_sysbus_3_OBUF)
+     OBUF:I->O                 2.571          out_sysbus_3_OBUF (out_sysbus<3>)
+    ----------------------------------------
+    Total                     21.340ns (8.016ns logic, 13.324ns route)
+                                       (37.6% logic, 62.4% route)
+
+=========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_7/clk_internal'
   Total number of paths / destination ports: 614 / 31
 -------------------------------------------------------------------------
-Offset:              19.390ns (Levels of Logic = 17)
+Offset:              19.237ns (Levels of Logic = 17)
   Source:            XLXI_7/clck_gen/XLXI_4/q_tmp (FF)
   Destination:       out_sysbus<7> (PAD)
   Source Clock:      XLXI_7/clk_internal falling
@@ -1641,30 +1743,30 @@ Offset:              19.390ns (Levels of Logic = 17)
      OR2:I0->O            12   0.203   0.908  XLXI_7/clck_gen/XLXI_9 (XLXI_7/clkr)
      INV:I->O              2   0.568   0.981  XLXI_7/XLXI_212 (XLXI_7/sysbus_released)
      AND3:I0->O           10   0.203   1.221  XLXI_7/XLXI_326 (XLXI_7/can_read)
-     AND2:I0->O            1   0.203   0.944  XLXI_7/XLXI_525 (XLXI_7/manual_r2_r)
-     OR2:I0->O             2   0.203   0.616  XLXI_7/XLXI_526 (XLXI_7/r2_r)
-     BUF:I->O              3   0.568   0.650  XLXI_7/XLXI_130/XLXI_8 (XLXI_7/XLXI_130/i<5>)
-     INV:I->O              1   0.568   0.827  XLXI_7/XLXI_130/XLXI_22/XLXI_6 (XLXI_7/XLXI_130/XLXI_22/XLXN_19)
-     begin scope: 'XLXI_7/XLXI_130/XLXI_22/XLXI_25:I10'
-     LUT4:I0->O            1   0.203   0.580  O3 (O3)
+     AND2:I0->O            1   0.203   0.944  XLXI_7/XLXI_465 (XLXI_7/manual_r1_r)
+     OR2:I0->O             2   0.203   0.616  XLXI_7/XLXI_466 (XLXI_7/r1_r)
+     BUF:I->O              2   0.568   0.616  XLXI_7/XLXI_130/XLXI_7 (XLXI_7/XLXI_130/i<4>)
+     INV:I->O              1   0.568   0.808  XLXI_7/XLXI_130/XLXI_22/XLXI_5 (XLXI_7/XLXI_130/XLXI_22/XLXN_1)
+     begin scope: 'XLXI_7/XLXI_130/XLXI_22/XLXI_25:I11'
+     LUT4:I1->O            1   0.205   0.580  O3 (O3)
      LUT5:I4->O            1   0.205   0.579  O4 (O)
      end scope: 'XLXI_7/XLXI_130/XLXI_22/XLXI_25:O'
-     INV:I->O              8   0.568   0.907  XLXI_7/XLXI_130/XLXI_21 (XLXI_7/XLXI_130/XLXN_73)
+     INV:I->O              8   0.568   0.803  XLXI_7/XLXI_130/XLXI_21 (XLXI_7/XLXI_130/XLXN_73)
      begin scope: 'XLXI_7/XLXI_130/XLXI_1/XLXI_17:E'
-     LUT2:I0->O            1   0.203   0.579  Mmux_O11 (O)
+     LUT2:I1->O            1   0.205   0.579  Mmux_O11 (O)
      end scope: 'XLXI_7/XLXI_130/XLXI_1/XLXI_17:O'
      BUF:I->O             20   0.568   1.092  XLXI_7/XLXI_130/XLXI_1/XLXI_21 (XLXI_7/sysbus<3>)
      BUF:I->O              1   0.568   0.579  XLXI_7/XLXI_860/XLXI_79 (out_sysbus_3_OBUF)
      OBUF:I->O                 2.571          out_sysbus_3_OBUF (out_sysbus<3>)
     ----------------------------------------
-    Total                     19.390ns (7.849ns logic, 11.541ns route)
-                                       (40.5% logic, 59.5% route)
+    Total                     19.237ns (7.853ns logic, 11.384ns route)
+                                       (40.8% logic, 59.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'in_clk'
   Total number of paths / destination ports: 614 / 31
 -------------------------------------------------------------------------
-Offset:              22.800ns (Levels of Logic = 20)
+Offset:              22.647ns (Levels of Logic = 20)
   Source:            XLXI_7/XLXI_917/COUNT_3 (FF)
   Destination:       out_sysbus<7> (PAD)
   Source Clock:      in_clk rising
@@ -1681,71 +1783,69 @@ Offset:              22.800ns (Levels of Logic = 20)
      OR2:I1->O            12   0.223   0.908  XLXI_7/clck_gen/XLXI_9 (XLXI_7/clkr)
      INV:I->O              2   0.568   0.981  XLXI_7/XLXI_212 (XLXI_7/sysbus_released)
      AND3:I0->O           10   0.203   1.221  XLXI_7/XLXI_326 (XLXI_7/can_read)
-     AND2:I0->O            1   0.203   0.944  XLXI_7/XLXI_525 (XLXI_7/manual_r2_r)
-     OR2:I0->O             2   0.203   0.616  XLXI_7/XLXI_526 (XLXI_7/r2_r)
-     BUF:I->O              3   0.568   0.650  XLXI_7/XLXI_130/XLXI_8 (XLXI_7/XLXI_130/i<5>)
-     INV:I->O              1   0.568   0.827  XLXI_7/XLXI_130/XLXI_22/XLXI_6 (XLXI_7/XLXI_130/XLXI_22/XLXN_19)
-     begin scope: 'XLXI_7/XLXI_130/XLXI_22/XLXI_25:I10'
-     LUT4:I0->O            1   0.203   0.580  O3 (O3)
+     AND2:I0->O            1   0.203   0.944  XLXI_7/XLXI_465 (XLXI_7/manual_r1_r)
+     OR2:I0->O             2   0.203   0.616  XLXI_7/XLXI_466 (XLXI_7/r1_r)
+     BUF:I->O              2   0.568   0.616  XLXI_7/XLXI_130/XLXI_7 (XLXI_7/XLXI_130/i<4>)
+     INV:I->O              1   0.568   0.808  XLXI_7/XLXI_130/XLXI_22/XLXI_5 (XLXI_7/XLXI_130/XLXI_22/XLXN_1)
+     begin scope: 'XLXI_7/XLXI_130/XLXI_22/XLXI_25:I11'
+     LUT4:I1->O            1   0.205   0.580  O3 (O3)
      LUT5:I4->O            1   0.205   0.579  O4 (O)
      end scope: 'XLXI_7/XLXI_130/XLXI_22/XLXI_25:O'
-     INV:I->O              8   0.568   0.907  XLXI_7/XLXI_130/XLXI_21 (XLXI_7/XLXI_130/XLXN_73)
+     INV:I->O              8   0.568   0.803  XLXI_7/XLXI_130/XLXI_21 (XLXI_7/XLXI_130/XLXN_73)
      begin scope: 'XLXI_7/XLXI_130/XLXI_1/XLXI_17:E'
-     LUT2:I0->O            1   0.203   0.579  Mmux_O11 (O)
+     LUT2:I1->O            1   0.205   0.579  Mmux_O11 (O)
      end scope: 'XLXI_7/XLXI_130/XLXI_1/XLXI_17:O'
      BUF:I->O             20   0.568   1.092  XLXI_7/XLXI_130/XLXI_1/XLXI_21 (XLXI_7/sysbus<3>)
      BUF:I->O              1   0.568   0.579  XLXI_7/XLXI_860/XLXI_79 (out_sysbus_3_OBUF)
      OBUF:I->O                 2.571          out_sysbus_3_OBUF (out_sysbus<3>)
     ----------------------------------------
-    Total                     22.800ns (8.843ns logic, 13.956ns route)
-                                       (38.8% logic, 61.2% route)
+    Total                     22.647ns (8.847ns logic, 13.799ns route)
+                                       (39.1% logic, 60.9% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_7/clck_gen/XLXI_4/q_tmp'
-  Total number of paths / destination ports: 3852 / 33
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_51/XLXI_2/COUNT_7'
+  Total number of paths / destination ports: 614 / 31
 -------------------------------------------------------------------------
-Offset:              21.493ns (Levels of Logic = 20)
-  Source:            XLXI_7/cpu_ctl/stp/XLXI_24/COUNT_0 (FF)
+Offset:              21.537ns (Levels of Logic = 19)
+  Source:            XLXI_53/q_tmp (FF)
   Destination:       out_sysbus<7> (PAD)
-  Source Clock:      XLXI_7/clck_gen/XLXI_4/q_tmp falling
+  Source Clock:      XLXI_51/XLXI_2/COUNT_7 rising
 
-  Data Path: XLXI_7/cpu_ctl/stp/XLXI_24/COUNT_0 to out_sysbus<7>
+  Data Path: XLXI_53/q_tmp to out_sysbus<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q            10   0.447   1.085  COUNT_0 (COUNT_0)
-     end scope: 'XLXI_7/cpu_ctl/stp/XLXI_24:Q0'
-     begin scope: 'XLXI_7/cpu_ctl/stp/XLXI_25:A0'
-     LUT3:I0->O           11   0.205   1.227  Mmux_d_tmp51 (D4)
-     end scope: 'XLXI_7/cpu_ctl/stp/XLXI_25:D4'
-     AND2:I1->O            2   0.223   0.961  XLXI_7/cpu_ctl/XLXI_255 (XLXI_7/cpu_ctl/ls_ldst_s4)
-     OR3:I1->O             4   0.223   1.028  XLXI_7/cpu_ctl/XLXI_399 (XLXI_7/cpu_ctl/rb_int)
-     AND2:I1->O            1   0.223   0.924  XLXI_7/cpu_ctl/XLXI_402 (XLXI_7/cpu_ctl/rb2_r)
-     OR2:I1->O             1   0.223   0.924  XLXI_7/cpu_ctl/XLXI_409 (XLXI_7/cpu_ctl/XLXN_813)
-     AND2:I1->O            1   0.223   0.924  XLXI_7/cpu_ctl/XLXI_140 (XLXI_7/cc_r2_r)
-     OR2:I1->O             2   0.223   0.616  XLXI_7/XLXI_526 (XLXI_7/r2_r)
-     BUF:I->O              3   0.568   0.650  XLXI_7/XLXI_130/XLXI_8 (XLXI_7/XLXI_130/i<5>)
-     INV:I->O              1   0.568   0.827  XLXI_7/XLXI_130/XLXI_22/XLXI_6 (XLXI_7/XLXI_130/XLXI_22/XLXN_19)
-     begin scope: 'XLXI_7/XLXI_130/XLXI_22/XLXI_25:I10'
-     LUT4:I0->O            1   0.203   0.580  O3 (O3)
+     FDC:C->Q              2   0.447   0.981  q_tmp (q_tmp)
+     end scope: 'XLXI_53:Q'
+     AND2:I0->O            1   0.203   0.924  XLXI_7/XLXI_918 (XLXI_7/XLXN_247)
+     OR2:I1->O             4   0.223   1.028  XLXI_7/XLXI_924 (XLXI_7/clk_internal)
+     OR2:I1->O            12   0.223   0.908  XLXI_7/clck_gen/XLXI_9 (XLXI_7/clkr)
+     INV:I->O              2   0.568   0.981  XLXI_7/XLXI_212 (XLXI_7/sysbus_released)
+     AND3:I0->O           10   0.203   1.221  XLXI_7/XLXI_326 (XLXI_7/can_read)
+     AND2:I0->O            1   0.203   0.944  XLXI_7/XLXI_465 (XLXI_7/manual_r1_r)
+     OR2:I0->O             2   0.203   0.616  XLXI_7/XLXI_466 (XLXI_7/r1_r)
+     BUF:I->O              2   0.568   0.616  XLXI_7/XLXI_130/XLXI_7 (XLXI_7/XLXI_130/i<4>)
+     INV:I->O              1   0.568   0.808  XLXI_7/XLXI_130/XLXI_22/XLXI_5 (XLXI_7/XLXI_130/XLXI_22/XLXN_1)
+     begin scope: 'XLXI_7/XLXI_130/XLXI_22/XLXI_25:I11'
+     LUT4:I1->O            1   0.205   0.580  O3 (O3)
      LUT5:I4->O            1   0.205   0.579  O4 (O)
      end scope: 'XLXI_7/XLXI_130/XLXI_22/XLXI_25:O'
-     INV:I->O              8   0.568   0.907  XLXI_7/XLXI_130/XLXI_21 (XLXI_7/XLXI_130/XLXN_73)
+     INV:I->O              8   0.568   0.803  XLXI_7/XLXI_130/XLXI_21 (XLXI_7/XLXI_130/XLXN_73)
      begin scope: 'XLXI_7/XLXI_130/XLXI_1/XLXI_17:E'
-     LUT2:I0->O            1   0.203   0.579  Mmux_O11 (O)
+     LUT2:I1->O            1   0.205   0.579  Mmux_O11 (O)
      end scope: 'XLXI_7/XLXI_130/XLXI_1/XLXI_17:O'
      BUF:I->O             20   0.568   1.092  XLXI_7/XLXI_130/XLXI_1/XLXI_21 (XLXI_7/sysbus<3>)
      BUF:I->O              1   0.568   0.579  XLXI_7/XLXI_860/XLXI_79 (out_sysbus_3_OBUF)
      OBUF:I->O                 2.571          out_sysbus_3_OBUF (out_sysbus<3>)
     ----------------------------------------
-    Total                     21.493ns (8.012ns logic, 13.481ns route)
-                                       (37.3% logic, 62.7% route)
+    Total                     21.537ns (8.299ns logic, 13.238ns route)
+                                       (38.5% logic, 61.5% route)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 2844 / 33
+  Total number of paths / destination ports: 2230 / 33
 -------------------------------------------------------------------------
-Delay:               23.678ns (Levels of Logic = 20)
+Delay:               23.525ns (Levels of Logic = 20)
   Source:            in_is_clk_manual (PAD)
   Destination:       out_sysbus<7> (PAD)
 
@@ -1760,38 +1860,47 @@ Delay:               23.678ns (Levels of Logic = 20)
      OR2:I1->O            12   0.223   0.908  XLXI_7/clck_gen/XLXI_9 (XLXI_7/clkr)
      INV:I->O              2   0.568   0.981  XLXI_7/XLXI_212 (XLXI_7/sysbus_released)
      AND3:I0->O           10   0.203   1.221  XLXI_7/XLXI_326 (XLXI_7/can_read)
-     AND2:I0->O            1   0.203   0.944  XLXI_7/XLXI_525 (XLXI_7/manual_r2_r)
-     OR2:I0->O             2   0.203   0.616  XLXI_7/XLXI_526 (XLXI_7/r2_r)
-     BUF:I->O              3   0.568   0.650  XLXI_7/XLXI_130/XLXI_8 (XLXI_7/XLXI_130/i<5>)
-     INV:I->O              1   0.568   0.827  XLXI_7/XLXI_130/XLXI_22/XLXI_6 (XLXI_7/XLXI_130/XLXI_22/XLXN_19)
-     begin scope: 'XLXI_7/XLXI_130/XLXI_22/XLXI_25:I10'
-     LUT4:I0->O            1   0.203   0.580  O3 (O3)
+     AND2:I0->O            1   0.203   0.944  XLXI_7/XLXI_465 (XLXI_7/manual_r1_r)
+     OR2:I0->O             2   0.203   0.616  XLXI_7/XLXI_466 (XLXI_7/r1_r)
+     BUF:I->O              2   0.568   0.616  XLXI_7/XLXI_130/XLXI_7 (XLXI_7/XLXI_130/i<4>)
+     INV:I->O              1   0.568   0.808  XLXI_7/XLXI_130/XLXI_22/XLXI_5 (XLXI_7/XLXI_130/XLXI_22/XLXN_1)
+     begin scope: 'XLXI_7/XLXI_130/XLXI_22/XLXI_25:I11'
+     LUT4:I1->O            1   0.205   0.580  O3 (O3)
      LUT5:I4->O            1   0.205   0.579  O4 (O)
      end scope: 'XLXI_7/XLXI_130/XLXI_22/XLXI_25:O'
-     INV:I->O              8   0.568   0.907  XLXI_7/XLXI_130/XLXI_21 (XLXI_7/XLXI_130/XLXN_73)
+     INV:I->O              8   0.568   0.803  XLXI_7/XLXI_130/XLXI_21 (XLXI_7/XLXI_130/XLXN_73)
      begin scope: 'XLXI_7/XLXI_130/XLXI_1/XLXI_17:E'
-     LUT2:I0->O            1   0.203   0.579  Mmux_O11 (O)
+     LUT2:I1->O            1   0.205   0.579  Mmux_O11 (O)
      end scope: 'XLXI_7/XLXI_130/XLXI_1/XLXI_17:O'
      BUF:I->O             20   0.568   1.092  XLXI_7/XLXI_130/XLXI_1/XLXI_21 (XLXI_7/sysbus<3>)
      BUF:I->O              1   0.568   0.579  XLXI_7/XLXI_860/XLXI_79 (out_sysbus_3_OBUF)
      OBUF:I->O                 2.571          out_sysbus_3_OBUF (out_sysbus<3>)
     ----------------------------------------
-    Total                     23.678ns (9.658ns logic, 14.020ns route)
-                                       (40.8% logic, 59.2% route)
+    Total                     23.525ns (9.662ns logic, 13.863ns route)
+                                       (41.1% logic, 58.9% route)
 
 =========================================================================
 
 Cross Clock Domains Report:
 --------------------------
 
+Clock to Setup on destination clock XLXI_51/XLXI_2/COUNT_7
+----------------------+---------+---------+---------+---------+
+                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------+---------+---------+---------+---------+
+XLXI_51/XLXI_2/COUNT_7|    1.950|         |         |         |
+----------------------+---------+---------+---------+---------+
+
 Clock to Setup on destination clock XLXI_7/cc_r0_w
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-XLXI_7/clck_gen/XLXI_4/q_tmp|         |         |   17.812|         |
-XLXI_7/clk_internal         |         |         |   15.710|         |
-in_clk                      |         |         |   19.119|         |
+XLXI_51/XLXI_2/COUNT_7      |         |         |   17.856|         |
+XLXI_7/clck_gen/XLXI_4/q_tmp|         |         |   17.659|         |
+XLXI_7/clk_internal         |         |         |   15.557|         |
+in_clk                      |         |         |   18.966|         |
 ----------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock XLXI_7/clck_gen/XLXI_4/q_tmp
@@ -1810,47 +1919,41 @@ Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 XLXI_7/clk_internal|         |         |    2.048|         |
 -------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock XLXI_7/clkw
-----------------------------+---------+---------+---------+---------+
-                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-----------------------------+---------+---------+---------+---------+
-XLXI_7/clck_gen/XLXI_4/q_tmp|         |   17.775|         |         |
-XLXI_7/clk_internal         |         |   15.673|         |         |
-XLXI_7/ram_a_w              |         |    1.327|         |         |
-in_clk                      |   19.082|         |         |         |
-----------------------------+---------+---------+---------+---------+
-
 Clock to Setup on destination clock XLXI_7/ram_a_w
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-XLXI_7/clck_gen/XLXI_4/q_tmp|         |         |   17.812|         |
-XLXI_7/clk_internal         |         |         |   15.710|         |
-in_clk                      |         |         |   19.119|         |
+XLXI_51/XLXI_2/COUNT_7      |         |         |   17.856|         |
+XLXI_7/clck_gen/XLXI_4/q_tmp|         |         |   17.659|         |
+XLXI_7/clk_internal         |         |         |   15.557|         |
+in_clk                      |         |         |   18.966|         |
 ----------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock in_clk
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-in_clk         |    7.478|         |         |         |
----------------+---------+---------+---------+---------+
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+XLXI_51/XLXI_2/COUNT_7      |   17.819|         |         |         |
+XLXI_7/clck_gen/XLXI_4/q_tmp|         |   17.622|         |         |
+XLXI_7/clk_internal         |         |   15.520|         |         |
+XLXI_7/ram_a_w              |         |    1.327|         |         |
+in_clk                      |   18.929|         |         |         |
+----------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 7.15 secs
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.19 secs
  
 --> 
 
 
-Total memory usage is 615176 kilobytes
+Total memory usage is 615300 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  213 (   0 filtered)
-Number of infos    :   59 (   0 filtered)
+Number of warnings :  221 (   0 filtered)
+Number of infos    :   63 (   0 filtered)
 

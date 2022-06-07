@@ -1,3 +1,5 @@
 MODULE cpu_facade
 	SUBMODULE cpu
 		INSTANCE XLXI_7
+	SUBMODULE debouncer
+		INSTANCE XLXI_51

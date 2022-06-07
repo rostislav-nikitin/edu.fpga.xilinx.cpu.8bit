@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ram_256bytes.vhf
--- /___/   /\     Timestamp : 04/07/2022 05:27:58
+-- /___/   /\     Timestamp : 06/08/2022 00:16:33
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -99,7 +99,7 @@ architecture BEHAVIORAL of ram_256bytes is
    
    attribute INIT of XLXI_1 : label is 
          "0000000000000000000000000000000000000000000000000000000000000072";
-   attribute HU_SET of XLXI_15 : label is "XLXI_15_33";
+   attribute HU_SET of XLXI_15 : label is "XLXI_15_49";
    attribute INIT of XLXI_18 : label is 
          "0000000000000000000000000000000000000000000000000000000000000901";
    attribute INIT of XLXI_19 : label is 

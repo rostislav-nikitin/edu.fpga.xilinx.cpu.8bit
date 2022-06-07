@@ -1,26 +1,30 @@
-Running: /opt/Xilinx/14.3/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/encoder16_4_encoder16_4_sch_tb_isim_beh.exe -prj /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/encoder16_4_encoder16_4_sch_tb_beh.prj work.encoder16_4_encoder16_4_sch_tb 
+Running: /opt/Xilinx/14.3/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/ram_256bytes_ram_256bytes_sch_tb_isim_beh.exe -prj /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/ram_256bytes_ram_256bytes_sch_tb_beh.prj work.ram_256bytes_ram_256bytes_sch_tb 
 ISim P.40xd (signature 0xfbc00daa)
 Number of CPUs detected in this system: 32
 Turning on mult-threading, number of parallel sub-compilation jobs: 64 
 Determining compilation order of HDL files
-Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/encoder16_4.vhf" into library work
-Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/tb_encoder16_4.vhd" into library work
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/ram_256bytes.vhf" into library work
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/tb_ram_256bytes.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 100720 KB
-Fuse CPU Usage: 1260 ms
+Fuse Memory Usage: 103248 KB
+Fuse CPU Usage: 1330 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
 Compiling package vcomponents
+Compiling package textio
+Compiling package vital_timing
+Compiling package vital_primitives
+Compiling package vpkg
+Compiling architecture ram256x1s_v of entity RAM256X1S [\RAM256X1S("00000000000000000000...]
+Compiling architecture behavioral of entity LD8_HXILINX_ram_256bytes [ld8_hxilinx_ram_256bytes_default]
 Compiling architecture inv_v of entity INV [inv_default]
-Compiling architecture and16_hxilinx_encoder16_4_v of entity AND16_HXILINX_encoder16_4 [and16_hxilinx_encoder16_4_defaul...]
-Compiling architecture or8_hxilinx_encoder16_4_v of entity OR8_HXILINX_encoder16_4 [or8_hxilinx_encoder16_4_default]
-Compiling architecture behavioral of entity encoder16_4 [encoder16_4_default]
-Compiling architecture behavioral of entity encoder16_4_encoder16_4_sch_tb
+Compiling architecture behavioral of entity ram_256bytes [ram_256bytes_default]
+Compiling architecture behavioral of entity ram_256bytes_ram_256bytes_sch_tb
 Time Resolution for simulation is 1ps.
-Compiled 13 VHDL Units
-Built simulation executable /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/encoder16_4_encoder16_4_sch_tb_isim_beh.exe
-Fuse Memory Usage: 4343300 KB
-Fuse CPU Usage: 1400 ms
-GCC CPU Usage: 490 ms
+Compiled 31 VHDL Units
+Built simulation executable /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/ram_256bytes_ram_256bytes_sch_tb_isim_beh.exe
+Fuse Memory Usage: 4359616 KB
+Fuse CPU Usage: 1660 ms
+GCC CPU Usage: 890 ms

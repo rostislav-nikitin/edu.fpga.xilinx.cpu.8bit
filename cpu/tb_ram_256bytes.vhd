@@ -55,34 +55,60 @@ BEGIN
    tb : PROCESS
    BEGIN
 		wait for 10 ns;
-		i_wclk <= '0';
-		wait for 10 ns;
+		i_w <= '0';
 		i_r <= '0';
+		a_w <= '0';
+		
 		wait for 10 ns;
-		a <= "00000001";
-		wait for 10 ns;
+		a <= "00000000";
 		a_w <= '1';
+		
 		wait for 10 ns;
 		a_w <= '0';
+		
 		wait for 10 ns;
-		i <= "10101010";
-		wait for 10 ns;
+		i <= "11111111";
 		i_w <= '1';
 		wait for 10 ns;
 		i_wclk <= '1';
+		
 		wait for 10 ns;
+		i_w <= '0';
 		i_wclk <= '0';
+		
 		wait for 10 ns;
+		i <= "00000000";
 		i_r <= '1';
-		wait for 100 ns;
-		i_r <= '0';
-		a <= "00000010";
-		wait for 10 ns;
-		a_w <= '1';
-		wait for 10 ns;
-		a_w <= '0';
-		wait for 10 ns;
-		i_r <= '1';
+	
+--		wait for 10 ns;
+--		i_wclk <= '0';
+--		wait for 10 ns;
+--		i_r <= '0';
+--		wait for 10 ns;
+--		a <= "00000001";
+--		wait for 10 ns;
+--		a_w <= '1';
+--		wait for 10 ns;
+--		a_w <= '0';
+--		wait for 10 ns;
+--		i <= "10101010";
+--		wait for 10 ns;
+--		i_w <= '1';
+--		wait for 10 ns;
+--		i_wclk <= '1';
+--		wait for 10 ns;
+--		i_wclk <= '0';
+--		wait for 10 ns;
+--		i_r <= '1';
+--		wait for 100 ns;
+--		i_r <= '0';
+--		a <= "00000010";
+--		wait for 10 ns;
+--		a_w <= '1';
+--		wait for 10 ns;
+--		a_w <= '0';
+--		wait for 10 ns;
+--		i_r <= '1';
 		
       WAIT; -- will wait forever
    END PROCESS;
