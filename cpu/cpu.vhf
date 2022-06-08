@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu.vhf
--- /___/   /\     Timestamp : 06/08/2022 00:16:32
+-- /___/   /\     Timestamp : 06/09/2022 01:21:46
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -656,6 +656,53 @@ begin
     end case;
     end process; 
 end M2_1_HXILINX_cpu_V;
+----- CELL AND6_HXILINX_cpu -----
+  
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity AND6_HXILINX_cpu is
+  
+port(
+    O  : out std_logic;
+
+    I0  : in std_logic;
+    I1  : in std_logic;
+    I2  : in std_logic;
+    I3  : in std_logic;
+    I4  : in std_logic;
+    I5  : in std_logic
+  );
+end AND6_HXILINX_cpu;
+
+architecture AND6_HXILINX_cpu_V of AND6_HXILINX_cpu is
+begin
+  O <= I0 and I1 and I2 and I3 and I4 and I5;
+end AND6_HXILINX_cpu_V;
+----- CELL AND7_HXILINX_cpu -----
+  
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity AND7_HXILINX_cpu is
+  
+port(
+    O  : out std_logic;
+
+    I0  : in std_logic;
+    I1  : in std_logic;
+    I2  : in std_logic;
+    I3  : in std_logic;
+    I4  : in std_logic;
+    I5  : in std_logic;
+    I6  : in std_logic
+  );
+end AND7_HXILINX_cpu;
+
+architecture AND7_HXILINX_cpu_V of AND7_HXILINX_cpu is
+begin
+  O <= I0 and I1 and I2 and I3 and I4 and I5 and I6;
+end AND7_HXILINX_cpu_V;
 ----- CELL AND8_HXILINX_cpu -----
   
 library IEEE;
@@ -681,6 +728,525 @@ architecture AND8_HXILINX_cpu_V of AND8_HXILINX_cpu is
 begin
   O <= I0 and I1 and I2 and I3 and I4 and I5 and I6 and I7;
 end AND8_HXILINX_cpu_V;
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
+entity cpu_freq_divider_base_MUSER_cpu is
+   port ( in_clk       : in    std_logic; 
+          in_clr       : in    std_logic; 
+          out_clk_high : out   std_logic_vector (15 downto 0); 
+          out_clk_low  : out   std_logic_vector (15 downto 0));
+end cpu_freq_divider_base_MUSER_cpu;
+
+architecture BEHAVIORAL of cpu_freq_divider_base_MUSER_cpu is
+   attribute HU_SET     : string ;
+   attribute BOX_TYPE   : string ;
+   signal XLXN_3       : std_logic;
+   signal XLXN_4       : std_logic;
+   component CB16CE_HXILINX_cpu
+      port ( C   : in    std_logic; 
+             CE  : in    std_logic; 
+             CLR : in    std_logic; 
+             CEO : out   std_logic; 
+             Q   : out   std_logic_vector (15 downto 0); 
+             TC  : out   std_logic);
+   end component;
+   
+   component VCC
+      port ( P : out   std_logic);
+   end component;
+   attribute BOX_TYPE of VCC : component is "BLACK_BOX";
+   
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_0";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_1";
+begin
+   XLXI_1 : CB16CE_HXILINX_cpu
+      port map (C=>in_clk,
+                CE=>XLXN_4,
+                CLR=>in_clr,
+                CEO=>XLXN_3,
+                Q(15 downto 0)=>out_clk_low(15 downto 0),
+                TC=>open);
+   
+   XLXI_2 : CB16CE_HXILINX_cpu
+      port map (C=>in_clk,
+                CE=>XLXN_3,
+                CLR=>in_clr,
+                CEO=>open,
+                Q(15 downto 0)=>out_clk_high(15 downto 0),
+                TC=>open);
+   
+   XLXI_3 : VCC
+      port map (P=>XLXN_4);
+   
+end BEHAVIORAL;
+
+
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
+entity cpu_freq_divider_1Inst_MUSER_cpu is
+   port ( in_clk  : in    std_logic; 
+          in_clr  : in    std_logic; 
+          out_clk : out   std_logic);
+end cpu_freq_divider_1Inst_MUSER_cpu;
+
+architecture BEHAVIORAL of cpu_freq_divider_1Inst_MUSER_cpu is
+   attribute BOX_TYPE   : string ;
+   attribute HU_SET     : string ;
+   signal half_period_tick : std_logic;
+   signal high             : std_logic_vector (15 downto 0);
+   signal XLXN_37          : std_logic;
+   signal XLXN_38          : std_logic;
+   component cpu_freq_divider_base_MUSER_cpu
+      port ( in_clk       : in    std_logic; 
+             in_clr       : in    std_logic; 
+             out_clk_high : out   std_logic_vector (15 downto 0); 
+             out_clk_low  : out   std_logic_vector (15 downto 0));
+   end component;
+   
+   component OR2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
+   
+   component FJKC_HXILINX_cpu
+      port ( C   : in    std_logic; 
+             CLR : in    std_logic; 
+             J   : in    std_logic; 
+             K   : in    std_logic; 
+             Q   : out   std_logic);
+   end component;
+   
+   component VCC
+      port ( P : out   std_logic);
+   end component;
+   attribute BOX_TYPE of VCC : component is "BLACK_BOX";
+   
+   component BUF
+      port ( I : in    std_logic; 
+             O : out   std_logic);
+   end component;
+   attribute BOX_TYPE of BUF : component is "BLACK_BOX";
+   
+   attribute HU_SET of XLXI_15 : label is "XLXI_15_2";
+begin
+   XLXI_1 : cpu_freq_divider_base_MUSER_cpu
+      port map (in_clk=>in_clk,
+                in_clr=>XLXN_37,
+                out_clk_high(15 downto 0)=>high(15 downto 0),
+                out_clk_low=>open);
+   
+   XLXI_14 : OR2
+      port map (I0=>half_period_tick,
+                I1=>in_clr,
+                O=>XLXN_37);
+   
+   XLXI_15 : FJKC_HXILINX_cpu
+      port map (C=>half_period_tick,
+                CLR=>in_clr,
+                J=>XLXN_38,
+                K=>XLXN_38,
+                Q=>out_clk);
+   
+   XLXI_16 : VCC
+      port map (P=>XLXN_38);
+   
+   XLXI_23 : BUF
+      port map (I=>high(4),
+                O=>half_period_tick);
+   
+end BEHAVIORAL;
+
+
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
+entity cpu_freq_divider_1Hz_MUSER_cpu is
+   port ( in_clk  : in    std_logic; 
+          in_clr  : in    std_logic; 
+          out_clk : out   std_logic);
+end cpu_freq_divider_1Hz_MUSER_cpu;
+
+architecture BEHAVIORAL of cpu_freq_divider_1Hz_MUSER_cpu is
+   attribute BOX_TYPE   : string ;
+   attribute HU_SET     : string ;
+   signal half_period_tick : std_logic;
+   signal high             : std_logic_vector (15 downto 0);
+   signal low              : std_logic_vector (15 downto 0);
+   signal XLXN_9           : std_logic;
+   signal XLXN_10          : std_logic;
+   signal XLXN_11          : std_logic;
+   signal XLXN_12          : std_logic;
+   signal XLXN_13          : std_logic;
+   signal XLXN_24          : std_logic;
+   signal XLXN_25          : std_logic;
+   signal XLXN_26          : std_logic;
+   signal XLXN_27          : std_logic;
+   signal XLXN_29          : std_logic;
+   signal XLXN_30          : std_logic;
+   signal XLXN_31          : std_logic;
+   signal XLXN_34          : std_logic;
+   signal XLXN_35          : std_logic;
+   signal XLXN_37          : std_logic;
+   signal XLXN_38          : std_logic;
+   component cpu_freq_divider_base_MUSER_cpu
+      port ( in_clk       : in    std_logic; 
+             in_clr       : in    std_logic; 
+             out_clk_high : out   std_logic_vector (15 downto 0); 
+             out_clk_low  : out   std_logic_vector (15 downto 0));
+   end component;
+   
+   component BUF
+      port ( I : in    std_logic; 
+             O : out   std_logic);
+   end component;
+   attribute BOX_TYPE of BUF : component is "BLACK_BOX";
+   
+   component AND5
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             I2 : in    std_logic; 
+             I3 : in    std_logic; 
+             I4 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND5 : component is "BLACK_BOX";
+   
+   component AND7_HXILINX_cpu
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             I2 : in    std_logic; 
+             I3 : in    std_logic; 
+             I4 : in    std_logic; 
+             I5 : in    std_logic; 
+             I6 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   
+   component AND2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
+   
+   component OR2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
+   
+   component FJKC_HXILINX_cpu
+      port ( C   : in    std_logic; 
+             CLR : in    std_logic; 
+             J   : in    std_logic; 
+             K   : in    std_logic; 
+             Q   : out   std_logic);
+   end component;
+   
+   component VCC
+      port ( P : out   std_logic);
+   end component;
+   attribute BOX_TYPE of VCC : component is "BLACK_BOX";
+   
+   attribute HU_SET of XLXI_15 : label is "XLXI_15_3";
+   attribute HU_SET of XLXI_18 : label is "XLXI_18_4";
+begin
+   XLXI_1 : cpu_freq_divider_base_MUSER_cpu
+      port map (in_clk=>in_clk,
+                in_clr=>XLXN_37,
+                out_clk_high(15 downto 0)=>high(15 downto 0),
+                out_clk_low(15 downto 0)=>low(15 downto 0));
+   
+   XLXI_2 : BUF
+      port map (I=>low(13),
+                O=>XLXN_9);
+   
+   XLXI_3 : BUF
+      port map (I=>low(12),
+                O=>XLXN_10);
+   
+   XLXI_4 : BUF
+      port map (I=>low(11),
+                O=>XLXN_11);
+   
+   XLXI_5 : BUF
+      port map (I=>low(10),
+                O=>XLXN_12);
+   
+   XLXI_6 : BUF
+      port map (I=>low(5),
+                O=>XLXN_13);
+   
+   XLXI_7 : BUF
+      port map (I=>high(1),
+                O=>XLXN_24);
+   
+   XLXI_8 : BUF
+      port map (I=>high(3),
+                O=>XLXN_25);
+   
+   XLXI_9 : BUF
+      port map (I=>high(4),
+                O=>XLXN_26);
+   
+   XLXI_10 : BUF
+      port map (I=>high(5),
+                O=>XLXN_27);
+   
+   XLXI_11 : BUF
+      port map (I=>high(6),
+                O=>XLXN_29);
+   
+   XLXI_12 : BUF
+      port map (I=>high(7),
+                O=>XLXN_30);
+   
+   XLXI_13 : BUF
+      port map (I=>high(9),
+                O=>XLXN_31);
+   
+   XLXI_14 : AND5
+      port map (I0=>XLXN_13,
+                I1=>XLXN_12,
+                I2=>XLXN_11,
+                I3=>XLXN_10,
+                I4=>XLXN_9,
+                O=>XLXN_34);
+   
+   XLXI_15 : AND7_HXILINX_cpu
+      port map (I0=>XLXN_31,
+                I1=>XLXN_30,
+                I2=>XLXN_29,
+                I3=>XLXN_27,
+                I4=>XLXN_26,
+                I5=>XLXN_25,
+                I6=>XLXN_24,
+                O=>XLXN_35);
+   
+   XLXI_16 : AND2
+      port map (I0=>XLXN_35,
+                I1=>XLXN_34,
+                O=>half_period_tick);
+   
+   XLXI_17 : OR2
+      port map (I0=>half_period_tick,
+                I1=>in_clr,
+                O=>XLXN_37);
+   
+   XLXI_18 : FJKC_HXILINX_cpu
+      port map (C=>half_period_tick,
+                CLR=>in_clr,
+                J=>XLXN_38,
+                K=>XLXN_38,
+                Q=>out_clk);
+   
+   XLXI_19 : VCC
+      port map (P=>XLXN_38);
+   
+end BEHAVIORAL;
+
+
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
+entity cpu_freq_divider_1Stg_MUSER_cpu is
+   port ( in_clk  : in    std_logic; 
+          in_clr  : in    std_logic; 
+          out_clk : out   std_logic);
+end cpu_freq_divider_1Stg_MUSER_cpu;
+
+architecture BEHAVIORAL of cpu_freq_divider_1Stg_MUSER_cpu is
+   attribute BOX_TYPE   : string ;
+   attribute HU_SET     : string ;
+   signal half_period_tick : std_logic;
+   signal high             : std_logic_vector (15 downto 0);
+   signal low              : std_logic_vector (15 downto 0);
+   signal XLXN_3           : std_logic;
+   signal XLXN_4           : std_logic;
+   signal XLXN_5           : std_logic;
+   signal XLXN_6           : std_logic;
+   signal XLXN_7           : std_logic;
+   signal XLXN_10          : std_logic;
+   signal XLXN_26          : std_logic;
+   signal XLXN_27          : std_logic;
+   signal XLXN_29          : std_logic;
+   signal XLXN_30          : std_logic;
+   signal XLXN_31          : std_logic;
+   signal XLXN_34          : std_logic;
+   signal XLXN_35          : std_logic;
+   signal XLXN_37          : std_logic;
+   signal XLXN_38          : std_logic;
+   signal XLXN_43          : std_logic;
+   component cpu_freq_divider_base_MUSER_cpu
+      port ( in_clk       : in    std_logic; 
+             in_clr       : in    std_logic; 
+             out_clk_high : out   std_logic_vector (15 downto 0); 
+             out_clk_low  : out   std_logic_vector (15 downto 0));
+   end component;
+   
+   component BUF
+      port ( I : in    std_logic; 
+             O : out   std_logic);
+   end component;
+   attribute BOX_TYPE of BUF : component is "BLACK_BOX";
+   
+   component AND2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
+   
+   component OR2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
+   
+   component FJKC_HXILINX_cpu
+      port ( C   : in    std_logic; 
+             CLR : in    std_logic; 
+             J   : in    std_logic; 
+             K   : in    std_logic; 
+             Q   : out   std_logic);
+   end component;
+   
+   component VCC
+      port ( P : out   std_logic);
+   end component;
+   attribute BOX_TYPE of VCC : component is "BLACK_BOX";
+   
+   component AND6_HXILINX_cpu
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             I2 : in    std_logic; 
+             I3 : in    std_logic; 
+             I4 : in    std_logic; 
+             I5 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   
+   attribute HU_SET of XLXI_18 : label is "XLXI_18_5";
+   attribute HU_SET of XLXI_21 : label is "XLXI_21_6";
+   attribute HU_SET of XLXI_22 : label is "XLXI_22_7";
+begin
+   XLXI_1 : cpu_freq_divider_base_MUSER_cpu
+      port map (in_clk=>in_clk,
+                in_clr=>XLXN_37,
+                out_clk_high(15 downto 0)=>high(15 downto 0),
+                out_clk_low(15 downto 0)=>low(15 downto 0));
+   
+   XLXI_2 : BUF
+      port map (I=>low(11),
+                O=>XLXN_3);
+   
+   XLXI_3 : BUF
+      port map (I=>low(10),
+                O=>XLXN_4);
+   
+   XLXI_4 : BUF
+      port map (I=>low(9),
+                O=>XLXN_5);
+   
+   XLXI_5 : BUF
+      port map (I=>low(8),
+                O=>XLXN_6);
+   
+   XLXI_6 : BUF
+      port map (I=>low(3),
+                O=>XLXN_7);
+   
+   XLXI_8 : BUF
+      port map (I=>high(1),
+                O=>XLXN_10);
+   
+   XLXI_9 : BUF
+      port map (I=>high(2),
+                O=>XLXN_26);
+   
+   XLXI_10 : BUF
+      port map (I=>high(3),
+                O=>XLXN_27);
+   
+   XLXI_11 : BUF
+      port map (I=>high(4),
+                O=>XLXN_29);
+   
+   XLXI_12 : BUF
+      port map (I=>high(5),
+                O=>XLXN_30);
+   
+   XLXI_13 : BUF
+      port map (I=>high(7),
+                O=>XLXN_31);
+   
+   XLXI_16 : AND2
+      port map (I0=>XLXN_35,
+                I1=>XLXN_34,
+                O=>half_period_tick);
+   
+   XLXI_17 : OR2
+      port map (I0=>half_period_tick,
+                I1=>in_clr,
+                O=>XLXN_37);
+   
+   XLXI_18 : FJKC_HXILINX_cpu
+      port map (C=>half_period_tick,
+                CLR=>in_clr,
+                J=>XLXN_38,
+                K=>XLXN_38,
+                Q=>out_clk);
+   
+   XLXI_19 : VCC
+      port map (P=>XLXN_38);
+   
+   XLXI_20 : BUF
+      port map (I=>low(15),
+                O=>XLXN_43);
+   
+   XLXI_21 : AND6_HXILINX_cpu
+      port map (I0=>XLXN_7,
+                I1=>XLXN_6,
+                I2=>XLXN_5,
+                I3=>XLXN_4,
+                I4=>XLXN_3,
+                I5=>XLXN_43,
+                O=>XLXN_34);
+   
+   XLXI_22 : AND6_HXILINX_cpu
+      port map (I0=>XLXN_31,
+                I1=>XLXN_30,
+                I2=>XLXN_29,
+                I3=>XLXN_27,
+                I4=>XLXN_26,
+                I5=>XLXN_10,
+                O=>XLXN_35);
+   
+end BEHAVIORAL;
+
+
 
 library ieee;
 use ieee.std_logic_1164.ALL;
@@ -798,13 +1364,13 @@ architecture BEHAVIORAL of freq_divider_MUSER_cpu is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_1";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_0";
-   attribute HU_SET of XLXI_123 : label is "XLXI_123_2";
-   attribute HU_SET of XLXI_124 : label is "XLXI_124_3";
-   attribute HU_SET of XLXI_128 : label is "XLXI_128_6";
-   attribute HU_SET of XLXI_149 : label is "XLXI_149_4";
-   attribute HU_SET of XLXI_150 : label is "XLXI_150_5";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_9";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_8";
+   attribute HU_SET of XLXI_123 : label is "XLXI_123_10";
+   attribute HU_SET of XLXI_124 : label is "XLXI_124_11";
+   attribute HU_SET of XLXI_128 : label is "XLXI_128_14";
+   attribute HU_SET of XLXI_149 : label is "XLXI_149_12";
+   attribute HU_SET of XLXI_150 : label is "XLXI_150_13";
 begin
    XLXI_1 : CB16CE_HXILINX_cpu
       port map (C=>clk_in,
@@ -1105,7 +1671,7 @@ architecture BEHAVIORAL of encoder8_3_MUSER_cpu is
    end component;
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_7";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_15";
 begin
    XLXI_1 : OR4
       port map (I0=>i(1),
@@ -1250,7 +1816,7 @@ architecture BEHAVIORAL of cpu_freq_divider_MUSER_cpu is
    end component;
    attribute BOX_TYPE of GND : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_8";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_16";
 begin
    XLXN_1(31 downto 0) <= x"000F4240";
    XLXI_1 : freq_divider_MUSER_cpu
@@ -1434,7 +2000,7 @@ architecture BEHAVIORAL of clk_generator_MUSER_cpu is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_9";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_17";
 begin
    clkc <= clkc_DUMMY;
    XLXI_4 : FJKC_HXILINX_cpu
@@ -1534,11 +2100,11 @@ architecture BEHAVIORAL of encoder16_4_MUSER_cpu is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_25 : label is "XLXI_25_10";
-   attribute HU_SET of XLXI_48 : label is "XLXI_48_11";
-   attribute HU_SET of XLXI_49 : label is "XLXI_49_12";
-   attribute HU_SET of XLXI_50 : label is "XLXI_50_13";
-   attribute HU_SET of XLXI_59 : label is "XLXI_59_14";
+   attribute HU_SET of XLXI_25 : label is "XLXI_25_18";
+   attribute HU_SET of XLXI_48 : label is "XLXI_48_19";
+   attribute HU_SET of XLXI_49 : label is "XLXI_49_20";
+   attribute HU_SET of XLXI_50 : label is "XLXI_50_21";
+   attribute HU_SET of XLXI_59 : label is "XLXI_59_22";
 begin
    XLXI_5 : INV
       port map (I=>i(4),
@@ -1797,14 +2363,14 @@ architecture BEHAVIORAL of bus_muxer_MUSER_cpu is
    end component;
    attribute BOX_TYPE of BUF : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_16";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_15";
-   attribute HU_SET of XLXI_12 : label is "XLXI_12_17";
-   attribute HU_SET of XLXI_13 : label is "XLXI_13_18";
-   attribute HU_SET of XLXI_14 : label is "XLXI_14_19";
-   attribute HU_SET of XLXI_15 : label is "XLXI_15_20";
-   attribute HU_SET of XLXI_16 : label is "XLXI_16_21";
-   attribute HU_SET of XLXI_17 : label is "XLXI_17_22";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_24";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_23";
+   attribute HU_SET of XLXI_12 : label is "XLXI_12_25";
+   attribute HU_SET of XLXI_13 : label is "XLXI_13_26";
+   attribute HU_SET of XLXI_14 : label is "XLXI_14_27";
+   attribute HU_SET of XLXI_15 : label is "XLXI_15_28";
+   attribute HU_SET of XLXI_16 : label is "XLXI_16_29";
+   attribute HU_SET of XLXI_17 : label is "XLXI_17_30";
 begin
    XLXI_1 : M16_1E_HXILINX_cpu
       port map (D0=>dev0(0),
@@ -2273,7 +2839,7 @@ architecture BEHAVIORAL of reg_8bit_MUSER_cpu is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_23";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_31";
 begin
    XLXI_5 : LD8CE_HXILINX_cpu
       port map (CLR=>clr,
@@ -2312,14 +2878,14 @@ architecture BEHAVIORAL of pass_through_or_one_MUSER_cpu is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_24";
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_25";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_26";
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_27";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_28";
-   attribute HU_SET of XLXI_7 : label is "XLXI_7_29";
-   attribute HU_SET of XLXI_8 : label is "XLXI_8_30";
-   attribute HU_SET of XLXI_13 : label is "XLXI_13_31";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_32";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_33";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_34";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_35";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_36";
+   attribute HU_SET of XLXI_7 : label is "XLXI_7_37";
+   attribute HU_SET of XLXI_8 : label is "XLXI_8_38";
+   attribute HU_SET of XLXI_13 : label is "XLXI_13_39";
 begin
    const_one <= '1';
    const_zero <= '0';
@@ -2427,7 +2993,7 @@ architecture BEHAVIORAL of ram_256bytes_MUSER_cpu is
    
    attribute INIT of XLXI_1 : label is 
          "0000000000000000000000000000000000000000000000000000000000000072";
-   attribute HU_SET of XLXI_15 : label is "XLXI_15_32";
+   attribute HU_SET of XLXI_15 : label is "XLXI_15_40";
    attribute INIT of XLXI_18 : label is 
          "0000000000000000000000000000000000000000000000000000000000000901";
    attribute INIT of XLXI_19 : label is 
@@ -2606,8 +3172,8 @@ architecture BEHAVIORAL of stepper_MUSER_cpu is
    end component;
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_24 : label is "XLXI_24_33";
-   attribute HU_SET of XLXI_25 : label is "XLXI_25_34";
+   attribute HU_SET of XLXI_24 : label is "XLXI_24_41";
+   attribute HU_SET of XLXI_25 : label is "XLXI_25_42";
 begin
    XLXI_21 : VCC
       port map (P=>XLXN_14);
@@ -2941,11 +3507,11 @@ architecture BEHAVIORAL of cpu_control_MUSER_cpu is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_39 : label is "XLXI_39_37";
-   attribute HU_SET of XLXI_47 : label is "XLXI_47_35";
-   attribute HU_SET of XLXI_48 : label is "XLXI_48_36";
-   attribute HU_SET of XLXI_252 : label is "XLXI_252_38";
-   attribute HU_SET of XLXI_577 : label is "XLXI_577_39";
+   attribute HU_SET of XLXI_39 : label is "XLXI_39_45";
+   attribute HU_SET of XLXI_47 : label is "XLXI_47_43";
+   attribute HU_SET of XLXI_48 : label is "XLXI_48_44";
+   attribute HU_SET of XLXI_252 : label is "XLXI_252_46";
+   attribute HU_SET of XLXI_577 : label is "XLXI_577_47";
 begin
    alu <= alu_DUMMY;
    alu_and <= alu_and_DUMMY;
@@ -3733,7 +4299,7 @@ architecture BEHAVIORAL of lzero_MUSER_cpu is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_40";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_48";
 begin
    XLXI_1 : NOR8_HXILINX_cpu
       port map (I0=>a(7),
@@ -4096,9 +4662,9 @@ architecture BEHAVIORAL of alu_MUSER_cpu is
              xor_o : in    std_logic_vector (7 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_41";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_42";
-   attribute HU_SET of XLXI_102 : label is "XLXI_102_43";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_49";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_50";
+   attribute HU_SET of XLXI_102 : label is "XLXI_102_51";
 begin
    XLXI_1 : D3_8E_HXILINX_cpu
       port map (A0=>op(0),
@@ -4508,7 +5074,6 @@ architecture BEHAVIORAL of cpu is
    signal clkr                 : std_logic;
    signal clkw                 : std_logic;
    signal clk_internal         : std_logic;
-   signal clk_low              : std_logic;
    signal flags_o              : std_logic_vector (3 downto 0);
    signal freq_div_1           : std_logic_vector (15 downto 0);
    signal ground               : std_logic;
@@ -4568,6 +5133,11 @@ architecture BEHAVIORAL of cpu is
    signal XLXN_235             : std_logic;
    signal XLXN_247             : std_logic;
    signal XLXN_252             : std_logic;
+   signal XLXN_255             : std_logic;
+   signal XLXN_256             : std_logic;
+   signal XLXN_262             : std_logic;
+   signal XLXN_267             : std_logic;
+   signal XLXN_272             : std_logic;
    signal manr_o_DUMMY         : std_logic_vector (7 downto 0);
    signal manr_r_DUMMY         : std_logic;
    signal manr_w_DUMMY         : std_logic;
@@ -4805,11 +5375,38 @@ architecture BEHAVIORAL of cpu is
              TC  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_87 : label is "XLXI_87_44";
-   attribute HU_SET of XLXI_104 : label is "XLXI_104_45";
-   attribute HU_SET of XLXI_571 : label is "XLXI_571_46";
-   attribute HU_SET of XLXI_914 : label is "XLXI_914_47";
-   attribute HU_SET of XLXI_917 : label is "XLXI_917_48";
+   component cpu_freq_divider_1Hz_MUSER_cpu
+      port ( in_clk  : in    std_logic; 
+             in_clr  : in    std_logic; 
+             out_clk : out   std_logic);
+   end component;
+   
+   component cpu_freq_divider_1Stg_MUSER_cpu
+      port ( in_clk  : in    std_logic; 
+             in_clr  : in    std_logic; 
+             out_clk : out   std_logic);
+   end component;
+   
+   component cpu_freq_divider_1Inst_MUSER_cpu
+      port ( in_clk  : in    std_logic; 
+             in_clr  : in    std_logic; 
+             out_clk : out   std_logic);
+   end component;
+   
+   component OR4
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             I2 : in    std_logic; 
+             I3 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of OR4 : component is "BLACK_BOX";
+   
+   attribute HU_SET of XLXI_87 : label is "XLXI_87_52";
+   attribute HU_SET of XLXI_104 : label is "XLXI_104_53";
+   attribute HU_SET of XLXI_571 : label is "XLXI_571_54";
+   attribute HU_SET of XLXI_914 : label is "XLXI_914_55";
+   attribute HU_SET of XLXI_917 : label is "XLXI_917_56";
 begin
    manr_o(7 downto 0) <= manr_o_DUMMY(7 downto 0);
    manr_r <= manr_r_DUMMY;
@@ -5538,7 +6135,7 @@ begin
    
    XLXI_916 : BUF
       port map (I=>freq_div_1(3),
-                O=>clk_low);
+                O=>open);
    
    XLXI_917 : CB16CE_HXILINX_cpu
       port map (C=>in_clk,
@@ -5554,19 +6151,46 @@ begin
                 O=>XLXN_247);
    
    XLXI_919 : AND2
-      port map (I0=>clk_low,
+      port map (I0=>XLXN_255,
                 I1=>in_is_clk_low,
                 O=>XLXN_252);
-   
-   XLXI_924 : OR2
-      port map (I0=>XLXN_252,
-                I1=>XLXN_247,
-                O=>clk_internal);
    
    XLXI_925 : AND2
       port map (I0=>can_read,
                 I1=>in_manual_input_r,
                 O=>manual_input_r);
+   
+   XLXI_926 : cpu_freq_divider_1Hz_MUSER_cpu
+      port map (in_clk=>in_clk,
+                in_clr=>rst,
+                out_clk=>XLXN_255);
+   
+   XLXI_927 : cpu_freq_divider_1Stg_MUSER_cpu
+      port map (in_clk=>in_clk,
+                in_clr=>rst,
+                out_clk=>XLXN_256);
+   
+   XLXI_928 : AND2
+      port map (I0=>XLXN_256,
+                I1=>in_is_clk_high,
+                O=>XLXN_262);
+   
+   XLXI_931 : cpu_freq_divider_1Inst_MUSER_cpu
+      port map (in_clk=>in_clk,
+                in_clr=>rst,
+                out_clk=>XLXN_267);
+   
+   XLXI_935 : AND2
+      port map (I0=>XLXN_267,
+                I1=>in_is_clk_external,
+                O=>XLXN_272);
+   
+   XLXI_936 : OR4
+      port map (I0=>XLXN_272,
+                I1=>XLXN_252,
+                I2=>XLXN_247,
+                I3=>XLXN_262,
+                O=>clk_internal);
    
 end BEHAVIORAL;
 

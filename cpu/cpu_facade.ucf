@@ -51,12 +51,14 @@ NET "out_sysbus[1]" LOC = R14;  ##  PIN3
 NET "out_sysbus[0]" LOC = R15;  ##  PIN3
 
 
-NET "in_is_clk_low" LOC = B5;  ##  PIN3
-#NET "" LOC = B6  ##  PIN3
-#NET "out_s6" LOC = A7;  ##  PIN3
-#NET "out_s6" LOC = A8;  ##  PIN3
-NET "in_is_clk_manual" LOC = A9;  ##  PIN3
+#NET "in_is_clk_veryhigh" LOC = B5;  ##  PIN3 1Hz
+#NET "in_manr_w" LOC = B5;#A8;  ##  PIN3 1KHz
+NET "in_is_clk_external" LOC = B6;  ##  PIN3 1Stg
+NET "in_is_clk_high" LOC = A7;  ##  PIN3 1Ins
+NET "in_is_clk_low" LOC = A8;
+NET "in_is_clk_manual" LOC = A9;  ##  PIN3 Man
 NET "in_clk_manual" LOC = B10;  ##  PIN3
+
 #NET "out_r0_w" LOC = D16;  ##  PIN3
 
 
@@ -157,7 +159,7 @@ NET "monitor[0]" LOC = P4;
 NET "monitor[1]" LOC = N5;
 NET "monitor[2]" LOC = P5;
 NET "monitor[3]" LOC = M6;
-NET "monitor[4]" LOC = C7;
+NET "monitor[4]" LOC = D8;
 NET "monitor[5]" LOC = E6;
 NET "monitor[6]" LOC = C5;
 NET "monitor[7]" LOC = F7;

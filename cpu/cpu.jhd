@@ -43,3 +43,9 @@ MODULE cpu
 		INSTANCE XLXI_860
 	SUBMODULE cpu_freq_divider
 		INSTANCE XLXI_912
+	SUBMODULE cpu_freq_divider_1Hz
+		INSTANCE XLXI_926
+	SUBMODULE cpu_freq_divider_1Stg
+		INSTANCE XLXI_927
+	SUBMODULE cpu_freq_divider_1Inst
+		INSTANCE XLXI_931
