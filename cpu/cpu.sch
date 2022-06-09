@@ -246,6 +246,10 @@
         <signal name="XLXN_262" />
         <signal name="XLXN_267" />
         <signal name="XLXN_272" />
+        <signal name="in_ir_r" />
+        <signal name="in_is_clk_veryhigh" />
+        <signal name="XLXN_275" />
+        <signal name="XLXN_278" />
         <port polarity="Input" name="in_manr_d(7:0)" />
         <port polarity="Output" name="monitor(7:0)" />
         <port polarity="Input" name="in_is_clk_high" />
@@ -352,6 +356,8 @@
         <port polarity="Output" name="out_clk_internal" />
         <port polarity="Input" name="in_manual_input_r" />
         <port polarity="Input" name="in_manual_input_o(7:0)" />
+        <port polarity="Input" name="in_ir_r" />
+        <port polarity="Input" name="in_is_clk_veryhigh" />
         <blockdef name="alu">
             <timestamp>2022-4-8T18:49:12</timestamp>
             <rect width="256" x="64" y="-320" height="320" />
@@ -697,20 +703,28 @@
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <line x2="384" y1="-96" y2="-96" x1="320" />
         </blockdef>
-        <blockdef name="or4">
+        <blockdef name="cpu_freq_divider_1KHz">
+            <timestamp>2022-6-9T20:51:58</timestamp>
+            <rect width="256" x="64" y="-128" height="128" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <line x2="384" y1="-96" y2="-96" x1="320" />
+        </blockdef>
+        <blockdef name="or5">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="48" y1="-64" y2="-64" x1="0" />
-            <line x2="64" y1="-128" y2="-128" x1="0" />
-            <line x2="64" y1="-192" y2="-192" x1="0" />
+            <line x2="48" y1="-128" y2="-128" x1="0" />
+            <line x2="72" y1="-192" y2="-192" x1="0" />
             <line x2="48" y1="-256" y2="-256" x1="0" />
-            <line x2="192" y1="-160" y2="-160" x1="256" />
-            <arc ex="112" ey="-208" sx="192" sy="-160" r="88" cx="116" cy="-120" />
-            <line x2="48" y1="-208" y2="-208" x1="112" />
-            <line x2="48" y1="-112" y2="-112" x1="112" />
-            <line x2="48" y1="-256" y2="-208" x1="48" />
-            <line x2="48" y1="-64" y2="-112" x1="48" />
-            <arc ex="48" ey="-208" sx="48" sy="-112" r="56" cx="16" cy="-160" />
-            <arc ex="192" ey="-160" sx="112" sy="-112" r="88" cx="116" cy="-200" />
+            <line x2="48" y1="-320" y2="-320" x1="0" />
+            <line x2="192" y1="-192" y2="-192" x1="256" />
+            <arc ex="192" ey="-192" sx="112" sy="-144" r="88" cx="116" cy="-232" />
+            <line x2="48" y1="-240" y2="-240" x1="112" />
+            <line x2="48" y1="-144" y2="-144" x1="112" />
+            <line x2="48" y1="-64" y2="-144" x1="48" />
+            <line x2="48" y1="-320" y2="-240" x1="48" />
+            <arc ex="112" ey="-240" sx="192" sy="-192" r="88" cx="116" cy="-152" />
+            <arc ex="48" ey="-240" sx="48" sy="-144" r="56" cx="16" cy="-192" />
         </blockdef>
         <block symbolname="alu" name="alu_inst">
             <blockpin signalname="sysbus(7:0)" name="a(7:0)" />
@@ -1486,11 +1500,22 @@
             <blockpin signalname="in_is_clk_external" name="I1" />
             <blockpin signalname="XLXN_272" name="O" />
         </block>
-        <block symbolname="or4" name="XLXI_936">
-            <blockpin signalname="XLXN_272" name="I0" />
-            <blockpin signalname="XLXN_252" name="I1" />
-            <blockpin signalname="XLXN_247" name="I2" />
-            <blockpin signalname="XLXN_262" name="I3" />
+        <block symbolname="cpu_freq_divider_1KHz" name="XLXI_937">
+            <blockpin signalname="in_clk" name="in_clk" />
+            <blockpin signalname="rst" name="in_clr" />
+            <blockpin signalname="XLXN_275" name="out_clk" />
+        </block>
+        <block symbolname="and2" name="XLXI_938">
+            <blockpin signalname="XLXN_275" name="I0" />
+            <blockpin signalname="in_is_clk_veryhigh" name="I1" />
+            <blockpin signalname="XLXN_278" name="O" />
+        </block>
+        <block symbolname="or5" name="XLXI_939">
+            <blockpin signalname="XLXN_278" name="I0" />
+            <blockpin signalname="XLXN_272" name="I1" />
+            <blockpin signalname="XLXN_252" name="I2" />
+            <blockpin signalname="XLXN_247" name="I3" />
+            <blockpin signalname="XLXN_262" name="I4" />
             <blockpin signalname="clk_internal" name="O" />
         </block>
     </netlist>
@@ -3760,14 +3785,51 @@
             <wire x2="4496" y1="3312" y2="3312" x1="4480" />
             <wire x2="4496" y1="3312" y2="3376" x1="4496" />
         </branch>
-        <instance x="4880" y="3216" name="XLXI_936" orien="R0" />
         <branch name="XLXN_272">
             <wire x2="4752" y1="3152" y2="3408" x1="4752" />
             <wire x2="4880" y1="3152" y2="3152" x1="4752" />
         </branch>
+        <branch name="in_ir_r">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1136" y="4624" type="branch" />
+            <wire x2="1136" y1="4624" y2="4624" x1="944" />
+        </branch>
+        <iomarker fontsize="28" x="944" y="4624" name="in_ir_r" orien="R180" />
+        <branch name="in_is_clk_veryhigh">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1200" y="3808" type="branch" />
+            <wire x2="1200" y1="3808" y2="3808" x1="1040" />
+        </branch>
+        <iomarker fontsize="28" x="1040" y="3808" name="in_is_clk_veryhigh" orien="R180" />
+        <instance x="5200" y="3328" name="XLXI_937" orien="R0">
+        </instance>
+        <branch name="in_clk">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5120" y="3232" type="branch" />
+            <wire x2="5200" y1="3232" y2="3232" x1="5120" />
+        </branch>
+        <branch name="rst">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5120" y="3296" type="branch" />
+            <wire x2="5200" y1="3296" y2="3296" x1="5120" />
+        </branch>
+        <instance x="5664" y="3296" name="XLXI_938" orien="R0" />
+        <branch name="XLXN_275">
+            <wire x2="5664" y1="3232" y2="3232" x1="5584" />
+        </branch>
+        <branch name="in_is_clk_veryhigh">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5472" y="2944" type="branch" />
+            <wire x2="5616" y1="2944" y2="2944" x1="5472" />
+            <wire x2="5616" y1="2944" y2="3168" x1="5616" />
+            <wire x2="5664" y1="3168" y2="3168" x1="5616" />
+        </branch>
+        <instance x="4880" y="3280" name="XLXI_939" orien="R0" />
         <branch name="clk_internal">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="5280" y="3056" type="branch" />
-            <wire x2="5280" y1="3056" y2="3056" x1="5136" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="5280" y="3088" type="branch" />
+            <wire x2="5280" y1="3088" y2="3088" x1="5136" />
+        </branch>
+        <branch name="XLXN_278">
+            <wire x2="4800" y1="3216" y2="3440" x1="4800" />
+            <wire x2="5968" y1="3440" y2="3440" x1="4800" />
+            <wire x2="4880" y1="3216" y2="3216" x1="4800" />
+            <wire x2="5968" y1="3200" y2="3200" x1="5920" />
+            <wire x2="5968" y1="3200" y2="3440" x1="5968" />
         </branch>
     </sheet>
 </drawing>

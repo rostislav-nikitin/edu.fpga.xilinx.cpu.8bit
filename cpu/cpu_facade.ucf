@@ -51,7 +51,7 @@ NET "out_sysbus[1]" LOC = R14;  ##  PIN3
 NET "out_sysbus[0]" LOC = R15;  ##  PIN3
 
 
-#NET "in_is_clk_veryhigh" LOC = B5;  ##  PIN3 1Hz
+NET "in_is_clk_veryhigh" LOC = B5;  ##  PIN3 1Hz
 #NET "in_manr_w" LOC = B5;#A8;  ##  PIN3 1KHz
 NET "in_is_clk_external" LOC = B6;  ##  PIN3 1Stg
 NET "in_is_clk_high" LOC = A7;  ##  PIN3 1Ins
@@ -69,7 +69,7 @@ NET "in_r1_r" LOC = B16;  ##  PIN3
 NET "in_r0_r" LOC = C16;  ##  PIN3 
 NET "in_ram_r" LOC = E15;  ##  PIN3 
 NET "in_acc_r" LOC = E11;  ##  PIN3 
-#NET "in_ir_r" LOC = D11;  ##  PIN3 
+NET "in_ir_r" LOC = D11;  ##  PIN3 
 NET "in_iar_r" LOC = F15;  ##  PIN3 
 #NET "none" LOC = G16;  ##  PIN3  
 

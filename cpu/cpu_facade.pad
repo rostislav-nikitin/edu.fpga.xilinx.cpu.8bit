@@ -1,7 +1,7 @@
 Release 14.3 - par P.40xd (lin64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Thu Jun  9 01:52:40 2022
+Fri Jun 10 01:22:46 2022
 
 
 # NOTE: This file is designed to be imported into a spreadsheet program
@@ -39,7 +39,7 @@ B1||IOBS|IO_L50N_M3BA2_3|UNUSED||3|||||||||
 B2||IOBM|IO_L52P_M3A8_3|UNUSED||3|||||||||
 B3||IOBM|IO_L83P_3|UNUSED||3|||||||||
 B4|||VCCO_0|||0|||||2.50||||
-B5||IOBM|IO_L2P_0|UNUSED||0|||||||||
+B5|in_is_clk_veryhigh|IOB|IO_L2P_0|INPUT|LVCMOS25*|0||||NONE||LOCATED|NO|NONE|
 B6|in_is_clk_external|IOB|IO_L4P_0|INPUT|LVCMOS25*|0||||NONE||LOCATED|NO|NONE|
 B7|||GND||||||||||||
 B8|out_clkw|IOB|IO_L33P_0|OUTPUT|LVCMOS25*|0|12|SLOW||||LOCATED|NO|NONE|

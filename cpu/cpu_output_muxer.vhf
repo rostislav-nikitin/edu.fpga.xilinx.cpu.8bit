@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu_output_muxer.vhf
--- /___/   /\     Timestamp : 06/03/2022 03:12:30
+-- /___/   /\     Timestamp : 06/10/2022 01:06:29
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -211,11 +211,11 @@ architecture BEHAVIORAL of encoder16_4_MUSER_cpu_output_muxer is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_25 : label is "XLXI_25_57";
-   attribute HU_SET of XLXI_48 : label is "XLXI_48_58";
-   attribute HU_SET of XLXI_49 : label is "XLXI_49_59";
-   attribute HU_SET of XLXI_50 : label is "XLXI_50_60";
-   attribute HU_SET of XLXI_59 : label is "XLXI_59_61";
+   attribute HU_SET of XLXI_25 : label is "XLXI_25_65";
+   attribute HU_SET of XLXI_48 : label is "XLXI_48_66";
+   attribute HU_SET of XLXI_49 : label is "XLXI_49_67";
+   attribute HU_SET of XLXI_50 : label is "XLXI_50_68";
+   attribute HU_SET of XLXI_59 : label is "XLXI_59_69";
 begin
    XLXI_5 : INV
       port map (I=>i(4),
@@ -474,14 +474,14 @@ architecture BEHAVIORAL of bus_muxer_MUSER_cpu_output_muxer is
    end component;
    attribute BOX_TYPE of BUF : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_63";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_62";
-   attribute HU_SET of XLXI_12 : label is "XLXI_12_64";
-   attribute HU_SET of XLXI_13 : label is "XLXI_13_65";
-   attribute HU_SET of XLXI_14 : label is "XLXI_14_66";
-   attribute HU_SET of XLXI_15 : label is "XLXI_15_67";
-   attribute HU_SET of XLXI_16 : label is "XLXI_16_68";
-   attribute HU_SET of XLXI_17 : label is "XLXI_17_69";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_71";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_70";
+   attribute HU_SET of XLXI_12 : label is "XLXI_12_72";
+   attribute HU_SET of XLXI_13 : label is "XLXI_13_73";
+   attribute HU_SET of XLXI_14 : label is "XLXI_14_74";
+   attribute HU_SET of XLXI_15 : label is "XLXI_15_75";
+   attribute HU_SET of XLXI_16 : label is "XLXI_16_76";
+   attribute HU_SET of XLXI_17 : label is "XLXI_17_77";
 begin
    XLXI_1 : M16_1E_HXILINX_cpu_output_muxer
       port map (D0=>dev0(0),

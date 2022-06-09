@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : bus_muxer.vhf
--- /___/   /\     Timestamp : 06/03/2022 03:12:29
+-- /___/   /\     Timestamp : 06/10/2022 01:06:29
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -210,14 +210,14 @@ architecture BEHAVIORAL of bus_muxer is
    end component;
    attribute BOX_TYPE of BUF : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_50";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_49";
-   attribute HU_SET of XLXI_12 : label is "XLXI_12_51";
-   attribute HU_SET of XLXI_13 : label is "XLXI_13_52";
-   attribute HU_SET of XLXI_14 : label is "XLXI_14_53";
-   attribute HU_SET of XLXI_15 : label is "XLXI_15_54";
-   attribute HU_SET of XLXI_16 : label is "XLXI_16_55";
-   attribute HU_SET of XLXI_17 : label is "XLXI_17_56";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_58";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_57";
+   attribute HU_SET of XLXI_12 : label is "XLXI_12_59";
+   attribute HU_SET of XLXI_13 : label is "XLXI_13_60";
+   attribute HU_SET of XLXI_14 : label is "XLXI_14_61";
+   attribute HU_SET of XLXI_15 : label is "XLXI_15_62";
+   attribute HU_SET of XLXI_16 : label is "XLXI_16_63";
+   attribute HU_SET of XLXI_17 : label is "XLXI_17_64";
 begin
    XLXI_1 : M16_1E_HXILINX_bus_muxer
       port map (D0=>dev0(0),

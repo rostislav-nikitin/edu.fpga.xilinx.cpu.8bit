@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.40xd on Thu Jun 09 01:52:31 2022
+// Written by: Map P.40xd on Fri Jun 10 01:22:37 2022
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -59,6 +59,7 @@ COMP "out_ram_r" LOCATE = SITE "T5" LEVEL 1;
 COMP "out_ram_w" LOCATE = SITE "E16" LEVEL 1;
 COMP "in_ram_a_w" LOCATE = SITE "H14" LEVEL 1;
 COMP "in_write_reg_en" LOCATE = SITE "K12" LEVEL 1;
+COMP "in_is_clk_veryhigh" LOCATE = SITE "B5" LEVEL 1;
 COMP "out_r0_r" LOCATE = SITE "R1" LEVEL 1;
 COMP "out_r1_r" LOCATE = SITE "P2" LEVEL 1;
 COMP "out_r0_w" LOCATE = SITE "T15" LEVEL 1;
@@ -92,7 +93,21 @@ COMP "out_sysbus<4>" LOCATE = SITE "T9" LEVEL 1;
 COMP "out_sysbus<5>" LOCATE = SITE "T7" LEVEL 1;
 COMP "out_sysbus<6>" LOCATE = SITE "T6" LEVEL 1;
 COMP "out_sysbus<7>" LOCATE = SITE "R5" LEVEL 1;
-TIMEGRP sys_clk_pin = BEL "XLXI_7/XLXI_931/XLXI_1/XLXI_2/COUNT_0" BEL
+TIMEGRP sys_clk_pin = BEL "XLXI_7/XLXI_937/XLXI_1/XLXI_1/COUNT_0" BEL
+        "XLXI_7/XLXI_937/XLXI_1/XLXI_1/COUNT_1" BEL
+        "XLXI_7/XLXI_937/XLXI_1/XLXI_1/COUNT_2" BEL
+        "XLXI_7/XLXI_937/XLXI_1/XLXI_1/COUNT_3" BEL
+        "XLXI_7/XLXI_937/XLXI_1/XLXI_1/COUNT_4" BEL
+        "XLXI_7/XLXI_937/XLXI_1/XLXI_1/COUNT_5" BEL
+        "XLXI_7/XLXI_937/XLXI_1/XLXI_1/COUNT_6" BEL
+        "XLXI_7/XLXI_937/XLXI_1/XLXI_1/COUNT_7" BEL
+        "XLXI_7/XLXI_937/XLXI_1/XLXI_1/COUNT_8" BEL
+        "XLXI_7/XLXI_937/XLXI_1/XLXI_1/COUNT_9" BEL
+        "XLXI_7/XLXI_937/XLXI_1/XLXI_1/COUNT_10" BEL
+        "XLXI_7/XLXI_937/XLXI_1/XLXI_1/COUNT_11" BEL
+        "XLXI_7/XLXI_937/XLXI_1/XLXI_1/COUNT_12" BEL
+        "XLXI_7/XLXI_937/XLXI_1/XLXI_1/COUNT_13" BEL
+        "XLXI_7/XLXI_931/XLXI_1/XLXI_2/COUNT_0" BEL
         "XLXI_7/XLXI_931/XLXI_1/XLXI_2/COUNT_1" BEL
         "XLXI_7/XLXI_931/XLXI_1/XLXI_2/COUNT_2" BEL
         "XLXI_7/XLXI_931/XLXI_1/XLXI_2/COUNT_3" BEL

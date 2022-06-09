@@ -5,6 +5,9 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">in_ir_r</arg> connected to top level port <arg fmt="%s" index="2">in_ir_r</arg> has been removed.
+</msg>
+
 <msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">in_manr_w</arg> connected to top level port <arg fmt="%s" index="2">in_manr_w</arg> has been removed.
 </msg>
 
@@ -30,6 +33,9 @@
 </msg>
 
 <msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">XLXI_7/ram_a_w</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">XLXI_7/XLXI_937/half_period_tick</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
 </msg>
 
 <msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">XLXI_7/XLXI_926/half_period_tick</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
