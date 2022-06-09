@@ -55,6 +55,8 @@
         <signal name="XLXN_86" />
         <signal name="manual_input_r" />
         <signal name="manual_input_o(7:0)" />
+        <signal name="ir_r" />
+        <signal name="ir_o(7:0)" />
         <port polarity="Input" name="acc_r" />
         <port polarity="Input" name="mem_r" />
         <port polarity="Input" name="r0_r" />
@@ -75,8 +77,10 @@
         <port polarity="Input" name="manr_o(7:0)" />
         <port polarity="Input" name="manual_input_r" />
         <port polarity="Input" name="manual_input_o(7:0)" />
+        <port polarity="Input" name="ir_r" />
+        <port polarity="Input" name="ir_o(7:0)" />
         <blockdef name="bus_muxer">
-            <timestamp>2022-6-3T0:8:44</timestamp>
+            <timestamp>2022-6-9T22:51:1</timestamp>
             <rect width="256" x="64" y="-1152" height="1152" />
             <line x2="0" y1="-1120" y2="-1120" x1="64" />
             <rect width="64" x="0" y="-1132" height="24" />
@@ -200,7 +204,7 @@
             <blockpin signalname="r3_o(7:0)" name="dev6(7:0)" />
             <blockpin signalname="manr_o(7:0)" name="dev7(7:0)" />
             <blockpin signalname="manual_input_o(7:0)" name="dev8(7:0)" />
-            <blockpin name="dev9(7:0)" />
+            <blockpin signalname="ir_o(7:0)" name="dev9(7:0)" />
             <blockpin signalname="XLXN_73" name="e" />
             <blockpin signalname="o(7:0)" name="o(7:0)" />
         </block>
@@ -234,7 +238,7 @@
             <blockpin signalname="i(8)" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_25">
-            <blockpin signalname="XLXN_86" name="I" />
+            <blockpin signalname="ir_r" name="I" />
             <blockpin signalname="i(9)" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_32">
@@ -505,8 +509,6 @@
             <wire x2="704" y1="1280" y2="1280" x1="640" />
         </branch>
         <branch name="XLXN_86">
-            <wire x2="416" y1="1040" y2="1040" x1="320" />
-            <wire x2="320" y1="1040" y2="1120" x1="320" />
             <wire x2="416" y1="1120" y2="1120" x1="320" />
             <wire x2="320" y1="1120" y2="1200" x1="320" />
             <wire x2="416" y1="1200" y2="1200" x1="320" />
@@ -529,5 +531,13 @@
             <wire x2="2400" y1="432" y2="432" x1="2336" />
         </branch>
         <iomarker fontsize="28" x="2336" y="432" name="manual_input_o(7:0)" orien="R180" />
+        <branch name="ir_r">
+            <wire x2="416" y1="1040" y2="1040" x1="320" />
+        </branch>
+        <iomarker fontsize="28" x="320" y="1040" name="ir_r" orien="R180" />
+        <branch name="ir_o(7:0)">
+            <wire x2="2400" y1="688" y2="688" x1="2336" />
+        </branch>
+        <iomarker fontsize="28" x="2336" y="688" name="ir_o(7:0)" orien="R180" />
     </sheet>
 </drawing>

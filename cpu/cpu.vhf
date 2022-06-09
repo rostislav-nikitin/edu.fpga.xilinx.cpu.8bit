@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu.vhf
--- /___/   /\     Timestamp : 06/10/2022 01:22:08
+-- /___/   /\     Timestamp : 06/10/2022 02:02:46
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -2391,56 +2391,48 @@ architecture BEHAVIORAL of bus_muxer_MUSER_cpu is
    signal o5       : std_logic;
    signal o6       : std_logic;
    signal o7       : std_logic;
-   signal XLXN_55  : std_logic;
    signal XLXN_56  : std_logic;
    signal XLXN_57  : std_logic;
    signal XLXN_58  : std_logic;
    signal XLXN_59  : std_logic;
    signal XLXN_60  : std_logic;
    signal XLXN_61  : std_logic;
-   signal XLXN_71  : std_logic;
    signal XLXN_72  : std_logic;
    signal XLXN_73  : std_logic;
    signal XLXN_74  : std_logic;
    signal XLXN_75  : std_logic;
    signal XLXN_76  : std_logic;
    signal XLXN_77  : std_logic;
-   signal XLXN_87  : std_logic;
    signal XLXN_88  : std_logic;
    signal XLXN_89  : std_logic;
    signal XLXN_90  : std_logic;
    signal XLXN_91  : std_logic;
    signal XLXN_92  : std_logic;
    signal XLXN_93  : std_logic;
-   signal XLXN_103 : std_logic;
    signal XLXN_104 : std_logic;
    signal XLXN_105 : std_logic;
    signal XLXN_106 : std_logic;
    signal XLXN_107 : std_logic;
    signal XLXN_108 : std_logic;
    signal XLXN_109 : std_logic;
-   signal XLXN_119 : std_logic;
    signal XLXN_120 : std_logic;
    signal XLXN_121 : std_logic;
    signal XLXN_122 : std_logic;
    signal XLXN_123 : std_logic;
    signal XLXN_124 : std_logic;
    signal XLXN_125 : std_logic;
-   signal XLXN_135 : std_logic;
    signal XLXN_136 : std_logic;
    signal XLXN_137 : std_logic;
    signal XLXN_138 : std_logic;
    signal XLXN_139 : std_logic;
    signal XLXN_140 : std_logic;
    signal XLXN_141 : std_logic;
-   signal XLXN_151 : std_logic;
    signal XLXN_152 : std_logic;
    signal XLXN_153 : std_logic;
    signal XLXN_154 : std_logic;
    signal XLXN_155 : std_logic;
    signal XLXN_156 : std_logic;
    signal XLXN_157 : std_logic;
-   signal XLXN_167 : std_logic;
    signal XLXN_168 : std_logic;
    signal XLXN_169 : std_logic;
    signal XLXN_170 : std_logic;
@@ -2497,7 +2489,7 @@ begin
                 D6=>dev6(0),
                 D7=>dev7(0),
                 D8=>dev8(0),
-                D9=>XLXN_55,
+                D9=>dev9(0),
                 D10=>XLXN_56,
                 D11=>XLXN_57,
                 D12=>XLXN_58,
@@ -2521,7 +2513,7 @@ begin
                 D6=>dev6(4),
                 D7=>dev7(4),
                 D8=>dev8(4),
-                D9=>XLXN_71,
+                D9=>dev9(4),
                 D10=>XLXN_72,
                 D11=>XLXN_73,
                 D12=>XLXN_74,
@@ -2545,7 +2537,7 @@ begin
                 D6=>dev6(5),
                 D7=>dev7(5),
                 D8=>dev8(5),
-                D9=>XLXN_103,
+                D9=>dev9(5),
                 D10=>XLXN_104,
                 D11=>XLXN_105,
                 D12=>XLXN_106,
@@ -2569,7 +2561,7 @@ begin
                 D6=>dev6(1),
                 D7=>dev7(1),
                 D8=>dev8(1),
-                D9=>XLXN_87,
+                D9=>dev9(1),
                 D10=>XLXN_88,
                 D11=>XLXN_89,
                 D12=>XLXN_90,
@@ -2593,7 +2585,7 @@ begin
                 D6=>dev6(6),
                 D7=>dev7(6),
                 D8=>dev8(6),
-                D9=>XLXN_135,
+                D9=>dev9(6),
                 D10=>XLXN_136,
                 D11=>XLXN_137,
                 D12=>XLXN_138,
@@ -2617,7 +2609,7 @@ begin
                 D6=>dev6(2),
                 D7=>dev7(2),
                 D8=>dev8(2),
-                D9=>XLXN_119,
+                D9=>dev9(2),
                 D10=>XLXN_120,
                 D11=>XLXN_121,
                 D12=>XLXN_122,
@@ -2641,7 +2633,7 @@ begin
                 D6=>dev6(7),
                 D7=>dev7(7),
                 D8=>dev8(7),
-                D9=>XLXN_167,
+                D9=>dev9(7),
                 D10=>XLXN_168,
                 D11=>XLXN_169,
                 D12=>XLXN_170,
@@ -2665,7 +2657,7 @@ begin
                 D6=>dev6(3),
                 D7=>dev7(3),
                 D8=>dev8(3),
-                D9=>XLXN_151,
+                D9=>dev9(3),
                 D10=>XLXN_152,
                 D11=>XLXN_153,
                 D12=>XLXN_154,
@@ -2726,6 +2718,8 @@ entity cpu_output_muxer_MUSER_cpu is
           acc_r          : in    std_logic; 
           iar_o          : in    std_logic_vector (7 downto 0); 
           iar_r          : in    std_logic; 
+          ir_o           : in    std_logic_vector (7 downto 0); 
+          ir_r           : in    std_logic; 
           manr_o         : in    std_logic_vector (7 downto 0); 
           manr_r         : in    std_logic; 
           manual_input_o : in    std_logic_vector (7 downto 0); 
@@ -2752,7 +2746,6 @@ architecture BEHAVIORAL of cpu_output_muxer_MUSER_cpu is
    signal XLXN_73                 : std_logic;
    signal XLXN_86                 : std_logic;
    signal g_DUMMY                 : std_logic;
-   signal XLXI_1_dev9_openSignal  : std_logic_vector (7 downto 0);
    signal XLXI_1_dev10_openSignal : std_logic_vector (7 downto 0);
    signal XLXI_1_dev11_openSignal : std_logic_vector (7 downto 0);
    signal XLXI_1_dev12_openSignal : std_logic_vector (7 downto 0);
@@ -2817,7 +2810,7 @@ begin
                 dev6(7 downto 0)=>r3_o(7 downto 0),
                 dev7(7 downto 0)=>manr_o(7 downto 0),
                 dev8(7 downto 0)=>manual_input_o(7 downto 0),
-                dev9(7 downto 0)=>XLXI_1_dev9_openSignal(7 downto 0),
+                dev9(7 downto 0)=>ir_o(7 downto 0),
                 dev10(7 downto 0)=>XLXI_1_dev10_openSignal(7 downto 0),
                 dev11(7 downto 0)=>XLXI_1_dev11_openSignal(7 downto 0),
                 dev12(7 downto 0)=>XLXI_1_dev12_openSignal(7 downto 0),
@@ -2889,7 +2882,7 @@ begin
                 O=>i(8));
    
    XLXI_25 : BUF
-      port map (I=>XLXN_86,
+      port map (I=>ir_r,
                 O=>i(9));
    
    XLXI_32 : BUF
@@ -5198,6 +5191,7 @@ architecture BEHAVIORAL of cpu is
    signal iar_r                : std_logic;
    signal iar_w                : std_logic;
    signal ir_o                 : std_logic_vector (7 downto 0);
+   signal ir_r                 : std_logic;
    signal ir_w                 : std_logic;
    signal manual_acc_r         : std_logic;
    signal manual_acc_w         : std_logic;
@@ -5431,6 +5425,8 @@ architecture BEHAVIORAL of cpu is
              g              : out   std_logic; 
              iar_o          : in    std_logic_vector (7 downto 0); 
              iar_r          : in    std_logic; 
+             ir_o           : in    std_logic_vector (7 downto 0); 
+             ir_r           : in    std_logic; 
              manr_o         : in    std_logic_vector (7 downto 0); 
              manr_r         : in    std_logic; 
              manual_input_o : in    std_logic_vector (7 downto 0); 
@@ -5744,6 +5740,8 @@ begin
                 acc_r=>acc_r,
                 iar_o(7 downto 0)=>iar_o(7 downto 0),
                 iar_r=>iar_r,
+                ir_o(7 downto 0)=>ir_o(7 downto 0),
+                ir_r=>ir_r,
                 manr_o(7 downto 0)=>manr_o_DUMMY(7 downto 0),
                 manr_r=>manr_r_DUMMY,
                 manual_input_o(7 downto 0)=>in_manual_input_o(7 downto 0),
@@ -6328,6 +6326,11 @@ begin
                 I3=>XLXN_247,
                 I4=>XLXN_262,
                 O=>clk_internal);
+   
+   XLXI_940 : AND2
+      port map (I0=>can_read,
+                I1=>in_ir_r,
+                O=>ir_r);
    
 end BEHAVIORAL;
 

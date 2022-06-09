@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.40xd on Fri Jun 10 01:22:37 2022
+// Written by: Map P.40xd on Fri Jun 10 02:03:47 2022
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -26,6 +26,7 @@ COMP "in_r3_r" LOCATE = SITE "A13" LEVEL 1;
 COMP "in_r2_w" LOCATE = SITE "J14" LEVEL 1;
 COMP "in_r3_w" LOCATE = SITE "G11" LEVEL 1;
 COMP "in_bus1" LOCATE = SITE "E12" LEVEL 1;
+COMP "in_ir_r" LOCATE = SITE "D11" LEVEL 1;
 COMP "in_ir_w" LOCATE = SITE "G12" LEVEL 1;
 COMP "in_temp_w" LOCATE = SITE "J13" LEVEL 1;
 COMP "in_is_clk_manual" LOCATE = SITE "A9" LEVEL 1;
