@@ -1,1 +1,4 @@
+sch2hdl,-intstyle,ise,-family,aspartan6,-flat,-suppress,-vhdl,/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf,-w,/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.sch
+sch2hdl,-intstyle,ise,-family,aspartan6,-flat,-suppress,-vhdl,/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/stepper.vhf,-w,/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/stepper.sch
+sch2hdl,-intstyle,ise,-family,aspartan6,-flat,-suppress,-vhdl,/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_control.vhf,-w,/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_control.sch
 sch2hdl,-intstyle,ise,-family,aspartan6,-flat,-suppress,-vhdl,/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf,-w,/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.sch

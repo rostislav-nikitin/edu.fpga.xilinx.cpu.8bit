@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu_control.vhf
--- /___/   /\     Timestamp : 04/23/2022 00:37:20
+-- /___/   /\     Timestamp : 06/12/2022 18:07:10
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -204,6 +204,7 @@ use UNISIM.Vcomponents.ALL;
 
 entity stepper_MUSER_cpu_control is
    port ( clk : in    std_logic; 
+          rst : in    std_logic; 
           s1  : out   std_logic; 
           s2  : out   std_logic; 
           s3  : out   std_logic; 
@@ -221,6 +222,7 @@ architecture BEHAVIORAL of stepper_MUSER_cpu_control is
    signal XLXN_20 : std_logic;
    signal XLXN_22 : std_logic;
    signal XLXN_23 : std_logic;
+   signal XLXN_24 : std_logic;
    component VCC
       port ( P : out   std_logic);
    end component;
@@ -259,8 +261,15 @@ architecture BEHAVIORAL of stepper_MUSER_cpu_control is
    end component;
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_24 : label is "XLXI_24_42";
-   attribute HU_SET of XLXI_25 : label is "XLXI_25_43";
+   component OR2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
+   
+   attribute HU_SET of XLXI_24 : label is "XLXI_24_60";
+   attribute HU_SET of XLXI_25 : label is "XLXI_25_61";
 begin
    XLXI_21 : VCC
       port map (P=>XLXN_14);
@@ -268,7 +277,7 @@ begin
    XLXI_24 : CB4CE_HXILINX_cpu_control
       port map (C=>XLXN_23,
                 CE=>XLXN_14,
-                CLR=>XLXN_22,
+                CLR=>XLXN_24,
                 CEO=>open,
                 Q0=>XLXN_18,
                 Q1=>XLXN_19,
@@ -294,6 +303,11 @@ begin
       port map (I=>clk,
                 O=>XLXN_23);
    
+   XLXI_28 : OR2
+      port map (I0=>XLXN_22,
+                I1=>rst,
+                O=>XLXN_24);
+   
 end BEHAVIORAL;
 
 
@@ -310,6 +324,7 @@ entity cpu_control is
           clkw             : in    std_logic; 
           flags            : in    std_logic_vector (3 downto 0); 
           ir               : in    std_logic_vector (7 downto 0); 
+          rst              : in    std_logic; 
           acc_r            : out   std_logic; 
           acc_w            : out   std_logic; 
           alt_nop          : out   std_logic; 
@@ -480,12 +495,13 @@ architecture BEHAVIORAL of cpu_control is
    signal XLXI_556_I2_openSignal          : std_logic;
    component stepper_MUSER_cpu_control
       port ( clk : in    std_logic; 
-             s6  : out   std_logic; 
+             rst : in    std_logic; 
              s1  : out   std_logic; 
              s2  : out   std_logic; 
              s3  : out   std_logic; 
              s4  : out   std_logic; 
-             s5  : out   std_logic);
+             s5  : out   std_logic; 
+             s6  : out   std_logic);
    end component;
    
    component AND2
@@ -594,11 +610,11 @@ architecture BEHAVIORAL of cpu_control is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_39 : label is "XLXI_39_46";
-   attribute HU_SET of XLXI_47 : label is "XLXI_47_44";
-   attribute HU_SET of XLXI_48 : label is "XLXI_48_45";
-   attribute HU_SET of XLXI_252 : label is "XLXI_252_47";
-   attribute HU_SET of XLXI_577 : label is "XLXI_577_48";
+   attribute HU_SET of XLXI_39 : label is "XLXI_39_64";
+   attribute HU_SET of XLXI_47 : label is "XLXI_47_62";
+   attribute HU_SET of XLXI_48 : label is "XLXI_48_63";
+   attribute HU_SET of XLXI_252 : label is "XLXI_252_65";
+   attribute HU_SET of XLXI_577 : label is "XLXI_577_66";
 begin
    alu <= alu_DUMMY;
    alu_and <= alu_and_DUMMY;
@@ -624,12 +640,13 @@ begin
    s6 <= s6_DUMMY;
    stp : stepper_MUSER_cpu_control
       port map (clk=>clk,
-                s1=>s1_DUMMY,
-                s2=>s2_DUMMY,
-                s3=>s3_DUMMY,
-                s4=>s4_DUMMY,
-                s5=>s5_DUMMY,
-                s6=>s6_DUMMY);
+                rst=>rst,
+                s1=>s2_DUMMY,
+                s2=>s3_DUMMY,
+                s3=>s4_DUMMY,
+                s4=>s5_DUMMY,
+                s5=>s6_DUMMY,
+                s6=>s1_DUMMY);
    
    XLXI_2 : AND2
       port map (I0=>clkr,

@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : stepper.vhf
--- /___/   /\     Timestamp : 03/30/2022 23:59:50
+-- /___/   /\     Timestamp : 06/12/2022 18:07:10
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -136,6 +136,7 @@ use UNISIM.Vcomponents.ALL;
 
 entity stepper is
    port ( clk : in    std_logic; 
+          rst : in    std_logic; 
           s1  : out   std_logic; 
           s2  : out   std_logic; 
           s3  : out   std_logic; 
@@ -153,6 +154,7 @@ architecture BEHAVIORAL of stepper is
    signal XLXN_20 : std_logic;
    signal XLXN_22 : std_logic;
    signal XLXN_23 : std_logic;
+   signal XLXN_24 : std_logic;
    component VCC
       port ( P : out   std_logic);
    end component;
@@ -191,8 +193,15 @@ architecture BEHAVIORAL of stepper is
    end component;
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_24 : label is "XLXI_24_41";
-   attribute HU_SET of XLXI_25 : label is "XLXI_25_42";
+   component OR2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
+   
+   attribute HU_SET of XLXI_24 : label is "XLXI_24_58";
+   attribute HU_SET of XLXI_25 : label is "XLXI_25_59";
 begin
    XLXI_21 : VCC
       port map (P=>XLXN_14);
@@ -200,7 +209,7 @@ begin
    XLXI_24 : CB4CE_HXILINX_stepper
       port map (C=>XLXN_23,
                 CE=>XLXN_14,
-                CLR=>XLXN_22,
+                CLR=>XLXN_24,
                 CEO=>open,
                 Q0=>XLXN_18,
                 Q1=>XLXN_19,
@@ -225,6 +234,11 @@ begin
    XLXI_26 : INV
       port map (I=>clk,
                 O=>XLXN_23);
+   
+   XLXI_28 : OR2
+      port map (I0=>XLXN_22,
+                I1=>rst,
+                O=>XLXN_24);
    
 end BEHAVIORAL;
 

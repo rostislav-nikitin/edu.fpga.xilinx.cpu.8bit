@@ -52,22 +52,14 @@
         <signal name="ir(7)" />
         <signal name="XLXN_99" />
         <signal name="alu_nop" />
-        <signal name="ra_0">
-        </signal>
-        <signal name="ra_1">
-        </signal>
-        <signal name="ra_2">
-        </signal>
-        <signal name="ra_3">
-        </signal>
-        <signal name="rb_0">
-        </signal>
-        <signal name="rb_1">
-        </signal>
-        <signal name="rb_2">
-        </signal>
-        <signal name="rb_3">
-        </signal>
+        <signal name="ra_0" />
+        <signal name="ra_1" />
+        <signal name="ra_2" />
+        <signal name="ra_3" />
+        <signal name="rb_0" />
+        <signal name="rb_1" />
+        <signal name="rb_2" />
+        <signal name="rb_3" />
         <signal name="r0_r" />
         <signal name="r1_r" />
         <signal name="r2_r" />
@@ -169,6 +161,7 @@
         <signal name="XLXN_1063" />
         <signal name="jmp_ifjmp_flag_not_equals_op" />
         <signal name="alt_nop" />
+        <signal name="rst" />
         <port polarity="Input" name="clk" />
         <port polarity="Input" name="clkr" />
         <port polarity="Input" name="clkw" />
@@ -222,16 +215,18 @@
         <port polarity="Output" name="flags_clr" />
         <port polarity="Output" name="alu_C_in_enabled" />
         <port polarity="Output" name="alt_nop" />
+        <port polarity="Input" name="rst" />
         <blockdef name="stepper">
-            <timestamp>2022-3-26T0:45:35</timestamp>
+            <timestamp>2022-6-12T14:54:51</timestamp>
             <rect width="256" x="64" y="-384" height="384" />
             <line x2="0" y1="-352" y2="-352" x1="64" />
-            <line x2="384" y1="-32" y2="-32" x1="320" />
-            <line x2="384" y1="-352" y2="-352" x1="320" />
+            <line x2="0" y1="-288" y2="-288" x1="64" />
             <line x2="384" y1="-288" y2="-288" x1="320" />
             <line x2="384" y1="-224" y2="-224" x1="320" />
             <line x2="384" y1="-160" y2="-160" x1="320" />
             <line x2="384" y1="-96" y2="-96" x1="320" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
+            <line x2="384" y1="-352" y2="-352" x1="320" />
         </blockdef>
         <blockdef name="and2">
             <timestamp>2000-1-1T10:10:10</timestamp>
@@ -389,12 +384,13 @@
         </blockdef>
         <block symbolname="stepper" name="stp">
             <blockpin signalname="clk" name="clk" />
-            <blockpin signalname="s6" name="s6" />
-            <blockpin signalname="s1" name="s1" />
-            <blockpin signalname="s2" name="s2" />
-            <blockpin signalname="s3" name="s3" />
-            <blockpin signalname="s4" name="s4" />
-            <blockpin signalname="s5" name="s5" />
+            <blockpin signalname="rst" name="rst" />
+            <blockpin signalname="s2" name="s1" />
+            <blockpin signalname="s3" name="s2" />
+            <blockpin signalname="s4" name="s3" />
+            <blockpin signalname="s5" name="s4" />
+            <blockpin signalname="s6" name="s5" />
+            <blockpin signalname="s1" name="s6" />
         </block>
         <block symbolname="and2" name="XLXI_2">
             <blockpin signalname="clkr" name="I0" />
@@ -2513,5 +2509,9 @@
             <wire x2="6400" y1="928" y2="928" x1="6240" />
         </branch>
         <iomarker fontsize="28" x="6400" y="928" name="alt_nop" orien="R0" />
+        <branch name="rst">
+            <wire x2="816" y1="208" y2="208" x1="720" />
+        </branch>
+        <iomarker fontsize="28" x="720" y="208" name="rst" orien="R180" />
     </sheet>
 </drawing>

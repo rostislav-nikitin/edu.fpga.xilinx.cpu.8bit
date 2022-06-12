@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Fri Jun 10 02:03:23 2022">
+  <application stringID="Xst" timeStamp="Sun Jun 12 18:07:14 2022">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -33,7 +33,7 @@
         <column stringID="speed"/>
         <row stringID="row" value="0">
           <item stringID="arch" value="Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz"/>
-          <item stringID="speed" value="1200.000 MHz"/>
+          <item stringID="speed" value="2300.000 MHz"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="arch" value="Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz"/>
@@ -140,7 +140,7 @@
         <item stringID="XST_TOP_LEVEL_OUTPUT_FILE_NAME" value="cpu_facade.ngc"/>
       </section>
       <section stringID="XST_PRIMITIVE_AND_BLACK_BOX_USAGE">
-        <item dataType="int" stringID="XST_BELS" value="1271">
+        <item dataType="int" stringID="XST_BELS" value="1272">
           <item dataType="int" stringID="XST_AND2" value="117"/>
           <item dataType="int" stringID="XST_AND2B1" value="1"/>
           <item dataType="int" stringID="XST_AND3" value="1"/>
@@ -157,7 +157,7 @@
           <item dataType="int" stringID="XST_MUXCY" value="156"/>
           <item dataType="int" stringID="XST_MUXF7" value="24"/>
           <item dataType="int" stringID="XST_MUXF8" value="16"/>
-          <item dataType="int" stringID="XST_OR2" value="55"/>
+          <item dataType="int" stringID="XST_OR2" value="56"/>
           <item dataType="int" stringID="XST_VCC" value="14"/>
           <item dataType="int" stringID="XST_XORCY" value="169"/>
         </item>
