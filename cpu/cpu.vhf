@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu.vhf
--- /___/   /\     Timestamp : 06/12/2022 18:07:09
+-- /___/   /\     Timestamp : 06/13/2022 14:14:21
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -5210,6 +5210,7 @@ architecture BEHAVIORAL of cpu is
    signal ir_o                 : std_logic_vector (7 downto 0);
    signal ir_r                 : std_logic;
    signal ir_w                 : std_logic;
+   signal is_bus1_w_manual     : std_logic;
    signal manual_acc_r         : std_logic;
    signal manual_acc_w         : std_logic;
    signal manual_iar_r         : std_logic;
@@ -6065,7 +6066,7 @@ begin
                 O=>out_bus1);
    
    XLXI_560 : BUF
-      port map (I=>in_is_bus1_w,
+      port map (I=>is_bus1_w_manual,
                 O=>out_is_bus1_w);
    
    XLXI_561 : BUF
@@ -6107,7 +6108,7 @@ begin
    XLXI_571 : M2_1_HXILINX_cpu
       port map (D0=>cc_bus1,
                 D1=>in_bus1,
-                S0=>in_is_bus1_w,
+                S0=>is_bus1_w_manual,
                 O=>bus1);
    
    XLXI_574 : buf_8bit_MUSER_cpu
@@ -6350,6 +6351,11 @@ begin
       port map (I0=>can_read,
                 I1=>in_ir_r,
                 O=>ir_r);
+   
+   XLXI_941 : AND2
+      port map (I0=>can_read,
+                I1=>in_is_bus1_w,
+                O=>is_bus1_w_manual);
    
 end BEHAVIORAL;
 

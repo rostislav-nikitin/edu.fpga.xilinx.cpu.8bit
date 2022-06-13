@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="cpu">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2022-6-12T15:6:40</timestamp>
+    <timestamp>2022-6-13T11:14:3</timestamp>
     <pin polarity="Input" x="928" y="0" name="in_acc_r" />
     <pin polarity="Input" x="1056" y="0" name="in_acc_w" />
     <pin polarity="Input" x="0" y="-1312" name="in_bus1" />

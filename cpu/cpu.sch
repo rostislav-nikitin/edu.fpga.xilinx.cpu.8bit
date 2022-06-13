@@ -251,6 +251,7 @@
         <signal name="XLXN_278" />
         <signal name="ir_r" />
         <signal name="not_reading" />
+        <signal name="is_bus1_w_manual" />
         <port polarity="Input" name="in_manr_d(7:0)" />
         <port polarity="Output" name="monitor(7:0)" />
         <port polarity="Input" name="in_is_clk_high" />
@@ -1151,7 +1152,7 @@
         <block symbolname="m2_1" name="XLXI_571">
             <blockpin signalname="cc_bus1" name="D0" />
             <blockpin signalname="in_bus1" name="D1" />
-            <blockpin signalname="in_is_bus1_w" name="S0" />
+            <blockpin signalname="is_bus1_w_manual" name="S0" />
             <blockpin signalname="bus1" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_563">
@@ -1383,7 +1384,7 @@
             <blockpin signalname="out_ir_w" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_560">
-            <blockpin signalname="in_is_bus1_w" name="I" />
+            <blockpin signalname="is_bus1_w_manual" name="I" />
             <blockpin signalname="out_is_bus1_w" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_559">
@@ -1530,6 +1531,11 @@
             <blockpin signalname="can_read" name="I0" />
             <blockpin signalname="in_ir_r" name="I1" />
             <blockpin signalname="ir_r" name="O" />
+        </block>
+        <block symbolname="and2" name="XLXI_941">
+            <blockpin signalname="can_read" name="I0" />
+            <blockpin signalname="in_is_bus1_w" name="I1" />
+            <blockpin signalname="is_bus1_w_manual" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="7609" height="5382">
@@ -2476,7 +2482,7 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3792" y="5136" type="branch" />
             <wire x2="3792" y1="5136" y2="5136" x1="3712" />
         </branch>
-        <branch name="in_is_bus1_w">
+        <branch name="is_bus1_w_manual">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3280" y="5232" type="branch" />
             <wire x2="3392" y1="5232" y2="5232" x1="3280" />
         </branch>
@@ -3190,7 +3196,7 @@
             <wire x2="6720" y1="1792" y2="1792" x1="6560" />
         </branch>
         <instance x="6336" y="1888" name="XLXI_560" orien="R0" />
-        <branch name="in_is_bus1_w">
+        <branch name="is_bus1_w_manual">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6240" y="1856" type="branch" />
             <wire x2="6336" y1="1856" y2="1856" x1="6240" />
         </branch>
@@ -3880,6 +3886,19 @@
         <branch name="rst">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1856" y="1008" type="branch" />
             <wire x2="1984" y1="1008" y2="1008" x1="1856" />
+        </branch>
+        <instance x="2656" y="5392" name="XLXI_941" orien="R0" />
+        <branch name="in_is_bus1_w">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2576" y="5264" type="branch" />
+            <wire x2="2656" y1="5264" y2="5264" x1="2576" />
+        </branch>
+        <branch name="can_read">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2576" y="5328" type="branch" />
+            <wire x2="2656" y1="5328" y2="5328" x1="2576" />
+        </branch>
+        <branch name="is_bus1_w_manual">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3024" y="5296" type="branch" />
+            <wire x2="3024" y1="5296" y2="5296" x1="2912" />
         </branch>
     </sheet>
 </drawing>
