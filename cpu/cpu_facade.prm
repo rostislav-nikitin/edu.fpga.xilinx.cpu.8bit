@@ -3,7 +3,7 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 promgen -w -p mcs -c FF -o /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu//cpu_facade -s 2048 -u 0000 /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.bit -spi 
 
-PROM /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.prm map: Sun Jun 12 18:20:48 2022
+PROM /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.prm map: Mon Jun 13 14:19:53 2022
 
 Calculating PROM checksum with fill value ff
 
@@ -11,7 +11,7 @@ Format        Mcs86 (32-bit)
 Size          2048K
 PROM start    0000:0000
 PROM end      001f:ffff
-PROM checksum 1ac01c8d
+PROM checksum 1ac0018f
 
         Addr1        Addr2                     Date File(s)
-    0000:0000    0005:327b     Jun 12 18:17:39 2022 /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.bit
+    0000:0000    0005:327b     Jun 13 14:17:11 2022 /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.bit
