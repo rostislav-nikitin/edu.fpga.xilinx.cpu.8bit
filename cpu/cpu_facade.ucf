@@ -155,14 +155,14 @@ NET "in_manual_input_o[6]" LOC = L16;
 NET "in_manual_input_o[7]" LOC = K16;
 
 
-NET "monitor[0]" LOC = P4;
-NET "monitor[1]" LOC = N5;
-NET "monitor[2]" LOC = P5;
-NET "monitor[3]" LOC = M6;
-NET "monitor[4]" LOC = F9;
-NET "monitor[5]" LOC = E6;
-NET "monitor[6]" LOC = C5;
-NET "monitor[7]" LOC = F7;
+#NET "monitor[0]" LOC = P4;
+#NET "monitor[1]" LOC = N5;
+#NET "monitor[2]" LOC = P5;
+#NET "monitor[3]" LOC = M6;
+#NET "monitor[4]" LOC = E10;
+#NET "monitor[5]" LOC = F10;
+#NET "monitor[6]" LOC = C5;
+#NET "monitor[7]" LOC = F7;
 
 #NET "monitor[0]" LOC = P4;
 #NET "monitor[1]" LOC = N5;
