@@ -1,0 +1,76 @@
+Release 14.3 Map P.40xd (lin64)
+Xilinx Mapping Report File for Design 'state_machine_example'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -detail
+-ir off -pr off -lc off -power off -o state_machine_example_map.ncd
+state_machine_example.ngd state_machine_example.pcf 
+Target Device  : xa6slx9
+Target Package : ftg256
+Target Speed   : -3
+Mapper Version : aspartan6 -- $Revision: 1.55 $
+Mapped Date    : Tue Jun 21 00:44:03 2022
+
+Design Summary
+--------------
+Number of errors   :   4
+Number of warnings :   1
+
+Section 1 - Errors
+------------------
+ERROR:MapLib:979 - LUT5 symbol "run_rstpot" (output signal=run_rstpot) has input
+   signal "s_next" which will be trimmed. See Section 5 of the Map Report File
+   for details about why the input signal will become undriven.
+ERROR:MapLib:979 - LUT5 symbol "run_rstpot" (output signal=run_rstpot) has input
+   signal "s_current" which will be trimmed. See Section 5 of the Map Report
+   File for details about why the input signal will become undriven.
+ERROR:MapLib:978 - LUT5 symbol "run_rstpot" (output signal=run_rstpot) has an
+   equation that uses input pin I0, which no longer has a connected signal.
+   Please ensure that all the pins used in the equation for this LUT have
+   signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+ERROR:MapLib:978 - LUT5 symbol "run_rstpot" (output signal=run_rstpot) has an
+   equation that uses input pin I2, which no longer has a connected signal.
+   Please ensure that all the pins used in the equation for this LUT have
+   signals that are not trimmed (see Section 5 of the Map Report File for
+   details on which signals were trimmed).
+
+Section 2 - Warnings
+--------------------
+WARNING:MapLib:701 - Signal dummy connected to top level port dummy has been
+   removed.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network s_IBUF has no load.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   5 block(s) removed
+   2 block(s) optimized away
+   4 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "dummy_OBUF" is unused and has been removed.
+ Unused block "dummy" (FF) removed.
+  The signal "s_current" is unused and has been removed.
+   Unused block "s_current" (FF) removed.
+    The signal "s_next" is unused and has been removed.
+     Unused block "s_next_INV_0" (BUF) removed.
+The signal "dummy" is unused and has been removed.
+ Unused block "dummy_OBUF" (BUF) removed.
+Unused block "dummy.PAD" (PAD) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC

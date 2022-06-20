@@ -2,10 +2,10 @@
 # Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 SOFTWARE_VERSION P.40xd
-DATE             6/13/2022 - 14:19
+DATE             6/21/2022 -  2:28
 SOURCE          /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.mcs
 DEVICE          2048K
 DATA_WIDTH      1
 FILL_DATA       0xFF
-SIGNATURE       0x1AC0018F
+SIGNATURE       0x1AC0B889
 START_ADDRESS   0x00000000 END_ADDRESS 0x0005327B DIRECTION_UP   "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.bit" xa6slx9ftg256

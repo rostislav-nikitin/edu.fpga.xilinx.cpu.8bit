@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu_facade.vhf
--- /___/   /\     Timestamp : 06/19/2022 18:58:58
+-- /___/   /\     Timestamp : 06/21/2022 02:18:56
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -728,6 +728,40 @@ architecture AND8_HXILINX_cpu_facade_V of AND8_HXILINX_cpu_facade is
 begin
   O <= I0 and I1 and I2 and I3 and I4 and I5 and I6 and I7;
 end AND8_HXILINX_cpu_facade_V;
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
+entity USART_MUSER_cpu_facade is
+   port ( clk  : in    std_logic; 
+          data : in    std_logic_vector (7 downto 0); 
+          rst  : in    std_logic; 
+          tx   : out   std_logic);
+end USART_MUSER_cpu_facade;
+
+architecture BEHAVIORAL of USART_MUSER_cpu_facade is
+   component usart_tramnsmitter
+      port ( clk  : in    std_logic; 
+             rst  : in    std_logic; 
+             data : in    std_logic_vector (7 downto 0); 
+             tx   : out   std_logic; 
+             done : out   std_logic);
+   end component;
+   
+begin
+   XLXI_2 : usart_tramnsmitter
+      port map (clk=>clk,
+                data(7 downto 0)=>data(7 downto 0),
+                rst=>rst,
+                done=>open,
+                tx=>tx);
+   
+end BEHAVIORAL;
+
+
 
 library ieee;
 use ieee.std_logic_1164.ALL;
@@ -6549,13 +6583,10 @@ architecture BEHAVIORAL of cpu_facade is
    signal XLXN_214                    : std_logic;
    signal XLXN_216                    : std_logic;
    signal XLXN_232                    : std_logic;
+   signal monitor_DUMMY               : std_logic_vector (7 downto 0);
+   signal out_r0_r_DUMMY              : std_logic;
    signal XLXI_7_in_manr_d_openSignal : std_logic_vector (7 downto 0);
    signal XLXI_7_in_manr_r_openSignal : std_logic;
-   component usart_tramnsmitter
-      port ( clk : in    std_logic; 
-             tx  : out   std_logic);
-   end component;
-   
    component cpu_MUSER_cpu_facade
       port ( in_acc_r             : in    std_logic; 
              in_acc_w             : in    std_logic; 
@@ -6702,13 +6733,18 @@ architecture BEHAVIORAL of cpu_facade is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
+   component USART_MUSER_cpu_facade
+      port ( clk  : in    std_logic; 
+             data : in    std_logic_vector (7 downto 0); 
+             rst  : in    std_logic; 
+             tx   : out   std_logic);
+   end component;
+   
    attribute HU_SET of XLXI_34 : label is "XLXI_34_60";
    attribute HU_SET of XLXI_53 : label is "XLXI_53_61";
 begin
-   USART1 : usart_tramnsmitter
-      port map (clk=>in_clk,
-                tx=>out_usart1_tx);
-   
+   monitor(7 downto 0) <= monitor_DUMMY(7 downto 0);
+   out_r0_r <= out_r0_r_DUMMY;
    XLXI_7 : cpu_MUSER_cpu_facade
       port map (in_acc_r=>XLXN_66,
                 in_acc_w=>XLXN_84,
@@ -6749,7 +6785,7 @@ begin
                 manr_o=>open,
                 manr_r=>XLXN_49,
                 manr_w=>XLXN_49,
-                monitor(7 downto 0)=>monitor(7 downto 0),
+                monitor(7 downto 0)=>monitor_DUMMY(7 downto 0),
                 out_acc_r=>out_acc_r,
                 out_acc_w=>out_acc_w,
                 out_alu_C_in=>open,
@@ -6800,7 +6836,7 @@ begin
                 out_ram_a_w=>out_ram_a_w,
                 out_ram_r=>out_ram_r,
                 out_ram_w=>out_ram_w,
-                out_r0_r=>out_r0_r,
+                out_r0_r=>out_r0_r_DUMMY,
                 out_r0_w=>out_r0_w,
                 out_r1_r=>out_r1_r,
                 out_r1_w=>out_r1_w,
@@ -6963,6 +6999,12 @@ begin
    XLXI_99 : INV
       port map (I=>in_ir_r,
                 O=>XLXN_232);
+   
+   XLXI_105 : USART_MUSER_cpu_facade
+      port map (clk=>in_clk,
+                data(7 downto 0)=>monitor_DUMMY(7 downto 0),
+                rst=>out_r0_r_DUMMY,
+                tx=>out_usart1_tx);
    
 end BEHAVIORAL;
 

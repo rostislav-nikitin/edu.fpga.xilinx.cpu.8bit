@@ -1,0 +1,3 @@
+MODULE USART
+	SUBMODULE usart_tramnsmitter
+		INSTANCE XLXI_2

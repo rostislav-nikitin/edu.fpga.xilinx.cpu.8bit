@@ -4,27 +4,28 @@ Xilinx Mapping Report File for Design 'cpu_facade'
 Design Information
 ------------------
 Command Line   : map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol
-high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
--pr off -lc off -power off -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -detail
+-ir off -pr off -lc off -power off -o cpu_facade_map.ncd cpu_facade.ngd
+cpu_facade.pcf 
 Target Device  : xa6slx9
 Target Package : ftg256
 Target Speed   : -3
 Mapper Version : aspartan6 -- $Revision: 1.55 $
-Mapped Date    : Mon Jun 20 10:05:10 2022
+Mapped Date    : Tue Jun 21 02:19:17 2022
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    8
 Slice Logic Utilization:
-  Number of Slice Registers:                   226 out of  11,440    1%
-    Number used as Flip Flops:                 141
+  Number of Slice Registers:                   224 out of  11,440    1%
+    Number used as Flip Flops:                 139
     Number used as Latches:                     84
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                1
-  Number of Slice LUTs:                        379 out of   5,720    6%
-    Number used as logic:                      337 out of   5,720    5%
-      Number using O6 output only:             217
+  Number of Slice LUTs:                        376 out of   5,720    6%
+    Number used as logic:                      334 out of   5,720    5%
+      Number using O6 output only:             214
       Number using O5 output only:              97
       Number using O5 and O6:                   23
       Number used as ROM:                        0
@@ -41,15 +42,15 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   141 out of   1,430    9%
+  Number of occupied Slices:                   145 out of   1,430   10%
   Nummber of MUXCYs used:                      132 out of   2,860    4%
-  Number of LUT Flip Flop pairs used:          430
-    Number with an unused Flip Flop:           208 out of     430   48%
-    Number with an unused LUT:                  51 out of     430   11%
-    Number of fully used LUT-FF pairs:         171 out of     430   39%
+  Number of LUT Flip Flop pairs used:          426
+    Number with an unused Flip Flop:           205 out of     426   48%
+    Number with an unused LUT:                  50 out of     426   11%
+    Number of fully used LUT-FF pairs:         171 out of     426   40%
     Number of unique control sets:              35
     Number of slice register sites lost
-      to control set restrictions:              95 out of  11,440    1%
+      to control set restrictions:              97 out of  11,440    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -88,7 +89,7 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                3.55
 
-Peak Memory Usage:  847 MB
+Peak Memory Usage:  848 MB
 Total REAL time to MAP completion:  8 secs 
 Total CPU time to MAP completion:   8 secs 
 
@@ -158,6 +159,7 @@ Section 4 - Removed Logic Summary
  357 block(s) removed
   59 block(s) optimized away
  289 signal(s) removed
+ 327 Block(s) redundant
 
 Section 5 - Removed Logic
 -------------------------
@@ -1140,8 +1142,335 @@ GND 		XLXI_7/alu_inst/XLXI_138/XLXI_14/XLXI_17/XST_GND
 GND 		XLXI_7/alu_inst/XLXI_138/XLXI_14/XLXI_2/XST_GND
 GND 		XLXI_9
 
-To enable printing of redundant blocks removed and signals merged, set the
-detailed map report option and rerun map.
+Redundant Block(s):
+TYPE 		BLOCK
+INV 		XLXI_29
+INV 		XLXI_45
+INV 		XLXI_39
+INV 		XLXI_28
+INV 		XLXI_44
+INV 		XLXI_99
+INV 		XLXI_36
+INV 		XLXI_47
+INV 		XLXI_90
+INV 		XLXI_89
+INV 		XLXI_12
+INV 		XLXI_14
+INV 		XLXI_92
+INV 		XLXI_32
+INV 		XLXI_38
+INV 		XLXI_30
+INV 		XLXI_46
+INV 		XLXI_16
+INV 		XLXI_88
+BUF 		XLXI_7/XLXI_116
+INV 		XLXI_7/XLXI_117
+INV 		XLXI_31
+INV 		XLXI_48
+INV 		XLXI_24
+INV 		XLXI_41
+INV 		XLXI_26
+INV 		XLXI_42
+INV 		XLXI_27
+INV 		XLXI_43
+INV 		XLXI_91
+INV 		XLXI_35
+BUF 		XLXI_51/XLXI_5
+INV 		XLXI_34/O<7>1_INV_0
+INV 		XLXI_34/O<6>1_INV_0
+INV 		XLXI_34/O<5>1_INV_0
+INV 		XLXI_34/O<4>1_INV_0
+INV 		XLXI_34/O<3>1_INV_0
+INV 		XLXI_34/O<2>1_INV_0
+INV 		XLXI_34/O<1>1_INV_0
+INV 		XLXI_34/O<0>1_INV_0
+INV 		XLXI_7/clck_gen/XLXI_12
+BUF 		XLXI_7/XLXI_913
+BUF 		XLXI_7/XLXI_937/XLXI_26
+BUF 		XLXI_7/XLXI_937/XLXI_23
+LUT1 		XLXI_7/XLXI_937/XLXI_1/XLXI_1/Mcount_COUNT_cy<6>_rt
+BUF 		XLXI_7/XLXI_937/XLXI_24
+LUT1 		XLXI_7/XLXI_937/XLXI_1/XLXI_1/Mcount_COUNT_cy<7>_rt
+BUF 		XLXI_7/XLXI_937/XLXI_25
+LUT1 		XLXI_7/XLXI_937/XLXI_1/XLXI_1/Mcount_COUNT_cy<8>_rt
+BUF 		XLXI_7/XLXI_931/XLXI_23
+BUF 		XLXI_7/XLXI_927/XLXI_13
+BUF 		XLXI_7/XLXI_927/XLXI_8
+LUT1 		XLXI_7/XLXI_927/XLXI_1/XLXI_2/Mcount_COUNT_cy<1>_rt
+BUF 		XLXI_7/XLXI_927/XLXI_9
+LUT1 		XLXI_7/XLXI_927/XLXI_1/XLXI_2/Mcount_COUNT_cy<2>_rt
+BUF 		XLXI_7/XLXI_927/XLXI_10
+LUT1 		XLXI_7/XLXI_927/XLXI_1/XLXI_2/Mcount_COUNT_cy<3>_rt
+BUF 		XLXI_7/XLXI_927/XLXI_11
+LUT1 		XLXI_7/XLXI_927/XLXI_1/XLXI_2/Mcount_COUNT_cy<4>_rt
+BUF 		XLXI_7/XLXI_927/XLXI_12
+LUT1 		XLXI_7/XLXI_927/XLXI_1/XLXI_2/Mcount_COUNT_cy<5>_rt
+BUF 		XLXI_7/XLXI_927/XLXI_20
+LUT1 		XLXI_7/XLXI_927/XLXI_1/XLXI_1/Mcount_COUNT_xor<15>_rt
+BUF 		XLXI_7/XLXI_927/XLXI_6
+LUT1 		XLXI_7/XLXI_927/XLXI_1/XLXI_1/Mcount_COUNT_cy<3>_rt
+BUF 		XLXI_7/XLXI_927/XLXI_2
+LUT1 		XLXI_7/XLXI_927/XLXI_1/XLXI_1/Mcount_COUNT_cy<11>_rt
+BUF 		XLXI_7/XLXI_927/XLXI_3
+LUT1 		XLXI_7/XLXI_927/XLXI_1/XLXI_1/Mcount_COUNT_cy<10>_rt
+BUF 		XLXI_7/XLXI_927/XLXI_4
+LUT1 		XLXI_7/XLXI_927/XLXI_1/XLXI_1/Mcount_COUNT_cy<9>_rt
+BUF 		XLXI_7/XLXI_927/XLXI_5
+LUT1 		XLXI_7/XLXI_927/XLXI_1/XLXI_1/Mcount_COUNT_cy<8>_rt
+BUF 		XLXI_7/XLXI_926/XLXI_13
+BUF 		XLXI_7/XLXI_926/XLXI_7
+LUT1 		XLXI_7/XLXI_926/XLXI_1/XLXI_2/Mcount_COUNT_cy<1>_rt
+BUF 		XLXI_7/XLXI_926/XLXI_8
+LUT1 		XLXI_7/XLXI_926/XLXI_1/XLXI_2/Mcount_COUNT_cy<3>_rt
+BUF 		XLXI_7/XLXI_926/XLXI_9
+LUT1 		XLXI_7/XLXI_926/XLXI_1/XLXI_2/Mcount_COUNT_cy<4>_rt
+BUF 		XLXI_7/XLXI_926/XLXI_10
+LUT1 		XLXI_7/XLXI_926/XLXI_1/XLXI_2/Mcount_COUNT_cy<5>_rt
+BUF 		XLXI_7/XLXI_926/XLXI_11
+LUT1 		XLXI_7/XLXI_926/XLXI_1/XLXI_2/Mcount_COUNT_cy<6>_rt
+BUF 		XLXI_7/XLXI_926/XLXI_12
+LUT1 		XLXI_7/XLXI_926/XLXI_1/XLXI_2/Mcount_COUNT_cy<7>_rt
+BUF 		XLXI_7/XLXI_926/XLXI_6
+LUT1 		XLXI_7/XLXI_926/XLXI_1/XLXI_1/Mcount_COUNT_cy<5>_rt
+BUF 		XLXI_7/XLXI_926/XLXI_2
+LUT1 		XLXI_7/XLXI_926/XLXI_1/XLXI_1/Mcount_COUNT_cy<13>_rt
+BUF 		XLXI_7/XLXI_926/XLXI_3
+LUT1 		XLXI_7/XLXI_926/XLXI_1/XLXI_1/Mcount_COUNT_cy<12>_rt
+BUF 		XLXI_7/XLXI_926/XLXI_4
+LUT1 		XLXI_7/XLXI_926/XLXI_1/XLXI_1/Mcount_COUNT_cy<11>_rt
+BUF 		XLXI_7/XLXI_926/XLXI_5
+LUT1 		XLXI_7/XLXI_926/XLXI_1/XLXI_1/Mcount_COUNT_cy<10>_rt
+BUF 		XLXI_7/XLXI_191
+INV 		XLXI_7/XLXI_212
+BUF 		XLXI_7/XLXI_190
+BUF 		XLXI_7/XLXI_189
+INV 		XLXI_7/cpu_ctl/stp/XLXI_26
+BUF 		XLXI_7/XLXI_207
+BUF 		XLXI_7/XLXI_196
+BUF 		XLXI_7/XLXI_195
+BUF 		XLXI_7/XLXI_194
+BUF 		XLXI_7/XLXI_193
+OR4 		XLXI_7/cpu_ctl/XLXI_14
+BUF 		XLXI_7/XLXI_192
+BUF 		XLXI_7/XLXI_561
+BUF 		XLXI_7/XLXI_679
+BUF 		XLXI_7/cpu_ctl/XLXI_505
+BUF 		XLXI_7/XLXI_671
+BUF 		XLXI_7/cpu_ctl/XLXI_506
+BUF 		XLXI_7/XLXI_670
+BUF 		XLXI_7/cpu_ctl/XLXI_507
+BUF 		XLXI_7/XLXI_669
+BUF 		XLXI_7/cpu_ctl/XLXI_508
+BUF 		XLXI_7/XLXI_229
+BUF 		XLXI_7/XLXI_226
+BUF 		XLXI_7/XLXI_225
+BUF 		XLXI_7/XLXI_130/XLXI_9
+INV 		XLXI_7/XLXI_130/XLXI_22/XLXI_7
+BUF 		XLXI_7/XLXI_224
+BUF 		XLXI_7/XLXI_223
+BUF 		XLXI_7/XLXI_130/XLXI_8
+INV 		XLXI_7/XLXI_130/XLXI_22/XLXI_6
+BUF 		XLXI_7/XLXI_222
+BUF 		XLXI_7/XLXI_221
+BUF 		XLXI_7/XLXI_130/XLXI_7
+INV 		XLXI_7/XLXI_130/XLXI_22/XLXI_5
+BUF 		XLXI_7/XLXI_220
+BUF 		XLXI_7/XLXI_219
+BUF 		XLXI_7/XLXI_130/XLXI_6
+INV 		XLXI_7/XLXI_130/XLXI_22/XLXI_36
+BUF 		XLXI_7/XLXI_556
+BUF 		XLXI_7/XLXI_555
+BUF 		XLXI_7/XLXI_130/XLXI_5
+INV 		XLXI_7/XLXI_130/XLXI_22/XLXI_35
+BUF 		XLXI_7/XLXI_558
+BUF 		XLXI_7/XLXI_557
+BUF 		XLXI_7/XLXI_228
+BUF 		XLXI_7/XLXI_227
+BUF 		XLXI_7/XLXI_130/XLXI_3
+INV 		XLXI_7/XLXI_130/XLXI_22/XLXI_33
+BUF 		XLXI_7/XLXI_554
+BUF 		XLXI_7/XLXI_553
+BUF 		XLXI_7/XLXI_130/XLXI_4
+INV 		XLXI_7/XLXI_130/XLXI_22/XLXI_34
+BUF 		XLXI_7/XLXI_903
+BUF 		XLXI_7/XLXI_901
+BUF 		XLXI_7/XLXI_560
+BUF 		XLXI_7/XLXI_559
+BUF 		XLXI_7/XLXI_130/XLXI_23
+BUF 		XLXI_7/XLXI_130/XLXI_16
+BUF 		XLXI_7/XLXI_130/XLXI_15
+BUF 		XLXI_7/XLXI_130/XLXI_14
+INV 		XLXI_7/XLXI_130/XLXI_21
+BUF 		XLXI_7/XLXI_130/XLXI_24
+INV 		XLXI_7/XLXI_130/XLXI_22/XLXI_9
+BUF 		XLXI_7/XLXI_130/XLXI_25
+INV 		XLXI_7/XLXI_130/XLXI_22/XLXI_10
+BUF 		XLXI_7/XLXI_130/XLXI_1/XLXI_21
+INV 		XLXI_7/alu_inst/XLXI_102/O<3>1_INV_0
+BUF 		XLXI_7/alu_inst/XLXI_92
+BUF 		XLXI_7/alu_inst/XLXI_16
+BUF 		XLXI_7/XLXI_860/XLXI_79
+BUF 		XLXI_7/XLXI_130/XLXI_1/XLXI_26
+INV 		XLXI_7/alu_inst/XLXI_102/O<7>1_INV_0
+BUF 		XLXI_7/alu_inst/XLXI_96
+BUF 		XLXI_7/alu_inst/XLXI_47
+BUF 		XLXI_7/XLXI_860/XLXI_83
+BUF 		XLXI_7/XLXI_130/XLXI_1/XLXI_20
+INV 		XLXI_7/alu_inst/XLXI_102/O<2>1_INV_0
+BUF 		XLXI_7/alu_inst/XLXI_91
+BUF 		XLXI_7/alu_inst/XLXI_15
+BUF 		XLXI_7/XLXI_860/XLXI_78
+BUF 		XLXI_7/XLXI_130/XLXI_1/XLXI_24
+INV 		XLXI_7/alu_inst/XLXI_102/O<6>1_INV_0
+BUF 		XLXI_7/alu_inst/XLXI_95
+BUF 		XLXI_7/alu_inst/XLXI_19
+BUF 		XLXI_7/XLXI_860/XLXI_82
+BUF 		XLXI_7/XLXI_130/XLXI_1/XLXI_19
+INV 		XLXI_7/alu_inst/XLXI_102/O<1>1_INV_0
+BUF 		XLXI_7/alu_inst/XLXI_90
+BUF 		XLXI_7/alu_inst/XLXI_14
+BUF 		XLXI_7/XLXI_860/XLXI_77
+BUF 		XLXI_7/XLXI_130/XLXI_1/XLXI_23
+INV 		XLXI_7/alu_inst/XLXI_102/O<5>1_INV_0
+BUF 		XLXI_7/alu_inst/XLXI_94
+BUF 		XLXI_7/alu_inst/XLXI_18
+BUF 		XLXI_7/XLXI_860/XLXI_81
+BUF 		XLXI_7/XLXI_130/XLXI_1/XLXI_22
+INV 		XLXI_7/alu_inst/XLXI_102/O<4>1_INV_0
+BUF 		XLXI_7/alu_inst/XLXI_93
+BUF 		XLXI_7/alu_inst/XLXI_17
+BUF 		XLXI_7/XLXI_860/XLXI_80
+BUF 		XLXI_7/XLXI_130/XLXI_1/XLXI_18
+INV 		XLXI_7/alu_inst/XLXI_102/O<0>1_INV_0
+BUF 		XLXI_7/alu_inst/XLXI_89
+BUF 		XLXI_7/alu_inst/XLXI_13
+BUF 		XLXI_7/XLXI_860/XLXI_76
+LUT1 		XLXI_7/XLXI_937/XLXI_1/XLXI_1/Mcount_COUNT_cy<1>_rt
+LUT1 		XLXI_7/XLXI_937/XLXI_1/XLXI_1/Mcount_COUNT_cy<2>_rt
+LUT1 		XLXI_7/XLXI_937/XLXI_1/XLXI_1/Mcount_COUNT_cy<3>_rt
+LUT1 		XLXI_7/XLXI_937/XLXI_1/XLXI_1/Mcount_COUNT_cy<4>_rt
+LUT1 		XLXI_7/XLXI_937/XLXI_1/XLXI_1/Mcount_COUNT_cy<5>_rt
+LUT1 		XLXI_7/XLXI_937/XLXI_1/XLXI_1/Mcount_COUNT_cy<9>_rt
+LUT1 		XLXI_7/XLXI_937/XLXI_1/XLXI_1/Mcount_COUNT_cy<10>_rt
+LUT1 		XLXI_7/XLXI_937/XLXI_1/XLXI_1/Mcount_COUNT_cy<11>_rt
+LUT1 		XLXI_7/XLXI_937/XLXI_1/XLXI_1/Mcount_COUNT_cy<12>_rt
+LUT1 		XLXI_7/XLXI_931/XLXI_1/XLXI_2/Mcount_COUNT_cy<1>_rt
+LUT1 		XLXI_7/XLXI_931/XLXI_1/XLXI_2/Mcount_COUNT_cy<2>_rt
+LUT1 		XLXI_7/XLXI_931/XLXI_1/XLXI_2/Mcount_COUNT_cy<3>_rt
+LUT1 		XLXI_7/XLXI_931/XLXI_1/XLXI_1/Mcount_COUNT_cy<1>_rt
+LUT1 		XLXI_7/XLXI_931/XLXI_1/XLXI_1/Mcount_COUNT_cy<2>_rt
+LUT1 		XLXI_7/XLXI_931/XLXI_1/XLXI_1/Mcount_COUNT_cy<3>_rt
+LUT1 		XLXI_7/XLXI_931/XLXI_1/XLXI_1/Mcount_COUNT_cy<4>_rt
+LUT1 		XLXI_7/XLXI_931/XLXI_1/XLXI_1/Mcount_COUNT_cy<5>_rt
+LUT1 		XLXI_7/XLXI_931/XLXI_1/XLXI_1/Mcount_COUNT_cy<6>_rt
+LUT1 		XLXI_7/XLXI_931/XLXI_1/XLXI_1/Mcount_COUNT_cy<7>_rt
+LUT1 		XLXI_7/XLXI_931/XLXI_1/XLXI_1/Mcount_COUNT_cy<8>_rt
+LUT1 		XLXI_7/XLXI_931/XLXI_1/XLXI_1/Mcount_COUNT_cy<9>_rt
+LUT1 		XLXI_7/XLXI_931/XLXI_1/XLXI_1/Mcount_COUNT_cy<10>_rt
+LUT1 		XLXI_7/XLXI_931/XLXI_1/XLXI_1/Mcount_COUNT_cy<11>_rt
+LUT1 		XLXI_7/XLXI_931/XLXI_1/XLXI_1/Mcount_COUNT_cy<12>_rt
+LUT1 		XLXI_7/XLXI_931/XLXI_1/XLXI_1/Mcount_COUNT_cy<13>_rt
+LUT1 		XLXI_7/XLXI_931/XLXI_1/XLXI_1/Mcount_COUNT_cy<14>_rt
+LUT1 		XLXI_7/XLXI_931/XLXI_1/XLXI_1/Mcount_COUNT_xor<15>_rt
+LUT1 		XLXI_7/XLXI_927/XLXI_1/XLXI_2/Mcount_COUNT_cy<6>_rt
+LUT1 		XLXI_7/XLXI_927/XLXI_1/XLXI_1/Mcount_COUNT_cy<1>_rt
+LUT1 		XLXI_7/XLXI_927/XLXI_1/XLXI_1/Mcount_COUNT_cy<2>_rt
+LUT1 		XLXI_7/XLXI_927/XLXI_1/XLXI_1/Mcount_COUNT_cy<4>_rt
+LUT1 		XLXI_7/XLXI_927/XLXI_1/XLXI_1/Mcount_COUNT_cy<5>_rt
+LUT1 		XLXI_7/XLXI_927/XLXI_1/XLXI_1/Mcount_COUNT_cy<6>_rt
+LUT1 		XLXI_7/XLXI_927/XLXI_1/XLXI_1/Mcount_COUNT_cy<7>_rt
+LUT1 		XLXI_7/XLXI_927/XLXI_1/XLXI_1/Mcount_COUNT_cy<12>_rt
+LUT1 		XLXI_7/XLXI_927/XLXI_1/XLXI_1/Mcount_COUNT_cy<13>_rt
+LUT1 		XLXI_7/XLXI_927/XLXI_1/XLXI_1/Mcount_COUNT_cy<14>_rt
+LUT1 		XLXI_7/XLXI_926/XLXI_1/XLXI_1/Mcount_COUNT_cy<1>_rt
+LUT1 		XLXI_7/XLXI_926/XLXI_1/XLXI_1/Mcount_COUNT_cy<2>_rt
+LUT1 		XLXI_7/XLXI_926/XLXI_1/XLXI_1/Mcount_COUNT_cy<3>_rt
+LUT1 		XLXI_7/XLXI_926/XLXI_1/XLXI_1/Mcount_COUNT_cy<4>_rt
+LUT1 		XLXI_7/XLXI_926/XLXI_1/XLXI_1/Mcount_COUNT_cy<6>_rt
+LUT1 		XLXI_7/XLXI_926/XLXI_1/XLXI_1/Mcount_COUNT_cy<7>_rt
+LUT1 		XLXI_7/XLXI_926/XLXI_1/XLXI_1/Mcount_COUNT_cy<8>_rt
+LUT1 		XLXI_7/XLXI_926/XLXI_1/XLXI_1/Mcount_COUNT_cy<9>_rt
+LUT1 		XLXI_7/XLXI_926/XLXI_1/XLXI_1/Mcount_COUNT_cy<14>_rt
+LUT1 		XLXI_7/XLXI_926/XLXI_1/XLXI_1/Mcount_COUNT_xor<15>_rt
+LUT1 		XLXI_7/XLXI_926/XLXI_1/XLXI_2/Mcount_COUNT_cy<2>_rt
+LUT1 		XLXI_7/XLXI_926/XLXI_1/XLXI_2/Mcount_COUNT_cy<8>_rt
+LUT1 		XLXI_51/XLXI_2/Mcount_COUNT_cy<1>_rt
+LUT1 		XLXI_51/XLXI_2/Mcount_COUNT_cy<2>_rt
+LUT1 		XLXI_51/XLXI_2/Mcount_COUNT_cy<3>_rt
+LUT1 		XLXI_51/XLXI_2/Mcount_COUNT_cy<4>_rt
+LUT1 		XLXI_51/XLXI_2/Mcount_COUNT_cy<5>_rt
+LUT1 		XLXI_51/XLXI_2/Mcount_COUNT_cy<6>_rt
+LUT1 		XLXI_51/XLXI_1/Mcount_COUNT_cy<1>_rt
+LUT1 		XLXI_51/XLXI_1/Mcount_COUNT_cy<2>_rt
+LUT1 		XLXI_51/XLXI_1/Mcount_COUNT_cy<3>_rt
+LUT1 		XLXI_51/XLXI_1/Mcount_COUNT_cy<4>_rt
+LUT1 		XLXI_51/XLXI_1/Mcount_COUNT_cy<5>_rt
+LUT1 		XLXI_51/XLXI_1/Mcount_COUNT_cy<6>_rt
+LUT1 		XLXI_51/XLXI_1/Mcount_COUNT_cy<7>_rt
+LUT1 		XLXI_51/XLXI_1/Mcount_COUNT_cy<8>_rt
+LUT1 		XLXI_51/XLXI_1/Mcount_COUNT_cy<9>_rt
+LUT1 		XLXI_51/XLXI_1/Mcount_COUNT_cy<10>_rt
+LUT1 		XLXI_51/XLXI_1/Mcount_COUNT_cy<11>_rt
+LUT1 		XLXI_51/XLXI_1/Mcount_COUNT_cy<12>_rt
+LUT1 		XLXI_51/XLXI_1/Mcount_COUNT_cy<13>_rt
+LUT1 		XLXI_51/XLXI_1/Mcount_COUNT_cy<14>_rt
+LUT1 		XLXI_51/XLXI_1/Mcount_COUNT_xor<15>_rt
+BUF 		XLXI_7/alu_inst/XLXI_98
+BUF 		XLXI_7/alu_inst/XLXI_12
+INV 		XLXI_7/alu_inst/XLXI_135/XLXI_2/XLXI_5
+INV 		XLXI_7/alu_inst/XLXI_135/XLXI_2/XLXI_6
+INV 		XLXI_7/alu_inst/XLXI_135/XLXI_3/XLXI_5
+INV 		XLXI_7/alu_inst/XLXI_135/XLXI_3/XLXI_6
+INV 		XLXI_7/alu_inst/XLXI_135/XLXI_4/XLXI_5
+INV 		XLXI_7/alu_inst/XLXI_135/XLXI_4/XLXI_6
+INV 		XLXI_7/alu_inst/XLXI_135/XLXI_5/XLXI_5
+INV 		XLXI_7/alu_inst/XLXI_135/XLXI_5/XLXI_6
+INV 		XLXI_7/alu_inst/XLXI_135/XLXI_6/XLXI_5
+INV 		XLXI_7/alu_inst/XLXI_135/XLXI_6/XLXI_6
+INV 		XLXI_7/alu_inst/XLXI_135/XLXI_7/XLXI_5
+INV 		XLXI_7/alu_inst/XLXI_135/XLXI_7/XLXI_6
+INV 		XLXI_7/alu_inst/XLXI_135/XLXI_8/XLXI_5
+INV 		XLXI_7/alu_inst/XLXI_135/XLXI_8/XLXI_6
+INV 		XLXI_7/alu_inst/XLXI_135/XLXI_9/XLXI_5
+INV 		XLXI_7/alu_inst/XLXI_135/XLXI_9/XLXI_6
+AND2 		XLXI_7/alu_inst/XLXI_135/XLXI_9/XLXI_2
+INV 		XLXI_7/cpu_ctl/XLXI_574
+BUF 		XLXI_7/cpu_ctl/XLXI_527
+BUF 		XLXI_7/cpu_ctl/XLXI_526
+BUF 		XLXI_7/cpu_ctl/XLXI_529
+BUF 		XLXI_7/cpu_ctl/XLXI_528
+BUF 		XLXI_7/cpu_ctl/XLXI_40
+INV 		XLXI_7/cpu_ctl/XLXI_251
+LUT1 		XLXI_105/XLXI_2/Mcount_usart_clock.periods_cy<6>_rt
+LUT1 		XLXI_105/XLXI_2/Mcount_usart_clock.periods_cy<5>_rt
+LUT1 		XLXI_105/XLXI_2/Mcount_usart_clock.periods_cy<4>_rt
+LUT1 		XLXI_105/XLXI_2/Mcount_usart_clock.periods_cy<3>_rt
+LUT1 		XLXI_105/XLXI_2/Mcount_usart_clock.periods_cy<2>_rt
+LUT1 		XLXI_105/XLXI_2/Mcount_usart_clock.periods_cy<1>_rt
+LUT1 		XLXI_105/XLXI_2/Mcount_usart_clock.periods_xor<7>_rt
+OR4 		XLXI_7/cpu_ctl/XLXI_493
+OR2 		XLXI_7/cpu_ctl/XLXI_23
+BUF 		XLXI_7/alu_inst/XLXI_138/XLXI_11
+OR2 		XLXI_7/cpu_ctl/XLXI_22
+BUF 		XLXI_7/alu_inst/XLXI_138/XLXI_10
+OR2 		XLXI_7/cpu_ctl/XLXI_21
+BUF 		XLXI_7/alu_inst/XLXI_138/XLXI_9
+MUXF8 		XLXI_7/alu_inst/XLXI_138/XLXI_14/XLXI_2/Mmux_S3_D15_Mux_0_o_2_f8
+BUF 		XLXI_7/alu_inst/XLXI_138/XLXI_14/XLXI_22
+MUXF8 		XLXI_7/alu_inst/XLXI_138/XLXI_14/XLXI_17/Mmux_S3_D15_Mux_0_o_2_f8
+BUF 		XLXI_7/alu_inst/XLXI_138/XLXI_14/XLXI_21
+MUXF8 		XLXI_7/alu_inst/XLXI_138/XLXI_14/XLXI_12/Mmux_S3_D15_Mux_0_o_2_f8
+BUF 		XLXI_7/alu_inst/XLXI_138/XLXI_14/XLXI_23
+MUXF8 		XLXI_7/alu_inst/XLXI_138/XLXI_14/XLXI_16/Mmux_S3_D15_Mux_0_o_2_f8
+BUF 		XLXI_7/alu_inst/XLXI_138/XLXI_14/XLXI_26
+MUXF8 		XLXI_7/alu_inst/XLXI_138/XLXI_14/XLXI_14/Mmux_S3_D15_Mux_0_o_2_f8
+BUF 		XLXI_7/alu_inst/XLXI_138/XLXI_14/XLXI_24
+MUXF8 		XLXI_7/alu_inst/XLXI_138/XLXI_14/XLXI_15/Mmux_S3_D15_Mux_0_o_2_f8
+BUF 		XLXI_7/alu_inst/XLXI_138/XLXI_14/XLXI_20
+MUXF8 		XLXI_7/alu_inst/XLXI_138/XLXI_14/XLXI_1/Mmux_S3_D15_Mux_0_o_2_f8
+BUF 		XLXI_7/alu_inst/XLXI_138/XLXI_14/XLXI_18
+MUXF8 		XLXI_7/alu_inst/XLXI_138/XLXI_14/XLXI_13/Mmux_S3_D15_Mux_0_o_2_f8
+BUF 		XLXI_7/alu_inst/XLXI_138/XLXI_14/XLXI_19
 
 Section 6 - IOB Properties
 --------------------------
@@ -1282,12 +1611,181 @@ Command Line Tools User Guide "TRACE" chapter.
 
 Section 11 - Configuration String Details
 -----------------------------------------
-Use the "-detail" map option to print out Configuration Strings
 
 Section 12 - Control Set Information
 ------------------------------------
-Use the "-detail" map option to print out Control Set Information.
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Clock Signal                     | Reset Signal                                              | Set Signal | Enable Signal                 | Slice Load Count | Bel Load Count |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| XLXI_105/XLXI_2/usart_clk        |                                                           |            | XLXI_105/XLXI_2/_n0190_inv    | 1                | 1              |
+| XLXI_105/XLXI_2/usart_clk        |                                                           |            | XLXI_105/XLXI_2/_n0203_inv    | 1                | 4              |
+| XLXI_105/XLXI_2/usart_clk        |                                                           |            | XLXI_105/XLXI_2/_n0222_inv    | 1                | 3              |
+| XLXI_105/XLXI_2/usart_clk        | XLXI_7/r0_r                                               |            |                               | 2                | 3              |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| XLXI_51/db2<7>                   | XLXN_209                                                  |            |                               | 1                | 1              |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| XLXI_7/XLXI_926/half_period_tick | XLXN_209                                                  |            |                               | 1                | 1              |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| XLXI_7/XLXI_927/half_period_tick | XLXN_209                                                  |            |                               | 1                | 1              |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| XLXI_7/XLXI_931/high<4>          | XLXN_209                                                  |            |                               | 1                | 1              |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| XLXI_7/XLXI_937/half_period_tick | XLXN_209                                                  |            |                               | 1                | 1              |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| in_clk_BUFGP                     |                                                           |            |                               | 1                | 1              |
+| in_clk_BUFGP                     |                                                           |            | XLXI_7/ram_w                  | 8                | 32             |
+| in_clk_BUFGP                     | XLXI_105/XLXI_2/PWR_54_o_usart_clock.periods[7]_equal_1_o |            |                               | 2                | 8              |
+| in_clk_BUFGP                     | XLXI_7/XLXI_926/XLXN_37                                   |            |                               | 4                | 16             |
+| in_clk_BUFGP                     | XLXI_7/XLXI_926/XLXN_37                                   |            | XLXI_7/XLXI_926/XLXI_1/XLXN_3 | 3                | 10             |
+| in_clk_BUFGP                     | XLXI_7/XLXI_927/XLXN_37                                   |            |                               | 4                | 16             |
+| in_clk_BUFGP                     | XLXI_7/XLXI_927/XLXN_37                                   |            | XLXI_7/XLXI_927/XLXI_1/XLXN_3 | 2                | 8              |
+| in_clk_BUFGP                     | XLXI_7/XLXI_931/XLXN_37                                   |            |                               | 4                | 16             |
+| in_clk_BUFGP                     | XLXI_7/XLXI_931/XLXN_37                                   |            | XLXI_7/XLXI_931/XLXI_1/XLXN_3 | 2                | 5              |
+| in_clk_BUFGP                     | XLXI_7/XLXI_937/XLXN_37                                   |            |                               | 4                | 14             |
+| in_clk_BUFGP                     | in_clk_manual_IBUF                                        |            |                               | 4                | 16             |
+| in_clk_BUFGP                     | in_clk_manual_IBUF                                        |            | XLXI_51/XLXN_3                | 2                | 8              |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ~GLOBAL_LOGIC1                   | XLXI_7/XLXN_217                                           |            | XLXI_7/cc_flags_w             | 2                | 4              |
+| ~GLOBAL_LOGIC1                   | XLXN_209                                                  |            | XLXI_7/acc_w                  | 8                | 8              |
+| ~GLOBAL_LOGIC1                   | XLXN_209                                                  |            | XLXI_7/cc_ir_w                | 2                | 8              |
+| ~GLOBAL_LOGIC1                   | XLXN_209                                                  |            | XLXI_7/iar_w                  | 2                | 8              |
+| ~GLOBAL_LOGIC1                   | XLXN_209                                                  |            | XLXI_7/r0_w                   | 2                | 8              |
+| ~GLOBAL_LOGIC1                   | XLXN_209                                                  |            | XLXI_7/r1_w                   | 2                | 8              |
+| ~GLOBAL_LOGIC1                   | XLXN_209                                                  |            | XLXI_7/r2_w                   | 2                | 8              |
+| ~GLOBAL_LOGIC1                   | XLXN_209                                                  |            | XLXI_7/r3_w                   | 2                | 8              |
+| ~GLOBAL_LOGIC1                   | XLXN_209                                                  |            | XLXI_7/temp_w                 | 2                | 8              |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ~XLXI_7/cc_r0_w                  |                                                           |            |                               | 8                | 8              |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ~XLXI_7/clk_internal             | XLXN_209                                                  |            |                               | 1                | 1              |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ~XLXI_7/clkc                     | XLXI_7/cpu_ctl/stp/XLXN_24                                |            |                               | 1                | 3              |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ~XLXI_7/clkr                     | XLXN_209                                                  |            |                               | 1                | 1              |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ~XLXI_7/ram_a_w                  |                                                           |            |                               | 2                | 8              |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Section 13 - Utilization by Hierarchy
 -------------------------------------
-Use the "-detail" map option to print out the Utilization by Hierarchy section.
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Module             | Partition | Slices*       | Slice Reg     | LUTs          | LUTRAM        | BRAM/FIFO | DSP48A1 | BUFG  | BUFIO | BUFR  | DCM   | PLL_ADV   | Full Hierarchical Name                               |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| cpu_facade/        |           | 0/221         | 0/223         | 0/376         | 0/32          | 0/0       | 0/0     | 1/1   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade                                           |
+| +XLXI_105          |           | 0/11          | 0/20          | 0/25          | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_105                                  |
+| ++XLXI_2           |           | 11/11         | 20/20         | 25/25         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_105/XLXI_2                           |
+| +XLXI_51           |           | 0/7           | 0/24          | 0/27          | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_51                                   |
+| ++XLXI_1           |           | 5/5           | 16/16         | 19/19         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_51/XLXI_1                            |
+| ++XLXI_2           |           | 2/2           | 8/8           | 8/8           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_51/XLXI_2                            |
+| +XLXI_53           |           | 1/1           | 1/1           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_53                                   |
+| +XLXI_7            |           | 27/202        | 1/178         | 29/323        | 0/32          | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7                                    |
+| ++XLXI_104         |           | 8/8           | 8/8           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_104                           |
+| ++XLXI_122         |           | 0/2           | 0/8           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_122                           |
+| +++XLXI_5          |           | 2/2           | 8/8           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_122/XLXI_5                    |
+| ++XLXI_123         |           | 0/2           | 0/8           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_123                           |
+| +++XLXI_5          |           | 2/2           | 8/8           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_123/XLXI_5                    |
+| ++XLXI_124         |           | 0/2           | 0/8           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_124                           |
+| +++XLXI_5          |           | 2/2           | 8/8           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_124/XLXI_5                    |
+| ++XLXI_125         |           | 0/8           | 0/8           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_125                           |
+| +++XLXI_5          |           | 8/8           | 8/8           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_125/XLXI_5                    |
+| ++XLXI_126         |           | 0/2           | 0/8           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_126                           |
+| +++XLXI_5          |           | 2/2           | 8/8           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_126/XLXI_5                    |
+| ++XLXI_127         |           | 0/2           | 0/8           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_127                           |
+| +++XLXI_5          |           | 2/2           | 8/8           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_127/XLXI_5                    |
+| ++XLXI_128         |           | 0/2           | 0/8           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_128                           |
+| +++XLXI_5          |           | 2/2           | 8/8           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_128/XLXI_5                    |
+| ++XLXI_129         |           | 0/2           | 0/8           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_129                           |
+| +++XLXI_5          |           | 2/2           | 8/8           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_129/XLXI_5                    |
+| ++XLXI_130         |           | 0/22          | 0/0           | 0/45          | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_130                           |
+| +++XLXI_1          |           | 0/16          | 0/0           | 0/39          | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_130/XLXI_1                    |
+| ++++XLXI_1         |           | 2/2           | 0/0           | 5/5           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_130/XLXI_1/XLXI_1             |
+| ++++XLXI_12        |           | 2/2           | 0/0           | 5/5           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_130/XLXI_1/XLXI_12            |
+| ++++XLXI_13        |           | 2/2           | 0/0           | 5/5           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_130/XLXI_1/XLXI_13            |
+| ++++XLXI_14        |           | 2/2           | 0/0           | 5/5           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_130/XLXI_1/XLXI_14            |
+| ++++XLXI_15        |           | 2/2           | 0/0           | 5/5           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_130/XLXI_1/XLXI_15            |
+| ++++XLXI_16        |           | 2/2           | 0/0           | 5/5           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_130/XLXI_1/XLXI_16            |
+| ++++XLXI_17        |           | 2/2           | 0/0           | 4/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_130/XLXI_1/XLXI_17            |
+| ++++XLXI_2         |           | 2/2           | 0/0           | 5/5           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_130/XLXI_1/XLXI_2             |
+| +++XLXI_22         |           | 0/6           | 0/0           | 0/6           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_130/XLXI_22                   |
+| ++++XLXI_25        |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_130/XLXI_22/XLXI_25           |
+| ++++XLXI_48        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_130/XLXI_22/XLXI_48           |
+| ++++XLXI_49        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_130/XLXI_22/XLXI_49           |
+| ++++XLXI_50        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_130/XLXI_22/XLXI_50           |
+| ++++XLXI_59        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_130/XLXI_22/XLXI_59           |
+| ++XLXI_571         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_571                           |
+| ++XLXI_87          |           | 2/2           | 4/4           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_87                            |
+| ++XLXI_9           |           | 8/10          | 0/8           | 32/32         | 32/32         | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_9                             |
+| +++XLXI_15         |           | 2/2           | 8/8           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_9/XLXI_15                     |
+| ++XLXI_926         |           | 1/11          | 0/27          | 2/34          | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_926                           |
+| +++XLXI_1          |           | 0/8           | 0/26          | 0/29          | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_926/XLXI_1                    |
+| ++++XLXI_1         |           | 5/5           | 16/16         | 19/19         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_926/XLXI_1/XLXI_1             |
+| ++++XLXI_2         |           | 3/3           | 10/10         | 10/10         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_926/XLXI_1/XLXI_2             |
+| +++XLXI_15         |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_926/XLXI_15                   |
+| +++XLXI_18         |           | 1/1           | 1/1           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_926/XLXI_18                   |
+| ++XLXI_927         |           | 1/11          | 0/25          | 2/32          | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_927                           |
+| +++XLXI_1          |           | 0/7           | 0/24          | 0/27          | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_927/XLXI_1                    |
+| ++++XLXI_1         |           | 5/5           | 16/16         | 19/19         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_927/XLXI_1/XLXI_1             |
+| ++++XLXI_2         |           | 2/2           | 8/8           | 8/8           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_927/XLXI_1/XLXI_2             |
+| +++XLXI_18         |           | 1/1           | 1/1           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_927/XLXI_18                   |
+| +++XLXI_21         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_927/XLXI_21                   |
+| +++XLXI_22         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_927/XLXI_22                   |
+| ++XLXI_931         |           | 1/9           | 0/22          | 1/26          | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_931                           |
+| +++XLXI_1          |           | 0/7           | 0/21          | 0/24          | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_931/XLXI_1                    |
+| ++++XLXI_1         |           | 5/5           | 16/16         | 19/19         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_931/XLXI_1/XLXI_1             |
+| ++++XLXI_2         |           | 2/2           | 5/5           | 5/5           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_931/XLXI_1/XLXI_2             |
+| +++XLXI_15         |           | 1/1           | 1/1           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_931/XLXI_15                   |
+| ++XLXI_937         |           | 1/6           | 0/15          | 2/17          | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_937                           |
+| +++XLXI_1          |           | 0/4           | 0/14          | 0/14          | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_937/XLXI_1                    |
+| ++++XLXI_1         |           | 4/4           | 14/14         | 14/14         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_937/XLXI_1/XLXI_1             |
+| +++XLXI_15         |           | 1/1           | 1/1           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_937/XLXI_15                   |
+| ++alu_inst         |           | 1/26          | 0/0           | 1/41          | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/alu_inst                           |
+| +++XLXI_135        |           | 0/14          | 0/0           | 0/14          | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/alu_inst/XLXI_135                  |
+| ++++XLXI_2         |           | 3/3           | 0/0           | 3/3           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/alu_inst/XLXI_135/XLXI_2           |
+| ++++XLXI_3         |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/alu_inst/XLXI_135/XLXI_3           |
+| ++++XLXI_4         |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/alu_inst/XLXI_135/XLXI_4           |
+| ++++XLXI_5         |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/alu_inst/XLXI_135/XLXI_5           |
+| ++++XLXI_6         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/alu_inst/XLXI_135/XLXI_6           |
+| ++++XLXI_7         |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/alu_inst/XLXI_135/XLXI_7           |
+| ++++XLXI_8         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/alu_inst/XLXI_135/XLXI_8           |
+| ++++XLXI_9         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/alu_inst/XLXI_135/XLXI_9           |
+| +++XLXI_137        |           | 0/1           | 0/0           | 0/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/alu_inst/XLXI_137                  |
+| ++++XLXI_1         |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/alu_inst/XLXI_137/XLXI_1           |
+| +++XLXI_138        |           | 0/8           | 0/0           | 0/16          | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/alu_inst/XLXI_138                  |
+| ++++XLXI_14        |           | 0/8           | 0/0           | 0/16          | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/alu_inst/XLXI_138/XLXI_14          |
+| +++++XLXI_1        |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/alu_inst/XLXI_138/XLXI_14/XLXI_1   |
+| +++++XLXI_12       |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/alu_inst/XLXI_138/XLXI_14/XLXI_12  |
+| +++++XLXI_13       |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/alu_inst/XLXI_138/XLXI_14/XLXI_13  |
+| +++++XLXI_14       |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/alu_inst/XLXI_138/XLXI_14/XLXI_14  |
+| +++++XLXI_15       |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/alu_inst/XLXI_138/XLXI_14/XLXI_15  |
+| +++++XLXI_16       |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/alu_inst/XLXI_138/XLXI_14/XLXI_16  |
+| +++++XLXI_17       |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/alu_inst/XLXI_138/XLXI_14/XLXI_17  |
+| +++++XLXI_2        |           | 1/1           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/alu_inst/XLXI_138/XLXI_14/XLXI_2   |
+| +++XLXI_2          |           | 2/2           | 0/0           | 8/8           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/alu_inst/XLXI_2                    |
+| ++clck_gen         |           | 2/3           | 0/1           | 2/3           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/clck_gen                           |
+| +++XLXI_4          |           | 1/1           | 1/1           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/clck_gen/XLXI_4                    |
+| ++cpu_ctl          |           | 25/36         | 0/3           | 42/55         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/cpu_ctl                            |
+| +++XLXI_252        |           | 2/2           | 0/0           | 3/3           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/cpu_ctl/XLXI_252                   |
+| +++XLXI_47         |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/cpu_ctl/XLXI_47                    |
+| +++XLXI_577        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/cpu_ctl/XLXI_577                   |
+| +++stp             |           | 1/6           | 0/3           | 1/7           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/cpu_ctl/stp                        |
+| ++++XLXI_24        |           | 1/1           | 3/3           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/cpu_ctl/stp/XLXI_24                |
+| ++++XLXI_25        |           | 4/4           | 0/0           | 4/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/cpu_ctl/stp/XLXI_25                |
+| ++pass_th          |           | 0/8           | 0/0           | 0/8           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/pass_th                            |
+| +++XLXI_1          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/pass_th/XLXI_1                     |
+| +++XLXI_13         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/pass_th/XLXI_13                    |
+| +++XLXI_3          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/pass_th/XLXI_3                     |
+| +++XLXI_4          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/pass_th/XLXI_4                     |
+| +++XLXI_5          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/pass_th/XLXI_5                     |
+| +++XLXI_6          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/pass_th/XLXI_6                     |
+| +++XLXI_7          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/pass_th/XLXI_7                     |
+| +++XLXI_8          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/pass_th/XLXI_8                     |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+* Slices can be packed with basic elements from multiple hierarchies.
+  Therefore, a slice will be counted in every hierarchical module
+  that each of its packed basic elements belong to.
+** For each column, there are two numbers reported <A>/<B>.
+   <A> is the number of elements that belong to that specific hierarchical module.
+   <B> is the total number of elements from that hierarchical module and any lower level
+   hierarchical modules below.
+*** The LUTRAM column counts all LUTs used as memory including RAM, ROM, and shift registers.
