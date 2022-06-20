@@ -3,3 +3,5 @@ MODULE cpu_facade
 		INSTANCE XLXI_7
 	SUBMODULE debouncer
 		INSTANCE XLXI_51
+	SUBMODULE usart_tramnsmitter
+		INSTANCE USART1

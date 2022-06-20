@@ -113,6 +113,7 @@
         <signal name="in_acc_w" />
         <signal name="XLXN_232" />
         <signal name="in_ir_r" />
+        <signal name="out_usart1_tx" />
         <port polarity="Input" name="in_clk" />
         <port polarity="Output" name="out_clk_internal" />
         <port polarity="Output" name="out_s1" />
@@ -184,6 +185,7 @@
         <port polarity="Input" name="in_ram_r" />
         <port polarity="Input" name="in_acc_w" />
         <port polarity="Input" name="in_ir_r" />
+        <port polarity="Output" name="out_usart1_tx" />
         <blockdef name="cpu">
             <timestamp>2022-6-13T11:14:4</timestamp>
             <rect width="2304" x="64" y="-2368" height="2304" />
@@ -360,6 +362,12 @@
             <line x2="64" y1="-32" y2="-64" x1="64" />
             <line x2="64" y1="0" y2="-32" x1="64" />
             <line x2="32" y1="-64" y2="-64" x1="96" />
+        </blockdef>
+        <blockdef name="usart_tramnsmitter">
+            <timestamp>2022-6-19T15:54:58</timestamp>
+            <rect width="256" x="64" y="-64" height="64" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <block symbolname="cpu" name="XLXI_7">
             <blockpin signalname="XLXN_66" name="in_acc_r" />
@@ -615,6 +623,10 @@
         <block symbolname="inv" name="XLXI_99">
             <blockpin signalname="in_ir_r" name="I" />
             <blockpin signalname="XLXN_232" name="O" />
+        </block>
+        <block symbolname="usart_tramnsmitter" name="USART1">
+            <blockpin signalname="in_clk" name="clk" />
+            <blockpin signalname="out_usart1_tx" name="tx" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="64000" height="64000">
@@ -1078,5 +1090,16 @@
             <wire x2="3664" y1="3280" y2="3312" x1="3664" />
         </branch>
         <iomarker fontsize="28" x="3664" y="3312" name="in_ir_r" orien="R90" />
+        <instance x="720" y="1472" name="USART1" orien="R0">
+            <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="-11" y="0" type="instance" />
+        </instance>
+        <branch name="in_clk">
+            <wire x2="720" y1="1440" y2="1440" x1="560" />
+        </branch>
+        <branch name="out_usart1_tx">
+            <wire x2="1280" y1="1440" y2="1440" x1="1104" />
+        </branch>
+        <iomarker fontsize="28" x="560" y="1440" name="in_clk" orien="R180" />
+        <iomarker fontsize="28" x="1280" y="1440" name="out_usart1_tx" orien="R0" />
     </sheet>
 </drawing>

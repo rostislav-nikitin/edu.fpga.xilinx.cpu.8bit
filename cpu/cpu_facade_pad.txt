@@ -1,7 +1,7 @@
 Release 14.3 - par P.40xd (lin64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Mon Jun 13 14:16:59 2022
+Mon Jun 20 10:05:28 2022
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -113,7 +113,7 @@ Pinout by Pin Number:
 |F11       |                    |         |VCCAUX                       |         |           |              |          |         |           |         |2.5    |          |           |                |
 |F12       |in_acc_w            |IOB      |IO_L30P_A21_M1RESET_1        |INPUT    |LVCMOS25*  |1             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
 |F13       |in_ram_w            |IOB      |IO_L32P_A17_M1A8_1           |INPUT    |LVCMOS25*  |1             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
-|F14       |                    |IOBS     |IO_L32N_A16_M1A9_1           |UNUSED   |           |1             |          |         |           |         |       |          |           |                |
+|F14       |out_usart1_tx       |IOB      |IO_L32N_A16_M1A9_1           |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |           |         |       |LOCATED   |NO         |NONE            |
 |F15       |in_iar_r            |IOB      |IO_L35P_A11_M1A7_1           |INPUT    |LVCMOS25*  |1             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
 |F16       |out_acc_w           |IOB      |IO_L35N_A10_M1A2_1           |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |           |         |       |LOCATED   |NO         |NONE            |
 |G1        |                    |IOBS     |IO_L40N_M3DQ7_3              |UNUSED   |           |3             |          |         |           |         |       |          |           |                |

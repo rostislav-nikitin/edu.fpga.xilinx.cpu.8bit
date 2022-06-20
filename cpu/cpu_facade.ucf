@@ -127,6 +127,7 @@ NET "in_ram_w" LOC = F13;
 NET "out_is_bus1_w" LOC = G14;
 NET "in_bus1" LOC = E12;
 
+NET "out_usart1_tx" LOC = F14;
 
 #F14 -- free
 

@@ -1,0 +1,8 @@
+Release 14.3 Drc P.40xd (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Sun Jun 19 18:49:12 2022
+
+drc -z usart_tramnsmitter.ncd usart_tramnsmitter.pcf
+
+DRC detected 0 errors and 0 warnings.

@@ -1,0 +1,7 @@
+[Inputs]
+clk
+=data[7:0]=
+[Outputs]
+tx
+txe
+[BiDir]
