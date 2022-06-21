@@ -11,7 +11,7 @@ Target Device  : xa6slx9
 Target Package : ftg256
 Target Speed   : -3
 Mapper Version : aspartan6 -- $Revision: 1.55 $
-Mapped Date    : Tue Jun 21 02:19:17 2022
+Mapped Date    : Wed Jun 22 00:50:01 2022
 
 Design Summary
 --------------
@@ -156,9 +156,9 @@ INFO:Pack:1650 - Map created a placed design.
 
 Section 4 - Removed Logic Summary
 ---------------------------------
- 357 block(s) removed
+ 495 block(s) removed
   59 block(s) optimized away
- 289 signal(s) removed
+ 418 signal(s) removed
  327 Block(s) redundant
 
 Section 5 - Removed Logic
@@ -174,6 +174,321 @@ To quickly locate the original cause for the removal of a chain of logic, look
 above the place where that logic is listed in the trimming report, then locate
 the lines that are least indented (begin at the leftmost edge).
 
+Loadless block "XLXI_106/XLXI_42" (BUF) removed.
+ The signal "ram_r" is loadless and has been removed.
+  Loadless block "XLXI_112" (AND) removed.
+   The signal "ram_selected" is loadless and has been removed.
+    Loadless block "XLXI_108" (BUF) removed.
+     The signal "port_selected" is loadless and has been removed.
+      Loadless block "XLXI_180" (AND) removed.
+Loadless block "XLXI_174/XLXI_18" (BUF) removed.
+ The signal "XLXI_174/o0" is loadless and has been removed.
+  Loadless block "XLXI_174/XLXI_1/Mmux_O11" (ROM) removed.
+   The signal "XLXI_174/XLXI_1/S3_D15_Mux_0_o" is loadless and has been removed.
+    Loadless block "XLXI_174/XLXI_1/Mmux_S3_D15_Mux_0_o_2_f8" (MUX) removed.
+     The signal "XLXI_174/XLXI_1/Mmux_S3_D15_Mux_0_o_4_f7" is loadless and has been
+removed.
+      Loadless block "XLXI_174/XLXI_1/Mmux_S3_D15_Mux_0_o_4_f7" (MUX) removed.
+       The signal "XLXI_174/XLXI_1/Mmux_S3_D15_Mux_0_o_6" is loadless and has been
+removed.
+        Loadless block "XLXI_174/XLXI_1/Mmux_S3_D15_Mux_0_o_6" (ROM) removed.
+         The signal "mem_o<0>" is loadless and has been removed.
+          Loadless block "XLXI_179" (BUF) removed.
+         The signal "XLXN_432<0>" is loadless and has been removed.
+          Loadless block "XLXI_173/XLXI_18" (BUF) removed.
+           The signal "XLXI_173/o0" is loadless and has been removed.
+            Loadless block "XLXI_173/XLXI_1/Mmux_O11" (ROM) removed.
+             The signal "port_r" is loadless and has been removed.
+              Loadless block "XLXI_153" (AND) removed.
+             The signal "XLXI_173/XLXI_1/S3_D15_Mux_0_o" is loadless and has been removed.
+              Loadless block "XLXI_173/XLXI_1/Mmux_S3_D15_Mux_0_o_2_f8" (MUX) removed.
+               The signal "XLXI_173/XLXI_1/Mmux_S3_D15_Mux_0_o_4_f7" is loadless and has been
+removed.
+                Loadless block "XLXI_173/XLXI_1/Mmux_S3_D15_Mux_0_o_4_f7" (MUX) removed.
+                 The signal "XLXI_173/XLXI_1/Mmux_S3_D15_Mux_0_o_6" is loadless and has been
+removed.
+                  Loadless block "XLXI_173/XLXI_1/Mmux_S3_D15_Mux_0_o_6" (ROM) removed.
+                   The signal "port_one_o<0>" is loadless and has been removed.
+                    Loadless block "XLXI_135/XLXI_5/Q_0" (LATCH) removed.
+                     The signal "rst" is loadless and has been removed.
+                      Loadless block "XLXI_165" (BUF) removed.
+                     The signal "XLXN_415" is loadless and has been removed.
+                      Loadless block "XLXI_170" (AND) removed.
+                       The signal "XLXN_420" is loadless and has been removed.
+                        Loadless block "XLXI_136/Mmux_d_tmp11" (ROM) removed.
+                         The signal "XLXN_387" is loadless and has been removed.
+                          Loadless block "XLXI_155/Q2" (LATCH) removed.
+                           The signal "port_a_w" is loadless and has been removed.
+                            Loadless block "XLXI_137" (AND) removed.
+                         The signal "XLXN_388" is loadless and has been removed.
+                          Loadless block "XLXI_155/Q3" (LATCH) removed.
+                         The signal "XLXN_386" is loadless and has been removed.
+                          Loadless block "XLXI_155/Q1" (LATCH) removed.
+                         The signal "XLXN_385" is loadless and has been removed.
+                          Loadless block "XLXI_155/Q0" (LATCH) removed.
+                         The signal "XLXN_410" is loadless and has been removed.
+                          Loadless block "XLXI_168" (OR) removed.
+                           The signal "port_w" is loadless and has been removed.
+                            Loadless block "XLXI_138" (AND) removed.
+                 The signal "XLXI_173/XLXI_1/Mmux_S3_D15_Mux_0_o_3_f7" is loadless and has been
+removed.
+                  Loadless block "XLXI_173/XLXI_1/XST_GND" (ZERO) removed.
+         The signal "XLXN_431<0>" is loadless and has been removed.
+          Loadless block "XLXI_106/XLXI_1" (RAMS) removed.
+           The signal "ram_w" is loadless and has been removed.
+            Loadless block "XLXI_111" (AND) removed.
+           The signal "XLXI_106/a_o_DUMMY<7>" is loadless and has been removed.
+            Loadless block "XLXI_106/XLXI_15/Q_7" (LATCH) removed.
+             The signal "ram_a_w" is loadless and has been removed.
+              Loadless block "XLXI_110" (AND) removed.
+           The signal "XLXI_106/a_o_DUMMY<6>" is loadless and has been removed.
+            Loadless block "XLXI_106/XLXI_15/Q_6" (LATCH) removed.
+           The signal "XLXI_106/a_o_DUMMY<5>" is loadless and has been removed.
+            Loadless block "XLXI_106/XLXI_15/Q_5" (LATCH) removed.
+           The signal "XLXI_106/a_o_DUMMY<4>" is loadless and has been removed.
+            Loadless block "XLXI_106/XLXI_15/Q_4" (LATCH) removed.
+           The signal "XLXI_106/a_o_DUMMY<3>" is loadless and has been removed.
+            Loadless block "XLXI_106/XLXI_15/Q_3" (LATCH) removed.
+           The signal "XLXI_106/a_o_DUMMY<2>" is loadless and has been removed.
+            Loadless block "XLXI_106/XLXI_15/Q_2" (LATCH) removed.
+           The signal "XLXI_106/a_o_DUMMY<1>" is loadless and has been removed.
+            Loadless block "XLXI_106/XLXI_15/Q_1" (LATCH) removed.
+           The signal "XLXI_106/a_o_DUMMY<0>" is loadless and has been removed.
+            Loadless block "XLXI_106/XLXI_15/Q_0" (LATCH) removed.
+       The signal "XLXI_174/XLXI_1/Mmux_S3_D15_Mux_0_o_3_f7" is loadless and has been
+removed.
+        Loadless block "XLXI_174/XLXI_1/XST_GND" (ZERO) removed.
+Loadless block "XLXI_174/XLXI_19" (BUF) removed.
+ The signal "XLXI_174/o1" is loadless and has been removed.
+  Loadless block "XLXI_174/XLXI_13/Mmux_O11" (ROM) removed.
+   The signal "XLXI_174/XLXI_13/S3_D15_Mux_0_o" is loadless and has been removed.
+    Loadless block "XLXI_174/XLXI_13/Mmux_S3_D15_Mux_0_o_2_f8" (MUX) removed.
+     The signal "XLXI_174/XLXI_13/Mmux_S3_D15_Mux_0_o_4_f7" is loadless and has been
+removed.
+      Loadless block "XLXI_174/XLXI_13/Mmux_S3_D15_Mux_0_o_4_f7" (MUX) removed.
+       The signal "XLXI_174/XLXI_13/Mmux_S3_D15_Mux_0_o_6" is loadless and has been
+removed.
+        Loadless block "XLXI_174/XLXI_13/Mmux_S3_D15_Mux_0_o_6" (ROM) removed.
+         The signal "XLXN_432<1>" is loadless and has been removed.
+          Loadless block "XLXI_173/XLXI_19" (BUF) removed.
+           The signal "XLXI_173/o1" is loadless and has been removed.
+            Loadless block "XLXI_173/XLXI_13/Mmux_O11" (ROM) removed.
+             The signal "XLXI_173/XLXI_13/S3_D15_Mux_0_o" is loadless and has been removed.
+              Loadless block "XLXI_173/XLXI_13/Mmux_S3_D15_Mux_0_o_2_f8" (MUX) removed.
+               The signal "XLXI_173/XLXI_13/Mmux_S3_D15_Mux_0_o_4_f7" is loadless and has been
+removed.
+                Loadless block "XLXI_173/XLXI_13/Mmux_S3_D15_Mux_0_o_4_f7" (MUX) removed.
+                 The signal "XLXI_173/XLXI_13/Mmux_S3_D15_Mux_0_o_6" is loadless and has been
+removed.
+                  Loadless block "XLXI_173/XLXI_13/Mmux_S3_D15_Mux_0_o_6" (ROM) removed.
+                   The signal "port_one_o<1>" is loadless and has been removed.
+                    Loadless block "XLXI_135/XLXI_5/Q_1" (LATCH) removed.
+                 The signal "XLXI_173/XLXI_13/Mmux_S3_D15_Mux_0_o_3_f7" is loadless and has been
+removed.
+                  Loadless block "XLXI_173/XLXI_13/XST_GND" (ZERO) removed.
+         The signal "XLXN_431<1>" is loadless and has been removed.
+          Loadless block "XLXI_106/XLXI_17" (RAMS) removed.
+       The signal "XLXI_174/XLXI_13/Mmux_S3_D15_Mux_0_o_3_f7" is loadless and has been
+removed.
+        Loadless block "XLXI_174/XLXI_13/XST_GND" (ZERO) removed.
+Loadless block "XLXI_174/XLXI_20" (BUF) removed.
+ The signal "XLXI_174/o2" is loadless and has been removed.
+  Loadless block "XLXI_174/XLXI_15/Mmux_O11" (ROM) removed.
+   The signal "XLXI_174/XLXI_15/S3_D15_Mux_0_o" is loadless and has been removed.
+    Loadless block "XLXI_174/XLXI_15/Mmux_S3_D15_Mux_0_o_2_f8" (MUX) removed.
+     The signal "XLXI_174/XLXI_15/Mmux_S3_D15_Mux_0_o_4_f7" is loadless and has been
+removed.
+      Loadless block "XLXI_174/XLXI_15/Mmux_S3_D15_Mux_0_o_4_f7" (MUX) removed.
+       The signal "XLXI_174/XLXI_15/Mmux_S3_D15_Mux_0_o_6" is loadless and has been
+removed.
+        Loadless block "XLXI_174/XLXI_15/Mmux_S3_D15_Mux_0_o_6" (ROM) removed.
+         The signal "XLXN_432<2>" is loadless and has been removed.
+          Loadless block "XLXI_173/XLXI_20" (BUF) removed.
+           The signal "XLXI_173/o2" is loadless and has been removed.
+            Loadless block "XLXI_173/XLXI_15/Mmux_O11" (ROM) removed.
+             The signal "XLXI_173/XLXI_15/S3_D15_Mux_0_o" is loadless and has been removed.
+              Loadless block "XLXI_173/XLXI_15/Mmux_S3_D15_Mux_0_o_2_f8" (MUX) removed.
+               The signal "XLXI_173/XLXI_15/Mmux_S3_D15_Mux_0_o_4_f7" is loadless and has been
+removed.
+                Loadless block "XLXI_173/XLXI_15/Mmux_S3_D15_Mux_0_o_4_f7" (MUX) removed.
+                 The signal "XLXI_173/XLXI_15/Mmux_S3_D15_Mux_0_o_6" is loadless and has been
+removed.
+                  Loadless block "XLXI_173/XLXI_15/Mmux_S3_D15_Mux_0_o_6" (ROM) removed.
+                   The signal "port_one_o<2>" is loadless and has been removed.
+                    Loadless block "XLXI_135/XLXI_5/Q_2" (LATCH) removed.
+                 The signal "XLXI_173/XLXI_15/Mmux_S3_D15_Mux_0_o_3_f7" is loadless and has been
+removed.
+                  Loadless block "XLXI_173/XLXI_15/XST_GND" (ZERO) removed.
+         The signal "XLXN_431<2>" is loadless and has been removed.
+          Loadless block "XLXI_106/XLXI_18" (RAMS) removed.
+       The signal "XLXI_174/XLXI_15/Mmux_S3_D15_Mux_0_o_3_f7" is loadless and has been
+removed.
+        Loadless block "XLXI_174/XLXI_15/XST_GND" (ZERO) removed.
+Loadless block "XLXI_174/XLXI_21" (BUF) removed.
+ The signal "XLXI_174/o3" is loadless and has been removed.
+  Loadless block "XLXI_174/XLXI_17/Mmux_O11" (ROM) removed.
+   The signal "XLXI_174/XLXI_17/S3_D15_Mux_0_o" is loadless and has been removed.
+    Loadless block "XLXI_174/XLXI_17/Mmux_S3_D15_Mux_0_o_2_f8" (MUX) removed.
+     The signal "XLXI_174/XLXI_17/Mmux_S3_D15_Mux_0_o_4_f7" is loadless and has been
+removed.
+      Loadless block "XLXI_174/XLXI_17/Mmux_S3_D15_Mux_0_o_4_f7" (MUX) removed.
+       The signal "XLXI_174/XLXI_17/Mmux_S3_D15_Mux_0_o_6" is loadless and has been
+removed.
+        Loadless block "XLXI_174/XLXI_17/Mmux_S3_D15_Mux_0_o_6" (ROM) removed.
+         The signal "XLXN_432<3>" is loadless and has been removed.
+          Loadless block "XLXI_173/XLXI_21" (BUF) removed.
+           The signal "XLXI_173/o3" is loadless and has been removed.
+            Loadless block "XLXI_173/XLXI_17/Mmux_O11" (ROM) removed.
+             The signal "XLXI_173/XLXI_17/S3_D15_Mux_0_o" is loadless and has been removed.
+              Loadless block "XLXI_173/XLXI_17/Mmux_S3_D15_Mux_0_o_2_f8" (MUX) removed.
+               The signal "XLXI_173/XLXI_17/Mmux_S3_D15_Mux_0_o_4_f7" is loadless and has been
+removed.
+                Loadless block "XLXI_173/XLXI_17/Mmux_S3_D15_Mux_0_o_4_f7" (MUX) removed.
+                 The signal "XLXI_173/XLXI_17/Mmux_S3_D15_Mux_0_o_6" is loadless and has been
+removed.
+                  Loadless block "XLXI_173/XLXI_17/Mmux_S3_D15_Mux_0_o_6" (ROM) removed.
+                   The signal "port_one_o<3>" is loadless and has been removed.
+                    Loadless block "XLXI_135/XLXI_5/Q_3" (LATCH) removed.
+                 The signal "XLXI_173/XLXI_17/Mmux_S3_D15_Mux_0_o_3_f7" is loadless and has been
+removed.
+                  Loadless block "XLXI_173/XLXI_17/XST_GND" (ZERO) removed.
+         The signal "XLXN_431<3>" is loadless and has been removed.
+          Loadless block "XLXI_106/XLXI_19" (RAMS) removed.
+       The signal "XLXI_174/XLXI_17/Mmux_S3_D15_Mux_0_o_3_f7" is loadless and has been
+removed.
+        Loadless block "XLXI_174/XLXI_17/XST_GND" (ZERO) removed.
+Loadless block "XLXI_174/XLXI_22" (BUF) removed.
+ The signal "XLXI_174/o4" is loadless and has been removed.
+  Loadless block "XLXI_174/XLXI_2/Mmux_O11" (ROM) removed.
+   The signal "XLXI_174/XLXI_2/S3_D15_Mux_0_o" is loadless and has been removed.
+    Loadless block "XLXI_174/XLXI_2/Mmux_S3_D15_Mux_0_o_2_f8" (MUX) removed.
+     The signal "XLXI_174/XLXI_2/Mmux_S3_D15_Mux_0_o_4_f7" is loadless and has been
+removed.
+      Loadless block "XLXI_174/XLXI_2/Mmux_S3_D15_Mux_0_o_4_f7" (MUX) removed.
+       The signal "XLXI_174/XLXI_2/Mmux_S3_D15_Mux_0_o_6" is loadless and has been
+removed.
+        Loadless block "XLXI_174/XLXI_2/Mmux_S3_D15_Mux_0_o_6" (ROM) removed.
+         The signal "XLXN_432<4>" is loadless and has been removed.
+          Loadless block "XLXI_173/XLXI_22" (BUF) removed.
+           The signal "XLXI_173/o4" is loadless and has been removed.
+            Loadless block "XLXI_173/XLXI_2/Mmux_O11" (ROM) removed.
+             The signal "XLXI_173/XLXI_2/S3_D15_Mux_0_o" is loadless and has been removed.
+              Loadless block "XLXI_173/XLXI_2/Mmux_S3_D15_Mux_0_o_2_f8" (MUX) removed.
+               The signal "XLXI_173/XLXI_2/Mmux_S3_D15_Mux_0_o_4_f7" is loadless and has been
+removed.
+                Loadless block "XLXI_173/XLXI_2/Mmux_S3_D15_Mux_0_o_4_f7" (MUX) removed.
+                 The signal "XLXI_173/XLXI_2/Mmux_S3_D15_Mux_0_o_6" is loadless and has been
+removed.
+                  Loadless block "XLXI_173/XLXI_2/Mmux_S3_D15_Mux_0_o_6" (ROM) removed.
+                   The signal "port_one_o<4>" is loadless and has been removed.
+                    Loadless block "XLXI_135/XLXI_5/Q_4" (LATCH) removed.
+                 The signal "XLXI_173/XLXI_2/Mmux_S3_D15_Mux_0_o_3_f7" is loadless and has been
+removed.
+                  Loadless block "XLXI_173/XLXI_2/XST_GND" (ZERO) removed.
+         The signal "XLXN_431<4>" is loadless and has been removed.
+          Loadless block "XLXI_106/XLXI_20" (RAMS) removed.
+       The signal "XLXI_174/XLXI_2/Mmux_S3_D15_Mux_0_o_3_f7" is loadless and has been
+removed.
+        Loadless block "XLXI_174/XLXI_2/XST_GND" (ZERO) removed.
+Loadless block "XLXI_174/XLXI_23" (BUF) removed.
+ The signal "XLXI_174/o5" is loadless and has been removed.
+  Loadless block "XLXI_174/XLXI_12/Mmux_O11" (ROM) removed.
+   The signal "XLXI_174/XLXI_12/S3_D15_Mux_0_o" is loadless and has been removed.
+    Loadless block "XLXI_174/XLXI_12/Mmux_S3_D15_Mux_0_o_2_f8" (MUX) removed.
+     The signal "XLXI_174/XLXI_12/Mmux_S3_D15_Mux_0_o_4_f7" is loadless and has been
+removed.
+      Loadless block "XLXI_174/XLXI_12/Mmux_S3_D15_Mux_0_o_4_f7" (MUX) removed.
+       The signal "XLXI_174/XLXI_12/Mmux_S3_D15_Mux_0_o_6" is loadless and has been
+removed.
+        Loadless block "XLXI_174/XLXI_12/Mmux_S3_D15_Mux_0_o_6" (ROM) removed.
+         The signal "XLXN_432<5>" is loadless and has been removed.
+          Loadless block "XLXI_173/XLXI_23" (BUF) removed.
+           The signal "XLXI_173/o5" is loadless and has been removed.
+            Loadless block "XLXI_173/XLXI_12/Mmux_O11" (ROM) removed.
+             The signal "XLXI_173/XLXI_12/S3_D15_Mux_0_o" is loadless and has been removed.
+              Loadless block "XLXI_173/XLXI_12/Mmux_S3_D15_Mux_0_o_2_f8" (MUX) removed.
+               The signal "XLXI_173/XLXI_12/Mmux_S3_D15_Mux_0_o_4_f7" is loadless and has been
+removed.
+                Loadless block "XLXI_173/XLXI_12/Mmux_S3_D15_Mux_0_o_4_f7" (MUX) removed.
+                 The signal "XLXI_173/XLXI_12/Mmux_S3_D15_Mux_0_o_6" is loadless and has been
+removed.
+                  Loadless block "XLXI_173/XLXI_12/Mmux_S3_D15_Mux_0_o_6" (ROM) removed.
+                   The signal "port_one_o<5>" is loadless and has been removed.
+                    Loadless block "XLXI_135/XLXI_5/Q_5" (LATCH) removed.
+                 The signal "XLXI_173/XLXI_12/Mmux_S3_D15_Mux_0_o_3_f7" is loadless and has been
+removed.
+                  Loadless block "XLXI_173/XLXI_12/XST_GND" (ZERO) removed.
+         The signal "XLXN_431<5>" is loadless and has been removed.
+          Loadless block "XLXI_106/XLXI_21" (RAMS) removed.
+       The signal "XLXI_174/XLXI_12/Mmux_S3_D15_Mux_0_o_3_f7" is loadless and has been
+removed.
+        Loadless block "XLXI_174/XLXI_12/XST_GND" (ZERO) removed.
+Loadless block "XLXI_174/XLXI_24" (BUF) removed.
+ The signal "XLXI_174/o6" is loadless and has been removed.
+  Loadless block "XLXI_174/XLXI_14/Mmux_O11" (ROM) removed.
+   The signal "XLXI_174/XLXI_14/S3_D15_Mux_0_o" is loadless and has been removed.
+    Loadless block "XLXI_174/XLXI_14/Mmux_S3_D15_Mux_0_o_2_f8" (MUX) removed.
+     The signal "XLXI_174/XLXI_14/Mmux_S3_D15_Mux_0_o_4_f7" is loadless and has been
+removed.
+      Loadless block "XLXI_174/XLXI_14/Mmux_S3_D15_Mux_0_o_4_f7" (MUX) removed.
+       The signal "XLXI_174/XLXI_14/Mmux_S3_D15_Mux_0_o_6" is loadless and has been
+removed.
+        Loadless block "XLXI_174/XLXI_14/Mmux_S3_D15_Mux_0_o_6" (ROM) removed.
+         The signal "XLXN_432<6>" is loadless and has been removed.
+          Loadless block "XLXI_173/XLXI_24" (BUF) removed.
+           The signal "XLXI_173/o6" is loadless and has been removed.
+            Loadless block "XLXI_173/XLXI_14/Mmux_O11" (ROM) removed.
+             The signal "XLXI_173/XLXI_14/S3_D15_Mux_0_o" is loadless and has been removed.
+              Loadless block "XLXI_173/XLXI_14/Mmux_S3_D15_Mux_0_o_2_f8" (MUX) removed.
+               The signal "XLXI_173/XLXI_14/Mmux_S3_D15_Mux_0_o_4_f7" is loadless and has been
+removed.
+                Loadless block "XLXI_173/XLXI_14/Mmux_S3_D15_Mux_0_o_4_f7" (MUX) removed.
+                 The signal "XLXI_173/XLXI_14/Mmux_S3_D15_Mux_0_o_6" is loadless and has been
+removed.
+                  Loadless block "XLXI_173/XLXI_14/Mmux_S3_D15_Mux_0_o_6" (ROM) removed.
+                   The signal "port_one_o<6>" is loadless and has been removed.
+                    Loadless block "XLXI_135/XLXI_5/Q_6" (LATCH) removed.
+                 The signal "XLXI_173/XLXI_14/Mmux_S3_D15_Mux_0_o_3_f7" is loadless and has been
+removed.
+                  Loadless block "XLXI_173/XLXI_14/XST_GND" (ZERO) removed.
+         The signal "XLXN_431<6>" is loadless and has been removed.
+          Loadless block "XLXI_106/XLXI_22" (RAMS) removed.
+       The signal "XLXI_174/XLXI_14/Mmux_S3_D15_Mux_0_o_3_f7" is loadless and has been
+removed.
+        Loadless block "XLXI_174/XLXI_14/XST_GND" (ZERO) removed.
+Loadless block "XLXI_174/XLXI_26" (BUF) removed.
+ The signal "XLXI_174/o7" is loadless and has been removed.
+  Loadless block "XLXI_174/XLXI_16/Mmux_O11" (ROM) removed.
+   The signal "XLXI_174/XLXI_16/S3_D15_Mux_0_o" is loadless and has been removed.
+    Loadless block "XLXI_174/XLXI_16/Mmux_S3_D15_Mux_0_o_2_f8" (MUX) removed.
+     The signal "XLXI_174/XLXI_16/Mmux_S3_D15_Mux_0_o_4_f7" is loadless and has been
+removed.
+      Loadless block "XLXI_174/XLXI_16/Mmux_S3_D15_Mux_0_o_4_f7" (MUX) removed.
+       The signal "XLXI_174/XLXI_16/Mmux_S3_D15_Mux_0_o_6" is loadless and has been
+removed.
+        Loadless block "XLXI_174/XLXI_16/Mmux_S3_D15_Mux_0_o_6" (ROM) removed.
+         The signal "XLXN_432<7>" is loadless and has been removed.
+          Loadless block "XLXI_173/XLXI_26" (BUF) removed.
+           The signal "XLXI_173/o7" is loadless and has been removed.
+            Loadless block "XLXI_173/XLXI_16/Mmux_O11" (ROM) removed.
+             The signal "XLXI_173/XLXI_16/S3_D15_Mux_0_o" is loadless and has been removed.
+              Loadless block "XLXI_173/XLXI_16/Mmux_S3_D15_Mux_0_o_2_f8" (MUX) removed.
+               The signal "XLXI_173/XLXI_16/Mmux_S3_D15_Mux_0_o_4_f7" is loadless and has been
+removed.
+                Loadless block "XLXI_173/XLXI_16/Mmux_S3_D15_Mux_0_o_4_f7" (MUX) removed.
+                 The signal "XLXI_173/XLXI_16/Mmux_S3_D15_Mux_0_o_6" is loadless and has been
+removed.
+                  Loadless block "XLXI_173/XLXI_16/Mmux_S3_D15_Mux_0_o_6" (ROM) removed.
+                   The signal "port_one_o<7>" is loadless and has been removed.
+                    Loadless block "XLXI_135/XLXI_5/Q_7" (LATCH) removed.
+                 The signal "XLXI_173/XLXI_16/Mmux_S3_D15_Mux_0_o_3_f7" is loadless and has been
+removed.
+                  Loadless block "XLXI_173/XLXI_16/XST_GND" (ZERO) removed.
+         The signal "XLXN_431<7>" is loadless and has been removed.
+          Loadless block "XLXI_106/XLXI_23" (RAMS) removed.
+       The signal "XLXI_174/XLXI_16/Mmux_S3_D15_Mux_0_o_3_f7" is loadless and has been
+removed.
+        Loadless block "XLXI_174/XLXI_16/XST_GND" (ZERO) removed.
 Loadless block "XLXI_7/XLXI_394" (AND) removed.
  The signal "XLXN_76" is loadless and has been removed.
   Loadless block "XLXI_37" (BUF) removed.
@@ -1077,6 +1392,7 @@ Unused block "XLXI_7/XLXI_912/XLXI_1/XLXI_2/XST_VCC" (ONE) removed.
 
 Optimized Block(s):
 TYPE 		BLOCK
+GND 		XLXI_178
 GND 		XLXI_51/XLXI_1/XST_GND
 VCC 		XLXI_51/XLXI_1/XST_VCC
 GND 		XLXI_51/XLXI_2/XST_GND
@@ -1140,7 +1456,6 @@ GND 		XLXI_7/alu_inst/XLXI_138/XLXI_14/XLXI_15/XST_GND
 GND 		XLXI_7/alu_inst/XLXI_138/XLXI_14/XLXI_16/XST_GND
 GND 		XLXI_7/alu_inst/XLXI_138/XLXI_14/XLXI_17/XST_GND
 GND 		XLXI_7/alu_inst/XLXI_138/XLXI_14/XLXI_2/XST_GND
-GND 		XLXI_9
 
 Redundant Block(s):
 TYPE 		BLOCK
