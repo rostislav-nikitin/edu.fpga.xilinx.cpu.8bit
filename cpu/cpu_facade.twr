@@ -24,46 +24,25 @@ INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on
    a 50 Ohm transmission line loading model.  For the details of this model, 
    and for more information on accounting for different loading conditions, 
    please see the device datasheet.
-5 logic loops found and disabled.
-
-  ----------------------------------------------------------------------
- ! Warning: The following connections close logic loops, and some paths !
- !          through these connections may not be analyzed. To better    !
- !          understand the logic associated with these loops, run a     !
- !          Analyze Against User-Defined End-Point Analysis inside      !
- !          Timing Analyzer (timingan) with the listed signal as a      !
- !          source NET (*signal_name). The Timing Report will display   !
- !          all the paths associated with this signal and the logic     !
- !          loop will be reported.                                      !
- !                                                                      !
- ! Signal                            Driver            Load             !
- ! --------------------------------  ----------------  ---------------- !
- ! XLXI_7/XLXI_130/XLXI_1/o4         SLICE_X19Y33.B    SLICE_X19Y33.C4  !
- ! port_selected                     SLICE_X19Y33.C    SLICE_X22Y34.A1  !
- ! port_selected                     SLICE_X19Y33.C    SLICE_X19Y33.D5  !
- ! port_selected                     SLICE_X19Y33.C    SLICE_X16Y33.A1  !
- ! port_selected                     SLICE_X19Y33.C    SLICE_X22Y35.A3  !
-  ---------------------------------------------------------------------- 
-
 
 ================================================================================
 Timing constraint: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 
 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 2441 paths analyzed, 522 endpoints analyzed, 0 failing endpoints
+ 2201 paths analyzed, 522 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   9.784ns.
+ Minimum period is   5.890ns.
 --------------------------------------------------------------------------------
 
-Paths for end point XLXI_106/XLXI_18/A (SLICE_X20Y36.DX), 16 paths
+Paths for end point XLXI_106/XLXI_1/A (SLICE_X20Y38.DX), 4 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     10.216ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               XLXI_106/XLXI_23/C (RAM)
-  Destination:          XLXI_106/XLXI_18/A (RAM)
+Slack (setup path):     14.110ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_106/XLXI_1/C (RAM)
+  Destination:          XLXI_106/XLXI_1/A (RAM)
   Requirement:          20.000ns
-  Data Path Delay:      9.738ns (Levels of Logic = 7)
-  Clock Path Skew:      -0.011ns (0.149 - 0.160)
+  Data Path Delay:      5.855ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
   Source Clock:         in_clk_BUFGP rising at 0.000ns
   Destination Clock:    in_clk_BUFGP rising at 20.000ns
   Clock Uncertainty:    0.035ns
@@ -74,53 +53,39 @@ Slack (setup path):     10.216ns (requirement - (data path - clock path skew + u
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: XLXI_106/XLXI_23/C to XLXI_106/XLXI_18/A
+  Maximum Data Path at Slow Process Corner: XLXI_106/XLXI_1/C to XLXI_106/XLXI_1/A
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X20Y35.BMUX    Tshcko                1.084   XLXN_431<7>
-                                                       XLXI_106/XLXI_23/C
-                                                       XLXI_106/XLXI_23/F7.B
-                                                       XLXI_106/XLXI_23/F8
-    SLICE_X22Y35.A2      net (fanout=1)        0.614   XLXN_431<7>
-    SLICE_X22Y35.AMUX    Tilo                  0.251   XLXI_7/XLXI_130/XLXI_1/XLXI_16/S3_D15_Mux_0_o
-                                                       XLXI_174/XLXI_16/Mmux_O11
-    SLICE_X22Y35.D5      net (fanout=1)        0.232   XLXI_174/o7
-    SLICE_X22Y35.BMUX    Topdb                 0.366   XLXI_7/XLXI_130/XLXI_1/XLXI_16/S3_D15_Mux_0_o
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_16/Mmux_S3_D15_Mux_0_o_6
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_16/Mmux_S3_D15_Mux_0_o_4_f7
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_16/Mmux_S3_D15_Mux_0_o_2_f8
-    SLICE_X13Y35.B4      net (fanout=1)        0.921   XLXI_7/XLXI_130/XLXI_1/XLXI_16/S3_D15_Mux_0_o
-    SLICE_X13Y35.B       Tilo                  0.259   XLXI_7/XLXI_130/XLXI_1/o7
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_16/Mmux_O11
-    SLICE_X19Y33.C6      net (fanout=22)       0.991   XLXI_7/XLXI_130/XLXI_1/o7
-    SLICE_X19Y33.C       Tilo                  0.259   XLXI_7/r3_o<7>
-                                                       XLXI_180
-    SLICE_X22Y36.A5      net (fanout=11)       1.016   port_selected
-    SLICE_X22Y36.AMUX    Tilo                  0.251   XLXI_7/XLXI_130/XLXI_1/XLXI_15/S3_D15_Mux_0_o
-                                                       XLXI_174/XLXI_15/Mmux_O11
-    SLICE_X22Y36.D5      net (fanout=1)        0.232   XLXI_174/o2
-    SLICE_X22Y36.BMUX    Topdb                 0.366   XLXI_7/XLXI_130/XLXI_1/XLXI_15/S3_D15_Mux_0_o
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_15/Mmux_S3_D15_Mux_0_o_6
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_15/Mmux_S3_D15_Mux_0_o_4_f7
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_15/Mmux_S3_D15_Mux_0_o_2_f8
-    SLICE_X17Y34.B3      net (fanout=1)        0.876   XLXI_7/XLXI_130/XLXI_1/XLXI_15/S3_D15_Mux_0_o
-    SLICE_X17Y34.B       Tilo                  0.259   XLXI_7/iar_o<7>
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_15/Mmux_O11
-    SLICE_X20Y36.DX      net (fanout=22)       1.176   XLXI_7/XLXI_130/XLXI_1/o2
-    SLICE_X20Y36.CLK     Tds                   0.585   XLXN_431<2>
-                                                       XLXI_106/XLXI_18/A
+    SLICE_X20Y38.BMUX    Tshcko                1.084   XLXN_431<0>
+                                                       XLXI_106/XLXI_1/C
+                                                       XLXI_106/XLXI_1/F7.B
+                                                       XLXI_106/XLXI_1/F8
+    SLICE_X20Y36.A3      net (fanout=1)        0.523   XLXN_431<0>
+    SLICE_X20Y36.AMUX    Tilo                  0.261   XLXI_7/XLXI_130/XLXI_1/XLXI_1/S3_D15_Mux_0_o
+                                                       XLXI_174/XLXI_1/Mmux_O11
+    SLICE_X20Y36.D5      net (fanout=1)        0.223   XLXI_174/o0
+    SLICE_X20Y36.BMUX    Topdb                 0.393   XLXI_7/XLXI_130/XLXI_1/XLXI_1/S3_D15_Mux_0_o
+                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_1/Mmux_S3_D15_Mux_0_o_6
+                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_1/Mmux_S3_D15_Mux_0_o_4_f7
+                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_1/Mmux_S3_D15_Mux_0_o_2_f8
+    SLICE_X15Y34.B3      net (fanout=1)        0.876   XLXI_7/XLXI_130/XLXI_1/XLXI_1/S3_D15_Mux_0_o
+    SLICE_X15Y34.B       Tilo                  0.259   XLXI_7/XLXI_130/XLXI_1/o1
+                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_1/Mmux_O11
+    SLICE_X20Y38.DX      net (fanout=21)       1.651   XLXI_7/XLXI_130/XLXI_1/o0
+    SLICE_X20Y38.CLK     Tds                   0.585   XLXN_431<0>
+                                                       XLXI_106/XLXI_1/A
     -------------------------------------------------  ---------------------------
-    Total                                      9.738ns (3.680ns logic, 6.058ns route)
-                                                       (37.8% logic, 62.2% route)
+    Total                                      5.855ns (2.582ns logic, 3.273ns route)
+                                                       (44.1% logic, 55.9% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     10.243ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               XLXI_106/XLXI_23/D (RAM)
-  Destination:          XLXI_106/XLXI_18/A (RAM)
+Slack (setup path):     14.137ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_106/XLXI_1/D (RAM)
+  Destination:          XLXI_106/XLXI_1/A (RAM)
   Requirement:          20.000ns
-  Data Path Delay:      9.711ns (Levels of Logic = 7)
-  Clock Path Skew:      -0.011ns (0.149 - 0.160)
+  Data Path Delay:      5.828ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
   Source Clock:         in_clk_BUFGP rising at 0.000ns
   Destination Clock:    in_clk_BUFGP rising at 20.000ns
   Clock Uncertainty:    0.035ns
@@ -131,53 +96,39 @@ Slack (setup path):     10.243ns (requirement - (data path - clock path skew + u
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: XLXI_106/XLXI_23/D to XLXI_106/XLXI_18/A
+  Maximum Data Path at Slow Process Corner: XLXI_106/XLXI_1/D to XLXI_106/XLXI_1/A
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X20Y35.BMUX    Tshcko                1.057   XLXN_431<7>
-                                                       XLXI_106/XLXI_23/D
-                                                       XLXI_106/XLXI_23/F7.B
-                                                       XLXI_106/XLXI_23/F8
-    SLICE_X22Y35.A2      net (fanout=1)        0.614   XLXN_431<7>
-    SLICE_X22Y35.AMUX    Tilo                  0.251   XLXI_7/XLXI_130/XLXI_1/XLXI_16/S3_D15_Mux_0_o
-                                                       XLXI_174/XLXI_16/Mmux_O11
-    SLICE_X22Y35.D5      net (fanout=1)        0.232   XLXI_174/o7
-    SLICE_X22Y35.BMUX    Topdb                 0.366   XLXI_7/XLXI_130/XLXI_1/XLXI_16/S3_D15_Mux_0_o
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_16/Mmux_S3_D15_Mux_0_o_6
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_16/Mmux_S3_D15_Mux_0_o_4_f7
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_16/Mmux_S3_D15_Mux_0_o_2_f8
-    SLICE_X13Y35.B4      net (fanout=1)        0.921   XLXI_7/XLXI_130/XLXI_1/XLXI_16/S3_D15_Mux_0_o
-    SLICE_X13Y35.B       Tilo                  0.259   XLXI_7/XLXI_130/XLXI_1/o7
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_16/Mmux_O11
-    SLICE_X19Y33.C6      net (fanout=22)       0.991   XLXI_7/XLXI_130/XLXI_1/o7
-    SLICE_X19Y33.C       Tilo                  0.259   XLXI_7/r3_o<7>
-                                                       XLXI_180
-    SLICE_X22Y36.A5      net (fanout=11)       1.016   port_selected
-    SLICE_X22Y36.AMUX    Tilo                  0.251   XLXI_7/XLXI_130/XLXI_1/XLXI_15/S3_D15_Mux_0_o
-                                                       XLXI_174/XLXI_15/Mmux_O11
-    SLICE_X22Y36.D5      net (fanout=1)        0.232   XLXI_174/o2
-    SLICE_X22Y36.BMUX    Topdb                 0.366   XLXI_7/XLXI_130/XLXI_1/XLXI_15/S3_D15_Mux_0_o
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_15/Mmux_S3_D15_Mux_0_o_6
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_15/Mmux_S3_D15_Mux_0_o_4_f7
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_15/Mmux_S3_D15_Mux_0_o_2_f8
-    SLICE_X17Y34.B3      net (fanout=1)        0.876   XLXI_7/XLXI_130/XLXI_1/XLXI_15/S3_D15_Mux_0_o
-    SLICE_X17Y34.B       Tilo                  0.259   XLXI_7/iar_o<7>
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_15/Mmux_O11
-    SLICE_X20Y36.DX      net (fanout=22)       1.176   XLXI_7/XLXI_130/XLXI_1/o2
-    SLICE_X20Y36.CLK     Tds                   0.585   XLXN_431<2>
-                                                       XLXI_106/XLXI_18/A
+    SLICE_X20Y38.BMUX    Tshcko                1.057   XLXN_431<0>
+                                                       XLXI_106/XLXI_1/D
+                                                       XLXI_106/XLXI_1/F7.B
+                                                       XLXI_106/XLXI_1/F8
+    SLICE_X20Y36.A3      net (fanout=1)        0.523   XLXN_431<0>
+    SLICE_X20Y36.AMUX    Tilo                  0.261   XLXI_7/XLXI_130/XLXI_1/XLXI_1/S3_D15_Mux_0_o
+                                                       XLXI_174/XLXI_1/Mmux_O11
+    SLICE_X20Y36.D5      net (fanout=1)        0.223   XLXI_174/o0
+    SLICE_X20Y36.BMUX    Topdb                 0.393   XLXI_7/XLXI_130/XLXI_1/XLXI_1/S3_D15_Mux_0_o
+                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_1/Mmux_S3_D15_Mux_0_o_6
+                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_1/Mmux_S3_D15_Mux_0_o_4_f7
+                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_1/Mmux_S3_D15_Mux_0_o_2_f8
+    SLICE_X15Y34.B3      net (fanout=1)        0.876   XLXI_7/XLXI_130/XLXI_1/XLXI_1/S3_D15_Mux_0_o
+    SLICE_X15Y34.B       Tilo                  0.259   XLXI_7/XLXI_130/XLXI_1/o1
+                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_1/Mmux_O11
+    SLICE_X20Y38.DX      net (fanout=21)       1.651   XLXI_7/XLXI_130/XLXI_1/o0
+    SLICE_X20Y38.CLK     Tds                   0.585   XLXN_431<0>
+                                                       XLXI_106/XLXI_1/A
     -------------------------------------------------  ---------------------------
-    Total                                      9.711ns (3.653ns logic, 6.058ns route)
-                                                       (37.6% logic, 62.4% route)
+    Total                                      5.828ns (2.555ns logic, 3.273ns route)
+                                                       (43.8% logic, 56.2% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     10.257ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               XLXI_106/XLXI_23/B (RAM)
-  Destination:          XLXI_106/XLXI_18/A (RAM)
+Slack (setup path):     14.151ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_106/XLXI_1/B (RAM)
+  Destination:          XLXI_106/XLXI_1/A (RAM)
   Requirement:          20.000ns
-  Data Path Delay:      9.697ns (Levels of Logic = 7)
-  Clock Path Skew:      -0.011ns (0.149 - 0.160)
+  Data Path Delay:      5.814ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
   Source Clock:         in_clk_BUFGP rising at 0.000ns
   Destination Clock:    in_clk_BUFGP rising at 20.000ns
   Clock Uncertainty:    0.035ns
@@ -188,56 +139,42 @@ Slack (setup path):     10.257ns (requirement - (data path - clock path skew + u
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: XLXI_106/XLXI_23/B to XLXI_106/XLXI_18/A
+  Maximum Data Path at Slow Process Corner: XLXI_106/XLXI_1/B to XLXI_106/XLXI_1/A
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X20Y35.BMUX    Tshcko                1.043   XLXN_431<7>
-                                                       XLXI_106/XLXI_23/B
-                                                       XLXI_106/XLXI_23/F7.A
-                                                       XLXI_106/XLXI_23/F8
-    SLICE_X22Y35.A2      net (fanout=1)        0.614   XLXN_431<7>
-    SLICE_X22Y35.AMUX    Tilo                  0.251   XLXI_7/XLXI_130/XLXI_1/XLXI_16/S3_D15_Mux_0_o
-                                                       XLXI_174/XLXI_16/Mmux_O11
-    SLICE_X22Y35.D5      net (fanout=1)        0.232   XLXI_174/o7
-    SLICE_X22Y35.BMUX    Topdb                 0.366   XLXI_7/XLXI_130/XLXI_1/XLXI_16/S3_D15_Mux_0_o
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_16/Mmux_S3_D15_Mux_0_o_6
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_16/Mmux_S3_D15_Mux_0_o_4_f7
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_16/Mmux_S3_D15_Mux_0_o_2_f8
-    SLICE_X13Y35.B4      net (fanout=1)        0.921   XLXI_7/XLXI_130/XLXI_1/XLXI_16/S3_D15_Mux_0_o
-    SLICE_X13Y35.B       Tilo                  0.259   XLXI_7/XLXI_130/XLXI_1/o7
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_16/Mmux_O11
-    SLICE_X19Y33.C6      net (fanout=22)       0.991   XLXI_7/XLXI_130/XLXI_1/o7
-    SLICE_X19Y33.C       Tilo                  0.259   XLXI_7/r3_o<7>
-                                                       XLXI_180
-    SLICE_X22Y36.A5      net (fanout=11)       1.016   port_selected
-    SLICE_X22Y36.AMUX    Tilo                  0.251   XLXI_7/XLXI_130/XLXI_1/XLXI_15/S3_D15_Mux_0_o
-                                                       XLXI_174/XLXI_15/Mmux_O11
-    SLICE_X22Y36.D5      net (fanout=1)        0.232   XLXI_174/o2
-    SLICE_X22Y36.BMUX    Topdb                 0.366   XLXI_7/XLXI_130/XLXI_1/XLXI_15/S3_D15_Mux_0_o
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_15/Mmux_S3_D15_Mux_0_o_6
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_15/Mmux_S3_D15_Mux_0_o_4_f7
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_15/Mmux_S3_D15_Mux_0_o_2_f8
-    SLICE_X17Y34.B3      net (fanout=1)        0.876   XLXI_7/XLXI_130/XLXI_1/XLXI_15/S3_D15_Mux_0_o
-    SLICE_X17Y34.B       Tilo                  0.259   XLXI_7/iar_o<7>
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_15/Mmux_O11
-    SLICE_X20Y36.DX      net (fanout=22)       1.176   XLXI_7/XLXI_130/XLXI_1/o2
-    SLICE_X20Y36.CLK     Tds                   0.585   XLXN_431<2>
-                                                       XLXI_106/XLXI_18/A
+    SLICE_X20Y38.BMUX    Tshcko                1.043   XLXN_431<0>
+                                                       XLXI_106/XLXI_1/B
+                                                       XLXI_106/XLXI_1/F7.A
+                                                       XLXI_106/XLXI_1/F8
+    SLICE_X20Y36.A3      net (fanout=1)        0.523   XLXN_431<0>
+    SLICE_X20Y36.AMUX    Tilo                  0.261   XLXI_7/XLXI_130/XLXI_1/XLXI_1/S3_D15_Mux_0_o
+                                                       XLXI_174/XLXI_1/Mmux_O11
+    SLICE_X20Y36.D5      net (fanout=1)        0.223   XLXI_174/o0
+    SLICE_X20Y36.BMUX    Topdb                 0.393   XLXI_7/XLXI_130/XLXI_1/XLXI_1/S3_D15_Mux_0_o
+                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_1/Mmux_S3_D15_Mux_0_o_6
+                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_1/Mmux_S3_D15_Mux_0_o_4_f7
+                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_1/Mmux_S3_D15_Mux_0_o_2_f8
+    SLICE_X15Y34.B3      net (fanout=1)        0.876   XLXI_7/XLXI_130/XLXI_1/XLXI_1/S3_D15_Mux_0_o
+    SLICE_X15Y34.B       Tilo                  0.259   XLXI_7/XLXI_130/XLXI_1/o1
+                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_1/Mmux_O11
+    SLICE_X20Y38.DX      net (fanout=21)       1.651   XLXI_7/XLXI_130/XLXI_1/o0
+    SLICE_X20Y38.CLK     Tds                   0.585   XLXN_431<0>
+                                                       XLXI_106/XLXI_1/A
     -------------------------------------------------  ---------------------------
-    Total                                      9.697ns (3.639ns logic, 6.058ns route)
-                                                       (37.5% logic, 62.5% route)
+    Total                                      5.814ns (2.541ns logic, 3.273ns route)
+                                                       (43.7% logic, 56.3% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point XLXI_106/XLXI_18/B (SLICE_X20Y36.DX), 16 paths
+Paths for end point XLXI_106/XLXI_19/A (SLICE_X20Y40.DX), 4 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     10.493ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               XLXI_106/XLXI_23/C (RAM)
-  Destination:          XLXI_106/XLXI_18/B (RAM)
+Slack (setup path):     14.129ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_106/XLXI_19/C (RAM)
+  Destination:          XLXI_106/XLXI_19/A (RAM)
   Requirement:          20.000ns
-  Data Path Delay:      9.461ns (Levels of Logic = 7)
-  Clock Path Skew:      -0.011ns (0.149 - 0.160)
+  Data Path Delay:      5.836ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
   Source Clock:         in_clk_BUFGP rising at 0.000ns
   Destination Clock:    in_clk_BUFGP rising at 20.000ns
   Clock Uncertainty:    0.035ns
@@ -248,53 +185,39 @@ Slack (setup path):     10.493ns (requirement - (data path - clock path skew + u
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: XLXI_106/XLXI_23/C to XLXI_106/XLXI_18/B
+  Maximum Data Path at Slow Process Corner: XLXI_106/XLXI_19/C to XLXI_106/XLXI_19/A
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X20Y35.BMUX    Tshcko                1.084   XLXN_431<7>
-                                                       XLXI_106/XLXI_23/C
-                                                       XLXI_106/XLXI_23/F7.B
-                                                       XLXI_106/XLXI_23/F8
-    SLICE_X22Y35.A2      net (fanout=1)        0.614   XLXN_431<7>
-    SLICE_X22Y35.AMUX    Tilo                  0.251   XLXI_7/XLXI_130/XLXI_1/XLXI_16/S3_D15_Mux_0_o
-                                                       XLXI_174/XLXI_16/Mmux_O11
-    SLICE_X22Y35.D5      net (fanout=1)        0.232   XLXI_174/o7
-    SLICE_X22Y35.BMUX    Topdb                 0.366   XLXI_7/XLXI_130/XLXI_1/XLXI_16/S3_D15_Mux_0_o
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_16/Mmux_S3_D15_Mux_0_o_6
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_16/Mmux_S3_D15_Mux_0_o_4_f7
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_16/Mmux_S3_D15_Mux_0_o_2_f8
-    SLICE_X13Y35.B4      net (fanout=1)        0.921   XLXI_7/XLXI_130/XLXI_1/XLXI_16/S3_D15_Mux_0_o
-    SLICE_X13Y35.B       Tilo                  0.259   XLXI_7/XLXI_130/XLXI_1/o7
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_16/Mmux_O11
-    SLICE_X19Y33.C6      net (fanout=22)       0.991   XLXI_7/XLXI_130/XLXI_1/o7
-    SLICE_X19Y33.C       Tilo                  0.259   XLXI_7/r3_o<7>
-                                                       XLXI_180
-    SLICE_X22Y36.A5      net (fanout=11)       1.016   port_selected
-    SLICE_X22Y36.AMUX    Tilo                  0.251   XLXI_7/XLXI_130/XLXI_1/XLXI_15/S3_D15_Mux_0_o
-                                                       XLXI_174/XLXI_15/Mmux_O11
-    SLICE_X22Y36.D5      net (fanout=1)        0.232   XLXI_174/o2
-    SLICE_X22Y36.BMUX    Topdb                 0.366   XLXI_7/XLXI_130/XLXI_1/XLXI_15/S3_D15_Mux_0_o
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_15/Mmux_S3_D15_Mux_0_o_6
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_15/Mmux_S3_D15_Mux_0_o_4_f7
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_15/Mmux_S3_D15_Mux_0_o_2_f8
-    SLICE_X17Y34.B3      net (fanout=1)        0.876   XLXI_7/XLXI_130/XLXI_1/XLXI_15/S3_D15_Mux_0_o
-    SLICE_X17Y34.B       Tilo                  0.259   XLXI_7/iar_o<7>
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_15/Mmux_O11
-    SLICE_X20Y36.DX      net (fanout=22)       1.176   XLXI_7/XLXI_130/XLXI_1/o2
-    SLICE_X20Y36.CLK     Tds                   0.308   XLXN_431<2>
-                                                       XLXI_106/XLXI_18/B
+    SLICE_X20Y40.BMUX    Tshcko                1.084   XLXN_431<3>
+                                                       XLXI_106/XLXI_19/C
+                                                       XLXI_106/XLXI_19/F7.B
+                                                       XLXI_106/XLXI_19/F8
+    SLICE_X20Y37.A2      net (fanout=1)        0.827   XLXN_431<3>
+    SLICE_X20Y37.AMUX    Tilo                  0.261   XLXI_7/XLXI_130/XLXI_1/XLXI_17/S3_D15_Mux_0_o
+                                                       XLXI_174/XLXI_17/Mmux_O11
+    SLICE_X20Y37.D5      net (fanout=1)        0.223   XLXI_174/o3
+    SLICE_X20Y37.BMUX    Topdb                 0.393   XLXI_7/XLXI_130/XLXI_1/XLXI_17/S3_D15_Mux_0_o
+                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_17/Mmux_S3_D15_Mux_0_o_6
+                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_17/Mmux_S3_D15_Mux_0_o_4_f7
+                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_17/Mmux_S3_D15_Mux_0_o_2_f8
+    SLICE_X19Y34.B6      net (fanout=1)        0.630   XLXI_7/XLXI_130/XLXI_1/XLXI_17/S3_D15_Mux_0_o
+    SLICE_X19Y34.B       Tilo                  0.259   XLXI_7/XLXI_130/XLXI_1/o3
+                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_17/Mmux_O11
+    SLICE_X20Y40.DX      net (fanout=22)       1.574   XLXI_7/XLXI_130/XLXI_1/o3
+    SLICE_X20Y40.CLK     Tds                   0.585   XLXN_431<3>
+                                                       XLXI_106/XLXI_19/A
     -------------------------------------------------  ---------------------------
-    Total                                      9.461ns (3.403ns logic, 6.058ns route)
-                                                       (36.0% logic, 64.0% route)
+    Total                                      5.836ns (2.582ns logic, 3.254ns route)
+                                                       (44.2% logic, 55.8% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     10.520ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               XLXI_106/XLXI_23/D (RAM)
-  Destination:          XLXI_106/XLXI_18/B (RAM)
+Slack (setup path):     14.156ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_106/XLXI_19/D (RAM)
+  Destination:          XLXI_106/XLXI_19/A (RAM)
   Requirement:          20.000ns
-  Data Path Delay:      9.434ns (Levels of Logic = 7)
-  Clock Path Skew:      -0.011ns (0.149 - 0.160)
+  Data Path Delay:      5.809ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
   Source Clock:         in_clk_BUFGP rising at 0.000ns
   Destination Clock:    in_clk_BUFGP rising at 20.000ns
   Clock Uncertainty:    0.035ns
@@ -305,53 +228,39 @@ Slack (setup path):     10.520ns (requirement - (data path - clock path skew + u
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: XLXI_106/XLXI_23/D to XLXI_106/XLXI_18/B
+  Maximum Data Path at Slow Process Corner: XLXI_106/XLXI_19/D to XLXI_106/XLXI_19/A
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X20Y35.BMUX    Tshcko                1.057   XLXN_431<7>
-                                                       XLXI_106/XLXI_23/D
-                                                       XLXI_106/XLXI_23/F7.B
-                                                       XLXI_106/XLXI_23/F8
-    SLICE_X22Y35.A2      net (fanout=1)        0.614   XLXN_431<7>
-    SLICE_X22Y35.AMUX    Tilo                  0.251   XLXI_7/XLXI_130/XLXI_1/XLXI_16/S3_D15_Mux_0_o
-                                                       XLXI_174/XLXI_16/Mmux_O11
-    SLICE_X22Y35.D5      net (fanout=1)        0.232   XLXI_174/o7
-    SLICE_X22Y35.BMUX    Topdb                 0.366   XLXI_7/XLXI_130/XLXI_1/XLXI_16/S3_D15_Mux_0_o
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_16/Mmux_S3_D15_Mux_0_o_6
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_16/Mmux_S3_D15_Mux_0_o_4_f7
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_16/Mmux_S3_D15_Mux_0_o_2_f8
-    SLICE_X13Y35.B4      net (fanout=1)        0.921   XLXI_7/XLXI_130/XLXI_1/XLXI_16/S3_D15_Mux_0_o
-    SLICE_X13Y35.B       Tilo                  0.259   XLXI_7/XLXI_130/XLXI_1/o7
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_16/Mmux_O11
-    SLICE_X19Y33.C6      net (fanout=22)       0.991   XLXI_7/XLXI_130/XLXI_1/o7
-    SLICE_X19Y33.C       Tilo                  0.259   XLXI_7/r3_o<7>
-                                                       XLXI_180
-    SLICE_X22Y36.A5      net (fanout=11)       1.016   port_selected
-    SLICE_X22Y36.AMUX    Tilo                  0.251   XLXI_7/XLXI_130/XLXI_1/XLXI_15/S3_D15_Mux_0_o
-                                                       XLXI_174/XLXI_15/Mmux_O11
-    SLICE_X22Y36.D5      net (fanout=1)        0.232   XLXI_174/o2
-    SLICE_X22Y36.BMUX    Topdb                 0.366   XLXI_7/XLXI_130/XLXI_1/XLXI_15/S3_D15_Mux_0_o
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_15/Mmux_S3_D15_Mux_0_o_6
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_15/Mmux_S3_D15_Mux_0_o_4_f7
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_15/Mmux_S3_D15_Mux_0_o_2_f8
-    SLICE_X17Y34.B3      net (fanout=1)        0.876   XLXI_7/XLXI_130/XLXI_1/XLXI_15/S3_D15_Mux_0_o
-    SLICE_X17Y34.B       Tilo                  0.259   XLXI_7/iar_o<7>
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_15/Mmux_O11
-    SLICE_X20Y36.DX      net (fanout=22)       1.176   XLXI_7/XLXI_130/XLXI_1/o2
-    SLICE_X20Y36.CLK     Tds                   0.308   XLXN_431<2>
-                                                       XLXI_106/XLXI_18/B
+    SLICE_X20Y40.BMUX    Tshcko                1.057   XLXN_431<3>
+                                                       XLXI_106/XLXI_19/D
+                                                       XLXI_106/XLXI_19/F7.B
+                                                       XLXI_106/XLXI_19/F8
+    SLICE_X20Y37.A2      net (fanout=1)        0.827   XLXN_431<3>
+    SLICE_X20Y37.AMUX    Tilo                  0.261   XLXI_7/XLXI_130/XLXI_1/XLXI_17/S3_D15_Mux_0_o
+                                                       XLXI_174/XLXI_17/Mmux_O11
+    SLICE_X20Y37.D5      net (fanout=1)        0.223   XLXI_174/o3
+    SLICE_X20Y37.BMUX    Topdb                 0.393   XLXI_7/XLXI_130/XLXI_1/XLXI_17/S3_D15_Mux_0_o
+                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_17/Mmux_S3_D15_Mux_0_o_6
+                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_17/Mmux_S3_D15_Mux_0_o_4_f7
+                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_17/Mmux_S3_D15_Mux_0_o_2_f8
+    SLICE_X19Y34.B6      net (fanout=1)        0.630   XLXI_7/XLXI_130/XLXI_1/XLXI_17/S3_D15_Mux_0_o
+    SLICE_X19Y34.B       Tilo                  0.259   XLXI_7/XLXI_130/XLXI_1/o3
+                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_17/Mmux_O11
+    SLICE_X20Y40.DX      net (fanout=22)       1.574   XLXI_7/XLXI_130/XLXI_1/o3
+    SLICE_X20Y40.CLK     Tds                   0.585   XLXN_431<3>
+                                                       XLXI_106/XLXI_19/A
     -------------------------------------------------  ---------------------------
-    Total                                      9.434ns (3.376ns logic, 6.058ns route)
-                                                       (35.8% logic, 64.2% route)
+    Total                                      5.809ns (2.555ns logic, 3.254ns route)
+                                                       (44.0% logic, 56.0% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     10.534ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               XLXI_106/XLXI_23/B (RAM)
-  Destination:          XLXI_106/XLXI_18/B (RAM)
+Slack (setup path):     14.170ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_106/XLXI_19/B (RAM)
+  Destination:          XLXI_106/XLXI_19/A (RAM)
   Requirement:          20.000ns
-  Data Path Delay:      9.420ns (Levels of Logic = 7)
-  Clock Path Skew:      -0.011ns (0.149 - 0.160)
+  Data Path Delay:      5.795ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
   Source Clock:         in_clk_BUFGP rising at 0.000ns
   Destination Clock:    in_clk_BUFGP rising at 20.000ns
   Clock Uncertainty:    0.035ns
@@ -362,56 +271,42 @@ Slack (setup path):     10.534ns (requirement - (data path - clock path skew + u
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: XLXI_106/XLXI_23/B to XLXI_106/XLXI_18/B
+  Maximum Data Path at Slow Process Corner: XLXI_106/XLXI_19/B to XLXI_106/XLXI_19/A
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X20Y35.BMUX    Tshcko                1.043   XLXN_431<7>
-                                                       XLXI_106/XLXI_23/B
-                                                       XLXI_106/XLXI_23/F7.A
-                                                       XLXI_106/XLXI_23/F8
-    SLICE_X22Y35.A2      net (fanout=1)        0.614   XLXN_431<7>
-    SLICE_X22Y35.AMUX    Tilo                  0.251   XLXI_7/XLXI_130/XLXI_1/XLXI_16/S3_D15_Mux_0_o
-                                                       XLXI_174/XLXI_16/Mmux_O11
-    SLICE_X22Y35.D5      net (fanout=1)        0.232   XLXI_174/o7
-    SLICE_X22Y35.BMUX    Topdb                 0.366   XLXI_7/XLXI_130/XLXI_1/XLXI_16/S3_D15_Mux_0_o
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_16/Mmux_S3_D15_Mux_0_o_6
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_16/Mmux_S3_D15_Mux_0_o_4_f7
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_16/Mmux_S3_D15_Mux_0_o_2_f8
-    SLICE_X13Y35.B4      net (fanout=1)        0.921   XLXI_7/XLXI_130/XLXI_1/XLXI_16/S3_D15_Mux_0_o
-    SLICE_X13Y35.B       Tilo                  0.259   XLXI_7/XLXI_130/XLXI_1/o7
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_16/Mmux_O11
-    SLICE_X19Y33.C6      net (fanout=22)       0.991   XLXI_7/XLXI_130/XLXI_1/o7
-    SLICE_X19Y33.C       Tilo                  0.259   XLXI_7/r3_o<7>
-                                                       XLXI_180
-    SLICE_X22Y36.A5      net (fanout=11)       1.016   port_selected
-    SLICE_X22Y36.AMUX    Tilo                  0.251   XLXI_7/XLXI_130/XLXI_1/XLXI_15/S3_D15_Mux_0_o
-                                                       XLXI_174/XLXI_15/Mmux_O11
-    SLICE_X22Y36.D5      net (fanout=1)        0.232   XLXI_174/o2
-    SLICE_X22Y36.BMUX    Topdb                 0.366   XLXI_7/XLXI_130/XLXI_1/XLXI_15/S3_D15_Mux_0_o
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_15/Mmux_S3_D15_Mux_0_o_6
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_15/Mmux_S3_D15_Mux_0_o_4_f7
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_15/Mmux_S3_D15_Mux_0_o_2_f8
-    SLICE_X17Y34.B3      net (fanout=1)        0.876   XLXI_7/XLXI_130/XLXI_1/XLXI_15/S3_D15_Mux_0_o
-    SLICE_X17Y34.B       Tilo                  0.259   XLXI_7/iar_o<7>
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_15/Mmux_O11
-    SLICE_X20Y36.DX      net (fanout=22)       1.176   XLXI_7/XLXI_130/XLXI_1/o2
-    SLICE_X20Y36.CLK     Tds                   0.308   XLXN_431<2>
-                                                       XLXI_106/XLXI_18/B
+    SLICE_X20Y40.BMUX    Tshcko                1.043   XLXN_431<3>
+                                                       XLXI_106/XLXI_19/B
+                                                       XLXI_106/XLXI_19/F7.A
+                                                       XLXI_106/XLXI_19/F8
+    SLICE_X20Y37.A2      net (fanout=1)        0.827   XLXN_431<3>
+    SLICE_X20Y37.AMUX    Tilo                  0.261   XLXI_7/XLXI_130/XLXI_1/XLXI_17/S3_D15_Mux_0_o
+                                                       XLXI_174/XLXI_17/Mmux_O11
+    SLICE_X20Y37.D5      net (fanout=1)        0.223   XLXI_174/o3
+    SLICE_X20Y37.BMUX    Topdb                 0.393   XLXI_7/XLXI_130/XLXI_1/XLXI_17/S3_D15_Mux_0_o
+                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_17/Mmux_S3_D15_Mux_0_o_6
+                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_17/Mmux_S3_D15_Mux_0_o_4_f7
+                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_17/Mmux_S3_D15_Mux_0_o_2_f8
+    SLICE_X19Y34.B6      net (fanout=1)        0.630   XLXI_7/XLXI_130/XLXI_1/XLXI_17/S3_D15_Mux_0_o
+    SLICE_X19Y34.B       Tilo                  0.259   XLXI_7/XLXI_130/XLXI_1/o3
+                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_17/Mmux_O11
+    SLICE_X20Y40.DX      net (fanout=22)       1.574   XLXI_7/XLXI_130/XLXI_1/o3
+    SLICE_X20Y40.CLK     Tds                   0.585   XLXN_431<3>
+                                                       XLXI_106/XLXI_19/A
     -------------------------------------------------  ---------------------------
-    Total                                      9.420ns (3.362ns logic, 6.058ns route)
-                                                       (35.7% logic, 64.3% route)
+    Total                                      5.795ns (2.541ns logic, 3.254ns route)
+                                                       (43.8% logic, 56.2% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point XLXI_106/XLXI_18/C (SLICE_X20Y36.DX), 16 paths
+Paths for end point XLXI_106/XLXI_17/A (SLICE_X20Y31.DX), 4 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     10.530ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               XLXI_106/XLXI_23/C (RAM)
-  Destination:          XLXI_106/XLXI_18/C (RAM)
+Slack (setup path):     14.223ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_106/XLXI_17/C (RAM)
+  Destination:          XLXI_106/XLXI_17/A (RAM)
   Requirement:          20.000ns
-  Data Path Delay:      9.424ns (Levels of Logic = 7)
-  Clock Path Skew:      -0.011ns (0.149 - 0.160)
+  Data Path Delay:      5.742ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
   Source Clock:         in_clk_BUFGP rising at 0.000ns
   Destination Clock:    in_clk_BUFGP rising at 20.000ns
   Clock Uncertainty:    0.035ns
@@ -422,53 +317,39 @@ Slack (setup path):     10.530ns (requirement - (data path - clock path skew + u
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: XLXI_106/XLXI_23/C to XLXI_106/XLXI_18/C
+  Maximum Data Path at Slow Process Corner: XLXI_106/XLXI_17/C to XLXI_106/XLXI_17/A
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X20Y35.BMUX    Tshcko                1.084   XLXN_431<7>
-                                                       XLXI_106/XLXI_23/C
-                                                       XLXI_106/XLXI_23/F7.B
-                                                       XLXI_106/XLXI_23/F8
-    SLICE_X22Y35.A2      net (fanout=1)        0.614   XLXN_431<7>
-    SLICE_X22Y35.AMUX    Tilo                  0.251   XLXI_7/XLXI_130/XLXI_1/XLXI_16/S3_D15_Mux_0_o
-                                                       XLXI_174/XLXI_16/Mmux_O11
-    SLICE_X22Y35.D5      net (fanout=1)        0.232   XLXI_174/o7
-    SLICE_X22Y35.BMUX    Topdb                 0.366   XLXI_7/XLXI_130/XLXI_1/XLXI_16/S3_D15_Mux_0_o
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_16/Mmux_S3_D15_Mux_0_o_6
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_16/Mmux_S3_D15_Mux_0_o_4_f7
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_16/Mmux_S3_D15_Mux_0_o_2_f8
-    SLICE_X13Y35.B4      net (fanout=1)        0.921   XLXI_7/XLXI_130/XLXI_1/XLXI_16/S3_D15_Mux_0_o
-    SLICE_X13Y35.B       Tilo                  0.259   XLXI_7/XLXI_130/XLXI_1/o7
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_16/Mmux_O11
-    SLICE_X19Y33.C6      net (fanout=22)       0.991   XLXI_7/XLXI_130/XLXI_1/o7
-    SLICE_X19Y33.C       Tilo                  0.259   XLXI_7/r3_o<7>
-                                                       XLXI_180
-    SLICE_X22Y36.A5      net (fanout=11)       1.016   port_selected
-    SLICE_X22Y36.AMUX    Tilo                  0.251   XLXI_7/XLXI_130/XLXI_1/XLXI_15/S3_D15_Mux_0_o
-                                                       XLXI_174/XLXI_15/Mmux_O11
-    SLICE_X22Y36.D5      net (fanout=1)        0.232   XLXI_174/o2
-    SLICE_X22Y36.BMUX    Topdb                 0.366   XLXI_7/XLXI_130/XLXI_1/XLXI_15/S3_D15_Mux_0_o
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_15/Mmux_S3_D15_Mux_0_o_6
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_15/Mmux_S3_D15_Mux_0_o_4_f7
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_15/Mmux_S3_D15_Mux_0_o_2_f8
-    SLICE_X17Y34.B3      net (fanout=1)        0.876   XLXI_7/XLXI_130/XLXI_1/XLXI_15/S3_D15_Mux_0_o
-    SLICE_X17Y34.B       Tilo                  0.259   XLXI_7/iar_o<7>
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_15/Mmux_O11
-    SLICE_X20Y36.DX      net (fanout=22)       1.176   XLXI_7/XLXI_130/XLXI_1/o2
-    SLICE_X20Y36.CLK     Tds                   0.271   XLXN_431<2>
-                                                       XLXI_106/XLXI_18/C
+    SLICE_X20Y31.BMUX    Tshcko                1.084   XLXN_431<1>
+                                                       XLXI_106/XLXI_17/C
+                                                       XLXI_106/XLXI_17/F7.B
+                                                       XLXI_106/XLXI_17/F8
+    SLICE_X20Y34.A3      net (fanout=1)        0.702   XLXN_431<1>
+    SLICE_X20Y34.AMUX    Tilo                  0.261   XLXI_7/XLXI_130/XLXI_1/XLXI_13/S3_D15_Mux_0_o
+                                                       XLXI_174/XLXI_13/Mmux_O11
+    SLICE_X20Y34.D5      net (fanout=1)        0.223   XLXI_174/o1
+    SLICE_X20Y34.BMUX    Topdb                 0.393   XLXI_7/XLXI_130/XLXI_1/XLXI_13/S3_D15_Mux_0_o
+                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_13/Mmux_S3_D15_Mux_0_o_6
+                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_13/Mmux_S3_D15_Mux_0_o_4_f7
+                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_13/Mmux_S3_D15_Mux_0_o_2_f8
+    SLICE_X15Y34.D2      net (fanout=1)        1.218   XLXI_7/XLXI_130/XLXI_1/XLXI_13/S3_D15_Mux_0_o
+    SLICE_X15Y34.D       Tilo                  0.259   XLXI_7/XLXI_130/XLXI_1/o1
+                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_13/Mmux_O11
+    SLICE_X20Y31.DX      net (fanout=22)       1.017   XLXI_7/XLXI_130/XLXI_1/o1
+    SLICE_X20Y31.CLK     Tds                   0.585   XLXN_431<1>
+                                                       XLXI_106/XLXI_17/A
     -------------------------------------------------  ---------------------------
-    Total                                      9.424ns (3.366ns logic, 6.058ns route)
-                                                       (35.7% logic, 64.3% route)
+    Total                                      5.742ns (2.582ns logic, 3.160ns route)
+                                                       (45.0% logic, 55.0% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     10.557ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               XLXI_106/XLXI_23/D (RAM)
-  Destination:          XLXI_106/XLXI_18/C (RAM)
+Slack (setup path):     14.250ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_106/XLXI_17/D (RAM)
+  Destination:          XLXI_106/XLXI_17/A (RAM)
   Requirement:          20.000ns
-  Data Path Delay:      9.397ns (Levels of Logic = 7)
-  Clock Path Skew:      -0.011ns (0.149 - 0.160)
+  Data Path Delay:      5.715ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
   Source Clock:         in_clk_BUFGP rising at 0.000ns
   Destination Clock:    in_clk_BUFGP rising at 20.000ns
   Clock Uncertainty:    0.035ns
@@ -479,53 +360,39 @@ Slack (setup path):     10.557ns (requirement - (data path - clock path skew + u
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: XLXI_106/XLXI_23/D to XLXI_106/XLXI_18/C
+  Maximum Data Path at Slow Process Corner: XLXI_106/XLXI_17/D to XLXI_106/XLXI_17/A
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X20Y35.BMUX    Tshcko                1.057   XLXN_431<7>
-                                                       XLXI_106/XLXI_23/D
-                                                       XLXI_106/XLXI_23/F7.B
-                                                       XLXI_106/XLXI_23/F8
-    SLICE_X22Y35.A2      net (fanout=1)        0.614   XLXN_431<7>
-    SLICE_X22Y35.AMUX    Tilo                  0.251   XLXI_7/XLXI_130/XLXI_1/XLXI_16/S3_D15_Mux_0_o
-                                                       XLXI_174/XLXI_16/Mmux_O11
-    SLICE_X22Y35.D5      net (fanout=1)        0.232   XLXI_174/o7
-    SLICE_X22Y35.BMUX    Topdb                 0.366   XLXI_7/XLXI_130/XLXI_1/XLXI_16/S3_D15_Mux_0_o
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_16/Mmux_S3_D15_Mux_0_o_6
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_16/Mmux_S3_D15_Mux_0_o_4_f7
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_16/Mmux_S3_D15_Mux_0_o_2_f8
-    SLICE_X13Y35.B4      net (fanout=1)        0.921   XLXI_7/XLXI_130/XLXI_1/XLXI_16/S3_D15_Mux_0_o
-    SLICE_X13Y35.B       Tilo                  0.259   XLXI_7/XLXI_130/XLXI_1/o7
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_16/Mmux_O11
-    SLICE_X19Y33.C6      net (fanout=22)       0.991   XLXI_7/XLXI_130/XLXI_1/o7
-    SLICE_X19Y33.C       Tilo                  0.259   XLXI_7/r3_o<7>
-                                                       XLXI_180
-    SLICE_X22Y36.A5      net (fanout=11)       1.016   port_selected
-    SLICE_X22Y36.AMUX    Tilo                  0.251   XLXI_7/XLXI_130/XLXI_1/XLXI_15/S3_D15_Mux_0_o
-                                                       XLXI_174/XLXI_15/Mmux_O11
-    SLICE_X22Y36.D5      net (fanout=1)        0.232   XLXI_174/o2
-    SLICE_X22Y36.BMUX    Topdb                 0.366   XLXI_7/XLXI_130/XLXI_1/XLXI_15/S3_D15_Mux_0_o
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_15/Mmux_S3_D15_Mux_0_o_6
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_15/Mmux_S3_D15_Mux_0_o_4_f7
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_15/Mmux_S3_D15_Mux_0_o_2_f8
-    SLICE_X17Y34.B3      net (fanout=1)        0.876   XLXI_7/XLXI_130/XLXI_1/XLXI_15/S3_D15_Mux_0_o
-    SLICE_X17Y34.B       Tilo                  0.259   XLXI_7/iar_o<7>
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_15/Mmux_O11
-    SLICE_X20Y36.DX      net (fanout=22)       1.176   XLXI_7/XLXI_130/XLXI_1/o2
-    SLICE_X20Y36.CLK     Tds                   0.271   XLXN_431<2>
-                                                       XLXI_106/XLXI_18/C
+    SLICE_X20Y31.BMUX    Tshcko                1.057   XLXN_431<1>
+                                                       XLXI_106/XLXI_17/D
+                                                       XLXI_106/XLXI_17/F7.B
+                                                       XLXI_106/XLXI_17/F8
+    SLICE_X20Y34.A3      net (fanout=1)        0.702   XLXN_431<1>
+    SLICE_X20Y34.AMUX    Tilo                  0.261   XLXI_7/XLXI_130/XLXI_1/XLXI_13/S3_D15_Mux_0_o
+                                                       XLXI_174/XLXI_13/Mmux_O11
+    SLICE_X20Y34.D5      net (fanout=1)        0.223   XLXI_174/o1
+    SLICE_X20Y34.BMUX    Topdb                 0.393   XLXI_7/XLXI_130/XLXI_1/XLXI_13/S3_D15_Mux_0_o
+                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_13/Mmux_S3_D15_Mux_0_o_6
+                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_13/Mmux_S3_D15_Mux_0_o_4_f7
+                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_13/Mmux_S3_D15_Mux_0_o_2_f8
+    SLICE_X15Y34.D2      net (fanout=1)        1.218   XLXI_7/XLXI_130/XLXI_1/XLXI_13/S3_D15_Mux_0_o
+    SLICE_X15Y34.D       Tilo                  0.259   XLXI_7/XLXI_130/XLXI_1/o1
+                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_13/Mmux_O11
+    SLICE_X20Y31.DX      net (fanout=22)       1.017   XLXI_7/XLXI_130/XLXI_1/o1
+    SLICE_X20Y31.CLK     Tds                   0.585   XLXN_431<1>
+                                                       XLXI_106/XLXI_17/A
     -------------------------------------------------  ---------------------------
-    Total                                      9.397ns (3.339ns logic, 6.058ns route)
-                                                       (35.5% logic, 64.5% route)
+    Total                                      5.715ns (2.555ns logic, 3.160ns route)
+                                                       (44.7% logic, 55.3% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     10.571ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               XLXI_106/XLXI_23/B (RAM)
-  Destination:          XLXI_106/XLXI_18/C (RAM)
+Slack (setup path):     14.264ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_106/XLXI_17/B (RAM)
+  Destination:          XLXI_106/XLXI_17/A (RAM)
   Requirement:          20.000ns
-  Data Path Delay:      9.383ns (Levels of Logic = 7)
-  Clock Path Skew:      -0.011ns (0.149 - 0.160)
+  Data Path Delay:      5.701ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
   Source Clock:         in_clk_BUFGP rising at 0.000ns
   Destination Clock:    in_clk_BUFGP rising at 20.000ns
   Clock Uncertainty:    0.035ns
@@ -536,135 +403,120 @@ Slack (setup path):     10.571ns (requirement - (data path - clock path skew + u
     Discrete Jitter (DJ):       0.000ns
     Phase Error (PE):           0.000ns
 
-  Maximum Data Path at Slow Process Corner: XLXI_106/XLXI_23/B to XLXI_106/XLXI_18/C
+  Maximum Data Path at Slow Process Corner: XLXI_106/XLXI_17/B to XLXI_106/XLXI_17/A
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X20Y35.BMUX    Tshcko                1.043   XLXN_431<7>
-                                                       XLXI_106/XLXI_23/B
-                                                       XLXI_106/XLXI_23/F7.A
-                                                       XLXI_106/XLXI_23/F8
-    SLICE_X22Y35.A2      net (fanout=1)        0.614   XLXN_431<7>
-    SLICE_X22Y35.AMUX    Tilo                  0.251   XLXI_7/XLXI_130/XLXI_1/XLXI_16/S3_D15_Mux_0_o
-                                                       XLXI_174/XLXI_16/Mmux_O11
-    SLICE_X22Y35.D5      net (fanout=1)        0.232   XLXI_174/o7
-    SLICE_X22Y35.BMUX    Topdb                 0.366   XLXI_7/XLXI_130/XLXI_1/XLXI_16/S3_D15_Mux_0_o
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_16/Mmux_S3_D15_Mux_0_o_6
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_16/Mmux_S3_D15_Mux_0_o_4_f7
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_16/Mmux_S3_D15_Mux_0_o_2_f8
-    SLICE_X13Y35.B4      net (fanout=1)        0.921   XLXI_7/XLXI_130/XLXI_1/XLXI_16/S3_D15_Mux_0_o
-    SLICE_X13Y35.B       Tilo                  0.259   XLXI_7/XLXI_130/XLXI_1/o7
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_16/Mmux_O11
-    SLICE_X19Y33.C6      net (fanout=22)       0.991   XLXI_7/XLXI_130/XLXI_1/o7
-    SLICE_X19Y33.C       Tilo                  0.259   XLXI_7/r3_o<7>
-                                                       XLXI_180
-    SLICE_X22Y36.A5      net (fanout=11)       1.016   port_selected
-    SLICE_X22Y36.AMUX    Tilo                  0.251   XLXI_7/XLXI_130/XLXI_1/XLXI_15/S3_D15_Mux_0_o
-                                                       XLXI_174/XLXI_15/Mmux_O11
-    SLICE_X22Y36.D5      net (fanout=1)        0.232   XLXI_174/o2
-    SLICE_X22Y36.BMUX    Topdb                 0.366   XLXI_7/XLXI_130/XLXI_1/XLXI_15/S3_D15_Mux_0_o
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_15/Mmux_S3_D15_Mux_0_o_6
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_15/Mmux_S3_D15_Mux_0_o_4_f7
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_15/Mmux_S3_D15_Mux_0_o_2_f8
-    SLICE_X17Y34.B3      net (fanout=1)        0.876   XLXI_7/XLXI_130/XLXI_1/XLXI_15/S3_D15_Mux_0_o
-    SLICE_X17Y34.B       Tilo                  0.259   XLXI_7/iar_o<7>
-                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_15/Mmux_O11
-    SLICE_X20Y36.DX      net (fanout=22)       1.176   XLXI_7/XLXI_130/XLXI_1/o2
-    SLICE_X20Y36.CLK     Tds                   0.271   XLXN_431<2>
-                                                       XLXI_106/XLXI_18/C
+    SLICE_X20Y31.BMUX    Tshcko                1.043   XLXN_431<1>
+                                                       XLXI_106/XLXI_17/B
+                                                       XLXI_106/XLXI_17/F7.A
+                                                       XLXI_106/XLXI_17/F8
+    SLICE_X20Y34.A3      net (fanout=1)        0.702   XLXN_431<1>
+    SLICE_X20Y34.AMUX    Tilo                  0.261   XLXI_7/XLXI_130/XLXI_1/XLXI_13/S3_D15_Mux_0_o
+                                                       XLXI_174/XLXI_13/Mmux_O11
+    SLICE_X20Y34.D5      net (fanout=1)        0.223   XLXI_174/o1
+    SLICE_X20Y34.BMUX    Topdb                 0.393   XLXI_7/XLXI_130/XLXI_1/XLXI_13/S3_D15_Mux_0_o
+                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_13/Mmux_S3_D15_Mux_0_o_6
+                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_13/Mmux_S3_D15_Mux_0_o_4_f7
+                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_13/Mmux_S3_D15_Mux_0_o_2_f8
+    SLICE_X15Y34.D2      net (fanout=1)        1.218   XLXI_7/XLXI_130/XLXI_1/XLXI_13/S3_D15_Mux_0_o
+    SLICE_X15Y34.D       Tilo                  0.259   XLXI_7/XLXI_130/XLXI_1/o1
+                                                       XLXI_7/XLXI_130/XLXI_1/XLXI_13/Mmux_O11
+    SLICE_X20Y31.DX      net (fanout=22)       1.017   XLXI_7/XLXI_130/XLXI_1/o1
+    SLICE_X20Y31.CLK     Tds                   0.585   XLXN_431<1>
+                                                       XLXI_106/XLXI_17/A
     -------------------------------------------------  ---------------------------
-    Total                                      9.383ns (3.325ns logic, 6.058ns route)
-                                                       (35.4% logic, 64.6% route)
+    Total                                      5.701ns (2.541ns logic, 3.160ns route)
+                                                       (44.6% logic, 55.4% route)
 
 --------------------------------------------------------------------------------
 
 Hold Paths: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
 --------------------------------------------------------------------------------
 
-Paths for end point XLXI_7/XLXI_927/XLXI_1/XLXI_1/COUNT_15 (SLICE_X2Y46.D6), 1 path
+Paths for end point XLXI_105/XLXI_2/usart_clk (SLICE_X13Y42.A6), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.463ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               XLXI_7/XLXI_927/XLXI_1/XLXI_1/COUNT_15 (FF)
-  Destination:          XLXI_7/XLXI_927/XLXI_1/XLXI_1/COUNT_15 (FF)
+Slack (hold path):      0.435ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               XLXI_105/XLXI_2/usart_clk (FF)
+  Destination:          XLXI_105/XLXI_2/usart_clk (FF)
   Requirement:          0.000ns
-  Data Path Delay:      0.463ns (Levels of Logic = 1)
+  Data Path Delay:      0.435ns (Levels of Logic = 1)
   Clock Path Skew:      0.000ns
   Source Clock:         in_clk_BUFGP rising at 20.000ns
   Destination Clock:    in_clk_BUFGP rising at 20.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path at Fast Process Corner: XLXI_7/XLXI_927/XLXI_1/XLXI_1/COUNT_15 to XLXI_7/XLXI_927/XLXI_1/XLXI_1/COUNT_15
+  Minimum Data Path at Fast Process Corner: XLXI_105/XLXI_2/usart_clk to XLXI_105/XLXI_2/usart_clk
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X2Y46.DQ       Tcko                  0.200   XLXI_7/XLXI_927/low<15>
-                                                       XLXI_7/XLXI_927/XLXI_1/XLXI_1/COUNT_15
-    SLICE_X2Y46.D6       net (fanout=3)        0.026   XLXI_7/XLXI_927/low<15>
-    SLICE_X2Y46.CLK      Tah         (-Th)    -0.237   XLXI_7/XLXI_927/low<15>
-                                                       XLXI_7/XLXI_927/low<15>_rt
-                                                       XLXI_7/XLXI_927/XLXI_1/XLXI_1/Mcount_COUNT_xor<15>
-                                                       XLXI_7/XLXI_927/XLXI_1/XLXI_1/COUNT_15
+    SLICE_X13Y42.AQ      Tcko                  0.198   XLXI_105/XLXI_2/usart_clk
+                                                       XLXI_105/XLXI_2/usart_clk
+    SLICE_X13Y42.A6      net (fanout=6)        0.022   XLXI_105/XLXI_2/usart_clk
+    SLICE_X13Y42.CLK     Tah         (-Th)    -0.215   XLXI_105/XLXI_2/usart_clk
+                                                       XLXI_105/XLXI_2/usart_clk_rstpot
+                                                       XLXI_105/XLXI_2/usart_clk
     -------------------------------------------------  ---------------------------
-    Total                                      0.463ns (0.437ns logic, 0.026ns route)
-                                                       (94.4% logic, 5.6% route)
+    Total                                      0.435ns (0.413ns logic, 0.022ns route)
+                                                       (94.9% logic, 5.1% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point XLXI_7/XLXI_931/XLXI_1/XLXI_1/COUNT_15 (SLICE_X10Y46.D6), 1 path
+Paths for end point XLXI_51/XLXI_2/COUNT_7 (SLICE_X14Y59.D6), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.463ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               XLXI_7/XLXI_931/XLXI_1/XLXI_1/COUNT_15 (FF)
-  Destination:          XLXI_7/XLXI_931/XLXI_1/XLXI_1/COUNT_15 (FF)
+Slack (hold path):      0.459ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               XLXI_51/XLXI_2/COUNT_7 (FF)
+  Destination:          XLXI_51/XLXI_2/COUNT_7 (FF)
   Requirement:          0.000ns
-  Data Path Delay:      0.463ns (Levels of Logic = 1)
+  Data Path Delay:      0.459ns (Levels of Logic = 1)
   Clock Path Skew:      0.000ns
   Source Clock:         in_clk_BUFGP rising at 20.000ns
   Destination Clock:    in_clk_BUFGP rising at 20.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path at Fast Process Corner: XLXI_7/XLXI_931/XLXI_1/XLXI_1/COUNT_15 to XLXI_7/XLXI_931/XLXI_1/XLXI_1/COUNT_15
+  Minimum Data Path at Fast Process Corner: XLXI_51/XLXI_2/COUNT_7 to XLXI_51/XLXI_2/COUNT_7
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X10Y46.DQ      Tcko                  0.200   XLXI_7/XLXI_931/XLXI_1/XLXI_1/COUNT<15>
-                                                       XLXI_7/XLXI_931/XLXI_1/XLXI_1/COUNT_15
-    SLICE_X10Y46.D6      net (fanout=2)        0.026   XLXI_7/XLXI_931/XLXI_1/XLXI_1/COUNT<15>
-    SLICE_X10Y46.CLK     Tah         (-Th)    -0.237   XLXI_7/XLXI_931/XLXI_1/XLXI_1/COUNT<15>
-                                                       XLXI_7/XLXI_931/XLXI_1/XLXI_1/COUNT<15>_rt
-                                                       XLXI_7/XLXI_931/XLXI_1/XLXI_1/Mcount_COUNT_xor<15>
-                                                       XLXI_7/XLXI_931/XLXI_1/XLXI_1/COUNT_15
+    SLICE_X14Y59.DQ      Tcko                  0.200   XLXI_51/db2<7>
+                                                       XLXI_51/XLXI_2/COUNT_7
+    SLICE_X14Y59.D6      net (fanout=2)        0.022   XLXI_51/db2<7>
+    SLICE_X14Y59.CLK     Tah         (-Th)    -0.237   XLXI_51/db2<7>
+                                                       XLXI_51/db2<7>_rt
+                                                       XLXI_51/XLXI_2/Mcount_COUNT_xor<7>
+                                                       XLXI_51/XLXI_2/COUNT_7
     -------------------------------------------------  ---------------------------
-    Total                                      0.463ns (0.437ns logic, 0.026ns route)
-                                                       (94.4% logic, 5.6% route)
+    Total                                      0.459ns (0.437ns logic, 0.022ns route)
+                                                       (95.2% logic, 4.8% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point XLXI_105/XLXI_2/usart_clock.periods_7 (SLICE_X14Y43.D6), 1 path
+Paths for end point XLXI_7/XLXI_927/XLXI_1/XLXI_2/COUNT_7 (SLICE_X2Y42.D6), 1 path
 --------------------------------------------------------------------------------
-Slack (hold path):      0.463ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               XLXI_105/XLXI_2/usart_clock.periods_7 (FF)
-  Destination:          XLXI_105/XLXI_2/usart_clock.periods_7 (FF)
+Slack (hold path):      0.459ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               XLXI_7/XLXI_927/XLXI_1/XLXI_2/COUNT_7 (FF)
+  Destination:          XLXI_7/XLXI_927/XLXI_1/XLXI_2/COUNT_7 (FF)
   Requirement:          0.000ns
-  Data Path Delay:      0.463ns (Levels of Logic = 1)
+  Data Path Delay:      0.459ns (Levels of Logic = 1)
   Clock Path Skew:      0.000ns
   Source Clock:         in_clk_BUFGP rising at 20.000ns
   Destination Clock:    in_clk_BUFGP rising at 20.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path at Fast Process Corner: XLXI_105/XLXI_2/usart_clock.periods_7 to XLXI_105/XLXI_2/usart_clock.periods_7
+  Minimum Data Path at Fast Process Corner: XLXI_7/XLXI_927/XLXI_1/XLXI_2/COUNT_7 to XLXI_7/XLXI_927/XLXI_1/XLXI_2/COUNT_7
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X14Y43.DQ      Tcko                  0.200   XLXI_105/XLXI_2/usart_clock.periods<7>
-                                                       XLXI_105/XLXI_2/usart_clock.periods_7
-    SLICE_X14Y43.D6      net (fanout=2)        0.026   XLXI_105/XLXI_2/usart_clock.periods<7>
-    SLICE_X14Y43.CLK     Tah         (-Th)    -0.237   XLXI_105/XLXI_2/usart_clock.periods<7>
-                                                       XLXI_105/XLXI_2/usart_clock.periods<7>_rt
-                                                       XLXI_105/XLXI_2/Mcount_usart_clock.periods_xor<7>
-                                                       XLXI_105/XLXI_2/usart_clock.periods_7
+    SLICE_X2Y42.DQ       Tcko                  0.200   XLXI_7/XLXI_927/high<7>
+                                                       XLXI_7/XLXI_927/XLXI_1/XLXI_2/COUNT_7
+    SLICE_X2Y42.D6       net (fanout=2)        0.022   XLXI_7/XLXI_927/high<7>
+    SLICE_X2Y42.CLK      Tah         (-Th)    -0.237   XLXI_7/XLXI_927/high<7>
+                                                       XLXI_7/XLXI_927/high<7>_rt
+                                                       XLXI_7/XLXI_927/XLXI_1/XLXI_2/Mcount_COUNT_xor<7>
+                                                       XLXI_7/XLXI_927/XLXI_1/XLXI_2/COUNT_7
     -------------------------------------------------  ---------------------------
-    Total                                      0.463ns (0.437ns logic, 0.026ns route)
-                                                       (94.4% logic, 5.6% route)
+    Total                                      0.459ns (0.437ns logic, 0.022ns route)
+                                                       (95.2% logic, 4.8% route)
 
 --------------------------------------------------------------------------------
 
@@ -681,17 +533,17 @@ Slack: 18.270ns (period - min period limit)
 Slack: 18.962ns (period - min period limit)
   Period: 20.000ns
   Min period limit: 1.038ns (963.391MHz) (Tcp)
-  Physical resource: XLXN_431<4>/CLK
-  Logical resource: XLXI_106/XLXI_20/A/CLK
-  Location pin: SLICE_X12Y33.CLK
+  Physical resource: XLXN_431<7>/CLK
+  Logical resource: XLXI_106/XLXI_23/A/CLK
+  Location pin: SLICE_X8Y33.CLK
   Clock network: in_clk_BUFGP
 --------------------------------------------------------------------------------
 Slack: 18.962ns (period - min period limit)
   Period: 20.000ns
   Min period limit: 1.038ns (963.391MHz) (Tcp)
-  Physical resource: XLXN_431<4>/CLK
-  Logical resource: XLXI_106/XLXI_20/B/CLK
-  Location pin: SLICE_X12Y33.CLK
+  Physical resource: XLXN_431<7>/CLK
+  Logical resource: XLXI_106/XLXI_23/B/CLK
+  Location pin: SLICE_X8Y33.CLK
   Clock network: in_clk_BUFGP
 --------------------------------------------------------------------------------
 
@@ -708,7 +560,7 @@ Clock to Setup on destination clock in_clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-in_clk         |    9.784|         |         |         |
+in_clk         |    5.890|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
@@ -717,16 +569,16 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
-Constraints cover 2441 paths, 0 nets, and 372 connections
+Constraints cover 2201 paths, 0 nets, and 364 connections
 
 Design statistics:
-   Minimum period:   9.784ns{1}   (Maximum frequency: 102.208MHz)
+   Minimum period:   5.890ns{1}   (Maximum frequency: 169.779MHz)
 
 
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Wed Jun 22 01:20:00 2022 
+Analysis completed Wed Jun 22 01:50:27 2022 
 --------------------------------------------------------------------------------
 
 Trace Settings:

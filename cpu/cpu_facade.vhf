@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu_facade.vhf
--- /___/   /\     Timestamp : 06/22/2022 01:19:17
+-- /___/   /\     Timestamp : 06/22/2022 01:49:44
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -6611,6 +6611,7 @@ architecture BEHAVIORAL of cpu_facade is
    attribute HU_SET     : string ;
    signal in_clk_manual_debounced     : std_logic;
    signal in_clk_manual_final         : std_logic;
+   signal mem_address                 : std_logic_vector (7 downto 0);
    signal mem_o                       : std_logic_vector (7 downto 0);
    signal mem_select                  : std_logic_vector (3 downto 0);
    signal port_a_w                    : std_logic;
@@ -6657,12 +6658,7 @@ architecture BEHAVIORAL of cpu_facade is
    signal XLXN_214                    : std_logic;
    signal XLXN_216                    : std_logic;
    signal XLXN_232                    : std_logic;
-   signal XLXN_385                    : std_logic;
-   signal XLXN_386                    : std_logic;
-   signal XLXN_387                    : std_logic;
-   signal XLXN_388                    : std_logic;
    signal XLXN_408                    : std_logic;
-   signal XLXN_410                    : std_logic;
    signal XLXN_415                    : std_logic;
    signal XLXN_420                    : std_logic;
    signal XLXN_431                    : std_logic_vector (7 downto 0);
@@ -6910,27 +6906,6 @@ architecture BEHAVIORAL of cpu_facade is
              D9  : out   std_logic);
    end component;
    
-   component LD4CE_HXILINX_cpu_facade
-      port ( CLR : in    std_logic; 
-             D0  : in    std_logic; 
-             D1  : in    std_logic; 
-             D2  : in    std_logic; 
-             D3  : in    std_logic; 
-             G   : in    std_logic; 
-             GE  : in    std_logic; 
-             Q0  : out   std_logic; 
-             Q1  : out   std_logic; 
-             Q2  : out   std_logic; 
-             Q3  : out   std_logic);
-   end component;
-   
-   component OR2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
-   
    component bus_muxer_MUSER_cpu_facade
       port ( a     : in    std_logic_vector (3 downto 0); 
              dev0  : in    std_logic_vector (7 downto 0); 
@@ -6968,10 +6943,18 @@ architecture BEHAVIORAL of cpu_facade is
    end component;
    attribute BOX_TYPE of AND4 : component is "BLACK_BOX";
    
+   component LD8CE_HXILINX_cpu_facade
+      port ( CLR : in    std_logic; 
+             D   : in    std_logic_vector (7 downto 0); 
+             G   : in    std_logic; 
+             GE  : in    std_logic; 
+             Q   : out   std_logic_vector (7 downto 0));
+   end component;
+   
    attribute HU_SET of XLXI_34 : label is "XLXI_34_60";
    attribute HU_SET of XLXI_53 : label is "XLXI_53_61";
-   attribute HU_SET of XLXI_136 : label is "XLXI_136_63";
-   attribute HU_SET of XLXI_155 : label is "XLXI_155_62";
+   attribute HU_SET of XLXI_136 : label is "XLXI_136_62";
+   attribute HU_SET of XLXI_186 : label is "XLXI_186_63";
 begin
    monitor(7 downto 0) <= monitor_DUMMY(7 downto 0);
    out_ram_a_w <= out_ram_a_w_DUMMY;
@@ -7243,10 +7226,10 @@ begin
    
    XLXI_106 : ram_256bytes_MUSER_cpu_facade
       port map (a(7 downto 0)=>out_sysbus_DUMMY(7 downto 0),
-                a_w=>out_ram_a_w_DUMMY,
+                a_w=>ram_a_w,
                 i(7 downto 0)=>out_sysbus_DUMMY(7 downto 0),
-                i_r=>out_ram_r_DUMMY,
-                i_w=>out_ram_w_DUMMY,
+                i_r=>ram_r,
+                i_w=>ram_w,
                 i_wclk=>in_clk,
                 a_o=>open,
                 o(7 downto 0)=>XLXN_431(7 downto 0));
@@ -7259,11 +7242,6 @@ begin
       port map (I0=>out_ram_a_w_DUMMY,
                 I1=>ram_selected,
                 O=>ram_a_w);
-   
-   XLXI_111 : AND2
-      port map (I0=>out_ram_w_DUMMY,
-                I1=>ram_selected,
-                O=>ram_w);
    
    XLXI_112 : AND2
       port map (I0=>out_ram_r_DUMMY,
@@ -7278,11 +7256,11 @@ begin
                 o(7 downto 0)=>port_one_o(7 downto 0));
    
    XLXI_136 : D4_16E_HXILINX_cpu_facade
-      port map (A0=>XLXN_385,
-                A1=>XLXN_386,
-                A2=>XLXN_387,
-                A3=>XLXN_388,
-                E=>XLXN_410,
+      port map (A0=>mem_address(0),
+                A1=>mem_address(1),
+                A2=>mem_address(2),
+                A3=>mem_address(3),
+                E=>port_selected,
                 D0=>XLXN_420,
                 D1=>open,
                 D2=>open,
@@ -7315,30 +7293,12 @@ begin
                 I1=>port_selected,
                 O=>port_r);
    
-   XLXI_155 : LD4CE_HXILINX_cpu_facade
-      port map (CLR=>rst,
-                D0=>out_sysbus_DUMMY(0),
-                D1=>out_sysbus_DUMMY(1),
-                D2=>out_sysbus_DUMMY(2),
-                D3=>out_sysbus_DUMMY(3),
-                G=>port_a_w,
-                GE=>XLXN_408,
-                Q0=>XLXN_385,
-                Q1=>XLXN_386,
-                Q2=>XLXN_387,
-                Q3=>XLXN_388);
-   
    XLXI_165 : INV
       port map (I=>in_rst,
                 O=>rst);
    
    XLXI_167 : VCC
       port map (P=>XLXN_408);
-   
-   XLXI_168 : OR2
-      port map (I0=>port_r,
-                I1=>port_w,
-                O=>XLXN_410);
    
    XLXI_170 : AND2
       port map (I0=>XLXN_420,
@@ -7401,11 +7361,23 @@ begin
                 O=>mem_select(0));
    
    XLXI_180 : AND4
-      port map (I0=>out_sysbus_DUMMY(4),
-                I1=>out_sysbus_DUMMY(5),
-                I2=>out_sysbus_DUMMY(6),
-                I3=>out_sysbus_DUMMY(7),
+      port map (I0=>mem_address(4),
+                I1=>mem_address(5),
+                I2=>mem_address(6),
+                I3=>mem_address(7),
                 O=>port_selected);
+   
+   XLXI_185 : AND2
+      port map (I0=>out_ram_w_DUMMY,
+                I1=>ram_selected,
+                O=>ram_w);
+   
+   XLXI_186 : LD8CE_HXILINX_cpu_facade
+      port map (CLR=>rst,
+                D(7 downto 0)=>out_sysbus_DUMMY(7 downto 0),
+                G=>out_ram_a_w_DUMMY,
+                GE=>XLXN_408,
+                Q(7 downto 0)=>mem_address(7 downto 0));
    
 end BEHAVIORAL;
 

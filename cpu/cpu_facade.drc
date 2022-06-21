@@ -1,7 +1,7 @@
 Release 14.3 Drc P.40xd (lin64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Wed Jun 22 01:20:04 2022
+Wed Jun 22 01:50:31 2022
 
 drc -z cpu_facade.ncd cpu_facade.pcf
 
@@ -10,9 +10,6 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_7/clk_internal is
    pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_7/clkr is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_7/ram_a_w is sourced
-   by a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    XLXI_7/XLXI_937/half_period_tick is sourced by a combinatorial pin. This is
@@ -28,6 +25,9 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_7/cc_r0_w is sourced
    by a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net ram_a_w is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 DRC detected 0 errors and 7 warnings.  Please see the previously displayed
 individual error or warning messages for more details.

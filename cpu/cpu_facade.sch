@@ -110,27 +110,10 @@
         <signal name="in_ir_r" />
         <signal name="out_usart1_tx" />
         <signal name="ram_a_w" />
-        <signal name="ram_w" />
         <signal name="ram_r" />
-        <signal name="ram_selected" />
         <signal name="port_selected" />
-        <signal name="out_sysbus(7)" />
-        <signal name="out_sysbus(6)" />
-        <signal name="out_sysbus(5)" />
-        <signal name="out_sysbus(4)" />
-        <signal name="port_a_w" />
         <signal name="port_w" />
         <signal name="port_r" />
-        <signal name="XLXN_385" />
-        <signal name="XLXN_386" />
-        <signal name="XLXN_387" />
-        <signal name="XLXN_388" />
-        <signal name="out_sysbus(0)" />
-        <signal name="out_sysbus(1)" />
-        <signal name="out_sysbus(2)" />
-        <signal name="out_sysbus(3)" />
-        <signal name="XLXN_408" />
-        <signal name="XLXN_410" />
         <signal name="XLXN_415" />
         <signal name="XLXN_420" />
         <signal name="rst" />
@@ -148,6 +131,19 @@
         <signal name="in_r0_r" />
         <signal name="in_bus1" />
         <signal name="XLXN_78" />
+        <signal name="ram_w" />
+        <signal name="mem_address(7:0)" />
+        <signal name="ram_selected" />
+        <signal name="mem_address(7)" />
+        <signal name="mem_address(6)" />
+        <signal name="mem_address(5)" />
+        <signal name="mem_address(4)" />
+        <signal name="port_a_w" />
+        <signal name="XLXN_408" />
+        <signal name="mem_address(3)" />
+        <signal name="mem_address(2)" />
+        <signal name="mem_address(1)" />
+        <signal name="mem_address(0)" />
         <port polarity="Input" name="in_clk" />
         <port polarity="Output" name="out_clk_internal" />
         <port polarity="Output" name="out_s1" />
@@ -470,34 +466,6 @@
             <line x2="64" y1="-1088" y2="-1088" x1="0" />
             <line x2="64" y1="-128" y2="-128" x1="0" />
         </blockdef>
-        <blockdef name="ld4ce">
-            <timestamp>2000-1-1T10:10:10</timestamp>
-            <line x2="64" y1="-192" y2="-192" x1="0" />
-            <line x2="64" y1="-32" y2="-32" x1="0" />
-            <line x2="64" y1="-448" y2="-448" x1="0" />
-            <line x2="64" y1="-384" y2="-384" x1="0" />
-            <line x2="64" y1="-320" y2="-320" x1="0" />
-            <line x2="64" y1="-256" y2="-256" x1="0" />
-            <line x2="64" y1="-128" y2="-128" x1="0" />
-            <line x2="320" y1="-448" y2="-448" x1="384" />
-            <line x2="320" y1="-384" y2="-384" x1="384" />
-            <line x2="320" y1="-320" y2="-320" x1="384" />
-            <line x2="320" y1="-256" y2="-256" x1="384" />
-            <line x2="64" y1="-32" y2="-32" x1="192" />
-            <line x2="192" y1="-64" y2="-32" x1="192" />
-            <rect width="256" x="64" y="-512" height="448" />
-        </blockdef>
-        <blockdef name="or2">
-            <timestamp>2000-1-1T10:10:10</timestamp>
-            <line x2="64" y1="-64" y2="-64" x1="0" />
-            <line x2="64" y1="-128" y2="-128" x1="0" />
-            <line x2="192" y1="-96" y2="-96" x1="256" />
-            <arc ex="192" ey="-96" sx="112" sy="-48" r="88" cx="116" cy="-136" />
-            <arc ex="48" ey="-144" sx="48" sy="-48" r="56" cx="16" cy="-96" />
-            <line x2="48" y1="-144" y2="-144" x1="112" />
-            <arc ex="112" ey="-144" sx="192" sy="-96" r="88" cx="116" cy="-56" />
-            <line x2="48" y1="-48" y2="-48" x1="112" />
-        </blockdef>
         <blockdef name="bus_muxer">
             <timestamp>2022-6-9T22:51:1</timestamp>
             <rect width="256" x="64" y="-1152" height="1152" />
@@ -558,6 +526,19 @@
             <line x2="64" y1="-192" y2="-192" x1="0" />
             <line x2="64" y1="-128" y2="-128" x1="0" />
             <line x2="64" y1="-64" y2="-64" x1="0" />
+        </blockdef>
+        <blockdef name="ld8ce">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <rect width="64" x="0" y="-268" height="24" />
+            <rect width="64" x="320" y="-268" height="24" />
+            <line x2="64" y1="-32" y2="-32" x1="192" />
+            <line x2="192" y1="-64" y2="-32" x1="192" />
+            <line x2="320" y1="-256" y2="-256" x1="384" />
+            <line x2="64" y1="-256" y2="-256" x1="0" />
+            <line x2="64" y1="-32" y2="-32" x1="0" />
+            <line x2="64" y1="-192" y2="-192" x1="0" />
+            <line x2="64" y1="-128" y2="-128" x1="0" />
+            <rect width="256" x="64" y="-320" height="256" />
         </blockdef>
         <block symbolname="cpu" name="XLXI_7">
             <blockpin signalname="XLXN_66" name="in_acc_r" />
@@ -813,59 +794,12 @@
             <blockpin signalname="out_r0_r" name="rst" />
             <blockpin signalname="out_usart1_tx" name="tx" />
         </block>
-        <block symbolname="and2" name="XLXI_110">
-            <blockpin signalname="out_ram_a_w" name="I0" />
-            <blockpin signalname="ram_selected" name="I1" />
-            <blockpin signalname="ram_a_w" name="O" />
-        </block>
-        <block symbolname="and2" name="XLXI_111">
-            <blockpin signalname="out_ram_w" name="I0" />
-            <blockpin signalname="ram_selected" name="I1" />
-            <blockpin signalname="ram_w" name="O" />
-        </block>
-        <block symbolname="and2" name="XLXI_112">
-            <blockpin signalname="out_ram_r" name="I0" />
-            <blockpin signalname="ram_selected" name="I1" />
-            <blockpin signalname="ram_r" name="O" />
-        </block>
-        <block symbolname="inv" name="XLXI_108">
-            <blockpin signalname="port_selected" name="I" />
-            <blockpin signalname="ram_selected" name="O" />
-        </block>
-        <block symbolname="and2" name="XLXI_137">
-            <blockpin signalname="out_ram_a_w" name="I0" />
-            <blockpin signalname="port_selected" name="I1" />
-            <blockpin signalname="port_a_w" name="O" />
-        </block>
-        <block symbolname="and2" name="XLXI_138">
-            <blockpin signalname="out_ram_w" name="I0" />
-            <blockpin signalname="port_selected" name="I1" />
-            <blockpin signalname="port_w" name="O" />
-        </block>
-        <block symbolname="and2" name="XLXI_153">
-            <blockpin signalname="out_ram_r" name="I0" />
-            <blockpin signalname="port_selected" name="I1" />
-            <blockpin signalname="port_r" name="O" />
-        </block>
-        <block symbolname="ld4ce" name="XLXI_155">
-            <blockpin signalname="rst" name="CLR" />
-            <blockpin signalname="out_sysbus(0)" name="D0" />
-            <blockpin signalname="out_sysbus(1)" name="D1" />
-            <blockpin signalname="out_sysbus(2)" name="D2" />
-            <blockpin signalname="out_sysbus(3)" name="D3" />
-            <blockpin signalname="port_a_w" name="G" />
-            <blockpin signalname="XLXN_408" name="GE" />
-            <blockpin signalname="XLXN_385" name="Q0" />
-            <blockpin signalname="XLXN_386" name="Q1" />
-            <blockpin signalname="XLXN_387" name="Q2" />
-            <blockpin signalname="XLXN_388" name="Q3" />
-        </block>
         <block symbolname="d4_16e" name="XLXI_136">
-            <blockpin signalname="XLXN_385" name="A0" />
-            <blockpin signalname="XLXN_386" name="A1" />
-            <blockpin signalname="XLXN_387" name="A2" />
-            <blockpin signalname="XLXN_388" name="A3" />
-            <blockpin signalname="XLXN_410" name="E" />
+            <blockpin signalname="mem_address(0)" name="A0" />
+            <blockpin signalname="mem_address(1)" name="A1" />
+            <blockpin signalname="mem_address(2)" name="A2" />
+            <blockpin signalname="mem_address(3)" name="A3" />
+            <blockpin signalname="port_selected" name="E" />
             <blockpin signalname="XLXN_420" name="D0" />
             <blockpin name="D1" />
             <blockpin name="D10" />
@@ -889,14 +823,6 @@
             <blockpin signalname="port_one_o(7:0)" name="o(7:0)" />
             <blockpin name="r" />
             <blockpin signalname="XLXN_415" name="w" />
-        </block>
-        <block symbolname="vcc" name="XLXI_167">
-            <blockpin signalname="XLXN_408" name="P" />
-        </block>
-        <block symbolname="or2" name="XLXI_168">
-            <blockpin signalname="port_r" name="I0" />
-            <blockpin signalname="port_w" name="I1" />
-            <blockpin signalname="XLXN_410" name="O" />
         </block>
         <block symbolname="and2" name="XLXI_170">
             <blockpin signalname="XLXN_420" name="I0" />
@@ -962,20 +888,13 @@
             <blockpin signalname="port_selected" name="I" />
             <blockpin signalname="mem_select(0)" name="O" />
         </block>
-        <block symbolname="and4" name="XLXI_180">
-            <blockpin signalname="out_sysbus(4)" name="I0" />
-            <blockpin signalname="out_sysbus(5)" name="I1" />
-            <blockpin signalname="out_sysbus(6)" name="I2" />
-            <blockpin signalname="out_sysbus(7)" name="I3" />
-            <blockpin signalname="port_selected" name="O" />
-        </block>
         <block symbolname="ram_256bytes" name="XLXI_106">
             <blockpin signalname="out_sysbus(7:0)" name="a(7:0)" />
             <blockpin name="a_o(7:0)" />
-            <blockpin signalname="out_ram_a_w" name="a_w" />
+            <blockpin signalname="ram_a_w" name="a_w" />
             <blockpin signalname="out_sysbus(7:0)" name="i(7:0)" />
-            <blockpin signalname="out_ram_r" name="i_r" />
-            <blockpin signalname="out_ram_w" name="i_w" />
+            <blockpin signalname="ram_r" name="i_r" />
+            <blockpin signalname="ram_w" name="i_w" />
             <blockpin signalname="in_clk" name="i_wclk" />
             <blockpin signalname="XLXN_431(7:0)" name="o(7:0)" />
         </block>
@@ -986,6 +905,57 @@
         <block symbolname="inv" name="XLXI_39">
             <blockpin signalname="in_bus1" name="I" />
             <blockpin signalname="XLXN_78" name="O" />
+        </block>
+        <block symbolname="and2" name="XLXI_110">
+            <blockpin signalname="out_ram_a_w" name="I0" />
+            <blockpin signalname="ram_selected" name="I1" />
+            <blockpin signalname="ram_a_w" name="O" />
+        </block>
+        <block symbolname="and2" name="XLXI_112">
+            <blockpin signalname="out_ram_r" name="I0" />
+            <blockpin signalname="ram_selected" name="I1" />
+            <blockpin signalname="ram_r" name="O" />
+        </block>
+        <block symbolname="inv" name="XLXI_108">
+            <blockpin signalname="port_selected" name="I" />
+            <blockpin signalname="ram_selected" name="O" />
+        </block>
+        <block symbolname="and2" name="XLXI_137">
+            <blockpin signalname="out_ram_a_w" name="I0" />
+            <blockpin signalname="port_selected" name="I1" />
+            <blockpin signalname="port_a_w" name="O" />
+        </block>
+        <block symbolname="and2" name="XLXI_138">
+            <blockpin signalname="out_ram_w" name="I0" />
+            <blockpin signalname="port_selected" name="I1" />
+            <blockpin signalname="port_w" name="O" />
+        </block>
+        <block symbolname="and2" name="XLXI_153">
+            <blockpin signalname="out_ram_r" name="I0" />
+            <blockpin signalname="port_selected" name="I1" />
+            <blockpin signalname="port_r" name="O" />
+        </block>
+        <block symbolname="and4" name="XLXI_180">
+            <blockpin signalname="mem_address(4)" name="I0" />
+            <blockpin signalname="mem_address(5)" name="I1" />
+            <blockpin signalname="mem_address(6)" name="I2" />
+            <blockpin signalname="mem_address(7)" name="I3" />
+            <blockpin signalname="port_selected" name="O" />
+        </block>
+        <block symbolname="and2" name="XLXI_185">
+            <blockpin signalname="out_ram_w" name="I0" />
+            <blockpin signalname="ram_selected" name="I1" />
+            <blockpin signalname="ram_w" name="O" />
+        </block>
+        <block symbolname="vcc" name="XLXI_167">
+            <blockpin signalname="XLXN_408" name="P" />
+        </block>
+        <block symbolname="ld8ce" name="XLXI_186">
+            <blockpin signalname="rst" name="CLR" />
+            <blockpin signalname="out_sysbus(7:0)" name="D(7:0)" />
+            <blockpin signalname="out_ram_a_w" name="G" />
+            <blockpin signalname="XLXN_408" name="GE" />
+            <blockpin signalname="mem_address(7:0)" name="Q(7:0)" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="64000" height="64000">
@@ -1459,191 +1429,15 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6480" y="592" type="branch" />
             <wire x2="6656" y1="592" y2="592" x1="6480" />
         </branch>
-        <branch name="out_ram_r">
+        <branch name="ram_r">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6480" y="400" type="branch" />
             <wire x2="6656" y1="400" y2="400" x1="6480" />
         </branch>
-        <branch name="out_ram_w">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6480" y="528" type="branch" />
-            <wire x2="6656" y1="528" y2="528" x1="6480" />
-        </branch>
-        <branch name="out_ram_a_w">
+        <branch name="ram_a_w">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6480" y="720" type="branch" />
             <wire x2="6656" y1="720" y2="720" x1="6480" />
         </branch>
-        <instance x="5536" y="608" name="XLXI_110" orien="R0" />
-        <branch name="ram_selected">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5440" y="480" type="branch" />
-            <wire x2="5536" y1="480" y2="480" x1="5440" />
-        </branch>
-        <branch name="out_ram_a_w">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5440" y="544" type="branch" />
-            <wire x2="5536" y1="544" y2="544" x1="5440" />
-        </branch>
-        <branch name="ram_a_w">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="5840" y="512" type="branch" />
-            <wire x2="5840" y1="512" y2="512" x1="5792" />
-        </branch>
-        <instance x="5536" y="768" name="XLXI_111" orien="R0" />
-        <instance x="5536" y="928" name="XLXI_112" orien="R0" />
-        <branch name="out_ram_w">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5440" y="704" type="branch" />
-            <wire x2="5536" y1="704" y2="704" x1="5440" />
-        </branch>
-        <branch name="out_ram_r">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5440" y="864" type="branch" />
-            <wire x2="5536" y1="864" y2="864" x1="5440" />
-        </branch>
-        <branch name="ram_selected">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5440" y="800" type="branch" />
-            <wire x2="5536" y1="800" y2="800" x1="5440" />
-        </branch>
-        <branch name="ram_selected">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5440" y="640" type="branch" />
-            <wire x2="5536" y1="640" y2="640" x1="5440" />
-        </branch>
-        <branch name="ram_w">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="5840" y="672" type="branch" />
-            <wire x2="5840" y1="672" y2="672" x1="5792" />
-        </branch>
-        <branch name="ram_r">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="5840" y="832" type="branch" />
-            <wire x2="5840" y1="832" y2="832" x1="5792" />
-        </branch>
-        <branch name="port_selected">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5440" y="400" type="branch" />
-            <wire x2="5536" y1="400" y2="400" x1="5440" />
-        </branch>
-        <instance x="5536" y="432" name="XLXI_108" orien="R0" />
-        <branch name="ram_selected">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="5840" y="400" type="branch" />
-            <wire x2="5840" y1="400" y2="400" x1="5760" />
-        </branch>
-        <branch name="out_sysbus(7:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5280" y="32" type="branch" />
-            <wire x2="5344" y1="32" y2="32" x1="5280" />
-            <wire x2="5344" y1="32" y2="128" x1="5344" />
-            <wire x2="5344" y1="128" y2="192" x1="5344" />
-            <wire x2="5344" y1="192" y2="256" x1="5344" />
-            <wire x2="5344" y1="256" y2="320" x1="5344" />
-        </branch>
-        <bustap x2="5440" y1="320" y2="320" x1="5344" />
-        <bustap x2="5440" y1="256" y2="256" x1="5344" />
-        <bustap x2="5440" y1="192" y2="192" x1="5344" />
-        <bustap x2="5440" y1="128" y2="128" x1="5344" />
-        <branch name="out_sysbus(7)">
-            <wire x2="5536" y1="128" y2="128" x1="5440" />
-        </branch>
-        <branch name="out_sysbus(6)">
-            <wire x2="5536" y1="192" y2="192" x1="5440" />
-        </branch>
-        <branch name="out_sysbus(5)">
-            <wire x2="5536" y1="256" y2="256" x1="5440" />
-        </branch>
-        <branch name="port_selected">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="5904" y="224" type="branch" />
-            <wire x2="5904" y1="224" y2="224" x1="5792" />
-        </branch>
-        <branch name="out_sysbus(4)">
-            <wire x2="5536" y1="320" y2="320" x1="5440" />
-        </branch>
-        <instance x="5536" y="1088" name="XLXI_137" orien="R0" />
-        <instance x="5536" y="1248" name="XLXI_138" orien="R0" />
-        <instance x="5536" y="1408" name="XLXI_153" orien="R0" />
-        <branch name="port_selected">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5440" y="960" type="branch" />
-            <wire x2="5536" y1="960" y2="960" x1="5440" />
-        </branch>
-        <branch name="out_ram_a_w">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5440" y="1024" type="branch" />
-            <wire x2="5536" y1="1024" y2="1024" x1="5440" />
-        </branch>
-        <branch name="port_selected">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5440" y="1120" type="branch" />
-            <wire x2="5536" y1="1120" y2="1120" x1="5440" />
-        </branch>
-        <branch name="out_ram_w">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5440" y="1184" type="branch" />
-            <wire x2="5536" y1="1184" y2="1184" x1="5440" />
-        </branch>
-        <branch name="port_selected">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5440" y="1280" type="branch" />
-            <wire x2="5536" y1="1280" y2="1280" x1="5440" />
-        </branch>
-        <branch name="out_ram_r">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5440" y="1344" type="branch" />
-            <wire x2="5536" y1="1344" y2="1344" x1="5440" />
-        </branch>
-        <branch name="port_a_w">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="5840" y="992" type="branch" />
-            <wire x2="5840" y1="992" y2="992" x1="5792" />
-        </branch>
-        <branch name="port_w">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="5840" y="1152" type="branch" />
-            <wire x2="5840" y1="1152" y2="1152" x1="5792" />
-        </branch>
-        <branch name="port_r">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="5840" y="1312" type="branch" />
-            <wire x2="5840" y1="1312" y2="1312" x1="5792" />
-        </branch>
-        <branch name="XLXN_385">
-            <wire x2="7152" y1="960" y2="960" x1="7040" />
-        </branch>
-        <branch name="XLXN_386">
-            <wire x2="7152" y1="1024" y2="1024" x1="7040" />
-        </branch>
-        <branch name="XLXN_387">
-            <wire x2="7152" y1="1088" y2="1088" x1="7040" />
-        </branch>
-        <branch name="XLXN_388">
-            <wire x2="7152" y1="1152" y2="1152" x1="7040" />
-        </branch>
-        <instance x="6656" y="1408" name="XLXI_155" orien="R0" />
         <instance x="7152" y="2048" name="XLXI_136" orien="R0" />
-        <branch name="out_sysbus(7:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6320" y="880" type="branch" />
-            <wire x2="6400" y1="880" y2="880" x1="6320" />
-            <wire x2="6400" y1="880" y2="960" x1="6400" />
-            <wire x2="6400" y1="960" y2="1024" x1="6400" />
-            <wire x2="6400" y1="1024" y2="1088" x1="6400" />
-            <wire x2="6400" y1="1088" y2="1152" x1="6400" />
-        </branch>
-        <bustap x2="6496" y1="1152" y2="1152" x1="6400" />
-        <bustap x2="6496" y1="1088" y2="1088" x1="6400" />
-        <bustap x2="6496" y1="1024" y2="1024" x1="6400" />
-        <bustap x2="6496" y1="960" y2="960" x1="6400" />
-        <branch name="out_sysbus(0)">
-            <wire x2="6656" y1="960" y2="960" x1="6496" />
-        </branch>
-        <branch name="out_sysbus(1)">
-            <wire x2="6656" y1="1024" y2="1024" x1="6496" />
-        </branch>
-        <branch name="out_sysbus(2)">
-            <wire x2="6656" y1="1088" y2="1088" x1="6496" />
-        </branch>
-        <branch name="out_sysbus(3)">
-            <wire x2="6656" y1="1152" y2="1152" x1="6496" />
-        </branch>
-        <branch name="XLXN_408">
-            <wire x2="6656" y1="1216" y2="1216" x1="6464" />
-        </branch>
-        <instance x="6464" y="1280" name="XLXI_167" orien="R270" />
-        <branch name="port_a_w">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6400" y="1280" type="branch" />
-            <wire x2="6656" y1="1280" y2="1280" x1="6400" />
-        </branch>
-        <instance x="6784" y="2016" name="XLXI_168" orien="R0" />
-        <branch name="XLXN_410">
-            <wire x2="7152" y1="1920" y2="1920" x1="7040" />
-        </branch>
-        <branch name="port_w">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6640" y="1888" type="branch" />
-            <wire x2="6784" y1="1888" y2="1888" x1="6640" />
-        </branch>
-        <branch name="port_r">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6640" y="1952" type="branch" />
-            <wire x2="6784" y1="1952" y2="1952" x1="6640" />
-        </branch>
         <branch name="out_sysbus(7:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="8000" y="944" type="branch" />
             <wire x2="8176" y1="944" y2="944" x1="8000" />
@@ -1666,10 +1460,6 @@
         <branch name="rst">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="6400" y="1520" type="branch" />
             <wire x2="6400" y1="1520" y2="1520" x1="6320" />
-        </branch>
-        <branch name="rst">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6560" y="1376" type="branch" />
-            <wire x2="6656" y1="1376" y2="1376" x1="6560" />
         </branch>
         <branch name="rst">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="8080" y="1072" type="branch" />
@@ -1742,7 +1532,6 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="9120" y="1904" type="branch" />
             <wire x2="9296" y1="1904" y2="1904" x1="9120" />
         </branch>
-        <instance x="5536" y="384" name="XLXI_180" orien="R0" />
         <instance x="6656" y="752" name="XLXI_106" orien="R0">
         </instance>
         <branch name="XLXN_77">
@@ -1767,6 +1556,175 @@
         <branch name="mem_o(7:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2464" y="1712" type="branch" />
             <wire x2="2672" y1="1712" y2="1712" x1="2464" />
+        </branch>
+        <branch name="ram_w">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6480" y="528" type="branch" />
+            <wire x2="6656" y1="528" y2="528" x1="6480" />
+        </branch>
+        <instance x="6416" y="3408" name="XLXI_110" orien="R0" />
+        <branch name="ram_selected">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6320" y="3280" type="branch" />
+            <wire x2="6416" y1="3280" y2="3280" x1="6320" />
+        </branch>
+        <branch name="out_ram_a_w">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6320" y="3344" type="branch" />
+            <wire x2="6416" y1="3344" y2="3344" x1="6320" />
+        </branch>
+        <branch name="ram_a_w">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="6720" y="3312" type="branch" />
+            <wire x2="6720" y1="3312" y2="3312" x1="6672" />
+        </branch>
+        <instance x="6416" y="3728" name="XLXI_112" orien="R0" />
+        <branch name="out_ram_w">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6320" y="3504" type="branch" />
+            <wire x2="6416" y1="3504" y2="3504" x1="6320" />
+        </branch>
+        <branch name="out_ram_r">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6320" y="3664" type="branch" />
+            <wire x2="6416" y1="3664" y2="3664" x1="6320" />
+        </branch>
+        <branch name="ram_selected">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6320" y="3600" type="branch" />
+            <wire x2="6416" y1="3600" y2="3600" x1="6320" />
+        </branch>
+        <branch name="ram_selected">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6320" y="3440" type="branch" />
+            <wire x2="6416" y1="3440" y2="3440" x1="6320" />
+        </branch>
+        <branch name="ram_r">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="6720" y="3632" type="branch" />
+            <wire x2="6720" y1="3632" y2="3632" x1="6672" />
+        </branch>
+        <branch name="port_selected">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6320" y="3200" type="branch" />
+            <wire x2="6416" y1="3200" y2="3200" x1="6320" />
+        </branch>
+        <instance x="6416" y="3232" name="XLXI_108" orien="R0" />
+        <branch name="ram_selected">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="6720" y="3200" type="branch" />
+            <wire x2="6720" y1="3200" y2="3200" x1="6640" />
+        </branch>
+        <branch name="mem_address(7:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6160" y="2832" type="branch" />
+            <wire x2="6224" y1="2832" y2="2832" x1="6160" />
+            <wire x2="6224" y1="2832" y2="2928" x1="6224" />
+            <wire x2="6224" y1="2928" y2="2992" x1="6224" />
+            <wire x2="6224" y1="2992" y2="3056" x1="6224" />
+            <wire x2="6224" y1="3056" y2="3120" x1="6224" />
+        </branch>
+        <bustap x2="6320" y1="3120" y2="3120" x1="6224" />
+        <bustap x2="6320" y1="3056" y2="3056" x1="6224" />
+        <bustap x2="6320" y1="2992" y2="2992" x1="6224" />
+        <bustap x2="6320" y1="2928" y2="2928" x1="6224" />
+        <branch name="mem_address(7)">
+            <wire x2="6416" y1="2928" y2="2928" x1="6320" />
+        </branch>
+        <branch name="mem_address(6)">
+            <wire x2="6416" y1="2992" y2="2992" x1="6320" />
+        </branch>
+        <branch name="mem_address(5)">
+            <wire x2="6416" y1="3056" y2="3056" x1="6320" />
+        </branch>
+        <branch name="port_selected">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="6784" y="3024" type="branch" />
+            <wire x2="6784" y1="3024" y2="3024" x1="6672" />
+        </branch>
+        <branch name="mem_address(4)">
+            <wire x2="6416" y1="3120" y2="3120" x1="6320" />
+        </branch>
+        <instance x="6416" y="3888" name="XLXI_137" orien="R0" />
+        <instance x="6416" y="4048" name="XLXI_138" orien="R0" />
+        <instance x="6416" y="4208" name="XLXI_153" orien="R0" />
+        <branch name="port_selected">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6320" y="3760" type="branch" />
+            <wire x2="6416" y1="3760" y2="3760" x1="6320" />
+        </branch>
+        <branch name="out_ram_a_w">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6320" y="3824" type="branch" />
+            <wire x2="6416" y1="3824" y2="3824" x1="6320" />
+        </branch>
+        <branch name="port_selected">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6320" y="3920" type="branch" />
+            <wire x2="6416" y1="3920" y2="3920" x1="6320" />
+        </branch>
+        <branch name="out_ram_w">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6320" y="3984" type="branch" />
+            <wire x2="6416" y1="3984" y2="3984" x1="6320" />
+        </branch>
+        <branch name="port_selected">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6320" y="4080" type="branch" />
+            <wire x2="6416" y1="4080" y2="4080" x1="6320" />
+        </branch>
+        <branch name="out_ram_r">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6320" y="4144" type="branch" />
+            <wire x2="6416" y1="4144" y2="4144" x1="6320" />
+        </branch>
+        <branch name="port_a_w">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="6720" y="3792" type="branch" />
+            <wire x2="6720" y1="3792" y2="3792" x1="6672" />
+        </branch>
+        <branch name="port_w">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="6720" y="3952" type="branch" />
+            <wire x2="6720" y1="3952" y2="3952" x1="6672" />
+        </branch>
+        <branch name="port_r">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="6720" y="4112" type="branch" />
+            <wire x2="6720" y1="4112" y2="4112" x1="6672" />
+        </branch>
+        <instance x="6416" y="3184" name="XLXI_180" orien="R0" />
+        <instance x="6416" y="3568" name="XLXI_185" orien="R0" />
+        <branch name="ram_w">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="6720" y="3472" type="branch" />
+            <wire x2="6720" y1="3472" y2="3472" x1="6672" />
+        </branch>
+        <instance x="6064" y="2624" name="XLXI_167" orien="R270" />
+        <branch name="out_sysbus(7:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6000" y="2496" type="branch" />
+            <wire x2="6272" y1="2496" y2="2496" x1="6000" />
+        </branch>
+        <branch name="rst">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6144" y="2720" type="branch" />
+            <wire x2="6272" y1="2720" y2="2720" x1="6144" />
+        </branch>
+        <branch name="out_ram_a_w">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6080" y="2624" type="branch" />
+            <wire x2="6272" y1="2624" y2="2624" x1="6080" />
+        </branch>
+        <branch name="XLXN_408">
+            <wire x2="6272" y1="2560" y2="2560" x1="6064" />
+        </branch>
+        <instance x="6272" y="2752" name="XLXI_186" orien="R0" />
+        <branch name="mem_address(7:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="6768" y="2496" type="branch" />
+            <wire x2="6768" y1="2496" y2="2496" x1="6656" />
+        </branch>
+        <branch name="mem_address(7:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6720" y="896" type="branch" />
+            <wire x2="6880" y1="896" y2="896" x1="6720" />
+            <wire x2="6880" y1="896" y2="960" x1="6880" />
+            <wire x2="6880" y1="960" y2="1024" x1="6880" />
+            <wire x2="6880" y1="1024" y2="1088" x1="6880" />
+            <wire x2="6880" y1="1088" y2="1152" x1="6880" />
+        </branch>
+        <bustap x2="6976" y1="1152" y2="1152" x1="6880" />
+        <bustap x2="6976" y1="1088" y2="1088" x1="6880" />
+        <bustap x2="6976" y1="1024" y2="1024" x1="6880" />
+        <bustap x2="6976" y1="960" y2="960" x1="6880" />
+        <branch name="mem_address(3)">
+            <wire x2="7152" y1="1152" y2="1152" x1="6976" />
+        </branch>
+        <branch name="mem_address(2)">
+            <wire x2="7152" y1="1088" y2="1088" x1="6976" />
+        </branch>
+        <branch name="mem_address(1)">
+            <wire x2="7152" y1="1024" y2="1024" x1="6976" />
+        </branch>
+        <branch name="mem_address(0)">
+            <wire x2="7152" y1="960" y2="960" x1="6976" />
+        </branch>
+        <branch name="port_selected">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="7040" y="1920" type="branch" />
+            <wire x2="7152" y1="1920" y2="1920" x1="7040" />
         </branch>
     </sheet>
 </drawing>
