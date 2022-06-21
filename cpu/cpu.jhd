@@ -25,8 +25,6 @@ MODULE cpu
 		INSTANCE clck_gen
 	SUBMODULE cpu_control
 		INSTANCE cpu_ctl
-	SUBMODULE ram_256bytes
-		INSTANCE XLXI_9
 	SUBMODULE cpu_output_muxer
 		INSTANCE XLXI_130
 	SUBMODULE buf_8bit

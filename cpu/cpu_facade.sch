@@ -100,11 +100,6 @@
         <signal name="in_manr_w" />
         <signal name="in_temp_w" />
         <signal name="in_ram_a_w" />
-        <signal name="XLXN_78" />
-        <signal name="in_bus1" />
-        <signal name="in_r0_r" />
-        <signal name="XLXN_68" />
-        <signal name="XLXN_77" />
         <signal name="XLXN_85" />
         <signal name="in_ram_w" />
         <signal name="XLXN_67" />
@@ -142,12 +137,17 @@
         <signal name="port_one_o(7:0)" />
         <signal name="XLXN_431(7:0)" />
         <signal name="XLXN_432(7:0)" />
-        <signal name="XLXN_433(7:0)" />
-        <signal name="mem_o(3:0)" />
-        <signal name="mem_o(1)" />
-        <signal name="mem_o(2)" />
-        <signal name="mem_o(3)" />
-        <signal name="mem_o(0)" />
+        <signal name="mem_o(7:0)" />
+        <signal name="mem_select(3:0)" />
+        <signal name="mem_select(1)" />
+        <signal name="mem_select(2)" />
+        <signal name="mem_select(3)" />
+        <signal name="mem_select(0)" />
+        <signal name="XLXN_77" />
+        <signal name="XLXN_68" />
+        <signal name="in_r0_r" />
+        <signal name="in_bus1" />
+        <signal name="XLXN_78" />
         <port polarity="Input" name="in_clk" />
         <port polarity="Output" name="out_clk_internal" />
         <port polarity="Output" name="out_s1" />
@@ -213,19 +213,19 @@
         <port polarity="Input" name="in_manr_w" />
         <port polarity="Input" name="in_temp_w" />
         <port polarity="Input" name="in_ram_a_w" />
-        <port polarity="Input" name="in_bus1" />
-        <port polarity="Input" name="in_r0_r" />
         <port polarity="Input" name="in_ram_w" />
         <port polarity="Input" name="in_ram_r" />
         <port polarity="Input" name="in_acc_w" />
         <port polarity="Input" name="in_ir_r" />
         <port polarity="Output" name="out_usart1_tx" />
+        <port polarity="Input" name="in_r0_r" />
+        <port polarity="Input" name="in_bus1" />
         <blockdef name="cpu">
-            <timestamp>2022-6-13T11:14:4</timestamp>
+            <timestamp>2022-6-21T22:5:57</timestamp>
             <rect width="2304" x="64" y="-2368" height="2304" />
             <line x2="928" y1="-64" y2="0" x1="928" />
             <line x2="1056" y1="-64" y2="0" x1="1056" />
-            <line x2="0" y1="-1312" y2="-1312" x1="64" />
+            <line x2="0" y1="-1248" y2="-1248" x1="64" />
             <line x2="0" y1="-2336" y2="-2336" x1="64" />
             <line x2="0" y1="-2080" y2="-2080" x1="64" />
             <line x2="0" y1="-2208" y2="-2208" x1="64" />
@@ -246,7 +246,9 @@
             <line x2="736" y1="-64" y2="0" x1="736" />
             <rect width="24" x="724" y="-64" height="64" />
             <line x2="544" y1="-64" y2="0" x1="544" />
-            <line x2="0" y1="-1248" y2="-1248" x1="64" />
+            <line x2="0" y1="-1312" y2="-1312" x1="64" />
+            <rect width="64" x="0" y="-1324" height="24" />
+            <line x2="0" y1="-1184" y2="-1184" x1="64" />
             <line x2="160" y1="-64" y2="0" x1="160" />
             <line x2="224" y1="-64" y2="0" x1="224" />
             <line x2="352" y1="-64" y2="0" x1="352" />
@@ -579,6 +581,7 @@
             <blockpin signalname="XLXN_76" name="in_manr_w" />
             <blockpin signalname="XLXN_73(7:0)" name="in_manual_input_o(7:0)" />
             <blockpin signalname="XLXN_70" name="in_manual_input_r" />
+            <blockpin signalname="mem_o(7:0)" name="in_mem_o(7:0)" />
             <blockpin signalname="XLXN_68" name="in_r0_r" />
             <blockpin signalname="XLXN_79" name="in_r0_w" />
             <blockpin signalname="XLXN_61" name="in_r1_r" />
@@ -788,14 +791,6 @@
             <blockpin signalname="in_ram_a_w" name="I" />
             <blockpin signalname="XLXN_77" name="O" />
         </block>
-        <block symbolname="inv" name="XLXI_39">
-            <blockpin signalname="in_bus1" name="I" />
-            <blockpin signalname="XLXN_78" name="O" />
-        </block>
-        <block symbolname="inv" name="XLXI_31">
-            <blockpin signalname="in_r0_r" name="I" />
-            <blockpin signalname="XLXN_68" name="O" />
-        </block>
         <block symbolname="inv" name="XLXI_46">
             <blockpin signalname="in_ram_w" name="I" />
             <blockpin signalname="XLXN_85" name="O" />
@@ -934,7 +929,7 @@
             <blockpin signalname="XLXN_432(7:0)" name="o(7:0)" />
         </block>
         <block symbolname="bus_muxer" name="XLXI_174">
-            <blockpin signalname="mem_o(3:0)" name="a(3:0)" />
+            <blockpin signalname="mem_select(3:0)" name="a(3:0)" />
             <blockpin signalname="XLXN_431(7:0)" name="dev0(7:0)" />
             <blockpin signalname="XLXN_432(7:0)" name="dev1(7:0)" />
             <blockpin name="dev10(7:0)" />
@@ -952,20 +947,20 @@
             <blockpin name="dev8(7:0)" />
             <blockpin name="dev9(7:0)" />
             <blockpin signalname="out_ram_r" name="e" />
-            <blockpin signalname="XLXN_433(7:0)" name="o(7:0)" />
+            <blockpin signalname="mem_o(7:0)" name="o(7:0)" />
         </block>
         <block symbolname="gnd" name="XLXI_176">
-            <blockpin signalname="mem_o(1)" name="G" />
+            <blockpin signalname="mem_select(1)" name="G" />
         </block>
         <block symbolname="gnd" name="XLXI_177">
-            <blockpin signalname="mem_o(2)" name="G" />
+            <blockpin signalname="mem_select(2)" name="G" />
         </block>
         <block symbolname="gnd" name="XLXI_178">
-            <blockpin signalname="mem_o(3)" name="G" />
+            <blockpin signalname="mem_select(3)" name="G" />
         </block>
         <block symbolname="buf" name="XLXI_179">
             <blockpin signalname="port_selected" name="I" />
-            <blockpin signalname="mem_o(0)" name="O" />
+            <blockpin signalname="mem_select(0)" name="O" />
         </block>
         <block symbolname="and4" name="XLXI_180">
             <blockpin signalname="out_sysbus(4)" name="I0" />
@@ -977,12 +972,20 @@
         <block symbolname="ram_256bytes" name="XLXI_106">
             <blockpin signalname="out_sysbus(7:0)" name="a(7:0)" />
             <blockpin name="a_o(7:0)" />
-            <blockpin signalname="ram_a_w" name="a_w" />
+            <blockpin signalname="out_ram_a_w" name="a_w" />
             <blockpin signalname="out_sysbus(7:0)" name="i(7:0)" />
-            <blockpin signalname="ram_r" name="i_r" />
-            <blockpin signalname="ram_w" name="i_w" />
+            <blockpin signalname="out_ram_r" name="i_r" />
+            <blockpin signalname="out_ram_w" name="i_w" />
             <blockpin signalname="in_clk" name="i_wclk" />
             <blockpin signalname="XLXN_431(7:0)" name="o(7:0)" />
+        </block>
+        <block symbolname="inv" name="XLXI_31">
+            <blockpin signalname="in_r0_r" name="I" />
+            <blockpin signalname="XLXN_68" name="O" />
+        </block>
+        <block symbolname="inv" name="XLXI_39">
+            <blockpin signalname="in_bus1" name="I" />
+            <blockpin signalname="XLXN_78" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="64000" height="64000">
@@ -1393,26 +1396,7 @@
         <branch name="in_ram_a_w">
             <wire x2="2400" y1="1648" y2="1648" x1="2336" />
         </branch>
-        <branch name="XLXN_78">
-            <wire x2="2672" y1="1712" y2="1712" x1="2624" />
-        </branch>
-        <instance x="2400" y="1744" name="XLXI_39" orien="R0" />
-        <branch name="in_bus1">
-            <wire x2="2400" y1="1712" y2="1712" x1="2336" />
-        </branch>
-        <instance x="2400" y="1808" name="XLXI_31" orien="R0" />
-        <branch name="in_r0_r">
-            <wire x2="2400" y1="1776" y2="1776" x1="2336" />
-        </branch>
-        <branch name="XLXN_68">
-            <wire x2="2672" y1="1776" y2="1776" x1="2624" />
-        </branch>
-        <branch name="XLXN_77">
-            <wire x2="2672" y1="1648" y2="1648" x1="2624" />
-        </branch>
         <iomarker fontsize="28" x="2336" y="1648" name="in_ram_a_w" orien="R180" />
-        <iomarker fontsize="28" x="2336" y="1712" name="in_bus1" orien="R180" />
-        <iomarker fontsize="28" x="2336" y="1776" name="in_r0_r" orien="R180" />
         <branch name="XLXN_85">
             <wire x2="3856" y1="3024" y2="3056" x1="3856" />
         </branch>
@@ -1475,15 +1459,15 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6480" y="592" type="branch" />
             <wire x2="6656" y1="592" y2="592" x1="6480" />
         </branch>
-        <branch name="ram_r">
+        <branch name="out_ram_r">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6480" y="400" type="branch" />
             <wire x2="6656" y1="400" y2="400" x1="6480" />
         </branch>
-        <branch name="ram_w">
+        <branch name="out_ram_w">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6480" y="528" type="branch" />
             <wire x2="6656" y1="528" y2="528" x1="6480" />
         </branch>
-        <branch name="ram_a_w">
+        <branch name="out_ram_a_w">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6480" y="720" type="branch" />
             <wire x2="6656" y1="720" y2="720" x1="6480" />
         </branch>
@@ -1715,10 +1699,11 @@
             <wire x2="9840" y1="816" y2="1328" x1="9840" />
             <wire x2="10144" y1="1328" y2="1328" x1="9840" />
         </branch>
-        <branch name="XLXN_433(7:0)">
+        <branch name="mem_o(7:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="10720" y="752" type="branch" />
             <wire x2="10720" y1="752" y2="752" x1="10528" />
         </branch>
-        <branch name="mem_o(3:0)">
+        <branch name="mem_select(3:0)">
             <wire x2="10080" y1="400" y2="480" x1="10080" />
             <wire x2="10080" y1="480" y2="560" x1="10080" />
             <wire x2="10080" y1="560" y2="640" x1="10080" />
@@ -1733,19 +1718,19 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="10080" y="1840" type="branch" />
             <wire x2="10144" y1="1840" y2="1840" x1="10080" />
         </branch>
-        <branch name="mem_o(1)">
+        <branch name="mem_select(1)">
             <wire x2="10560" y1="480" y2="480" x1="10176" />
         </branch>
-        <branch name="mem_o(2)">
+        <branch name="mem_select(2)">
             <wire x2="10560" y1="560" y2="560" x1="10176" />
         </branch>
-        <branch name="mem_o(3)">
+        <branch name="mem_select(3)">
             <wire x2="10560" y1="640" y2="640" x1="10176" />
         </branch>
         <instance x="10688" y="544" name="XLXI_176" orien="R270" />
         <instance x="10688" y="624" name="XLXI_177" orien="R270" />
         <instance x="10688" y="704" name="XLXI_178" orien="R270" />
-        <branch name="mem_o(0)">
+        <branch name="mem_select(0)">
             <wire x2="10320" y1="400" y2="400" x1="10176" />
         </branch>
         <instance x="10544" y="368" name="XLXI_179" orien="R180" />
@@ -1760,5 +1745,28 @@
         <instance x="5536" y="384" name="XLXI_180" orien="R0" />
         <instance x="6656" y="752" name="XLXI_106" orien="R0">
         </instance>
+        <branch name="XLXN_77">
+            <wire x2="2672" y1="1648" y2="1648" x1="2624" />
+        </branch>
+        <instance x="2400" y="1872" name="XLXI_31" orien="R0" />
+        <branch name="XLXN_68">
+            <wire x2="2672" y1="1840" y2="1840" x1="2624" />
+        </branch>
+        <branch name="in_r0_r">
+            <wire x2="2400" y1="1840" y2="1840" x1="2336" />
+        </branch>
+        <iomarker fontsize="28" x="2336" y="1840" name="in_r0_r" orien="R180" />
+        <branch name="in_bus1">
+            <wire x2="2400" y1="1776" y2="1776" x1="2336" />
+        </branch>
+        <instance x="2400" y="1808" name="XLXI_39" orien="R0" />
+        <branch name="XLXN_78">
+            <wire x2="2672" y1="1776" y2="1776" x1="2624" />
+        </branch>
+        <iomarker fontsize="28" x="2336" y="1776" name="in_bus1" orien="R180" />
+        <branch name="mem_o(7:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2464" y="1712" type="branch" />
+            <wire x2="2672" y1="1712" y2="1712" x1="2464" />
+        </branch>
     </sheet>
 </drawing>

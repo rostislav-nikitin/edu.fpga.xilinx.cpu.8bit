@@ -1227,3 +1227,16 @@ map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -reg
 par -w -intstyle ise -ol high -mt off cpu_facade_map.ncd cpu_facade.ncd cpu_facade.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_facade.twx cpu_facade.ncd -o cpu_facade.twr cpu_facade.pcf -ucf cpu_facade.ucf 
 bitgen -intstyle ise -f cpu_facade.ut cpu_facade.ncd 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xa6slx9-ftg256-3 cpu_facade.ngc cpu_facade.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -detail -ir off -pr off -lc off -power off -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+par -w -intstyle ise -ol high -mt off cpu_facade_map.ncd cpu_facade.ncd cpu_facade.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_facade.twx cpu_facade.ncd -o cpu_facade.twr cpu_facade.pcf -ucf cpu_facade.ucf 
+bitgen -intstyle ise -f cpu_facade.ut cpu_facade.ncd 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xa6slx9-ftg256-3 cpu_facade.ngc cpu_facade.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -detail -ir off -pr off -lc off -power off -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+par -w -intstyle ise -ol high -mt off cpu_facade_map.ncd cpu_facade.ncd cpu_facade.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpu_facade.twx cpu_facade.ncd -o cpu_facade.twr cpu_facade.pcf -ucf cpu_facade.ucf 
+bitgen -intstyle ise -f cpu_facade.ut cpu_facade.ncd 

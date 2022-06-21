@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu.vhf
--- /___/   /\     Timestamp : 06/13/2022 14:36:01
+-- /___/   /\     Timestamp : 06/22/2022 01:12:47
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -3055,174 +3055,6 @@ use ieee.numeric_std.ALL;
 library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
-entity ram_256bytes_MUSER_cpu is
-   port ( a      : in    std_logic_vector (7 downto 0); 
-          a_w    : in    std_logic; 
-          i      : in    std_logic_vector (7 downto 0); 
-          i_r    : in    std_logic; 
-          i_w    : in    std_logic; 
-          i_wclk : in    std_logic; 
-          a_o    : out   std_logic_vector (7 downto 0); 
-          o      : out   std_logic_vector (7 downto 0));
-end ram_256bytes_MUSER_cpu;
-
-architecture BEHAVIORAL of ram_256bytes_MUSER_cpu is
-   attribute INIT       : string ;
-   attribute BOX_TYPE   : string ;
-   attribute HU_SET     : string ;
-   signal a_o_DUMMY : std_logic_vector (7 downto 0);
-   component RAM256X1S
-      -- synopsys translate_off
-      generic( INIT : bit_vector :=  
-            
-            x"0000000000000000000000000000000000000000000000000000000000000000");
-      -- synopsys translate_on
-      port ( WE   : in    std_logic; 
-             WCLK : in    std_logic; 
-             D    : in    std_logic; 
-             O    : out   std_logic; 
-             A    : in    std_logic_vector (7 downto 0));
-   end component;
-   attribute INIT of RAM256X1S : component is 
-         "0000000000000000000000000000000000000000000000000000000000000000";
-   attribute BOX_TYPE of RAM256X1S : component is "BLACK_BOX";
-   
-   component LD8_HXILINX_cpu
-      port ( D : in    std_logic_vector (7 downto 0); 
-             G : in    std_logic; 
-             Q : out   std_logic_vector (7 downto 0));
-   end component;
-   
-   component INV
-      port ( I : in    std_logic; 
-             O : out   std_logic);
-   end component;
-   attribute BOX_TYPE of INV : component is "BLACK_BOX";
-   
-   attribute INIT of XLXI_1 : label is 
-         "0000000000000000000000000000000000000000000000000000000000000072";
-   attribute HU_SET of XLXI_15 : label is "XLXI_15_41";
-   attribute INIT of XLXI_18 : label is 
-         "0000000000000000000000000000000000000000000000000000000000000901";
-   attribute INIT of XLXI_19 : label is 
-         "0000000000000000000000000000000000000000000000000000000000000040";
-   attribute INIT of XLXI_20 : label is 
-         "0000000000000000000000000000000000000000000000000000000000000020";
-   attribute INIT of XLXI_21 : label is 
-         "0000000000000000000000000000000000000000000000000000000000000205";
-   attribute INIT of XLXI_22 : label is 
-         "00000000000000000000000000000000000000000000000000000000000006A0";
-   attribute INIT of XLXI_23 : label is 
-         "0000000000000000000000000000000000000000000000000000000000000010";
-begin
-   a_o(7 downto 0) <= a_o_DUMMY(7 downto 0);
-   XLXI_1 : RAM256X1S
-   -- synopsys translate_off
-   generic map( INIT => 
-         x"0000000000000000000000000000000000000000000000000000000000000072")
-   -- synopsys translate_on
-      port map (A(7 downto 0)=>a_o_DUMMY(7 downto 0),
-                D=>i(0),
-                WCLK=>i_wclk,
-                WE=>i_w,
-                O=>o(0));
-   
-   XLXI_15 : LD8_HXILINX_cpu
-      port map (D(7 downto 0)=>a(7 downto 0),
-                G=>a_w,
-                Q(7 downto 0)=>a_o_DUMMY(7 downto 0));
-   
-   XLXI_17 : RAM256X1S
-   -- synopsys translate_off
-   generic map( INIT => 
-         x"0000000000000000000000000000000000000000000000000000000000000000")
-   -- synopsys translate_on
-      port map (A(7 downto 0)=>a_o_DUMMY(7 downto 0),
-                D=>i(1),
-                WCLK=>i_wclk,
-                WE=>i_w,
-                O=>o(1));
-   
-   XLXI_18 : RAM256X1S
-   -- synopsys translate_off
-   generic map( INIT => 
-         x"0000000000000000000000000000000000000000000000000000000000000901")
-   -- synopsys translate_on
-      port map (A(7 downto 0)=>a_o_DUMMY(7 downto 0),
-                D=>i(2),
-                WCLK=>i_wclk,
-                WE=>i_w,
-                O=>o(2));
-   
-   XLXI_19 : RAM256X1S
-   -- synopsys translate_off
-   generic map( INIT => 
-         x"0000000000000000000000000000000000000000000000000000000000000040")
-   -- synopsys translate_on
-      port map (A(7 downto 0)=>a_o_DUMMY(7 downto 0),
-                D=>i(3),
-                WCLK=>i_wclk,
-                WE=>i_w,
-                O=>o(3));
-   
-   XLXI_20 : RAM256X1S
-   -- synopsys translate_off
-   generic map( INIT => 
-         x"0000000000000000000000000000000000000000000000000000000000000020")
-   -- synopsys translate_on
-      port map (A(7 downto 0)=>a_o_DUMMY(7 downto 0),
-                D=>i(4),
-                WCLK=>i_wclk,
-                WE=>i_w,
-                O=>o(4));
-   
-   XLXI_21 : RAM256X1S
-   -- synopsys translate_off
-   generic map( INIT => 
-         x"0000000000000000000000000000000000000000000000000000000000000205")
-   -- synopsys translate_on
-      port map (A(7 downto 0)=>a_o_DUMMY(7 downto 0),
-                D=>i(5),
-                WCLK=>i_wclk,
-                WE=>i_w,
-                O=>o(5));
-   
-   XLXI_22 : RAM256X1S
-   -- synopsys translate_off
-   generic map( INIT => 
-         x"00000000000000000000000000000000000000000000000000000000000006A0")
-   -- synopsys translate_on
-      port map (A(7 downto 0)=>a_o_DUMMY(7 downto 0),
-                D=>i(6),
-                WCLK=>i_wclk,
-                WE=>i_w,
-                O=>o(6));
-   
-   XLXI_23 : RAM256X1S
-   -- synopsys translate_off
-   generic map( INIT => 
-         x"0000000000000000000000000000000000000000000000000000000000000010")
-   -- synopsys translate_on
-      port map (A(7 downto 0)=>a_o_DUMMY(7 downto 0),
-                D=>i(7),
-                WCLK=>i_wclk,
-                WE=>i_w,
-                O=>o(7));
-   
-   XLXI_42 : INV
-      port map (I=>i_r,
-                O=>open);
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
 entity stepper_MUSER_cpu is
    port ( clk : in    std_logic; 
           rst : in    std_logic; 
@@ -3289,8 +3121,8 @@ architecture BEHAVIORAL of stepper_MUSER_cpu is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_24 : label is "XLXI_24_42";
-   attribute HU_SET of XLXI_25 : label is "XLXI_25_43";
+   attribute HU_SET of XLXI_24 : label is "XLXI_24_41";
+   attribute HU_SET of XLXI_25 : label is "XLXI_25_42";
 begin
    XLXI_21 : VCC
       port map (P=>XLXN_14);
@@ -3631,11 +3463,11 @@ architecture BEHAVIORAL of cpu_control_MUSER_cpu is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_39 : label is "XLXI_39_46";
-   attribute HU_SET of XLXI_47 : label is "XLXI_47_44";
-   attribute HU_SET of XLXI_48 : label is "XLXI_48_45";
-   attribute HU_SET of XLXI_252 : label is "XLXI_252_47";
-   attribute HU_SET of XLXI_577 : label is "XLXI_577_48";
+   attribute HU_SET of XLXI_39 : label is "XLXI_39_45";
+   attribute HU_SET of XLXI_47 : label is "XLXI_47_43";
+   attribute HU_SET of XLXI_48 : label is "XLXI_48_44";
+   attribute HU_SET of XLXI_252 : label is "XLXI_252_46";
+   attribute HU_SET of XLXI_577 : label is "XLXI_577_47";
 begin
    alu <= alu_DUMMY;
    alu_and <= alu_and_DUMMY;
@@ -4424,7 +4256,7 @@ architecture BEHAVIORAL of lzero_MUSER_cpu is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_49";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_48";
 begin
    XLXI_1 : NOR8_HXILINX_cpu
       port map (I0=>a(7),
@@ -4787,9 +4619,9 @@ architecture BEHAVIORAL of alu_MUSER_cpu is
              xor_o : in    std_logic_vector (7 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_50";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_51";
-   attribute HU_SET of XLXI_102 : label is "XLXI_102_52";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_49";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_50";
+   attribute HU_SET of XLXI_102 : label is "XLXI_102_51";
 begin
    XLXI_1 : D3_8E_HXILINX_cpu
       port map (A0=>op(0),
@@ -5047,6 +4879,7 @@ entity cpu is
           in_manr_w            : in    std_logic; 
           in_manual_input_o    : in    std_logic_vector (7 downto 0); 
           in_manual_input_r    : in    std_logic; 
+          in_mem_o             : in    std_logic_vector (7 downto 0); 
           in_ram_a_w           : in    std_logic; 
           in_ram_r             : in    std_logic; 
           in_ram_w             : in    std_logic; 
@@ -5233,7 +5066,6 @@ architecture BEHAVIORAL of cpu is
    signal pto                  : std_logic_vector (7 downto 0);
    signal ram_a_o              : std_logic_vector (7 downto 0);
    signal ram_a_w              : std_logic;
-   signal ram_o                : std_logic_vector (7 downto 0);
    signal ram_r                : std_logic;
    signal ram_w                : std_logic;
    signal rst                  : std_logic;
@@ -5359,17 +5191,6 @@ architecture BEHAVIORAL of cpu is
       port ( O : out   std_logic);
    end component;
    attribute BOX_TYPE of PULLUP : component is "BLACK_BOX";
-   
-   component ram_256bytes_MUSER_cpu
-      port ( a      : in    std_logic_vector (7 downto 0); 
-             a_o    : out   std_logic_vector (7 downto 0); 
-             a_w    : in    std_logic; 
-             i      : in    std_logic_vector (7 downto 0); 
-             i_r    : in    std_logic; 
-             i_w    : in    std_logic; 
-             i_wclk : in    std_logic; 
-             o      : out   std_logic_vector (7 downto 0));
-   end component;
    
    component LD4CE_HXILINX_cpu
       port ( CLR : in    std_logic; 
@@ -5543,11 +5364,11 @@ architecture BEHAVIORAL of cpu is
    end component;
    attribute BOX_TYPE of OR5 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_87 : label is "XLXI_87_53";
-   attribute HU_SET of XLXI_104 : label is "XLXI_104_54";
-   attribute HU_SET of XLXI_571 : label is "XLXI_571_55";
-   attribute HU_SET of XLXI_914 : label is "XLXI_914_56";
-   attribute HU_SET of XLXI_917 : label is "XLXI_917_57";
+   attribute HU_SET of XLXI_87 : label is "XLXI_87_52";
+   attribute HU_SET of XLXI_104 : label is "XLXI_104_53";
+   attribute HU_SET of XLXI_571 : label is "XLXI_571_54";
+   attribute HU_SET of XLXI_914 : label is "XLXI_914_55";
+   attribute HU_SET of XLXI_917 : label is "XLXI_917_56";
 begin
    manr_o(7 downto 0) <= manr_o_DUMMY(7 downto 0);
    manr_r <= manr_r_DUMMY;
@@ -5636,16 +5457,6 @@ begin
    
    XLXI_8 : PULLUP
       port map (O=>temp_r);
-   
-   XLXI_9 : ram_256bytes_MUSER_cpu
-      port map (a(7 downto 0)=>sysbus(7 downto 0),
-                a_w=>ram_a_w,
-                i(7 downto 0)=>sysbus(7 downto 0),
-                i_r=>ram_r,
-                i_w=>ram_w,
-                i_wclk=>in_clk,
-                a_o(7 downto 0)=>ram_a_o(7 downto 0),
-                o(7 downto 0)=>ram_o(7 downto 0));
    
    XLXI_87 : LD4CE_HXILINX_cpu
       port map (CLR=>XLXN_217,
@@ -5766,7 +5577,7 @@ begin
                 manr_r=>manr_r_DUMMY,
                 manual_input_o(7 downto 0)=>in_manual_input_o(7 downto 0),
                 manual_input_r=>manual_input_r,
-                mem_o(7 downto 0)=>ram_o(7 downto 0),
+                mem_o(7 downto 0)=>in_mem_o(7 downto 0),
                 mem_r=>ram_r,
                 r0_o(7 downto 0)=>r0_o(7 downto 0),
                 r0_r=>r0_r,
