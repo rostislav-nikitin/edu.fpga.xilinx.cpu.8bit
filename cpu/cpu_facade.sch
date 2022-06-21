@@ -818,16 +818,6 @@
             <blockpin signalname="out_r0_r" name="rst" />
             <blockpin signalname="out_usart1_tx" name="tx" />
         </block>
-        <block symbolname="ram_256bytes" name="XLXI_106">
-            <blockpin signalname="out_sysbus(7:0)" name="a(7:0)" />
-            <blockpin name="a_o(7:0)" />
-            <blockpin signalname="ram_a_w" name="a_w" />
-            <blockpin signalname="out_sysbus(7:0)" name="i(7:0)" />
-            <blockpin signalname="ram_r" name="i_r" />
-            <blockpin signalname="ram_w" name="i_w" />
-            <blockpin signalname="in_clk" name="i_wclk" />
-            <blockpin signalname="XLXN_431(7:0)" name="o(7:0)" />
-        </block>
         <block symbolname="and2" name="XLXI_110">
             <blockpin signalname="out_ram_a_w" name="I0" />
             <blockpin signalname="ram_selected" name="I1" />
@@ -983,6 +973,16 @@
             <blockpin signalname="out_sysbus(6)" name="I2" />
             <blockpin signalname="out_sysbus(7)" name="I3" />
             <blockpin signalname="port_selected" name="O" />
+        </block>
+        <block symbolname="ram_256bytes" name="XLXI_106">
+            <blockpin signalname="out_sysbus(7:0)" name="a(7:0)" />
+            <blockpin name="a_o(7:0)" />
+            <blockpin signalname="ram_a_w" name="a_w" />
+            <blockpin signalname="out_sysbus(7:0)" name="i(7:0)" />
+            <blockpin signalname="ram_r" name="i_r" />
+            <blockpin signalname="ram_w" name="i_w" />
+            <blockpin signalname="in_clk" name="i_wclk" />
+            <blockpin signalname="XLXN_431(7:0)" name="o(7:0)" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="64000" height="64000">
@@ -1487,8 +1487,6 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6480" y="720" type="branch" />
             <wire x2="6656" y1="720" y2="720" x1="6480" />
         </branch>
-        <instance x="6656" y="752" name="XLXI_106" orien="R0">
-        </instance>
         <instance x="5536" y="608" name="XLXI_110" orien="R0" />
         <branch name="ram_selected">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="5440" y="480" type="branch" />
@@ -1760,5 +1758,7 @@
             <wire x2="9296" y1="1904" y2="1904" x1="9120" />
         </branch>
         <instance x="5536" y="384" name="XLXI_180" orien="R0" />
+        <instance x="6656" y="752" name="XLXI_106" orien="R0">
+        </instance>
     </sheet>
 </drawing>
