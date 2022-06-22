@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu_freq_divider_1Hz.vhf
--- /___/   /\     Timestamp : 06/09/2022 00:08:27
+-- /___/   /\     Timestamp : 06/23/2022 00:46:09
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -166,8 +166,8 @@ architecture BEHAVIORAL of cpu_freq_divider_base_MUSER_cpu_freq_divider_1Hz is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_110";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_111";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_123";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_124";
 begin
    XLXI_1 : CB16CE_HXILINX_cpu_freq_divider_1Hz
       port map (C=>in_clk,
@@ -287,8 +287,8 @@ architecture BEHAVIORAL of cpu_freq_divider_1Hz is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_15 : label is "XLXI_15_112";
-   attribute HU_SET of XLXI_18 : label is "XLXI_18_113";
+   attribute HU_SET of XLXI_15 : label is "XLXI_15_125";
+   attribute HU_SET of XLXI_18 : label is "XLXI_18_126";
 begin
    XLXI_1 : cpu_freq_divider_base_MUSER_cpu_freq_divider_1Hz
       port map (in_clk=>in_clk,
@@ -297,51 +297,51 @@ begin
                 out_clk_low(15 downto 0)=>low(15 downto 0));
    
    XLXI_2 : BUF
-      port map (I=>low(13),
+      port map (I=>low(12),
                 O=>XLXN_9);
    
    XLXI_3 : BUF
-      port map (I=>low(12),
+      port map (I=>low(11),
                 O=>XLXN_10);
    
    XLXI_4 : BUF
-      port map (I=>low(11),
+      port map (I=>low(10),
                 O=>XLXN_11);
    
    XLXI_5 : BUF
-      port map (I=>low(10),
+      port map (I=>low(9),
                 O=>XLXN_12);
    
    XLXI_6 : BUF
-      port map (I=>low(5),
+      port map (I=>low(4),
                 O=>XLXN_13);
    
    XLXI_7 : BUF
-      port map (I=>high(1),
+      port map (I=>high(0),
                 O=>XLXN_24);
    
    XLXI_8 : BUF
-      port map (I=>high(3),
+      port map (I=>high(2),
                 O=>XLXN_25);
    
    XLXI_9 : BUF
-      port map (I=>high(4),
+      port map (I=>high(3),
                 O=>XLXN_26);
    
    XLXI_10 : BUF
-      port map (I=>high(5),
+      port map (I=>high(4),
                 O=>XLXN_27);
    
    XLXI_11 : BUF
-      port map (I=>high(6),
+      port map (I=>high(5),
                 O=>XLXN_29);
    
    XLXI_12 : BUF
-      port map (I=>high(7),
+      port map (I=>high(6),
                 O=>XLXN_30);
    
    XLXI_13 : BUF
-      port map (I=>high(9),
+      port map (I=>high(8),
                 O=>XLXN_31);
    
    XLXI_14 : AND5

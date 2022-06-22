@@ -13,10 +13,10 @@
         <signal name="half_period_tick" />
         <signal name="XLXN_38" />
         <signal name="out_clk" />
-        <signal name="high(6)" />
-        <signal name="high(13)" />
-        <signal name="high(8)" />
+        <signal name="high(5)" />
+        <signal name="high(12)" />
         <signal name="high(7)" />
+        <signal name="high(6)" />
         <signal name="XLXN_44" />
         <signal name="XLXN_45" />
         <signal name="XLXN_46" />
@@ -106,19 +106,19 @@
             <blockpin signalname="XLXN_38" name="P" />
         </block>
         <block symbolname="buf" name="XLXI_23">
-            <blockpin signalname="high(6)" name="I" />
+            <blockpin signalname="high(5)" name="I" />
             <blockpin signalname="XLXN_44" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_24">
-            <blockpin signalname="high(7)" name="I" />
+            <blockpin signalname="high(6)" name="I" />
             <blockpin signalname="XLXN_45" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_25">
-            <blockpin signalname="high(8)" name="I" />
+            <blockpin signalname="high(7)" name="I" />
             <blockpin signalname="XLXN_46" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_26">
-            <blockpin signalname="high(13)" name="I" />
+            <blockpin signalname="high(12)" name="I" />
             <blockpin signalname="XLXN_47" name="O" />
         </block>
         <block symbolname="and4" name="XLXI_27">
@@ -170,7 +170,7 @@
             <wire x2="3392" y1="1520" y2="1520" x1="3232" />
         </branch>
         <bustap x2="1248" y1="1568" y2="1568" x1="1152" />
-        <branch name="high(6)">
+        <branch name="high(5)">
             <wire x2="1520" y1="1568" y2="1568" x1="1248" />
         </branch>
         <instance x="1520" y="1600" name="XLXI_23" orien="R0" />
@@ -187,13 +187,13 @@
         <instance x="1520" y="1536" name="XLXI_24" orien="R0" />
         <instance x="1520" y="1472" name="XLXI_25" orien="R0" />
         <instance x="1520" y="1408" name="XLXI_26" orien="R0" />
-        <branch name="high(13)">
+        <branch name="high(12)">
             <wire x2="1520" y1="1376" y2="1376" x1="1248" />
         </branch>
-        <branch name="high(8)">
+        <branch name="high(7)">
             <wire x2="1520" y1="1440" y2="1440" x1="1248" />
         </branch>
-        <branch name="high(7)">
+        <branch name="high(6)">
             <wire x2="1520" y1="1504" y2="1504" x1="1248" />
         </branch>
         <branch name="XLXN_44">

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="cpu_freq_divider_1Hz">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2022-6-8T21:50:54</timestamp>
+    <timestamp>2022-6-22T21:45:8</timestamp>
     <pin polarity="Input" x="0" y="-96" name="in_clk" />
     <pin polarity="Input" x="0" y="-32" name="in_clr" />
     <pin polarity="Output" x="384" y="-96" name="out_clk" />

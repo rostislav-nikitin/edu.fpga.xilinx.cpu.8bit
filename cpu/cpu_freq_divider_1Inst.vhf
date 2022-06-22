@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu_freq_divider_1Inst.vhf
--- /___/   /\     Timestamp : 06/09/2022 01:21:48
+-- /___/   /\     Timestamp : 06/23/2022 00:16:26
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -142,8 +142,8 @@ architecture BEHAVIORAL of cpu_freq_divider_base_MUSER_cpu_freq_divider_1Inst is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_118";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_119";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_123";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_124";
 begin
    XLXI_1 : CB16CE_HXILINX_cpu_freq_divider_1Inst
       port map (C=>in_clk,
@@ -220,7 +220,7 @@ architecture BEHAVIORAL of cpu_freq_divider_1Inst is
    end component;
    attribute BOX_TYPE of BUF : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_15 : label is "XLXI_15_120";
+   attribute HU_SET of XLXI_15 : label is "XLXI_15_125";
 begin
    XLXI_1 : cpu_freq_divider_base_MUSER_cpu_freq_divider_1Inst
       port map (in_clk=>in_clk,
@@ -244,7 +244,7 @@ begin
       port map (P=>XLXN_38);
    
    XLXI_23 : BUF
-      port map (I=>high(4),
+      port map (I=>high(3),
                 O=>half_period_tick);
    
 end BEHAVIORAL;

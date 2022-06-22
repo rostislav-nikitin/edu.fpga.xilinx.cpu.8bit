@@ -416,12 +416,12 @@
             <line x2="32" y1="-128" y2="-128" x1="96" />
         </blockdef>
         <blockdef name="clk_generator">
-            <timestamp>2022-4-27T22:28:19</timestamp>
+            <timestamp>2022-6-22T21:12:2</timestamp>
             <rect width="256" x="64" y="-192" height="192" />
             <line x2="0" y1="-160" y2="-160" x1="64" />
-            <line x2="384" y1="-96" y2="-96" x1="320" />
-            <line x2="384" y1="-160" y2="-160" x1="320" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
+            <line x2="384" y1="-160" y2="-160" x1="320" />
+            <line x2="384" y1="-96" y2="-96" x1="320" />
             <line x2="0" y1="-96" y2="-96" x1="64" />
         </blockdef>
         <blockdef name="cpu_control">
@@ -674,28 +674,28 @@
             <rect width="256" x="64" y="-320" height="256" />
         </blockdef>
         <blockdef name="cpu_freq_divider_1Hz">
-            <timestamp>2022-6-8T21:50:56</timestamp>
+            <timestamp>2022-6-22T21:45:10</timestamp>
             <rect width="256" x="64" y="-128" height="128" />
             <line x2="0" y1="-96" y2="-96" x1="64" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <line x2="384" y1="-96" y2="-96" x1="320" />
         </blockdef>
         <blockdef name="cpu_freq_divider_1Stg">
-            <timestamp>2022-6-8T21:37:14</timestamp>
+            <timestamp>2022-6-22T21:53:11</timestamp>
             <rect width="256" x="64" y="-128" height="128" />
             <line x2="0" y1="-96" y2="-96" x1="64" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <line x2="384" y1="-96" y2="-96" x1="320" />
         </blockdef>
         <blockdef name="cpu_freq_divider_1Inst">
-            <timestamp>2022-6-8T22:20:44</timestamp>
+            <timestamp>2022-6-22T21:15:33</timestamp>
             <rect width="256" x="64" y="-128" height="128" />
             <line x2="0" y1="-96" y2="-96" x1="64" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <line x2="384" y1="-96" y2="-96" x1="320" />
         </blockdef>
         <blockdef name="cpu_freq_divider_1KHz">
-            <timestamp>2022-6-9T20:51:58</timestamp>
+            <timestamp>2022-6-22T21:57:9</timestamp>
             <rect width="256" x="64" y="-128" height="128" />
             <line x2="0" y1="-96" y2="-96" x1="64" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
@@ -1851,11 +1851,11 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1840" y="1360" type="branch" />
             <wire x2="1840" y1="1360" y2="1360" x1="1744" />
         </branch>
-        <branch name="clkw">
+        <branch name="clkc">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1840" y="1488" type="branch" />
             <wire x2="1840" y1="1488" y2="1488" x1="1744" />
         </branch>
-        <branch name="clkc">
+        <branch name="clkw">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1840" y="1424" type="branch" />
             <wire x2="1840" y1="1424" y2="1424" x1="1744" />
         </branch>

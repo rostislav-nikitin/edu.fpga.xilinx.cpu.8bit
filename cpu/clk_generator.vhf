@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : clk_generator.vhf
--- /___/   /\     Timestamp : 04/28/2022 01:29:05
+-- /___/   /\     Timestamp : 06/23/2022 00:13:04
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -66,6 +66,53 @@ Q <= q_tmp;
 
 end Behavioral;
 
+----- CELL CB2CE_HXILINX_clk_generator -----
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity CB2CE_HXILINX_clk_generator is
+  
+port (
+    CEO  : out STD_LOGIC;
+    Q0   : out STD_LOGIC;
+    Q1   : out STD_LOGIC;
+    TC   : out STD_LOGIC;
+    C    : in STD_LOGIC;
+    CE   : in STD_LOGIC;
+    CLR  : in STD_LOGIC
+    );
+end CB2CE_HXILINX_clk_generator;
+
+architecture Behavioral of CB2CE_HXILINX_clk_generator is
+
+  signal COUNT : STD_LOGIC_VECTOR(1 downto 0) := (others => '0');
+  constant TERMINAL_COUNT : STD_LOGIC_VECTOR(1 downto 0) := (others => '1');
+  
+begin
+
+process(C, CLR)
+begin
+  if (CLR='1') then
+    COUNT <= (others => '0');
+  elsif (C'event and C = '1') then
+    if (CE='1') then 
+      COUNT <= COUNT+1;
+    end if;
+  end if;
+end process;
+
+TC   <= '1' when (COUNT = TERMINAL_COUNT) else '0';
+CEO  <= '1' when ((COUNT = TERMINAL_COUNT) and CE='1') else '0';
+
+Q1 <= COUNT(1);
+Q0 <= COUNT(0);
+
+end Behavioral;
+
 
 library ieee;
 use ieee.std_logic_1164.ALL;
@@ -84,8 +131,13 @@ end clk_generator;
 architecture BEHAVIORAL of clk_generator is
    attribute HU_SET     : string ;
    attribute BOX_TYPE   : string ;
+   signal clkc_old   : std_logic;
+   signal clkr_old   : std_logic;
+   signal clkw_old   : std_logic;
    signal XLXN_1     : std_logic;
    signal XLXN_9     : std_logic;
+   signal XLXN_10    : std_logic;
+   signal XLXN_13    : std_logic;
    signal clkc_DUMMY : std_logic;
    component FJKC_HXILINX_clk_generator
       port ( C   : in    std_logic; 
@@ -120,7 +172,18 @@ architecture BEHAVIORAL of clk_generator is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_36";
+   component CB2CE_HXILINX_clk_generator
+      port ( C   : in    std_logic; 
+             CE  : in    std_logic; 
+             CLR : in    std_logic; 
+             CEO : out   std_logic; 
+             Q0  : out   std_logic; 
+             Q1  : out   std_logic; 
+             TC  : out   std_logic);
+   end component;
+   
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_58";
+   attribute HU_SET of XLXI_14 : label is "XLXI_14_59";
 begin
    clkc <= clkc_DUMMY;
    XLXI_4 : FJKC_HXILINX_clk_generator
@@ -128,17 +191,17 @@ begin
                 CLR=>rst,
                 J=>XLXN_1,
                 K=>XLXN_1,
-                Q=>clkc_DUMMY);
+                Q=>clkc_old);
    
    XLXI_9 : OR2
-      port map (I0=>clkc_DUMMY,
+      port map (I0=>clkc_old,
                 I1=>clk,
-                O=>clkr);
+                O=>clkr_old);
    
    XLXI_10 : AND2B1
       port map (I0=>clk,
-                I1=>clkc_DUMMY,
-                O=>clkw);
+                I1=>clkc_old,
+                O=>clkw_old);
    
    XLXI_12 : INV
       port map (I=>clk,
@@ -146,6 +209,28 @@ begin
    
    XLXI_13 : VCC
       port map (P=>XLXN_1);
+   
+   XLXI_14 : CB2CE_HXILINX_clk_generator
+      port map (C=>clk,
+                CE=>XLXN_10,
+                CLR=>rst,
+                CEO=>open,
+                Q0=>XLXN_13,
+                Q1=>clkc_DUMMY,
+                TC=>open);
+   
+   XLXI_15 : VCC
+      port map (P=>XLXN_10);
+   
+   XLXI_16 : OR2
+      port map (I0=>clkc_DUMMY,
+                I1=>XLXN_13,
+                O=>clkr);
+   
+   XLXI_17 : AND2B1
+      port map (I0=>XLXN_13,
+                I1=>clkc_DUMMY,
+                O=>clkw);
    
 end BEHAVIORAL;
 

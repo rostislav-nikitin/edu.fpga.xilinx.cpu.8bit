@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu_freq_divider_1KHz.vhf
--- /___/   /\     Timestamp : 06/10/2022 01:22:11
+-- /___/   /\     Timestamp : 06/23/2022 00:57:57
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -142,8 +142,8 @@ architecture BEHAVIORAL of cpu_freq_divider_base_MUSER_cpu_freq_divider_1KHz is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_120";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_121";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_123";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_124";
 begin
    XLXI_1 : CB16CE_HXILINX_cpu_freq_divider_1KHz
       port map (C=>in_clk,
@@ -233,7 +233,7 @@ architecture BEHAVIORAL of cpu_freq_divider_1KHz is
    end component;
    attribute BOX_TYPE of AND4 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_15 : label is "XLXI_15_122";
+   attribute HU_SET of XLXI_15 : label is "XLXI_15_125";
 begin
    XLXI_1 : cpu_freq_divider_base_MUSER_cpu_freq_divider_1KHz
       port map (in_clk=>in_clk,
@@ -257,19 +257,19 @@ begin
       port map (P=>XLXN_38);
    
    XLXI_23 : BUF
-      port map (I=>high(6),
+      port map (I=>high(5),
                 O=>XLXN_44);
    
    XLXI_24 : BUF
-      port map (I=>high(7),
+      port map (I=>high(6),
                 O=>XLXN_45);
    
    XLXI_25 : BUF
-      port map (I=>high(8),
+      port map (I=>high(7),
                 O=>XLXN_46);
    
    XLXI_26 : BUF
-      port map (I=>high(13),
+      port map (I=>high(12),
                 O=>XLXN_47);
    
    XLXI_27 : AND4

@@ -8,21 +8,21 @@
     <netlist>
         <signal name="in_clk" />
         <signal name="low(15:0)" />
-        <signal name="low(11)" />
-        <signal name="low(8)" />
-        <signal name="low(3)" />
+        <signal name="low(10)" />
+        <signal name="low(7)" />
+        <signal name="low(2)" />
         <signal name="XLXN_3" />
         <signal name="XLXN_4" />
         <signal name="XLXN_5" />
         <signal name="XLXN_6" />
         <signal name="XLXN_7" />
-        <signal name="low(10)" />
         <signal name="low(9)" />
+        <signal name="low(8)" />
         <signal name="high(15:0)" />
+        <signal name="high(0)" />
         <signal name="high(1)" />
-        <signal name="high(2)" />
+        <signal name="high(3)" />
         <signal name="high(4)" />
-        <signal name="high(5)" />
         <signal name="XLXN_10" />
         <signal name="XLXN_26" />
         <signal name="XLXN_27" />
@@ -32,14 +32,14 @@
         <signal name="XLXN_34" />
         <signal name="XLXN_35" />
         <signal name="half_period_tick" />
-        <signal name="high(7)" />
+        <signal name="high(6)" />
         <signal name="XLXN_37" />
         <signal name="in_clr" />
         <signal name="XLXN_38" />
         <signal name="out_clk" />
-        <signal name="low(15)" />
+        <signal name="low(14)" />
         <signal name="XLXN_43" />
-        <signal name="high(3)" />
+        <signal name="high(2)" />
         <port polarity="Input" name="in_clk" />
         <port polarity="Input" name="in_clr" />
         <port polarity="Output" name="out_clk" />
@@ -122,47 +122,47 @@
             <blockpin signalname="low(15:0)" name="out_clk_low(15:0)" />
         </block>
         <block symbolname="buf" name="XLXI_2">
-            <blockpin signalname="low(11)" name="I" />
+            <blockpin signalname="low(10)" name="I" />
             <blockpin signalname="XLXN_3" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_3">
-            <blockpin signalname="low(10)" name="I" />
+            <blockpin signalname="low(9)" name="I" />
             <blockpin signalname="XLXN_4" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_4">
-            <blockpin signalname="low(9)" name="I" />
+            <blockpin signalname="low(8)" name="I" />
             <blockpin signalname="XLXN_5" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_5">
-            <blockpin signalname="low(8)" name="I" />
+            <blockpin signalname="low(7)" name="I" />
             <blockpin signalname="XLXN_6" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_6">
-            <blockpin signalname="low(3)" name="I" />
+            <blockpin signalname="low(2)" name="I" />
             <blockpin signalname="XLXN_7" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_8">
-            <blockpin signalname="high(1)" name="I" />
+            <blockpin signalname="high(0)" name="I" />
             <blockpin signalname="XLXN_10" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_9">
-            <blockpin signalname="high(2)" name="I" />
+            <blockpin signalname="high(1)" name="I" />
             <blockpin signalname="XLXN_26" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_10">
-            <blockpin signalname="high(3)" name="I" />
+            <blockpin signalname="high(2)" name="I" />
             <blockpin signalname="XLXN_27" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_11">
-            <blockpin signalname="high(4)" name="I" />
+            <blockpin signalname="high(3)" name="I" />
             <blockpin signalname="XLXN_29" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_12">
-            <blockpin signalname="high(5)" name="I" />
+            <blockpin signalname="high(4)" name="I" />
             <blockpin signalname="XLXN_30" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_13">
-            <blockpin signalname="high(7)" name="I" />
+            <blockpin signalname="high(6)" name="I" />
             <blockpin signalname="XLXN_31" name="O" />
         </block>
         <block symbolname="and2" name="XLXI_16">
@@ -186,7 +186,7 @@
             <blockpin signalname="XLXN_38" name="P" />
         </block>
         <block symbolname="buf" name="XLXI_20">
-            <blockpin signalname="low(15)" name="I" />
+            <blockpin signalname="low(14)" name="I" />
             <blockpin signalname="XLXN_43" name="O" />
         </block>
         <block symbolname="and6" name="XLXI_21">
@@ -227,13 +227,13 @@
         <bustap x2="1456" y1="560" y2="560" x1="1360" />
         <bustap x2="1456" y1="624" y2="624" x1="1360" />
         <bustap x2="1456" y1="688" y2="688" x1="1360" />
-        <branch name="low(11)">
+        <branch name="low(10)">
             <wire x2="1568" y1="432" y2="432" x1="1456" />
         </branch>
-        <branch name="low(8)">
+        <branch name="low(7)">
             <wire x2="1568" y1="624" y2="624" x1="1456" />
         </branch>
-        <branch name="low(3)">
+        <branch name="low(2)">
             <wire x2="1568" y1="688" y2="688" x1="1456" />
         </branch>
         <instance x="1568" y="464" name="XLXI_2" orien="R0" />
@@ -256,10 +256,10 @@
         <branch name="XLXN_7">
             <wire x2="1888" y1="688" y2="688" x1="1792" />
         </branch>
-        <branch name="low(10)">
+        <branch name="low(9)">
             <wire x2="1568" y1="496" y2="496" x1="1456" />
         </branch>
-        <branch name="low(9)">
+        <branch name="low(8)">
             <wire x2="1568" y1="560" y2="560" x1="1456" />
         </branch>
         <branch name="high(15:0)">
@@ -284,16 +284,16 @@
         <bustap x2="1264" y1="1088" y2="1088" x1="1168" />
         <bustap x2="1264" y1="1152" y2="1152" x1="1168" />
         <bustap x2="1264" y1="1216" y2="1216" x1="1168" />
-        <branch name="high(1)">
+        <branch name="high(0)">
             <wire x2="1568" y1="896" y2="896" x1="1264" />
         </branch>
-        <branch name="high(2)">
+        <branch name="high(1)">
             <wire x2="1568" y1="960" y2="960" x1="1264" />
         </branch>
-        <branch name="high(4)">
+        <branch name="high(3)">
             <wire x2="1568" y1="1088" y2="1088" x1="1264" />
         </branch>
-        <branch name="high(5)">
+        <branch name="high(4)">
             <wire x2="1568" y1="1152" y2="1152" x1="1264" />
         </branch>
         <instance x="1568" y="928" name="XLXI_8" orien="R0" />
@@ -342,7 +342,7 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2608" y="800" type="branch" />
             <wire x2="2608" y1="800" y2="800" x1="2464" />
         </branch>
-        <branch name="high(7)">
+        <branch name="high(6)">
             <wire x2="1568" y1="1216" y2="1216" x1="1264" />
         </branch>
         <instance x="272" y="528" name="XLXI_17" orien="R0" />
@@ -380,7 +380,7 @@
             <wire x2="2864" y1="1344" y2="1344" x1="2768" />
         </branch>
         <bustap x2="1456" y1="368" y2="368" x1="1360" />
-        <branch name="low(15)">
+        <branch name="low(14)">
             <wire x2="1488" y1="368" y2="368" x1="1456" />
             <wire x2="1568" y1="368" y2="368" x1="1488" />
         </branch>
@@ -390,7 +390,7 @@
             <wire x2="1888" y1="368" y2="368" x1="1792" />
         </branch>
         <instance x="1888" y="1280" name="XLXI_22" orien="R0" />
-        <branch name="high(3)">
+        <branch name="high(2)">
             <wire x2="1568" y1="1024" y2="1024" x1="1264" />
         </branch>
     </sheet>

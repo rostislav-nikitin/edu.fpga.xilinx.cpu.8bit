@@ -12,7 +12,7 @@
         <signal name="in_clr" />
         <signal name="XLXN_38" />
         <signal name="out_clk" />
-        <signal name="high(4)" />
+        <signal name="high(3)" />
         <signal name="half_period_tick" />
         <port polarity="Input" name="in_clk" />
         <port polarity="Input" name="in_clr" />
@@ -87,7 +87,7 @@
             <blockpin signalname="XLXN_38" name="P" />
         </block>
         <block symbolname="buf" name="XLXI_23">
-            <blockpin signalname="high(4)" name="I" />
+            <blockpin signalname="high(3)" name="I" />
             <blockpin signalname="half_period_tick" name="O" />
         </block>
     </netlist>
@@ -148,7 +148,7 @@
         <iomarker fontsize="28" x="208" y="496" name="in_clr" orien="R180" />
         <iomarker fontsize="28" x="3392" y="1216" name="out_clk" orien="R0" />
         <bustap x2="1248" y1="1264" y2="1264" x1="1152" />
-        <branch name="high(4)">
+        <branch name="high(3)">
             <wire x2="1520" y1="1264" y2="1264" x1="1248" />
         </branch>
         <instance x="1520" y="1296" name="XLXI_23" orien="R0" />
