@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Map" timeStamp="Wed Jun 22 01:50:12 2022">
+  <application stringID="Map" timeStamp="Wed Jun 22 03:18:34 2022">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -33,7 +33,7 @@
         <column stringID="speed"/>
         <row stringID="row" value="0">
           <item stringID="arch" value="Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz"/>
-          <item stringID="speed" value="3400.000 MHz"/>
+          <item stringID="speed" value="2200.000 MHz"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="arch" value="Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz"/>
@@ -110,7 +110,7 @@
         <item dataType="int" stringID="MAP_NUM_ERRORS" value="0"/>
         <item dataType="int" stringID="MAP_FILTERED_WARNINGS" value="0"/>
         <item dataType="int" stringID="MAP_NUM_WARNINGS" value="8"/>
-        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="868088"/>
+        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="868092"/>
         <item stringID="MAP_TOTAL_REAL_TIME" value="8 secs "/>
         <item stringID="MAP_TOTAL_CPU_TIME" value="8 secs "/>
       </section>
@@ -144,15 +144,15 @@
           <item dataType="int" stringID="MAP_NUM_LUT_RT_DRIVES_CARRY4" value="10"/>
           <item dataType="int" stringID="MAP_NUM_LUT_RT_DRIVES_OTHERS" value="0"/>
         </item>
-        <item AVAILABLE="1430" dataType="int" label="Number of occupied Slices" stringID="MAP_OCCUPIED_SLICES" value="153">
+        <item AVAILABLE="1430" dataType="int" label="Number of occupied Slices" stringID="MAP_OCCUPIED_SLICES" value="143">
           <item AVAILABLE="355" dataType="int" stringID="MAP_NUM_SLICEL" value="50"/>
           <item AVAILABLE="360" dataType="int" stringID="MAP_NUM_SLICEM" value="8"/>
-          <item AVAILABLE="715" dataType="int" stringID="MAP_NUM_SLICEX" value="95"/>
+          <item AVAILABLE="715" dataType="int" stringID="MAP_NUM_SLICEX" value="85"/>
         </item>
-        <item dataType="int" label="Number of LUT Flip Flop pairs used" stringID="MAP_OCCUPIED_LUT_AND_FF" value="452">
-          <item dataType="int" stringID="MAP_OCCUPIED_LUT_ONLY" value="215"/>
-          <item dataType="int" label="Number with an unused LUT" stringID="MAP_OCCUPIED_FF_ONLY" value="70"/>
-          <item dataType="int" label="Number of fully used LUT-FF pairs" stringID="MAP_OCCUPIED_FF_AND_LUT" value="167"/>
+        <item dataType="int" label="Number of LUT Flip Flop pairs used" stringID="MAP_OCCUPIED_LUT_AND_FF" value="444">
+          <item dataType="int" stringID="MAP_OCCUPIED_LUT_ONLY" value="207"/>
+          <item dataType="int" label="Number with an unused LUT" stringID="MAP_OCCUPIED_FF_ONLY" value="62"/>
+          <item dataType="int" label="Number of fully used LUT-FF pairs" stringID="MAP_OCCUPIED_FF_AND_LUT" value="175"/>
         </item>
       </section>
       <section stringID="MAP_IOB_REPORTING">
@@ -893,7 +893,7 @@
           <node stringID="MAP_CLOCK_SIGNAL" value="XLXI_105/XLXI_2/usart_clk">
             <item dataType="int" label="Slice&#xA;Load Count" stringID="MAP_SLICE_LOAD_COUNT" value="5"/>
             <item dataType="int" label="Bel&#xA;Load Count" stringID="MAP_BEL_LOAD_COUNT" value="11"/>
-            <node stringID="MAP_RESET_SIGNAL" value="XLXI_7/r0_r">
+            <node stringID="MAP_RESET_SIGNAL" value="XLXI_7/r2_r">
               <item dataType="int" label="Slice&#xA;Load Count" stringID="MAP_SLICE_LOAD_COUNT" value="2"/>
               <item dataType="int" label="Bel&#xA;Load Count" stringID="MAP_BEL_LOAD_COUNT" value="3"/>
             </node>
@@ -1048,7 +1048,7 @@
                 <item dataType="int" label="Slice&#xA;Load Count" stringID="MAP_SLICE_LOAD_COUNT" value="2"/>
                 <item dataType="int" label="Bel&#xA;Load Count" stringID="MAP_BEL_LOAD_COUNT" value="8"/>
               </node>
-              <node stringID="MAP_ENABLE_SIGNAL" value="XLXN_415">
+              <node stringID="MAP_ENABLE_SIGNAL" value="port_one_w">
                 <item dataType="int" label="Slice&#xA;Load Count" stringID="MAP_SLICE_LOAD_COUNT" value="2"/>
                 <item dataType="int" label="Bel&#xA;Load Count" stringID="MAP_BEL_LOAD_COUNT" value="8"/>
               </node>
@@ -1104,7 +1104,7 @@
           <property label="PLL_ADV" stringID="MAP_PLL_ADV"/>
           <node label="Module Name" stringID="MAP_MODULE" value="cpu_facade">
             <item label="Partition" stringID="MAP_PARTITION" value=""/>
-            <item ACCUMULATED="234" dataType="int" label="Slices" stringID="MAP_SLICES" value="5"/>
+            <item ACCUMULATED="230" dataType="int" label="Slices" stringID="MAP_SLICES" value="5"/>
             <item ACCUMULATED="239" dataType="int" label="Slice Reg" stringID="MAP_SLICE_REG" value="0"/>
             <item ACCUMULATED="382" dataType="int" label="LUTs" stringID="MAP_LUTS" value="5"/>
             <item ACCUMULATED="32" dataType="int" label="LUTRAM" stringID="MAP_LUTRAM" value="0"/>
@@ -1397,7 +1397,7 @@
             </node>
             <node label="Module Name" stringID="MAP_MODULE" value="XLXI_7">
               <item label="Partition" stringID="MAP_PARTITION" value=""/>
-              <item ACCUMULATED="190" dataType="int" label="Slices" stringID="MAP_SLICES" value="26"/>
+              <item ACCUMULATED="186" dataType="int" label="Slices" stringID="MAP_SLICES" value="24"/>
               <item ACCUMULATED="170" dataType="int" label="Slice Reg" stringID="MAP_SLICE_REG" value="1"/>
               <item ACCUMULATED="284" dataType="int" label="LUTs" stringID="MAP_LUTS" value="29"/>
               <item ACCUMULATED="0" dataType="int" label="LUTRAM" stringID="MAP_LUTRAM" value="0"/>
@@ -2558,7 +2558,7 @@
               </node>
               <node label="Module Name" stringID="MAP_MODULE" value="cpu_ctl">
                 <item label="Partition" stringID="MAP_PARTITION" value=""/>
-                <item ACCUMULATED="35" dataType="int" label="Slices" stringID="MAP_SLICES" value="24"/>
+                <item ACCUMULATED="33" dataType="int" label="Slices" stringID="MAP_SLICES" value="21"/>
                 <item ACCUMULATED="3" dataType="int" label="Slice Reg" stringID="MAP_SLICE_REG" value="0"/>
                 <item ACCUMULATED="55" dataType="int" label="LUTs" stringID="MAP_LUTS" value="42"/>
                 <item ACCUMULATED="0" dataType="int" label="LUTRAM" stringID="MAP_LUTRAM" value="0"/>
@@ -2613,7 +2613,7 @@
                 </node>
                 <node label="Module Name" stringID="MAP_MODULE" value="stp">
                   <item label="Partition" stringID="MAP_PARTITION" value=""/>
-                  <item ACCUMULATED="5" dataType="int" label="Slices" stringID="MAP_SLICES" value="1"/>
+                  <item ACCUMULATED="6" dataType="int" label="Slices" stringID="MAP_SLICES" value="1"/>
                   <item ACCUMULATED="3" dataType="int" label="Slice Reg" stringID="MAP_SLICE_REG" value="0"/>
                   <item ACCUMULATED="7" dataType="int" label="LUTs" stringID="MAP_LUTS" value="1"/>
                   <item ACCUMULATED="0" dataType="int" label="LUTRAM" stringID="MAP_LUTRAM" value="0"/>
@@ -2640,7 +2640,7 @@
                   </node>
                   <node label="Module Name" stringID="MAP_MODULE" value="XLXI_25">
                     <item label="Partition" stringID="MAP_PARTITION" value=""/>
-                    <item ACCUMULATED="3" dataType="int" label="Slices" stringID="MAP_SLICES" value="3"/>
+                    <item ACCUMULATED="4" dataType="int" label="Slices" stringID="MAP_SLICES" value="4"/>
                     <item ACCUMULATED="0" dataType="int" label="Slice Reg" stringID="MAP_SLICE_REG" value="0"/>
                     <item ACCUMULATED="4" dataType="int" label="LUTs" stringID="MAP_LUTS" value="4"/>
                     <item ACCUMULATED="0" dataType="int" label="LUTRAM" stringID="MAP_LUTRAM" value="0"/>

@@ -11,7 +11,7 @@ Target Device  : xa6slx9
 Target Package : ftg256
 Target Speed   : -3
 Mapper Version : aspartan6 -- $Revision: 1.55 $
-Mapped Date    : Wed Jun 22 01:50:04 2022
+Mapped Date    : Wed Jun 22 03:18:26 2022
 
 Mapping design into LUTs...
 WARNING:MapLib:701 - Signal in_manr_w connected to top level port in_manr_w has
@@ -52,21 +52,21 @@ Phase 8.5  Local Placement Optimization
 Phase 8.5  Local Placement Optimization (Checksum:d45df9e2) REAL time: 7 secs 
 
 Phase 9.8  Global Placement
-...........................
-................
-Phase 9.8  Global Placement (Checksum:8c33ee5c) REAL time: 7 secs 
+...................................
+.....................
+Phase 9.8  Global Placement (Checksum:9ee116ec) REAL time: 7 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:8c33ee5c) REAL time: 7 secs 
+Phase 10.5  Local Placement Optimization (Checksum:9ee116ec) REAL time: 7 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:4ae31044) REAL time: 7 secs 
+Phase 11.18  Placement Optimization (Checksum:79fc7cc) REAL time: 8 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:4ae31044) REAL time: 8 secs 
+Phase 12.5  Local Placement Optimization (Checksum:79fc7cc) REAL time: 8 secs 
 
 Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:4ae31044) REAL time: 8 secs 
+Phase 13.34  Placement Validation (Checksum:79fc7cc) REAL time: 8 secs 
 
 Total REAL time to Placer completion: 8 secs 
 Total CPU  time to Placer completion: 8 secs 
@@ -128,12 +128,12 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   153 out of   1,430   10%
+  Number of occupied Slices:                   143 out of   1,430   10%
   Nummber of MUXCYs used:                      132 out of   2,860    4%
-  Number of LUT Flip Flop pairs used:          452
-    Number with an unused Flip Flop:           215 out of     452   47%
-    Number with an unused LUT:                  70 out of     452   15%
-    Number of fully used LUT-FF pairs:         167 out of     452   36%
+  Number of LUT Flip Flop pairs used:          444
+    Number with an unused Flip Flop:           207 out of     444   46%
+    Number with an unused LUT:                  62 out of     444   13%
+    Number of fully used LUT-FF pairs:         175 out of     444   39%
     Number of unique control sets:              37
     Number of slice register sites lost
       to control set restrictions:              97 out of  11,440    1%

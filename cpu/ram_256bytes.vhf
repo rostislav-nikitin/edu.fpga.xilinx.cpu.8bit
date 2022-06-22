@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ram_256bytes.vhf
--- /___/   /\     Timestamp : 06/08/2022 00:16:33
+-- /___/   /\     Timestamp : 06/22/2022 02:43:06
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -98,26 +98,28 @@ architecture BEHAVIORAL of ram_256bytes is
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
    attribute INIT of XLXI_1 : label is 
-         "0000000000000000000000000000000000000000000000000000000000000072";
-   attribute HU_SET of XLXI_15 : label is "XLXI_15_49";
+         "0000000000000000000000000000000000000000000000000000000000000142";
+   attribute HU_SET of XLXI_15 : label is "XLXI_15_0";
+   attribute INIT of XLXI_17 : label is 
+         "0000000000000000000000000000000000000000000000000000000000004880";
    attribute INIT of XLXI_18 : label is 
-         "0000000000000000000000000000000000000000000000000000000000000901";
+         "0000000000000000000000000000000000000000000000000000000000004A01";
    attribute INIT of XLXI_19 : label is 
-         "0000000000000000000000000000000000000000000000000000000000000040";
+         "0000000000000000000000000000000000000000000000000000000000000210";
    attribute INIT of XLXI_20 : label is 
-         "0000000000000000000000000000000000000000000000000000000000000020";
+         "00000000000000000000000000000000000000000000000000000000000001A0";
    attribute INIT of XLXI_21 : label is 
-         "0000000000000000000000000000000000000000000000000000000000000205";
+         "0000000000000000000000000000000000000000000000000000000000001035";
    attribute INIT of XLXI_22 : label is 
-         "00000000000000000000000000000000000000000000000000000000000006A0";
+         "0000000000000000000000000000000000000000000000000000000000003520";
    attribute INIT of XLXI_23 : label is 
-         "0000000000000000000000000000000000000000000000000000000000000010";
+         "0000000000000000000000000000000000000000000000000000000000000060";
 begin
    a_o(7 downto 0) <= a_o_DUMMY(7 downto 0);
    XLXI_1 : RAM256X1S
    -- synopsys translate_off
    generic map( INIT => 
-         x"0000000000000000000000000000000000000000000000000000000000000072")
+         x"0000000000000000000000000000000000000000000000000000000000000142")
    -- synopsys translate_on
       port map (A(7 downto 0)=>a_o_DUMMY(7 downto 0),
                 D=>i(0),
@@ -133,7 +135,7 @@ begin
    XLXI_17 : RAM256X1S
    -- synopsys translate_off
    generic map( INIT => 
-         x"0000000000000000000000000000000000000000000000000000000000000000")
+         x"0000000000000000000000000000000000000000000000000000000000004880")
    -- synopsys translate_on
       port map (A(7 downto 0)=>a_o_DUMMY(7 downto 0),
                 D=>i(1),
@@ -144,7 +146,7 @@ begin
    XLXI_18 : RAM256X1S
    -- synopsys translate_off
    generic map( INIT => 
-         x"0000000000000000000000000000000000000000000000000000000000000901")
+         x"0000000000000000000000000000000000000000000000000000000000004A01")
    -- synopsys translate_on
       port map (A(7 downto 0)=>a_o_DUMMY(7 downto 0),
                 D=>i(2),
@@ -155,7 +157,7 @@ begin
    XLXI_19 : RAM256X1S
    -- synopsys translate_off
    generic map( INIT => 
-         x"0000000000000000000000000000000000000000000000000000000000000040")
+         x"0000000000000000000000000000000000000000000000000000000000000210")
    -- synopsys translate_on
       port map (A(7 downto 0)=>a_o_DUMMY(7 downto 0),
                 D=>i(3),
@@ -166,7 +168,7 @@ begin
    XLXI_20 : RAM256X1S
    -- synopsys translate_off
    generic map( INIT => 
-         x"0000000000000000000000000000000000000000000000000000000000000020")
+         x"00000000000000000000000000000000000000000000000000000000000001A0")
    -- synopsys translate_on
       port map (A(7 downto 0)=>a_o_DUMMY(7 downto 0),
                 D=>i(4),
@@ -177,7 +179,7 @@ begin
    XLXI_21 : RAM256X1S
    -- synopsys translate_off
    generic map( INIT => 
-         x"0000000000000000000000000000000000000000000000000000000000000205")
+         x"0000000000000000000000000000000000000000000000000000000000001035")
    -- synopsys translate_on
       port map (A(7 downto 0)=>a_o_DUMMY(7 downto 0),
                 D=>i(5),
@@ -188,7 +190,7 @@ begin
    XLXI_22 : RAM256X1S
    -- synopsys translate_off
    generic map( INIT => 
-         x"00000000000000000000000000000000000000000000000000000000000006A0")
+         x"0000000000000000000000000000000000000000000000000000000000003520")
    -- synopsys translate_on
       port map (A(7 downto 0)=>a_o_DUMMY(7 downto 0),
                 D=>i(6),
@@ -199,7 +201,7 @@ begin
    XLXI_23 : RAM256X1S
    -- synopsys translate_off
    generic map( INIT => 
-         x"0000000000000000000000000000000000000000000000000000000000000010")
+         x"0000000000000000000000000000000000000000000000000000000000000060")
    -- synopsys translate_on
       port map (A(7 downto 0)=>a_o_DUMMY(7 downto 0),
                 D=>i(7),

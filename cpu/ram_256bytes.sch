@@ -76,7 +76,7 @@
             <blockpin signalname="a_o(7:0)" name="Q(7:0)" />
         </block>
         <block symbolname="ram256x1s" name="XLXI_1">
-            <attr value="0000000000000000000000000000000000000000000000000000000000000072" name="INIT">
+            <attr value="0000000000000000000000000000000000000000000000000000000000000142" name="INIT">
                 <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
                 <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
                 <trait valuetype="BitVector 256 hexadecimal" />
@@ -88,7 +88,7 @@
             <blockpin signalname="a_o(7:0)" name="A(7:0)" />
         </block>
         <block symbolname="ram256x1s" name="XLXI_17">
-            <attr value="0000000000000000000000000000000000000000000000000000000000000000" name="INIT">
+            <attr value="0000000000000000000000000000000000000000000000000000000000004880" name="INIT">
                 <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
                 <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
                 <trait valuetype="BitVector 256 hexadecimal" />
@@ -100,7 +100,7 @@
             <blockpin signalname="a_o(7:0)" name="A(7:0)" />
         </block>
         <block symbolname="ram256x1s" name="XLXI_18">
-            <attr value="0000000000000000000000000000000000000000000000000000000000000901" name="INIT">
+            <attr value="0000000000000000000000000000000000000000000000000000000000004A01" name="INIT">
                 <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
                 <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
                 <trait valuetype="BitVector 256 hexadecimal" />
@@ -112,7 +112,7 @@
             <blockpin signalname="a_o(7:0)" name="A(7:0)" />
         </block>
         <block symbolname="ram256x1s" name="XLXI_19">
-            <attr value="0000000000000000000000000000000000000000000000000000000000000040" name="INIT">
+            <attr value="0000000000000000000000000000000000000000000000000000000000000210" name="INIT">
                 <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
                 <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
                 <trait valuetype="BitVector 256 hexadecimal" />
@@ -124,7 +124,7 @@
             <blockpin signalname="a_o(7:0)" name="A(7:0)" />
         </block>
         <block symbolname="ram256x1s" name="XLXI_20">
-            <attr value="0000000000000000000000000000000000000000000000000000000000000020" name="INIT">
+            <attr value="00000000000000000000000000000000000000000000000000000000000001A0" name="INIT">
                 <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
                 <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
                 <trait valuetype="BitVector 256 hexadecimal" />
@@ -136,7 +136,7 @@
             <blockpin signalname="a_o(7:0)" name="A(7:0)" />
         </block>
         <block symbolname="ram256x1s" name="XLXI_21">
-            <attr value="0000000000000000000000000000000000000000000000000000000000000205" name="INIT">
+            <attr value="0000000000000000000000000000000000000000000000000000000000001035" name="INIT">
                 <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
                 <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
                 <trait valuetype="BitVector 256 hexadecimal" />
@@ -148,7 +148,7 @@
             <blockpin signalname="a_o(7:0)" name="A(7:0)" />
         </block>
         <block symbolname="ram256x1s" name="XLXI_22">
-            <attr value="00000000000000000000000000000000000000000000000000000000000006A0" name="INIT">
+            <attr value="0000000000000000000000000000000000000000000000000000000000003520" name="INIT">
                 <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
                 <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
                 <trait valuetype="BitVector 256 hexadecimal" />
@@ -160,7 +160,7 @@
             <blockpin signalname="a_o(7:0)" name="A(7:0)" />
         </block>
         <block symbolname="ram256x1s" name="XLXI_23">
-            <attr value="0000000000000000000000000000000000000000000000000000000000000010" name="INIT">
+            <attr value="0000000000000000000000000000000000000000000000000000000000000060" name="INIT">
                 <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
                 <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
                 <trait valuetype="BitVector 256 hexadecimal" />
@@ -199,8 +199,7 @@
             <wire x2="1280" y1="2336" y2="2400" x1="1280" />
             <wire x2="1584" y1="2400" y2="2400" x1="1280" />
             <wire x2="1280" y1="2400" y2="2688" x1="1280" />
-            <wire x2="1280" y1="2688" y2="2696" x1="1280" />
-            <wire x2="1280" y1="2696" y2="2704" x1="1280" />
+            <wire x2="1280" y1="2688" y2="2704" x1="1280" />
             <wire x2="1280" y1="2704" y2="2752" x1="1280" />
             <wire x2="1280" y1="2752" y2="3104" x1="1280" />
             <wire x2="1584" y1="3104" y2="3104" x1="1280" />
@@ -325,8 +324,7 @@
             <wire x2="1392" y1="1632" y2="1984" x1="1392" />
             <wire x2="1392" y1="1984" y2="2336" x1="1392" />
             <wire x2="1392" y1="2336" y2="2672" x1="1392" />
-            <wire x2="1392" y1="2672" y2="2680" x1="1392" />
-            <wire x2="1392" y1="2680" y2="2688" x1="1392" />
+            <wire x2="1392" y1="2672" y2="2688" x1="1392" />
             <wire x2="1392" y1="2688" y2="3040" x1="1392" />
             <wire x2="1584" y1="3040" y2="3040" x1="1392" />
             <wire x2="1584" y1="2688" y2="2688" x1="1392" />

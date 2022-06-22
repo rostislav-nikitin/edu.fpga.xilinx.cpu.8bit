@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu_facade.vhf
--- /___/   /\     Timestamp : 06/22/2022 01:49:44
+-- /___/   /\     Timestamp : 06/22/2022 03:18:05
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -818,6 +818,40 @@ use ieee.numeric_std.ALL;
 library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
+entity USART_MUSER_cpu_facade is
+   port ( clk  : in    std_logic; 
+          data : in    std_logic_vector (7 downto 0); 
+          rst  : in    std_logic; 
+          tx   : out   std_logic);
+end USART_MUSER_cpu_facade;
+
+architecture BEHAVIORAL of USART_MUSER_cpu_facade is
+   component usart_tramnsmitter
+      port ( clk  : in    std_logic; 
+             rst  : in    std_logic; 
+             data : in    std_logic_vector (7 downto 0); 
+             tx   : out   std_logic; 
+             done : out   std_logic);
+   end component;
+   
+begin
+   XLXI_2 : usart_tramnsmitter
+      port map (clk=>clk,
+                data(7 downto 0)=>data(7 downto 0),
+                rst=>rst,
+                done=>open,
+                tx=>tx);
+   
+end BEHAVIORAL;
+
+
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
 entity ram_256bytes_MUSER_cpu_facade is
    port ( a      : in    std_logic_vector (7 downto 0); 
           a_w    : in    std_logic; 
@@ -863,26 +897,28 @@ architecture BEHAVIORAL of ram_256bytes_MUSER_cpu_facade is
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
    attribute INIT of XLXI_1 : label is 
-         "0000000000000000000000000000000000000000000000000000000000000072";
+         "0000000000000000000000000000000000000000000000000000000000000142";
    attribute HU_SET of XLXI_15 : label is "XLXI_15_0";
+   attribute INIT of XLXI_17 : label is 
+         "0000000000000000000000000000000000000000000000000000000000004880";
    attribute INIT of XLXI_18 : label is 
-         "0000000000000000000000000000000000000000000000000000000000000901";
+         "0000000000000000000000000000000000000000000000000000000000004A01";
    attribute INIT of XLXI_19 : label is 
-         "0000000000000000000000000000000000000000000000000000000000000040";
+         "0000000000000000000000000000000000000000000000000000000000000210";
    attribute INIT of XLXI_20 : label is 
-         "0000000000000000000000000000000000000000000000000000000000000020";
+         "00000000000000000000000000000000000000000000000000000000000001A0";
    attribute INIT of XLXI_21 : label is 
-         "0000000000000000000000000000000000000000000000000000000000000205";
+         "0000000000000000000000000000000000000000000000000000000000001035";
    attribute INIT of XLXI_22 : label is 
-         "00000000000000000000000000000000000000000000000000000000000006A0";
+         "0000000000000000000000000000000000000000000000000000000000003520";
    attribute INIT of XLXI_23 : label is 
-         "0000000000000000000000000000000000000000000000000000000000000010";
+         "0000000000000000000000000000000000000000000000000000000000000060";
 begin
    a_o(7 downto 0) <= a_o_DUMMY(7 downto 0);
    XLXI_1 : RAM256X1S
    -- synopsys translate_off
    generic map( INIT => 
-         x"0000000000000000000000000000000000000000000000000000000000000072")
+         x"0000000000000000000000000000000000000000000000000000000000000142")
    -- synopsys translate_on
       port map (A(7 downto 0)=>a_o_DUMMY(7 downto 0),
                 D=>i(0),
@@ -898,7 +934,7 @@ begin
    XLXI_17 : RAM256X1S
    -- synopsys translate_off
    generic map( INIT => 
-         x"0000000000000000000000000000000000000000000000000000000000000000")
+         x"0000000000000000000000000000000000000000000000000000000000004880")
    -- synopsys translate_on
       port map (A(7 downto 0)=>a_o_DUMMY(7 downto 0),
                 D=>i(1),
@@ -909,7 +945,7 @@ begin
    XLXI_18 : RAM256X1S
    -- synopsys translate_off
    generic map( INIT => 
-         x"0000000000000000000000000000000000000000000000000000000000000901")
+         x"0000000000000000000000000000000000000000000000000000000000004A01")
    -- synopsys translate_on
       port map (A(7 downto 0)=>a_o_DUMMY(7 downto 0),
                 D=>i(2),
@@ -920,7 +956,7 @@ begin
    XLXI_19 : RAM256X1S
    -- synopsys translate_off
    generic map( INIT => 
-         x"0000000000000000000000000000000000000000000000000000000000000040")
+         x"0000000000000000000000000000000000000000000000000000000000000210")
    -- synopsys translate_on
       port map (A(7 downto 0)=>a_o_DUMMY(7 downto 0),
                 D=>i(3),
@@ -931,7 +967,7 @@ begin
    XLXI_20 : RAM256X1S
    -- synopsys translate_off
    generic map( INIT => 
-         x"0000000000000000000000000000000000000000000000000000000000000020")
+         x"00000000000000000000000000000000000000000000000000000000000001A0")
    -- synopsys translate_on
       port map (A(7 downto 0)=>a_o_DUMMY(7 downto 0),
                 D=>i(4),
@@ -942,7 +978,7 @@ begin
    XLXI_21 : RAM256X1S
    -- synopsys translate_off
    generic map( INIT => 
-         x"0000000000000000000000000000000000000000000000000000000000000205")
+         x"0000000000000000000000000000000000000000000000000000000000001035")
    -- synopsys translate_on
       port map (A(7 downto 0)=>a_o_DUMMY(7 downto 0),
                 D=>i(5),
@@ -953,7 +989,7 @@ begin
    XLXI_22 : RAM256X1S
    -- synopsys translate_off
    generic map( INIT => 
-         x"00000000000000000000000000000000000000000000000000000000000006A0")
+         x"0000000000000000000000000000000000000000000000000000000000003520")
    -- synopsys translate_on
       port map (A(7 downto 0)=>a_o_DUMMY(7 downto 0),
                 D=>i(6),
@@ -964,7 +1000,7 @@ begin
    XLXI_23 : RAM256X1S
    -- synopsys translate_off
    generic map( INIT => 
-         x"0000000000000000000000000000000000000000000000000000000000000010")
+         x"0000000000000000000000000000000000000000000000000000000000000060")
    -- synopsys translate_on
       port map (A(7 downto 0)=>a_o_DUMMY(7 downto 0),
                 D=>i(7),
@@ -1377,40 +1413,6 @@ begin
    
    XLXI_6 : VCC
       port map (P=>XLXN_2);
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
-entity USART_MUSER_cpu_facade is
-   port ( clk  : in    std_logic; 
-          data : in    std_logic_vector (7 downto 0); 
-          rst  : in    std_logic; 
-          tx   : out   std_logic);
-end USART_MUSER_cpu_facade;
-
-architecture BEHAVIORAL of USART_MUSER_cpu_facade is
-   component usart_tramnsmitter
-      port ( clk  : in    std_logic; 
-             rst  : in    std_logic; 
-             data : in    std_logic_vector (7 downto 0); 
-             tx   : out   std_logic; 
-             done : out   std_logic);
-   end component;
-   
-begin
-   XLXI_2 : usart_tramnsmitter
-      port map (clk=>clk,
-                data(7 downto 0)=>data(7 downto 0),
-                rst=>rst,
-                done=>open,
-                tx=>tx);
    
 end BEHAVIORAL;
 
@@ -6616,6 +6618,7 @@ architecture BEHAVIORAL of cpu_facade is
    signal mem_select                  : std_logic_vector (3 downto 0);
    signal port_a_w                    : std_logic;
    signal port_one_o                  : std_logic_vector (7 downto 0);
+   signal port_one_w                  : std_logic;
    signal port_r                      : std_logic;
    signal port_selected               : std_logic;
    signal port_w                      : std_logic;
@@ -6659,15 +6662,13 @@ architecture BEHAVIORAL of cpu_facade is
    signal XLXN_216                    : std_logic;
    signal XLXN_232                    : std_logic;
    signal XLXN_408                    : std_logic;
-   signal XLXN_415                    : std_logic;
    signal XLXN_420                    : std_logic;
    signal XLXN_431                    : std_logic_vector (7 downto 0);
    signal XLXN_432                    : std_logic_vector (7 downto 0);
-   signal monitor_DUMMY               : std_logic_vector (7 downto 0);
-   signal out_r0_r_DUMMY              : std_logic;
    signal out_ram_r_DUMMY             : std_logic;
    signal out_ram_w_DUMMY             : std_logic;
    signal out_sysbus_DUMMY            : std_logic_vector (7 downto 0);
+   signal out_r2_r_DUMMY              : std_logic;
    signal out_ram_a_w_DUMMY           : std_logic;
    signal XLXI_7_in_manr_d_openSignal : std_logic_vector (7 downto 0);
    signal XLXI_7_in_manr_r_openSignal : std_logic;
@@ -6956,11 +6957,10 @@ architecture BEHAVIORAL of cpu_facade is
    attribute HU_SET of XLXI_136 : label is "XLXI_136_62";
    attribute HU_SET of XLXI_186 : label is "XLXI_186_63";
 begin
-   monitor(7 downto 0) <= monitor_DUMMY(7 downto 0);
    out_ram_a_w <= out_ram_a_w_DUMMY;
    out_ram_r <= out_ram_r_DUMMY;
    out_ram_w <= out_ram_w_DUMMY;
-   out_r0_r <= out_r0_r_DUMMY;
+   out_r2_r <= out_r2_r_DUMMY;
    out_sysbus(7 downto 0) <= out_sysbus_DUMMY(7 downto 0);
    XLXI_7 : cpu_MUSER_cpu_facade
       port map (in_acc_r=>XLXN_66,
@@ -7003,7 +7003,7 @@ begin
                 manr_o=>open,
                 manr_r=>XLXN_49,
                 manr_w=>XLXN_49,
-                monitor(7 downto 0)=>monitor_DUMMY(7 downto 0),
+                monitor(7 downto 0)=>monitor(7 downto 0),
                 out_acc_r=>out_acc_r,
                 out_acc_w=>out_acc_w,
                 out_alu_C_in=>open,
@@ -7054,11 +7054,11 @@ begin
                 out_ram_a_w=>out_ram_a_w_DUMMY,
                 out_ram_r=>out_ram_r_DUMMY,
                 out_ram_w=>out_ram_w_DUMMY,
-                out_r0_r=>out_r0_r_DUMMY,
+                out_r0_r=>out_r0_r,
                 out_r0_w=>out_r0_w,
                 out_r1_r=>out_r1_r,
                 out_r1_w=>out_r1_w,
-                out_r2_r=>out_r2_r,
+                out_r2_r=>out_r2_r_DUMMY,
                 out_r2_w=>out_r2_w,
                 out_r3_r=>out_r3_r,
                 out_r3_w=>out_r3_w,
@@ -7220,8 +7220,8 @@ begin
    
    XLXI_105 : USART_MUSER_cpu_facade
       port map (clk=>in_clk,
-                data(7 downto 0)=>monitor_DUMMY(7 downto 0),
-                rst=>out_r0_r_DUMMY,
+                data(7 downto 0)=>port_one_o(7 downto 0),
+                rst=>out_r2_r_DUMMY,
                 tx=>out_usart1_tx);
    
    XLXI_106 : ram_256bytes_MUSER_cpu_facade
@@ -7252,7 +7252,7 @@ begin
       port map (clr=>rst,
                 d(7 downto 0)=>out_sysbus_DUMMY(7 downto 0),
                 r=>XLXI_135_r_openSignal,
-                w=>XLXN_415,
+                w=>port_one_w,
                 o(7 downto 0)=>port_one_o(7 downto 0));
    
    XLXI_136 : D4_16E_HXILINX_cpu_facade
@@ -7303,7 +7303,7 @@ begin
    XLXI_170 : AND2
       port map (I0=>XLXN_420,
                 I1=>port_w,
-                O=>XLXN_415);
+                O=>port_one_w);
    
    XLXI_173 : bus_muxer_MUSER_cpu_facade
       port map (a(3 downto 0)=>XLXI_173_a_openSignal(3 downto 0),
