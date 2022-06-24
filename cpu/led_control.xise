@@ -283,6 +283,10 @@
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="596"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="24"/>
     </file>
+    <file xil_pn:name="pass_through_or_port_base.sch" xil_pn:type="FILE_SCHEMATIC">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="591"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
   </files>
 
   <properties>

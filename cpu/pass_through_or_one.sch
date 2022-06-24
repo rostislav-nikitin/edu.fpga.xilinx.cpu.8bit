@@ -25,11 +25,19 @@
         <signal name="i(5)" />
         <signal name="i(6)" />
         <signal name="i(7)" />
-        <signal name="const_zero" />
-        <signal name="const_one" />
+        <signal name="const(7:0)" />
+        <signal name="const(0)" />
+        <signal name="const(1)" />
+        <signal name="const(2)" />
+        <signal name="const(3)" />
+        <signal name="const(4)" />
+        <signal name="const(5)" />
+        <signal name="const(6)" />
+        <signal name="const(7)" />
         <port polarity="Input" name="one" />
         <port polarity="Output" name="o(7:0)" />
         <port polarity="Input" name="i(7:0)" />
+        <port polarity="Input" name="const(7:0)" />
         <blockdef name="m2_1">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="96" y1="-64" y2="-192" x1="96" />
@@ -43,74 +51,53 @@
             <line x2="96" y1="-96" y2="-96" x1="0" />
             <line x2="96" y1="-160" y2="-160" x1="0" />
         </blockdef>
-        <blockdef name="constant">
-            <timestamp>2006-1-1T10:10:10</timestamp>
-            <rect width="112" x="0" y="0" height="64" />
-            <line x2="112" y1="32" y2="32" x1="144" />
-        </blockdef>
         <block symbolname="m2_1" name="XLXI_1">
             <blockpin signalname="i(1)" name="D0" />
-            <blockpin signalname="const_zero" name="D1" />
+            <blockpin signalname="const(1)" name="D1" />
             <blockpin signalname="one" name="S0" />
             <blockpin signalname="o(1)" name="O" />
         </block>
         <block symbolname="m2_1" name="XLXI_3">
             <blockpin signalname="i(2)" name="D0" />
-            <blockpin signalname="const_zero" name="D1" />
+            <blockpin signalname="const(2)" name="D1" />
             <blockpin signalname="one" name="S0" />
             <blockpin signalname="o(2)" name="O" />
         </block>
         <block symbolname="m2_1" name="XLXI_4">
             <blockpin signalname="i(3)" name="D0" />
-            <blockpin signalname="const_zero" name="D1" />
+            <blockpin signalname="const(3)" name="D1" />
             <blockpin signalname="one" name="S0" />
             <blockpin signalname="o(3)" name="O" />
         </block>
         <block symbolname="m2_1" name="XLXI_5">
             <blockpin signalname="i(4)" name="D0" />
-            <blockpin signalname="const_zero" name="D1" />
+            <blockpin signalname="const(4)" name="D1" />
             <blockpin signalname="one" name="S0" />
             <blockpin signalname="o(4)" name="O" />
         </block>
         <block symbolname="m2_1" name="XLXI_6">
             <blockpin signalname="i(5)" name="D0" />
-            <blockpin signalname="const_zero" name="D1" />
+            <blockpin signalname="const(5)" name="D1" />
             <blockpin signalname="one" name="S0" />
             <blockpin signalname="o(5)" name="O" />
         </block>
         <block symbolname="m2_1" name="XLXI_7">
             <blockpin signalname="i(6)" name="D0" />
-            <blockpin signalname="const_zero" name="D1" />
+            <blockpin signalname="const(6)" name="D1" />
             <blockpin signalname="one" name="S0" />
             <blockpin signalname="o(6)" name="O" />
         </block>
         <block symbolname="m2_1" name="XLXI_8">
             <blockpin signalname="i(7)" name="D0" />
-            <blockpin signalname="const_zero" name="D1" />
+            <blockpin signalname="const(7)" name="D1" />
             <blockpin signalname="one" name="S0" />
             <blockpin signalname="o(7)" name="O" />
         </block>
         <block symbolname="m2_1" name="XLXI_13">
             <blockpin signalname="i(0)" name="D0" />
-            <blockpin signalname="const_one" name="D1" />
+            <blockpin signalname="const(0)" name="D1" />
             <blockpin signalname="one" name="S0" />
             <blockpin signalname="o(0)" name="O" />
-        </block>
-        <block symbolname="constant" name="XLXI_18">
-            <attr value="0" name="CValue">
-                <trait delete="all:1 sym:0" />
-                <trait editname="all:1 sch:0" />
-                <trait valuetype="BitVector 32 Hexadecimal" />
-            </attr>
-            <blockpin signalname="const_zero" name="O" />
-        </block>
-        <block symbolname="constant" name="XLXI_19">
-            <attr value="1" name="CValue">
-                <trait delete="all:1 sym:0" />
-                <trait editname="all:1 sch:0" />
-                <trait valuetype="BitVector 32 Hexadecimal" />
-            </attr>
-            <blockpin signalname="const_one" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -232,32 +219,50 @@
             <wire x2="944" y1="2512" y2="2512" x1="336" />
         </branch>
         <iomarker fontsize="28" x="128" y="736" name="i(7:0)" orien="R180" />
-        <instance x="480" y="864" name="XLXI_18" orien="R0">
-        </instance>
-        <branch name="const_zero">
-            <wire x2="784" y1="896" y2="896" x1="624" />
-            <wire x2="880" y1="896" y2="896" x1="784" />
-            <wire x2="880" y1="896" y2="1136" x1="880" />
-            <wire x2="944" y1="1136" y2="1136" x1="880" />
-            <wire x2="880" y1="1136" y2="1376" x1="880" />
-            <wire x2="880" y1="1376" y2="1616" x1="880" />
-            <wire x2="880" y1="1616" y2="1856" x1="880" />
-            <wire x2="880" y1="1856" y2="2096" x1="880" />
-            <wire x2="880" y1="2096" y2="2336" x1="880" />
-            <wire x2="880" y1="2336" y2="2576" x1="880" />
-            <wire x2="944" y1="2576" y2="2576" x1="880" />
-            <wire x2="944" y1="2336" y2="2336" x1="880" />
-            <wire x2="944" y1="2096" y2="2096" x1="880" />
-            <wire x2="944" y1="1856" y2="1856" x1="880" />
-            <wire x2="944" y1="1616" y2="1616" x1="880" />
-            <wire x2="944" y1="1376" y2="1376" x1="880" />
+        <branch name="const(7:0)">
+            <wire x2="304" y1="480" y2="480" x1="112" />
+            <wire x2="400" y1="480" y2="480" x1="304" />
+            <wire x2="400" y1="480" y2="896" x1="400" />
+            <wire x2="400" y1="896" y2="1136" x1="400" />
+            <wire x2="400" y1="1136" y2="1376" x1="400" />
+            <wire x2="400" y1="1376" y2="1616" x1="400" />
+            <wire x2="400" y1="1616" y2="1856" x1="400" />
+            <wire x2="400" y1="1856" y2="2096" x1="400" />
+            <wire x2="400" y1="2096" y2="2336" x1="400" />
+            <wire x2="400" y1="2336" y2="2576" x1="400" />
         </branch>
-        <instance x="480" y="752" name="XLXI_19" orien="R0">
-        </instance>
-        <branch name="const_one">
-            <wire x2="912" y1="784" y2="784" x1="624" />
-            <wire x2="912" y1="784" y2="896" x1="912" />
-            <wire x2="944" y1="896" y2="896" x1="912" />
+        <bustap x2="496" y1="2576" y2="2576" x1="400" />
+        <bustap x2="496" y1="2336" y2="2336" x1="400" />
+        <bustap x2="496" y1="2096" y2="2096" x1="400" />
+        <bustap x2="496" y1="1856" y2="1856" x1="400" />
+        <bustap x2="496" y1="1616" y2="1616" x1="400" />
+        <bustap x2="496" y1="1376" y2="1376" x1="400" />
+        <bustap x2="496" y1="1136" y2="1136" x1="400" />
+        <bustap x2="496" y1="896" y2="896" x1="400" />
+        <branch name="const(0)">
+            <wire x2="944" y1="896" y2="896" x1="496" />
         </branch>
+        <branch name="const(1)">
+            <wire x2="944" y1="1136" y2="1136" x1="496" />
+        </branch>
+        <branch name="const(2)">
+            <wire x2="944" y1="1376" y2="1376" x1="496" />
+        </branch>
+        <branch name="const(3)">
+            <wire x2="944" y1="1616" y2="1616" x1="496" />
+        </branch>
+        <branch name="const(4)">
+            <wire x2="944" y1="1856" y2="1856" x1="496" />
+        </branch>
+        <branch name="const(5)">
+            <wire x2="944" y1="2096" y2="2096" x1="496" />
+        </branch>
+        <branch name="const(6)">
+            <wire x2="944" y1="2336" y2="2336" x1="496" />
+        </branch>
+        <branch name="const(7)">
+            <wire x2="944" y1="2576" y2="2576" x1="496" />
+        </branch>
+        <iomarker fontsize="28" x="112" y="480" name="const(7:0)" orien="R180" />
     </sheet>
 </drawing>

@@ -1,7 +1,7 @@
 Release 14.3 par P.40xd (lin64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-fedora::  Thu Jun 23 00:58:30 2022
+fedora::  Fri Jun 24 23:54:22 2022
 
 par -w -intstyle ise -ol high -mt off cpu_facade_map.ncd cpu_facade.ncd
 cpu_facade.pcf 
@@ -27,9 +27,9 @@ Slice Logic Utilization:
     Number used as Latches:                    100
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                1
-  Number of Slice LUTs:                        379 out of   5,720    6%
-    Number used as logic:                      337 out of   5,720    5%
-      Number using O6 output only:             214
+  Number of Slice LUTs:                        380 out of   5,720    6%
+    Number used as logic:                      338 out of   5,720    5%
+      Number using O6 output only:             215
       Number using O5 output only:              93
       Number using O5 and O6:                   30
       Number used as ROM:                        0
@@ -46,12 +46,12 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   151 out of   1,430   10%
+  Number of occupied Slices:                   155 out of   1,430   10%
   Nummber of MUXCYs used:                      128 out of   2,860    4%
-  Number of LUT Flip Flop pairs used:          441
-    Number with an unused Flip Flop:           207 out of     441   46%
-    Number with an unused LUT:                  62 out of     441   14%
-    Number of fully used LUT-FF pairs:         172 out of     441   39%
+  Number of LUT Flip Flop pairs used:          443
+    Number with an unused Flip Flop:           209 out of     443   47%
+    Number with an unused LUT:                  63 out of     443   14%
+    Number of fully used LUT-FF pairs:         171 out of     443   38%
     Number of slice register sites lost
       to control set restrictions:               0 out of  11,440    0%
 
@@ -100,13 +100,13 @@ Finished initial Timing Analysis.  REAL time: 4 secs
 Starting Router
 
 
-Phase  1  : 1743 unrouted;      REAL time: 4 secs 
+Phase  1  : 1754 unrouted;      REAL time: 4 secs 
 
-Phase  2  : 1550 unrouted;      REAL time: 4 secs 
+Phase  2  : 1560 unrouted;      REAL time: 4 secs 
 
-Phase  3  : 420 unrouted;      REAL time: 6 secs 
+Phase  3  : 387 unrouted;      REAL time: 6 secs 
 
-Phase  4  : 420 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 6 secs 
+Phase  4  : 387 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 6 secs 
 
 Updating file: cpu_facade.ncd with current fully routed design.
 
@@ -140,34 +140,34 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|        in_clk_BUFGP | BUFGMUX_X3Y13| No   |   39 |  0.115     |  1.185      |
+|        in_clk_BUFGP | BUFGMUX_X3Y13| No   |   39 |  0.117     |  1.187      |
 +---------------------+--------------+------+------+------------+-------------+
 |XLXI_105/XLXI_2/usar |              |      |      |            |             |
-|               t_clk |         Local|      |    6 |  0.437     |  0.735      |
+|               t_clk |         Local|      |    6 |  0.186     |  0.669      |
 +---------------------+--------------+------+------+------------+-------------+
-|         XLXI_7/clkc |         Local|      |    5 |  0.000     |  0.985      |
+|         XLXI_7/clkc |         Local|      |    5 |  0.000     |  1.493      |
 +---------------------+--------------+------+------+------------+-------------+
-|      XLXI_51/db2<7> |         Local|      |    2 |  0.000     |  0.475      |
+|      XLXI_51/db2<7> |         Local|      |    2 |  0.000     |  0.518      |
 +---------------------+--------------+------+------+------------+-------------+
 |XLXI_7/XLXI_931/high |              |      |      |            |             |
-|                 <3> |         Local|      |    3 |  0.000     |  0.824      |
+|                 <3> |         Local|      |    3 |  0.000     |  0.830      |
 +---------------------+--------------+------+------+------------+-------------+
-| XLXI_7/clk_internal |         Local|      |    3 |  0.000     |  1.290      |
+| XLXI_7/clk_internal |         Local|      |    3 |  0.000     |  1.191      |
 +---------------------+--------------+------+------+------------+-------------+
-|         XLXI_7/clkr |         Local|      |   12 |  0.000     |  1.993      |
+|         XLXI_7/clkr |         Local|      |   12 |  0.000     |  1.902      |
 +---------------------+--------------+------+------+------------+-------------+
 |XLXI_7/XLXI_937/half |              |      |      |            |             |
-|        _period_tick |         Local|      |    2 |  0.000     |  0.783      |
+|        _period_tick |         Local|      |    2 |  0.000     |  0.574      |
 +---------------------+--------------+------+------+------------+-------------+
 |XLXI_7/XLXI_926/half |              |      |      |            |             |
-|        _period_tick |         Local|      |    2 |  0.000     |  0.495      |
+|        _period_tick |         Local|      |    2 |  0.000     |  0.808      |
 +---------------------+--------------+------+------+------------+-------------+
 |XLXI_7/XLXI_927/half |              |      |      |            |             |
-|        _period_tick |         Local|      |    2 |  0.000     |  0.701      |
+|        _period_tick |         Local|      |    2 |  0.000     |  0.737      |
 +---------------------+--------------+------+------+------------+-------------+
-|      XLXI_7/cc_r0_w |         Local|      |    9 |  1.606     |  3.205      |
+|      XLXI_7/cc_r0_w |         Local|      |    9 |  1.807     |  3.219      |
 +---------------------+--------------+------+------+------------+-------------+
-|             ram_a_w |         Local|      |    2 |  0.367     |  0.681      |
+|             ram_a_w |         Local|      |    2 |  0.000     |  0.899      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -187,8 +187,8 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_ | SETUP       |    14.235ns|     5.765ns|       0|           0
-  pin" 50 MHz HIGH 50%                      | HOLD        |     0.446ns|            |       0|           0
+  TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_ | SETUP       |    14.368ns|     5.632ns|       0|           0
+  pin" 50 MHz HIGH 50%                      | HOLD        |     0.444ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -199,7 +199,7 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 8 secs 
+Total REAL time to PAR completion: 7 secs 
 Total CPU time to PAR completion: 7 secs 
 
 Peak Memory Usage:  586 MB
