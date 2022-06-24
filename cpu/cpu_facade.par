@@ -1,7 +1,7 @@
 Release 14.3 par P.40xd (lin64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-fedora::  Sat Jun 25 01:09:49 2022
+fedora::  Sat Jun 25 02:44:18 2022
 
 par -w -intstyle ise -ol high -mt off cpu_facade_map.ncd cpu_facade.ncd
 cpu_facade.pcf 
@@ -46,12 +46,12 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   147 out of   1,430   10%
+  Number of occupied Slices:                   151 out of   1,430   10%
   Nummber of MUXCYs used:                      128 out of   2,860    4%
-  Number of LUT Flip Flop pairs used:          447
-    Number with an unused Flip Flop:           213 out of     447   47%
-    Number with an unused LUT:                  58 out of     447   12%
-    Number of fully used LUT-FF pairs:         176 out of     447   39%
+  Number of LUT Flip Flop pairs used:          457
+    Number with an unused Flip Flop:           223 out of     457   48%
+    Number with an unused LUT:                  68 out of     457   14%
+    Number of fully used LUT-FF pairs:         166 out of     457   36%
     Number of slice register sites lost
       to control set restrictions:               0 out of  11,440    0%
 
@@ -100,28 +100,28 @@ Finished initial Timing Analysis.  REAL time: 4 secs
 Starting Router
 
 
-Phase  1  : 1783 unrouted;      REAL time: 4 secs 
+Phase  1  : 1784 unrouted;      REAL time: 4 secs 
 
-Phase  2  : 1589 unrouted;      REAL time: 4 secs 
+Phase  2  : 1591 unrouted;      REAL time: 5 secs 
 
-Phase  3  : 423 unrouted;      REAL time: 6 secs 
+Phase  3  : 436 unrouted;      REAL time: 6 secs 
 
-Phase  4  : 423 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 7 secs 
+Phase  4  : 436 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 7 secs 
 
 Updating file: cpu_facade.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 7 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 8 secs 
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 7 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 8 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 7 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 8 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 7 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 8 secs 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 7 secs 
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 8 secs 
 
-Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 7 secs 
-Total REAL time to Router completion: 7 secs 
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 8 secs 
+Total REAL time to Router completion: 8 secs 
 Total CPU time to Router completion: 7 secs 
 
 Partition Implementation Status
@@ -140,34 +140,34 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|        in_clk_BUFGP | BUFGMUX_X3Y13| No   |   39 |  0.114     |  1.182      |
+|        in_clk_BUFGP | BUFGMUX_X3Y13| No   |   39 |  0.117     |  1.186      |
 +---------------------+--------------+------+------+------------+-------------+
 |XLXI_105/XLXI_2/usar |              |      |      |            |             |
-|               t_clk |         Local|      |    6 |  0.345     |  0.651      |
+|               t_clk |         Local|      |    6 |  0.185     |  0.491      |
 +---------------------+--------------+------+------+------------+-------------+
-|         XLXI_7/clkc |         Local|      |    5 |  0.000     |  1.509      |
+|         XLXI_7/clkc |         Local|      |    5 |  0.000     |  1.248      |
 +---------------------+--------------+------+------+------------+-------------+
-|      XLXI_51/db2<7> |         Local|      |    2 |  0.000     |  0.447      |
+|      XLXI_51/db2<7> |         Local|      |    2 |  0.000     |  0.475      |
 +---------------------+--------------+------+------+------------+-------------+
 |XLXI_7/XLXI_931/high |              |      |      |            |             |
-|                 <3> |         Local|      |    3 |  0.000     |  1.141      |
+|                 <3> |         Local|      |    3 |  0.000     |  0.917      |
 +---------------------+--------------+------+------+------------+-------------+
-| XLXI_7/clk_internal |         Local|      |    2 |  0.000     |  1.121      |
+| XLXI_7/clk_internal |         Local|      |    2 |  0.000     |  1.540      |
 +---------------------+--------------+------+------+------------+-------------+
-|         XLXI_7/clkr |         Local|      |   12 |  0.000     |  1.350      |
+|         XLXI_7/clkr |         Local|      |   12 |  0.000     |  1.612      |
 +---------------------+--------------+------+------+------------+-------------+
 |XLXI_7/XLXI_937/half |              |      |      |            |             |
-|        _period_tick |         Local|      |    2 |  0.000     |  0.603      |
+|        _period_tick |         Local|      |    2 |  0.000     |  0.475      |
 +---------------------+--------------+------+------+------------+-------------+
 |XLXI_7/XLXI_926/half |              |      |      |            |             |
-|        _period_tick |         Local|      |    2 |  0.000     |  0.889      |
+|        _period_tick |         Local|      |    2 |  0.000     |  1.113      |
 +---------------------+--------------+------+------+------------+-------------+
 |XLXI_7/XLXI_927/half |              |      |      |            |             |
-|        _period_tick |         Local|      |    2 |  0.000     |  0.737      |
+|        _period_tick |         Local|      |    2 |  0.000     |  0.468      |
 +---------------------+--------------+------+------+------------+-------------+
-|      XLXI_7/cc_r0_w |         Local|      |    9 |  1.504     |  3.128      |
+|      XLXI_7/cc_r0_w |         Local|      |    9 |  1.563     |  2.966      |
 +---------------------+--------------+------+------+------------+-------------+
-|             ram_a_w |         Local|      |    2 |  0.160     |  0.471      |
+|             ram_a_w |         Local|      |    2 |  0.023     |  0.950      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -187,8 +187,8 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_ | SETUP       |    14.255ns|     5.745ns|       0|           0
-  pin" 50 MHz HIGH 50%                      | HOLD        |     0.441ns|            |       0|           0
+  TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_ | SETUP       |    13.306ns|     6.694ns|       0|           0
+  pin" 50 MHz HIGH 50%                      | HOLD        |     0.446ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -202,7 +202,7 @@ All signals are completely routed.
 Total REAL time to PAR completion: 8 secs 
 Total CPU time to PAR completion: 8 secs 
 
-Peak Memory Usage:  587 MB
+Peak Memory Usage:  586 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

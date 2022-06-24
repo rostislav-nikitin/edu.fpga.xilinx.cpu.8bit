@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu_control.vhf
--- /___/   /\     Timestamp : 06/25/2022 00:56:18
+-- /___/   /\     Timestamp : 06/25/2022 02:06:38
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -379,14 +379,14 @@ architecture BEHAVIORAL of bus_muxer_MUSER_cpu_control is
    end component;
    attribute BOX_TYPE of BUF : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_1";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_0";
-   attribute HU_SET of XLXI_12 : label is "XLXI_12_2";
-   attribute HU_SET of XLXI_13 : label is "XLXI_13_3";
-   attribute HU_SET of XLXI_14 : label is "XLXI_14_4";
-   attribute HU_SET of XLXI_15 : label is "XLXI_15_5";
-   attribute HU_SET of XLXI_16 : label is "XLXI_16_6";
-   attribute HU_SET of XLXI_17 : label is "XLXI_17_7";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_62";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_61";
+   attribute HU_SET of XLXI_12 : label is "XLXI_12_63";
+   attribute HU_SET of XLXI_13 : label is "XLXI_13_64";
+   attribute HU_SET of XLXI_14 : label is "XLXI_14_65";
+   attribute HU_SET of XLXI_15 : label is "XLXI_15_66";
+   attribute HU_SET of XLXI_16 : label is "XLXI_16_67";
+   attribute HU_SET of XLXI_17 : label is "XLXI_17_68";
 begin
    XLXI_1 : M16_1E_HXILINX_cpu_control
       port map (D0=>dev0(0),
@@ -688,8 +688,8 @@ architecture BEHAVIORAL of stepper_MUSER_cpu_control is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_24 : label is "XLXI_24_8";
-   attribute HU_SET of XLXI_25 : label is "XLXI_25_9";
+   attribute HU_SET of XLXI_24 : label is "XLXI_24_69";
+   attribute HU_SET of XLXI_25 : label is "XLXI_25_70";
 begin
    XLXI_21 : VCC
       port map (P=>XLXN_14);
@@ -803,6 +803,7 @@ architecture BEHAVIORAL of cpu_control is
    signal alu_binary_s4                   : std_logic;
    signal alu_binary_s5                   : std_logic;
    signal alu_calc                        : std_logic;
+   signal alu_port_in                     : std_logic;
    signal alu_s4                          : std_logic;
    signal alu_s6                          : std_logic;
    signal alu_unari                       : std_logic;
@@ -899,8 +900,6 @@ architecture BEHAVIORAL of cpu_control is
    signal XLXN_1077                       : std_logic_vector (7 downto 0);
    signal XLXN_1086                       : std_logic;
    signal XLXN_1089                       : std_logic;
-   signal XLXN_1094                       : std_logic;
-   signal XLXN_1097                       : std_logic;
    signal XLXN_1158                       : std_logic;
    signal XLXN_1238                       : std_logic;
    signal jmp_ifjmp_DUMMY                 : std_logic;
@@ -1080,22 +1079,23 @@ architecture BEHAVIORAL of cpu_control is
              o     : out   std_logic_vector (7 downto 0));
    end component;
    
-   component NAND3
+   component AND4
       port ( I0 : in    std_logic; 
              I1 : in    std_logic; 
              I2 : in    std_logic; 
+             I3 : in    std_logic; 
              O  : out   std_logic);
    end component;
-   attribute BOX_TYPE of NAND3 : component is "BLACK_BOX";
+   attribute BOX_TYPE of AND4 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_39 : label is "XLXI_39_12";
-   attribute HU_SET of XLXI_47 : label is "XLXI_47_10";
-   attribute HU_SET of XLXI_48 : label is "XLXI_48_11";
-   attribute HU_SET of XLXI_252 : label is "XLXI_252_13";
-   attribute HU_SET of XLXI_577 : label is "XLXI_577_14";
-   attribute HU_SET of XLXI_608 : label is "XLXI_608_15";
-   attribute HU_SET of XLXI_616 : label is "XLXI_616_16";
-   attribute HU_SET of XLXI_637 : label is "XLXI_637_17";
+   attribute HU_SET of XLXI_39 : label is "XLXI_39_73";
+   attribute HU_SET of XLXI_47 : label is "XLXI_47_71";
+   attribute HU_SET of XLXI_48 : label is "XLXI_48_72";
+   attribute HU_SET of XLXI_252 : label is "XLXI_252_74";
+   attribute HU_SET of XLXI_577 : label is "XLXI_577_75";
+   attribute HU_SET of XLXI_608 : label is "XLXI_608_76";
+   attribute HU_SET of XLXI_616 : label is "XLXI_616_77";
+   attribute HU_SET of XLXI_637 : label is "XLXI_637_78";
 begin
    XLXN_1076(7 downto 0) <= x"01";
    XLXN_1077(7 downto 0) <= x"F0";
@@ -1221,7 +1221,7 @@ begin
    
    XLXI_40 : BUF
       port map (I=>ir(7),
-                O=>XLXN_1097);
+                O=>alu_DUMMY);
    
    XLXI_41 : OR3
       port map (I0=>alu_not_DUMMY,
@@ -1291,11 +1291,6 @@ begin
       port map (I0=>s4_DUMMY,
                 I1=>alu_unari,
                 O=>alu_unari_s4);
-   
-   XLXI_137 : AND2
-      port map (I0=>s6_DUMMY,
-                I1=>alu_DUMMY,
-                O=>alu_s6);
    
    XLXI_138 : AND2
       port map (I0=>clkr,
@@ -1389,11 +1384,6 @@ begin
       port map (I0=>ra_3,
                 I1=>ra_int,
                 O=>ra3_r);
-   
-   XLXI_298 : AND2
-      port map (I0=>s4_DUMMY,
-                I1=>alu_DUMMY,
-                O=>alu_s4);
    
    XLXI_400 : AND2
       port map (I0=>rb_0,
@@ -1745,17 +1735,6 @@ begin
    XLXI_590 : GND
       port map (G=>XLXN_1086);
    
-   XLXI_593 : NAND3
-      port map (I0=>ir(6),
-                I1=>ir(5),
-                I2=>ir(4),
-                O=>XLXN_1094);
-   
-   XLXI_594 : AND2
-      port map (I0=>XLXN_1097,
-                I1=>XLXN_1094,
-                O=>alu_DUMMY);
-   
    XLXI_597 : AND2
       port map (I0=>in_from_port_DUMMY,
                 I1=>s4_DUMMY,
@@ -1834,6 +1813,25 @@ begin
                 I4=>jmp_ifjmp_flag_equals_op_s5,
                 I5=>in_from_port_s6,
                 O=>XLXN_1238);
+   
+   XLXI_638 : AND3B1
+      port map (I0=>alu_port_in,
+                I1=>s4_DUMMY,
+                I2=>alu_DUMMY,
+                O=>alu_s4);
+   
+   XLXI_639 : AND3B1
+      port map (I0=>alu_port_in,
+                I1=>s6_DUMMY,
+                I2=>alu_DUMMY,
+                O=>alu_s6);
+   
+   XLXI_641 : AND4
+      port map (I0=>ir(7),
+                I1=>ir(6),
+                I2=>ir(5),
+                I3=>ir(4),
+                O=>alu_port_in);
    
 end BEHAVIORAL;
 

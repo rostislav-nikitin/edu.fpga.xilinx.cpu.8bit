@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu.vhf
--- /___/   /\     Timestamp : 06/25/2022 01:04:53
+-- /___/   /\     Timestamp : 06/25/2022 02:06:36
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -1318,6 +1318,7 @@ architecture BEHAVIORAL of cpu_control_MUSER_cpu is
    signal alu_binary_s4                   : std_logic;
    signal alu_binary_s5                   : std_logic;
    signal alu_calc                        : std_logic;
+   signal alu_port_in                     : std_logic;
    signal alu_s4                          : std_logic;
    signal alu_s6                          : std_logic;
    signal alu_unari                       : std_logic;
@@ -1414,8 +1415,6 @@ architecture BEHAVIORAL of cpu_control_MUSER_cpu is
    signal XLXN_1077                       : std_logic_vector (7 downto 0);
    signal XLXN_1086                       : std_logic;
    signal XLXN_1089                       : std_logic;
-   signal XLXN_1094                       : std_logic;
-   signal XLXN_1097                       : std_logic;
    signal XLXN_1158                       : std_logic;
    signal XLXN_1238                       : std_logic;
    signal jmp_ifjmp_DUMMY                 : std_logic;
@@ -1595,13 +1594,14 @@ architecture BEHAVIORAL of cpu_control_MUSER_cpu is
              o     : out   std_logic_vector (7 downto 0));
    end component;
    
-   component NAND3
+   component AND4
       port ( I0 : in    std_logic; 
              I1 : in    std_logic; 
              I2 : in    std_logic; 
+             I3 : in    std_logic; 
              O  : out   std_logic);
    end component;
-   attribute BOX_TYPE of NAND3 : component is "BLACK_BOX";
+   attribute BOX_TYPE of AND4 : component is "BLACK_BOX";
    
    attribute HU_SET of XLXI_39 : label is "XLXI_39_12";
    attribute HU_SET of XLXI_47 : label is "XLXI_47_10";
@@ -1736,7 +1736,7 @@ begin
    
    XLXI_40 : BUF
       port map (I=>ir(7),
-                O=>XLXN_1097);
+                O=>alu_DUMMY);
    
    XLXI_41 : OR3
       port map (I0=>alu_not_DUMMY,
@@ -1806,11 +1806,6 @@ begin
       port map (I0=>s4_DUMMY,
                 I1=>alu_unari,
                 O=>alu_unari_s4);
-   
-   XLXI_137 : AND2
-      port map (I0=>s6_DUMMY,
-                I1=>alu_DUMMY,
-                O=>alu_s6);
    
    XLXI_138 : AND2
       port map (I0=>clkr,
@@ -1904,11 +1899,6 @@ begin
       port map (I0=>ra_3,
                 I1=>ra_int,
                 O=>ra3_r);
-   
-   XLXI_298 : AND2
-      port map (I0=>s4_DUMMY,
-                I1=>alu_DUMMY,
-                O=>alu_s4);
    
    XLXI_400 : AND2
       port map (I0=>rb_0,
@@ -2260,17 +2250,6 @@ begin
    XLXI_590 : GND
       port map (G=>XLXN_1086);
    
-   XLXI_593 : NAND3
-      port map (I0=>ir(6),
-                I1=>ir(5),
-                I2=>ir(4),
-                O=>XLXN_1094);
-   
-   XLXI_594 : AND2
-      port map (I0=>XLXN_1097,
-                I1=>XLXN_1094,
-                O=>alu_DUMMY);
-   
    XLXI_597 : AND2
       port map (I0=>in_from_port_DUMMY,
                 I1=>s4_DUMMY,
@@ -2349,6 +2328,25 @@ begin
                 I4=>jmp_ifjmp_flag_equals_op_s5,
                 I5=>in_from_port_s6,
                 O=>XLXN_1238);
+   
+   XLXI_638 : AND3B1
+      port map (I0=>alu_port_in,
+                I1=>s4_DUMMY,
+                I2=>alu_DUMMY,
+                O=>alu_s4);
+   
+   XLXI_639 : AND3B1
+      port map (I0=>alu_port_in,
+                I1=>s6_DUMMY,
+                I2=>alu_DUMMY,
+                O=>alu_s6);
+   
+   XLXI_641 : AND4
+      port map (I0=>ir(7),
+                I1=>ir(6),
+                I2=>ir(5),
+                I3=>ir(4),
+                O=>alu_port_in);
    
 end BEHAVIORAL;
 

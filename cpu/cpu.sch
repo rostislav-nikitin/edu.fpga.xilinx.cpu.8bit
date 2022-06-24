@@ -428,7 +428,7 @@
             <line x2="0" y1="-96" y2="-96" x1="64" />
         </blockdef>
         <blockdef name="cpu_control">
-            <timestamp>2022-6-24T22:3:53</timestamp>
+            <timestamp>2022-6-24T23:5:47</timestamp>
             <rect width="1600" x="64" y="-1664" height="1600" />
             <line x2="1504" y1="-1664" y2="-1728" x1="1504" />
             <line x2="1568" y1="-1664" y2="-1728" x1="1568" />

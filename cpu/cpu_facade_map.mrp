@@ -11,7 +11,7 @@ Target Device  : xa6slx9
 Target Package : ftg256
 Target Speed   : -3
 Mapper Version : aspartan6 -- $Revision: 1.55 $
-Mapped Date    : Sat Jun 25 01:09:36 2022
+Mapped Date    : Sat Jun 25 02:44:06 2022
 
 Design Summary
 --------------
@@ -42,12 +42,12 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   147 out of   1,430   10%
+  Number of occupied Slices:                   151 out of   1,430   10%
   Nummber of MUXCYs used:                      128 out of   2,860    4%
-  Number of LUT Flip Flop pairs used:          447
-    Number with an unused Flip Flop:           213 out of     447   47%
-    Number with an unused LUT:                  58 out of     447   12%
-    Number of fully used LUT-FF pairs:         176 out of     447   39%
+  Number of LUT Flip Flop pairs used:          457
+    Number with an unused Flip Flop:           223 out of     457   48%
+    Number with an unused LUT:                  68 out of     457   14%
+    Number of fully used LUT-FF pairs:         166 out of     457   36%
     Number of unique control sets:              37
     Number of slice register sites lost
       to control set restrictions:             100 out of  11,440    1%
@@ -1529,12 +1529,12 @@ INV 		XLXI_7/alu_inst/XLXI_135/XLXI_9/XLXI_5
 INV 		XLXI_7/alu_inst/XLXI_135/XLXI_9/XLXI_6
 AND2 		XLXI_7/alu_inst/XLXI_135/XLXI_9/XLXI_2
 INV 		XLXI_7/cpu_ctl/XLXI_574
-INV 		XLXI_7/cpu_ctl/XLXI_251
 BUF 		XLXI_7/cpu_ctl/XLXI_527
 BUF 		XLXI_7/cpu_ctl/XLXI_526
 BUF 		XLXI_7/cpu_ctl/XLXI_529
 BUF 		XLXI_7/cpu_ctl/XLXI_528
 BUF 		XLXI_7/cpu_ctl/XLXI_40
+INV 		XLXI_7/cpu_ctl/XLXI_251
 LUT1 		XLXI_105/XLXI_2/Mcount_usart_clock.periods_cy<6>_rt
 LUT1 		XLXI_105/XLXI_2/Mcount_usart_clock.periods_cy<5>_rt
 LUT1 		XLXI_105/XLXI_2/Mcount_usart_clock.periods_cy<4>_rt
@@ -1795,9 +1795,9 @@ Section 13 - Utilization by Hierarchy
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Module             | Partition | Slices*       | Slice Reg     | LUTs          | LUTRAM        | BRAM/FIFO | DSP48A1 | BUFG  | BUFIO | BUFR  | DCM   | PLL_ADV   | Full Hierarchical Name                               |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| cpu_facade/        |           | 4/238         | 0/236         | 5/389         | 0/32          | 0/0       | 0/0     | 1/1   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade                                           |
-| +XLXI_105          |           | 0/10          | 0/20          | 0/25          | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_105                                  |
-| ++XLXI_2           |           | 10/10         | 20/20         | 25/25         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_105/XLXI_2                           |
+| cpu_facade/        |           | 4/239         | 0/236         | 5/389         | 0/32          | 0/0       | 0/0     | 1/1   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade                                           |
+| +XLXI_105          |           | 0/9           | 0/20          | 0/25          | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_105                                  |
+| ++XLXI_2           |           | 9/9           | 20/20         | 25/25         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_105/XLXI_2                           |
 | +XLXI_106          |           | 8/10          | 0/8           | 32/32         | 32/32         | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_106                                  |
 | ++XLXI_15          |           | 2/2           | 8/8           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_106/XLXI_15                          |
 | +XLXI_135          |           | 0/2           | 0/8           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_135                                  |
@@ -1816,7 +1816,7 @@ Section 13 - Utilization by Hierarchy
 | ++XLXI_1           |           | 5/5           | 16/16         | 19/19         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_51/XLXI_1                            |
 | ++XLXI_2           |           | 2/2           | 8/8           | 8/8           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_51/XLXI_2                            |
 | +XLXI_53           |           | 1/1           | 1/1           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_53                                   |
-| +XLXI_7            |           | 23/194        | 1/167         | 29/291        | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7                                    |
+| +XLXI_7            |           | 24/196        | 1/167         | 29/291        | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7                                    |
 | ++XLXI_104         |           | 8/8           | 8/8           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_104                           |
 | ++XLXI_122         |           | 0/2           | 0/8           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_122                           |
 | +++XLXI_5          |           | 2/2           | 8/8           | 0/0           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/XLXI_122/XLXI_5                    |
@@ -1899,17 +1899,17 @@ Section 13 - Utilization by Hierarchy
 | +++XLXI_2          |           | 2/2           | 0/0           | 8/8           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/alu_inst/XLXI_2                    |
 | ++clck_gen         |           | 2/3           | 0/2           | 2/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/clck_gen                           |
 | +++XLXI_14         |           | 1/1           | 2/2           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/clck_gen/XLXI_14                   |
-| ++cpu_ctl          |           | 27/43         | 0/3           | 47/65         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/cpu_ctl                            |
-| +++XLXI_252        |           | 4/4           | 0/0           | 4/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/cpu_ctl/XLXI_252                   |
+| ++cpu_ctl          |           | 28/44         | 0/3           | 47/65         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/cpu_ctl                            |
+| +++XLXI_252        |           | 3/3           | 0/0           | 4/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/cpu_ctl/XLXI_252                   |
 | +++XLXI_39         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/cpu_ctl/XLXI_39                    |
 | +++XLXI_47         |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/cpu_ctl/XLXI_47                    |
 | +++XLXI_577        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/cpu_ctl/XLXI_577                   |
 | +++XLXI_608        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/cpu_ctl/XLXI_608                   |
 | +++XLXI_616        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/cpu_ctl/XLXI_616                   |
 | +++XLXI_637        |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/cpu_ctl/XLXI_637                   |
-| +++stp             |           | 1/5           | 0/3           | 1/7           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/cpu_ctl/stp                        |
+| +++stp             |           | 1/6           | 0/3           | 1/7           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/cpu_ctl/stp                        |
 | ++++XLXI_24        |           | 1/1           | 3/3           | 2/2           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/cpu_ctl/stp/XLXI_24                |
-| ++++XLXI_25        |           | 3/3           | 0/0           | 4/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/cpu_ctl/stp/XLXI_25                |
+| ++++XLXI_25        |           | 4/4           | 0/0           | 4/4           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/cpu_ctl/stp/XLXI_25                |
 | ++pass_th          |           | 0/8           | 0/0           | 0/8           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/pass_th                            |
 | +++XLXI_1          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/pass_th/XLXI_1                     |
 | +++XLXI_13         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | cpu_facade/XLXI_7/pass_th/XLXI_13                    |
