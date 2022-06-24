@@ -428,7 +428,7 @@
             <line x2="0" y1="-96" y2="-96" x1="64" />
         </blockdef>
         <blockdef name="cpu_control">
-            <timestamp>2022-6-24T20:37:41</timestamp>
+            <timestamp>2022-6-24T22:3:53</timestamp>
             <rect width="1600" x="64" y="-1664" height="1600" />
             <line x2="1504" y1="-1664" y2="-1728" x1="1504" />
             <line x2="1568" y1="-1664" y2="-1728" x1="1568" />
@@ -436,7 +436,6 @@
             <line x2="1728" y1="-480" y2="-480" x1="1664" />
             <line x2="800" y1="-1664" y2="-1728" x1="800" />
             <line x2="1728" y1="-672" y2="-672" x1="1664" />
-            <line x2="1728" y1="-224" y2="-224" x1="1664" />
             <line x2="1728" y1="-544" y2="-544" x1="1664" />
             <line x2="1728" y1="-1632" y2="-1632" x1="1664" />
             <line x2="1728" y1="-1568" y2="-1568" x1="1664" />
@@ -457,6 +456,7 @@
             <line x2="1728" y1="-416" y2="-416" x1="1664" />
             <line x2="1120" y1="-1664" y2="-1728" x1="1120" />
             <line x2="1184" y1="-1664" y2="-1728" x1="1184" />
+            <line x2="1728" y1="-224" y2="-224" x1="1664" />
             <line x2="224" y1="-64" y2="0" x1="224" />
             <rect width="24" x="212" y="-64" height="64" />
             <line x2="1312" y1="-1664" y2="-1728" x1="1312" />
@@ -1469,7 +1469,6 @@
             <blockpin signalname="cc_dbg_alu_and" name="alu_and" />
             <blockpin signalname="alu_C_in_enabled" name="alu_C_in_enabled" />
             <blockpin signalname="cc_dbg_alu_lshift" name="alu_lshift" />
-            <blockpin signalname="cc_dbg_alu_nop" name="alu_nop" />
             <blockpin signalname="cc_dbg_alu_not" name="alu_not" />
             <blockpin signalname="cc_alu_op(0)" name="alu_op0" />
             <blockpin signalname="cc_alu_op(1)" name="alu_op1" />
@@ -1489,6 +1488,7 @@
             <blockpin signalname="ground" name="ground" />
             <blockpin signalname="cc_iar_r" name="iar_r" />
             <blockpin signalname="cc_iar_w" name="iar_w" />
+            <blockpin signalname="cc_dbg_alu_nop" name="in_from_port" />
             <blockpin signalname="ir_o(7:0)" name="ir(7:0)" />
             <blockpin signalname="cc_ir_w" name="ir_w" />
             <blockpin signalname="cc_dbg_jmp_ifjmp" name="jmp_ifjmp" />

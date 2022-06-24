@@ -1,7 +1,7 @@
 Release 14.3 - par P.40xd (lin64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Fri Jun 24 23:54:30 2022
+Sat Jun 25 01:09:57 2022
 
 
 # NOTE: This file is designed to be imported into a spreadsheet program
@@ -75,7 +75,7 @@ D5||IOBM|IO_L3P_0|UNUSED||0|||||||||
 D6||IOBM|IO_L7P_0|UNUSED||0|||||||||
 D7|||VCCO_0|||0|||||2.50||||
 D8||IOBM|IO_L38P_0|UNUSED||0|||||||||
-D9||IOBS|IO_L40N_0|UNUSED||0|||||||||
+D9|monitor<4>|IOB|IO_L40N_0|OUTPUT|LVCMOS25*|0|12|SLOW||||LOCATED|NO|NONE|
 D10|||VCCO_0|||0|||||2.50||||
 D11|in_ir_r|IOB|IO_L66P_SCP1_0|INPUT|LVCMOS25*|0||||NONE||LOCATED|NO|NONE|
 D12||IOBS|IO_L66N_SCP0_0|UNUSED||0|||||||||
@@ -92,7 +92,7 @@ E6||IOBS|IO_L5N_0|UNUSED||0|||||||||
 E7||IOBM|IO_L36P_GCLK15_0|UNUSED||0|||||||||
 E8||IOBS|IO_L36N_GCLK14_0|UNUSED||0|||||||||
 E9|||GND||||||||||||
-E10|monitor<4>|IOB|IO_L37P_GCLK13_0|OUTPUT|LVCMOS25*|0|12|SLOW||||LOCATED|NO|NONE|
+E10||IOBM|IO_L37P_GCLK13_0|UNUSED||0|||||||||
 E11|in_acc_r|IOB|IO_L64N_SCP4_0|INPUT|LVCMOS25*|0||||NONE||LOCATED|NO|NONE|
 E12|in_bus1|IOB|IO_L1N_A24_VREF_1|INPUT|LVCMOS25*|1||||NONE||LOCATED|NO|NONE|
 E13||IOBM|IO_L1P_A25_1|UNUSED||1|||||||||

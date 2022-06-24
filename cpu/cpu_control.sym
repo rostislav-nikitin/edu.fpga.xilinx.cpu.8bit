@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="cpu_control">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2022-6-24T20:37:39</timestamp>
+    <timestamp>2022-6-24T22:3:50</timestamp>
     <pin polarity="Output" x="1504" y="-1728" name="acc_r" />
     <pin polarity="Output" x="1568" y="-1728" name="acc_w" />
     <pin polarity="Output" x="1728" y="-160" name="alu" />
     <pin polarity="Output" x="1728" y="-480" name="alu_and" />
     <pin polarity="Output" x="800" y="-1728" name="alu_C_in_enabled" />
     <pin polarity="Output" x="1728" y="-672" name="alu_lshift" />
-    <pin polarity="Output" x="1728" y="-224" name="alu_nop" />
     <pin polarity="Output" x="1728" y="-544" name="alu_not" />
     <pin polarity="Output" x="1728" y="-1632" name="alu_op0" />
     <pin polarity="Output" x="1728" y="-1568" name="alu_op1" />
@@ -28,6 +27,7 @@
     <pin polarity="Output" x="1728" y="-416" name="ground" />
     <pin polarity="Output" x="1120" y="-1728" name="iar_r" />
     <pin polarity="Output" x="1184" y="-1728" name="iar_w" />
+    <pin polarity="Output" x="1728" y="-224" name="in_from_port" />
     <pin polarity="Input" x="224" y="0" name="ir(7:0)" />
     <pin polarity="Output" x="1312" y="-1728" name="ir_w" />
     <pin polarity="Output" x="928" y="-1728" name="jmp_ifjmp" />
@@ -72,8 +72,6 @@
         <attrtext style="alignment:VRIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="800" y="-1656" type="pin alu_C_in_enabled" />
         <line x2="1728" y1="-672" y2="-672" x1="1664" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="1656" y="-672" type="pin alu_lshift" />
-        <line x2="1728" y1="-224" y2="-224" x1="1664" />
-        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="1656" y="-224" type="pin alu_nop" />
         <line x2="1728" y1="-544" y2="-544" x1="1664" />
         <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="1656" y="-544" type="pin alu_not" />
         <line x2="1728" y1="-1632" y2="-1632" x1="1664" />
@@ -113,6 +111,8 @@
         <attrtext style="alignment:VRIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="1120" y="-1656" type="pin iar_r" />
         <line x2="1184" y1="-1664" y2="-1728" x1="1184" />
         <attrtext style="alignment:VRIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="1184" y="-1656" type="pin iar_w" />
+        <line x2="1728" y1="-224" y2="-224" x1="1664" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="1656" y="-224" type="pin in_from_port" />
         <line x2="224" y1="-64" y2="0" x1="224" />
         <attrtext style="alignment:VLEFT;fontsize:24;fontname:Arial" attrname="PinName" x="224" y="-72" type="pin ir(7:0)" />
         <rect width="24" x="212" y="-64" height="64" />

@@ -217,7 +217,7 @@
         <port polarity="Input" name="in_bus1" />
         <port polarity="Output" name="out_usart1_tx" />
         <blockdef name="cpu">
-            <timestamp>2022-6-24T20:53:6</timestamp>
+            <timestamp>2022-6-24T22:4:19</timestamp>
             <rect width="2304" x="64" y="-2368" height="2304" />
             <line x2="928" y1="-64" y2="0" x1="928" />
             <line x2="1056" y1="-64" y2="0" x1="1056" />
