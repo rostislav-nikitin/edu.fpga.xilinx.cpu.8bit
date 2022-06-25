@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Reading design: cpu_facade.prj
@@ -726,10 +726,10 @@ WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_
 
 Synthesizing Unit <cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_34_143" for instance <XLXI_34>.
-    Set property "HU_SET = XLXI_53_144" for instance <XLXI_53>.
-    Set property "HU_SET = XLXI_136_145" for instance <XLXI_136>.
-    Set property "HU_SET = XLXI_186_146" for instance <XLXI_186>.
+    Set property "HU_SET = XLXI_34_65" for instance <XLXI_34>.
+    Set property "HU_SET = XLXI_53_66" for instance <XLXI_53>.
+    Set property "HU_SET = XLXI_136_67" for instance <XLXI_136>.
+    Set property "HU_SET = XLXI_186_68" for instance <XLXI_186>.
 INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7225: Output port <manr_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7225: Output port <out_alu_x> of the instance <XLXI_7> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7225: Output port <out_iar_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
@@ -821,11 +821,11 @@ Unit <cpu_facade> synthesized.
 
 Synthesizing Unit <cpu_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_87_138" for instance <XLXI_87>.
-    Set property "HU_SET = XLXI_104_139" for instance <XLXI_104>.
-    Set property "HU_SET = XLXI_571_140" for instance <XLXI_571>.
-    Set property "HU_SET = XLXI_914_141" for instance <XLXI_914>.
-    Set property "HU_SET = XLXI_917_142" for instance <XLXI_917>.
+    Set property "HU_SET = XLXI_87_60" for instance <XLXI_87>.
+    Set property "HU_SET = XLXI_104_61" for instance <XLXI_104>.
+    Set property "HU_SET = XLXI_571_62" for instance <XLXI_571>.
+    Set property "HU_SET = XLXI_914_63" for instance <XLXI_914>.
+    Set property "HU_SET = XLXI_917_64" for instance <XLXI_917>.
 INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 6009: Output port <alu_or> of the instance <cpu_ctl> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 6186: Output port <g> of the instance <XLXI_130> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 6210: Output port <G> of the instance <XLXI_136> is unconnected or connected to loadless signal.
@@ -842,9 +842,9 @@ Unit <cpu_MUSER_cpu_facade> synthesized.
 
 Synthesizing Unit <alu_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_1_135" for instance <XLXI_1>.
-    Set property "HU_SET = XLXI_2_136" for instance <XLXI_2>.
-    Set property "HU_SET = XLXI_102_137" for instance <XLXI_102>.
+    Set property "HU_SET = XLXI_1_57" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_2_58" for instance <XLXI_2>.
+    Set property "HU_SET = XLXI_102_59" for instance <XLXI_102>.
 INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5238: Output port <D3> of the instance <XLXI_1> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5238: Output port <D4> of the instance <XLXI_1> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5238: Output port <D5> of the instance <XLXI_1> is unconnected or connected to loadless signal.
@@ -889,7 +889,7 @@ Unit <cmp_1bit_MUSER_cpu_facade> synthesized.
 
 Synthesizing Unit <lzero_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_1_134" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_1_56" for instance <XLXI_1>.
     Summary:
 	no macro.
 Unit <lzero_MUSER_cpu_facade> synthesized.
@@ -917,14 +917,14 @@ Unit <alu_output_muxer_MUSER_cpu_facade> synthesized.
 
 Synthesizing Unit <bus_muxer_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_1_81" for instance <XLXI_1>.
-    Set property "HU_SET = XLXI_2_80" for instance <XLXI_2>.
-    Set property "HU_SET = XLXI_12_82" for instance <XLXI_12>.
-    Set property "HU_SET = XLXI_13_83" for instance <XLXI_13>.
-    Set property "HU_SET = XLXI_14_84" for instance <XLXI_14>.
-    Set property "HU_SET = XLXI_15_85" for instance <XLXI_15>.
-    Set property "HU_SET = XLXI_16_86" for instance <XLXI_16>.
-    Set property "HU_SET = XLXI_17_87" for instance <XLXI_17>.
+    Set property "HU_SET = XLXI_1_3" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_2_2" for instance <XLXI_2>.
+    Set property "HU_SET = XLXI_12_4" for instance <XLXI_12>.
+    Set property "HU_SET = XLXI_13_5" for instance <XLXI_13>.
+    Set property "HU_SET = XLXI_14_6" for instance <XLXI_14>.
+    Set property "HU_SET = XLXI_15_7" for instance <XLXI_15>.
+    Set property "HU_SET = XLXI_16_8" for instance <XLXI_16>.
+    Set property "HU_SET = XLXI_17_9" for instance <XLXI_17>.
 WARNING:Xst:647 - Input <dev10> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <dev11> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <dev12> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -992,8 +992,8 @@ Unit <M16_1E_HXILINX_cpu_facade> synthesized.
 
 Synthesizing Unit <clk_generator_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_4_119" for instance <XLXI_4>.
-    Set property "HU_SET = XLXI_14_120" for instance <XLXI_14>.
+    Set property "HU_SET = XLXI_4_41" for instance <XLXI_4>.
+    Set property "HU_SET = XLXI_14_42" for instance <XLXI_14>.
 INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 4192: Output port <O> of the instance <XLXI_9> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 4197: Output port <O> of the instance <XLXI_10> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 4209: Output port <CEO> of the instance <XLXI_14> is unconnected or connected to loadless signal.
@@ -1022,14 +1022,14 @@ Unit <CB2CE_HXILINX_cpu_facade> synthesized.
 
 Synthesizing Unit <cpu_control_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_39_95" for instance <XLXI_39>.
-    Set property "HU_SET = XLXI_47_93" for instance <XLXI_47>.
-    Set property "HU_SET = XLXI_48_94" for instance <XLXI_48>.
-    Set property "HU_SET = XLXI_252_96" for instance <XLXI_252>.
-    Set property "HU_SET = XLXI_577_97" for instance <XLXI_577>.
-    Set property "HU_SET = XLXI_608_98" for instance <XLXI_608>.
-    Set property "HU_SET = XLXI_616_99" for instance <XLXI_616>.
-    Set property "HU_SET = XLXI_637_100" for instance <XLXI_637>.
+    Set property "HU_SET = XLXI_39_17" for instance <XLXI_39>.
+    Set property "HU_SET = XLXI_47_15" for instance <XLXI_47>.
+    Set property "HU_SET = XLXI_48_16" for instance <XLXI_48>.
+    Set property "HU_SET = XLXI_252_18" for instance <XLXI_252>.
+    Set property "HU_SET = XLXI_577_19" for instance <XLXI_577>.
+    Set property "HU_SET = XLXI_608_20" for instance <XLXI_608>.
+    Set property "HU_SET = XLXI_616_21" for instance <XLXI_616>.
+    Set property "HU_SET = XLXI_637_22" for instance <XLXI_637>.
 WARNING:Xst:653 - Signal <XLXI_579_dev2_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <XLXI_579_dev3_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <XLXI_579_dev4_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
@@ -1050,8 +1050,8 @@ Unit <cpu_control_MUSER_cpu_facade> synthesized.
 
 Synthesizing Unit <stepper_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_24_91" for instance <XLXI_24>.
-    Set property "HU_SET = XLXI_25_92" for instance <XLXI_25>.
+    Set property "HU_SET = XLXI_24_13" for instance <XLXI_24>.
+    Set property "HU_SET = XLXI_25_14" for instance <XLXI_25>.
 INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 1614: Output port <CEO> of the instance <XLXI_24> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 1614: Output port <Q3> of the instance <XLXI_24> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 1614: Output port <TC> of the instance <XLXI_24> is unconnected or connected to loadless signal.
@@ -1083,14 +1083,14 @@ Unit <OR6_HXILINX_cpu_facade> synthesized.
 
 Synthesizing Unit <pass_through_or_one_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_1_126" for instance <XLXI_1>.
-    Set property "HU_SET = XLXI_3_127" for instance <XLXI_3>.
-    Set property "HU_SET = XLXI_4_128" for instance <XLXI_4>.
-    Set property "HU_SET = XLXI_5_129" for instance <XLXI_5>.
-    Set property "HU_SET = XLXI_6_130" for instance <XLXI_6>.
-    Set property "HU_SET = XLXI_7_131" for instance <XLXI_7>.
-    Set property "HU_SET = XLXI_8_132" for instance <XLXI_8>.
-    Set property "HU_SET = XLXI_13_133" for instance <XLXI_13>.
+    Set property "HU_SET = XLXI_1_48" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_3_49" for instance <XLXI_3>.
+    Set property "HU_SET = XLXI_4_50" for instance <XLXI_4>.
+    Set property "HU_SET = XLXI_5_51" for instance <XLXI_5>.
+    Set property "HU_SET = XLXI_6_52" for instance <XLXI_6>.
+    Set property "HU_SET = XLXI_7_53" for instance <XLXI_7>.
+    Set property "HU_SET = XLXI_8_54" for instance <XLXI_8>.
+    Set property "HU_SET = XLXI_13_55" for instance <XLXI_13>.
     Summary:
 	no macro.
 Unit <pass_through_or_one_MUSER_cpu_facade> synthesized.
@@ -1127,7 +1127,7 @@ Unit <LD8_HXILINX_cpu_facade> synthesized.
 
 Synthesizing Unit <reg_8bit_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_5_88" for instance <XLXI_5>.
+    Set property "HU_SET = XLXI_5_10" for instance <XLXI_5>.
 WARNING:Xst:647 - Input <r> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
 	no macro.
@@ -1161,11 +1161,11 @@ Unit <cpu_output_muxer_MUSER_cpu_facade> synthesized.
 
 Synthesizing Unit <encoder16_4_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_25_121" for instance <XLXI_25>.
-    Set property "HU_SET = XLXI_48_122" for instance <XLXI_48>.
-    Set property "HU_SET = XLXI_49_123" for instance <XLXI_49>.
-    Set property "HU_SET = XLXI_50_124" for instance <XLXI_50>.
-    Set property "HU_SET = XLXI_59_125" for instance <XLXI_59>.
+    Set property "HU_SET = XLXI_25_43" for instance <XLXI_25>.
+    Set property "HU_SET = XLXI_48_44" for instance <XLXI_48>.
+    Set property "HU_SET = XLXI_49_45" for instance <XLXI_49>.
+    Set property "HU_SET = XLXI_50_46" for instance <XLXI_50>.
+    Set property "HU_SET = XLXI_59_47" for instance <XLXI_59>.
     Summary:
 	no macro.
 Unit <encoder16_4_MUSER_cpu_facade> synthesized.
@@ -1190,20 +1190,20 @@ Unit <buf_8bit_MUSER_cpu_facade> synthesized.
 
 Synthesizing Unit <cpu_freq_divider_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_4_118" for instance <XLXI_4>.
+    Set property "HU_SET = XLXI_4_40" for instance <XLXI_4>.
     Summary:
 	no macro.
 Unit <cpu_freq_divider_MUSER_cpu_facade> synthesized.
 
 Synthesizing Unit <freq_divider_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_1_111" for instance <XLXI_1>.
-    Set property "HU_SET = XLXI_2_110" for instance <XLXI_2>.
-    Set property "HU_SET = XLXI_123_112" for instance <XLXI_123>.
-    Set property "HU_SET = XLXI_124_113" for instance <XLXI_124>.
-    Set property "HU_SET = XLXI_128_116" for instance <XLXI_128>.
-    Set property "HU_SET = XLXI_149_114" for instance <XLXI_149>.
-    Set property "HU_SET = XLXI_150_115" for instance <XLXI_150>.
+    Set property "HU_SET = XLXI_1_33" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_2_32" for instance <XLXI_2>.
+    Set property "HU_SET = XLXI_123_34" for instance <XLXI_123>.
+    Set property "HU_SET = XLXI_124_35" for instance <XLXI_124>.
+    Set property "HU_SET = XLXI_128_38" for instance <XLXI_128>.
+    Set property "HU_SET = XLXI_149_36" for instance <XLXI_149>.
+    Set property "HU_SET = XLXI_150_37" for instance <XLXI_150>.
 INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 3538: Output port <TC> of the instance <XLXI_1> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 3546: Output port <CEO> of the instance <XLXI_2> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 3546: Output port <TC> of the instance <XLXI_2> is unconnected or connected to loadless signal.
@@ -1235,23 +1235,23 @@ Unit <M8_1E_HXILINX_cpu_facade> synthesized.
 
 Synthesizing Unit <encoder8_3_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_4_117" for instance <XLXI_4>.
+    Set property "HU_SET = XLXI_4_39" for instance <XLXI_4>.
     Summary:
 	no macro.
 Unit <encoder8_3_MUSER_cpu_facade> synthesized.
 
 Synthesizing Unit <cpu_freq_divider_1Hz_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_15_105" for instance <XLXI_15>.
-    Set property "HU_SET = XLXI_18_106" for instance <XLXI_18>.
+    Set property "HU_SET = XLXI_15_27" for instance <XLXI_15>.
+    Set property "HU_SET = XLXI_18_28" for instance <XLXI_18>.
     Summary:
 	no macro.
 Unit <cpu_freq_divider_1Hz_MUSER_cpu_facade> synthesized.
 
 Synthesizing Unit <cpu_freq_divider_base_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_1_101" for instance <XLXI_1>.
-    Set property "HU_SET = XLXI_2_102" for instance <XLXI_2>.
+    Set property "HU_SET = XLXI_1_23" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_2_24" for instance <XLXI_2>.
 INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 2815: Output port <TC> of the instance <XLXI_1> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 2823: Output port <CEO> of the instance <XLXI_2> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 2823: Output port <TC> of the instance <XLXI_2> is unconnected or connected to loadless signal.
@@ -1267,9 +1267,9 @@ Unit <AND7_HXILINX_cpu_facade> synthesized.
 
 Synthesizing Unit <cpu_freq_divider_1Stg_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_18_107" for instance <XLXI_18>.
-    Set property "HU_SET = XLXI_21_108" for instance <XLXI_21>.
-    Set property "HU_SET = XLXI_22_109" for instance <XLXI_22>.
+    Set property "HU_SET = XLXI_18_29" for instance <XLXI_18>.
+    Set property "HU_SET = XLXI_21_30" for instance <XLXI_21>.
+    Set property "HU_SET = XLXI_22_31" for instance <XLXI_22>.
     Summary:
 	no macro.
 Unit <cpu_freq_divider_1Stg_MUSER_cpu_facade> synthesized.
@@ -1282,7 +1282,7 @@ Unit <AND6_HXILINX_cpu_facade> synthesized.
 
 Synthesizing Unit <cpu_freq_divider_1Inst_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_15_104" for instance <XLXI_15>.
+    Set property "HU_SET = XLXI_15_26" for instance <XLXI_15>.
 INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 3007: Output port <out_clk_low> of the instance <XLXI_1> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
@@ -1290,7 +1290,7 @@ Unit <cpu_freq_divider_1Inst_MUSER_cpu_facade> synthesized.
 
 Synthesizing Unit <cpu_freq_divider_1KHz_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_15_103" for instance <XLXI_15>.
+    Set property "HU_SET = XLXI_15_25" for instance <XLXI_15>.
 INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 2905: Output port <out_clk_high> of the instance <XLXI_1> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
@@ -1298,8 +1298,8 @@ Unit <cpu_freq_divider_1KHz_MUSER_cpu_facade> synthesized.
 
 Synthesizing Unit <debouncer_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_1_89" for instance <XLXI_1>.
-    Set property "HU_SET = XLXI_2_90" for instance <XLXI_2>.
+    Set property "HU_SET = XLXI_1_11" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_2_12" for instance <XLXI_2>.
 INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 1509: Output port <Q> of the instance <XLXI_1> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 1509: Output port <TC> of the instance <XLXI_1> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 1517: Output port <CEO> of the instance <XLXI_2> is unconnected or connected to loadless signal.
@@ -1355,15 +1355,15 @@ Unit <usart_tramnsmitter> synthesized.
 
 Synthesizing Unit <ram_256bytes_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "INIT = 0000000000000000000000000000000000000000000000000000000000000142" for instance <XLXI_1>.
-    Set property "HU_SET = XLXI_15_79" for instance <XLXI_15>.
-    Set property "INIT = 0000000000000000000000000000000000000000000000000000000000004800" for instance <XLXI_17>.
-    Set property "INIT = 0000000000000000000000000000000000000000000000000000000000004A01" for instance <XLXI_18>.
-    Set property "INIT = 0000000000000000000000000000000000000000000000000000000000000290" for instance <XLXI_19>.
-    Set property "INIT = 0000000000000000000000000000000000000000000000000000000000000180" for instance <XLXI_20>.
-    Set property "INIT = 0000000000000000000000000000000000000000000000000000000000001095" for instance <XLXI_21>.
-    Set property "INIT = 0000000000000000000000000000000000000000000000000000000000003580" for instance <XLXI_22>.
-    Set property "INIT = 0000000000000000000000000000000000000000000000000000000000000040" for instance <XLXI_23>.
+    Set property "INIT = 0000000000000000000000000000000000000000000000000000000000000642" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_15_1" for instance <XLXI_15>.
+    Set property "INIT = 0000000000000000000000000000000000000000000000000000000000009100" for instance <XLXI_17>.
+    Set property "INIT = 0000000000000000000000000000000000000000000000000000000000009401" for instance <XLXI_18>.
+    Set property "INIT = 0000000000000000000000000000000000000000000000000000000000000490" for instance <XLXI_19>.
+    Set property "INIT = 0000000000000000000000000000000000000000000000000000000000000380" for instance <XLXI_20>.
+    Set property "INIT = 0000000000000000000000000000000000000000000000000000000000002195" for instance <XLXI_21>.
+    Set property "INIT = 0000000000000000000000000000000000000000000000000000000000006B80" for instance <XLXI_22>.
+    Set property "INIT = 0000000000000000000000000000000000000000000000000000000000000140" for instance <XLXI_23>.
 INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 1058: Output port <O> of the instance <XLXI_42> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
@@ -2734,13 +2734,13 @@ XLXI_7/clk_internal            |         |         |   20.601|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 8.89 secs
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.50 secs
  
 --> 
 
 
-Total memory usage is 619212 kilobytes
+Total memory usage is 619156 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  323 (   0 filtered)

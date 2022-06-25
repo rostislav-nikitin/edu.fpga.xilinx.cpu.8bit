@@ -11,7 +11,7 @@ Target Device  : xa6slx9
 Target Package : ftg256
 Target Speed   : -3
 Mapper Version : aspartan6 -- $Revision: 1.55 $
-Mapped Date    : Sat Jun 25 03:03:19 2022
+Mapped Date    : Sat Jun 25 03:20:34 2022
 
 Mapping design into LUTs...
 WARNING:MapLib:701 - Signal in_manr_w connected to top level port in_manr_w has

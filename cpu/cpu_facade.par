@@ -1,7 +1,7 @@
 Release 14.3 par P.40xd (lin64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-fedora::  Sat Jun 25 03:03:31 2022
+fedora::  Sat Jun 25 03:20:47 2022
 
 par -w -intstyle ise -ol high -mt off cpu_facade_map.ncd cpu_facade.ncd
 cpu_facade.pcf 
