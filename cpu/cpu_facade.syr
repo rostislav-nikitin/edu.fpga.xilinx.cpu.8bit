@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> 
 Reading design: cpu_facade.prj
@@ -578,15 +578,15 @@ WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_
 WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1150: Net <XLXN_171> does not have a driver.
 WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1151: Net <XLXN_172> does not have a driver.
 WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1152: Net <XLXN_173> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 4732: Net <XLXI_14_dev7_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 4733: Net <XLXI_14_dev8_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 4734: Net <XLXI_14_dev9_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 4735: Net <XLXI_14_dev10_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 4736: Net <XLXI_14_dev11_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 4737: Net <XLXI_14_dev12_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 4738: Net <XLXI_14_dev13_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 4739: Net <XLXI_14_dev14_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 4740: Net <XLXI_14_dev15_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 4755: Net <XLXI_14_dev7_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 4756: Net <XLXI_14_dev8_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 4757: Net <XLXI_14_dev9_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 4758: Net <XLXI_14_dev10_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 4759: Net <XLXI_14_dev11_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 4760: Net <XLXI_14_dev12_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 4761: Net <XLXI_14_dev13_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 4762: Net <XLXI_14_dev14_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 4763: Net <XLXI_14_dev15_openSignal[7]> does not have a driver.
 
 Elaborating entity <clk_generator_MUSER_cpu_facade> (architecture <BEHAVIORAL>) from library <work>.
 
@@ -604,20 +604,20 @@ Elaborating entity <D2_4E_HXILINX_cpu_facade> (architecture <D2_4E_HXILINX_cpu_f
 INFO:HDLCompiler:679 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 704. Case statement is complete. others clause is never selected
 
 Elaborating entity <OR6_HXILINX_cpu_facade> (architecture <OR6_HXILINX_cpu_facade_V>) from library <work>.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1846: Net <XLXI_579_dev2_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1847: Net <XLXI_579_dev3_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1848: Net <XLXI_579_dev4_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1849: Net <XLXI_579_dev5_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1850: Net <XLXI_579_dev6_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1851: Net <XLXI_579_dev7_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1852: Net <XLXI_579_dev8_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1853: Net <XLXI_579_dev9_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1854: Net <XLXI_579_dev10_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1855: Net <XLXI_579_dev11_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1856: Net <XLXI_579_dev12_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1857: Net <XLXI_579_dev13_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1858: Net <XLXI_579_dev14_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1859: Net <XLXI_579_dev15_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1851: Net <XLXI_579_dev2_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1852: Net <XLXI_579_dev3_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1853: Net <XLXI_579_dev4_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1854: Net <XLXI_579_dev5_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1855: Net <XLXI_579_dev6_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1856: Net <XLXI_579_dev7_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1857: Net <XLXI_579_dev8_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1858: Net <XLXI_579_dev9_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1859: Net <XLXI_579_dev10_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1860: Net <XLXI_579_dev11_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1861: Net <XLXI_579_dev12_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1862: Net <XLXI_579_dev13_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1863: Net <XLXI_579_dev14_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 1864: Net <XLXI_579_dev15_openSignal[7]> does not have a driver.
 
 Elaborating entity <pass_through_or_one_MUSER_cpu_facade> (architecture <BEHAVIORAL>) from library <work>.
 
@@ -639,12 +639,12 @@ Elaborating entity <encoder16_4_MUSER_cpu_facade> (architecture <BEHAVIORAL>) fr
 Elaborating entity <AND16_HXILINX_cpu_facade> (architecture <AND16_HXILINX_cpu_facade_V>) from library <work>.
 
 Elaborating entity <OR8_HXILINX_cpu_facade> (architecture <OR8_HXILINX_cpu_facade_V>) from library <work>.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 4457: Net <XLXI_1_dev10_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 4458: Net <XLXI_1_dev11_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 4459: Net <XLXI_1_dev12_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 4460: Net <XLXI_1_dev13_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 4461: Net <XLXI_1_dev14_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 4462: Net <XLXI_1_dev15_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 4480: Net <XLXI_1_dev10_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 4481: Net <XLXI_1_dev11_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 4482: Net <XLXI_1_dev12_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 4483: Net <XLXI_1_dev13_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 4484: Net <XLXI_1_dev14_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 4485: Net <XLXI_1_dev15_openSignal[7]> does not have a driver.
 
 Elaborating entity <buf_8bit_MUSER_cpu_facade> (architecture <BEHAVIORAL>) from library <work>.
 
@@ -674,7 +674,7 @@ Elaborating entity <AND6_HXILINX_cpu_facade> (architecture <AND6_HXILINX_cpu_fac
 Elaborating entity <cpu_freq_divider_1Inst_MUSER_cpu_facade> (architecture <BEHAVIORAL>) from library <work>.
 
 Elaborating entity <cpu_freq_divider_1KHz_MUSER_cpu_facade> (architecture <BEHAVIORAL>) from library <work>.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 5657: Net <ram_a_o[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 5680: Net <ram_a_o[7]> does not have a driver.
 
 Elaborating entity <debouncer_MUSER_cpu_facade> (architecture <BEHAVIORAL>) from library <work>.
 
@@ -686,39 +686,39 @@ Elaborating entity <ram_256bytes_MUSER_cpu_facade> (architecture <BEHAVIORAL>) f
 
 Elaborating entity <D4_16E_HXILINX_cpu_facade> (architecture <D4_16E_HXILINX_cpu_facade_V>) from library <work>.
 INFO:HDLCompiler:679 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 192. Case statement is complete. others clause is never selected
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6911: Net <XLXI_7_in_manr_d_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6912: Net <XLXI_7_in_manr_r_openSignal> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6913: Net <XLXI_135_r_openSignal> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6914: Net <XLXI_173_a_openSignal[3]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6915: Net <XLXI_173_dev1_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6916: Net <XLXI_173_dev2_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6917: Net <XLXI_173_dev3_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6918: Net <XLXI_173_dev4_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6919: Net <XLXI_173_dev5_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6920: Net <XLXI_173_dev6_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6921: Net <XLXI_173_dev7_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6922: Net <XLXI_173_dev8_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6923: Net <XLXI_173_dev9_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6924: Net <XLXI_173_dev10_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6925: Net <XLXI_173_dev11_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6926: Net <XLXI_173_dev12_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6927: Net <XLXI_173_dev13_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6928: Net <XLXI_173_dev14_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6929: Net <XLXI_173_dev15_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6930: Net <XLXI_174_dev2_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6931: Net <XLXI_174_dev3_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6932: Net <XLXI_174_dev4_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6933: Net <XLXI_174_dev5_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6934: Net <XLXI_174_dev6_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6935: Net <XLXI_174_dev7_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6936: Net <XLXI_174_dev8_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6937: Net <XLXI_174_dev9_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6938: Net <XLXI_174_dev10_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6939: Net <XLXI_174_dev11_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6940: Net <XLXI_174_dev12_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6941: Net <XLXI_174_dev13_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6942: Net <XLXI_174_dev14_openSignal[7]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6943: Net <XLXI_174_dev15_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6934: Net <XLXI_7_in_manr_d_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6935: Net <XLXI_7_in_manr_r_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6936: Net <XLXI_135_r_openSignal> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6937: Net <XLXI_173_a_openSignal[3]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6938: Net <XLXI_173_dev1_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6939: Net <XLXI_173_dev2_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6940: Net <XLXI_173_dev3_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6941: Net <XLXI_173_dev4_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6942: Net <XLXI_173_dev5_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6943: Net <XLXI_173_dev6_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6944: Net <XLXI_173_dev7_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6945: Net <XLXI_173_dev8_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6946: Net <XLXI_173_dev9_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6947: Net <XLXI_173_dev10_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6948: Net <XLXI_173_dev11_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6949: Net <XLXI_173_dev12_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6950: Net <XLXI_173_dev13_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6951: Net <XLXI_173_dev14_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6952: Net <XLXI_173_dev15_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6953: Net <XLXI_174_dev2_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6954: Net <XLXI_174_dev3_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6955: Net <XLXI_174_dev4_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6956: Net <XLXI_174_dev5_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6957: Net <XLXI_174_dev6_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6958: Net <XLXI_174_dev7_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6959: Net <XLXI_174_dev8_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6960: Net <XLXI_174_dev9_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6961: Net <XLXI_174_dev10_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6962: Net <XLXI_174_dev11_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6963: Net <XLXI_174_dev12_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6964: Net <XLXI_174_dev13_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6965: Net <XLXI_174_dev14_openSignal[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 6966: Net <XLXI_174_dev15_openSignal[7]> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -726,62 +726,62 @@ WARNING:HDLCompiler:634 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_
 
 Synthesizing Unit <cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_34_65" for instance <XLXI_34>.
-    Set property "HU_SET = XLXI_53_66" for instance <XLXI_53>.
-    Set property "HU_SET = XLXI_136_67" for instance <XLXI_136>.
-    Set property "HU_SET = XLXI_186_68" for instance <XLXI_186>.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7202: Output port <manr_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7202: Output port <out_alu_x> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7202: Output port <out_iar_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7202: Output port <out_ir_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7202: Output port <out_ram_a_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7202: Output port <out_temp_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7202: Output port <manr_r> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7202: Output port <manr_w> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7202: Output port <out_alu_C_in> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7202: Output port <out_alu_C_out> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7202: Output port <out_alu_eq> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7202: Output port <out_alu_gt> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7202: Output port <out_alu_z> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7202: Output port <out_C_in_enabled> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7202: Output port <out_C_out_flipflop_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7202: Output port <out_flags_clr> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7202: Output port <out_op_alt_nop> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7202: Output port <out_op_alu> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7202: Output port <out_op_alu_add> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7202: Output port <out_op_alu_and> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7202: Output port <out_op_alu_lshift> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7202: Output port <out_op_alu_nop> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7202: Output port <out_op_alu_not> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7202: Output port <out_op_alu_or> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7202: Output port <out_op_alu_rshift> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7202: Output port <out_op_alu_xor> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7202: Output port <out_op_flg_clf> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7202: Output port <out_op_jmp_ifjmp> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7202: Output port <out_op_jmp_jmp> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7202: Output port <out_op_jmp_jmpr> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7202: Output port <out_op_ls_ld> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7202: Output port <out_op_ls_ldc> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7202: Output port <out_op_ls_st> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7202: Output port <out_sysbus_released> of the instance <XLXI_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7316: Output port <G> of the instance <XLXI_9> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7464: Output port <a_o> of the instance <XLXI_106> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7495: Output port <D1> of the instance <XLXI_136> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7495: Output port <D2> of the instance <XLXI_136> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7495: Output port <D3> of the instance <XLXI_136> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7495: Output port <D4> of the instance <XLXI_136> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7495: Output port <D5> of the instance <XLXI_136> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7495: Output port <D6> of the instance <XLXI_136> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7495: Output port <D7> of the instance <XLXI_136> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7495: Output port <D8> of the instance <XLXI_136> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7495: Output port <D9> of the instance <XLXI_136> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7495: Output port <D10> of the instance <XLXI_136> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7495: Output port <D11> of the instance <XLXI_136> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7495: Output port <D12> of the instance <XLXI_136> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7495: Output port <D13> of the instance <XLXI_136> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7495: Output port <D14> of the instance <XLXI_136> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7495: Output port <D15> of the instance <XLXI_136> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7518: Output port <O> of the instance <XLXI_137> is unconnected or connected to loadless signal.
+    Set property "HU_SET = XLXI_34_143" for instance <XLXI_34>.
+    Set property "HU_SET = XLXI_53_144" for instance <XLXI_53>.
+    Set property "HU_SET = XLXI_136_145" for instance <XLXI_136>.
+    Set property "HU_SET = XLXI_186_146" for instance <XLXI_186>.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7225: Output port <manr_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7225: Output port <out_alu_x> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7225: Output port <out_iar_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7225: Output port <out_ir_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7225: Output port <out_ram_a_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7225: Output port <out_temp_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7225: Output port <manr_r> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7225: Output port <manr_w> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7225: Output port <out_alu_C_in> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7225: Output port <out_alu_C_out> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7225: Output port <out_alu_eq> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7225: Output port <out_alu_gt> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7225: Output port <out_alu_z> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7225: Output port <out_C_in_enabled> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7225: Output port <out_C_out_flipflop_o> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7225: Output port <out_flags_clr> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7225: Output port <out_op_alt_nop> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7225: Output port <out_op_alu> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7225: Output port <out_op_alu_add> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7225: Output port <out_op_alu_and> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7225: Output port <out_op_alu_lshift> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7225: Output port <out_op_alu_nop> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7225: Output port <out_op_alu_not> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7225: Output port <out_op_alu_or> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7225: Output port <out_op_alu_rshift> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7225: Output port <out_op_alu_xor> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7225: Output port <out_op_flg_clf> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7225: Output port <out_op_jmp_ifjmp> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7225: Output port <out_op_jmp_jmp> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7225: Output port <out_op_jmp_jmpr> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7225: Output port <out_op_ls_ld> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7225: Output port <out_op_ls_ldc> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7225: Output port <out_op_ls_st> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7225: Output port <out_sysbus_released> of the instance <XLXI_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7339: Output port <G> of the instance <XLXI_9> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7487: Output port <a_o> of the instance <XLXI_106> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7518: Output port <D1> of the instance <XLXI_136> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7518: Output port <D2> of the instance <XLXI_136> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7518: Output port <D3> of the instance <XLXI_136> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7518: Output port <D4> of the instance <XLXI_136> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7518: Output port <D5> of the instance <XLXI_136> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7518: Output port <D6> of the instance <XLXI_136> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7518: Output port <D7> of the instance <XLXI_136> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7518: Output port <D8> of the instance <XLXI_136> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7518: Output port <D9> of the instance <XLXI_136> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7518: Output port <D10> of the instance <XLXI_136> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7518: Output port <D11> of the instance <XLXI_136> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7518: Output port <D12> of the instance <XLXI_136> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7518: Output port <D13> of the instance <XLXI_136> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7518: Output port <D14> of the instance <XLXI_136> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7518: Output port <D15> of the instance <XLXI_136> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 7541: Output port <O> of the instance <XLXI_137> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <XLXI_7_in_manr_d_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <XLXI_173_a_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <XLXI_173_dev1_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
@@ -821,20 +821,20 @@ Unit <cpu_facade> synthesized.
 
 Synthesizing Unit <cpu_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_87_60" for instance <XLXI_87>.
-    Set property "HU_SET = XLXI_104_61" for instance <XLXI_104>.
-    Set property "HU_SET = XLXI_571_62" for instance <XLXI_571>.
-    Set property "HU_SET = XLXI_914_63" for instance <XLXI_914>.
-    Set property "HU_SET = XLXI_917_64" for instance <XLXI_917>.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5986: Output port <ground> of the instance <cpu_ctl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 6163: Output port <g> of the instance <XLXI_130> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 6187: Output port <G> of the instance <XLXI_136> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 6659: Output port <clk_out> of the instance <XLXI_912> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 6674: Output port <Q> of the instance <XLXI_914> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 6674: Output port <TC> of the instance <XLXI_914> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 6685: Output port <O> of the instance <XLXI_916> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 6689: Output port <CEO> of the instance <XLXI_917> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 6689: Output port <TC> of the instance <XLXI_917> is unconnected or connected to loadless signal.
+    Set property "HU_SET = XLXI_87_138" for instance <XLXI_87>.
+    Set property "HU_SET = XLXI_104_139" for instance <XLXI_104>.
+    Set property "HU_SET = XLXI_571_140" for instance <XLXI_571>.
+    Set property "HU_SET = XLXI_914_141" for instance <XLXI_914>.
+    Set property "HU_SET = XLXI_917_142" for instance <XLXI_917>.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 6009: Output port <alu_or> of the instance <cpu_ctl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 6186: Output port <g> of the instance <XLXI_130> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 6210: Output port <G> of the instance <XLXI_136> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 6682: Output port <clk_out> of the instance <XLXI_912> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 6697: Output port <Q> of the instance <XLXI_914> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 6697: Output port <TC> of the instance <XLXI_914> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 6708: Output port <O> of the instance <XLXI_916> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 6712: Output port <CEO> of the instance <XLXI_917> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 6712: Output port <TC> of the instance <XLXI_917> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <ram_a_o> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	no macro.
@@ -842,15 +842,15 @@ Unit <cpu_MUSER_cpu_facade> synthesized.
 
 Synthesizing Unit <alu_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_1_57" for instance <XLXI_1>.
-    Set property "HU_SET = XLXI_2_58" for instance <XLXI_2>.
-    Set property "HU_SET = XLXI_102_59" for instance <XLXI_102>.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5215: Output port <D3> of the instance <XLXI_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5215: Output port <D4> of the instance <XLXI_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5215: Output port <D5> of the instance <XLXI_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5215: Output port <D6> of the instance <XLXI_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5215: Output port <D7> of the instance <XLXI_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5229: Output port <OFL> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+    Set property "HU_SET = XLXI_1_135" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_2_136" for instance <XLXI_2>.
+    Set property "HU_SET = XLXI_102_137" for instance <XLXI_102>.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5238: Output port <D3> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5238: Output port <D4> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5238: Output port <D5> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5238: Output port <D6> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5238: Output port <D7> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 5252: Output port <OFL> of the instance <XLXI_2> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <alu_MUSER_cpu_facade> synthesized.
@@ -889,7 +889,7 @@ Unit <cmp_1bit_MUSER_cpu_facade> synthesized.
 
 Synthesizing Unit <lzero_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_1_56" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_1_134" for instance <XLXI_1>.
     Summary:
 	no macro.
 Unit <lzero_MUSER_cpu_facade> synthesized.
@@ -917,14 +917,14 @@ Unit <alu_output_muxer_MUSER_cpu_facade> synthesized.
 
 Synthesizing Unit <bus_muxer_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_1_3" for instance <XLXI_1>.
-    Set property "HU_SET = XLXI_2_2" for instance <XLXI_2>.
-    Set property "HU_SET = XLXI_12_4" for instance <XLXI_12>.
-    Set property "HU_SET = XLXI_13_5" for instance <XLXI_13>.
-    Set property "HU_SET = XLXI_14_6" for instance <XLXI_14>.
-    Set property "HU_SET = XLXI_15_7" for instance <XLXI_15>.
-    Set property "HU_SET = XLXI_16_8" for instance <XLXI_16>.
-    Set property "HU_SET = XLXI_17_9" for instance <XLXI_17>.
+    Set property "HU_SET = XLXI_1_81" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_2_80" for instance <XLXI_2>.
+    Set property "HU_SET = XLXI_12_82" for instance <XLXI_12>.
+    Set property "HU_SET = XLXI_13_83" for instance <XLXI_13>.
+    Set property "HU_SET = XLXI_14_84" for instance <XLXI_14>.
+    Set property "HU_SET = XLXI_15_85" for instance <XLXI_15>.
+    Set property "HU_SET = XLXI_16_86" for instance <XLXI_16>.
+    Set property "HU_SET = XLXI_17_87" for instance <XLXI_17>.
 WARNING:Xst:647 - Input <dev10> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <dev11> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <dev12> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -992,12 +992,12 @@ Unit <M16_1E_HXILINX_cpu_facade> synthesized.
 
 Synthesizing Unit <clk_generator_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_4_41" for instance <XLXI_4>.
-    Set property "HU_SET = XLXI_14_42" for instance <XLXI_14>.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 4169: Output port <O> of the instance <XLXI_9> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 4174: Output port <O> of the instance <XLXI_10> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 4186: Output port <CEO> of the instance <XLXI_14> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 4186: Output port <TC> of the instance <XLXI_14> is unconnected or connected to loadless signal.
+    Set property "HU_SET = XLXI_4_119" for instance <XLXI_4>.
+    Set property "HU_SET = XLXI_14_120" for instance <XLXI_14>.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 4192: Output port <O> of the instance <XLXI_9> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 4197: Output port <O> of the instance <XLXI_10> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 4209: Output port <CEO> of the instance <XLXI_14> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 4209: Output port <TC> of the instance <XLXI_14> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <clk_generator_MUSER_cpu_facade> synthesized.
@@ -1022,14 +1022,14 @@ Unit <CB2CE_HXILINX_cpu_facade> synthesized.
 
 Synthesizing Unit <cpu_control_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_39_17" for instance <XLXI_39>.
-    Set property "HU_SET = XLXI_47_15" for instance <XLXI_47>.
-    Set property "HU_SET = XLXI_48_16" for instance <XLXI_48>.
-    Set property "HU_SET = XLXI_252_18" for instance <XLXI_252>.
-    Set property "HU_SET = XLXI_577_19" for instance <XLXI_577>.
-    Set property "HU_SET = XLXI_608_20" for instance <XLXI_608>.
-    Set property "HU_SET = XLXI_616_21" for instance <XLXI_616>.
-    Set property "HU_SET = XLXI_637_22" for instance <XLXI_637>.
+    Set property "HU_SET = XLXI_39_95" for instance <XLXI_39>.
+    Set property "HU_SET = XLXI_47_93" for instance <XLXI_47>.
+    Set property "HU_SET = XLXI_48_94" for instance <XLXI_48>.
+    Set property "HU_SET = XLXI_252_96" for instance <XLXI_252>.
+    Set property "HU_SET = XLXI_577_97" for instance <XLXI_577>.
+    Set property "HU_SET = XLXI_608_98" for instance <XLXI_608>.
+    Set property "HU_SET = XLXI_616_99" for instance <XLXI_616>.
+    Set property "HU_SET = XLXI_637_100" for instance <XLXI_637>.
 WARNING:Xst:653 - Signal <XLXI_579_dev2_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <XLXI_579_dev3_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <XLXI_579_dev4_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
@@ -1050,8 +1050,8 @@ Unit <cpu_control_MUSER_cpu_facade> synthesized.
 
 Synthesizing Unit <stepper_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_24_13" for instance <XLXI_24>.
-    Set property "HU_SET = XLXI_25_14" for instance <XLXI_25>.
+    Set property "HU_SET = XLXI_24_91" for instance <XLXI_24>.
+    Set property "HU_SET = XLXI_25_92" for instance <XLXI_25>.
 INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 1614: Output port <CEO> of the instance <XLXI_24> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 1614: Output port <Q3> of the instance <XLXI_24> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 1614: Output port <TC> of the instance <XLXI_24> is unconnected or connected to loadless signal.
@@ -1083,14 +1083,14 @@ Unit <OR6_HXILINX_cpu_facade> synthesized.
 
 Synthesizing Unit <pass_through_or_one_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_1_48" for instance <XLXI_1>.
-    Set property "HU_SET = XLXI_3_49" for instance <XLXI_3>.
-    Set property "HU_SET = XLXI_4_50" for instance <XLXI_4>.
-    Set property "HU_SET = XLXI_5_51" for instance <XLXI_5>.
-    Set property "HU_SET = XLXI_6_52" for instance <XLXI_6>.
-    Set property "HU_SET = XLXI_7_53" for instance <XLXI_7>.
-    Set property "HU_SET = XLXI_8_54" for instance <XLXI_8>.
-    Set property "HU_SET = XLXI_13_55" for instance <XLXI_13>.
+    Set property "HU_SET = XLXI_1_126" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_3_127" for instance <XLXI_3>.
+    Set property "HU_SET = XLXI_4_128" for instance <XLXI_4>.
+    Set property "HU_SET = XLXI_5_129" for instance <XLXI_5>.
+    Set property "HU_SET = XLXI_6_130" for instance <XLXI_6>.
+    Set property "HU_SET = XLXI_7_131" for instance <XLXI_7>.
+    Set property "HU_SET = XLXI_8_132" for instance <XLXI_8>.
+    Set property "HU_SET = XLXI_13_133" for instance <XLXI_13>.
     Summary:
 	no macro.
 Unit <pass_through_or_one_MUSER_cpu_facade> synthesized.
@@ -1127,7 +1127,7 @@ Unit <LD8_HXILINX_cpu_facade> synthesized.
 
 Synthesizing Unit <reg_8bit_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_5_10" for instance <XLXI_5>.
+    Set property "HU_SET = XLXI_5_88" for instance <XLXI_5>.
 WARNING:Xst:647 - Input <r> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
 	no macro.
@@ -1161,11 +1161,11 @@ Unit <cpu_output_muxer_MUSER_cpu_facade> synthesized.
 
 Synthesizing Unit <encoder16_4_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_25_43" for instance <XLXI_25>.
-    Set property "HU_SET = XLXI_48_44" for instance <XLXI_48>.
-    Set property "HU_SET = XLXI_49_45" for instance <XLXI_49>.
-    Set property "HU_SET = XLXI_50_46" for instance <XLXI_50>.
-    Set property "HU_SET = XLXI_59_47" for instance <XLXI_59>.
+    Set property "HU_SET = XLXI_25_121" for instance <XLXI_25>.
+    Set property "HU_SET = XLXI_48_122" for instance <XLXI_48>.
+    Set property "HU_SET = XLXI_49_123" for instance <XLXI_49>.
+    Set property "HU_SET = XLXI_50_124" for instance <XLXI_50>.
+    Set property "HU_SET = XLXI_59_125" for instance <XLXI_59>.
     Summary:
 	no macro.
 Unit <encoder16_4_MUSER_cpu_facade> synthesized.
@@ -1190,23 +1190,23 @@ Unit <buf_8bit_MUSER_cpu_facade> synthesized.
 
 Synthesizing Unit <cpu_freq_divider_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_4_40" for instance <XLXI_4>.
+    Set property "HU_SET = XLXI_4_118" for instance <XLXI_4>.
     Summary:
 	no macro.
 Unit <cpu_freq_divider_MUSER_cpu_facade> synthesized.
 
 Synthesizing Unit <freq_divider_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_1_33" for instance <XLXI_1>.
-    Set property "HU_SET = XLXI_2_32" for instance <XLXI_2>.
-    Set property "HU_SET = XLXI_123_34" for instance <XLXI_123>.
-    Set property "HU_SET = XLXI_124_35" for instance <XLXI_124>.
-    Set property "HU_SET = XLXI_128_38" for instance <XLXI_128>.
-    Set property "HU_SET = XLXI_149_36" for instance <XLXI_149>.
-    Set property "HU_SET = XLXI_150_37" for instance <XLXI_150>.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 3515: Output port <TC> of the instance <XLXI_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 3523: Output port <CEO> of the instance <XLXI_2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 3523: Output port <TC> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+    Set property "HU_SET = XLXI_1_111" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_2_110" for instance <XLXI_2>.
+    Set property "HU_SET = XLXI_123_112" for instance <XLXI_123>.
+    Set property "HU_SET = XLXI_124_113" for instance <XLXI_124>.
+    Set property "HU_SET = XLXI_128_116" for instance <XLXI_128>.
+    Set property "HU_SET = XLXI_149_114" for instance <XLXI_149>.
+    Set property "HU_SET = XLXI_150_115" for instance <XLXI_150>.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 3538: Output port <TC> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 3546: Output port <CEO> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 3546: Output port <TC> of the instance <XLXI_2> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <freq_divider_MUSER_cpu_facade> synthesized.
@@ -1235,26 +1235,26 @@ Unit <M8_1E_HXILINX_cpu_facade> synthesized.
 
 Synthesizing Unit <encoder8_3_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_4_39" for instance <XLXI_4>.
+    Set property "HU_SET = XLXI_4_117" for instance <XLXI_4>.
     Summary:
 	no macro.
 Unit <encoder8_3_MUSER_cpu_facade> synthesized.
 
 Synthesizing Unit <cpu_freq_divider_1Hz_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_15_27" for instance <XLXI_15>.
-    Set property "HU_SET = XLXI_18_28" for instance <XLXI_18>.
+    Set property "HU_SET = XLXI_15_105" for instance <XLXI_15>.
+    Set property "HU_SET = XLXI_18_106" for instance <XLXI_18>.
     Summary:
 	no macro.
 Unit <cpu_freq_divider_1Hz_MUSER_cpu_facade> synthesized.
 
 Synthesizing Unit <cpu_freq_divider_base_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_1_23" for instance <XLXI_1>.
-    Set property "HU_SET = XLXI_2_24" for instance <XLXI_2>.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 2792: Output port <TC> of the instance <XLXI_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 2800: Output port <CEO> of the instance <XLXI_2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 2800: Output port <TC> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+    Set property "HU_SET = XLXI_1_101" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_2_102" for instance <XLXI_2>.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 2815: Output port <TC> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 2823: Output port <CEO> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 2823: Output port <TC> of the instance <XLXI_2> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <cpu_freq_divider_base_MUSER_cpu_facade> synthesized.
@@ -1267,9 +1267,9 @@ Unit <AND7_HXILINX_cpu_facade> synthesized.
 
 Synthesizing Unit <cpu_freq_divider_1Stg_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_18_29" for instance <XLXI_18>.
-    Set property "HU_SET = XLXI_21_30" for instance <XLXI_21>.
-    Set property "HU_SET = XLXI_22_31" for instance <XLXI_22>.
+    Set property "HU_SET = XLXI_18_107" for instance <XLXI_18>.
+    Set property "HU_SET = XLXI_21_108" for instance <XLXI_21>.
+    Set property "HU_SET = XLXI_22_109" for instance <XLXI_22>.
     Summary:
 	no macro.
 Unit <cpu_freq_divider_1Stg_MUSER_cpu_facade> synthesized.
@@ -1282,24 +1282,24 @@ Unit <AND6_HXILINX_cpu_facade> synthesized.
 
 Synthesizing Unit <cpu_freq_divider_1Inst_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_15_26" for instance <XLXI_15>.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 2984: Output port <out_clk_low> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+    Set property "HU_SET = XLXI_15_104" for instance <XLXI_15>.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 3007: Output port <out_clk_low> of the instance <XLXI_1> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <cpu_freq_divider_1Inst_MUSER_cpu_facade> synthesized.
 
 Synthesizing Unit <cpu_freq_divider_1KHz_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_15_25" for instance <XLXI_15>.
-INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 2882: Output port <out_clk_high> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+    Set property "HU_SET = XLXI_15_103" for instance <XLXI_15>.
+INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 2905: Output port <out_clk_high> of the instance <XLXI_1> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <cpu_freq_divider_1KHz_MUSER_cpu_facade> synthesized.
 
 Synthesizing Unit <debouncer_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
-    Set property "HU_SET = XLXI_1_11" for instance <XLXI_1>.
-    Set property "HU_SET = XLXI_2_12" for instance <XLXI_2>.
+    Set property "HU_SET = XLXI_1_89" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_2_90" for instance <XLXI_2>.
 INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 1509: Output port <Q> of the instance <XLXI_1> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 1509: Output port <TC> of the instance <XLXI_1> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" line 1517: Output port <CEO> of the instance <XLXI_2> is unconnected or connected to loadless signal.
@@ -1356,7 +1356,7 @@ Unit <usart_tramnsmitter> synthesized.
 Synthesizing Unit <ram_256bytes_MUSER_cpu_facade>.
     Related source file is "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf".
     Set property "INIT = 0000000000000000000000000000000000000000000000000000000000000142" for instance <XLXI_1>.
-    Set property "HU_SET = XLXI_15_1" for instance <XLXI_15>.
+    Set property "HU_SET = XLXI_15_79" for instance <XLXI_15>.
     Set property "INIT = 0000000000000000000000000000000000000000000000000000000000004800" for instance <XLXI_17>.
     Set property "INIT = 0000000000000000000000000000000000000000000000000000000000004A01" for instance <XLXI_18>.
     Set property "INIT = 0000000000000000000000000000000000000000000000000000000000000290" for instance <XLXI_19>.
@@ -1661,11 +1661,11 @@ Top Level Output File Name         : cpu_facade.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1461
+# BELS                             : 1464
 #      AND2                        : 128
 #      AND2B1                      : 2
 #      AND3                        : 1
-#      AND3B1                      : 5
+#      AND3B1                      : 8
 #      AND4                        : 4
 #      AND5                        : 1
 #      BUF                         : 245
@@ -2735,12 +2735,12 @@ XLXI_7/clk_internal            |         |         |   20.601|         |
 
 
 Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 8.70 secs
+Total CPU time to Xst completion: 8.89 secs
  
 --> 
 
 
-Total memory usage is 619164 kilobytes
+Total memory usage is 619212 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  323 (   0 filtered)

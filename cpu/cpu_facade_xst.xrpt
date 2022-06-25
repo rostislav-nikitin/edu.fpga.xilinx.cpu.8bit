@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Sat Jun 25 02:32:10 2022">
+  <application stringID="Xst" timeStamp="Sat Jun 25 02:57:54 2022">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -160,7 +160,7 @@
         <item stringID="XST_TOP_LEVEL_OUTPUT_FILE_NAME" value="cpu_facade.ngc"/>
       </section>
       <section stringID="XST_PRIMITIVE_AND_BLACK_BOX_USAGE">
-        <item dataType="int" stringID="XST_BELS" value="1461">
+        <item dataType="int" stringID="XST_BELS" value="1464">
           <item dataType="int" stringID="XST_AND2" value="128"/>
           <item dataType="int" stringID="XST_AND2B1" value="2"/>
           <item dataType="int" stringID="XST_AND3" value="1"/>

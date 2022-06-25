@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="NgdBuild" timeStamp="Sat Jun 25 02:44:03 2022">
+  <application stringID="NgdBuild" timeStamp="Sat Jun 25 03:03:16 2022">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -33,11 +33,11 @@
         <column stringID="speed"/>
         <row stringID="row" value="0">
           <item stringID="arch" value="Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz"/>
-          <item stringID="speed" value="3400.000 MHz"/>
+          <item stringID="speed" value="1200.000 MHz"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="arch" value="Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz"/>
-          <item stringID="speed" value="3400.000 MHz"/>
+          <item stringID="speed" value="2599.825 MHz"/>
         </row>
       </table>
     </section>
@@ -61,7 +61,7 @@
         <item dataType="int" stringID="NGDBUILD_NUM_AND2" value="128"/>
         <item dataType="int" stringID="NGDBUILD_NUM_AND2B1" value="2"/>
         <item dataType="int" stringID="NGDBUILD_NUM_AND3" value="1"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_AND3B1" value="5"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_AND3B1" value="8"/>
         <item dataType="int" stringID="NGDBUILD_NUM_AND4" value="4"/>
         <item dataType="int" stringID="NGDBUILD_NUM_AND5" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_BUF" value="245"/>
@@ -102,7 +102,7 @@
         <item dataType="int" stringID="NGDBUILD_NUM_AND2" value="128"/>
         <item dataType="int" stringID="NGDBUILD_NUM_AND2B1" value="2"/>
         <item dataType="int" stringID="NGDBUILD_NUM_AND3" value="1"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_AND3B1" value="5"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_AND3B1" value="8"/>
         <item dataType="int" stringID="NGDBUILD_NUM_AND4" value="4"/>
         <item dataType="int" stringID="NGDBUILD_NUM_AND5" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_BUF" value="245"/>

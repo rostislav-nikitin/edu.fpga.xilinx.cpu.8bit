@@ -428,7 +428,7 @@
             <line x2="0" y1="-96" y2="-96" x1="64" />
         </blockdef>
         <blockdef name="cpu_control">
-            <timestamp>2022-6-24T23:5:47</timestamp>
+            <timestamp>2022-6-24T23:56:37</timestamp>
             <rect width="1600" x="64" y="-1664" height="1600" />
             <line x2="1504" y1="-1664" y2="-1728" x1="1504" />
             <line x2="1568" y1="-1664" y2="-1728" x1="1568" />
@@ -440,10 +440,10 @@
             <line x2="1728" y1="-1632" y2="-1632" x1="1664" />
             <line x2="1728" y1="-1568" y2="-1568" x1="1664" />
             <line x2="1728" y1="-1440" y2="-1440" x1="1664" />
-            <line x2="1728" y1="-352" y2="-352" x1="1664" />
+            <line x2="1728" y1="-416" y2="-416" x1="1664" />
             <line x2="1728" y1="-608" y2="-608" x1="1664" />
             <line x2="1728" y1="-736" y2="-736" x1="1664" />
-            <line x2="1728" y1="-288" y2="-288" x1="1664" />
+            <line x2="1728" y1="-352" y2="-352" x1="1664" />
             <line x2="1248" y1="-1664" y2="-1728" x1="1248" />
             <line x2="0" y1="-1632" y2="-1632" x1="64" />
             <line x2="96" y1="-64" y2="0" x1="96" />
@@ -453,10 +453,10 @@
             <line x2="736" y1="-1664" y2="-1728" x1="736" />
             <line x2="1728" y1="-800" y2="-800" x1="1664" />
             <line x2="992" y1="-1664" y2="-1728" x1="992" />
-            <line x2="1728" y1="-416" y2="-416" x1="1664" />
+            <line x2="1728" y1="-224" y2="-224" x1="1664" />
             <line x2="1120" y1="-1664" y2="-1728" x1="1120" />
             <line x2="1184" y1="-1664" y2="-1728" x1="1184" />
-            <line x2="1728" y1="-224" y2="-224" x1="1664" />
+            <line x2="1728" y1="-288" y2="-288" x1="1664" />
             <line x2="224" y1="-64" y2="0" x1="224" />
             <rect width="24" x="212" y="-64" height="64" />
             <line x2="1312" y1="-1664" y2="-1728" x1="1312" />
@@ -1473,10 +1473,10 @@
             <blockpin signalname="cc_alu_op(0)" name="alu_op0" />
             <blockpin signalname="cc_alu_op(1)" name="alu_op1" />
             <blockpin signalname="cc_alu_op(2)" name="alu_op2" />
-            <blockpin signalname="cc_dbg_alu_or" name="alu_or" />
+            <blockpin signalname="ground" name="alu_or" />
             <blockpin signalname="cc_dbg_alu_rshift" name="alu_rshift" />
             <blockpin signalname="cc_dbg_alu_sum" name="alu_sum" />
-            <blockpin signalname="cc_dbg_alu_xor" name="alu_xor" />
+            <blockpin signalname="cc_dbg_alu_or" name="alu_xor" />
             <blockpin signalname="cc_bus1" name="bus1" />
             <blockpin signalname="clkc" name="clk" />
             <blockpin signalname="clkr" name="clkr" />
@@ -1485,10 +1485,10 @@
             <blockpin signalname="cc_flags_clr" name="flags_clr" />
             <blockpin signalname="cc_flags_w" name="flags_w" />
             <blockpin signalname="cc_dbg_flg_clf" name="flg_clf" />
-            <blockpin signalname="ground" name="ground" />
+            <blockpin signalname="cc_dbg_alu_nop" name="ground" />
             <blockpin signalname="cc_iar_r" name="iar_r" />
             <blockpin signalname="cc_iar_w" name="iar_w" />
-            <blockpin signalname="cc_dbg_alu_nop" name="in_from_port" />
+            <blockpin signalname="cc_dbg_alu_xor" name="in_from_port" />
             <blockpin signalname="ir_o(7:0)" name="ir(7:0)" />
             <blockpin signalname="cc_ir_w" name="ir_w" />
             <blockpin signalname="cc_dbg_jmp_ifjmp" name="jmp_ifjmp" />

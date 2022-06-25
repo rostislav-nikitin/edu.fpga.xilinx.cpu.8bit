@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.3
 --  \   \         Application : sch2hdl
 --  /   /         Filename : cpu_control.vhf
--- /___/   /\     Timestamp : 06/25/2022 02:06:38
+-- /___/   /\     Timestamp : 06/25/2022 02:57:48
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -881,7 +881,6 @@ architecture BEHAVIORAL of cpu_control is
    signal XLXN_156                        : std_logic;
    signal XLXN_157                        : std_logic;
    signal XLXN_158                        : std_logic;
-   signal XLXN_173                        : std_logic;
    signal XLXN_435                        : std_logic;
    signal XLXN_462                        : std_logic;
    signal XLXN_811                        : std_logic;
@@ -902,6 +901,12 @@ architecture BEHAVIORAL of cpu_control is
    signal XLXN_1089                       : std_logic;
    signal XLXN_1158                       : std_logic;
    signal XLXN_1238                       : std_logic;
+   signal XLXN_1241                       : std_logic;
+   signal XLXN_1242                       : std_logic;
+   signal XLXN_1243                       : std_logic;
+   signal XLXN_1247                       : std_logic;
+   signal XLXN_1248                       : std_logic;
+   signal XLXN_1249                       : std_logic;
    signal jmp_ifjmp_DUMMY                 : std_logic;
    signal alu_sum_DUMMY                   : std_logic;
    signal alu_rshift_DUMMY                : std_logic;
@@ -1099,6 +1104,9 @@ architecture BEHAVIORAL of cpu_control is
 begin
    XLXN_1076(7 downto 0) <= x"01";
    XLXN_1077(7 downto 0) <= x"F0";
+   XLXN_1247 <= '1';
+   XLXN_1248 <= '0';
+   XLXN_1249 <= '1';
    alu <= alu_DUMMY;
    alu_and <= alu_and_DUMMY;
    alu_lshift <= alu_lshift_DUMMY;
@@ -1192,17 +1200,17 @@ begin
    
    XLXI_21 : OR2
       port map (I0=>XLXN_30,
-                I1=>XLXN_173,
+                I1=>XLXN_1243,
                 O=>alu_op0);
    
    XLXI_22 : OR2
       port map (I0=>XLXN_31,
-                I1=>XLXN_173,
+                I1=>XLXN_1242,
                 O=>alu_op1);
    
    XLXI_23 : OR2
       port map (I0=>XLXN_32,
-                I1=>XLXN_173,
+                I1=>XLXN_1241,
                 O=>alu_op2);
    
    XLXI_39 : D3_8E_HXILINX_cpu_control
@@ -1311,9 +1319,6 @@ begin
       port map (I0=>clkr,
                 I1=>XLXN_814,
                 O=>r3_r);
-   
-   XLXI_143 : GND
-      port map (G=>XLXN_173);
    
    XLXI_228 : AND2
       port map (I0=>s4_DUMMY,
@@ -1832,6 +1837,24 @@ begin
                 I2=>ir(5),
                 I3=>ir(4),
                 O=>alu_port_in);
+   
+   XLXI_642 : AND3B1
+      port map (I0=>s1_DUMMY,
+                I1=>XLXN_1247,
+                I2=>out_to_in_from_port_s4,
+                O=>XLXN_1243);
+   
+   XLXI_643 : AND3B1
+      port map (I0=>s1_DUMMY,
+                I1=>XLXN_1248,
+                I2=>out_to_in_from_port_s4,
+                O=>XLXN_1242);
+   
+   XLXI_644 : AND3B1
+      port map (I0=>s1_DUMMY,
+                I1=>XLXN_1249,
+                I2=>out_to_in_from_port_s4,
+                O=>XLXN_1241);
    
 end BEHAVIORAL;
 

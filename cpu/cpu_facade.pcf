@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.40xd on Sat Jun 25 02:44:15 2022
+// Written by: Map P.40xd on Sat Jun 25 03:03:28 2022
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -14,7 +14,7 @@ COMP "monitor<3>" LOCATE = SITE "M6" LEVEL 1;
 COMP "monitor<4>" LOCATE = SITE "D6" LEVEL 1;
 COMP "monitor<5>" LOCATE = SITE "E7" LEVEL 1;
 COMP "monitor<6>" LOCATE = SITE "D5" LEVEL 1;
-COMP "monitor<7>" LOCATE = SITE "C6" LEVEL 1;
+COMP "monitor<7>" LOCATE = SITE "F9" LEVEL 1;
 COMP "out_can_write" LOCATE = SITE "L14" LEVEL 1;
 COMP "in_read_reg_en" LOCATE = SITE "H16" LEVEL 1;
 COMP "in_r0_r" LOCATE = SITE "C16" LEVEL 1;

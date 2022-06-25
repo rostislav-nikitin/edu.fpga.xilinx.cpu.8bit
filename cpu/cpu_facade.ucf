@@ -163,7 +163,7 @@ NET "monitor[3]" LOC = M6;
 NET "monitor[4]" LOC = D6;
 NET "monitor[5]" LOC = E7;
 NET "monitor[6]" LOC = D5;
-NET "monitor[7]" LOC = C6;
+NET "monitor[7]" LOC = F9;
 
 #NET "monitor[0]" LOC = P4;
 #NET "monitor[1]" LOC = N5;
