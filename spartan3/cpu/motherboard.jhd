@@ -1,0 +1,3 @@
+MODULE motherboard
+	SUBMODULE cpu
+		INSTANCE XLXI_1

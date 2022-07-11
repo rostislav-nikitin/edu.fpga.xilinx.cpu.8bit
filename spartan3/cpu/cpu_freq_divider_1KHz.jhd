@@ -1,0 +1,3 @@
+MODULE cpu_freq_divider_1KHz
+	SUBMODULE cpu_freq_divider_base
+		INSTANCE XLXI_1

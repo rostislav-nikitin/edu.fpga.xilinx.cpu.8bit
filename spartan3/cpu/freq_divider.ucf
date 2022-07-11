@@ -1,0 +1,24 @@
+##################################################################################
+## External Clock
+##################################################################################
+NET "clk_in" TNM_NET = "sys_clk_pin";
+NET "clk_in" LOC = T8;
+TIMESPEC TS_sys_clk_pin = PERIOD "sys_clk_pin" 50 MHz HIGH 50 %;
+
+##################################################################################
+## Custom reset (external pull-up)
+##################################################################################
+#NET "rst_in" LOC = C3 | IOSTANDARD = "LVCMOS33"; ## RESET pushbutton
+## RESET pushbutton
+NET "rst" LOC = C3;
+
+##################################################################################
+## LED Pins 
+##################################################################################
+#NET "monitor[0]" LOC = P4;
+NET "clk_out" LOC = K16 | IOSTANDARD = "LVCMOS33" ;  ##  PIN3
+#NET "clk_one_hz" LOC = J16;
+#NET "monitor[0]" LOC = P4;
+#NET "monitor[1]" LOC = N5;
+#NET "monitor[2]" LOC = P5;
+#NET "monitor[3]" LOC = M6;

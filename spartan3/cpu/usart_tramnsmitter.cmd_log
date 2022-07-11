@@ -1,0 +1,98 @@
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa6slx9-ftg256-3 usart_tramnsmitter.ngc usart_tramnsmitter.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o usart_tramnsmitter_map.ncd usart_tramnsmitter.ngd usart_tramnsmitter.pcf 
+par -w -intstyle ise -ol high -mt off usart_tramnsmitter_map.ncd usart_tramnsmitter.ncd usart_tramnsmitter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml usart_tramnsmitter.twx usart_tramnsmitter.ncd -o usart_tramnsmitter.twr usart_tramnsmitter.pcf 
+bitgen -intstyle ise -f usart_tramnsmitter.ut usart_tramnsmitter.ncd 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 -w usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 -w usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 -w usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 -w usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 -w usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 -w usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 -w usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 -w usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 
+vhdtdtfi -prj led_control -o /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.vhi -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work usart_tramnsmitter.vhd 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 -w usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 -w usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 -w usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 -w usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 -w usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 -w usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 -w usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 -w usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 -w usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 -w usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 -w usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 -w usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 -w usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 -w usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 -w usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 -w usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 -w usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 -w usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 -w usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 -w usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 -w usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 -w usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 -w usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 -w usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 -w usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 -w usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 -w usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 -w usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 -w usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 
+vhdtdtfi -lib work usart_tramnsmitter.vhd -prj led_control -o usart_tramnsmitter.spl -module usart_tramnsmitter -template /opt/Xilinx/14.3/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 -w usart_tramnsmitter.spl /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/usart_tramnsmitter.sym 

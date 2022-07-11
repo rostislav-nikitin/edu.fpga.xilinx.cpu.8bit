@@ -1,0 +1,405 @@
+Release 14.3 - xst P.40xd (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Reading design: cpu_facade_cpu_facade_sch_tb.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "cpu_facade_cpu_facade_sch_tb.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "cpu_facade_cpu_facade_sch_tb"
+Output Format                      : NGC
+Target Device                      : xa6slx9-3-ftg256
+
+---- Source Options
+Top Module Name                    : cpu_facade_cpu_facade_sch_tb
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cmp_1bit.vhf" into library work
+Parsing entity <cmp_1bit>.
+Parsing architecture <BEHAVIORAL> of entity <cmp_1bit>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/bus_muxer.vhf" into library work
+Parsing entity <M16_1E_HXILINX_bus_muxer>.
+Parsing architecture <M16_1E_HXILINX_bus_muxer_V> of entity <m16_1e_hxilinx_bus_muxer>.
+Parsing entity <bus_muxer>.
+Parsing architecture <BEHAVIORAL> of entity <bus_muxer>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/stepper.vhf" into library work
+Parsing entity <CB4CE_HXILINX_stepper>.
+Parsing architecture <Behavioral> of entity <cb4ce_hxilinx_stepper>.
+Parsing entity <D3_8E_HXILINX_stepper>.
+Parsing architecture <D3_8E_HXILINX_stepper_V> of entity <d3_8e_hxilinx_stepper>.
+Parsing entity <stepper>.
+Parsing architecture <BEHAVIORAL> of entity <stepper>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/lzero.vhf" into library work
+Parsing entity <NOR8_HXILINX_lzero>.
+Parsing architecture <NOR8_HXILINX_lzero_V> of entity <nor8_hxilinx_lzero>.
+Parsing entity <lzero>.
+Parsing architecture <BEHAVIORAL> of entity <lzero>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/freq_divider.vhf" into library work
+Parsing entity <CB16CE_HXILINX_freq_divider>.
+Parsing architecture <Behavioral> of entity <cb16ce_hxilinx_freq_divider>.
+Parsing entity <FJKC_HXILINX_freq_divider>.
+Parsing architecture <Behavioral> of entity <fjkc_hxilinx_freq_divider>.
+Parsing entity <AND8_HXILINX_freq_divider>.
+Parsing architecture <AND8_HXILINX_freq_divider_V> of entity <and8_hxilinx_freq_divider>.
+Parsing entity <freq_divider>.
+Parsing architecture <BEHAVIORAL> of entity <freq_divider>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/encoder8_3.vhf" into library work
+Parsing entity <AND8_HXILINX_encoder8_3>.
+Parsing architecture <AND8_HXILINX_encoder8_3_V> of entity <and8_hxilinx_encoder8_3>.
+Parsing entity <encoder8_3>.
+Parsing architecture <BEHAVIORAL> of entity <encoder8_3>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cmp_8bit.vhf" into library work
+Parsing entity <cmp_1bit_MUSER_cmp_8bit>.
+Parsing architecture <BEHAVIORAL> of entity <cmp_1bit_muser_cmp_8bit>.
+Parsing entity <cmp_8bit>.
+Parsing architecture <BEHAVIORAL> of entity <cmp_8bit>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/alu_output_muxer.vhf" into library work
+Parsing entity <M16_1E_HXILINX_alu_output_muxer>.
+Parsing architecture <M16_1E_HXILINX_alu_output_muxer_V> of entity <m16_1e_hxilinx_alu_output_muxer>.
+Parsing entity <bus_muxer_MUSER_alu_output_muxer>.
+Parsing architecture <BEHAVIORAL> of entity <bus_muxer_muser_alu_output_muxer>.
+Parsing entity <alu_output_muxer>.
+Parsing architecture <BEHAVIORAL> of entity <alu_output_muxer>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/reg_8bit.vhf" into library work
+Parsing entity <LD8CE_HXILINX_reg_8bit>.
+Parsing architecture <Behavioral> of entity <ld8ce_hxilinx_reg_8bit>.
+Parsing entity <reg_8bit>.
+Parsing architecture <BEHAVIORAL> of entity <reg_8bit>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/ram_256bytes.vhf" into library work
+Parsing entity <LD8_HXILINX_ram_256bytes>.
+Parsing architecture <Behavioral> of entity <ld8_hxilinx_ram_256bytes>.
+Parsing entity <ram_256bytes>.
+Parsing architecture <BEHAVIORAL> of entity <ram_256bytes>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/pass_through_or_one.vhf" into library work
+Parsing entity <M2_1_HXILINX_pass_through_or_one>.
+Parsing architecture <M2_1_HXILINX_pass_through_or_one_V> of entity <m2_1_hxilinx_pass_through_or_one>.
+Parsing entity <pass_through_or_one>.
+Parsing architecture <BEHAVIORAL> of entity <pass_through_or_one>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_output_muxer.vhf" into library work
+Parsing entity <M16_1E_HXILINX_cpu_output_muxer>.
+Parsing architecture <M16_1E_HXILINX_cpu_output_muxer_V> of entity <m16_1e_hxilinx_cpu_output_muxer>.
+Parsing entity <AND8_HXILINX_cpu_output_muxer>.
+Parsing architecture <AND8_HXILINX_cpu_output_muxer_V> of entity <and8_hxilinx_cpu_output_muxer>.
+Parsing entity <bus_muxer_MUSER_cpu_output_muxer>.
+Parsing architecture <BEHAVIORAL> of entity <bus_muxer_muser_cpu_output_muxer>.
+Parsing entity <encoder8_3_MUSER_cpu_output_muxer>.
+Parsing architecture <BEHAVIORAL> of entity <encoder8_3_muser_cpu_output_muxer>.
+Parsing entity <cpu_output_muxer>.
+Parsing architecture <BEHAVIORAL> of entity <cpu_output_muxer>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_freq_divider.vhf" into library work
+Parsing entity <M8_1E_HXILINX_cpu_freq_divider>.
+Parsing architecture <M8_1E_HXILINX_cpu_freq_divider_V> of entity <m8_1e_hxilinx_cpu_freq_divider>.
+Parsing entity <CB16CE_HXILINX_cpu_freq_divider>.
+Parsing architecture <Behavioral> of entity <cb16ce_hxilinx_cpu_freq_divider>.
+Parsing entity <FJKC_HXILINX_cpu_freq_divider>.
+Parsing architecture <Behavioral> of entity <fjkc_hxilinx_cpu_freq_divider>.
+Parsing entity <AND8_HXILINX_cpu_freq_divider>.
+Parsing architecture <AND8_HXILINX_cpu_freq_divider_V> of entity <and8_hxilinx_cpu_freq_divider>.
+Parsing entity <freq_divider_MUSER_cpu_freq_divider>.
+Parsing architecture <BEHAVIORAL> of entity <freq_divider_muser_cpu_freq_divider>.
+Parsing entity <encoder8_3_MUSER_cpu_freq_divider>.
+Parsing architecture <BEHAVIORAL> of entity <encoder8_3_muser_cpu_freq_divider>.
+Parsing entity <cpu_freq_divider>.
+Parsing architecture <BEHAVIORAL> of entity <cpu_freq_divider>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_control.vhf" into library work
+Parsing entity <CB4CE_HXILINX_cpu_control>.
+Parsing architecture <Behavioral> of entity <cb4ce_hxilinx_cpu_control>.
+Parsing entity <OR6_HXILINX_cpu_control>.
+Parsing architecture <OR6_HXILINX_cpu_control_V> of entity <or6_hxilinx_cpu_control>.
+Parsing entity <D3_8E_HXILINX_cpu_control>.
+Parsing architecture <D3_8E_HXILINX_cpu_control_V> of entity <d3_8e_hxilinx_cpu_control>.
+Parsing entity <D2_4E_HXILINX_cpu_control>.
+Parsing architecture <D2_4E_HXILINX_cpu_control_V> of entity <d2_4e_hxilinx_cpu_control>.
+Parsing entity <stepper_MUSER_cpu_control>.
+Parsing architecture <BEHAVIORAL> of entity <stepper_muser_cpu_control>.
+Parsing entity <cpu_control>.
+Parsing architecture <BEHAVIORAL> of entity <cpu_control>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/clk_generator.vhf" into library work
+Parsing entity <FJKC_HXILINX_clk_generator>.
+Parsing architecture <Behavioral> of entity <fjkc_hxilinx_clk_generator>.
+Parsing entity <clk_generator>.
+Parsing architecture <BEHAVIORAL> of entity <clk_generator>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/buf_8bit.vhf" into library work
+Parsing entity <buf_8bit>.
+Parsing architecture <BEHAVIORAL> of entity <buf_8bit>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/alu.vhf" into library work
+Parsing entity <ADD8_HXILINX_alu>.
+Parsing architecture <ADD8_HXILINX_alu_V> of entity <add8_hxilinx_alu>.
+Parsing entity <NOR8_HXILINX_alu>.
+Parsing architecture <NOR8_HXILINX_alu_V> of entity <nor8_hxilinx_alu>.
+Parsing entity <INV8_HXILINX_alu>.
+Parsing architecture <INV8_HXILINX_alu_V> of entity <inv8_hxilinx_alu>.
+Parsing entity <D3_8E_HXILINX_alu>.
+Parsing architecture <D3_8E_HXILINX_alu_V> of entity <d3_8e_hxilinx_alu>.
+Parsing entity <M16_1E_HXILINX_alu>.
+Parsing architecture <M16_1E_HXILINX_alu_V> of entity <m16_1e_hxilinx_alu>.
+Parsing entity <bus_muxer_MUSER_alu>.
+Parsing architecture <BEHAVIORAL> of entity <bus_muxer_muser_alu>.
+Parsing entity <alu_output_muxer_MUSER_alu>.
+Parsing architecture <BEHAVIORAL> of entity <alu_output_muxer_muser_alu>.
+Parsing entity <lzero_MUSER_alu>.
+Parsing architecture <BEHAVIORAL> of entity <lzero_muser_alu>.
+Parsing entity <cmp_1bit_MUSER_alu>.
+Parsing architecture <BEHAVIORAL> of entity <cmp_1bit_muser_alu>.
+Parsing entity <cmp_8bit_MUSER_alu>.
+Parsing architecture <BEHAVIORAL> of entity <cmp_8bit_muser_alu>.
+Parsing entity <alu>.
+Parsing architecture <BEHAVIORAL> of entity <alu>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu.vhf" into library work
+Parsing entity <LD8CE_HXILINX_cpu>.
+Parsing architecture <Behavioral> of entity <ld8ce_hxilinx_cpu>.
+Parsing entity <CB4CE_HXILINX_cpu>.
+Parsing architecture <Behavioral> of entity <cb4ce_hxilinx_cpu>.
+Parsing entity <LD8_HXILINX_cpu>.
+Parsing architecture <Behavioral> of entity <ld8_hxilinx_cpu>.
+Parsing entity <ADD8_HXILINX_cpu>.
+Parsing architecture <ADD8_HXILINX_cpu_V> of entity <add8_hxilinx_cpu>.
+Parsing entity <M8_1E_HXILINX_cpu>.
+Parsing architecture <M8_1E_HXILINX_cpu_V> of entity <m8_1e_hxilinx_cpu>.
+Parsing entity <NOR8_HXILINX_cpu>.
+Parsing architecture <NOR8_HXILINX_cpu_V> of entity <nor8_hxilinx_cpu>.
+Parsing entity <INV8_HXILINX_cpu>.
+Parsing architecture <INV8_HXILINX_cpu_V> of entity <inv8_hxilinx_cpu>.
+Parsing entity <OR6_HXILINX_cpu>.
+Parsing architecture <OR6_HXILINX_cpu_V> of entity <or6_hxilinx_cpu>.
+Parsing entity <LD4CE_HXILINX_cpu>.
+Parsing architecture <Behavioral> of entity <ld4ce_hxilinx_cpu>.
+Parsing entity <CB16CE_HXILINX_cpu>.
+Parsing architecture <Behavioral> of entity <cb16ce_hxilinx_cpu>.
+Parsing entity <D3_8E_HXILINX_cpu>.
+Parsing architecture <D3_8E_HXILINX_cpu_V> of entity <d3_8e_hxilinx_cpu>.
+Parsing entity <M16_1E_HXILINX_cpu>.
+Parsing architecture <M16_1E_HXILINX_cpu_V> of entity <m16_1e_hxilinx_cpu>.
+Parsing entity <FJKC_HXILINX_cpu>.
+Parsing architecture <Behavioral> of entity <fjkc_hxilinx_cpu>.
+Parsing entity <D2_4E_HXILINX_cpu>.
+Parsing architecture <D2_4E_HXILINX_cpu_V> of entity <d2_4e_hxilinx_cpu>.
+Parsing entity <M2_1_HXILINX_cpu>.
+Parsing architecture <M2_1_HXILINX_cpu_V> of entity <m2_1_hxilinx_cpu>.
+Parsing entity <AND8_HXILINX_cpu>.
+Parsing architecture <AND8_HXILINX_cpu_V> of entity <and8_hxilinx_cpu>.
+Parsing entity <freq_divider_MUSER_cpu>.
+Parsing architecture <BEHAVIORAL> of entity <freq_divider_muser_cpu>.
+Parsing entity <encoder8_3_MUSER_cpu>.
+Parsing architecture <BEHAVIORAL> of entity <encoder8_3_muser_cpu>.
+Parsing entity <cpu_freq_divider_MUSER_cpu>.
+Parsing architecture <BEHAVIORAL> of entity <cpu_freq_divider_muser_cpu>.
+Parsing entity <buf_8bit_MUSER_cpu>.
+Parsing architecture <BEHAVIORAL> of entity <buf_8bit_muser_cpu>.
+Parsing entity <clk_generator_MUSER_cpu>.
+Parsing architecture <BEHAVIORAL> of entity <clk_generator_muser_cpu>.
+Parsing entity <bus_muxer_MUSER_cpu>.
+Parsing architecture <BEHAVIORAL> of entity <bus_muxer_muser_cpu>.
+Parsing entity <cpu_output_muxer_MUSER_cpu>.
+Parsing architecture <BEHAVIORAL> of entity <cpu_output_muxer_muser_cpu>.
+Parsing entity <reg_8bit_MUSER_cpu>.
+Parsing architecture <BEHAVIORAL> of entity <reg_8bit_muser_cpu>.
+Parsing entity <pass_through_or_one_MUSER_cpu>.
+Parsing architecture <BEHAVIORAL> of entity <pass_through_or_one_muser_cpu>.
+Parsing entity <ram_256bytes_MUSER_cpu>.
+Parsing architecture <BEHAVIORAL> of entity <ram_256bytes_muser_cpu>.
+Parsing entity <stepper_MUSER_cpu>.
+Parsing architecture <BEHAVIORAL> of entity <stepper_muser_cpu>.
+Parsing entity <cpu_control_MUSER_cpu>.
+Parsing architecture <BEHAVIORAL> of entity <cpu_control_muser_cpu>.
+Parsing entity <alu_output_muxer_MUSER_cpu>.
+Parsing architecture <BEHAVIORAL> of entity <alu_output_muxer_muser_cpu>.
+Parsing entity <lzero_MUSER_cpu>.
+Parsing architecture <BEHAVIORAL> of entity <lzero_muser_cpu>.
+Parsing entity <cmp_1bit_MUSER_cpu>.
+Parsing architecture <BEHAVIORAL> of entity <cmp_1bit_muser_cpu>.
+Parsing entity <cmp_8bit_MUSER_cpu>.
+Parsing architecture <BEHAVIORAL> of entity <cmp_8bit_muser_cpu>.
+Parsing entity <alu_MUSER_cpu>.
+Parsing architecture <BEHAVIORAL> of entity <alu_muser_cpu>.
+Parsing entity <cpu>.
+Parsing architecture <BEHAVIORAL> of entity <cpu>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" into library work
+Parsing entity <LD8CE_HXILINX_cpu_facade>.
+Parsing architecture <Behavioral> of entity <ld8ce_hxilinx_cpu_facade>.
+Parsing entity <CB4CE_HXILINX_cpu_facade>.
+Parsing architecture <Behavioral> of entity <cb4ce_hxilinx_cpu_facade>.
+Parsing entity <LD8_HXILINX_cpu_facade>.
+Parsing architecture <Behavioral> of entity <ld8_hxilinx_cpu_facade>.
+Parsing entity <ADD8_HXILINX_cpu_facade>.
+Parsing architecture <ADD8_HXILINX_cpu_facade_V> of entity <add8_hxilinx_cpu_facade>.
+Parsing entity <M8_1E_HXILINX_cpu_facade>.
+Parsing architecture <M8_1E_HXILINX_cpu_facade_V> of entity <m8_1e_hxilinx_cpu_facade>.
+Parsing entity <NOR8_HXILINX_cpu_facade>.
+Parsing architecture <NOR8_HXILINX_cpu_facade_V> of entity <nor8_hxilinx_cpu_facade>.
+Parsing entity <INV8_HXILINX_cpu_facade>.
+Parsing architecture <INV8_HXILINX_cpu_facade_V> of entity <inv8_hxilinx_cpu_facade>.
+Parsing entity <OR6_HXILINX_cpu_facade>.
+Parsing architecture <OR6_HXILINX_cpu_facade_V> of entity <or6_hxilinx_cpu_facade>.
+Parsing entity <LD4CE_HXILINX_cpu_facade>.
+Parsing architecture <Behavioral> of entity <ld4ce_hxilinx_cpu_facade>.
+Parsing entity <CB16CE_HXILINX_cpu_facade>.
+Parsing architecture <Behavioral> of entity <cb16ce_hxilinx_cpu_facade>.
+Parsing entity <D3_8E_HXILINX_cpu_facade>.
+Parsing architecture <D3_8E_HXILINX_cpu_facade_V> of entity <d3_8e_hxilinx_cpu_facade>.
+Parsing entity <M16_1E_HXILINX_cpu_facade>.
+Parsing architecture <M16_1E_HXILINX_cpu_facade_V> of entity <m16_1e_hxilinx_cpu_facade>.
+Parsing entity <FJKC_HXILINX_cpu_facade>.
+Parsing architecture <Behavioral> of entity <fjkc_hxilinx_cpu_facade>.
+Parsing entity <D2_4E_HXILINX_cpu_facade>.
+Parsing architecture <D2_4E_HXILINX_cpu_facade_V> of entity <d2_4e_hxilinx_cpu_facade>.
+Parsing entity <M2_1_HXILINX_cpu_facade>.
+Parsing architecture <M2_1_HXILINX_cpu_facade_V> of entity <m2_1_hxilinx_cpu_facade>.
+Parsing entity <AND8_HXILINX_cpu_facade>.
+Parsing architecture <AND8_HXILINX_cpu_facade_V> of entity <and8_hxilinx_cpu_facade>.
+Parsing entity <freq_divider_MUSER_cpu_facade>.
+Parsing architecture <BEHAVIORAL> of entity <freq_divider_muser_cpu_facade>.
+Parsing entity <encoder8_3_MUSER_cpu_facade>.
+Parsing architecture <BEHAVIORAL> of entity <encoder8_3_muser_cpu_facade>.
+Parsing entity <cpu_freq_divider_MUSER_cpu_facade>.
+Parsing architecture <BEHAVIORAL> of entity <cpu_freq_divider_muser_cpu_facade>.
+Parsing entity <buf_8bit_MUSER_cpu_facade>.
+Parsing architecture <BEHAVIORAL> of entity <buf_8bit_muser_cpu_facade>.
+Parsing entity <clk_generator_MUSER_cpu_facade>.
+Parsing architecture <BEHAVIORAL> of entity <clk_generator_muser_cpu_facade>.
+Parsing entity <bus_muxer_MUSER_cpu_facade>.
+Parsing architecture <BEHAVIORAL> of entity <bus_muxer_muser_cpu_facade>.
+Parsing entity <cpu_output_muxer_MUSER_cpu_facade>.
+Parsing architecture <BEHAVIORAL> of entity <cpu_output_muxer_muser_cpu_facade>.
+Parsing entity <reg_8bit_MUSER_cpu_facade>.
+Parsing architecture <BEHAVIORAL> of entity <reg_8bit_muser_cpu_facade>.
+Parsing entity <pass_through_or_one_MUSER_cpu_facade>.
+Parsing architecture <BEHAVIORAL> of entity <pass_through_or_one_muser_cpu_facade>.
+Parsing entity <ram_256bytes_MUSER_cpu_facade>.
+Parsing architecture <BEHAVIORAL> of entity <ram_256bytes_muser_cpu_facade>.
+Parsing entity <stepper_MUSER_cpu_facade>.
+Parsing architecture <BEHAVIORAL> of entity <stepper_muser_cpu_facade>.
+Parsing entity <cpu_control_MUSER_cpu_facade>.
+Parsing architecture <BEHAVIORAL> of entity <cpu_control_muser_cpu_facade>.
+Parsing entity <alu_output_muxer_MUSER_cpu_facade>.
+Parsing architecture <BEHAVIORAL> of entity <alu_output_muxer_muser_cpu_facade>.
+Parsing entity <lzero_MUSER_cpu_facade>.
+Parsing architecture <BEHAVIORAL> of entity <lzero_muser_cpu_facade>.
+Parsing entity <cmp_1bit_MUSER_cpu_facade>.
+Parsing architecture <BEHAVIORAL> of entity <cmp_1bit_muser_cpu_facade>.
+Parsing entity <cmp_8bit_MUSER_cpu_facade>.
+Parsing architecture <BEHAVIORAL> of entity <cmp_8bit_muser_cpu_facade>.
+Parsing entity <alu_MUSER_cpu_facade>.
+Parsing architecture <BEHAVIORAL> of entity <alu_muser_cpu_facade>.
+Parsing entity <cpu_MUSER_cpu_facade>.
+Parsing architecture <BEHAVIORAL> of entity <cpu_muser_cpu_facade>.
+Parsing entity <cpu_facade>.
+Parsing architecture <BEHAVIORAL> of entity <cpu_facade>.
+Parsing VHDL file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/tb_cpu_facade.vhd" into library work
+Parsing entity <cpu_facade_cpu_facade_sch_tb>.
+Parsing architecture <behavioral> of entity <cpu_facade_cpu_facade_sch_tb>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <cpu_facade_cpu_facade_sch_tb> (architecture <behavioral>) from library <work>.
+ERROR:HDLCompiler:1156 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/tb_cpu_facade.vhd" Line 28: Formal port <out_clk_int> does not exist in entity <cpu_facade>.  Please compare the definition of block <cpu_facade> to its component declaration and its instantion to detect the mismatch.
+INFO:HDLCompiler:1408 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/cpu_facade.vhf" Line 5276. cpu_facade is declared here
+
+Elaborating entity <cpu_facade> (architecture <BEHAVIORAL>) from library <work>.
+Execution of entity cpu_facade failed
+Netlist cpu_facade_cpu_facade_sch_tb(behavioral) remains a blackbox, due to errors in its contents
+--> 
+
+
+Total memory usage is 536988 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

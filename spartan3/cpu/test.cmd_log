@@ -1,0 +1,4 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym test /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/test.sch /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/test.sym 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl test_drc.vhf -w /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/test.sch 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl test.vhf -w /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/test.sch 
+sch2vhdl -intstyle ise -family spartan3e -tionly -w /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/test.sch test.vhi 

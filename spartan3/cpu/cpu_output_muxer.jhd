@@ -1,0 +1,5 @@
+MODULE cpu_output_muxer
+	SUBMODULE bus_muxer
+		INSTANCE XLXI_1
+	SUBMODULE encoder16_4
+		INSTANCE XLXI_22

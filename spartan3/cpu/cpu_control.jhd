@@ -1,0 +1,5 @@
+MODULE cpu_control
+	SUBMODULE stepper
+		INSTANCE stp
+	SUBMODULE bus_muxer
+		INSTANCE XLXI_579

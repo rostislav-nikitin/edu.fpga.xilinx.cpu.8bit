@@ -864,6 +864,8 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="cpu_facade.pcf"/>
       <outfile xil_pn:name="cpu_facade_map.map"/>
@@ -877,44 +879,40 @@
     <transform xil_pn:end_ts="1656116461" xil_pn:in_ck="-2424110419682572840" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="7044443079611515937" xil_pn:start_ts="1656116444">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
-      <outfile xil_pn:name="cpu_facade.ncd"/>
-      <outfile xil_pn:name="cpu_facade.pad"/>
-      <outfile xil_pn:name="cpu_facade.par"/>
-      <outfile xil_pn:name="cpu_facade.ptwx"/>
-      <outfile xil_pn:name="cpu_facade.unroutes"/>
-      <outfile xil_pn:name="cpu_facade.xpi"/>
-      <outfile xil_pn:name="cpu_facade_pad.csv"/>
-      <outfile xil_pn:name="cpu_facade_pad.txt"/>
-      <outfile xil_pn:name="cpu_facade_par.xrpt"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1656116472" xil_pn:in_ck="-2421312937369665118" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="-3266310027444107032" xil_pn:start_ts="1656116461">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
-      <outfile xil_pn:name="cpu_facade.bgn"/>
-      <outfile xil_pn:name="cpu_facade.bit"/>
-      <outfile xil_pn:name="cpu_facade.drc"/>
-      <outfile xil_pn:name="cpu_facade.ut"/>
-      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
-      <outfile xil_pn:name="webtalk.log"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1656104090" xil_pn:in_ck="-6661030765480936953" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="3013362611380892931" xil_pn:start_ts="1656104088">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
-      <outfile xil_pn:name="cpu_facade.mcs"/>
-      <outfile xil_pn:name="cpu_facade.prm"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1656116461" xil_pn:in_ck="2339206860183615353" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1656116455">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
-      <outfile xil_pn:name="cpu_facade.twr"/>
-      <outfile xil_pn:name="cpu_facade.twx"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
   </transforms>
 

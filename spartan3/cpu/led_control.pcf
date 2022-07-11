@@ -1,0 +1,13 @@
+//! **************************************************************************
+// Written by: Map P.40xd on Tue Mar 08 23:21:07 2022
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "led" LOCATE = SITE "P4" LEVEL 1;
+COMP "clk" LOCATE = SITE "T8" LEVEL 1;
+COMP "sw<0>" LOCATE = SITE "C3" LEVEL 1;
+COMP "sw<1>" LOCATE = SITE "D3" LEVEL 1;
+COMP "sw<2>" LOCATE = SITE "E4" LEVEL 1;
+COMP "sw<3>" LOCATE = SITE "E3" LEVEL 1;
+SCHEMATIC END;
+

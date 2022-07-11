@@ -1,0 +1,10 @@
+select figure at 8579 705 8 -branches -sn=1
+select figure at 8013 1284 8 -branches -sn=1
+select figure at 10380 408 8 -branches -sn=1
+select figure at 10380 408 8 -branches -all -sn=1
+delete selection -sn=1
+add autowire 10176 400 10320 400 8 -sn=1
+add instance buf 10544 368 R180 -sn=1
+add autowire 10544 400 10640 400 8 -sn=1
+select figure at 10592 404 8 -branches -sn=1
+name branch at 10544 400 8 port_selected -sn=1

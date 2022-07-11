@@ -1,0 +1,4 @@
+vhdl isim_temp "encoder8_3.vhf"
+vhdl isim_temp "bus_muxer.vhf"
+vhdl isim_temp "cpu_output_muxer.vhf"
+vhdl isim_temp "tb_cpu_output_muxer.vhd"

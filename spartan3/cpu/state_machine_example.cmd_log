@@ -1,0 +1,65 @@
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa6slx9-ftg256-3 state_machine_example.ngc state_machine_example.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -detail -ir off -pr off -lc off -power off -o state_machine_example_map.ncd state_machine_example.ngd state_machine_example.pcf 
+par -w -intstyle ise -ol high -mt off state_machine_example_map.ncd state_machine_example.ncd state_machine_example.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml state_machine_example.twx state_machine_example.ncd -o state_machine_example.twr state_machine_example.pcf 
+bitgen -intstyle ise -f state_machine_example.ut state_machine_example.ncd 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa6slx9-ftg256-3 state_machine_example.ngc state_machine_example.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -detail -ir off -pr off -lc off -power off -o state_machine_example_map.ncd state_machine_example.ngd state_machine_example.pcf 
+par -w -intstyle ise -ol high -mt off state_machine_example_map.ncd state_machine_example.ncd state_machine_example.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml state_machine_example.twx state_machine_example.ncd -o state_machine_example.twr state_machine_example.pcf 
+bitgen -intstyle ise -f state_machine_example.ut state_machine_example.ncd 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa6slx9-ftg256-3 state_machine_example.ngc state_machine_example.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -detail -ir off -pr off -lc off -power off -o state_machine_example_map.ncd state_machine_example.ngd state_machine_example.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -u -i -p xa6slx9-ftg256-3 state_machine_example.ngc state_machine_example.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -detail -ir off -pr off -lc off -power off -o state_machine_example_map.ncd state_machine_example.ngd state_machine_example.pcf 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -u -i -p xa6slx9-ftg256-3 state_machine_example.ngc state_machine_example.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -detail -ir off -pr off -lc off -power off -o state_machine_example_map.ncd state_machine_example.ngd state_machine_example.pcf 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -u -i -p xa6slx9-ftg256-3 state_machine_example.ngc state_machine_example.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -detail -ir off -pr off -lc off -power off -o state_machine_example_map.ncd state_machine_example.ngd state_machine_example.pcf 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa6slx9-ftg256-3 state_machine_example.ngc state_machine_example.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -detail -ir off -pr off -lc off -power off -o state_machine_example_map.ncd state_machine_example.ngd state_machine_example.pcf 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.syr" 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc state_machine_examples.ucf -p xa6slx9-ftg256-3 state_machine_example.ngc state_machine_example.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -detail -ir off -pr off -lc off -power off -o state_machine_example_map.ncd state_machine_example.ngd state_machine_example.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc state_machine_examples.ucf -p xa6slx9-ftg256-3 state_machine_example.ngc state_machine_example.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -detail -ir off -pr off -lc off -power off -o state_machine_example_map.ncd state_machine_example.ngd state_machine_example.pcf 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc state_machine_examples.ucf -p xa6slx9-ftg256-3 state_machine_example.ngc state_machine_example.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -detail -ir off -pr off -lc off -power off -o state_machine_example_map.ncd state_machine_example.ngd state_machine_example.pcf 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc state_machine_examples.ucf -p xa6slx9-ftg256-3 state_machine_example.ngc state_machine_example.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -detail -ir off -pr off -lc off -power off -o state_machine_example_map.ncd state_machine_example.ngd state_machine_example.pcf 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc state_machine_examples.ucf -p xa6slx9-ftg256-3 state_machine_example.ngc state_machine_example.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -detail -ir off -pr off -lc off -power off -o state_machine_example_map.ncd state_machine_example.ngd state_machine_example.pcf 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc state_machine_examples.ucf -p xa6slx9-ftg256-3 state_machine_example.ngc state_machine_example.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -detail -ir off -pr off -lc off -power off -o state_machine_example_map.ncd state_machine_example.ngd state_machine_example.pcf 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc state_machine_examples.ucf -p xa6slx9-ftg256-3 state_machine_example.ngc state_machine_example.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -detail -ir off -pr off -lc off -power off -o state_machine_example_map.ncd state_machine_example.ngd state_machine_example.pcf 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc state_machine_examples.ucf -p xa6slx9-ftg256-3 state_machine_example.ngc state_machine_example.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -detail -ir off -pr off -lc off -power off -o state_machine_example_map.ncd state_machine_example.ngd state_machine_example.pcf 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc state_machine_examples.ucf -p xa6slx9-ftg256-3 state_machine_example.ngc state_machine_example.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -detail -ir off -pr off -lc off -power off -o state_machine_example_map.ncd state_machine_example.ngd state_machine_example.pcf 
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol std -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -detail -ir off -pr off -lc off -power off -o state_machine_example_map.ncd state_machine_example.ngd state_machine_example.pcf 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc state_machine_examples.ucf -p xa6slx9-ftg256-3 state_machine_example.ngc state_machine_example.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -detail -ir off -pr off -lc off -power off -o state_machine_example_map.ncd state_machine_example.ngd state_machine_example.pcf 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc state_machine_examples.ucf -p xa6slx9-ftg256-3 state_machine_example.ngc state_machine_example.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -detail -ir off -pr off -lc off -power off -o state_machine_example_map.ncd state_machine_example.ngd state_machine_example.pcf 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/state_machine_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc state_machine_examples.ucf -p xa6slx9-ftg256-3 state_machine_example.ngc state_machine_example.ngd  
+map -intstyle ise -p xa6slx9-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -detail -ir off -pr off -lc off -power off -o state_machine_example_map.ncd state_machine_example.ngd state_machine_example.pcf 

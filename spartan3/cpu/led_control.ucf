@@ -1,0 +1,7 @@
+NET "clk" LOC = T8;
+NET "led" LOC = P4;
+
+NET "sw[0]" LOC = C3 | IOSTANDARD = "LVCMOS33" ;
+NET "sw[1]" LOC = D3 | IOSTANDARD = "LVCMOS33" ;
+NET "sw[2]" LOC = E4 | IOSTANDARD = "LVCMOS33" ;
+NET "sw[3]" LOC = E3 | IOSTANDARD = "LVCMOS33" ;

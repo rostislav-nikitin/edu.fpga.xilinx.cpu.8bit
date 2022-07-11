@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# PlanAhead v14.3 (64-bit)
+# Build 209282 by xbuild on Thu Oct 18 20:46:04 MDT 2012
+# Start of session at: Sat Apr  9 01:50:32 2022
+# Process ID: 357237
+# Log file: /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/planAhead_run_1/planAhead.log
+# Journal file: /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property iostandard LVCMOS25 [get_ports [list {monitor[7]} {monitor[6]} {monitor[5]} {monitor[4]} {monitor[3]} {monitor[2]} {monitor[1]} {monitor[0]}]]
+startgroup
+set_property package_pin P4 [get_ports {monitor[0]}]
+endgroup
+startgroup
+set_property package_pin N5 [get_ports {monitor[1]}]
+endgroup
+startgroup
+set_property package_pin P6 [get_ports {monitor[2]}]
+endgroup
+startgroup
+set_property package_pin M6 [get_ports {monitor[3]}]
+endgroup
+set_property package_pin "" [get_ports [list  {monitor[4]}]]
+startgroup
+set_property package_pin P5 [get_ports {monitor[2]}]
+endgroup
+save_design
+set_property package_pin "" [get_ports [list  {sysbus[0]}]]
+save_design

@@ -1,0 +1,3 @@
+sch2sym -intstyle ise -family aspartan6 -refsym stepper /home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/stepper.sch /home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/stepper.sym 
+sch2hdl -intstyle ise -family aspartan6 -flat -suppress -vhdl stepper_drc.vhf -w /home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/stepper.sch 
+sch2hdl -intstyle ise -family aspartan6 -flat -suppress -vhdl stepper_drc.vhf -w /home/s0lid/Sources/edu.fpga.xilinx/led_control/led_control/stepper.sch 

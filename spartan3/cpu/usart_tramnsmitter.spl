@@ -1,0 +1,8 @@
+[Inputs]
+clk
+rst
+=data[7:0]=
+[Outputs]
+tx
+done
+[BiDir]

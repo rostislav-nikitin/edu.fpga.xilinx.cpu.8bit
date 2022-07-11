@@ -1,0 +1,207 @@
+##################################################################################
+## External Clock
+##################################################################################
+NET "in_clk" TNM_NET = "sys_clk_pin";
+NET "in_clk" LOC = T8;
+TIMESPEC TS_sys_clk_pin = PERIOD "sys_clk_pin" 50 MHz HIGH 50 %;
+
+#NET "in_clk" LOC = D3 | CLOCK_DEDICATED_ROUTE = FALSE;
+#NET "in_clk" CLOCK_DEDICATED_ROUTE = FALSE;
+#NET "in_clk_manual" CLOCK_DEDICATED_ROUTE = FALSE;
+#NET "in_clk_manual" LOC = D3;
+
+
+##################################################################################
+## Custom reset (external pull-up)
+##################################################################################
+#NET "rst_in" LOC = C3 | IOSTANDARD = "LVCMOS33"; ## RESET pushbutton
+## RESET pushbutton
+#NET "in_rst" LOC = C3;
+NET "in_rst" LOC = D16 ;
+NET "in_is_clk_low" LOC = D3;
+NET "in_clk_manual" LOC = E4;
+
+##################################################################################
+## LED Pins 
+##################################################################################
+#NET "monitor[0]" LOC = P4;
+NET "out_clk_internal" LOC = A4;  ##  PIN3
+NET "out_clkc" LOC = A5;  ##  PIN3
+NET "out_clkr" LOC = A6;  ##  PIN3
+NET "out_clkw" LOC = B8;  ##  PIN3
+NET "out_s1" LOC = C8;  ##  PIN3
+NET "out_s2" LOC = A10;  ##  PIN3
+NET "out_s3" LOC = A11;  ##  PIN3
+NET "out_s4" LOC = B12;  ##  PIN3
+NET "out_s5" LOC = A14;  ##  PIN3
+NET "out_s6" LOC = B15;  ##  PIN3
+
+NET "out_flags_C_out" LOC = N4;  ##  PIN3
+NET "out_flags_gt" LOC = N6;  ##  PIN3
+NET "out_flags_eq" LOC = M4;  ##  PIN3
+NET "out_flags_z" LOC = R2;  ##  PIN3
+
+NET "out_sysbus[7]" LOC = R5;  ##  PIN3
+NET "out_sysbus[6]" LOC = T6;  ##  PIN3
+NET "out_sysbus[5]" LOC = T7;  ##  PIN3
+NET "out_sysbus[4]" LOC = T9;  ##  PIN3
+NET "out_sysbus[3]" LOC = T12;  ##  PIN3
+NET "out_sysbus[2]" LOC = T13;  ##  PIN3
+NET "out_sysbus[1]" LOC = R14;  ##  PIN3
+NET "out_sysbus[0]" LOC = R15;  ##  PIN3
+
+
+NET "in_is_clk_veryhigh" LOC = B5;  ##  PIN3 1Hz
+#NET "in_manr_w" LOC = B5;#A8;  ##  PIN3 1KHz
+NET "in_is_clk_external" LOC = B6;  ##  PIN3 1Stg
+NET "in_is_clk_high" LOC = A7;  ##  PIN3 1Ins
+NET "in_is_clk_low" LOC = A8;
+NET "in_is_clk_manual" LOC = A9;  ##  PIN3 Man
+NET "in_clk_manual" LOC = B10;  ##  PIN3
+
+#NET "out_r0_w" LOC = D16;  ##  PIN3
+
+
+NET "in_manual_input_r" LOC = A12;  ##  PIN3 
+NET "in_r3_r" LOC = A13;  ##  PIN3 
+NET "in_r2_r" LOC = B14;  ##  PIN3 
+NET "in_r1_r" LOC = B16;  ##  PIN3 
+NET "in_r0_r" LOC = C16;  ##  PIN3 
+NET "in_ram_r" LOC = E15;  ##  PIN3 
+NET "in_acc_r" LOC = E11;  ##  PIN3 
+NET "in_ir_r" LOC = D11;  ##  PIN3 
+NET "in_iar_r" LOC = F15;  ##  PIN3 
+#NET "none" LOC = G16;  ##  PIN3  
+
+NET "in_read_reg_en" LOC = H16;  ##  PIN3
+
+NET "out_can_read" LOC = C15;  ##  PIN3
+
+NET "out_r3_r" LOC = M5;  ##  
+NET "out_r2_r" LOC = P6;
+NET "out_r1_r" LOC = P2;
+NET "out_r0_r" LOC = R1;
+NET "out_bus1" LOC = T4;
+NET "out_ram_r" LOC = T5;
+NET "out_acc_r" LOC = R7;
+NET "out_iar_r" LOC = L8;
+
+
+NET "out_r3_w" LOC = R9;
+NET "out_r2_w" LOC = R12;
+NET "out_r1_w" LOC = T14;
+NET "out_r0_w" LOC = T15;
+NET "out_flags_w" LOC = R16;
+NET "out_ram_a_w" LOC = P16;
+
+#NET "out_temp_w" LOC = M16;
+#NET "out_ir_w" LOC = K15;
+#NET "out_ram_w" LOC = J16;
+
+NET "out_temp_w" LOC = C9;
+NET "out_ir_w" LOC = C10;
+NET "out_ram_w" LOC = E16;
+NET "out_acc_w" LOC = F16;
+NET "out_iar_w" LOC = H15;
+
+
+
+
+
+NET "in_write_reg_en" LOC = K12;
+NET "out_can_write" LOC = L14;
+
+NET "in_temp_w" LOC = J13;
+NET "in_r0_w" LOC = K14;
+NET "in_r1_w" LOC = J12;
+NET "in_r2_w" LOC = J14;
+NET "in_r3_w" LOC = G11;
+
+NET "in_is_bus1_w" LOC = H11;
+NET "in_iar_w" LOC = H13;
+NET "in_ir_w" LOC = G12; 
+NET "in_acc_w" LOC = F12;
+NET "in_ram_a_w" LOC = H14;
+
+NET "in_ram_w" LOC = F13;
+NET "out_is_bus1_w" LOC = G14;
+NET "in_bus1" LOC = E12;
+
+NET "out_usart1_tx" LOC = F14;
+
+#F14 -- free
+
+
+
+
+
+#NET "out_s1" LOC = P4;  ##  PIN3
+#NET "out_s2" LOC = N5;  ##  PIN3
+#NET "out_s3" LOC = P5;  ##  PIN3
+#NET "out_s4" LOC = M6;  ##  PIN3
+
+#NET "out_clkc" LOC = L16;  ##  PIN3
+
+#NET "out_clkc" LOC = M15;  ##  PIN3
+#NET "out_clkr" LOC = P16;  ##  PIN3
+#NET "out_clkw" LOC = R16;  ##  PIN3
+
+NET "in_manual_input_o[0]" LOC = J16;
+NET "in_manual_input_o[1]" LOC = K15;
+NET "in_manual_input_o[2]" LOC = M16;
+NET "in_manual_input_o[3]" LOC = N16;
+NET "in_manual_input_o[4]" LOC = P15;
+NET "in_manual_input_o[5]" LOC = M15;
+NET "in_manual_input_o[6]" LOC = L16;
+NET "in_manual_input_o[7]" LOC = K16;
+
+
+NET "monitor[0]" LOC = P4;
+NET "monitor[1]" LOC = N5;
+NET "monitor[2]" LOC = P5;
+NET "monitor[3]" LOC = M6;
+NET "monitor[4]" LOC = D6;
+NET "monitor[5]" LOC = E7;
+NET "monitor[6]" LOC = D5;
+NET "monitor[7]" LOC = F9;
+
+#NET "monitor[0]" LOC = P4;
+#NET "monitor[1]" LOC = N5;
+#NET "monitor[2]" LOC = P5;
+#NET "monitor[3]" LOC = M6;
+#NET "monitor[4]" LOC = G11;
+#NET "monitor[5]" LOC = H11;
+#NET "monitor[6]" LOC = H13;
+#NET "monitor[7]" LOC = G12;
+
+
+#NET "monitor[4]" LOC = M6 | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+#NET "monitor[5]" LOC = M6 | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+#NET "monitor[6]" LOC = M6 | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+#NET "monitor[7]" LOC = M6 | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+
+
+
+#NET "clk" LOC = T8;
+#NET "led" LOC = P4;
+
+#NET "sw[0]" LOC = C3 | IOSTANDARD = "LVCMOS33" ;
+#NET "sw[1]" LOC = D3 | IOSTANDARD = "LVCMOS33" ;
+#NET "sw[2]" LOC = E4 | IOSTANDARD = "LVCMOS33" ;
+#NET "sw[3]" LOC = E3 | IOSTANDARD = "LVCMOS33" ;
+
+# PlanAhead Generated IO constraints 
+
+#NET "monitor[7]" IOSTANDARD = LVCMOS25;
+#NET "monitor[6]" IOSTANDARD = LVCMOS25;
+#NET "monitor[5]" IOSTANDARD = LVCMOS25;
+#NET "monitor[4]" IOSTANDARD = LVCMOS25;
+#NET "monitor[3]" IOSTANDARD = LVCMOS25;
+#NET "monitor[2]" IOSTANDARD = LVCMOS25;
+#NET "monitor[1]" IOSTANDARD = LVCMOS25;
+
+# PlanAhead Generated physical constraints 
+
+#NET "monitor[1]" LOC = N5;
+#NET "monitor[3]" LOC = M6;
+#NET "monitor[2]" LOC = P5;

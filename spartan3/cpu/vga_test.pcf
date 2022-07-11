@@ -1,0 +1,33 @@
+//! **************************************************************************
+// Written by: Map P.40xd on Sun Apr 24 20:43:59 2022
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "r<2>" LOCATE = SITE "L12" LEVEL 1;
+COMP "r<3>" LOCATE = SITE "N14" LEVEL 1;
+COMP "r<4>" LOCATE = SITE "M13" LEVEL 1;
+COMP "g<0>" LOCATE = SITE "M9" LEVEL 1;
+COMP "g<1>" LOCATE = SITE "N9" LEVEL 1;
+COMP "clk" LOCATE = SITE "T8" LEVEL 1;
+COMP "g<2>" LOCATE = SITE "P9" LEVEL 1;
+COMP "g<3>" LOCATE = SITE "L10" LEVEL 1;
+COMP "g<4>" LOCATE = SITE "M10" LEVEL 1;
+COMP "g<5>" LOCATE = SITE "P11" LEVEL 1;
+COMP "hsync" LOCATE = SITE "M14" LEVEL 1;
+COMP "clk_passthrough" LOCATE = SITE "K16" LEVEL 1;
+COMP "b<0>" LOCATE = SITE "P7" LEVEL 1;
+COMP "b<1>" LOCATE = SITE "M7" LEVEL 1;
+COMP "b<2>" LOCATE = SITE "P8" LEVEL 1;
+COMP "b<3>" LOCATE = SITE "N8" LEVEL 1;
+COMP "b<4>" LOCATE = SITE "L7" LEVEL 1;
+COMP "vsync" LOCATE = SITE "L13" LEVEL 1;
+COMP "r<0>" LOCATE = SITE "M11" LEVEL 1;
+COMP "r<1>" LOCATE = SITE "M12" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "divider_0" BEL "r_0" BEL "hsync" BEL "vsync" BEL
+        "v_0" BEL "v_1" BEL "v_2" BEL "v_3" BEL "v_4" BEL "v_5" BEL "v_6" BEL
+        "v_7" BEL "v_8" BEL "v_9" BEL "h_0" BEL "h_1" BEL "h_2" BEL "h_3" BEL
+        "h_4" BEL "h_5" BEL "h_6" BEL "h_7" BEL "h_8" BEL "h_9" BEL
+        "clk_passthrough_OBUF_BUFG" BEL "clk_passthrough";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
+SCHEMATIC END;
+
