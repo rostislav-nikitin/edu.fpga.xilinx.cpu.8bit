@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name "Xilinx.FPGA")(type "KiCad")(uri "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/schematic/libs/Xilinx.FPGA.kicad_sym")(options "")(descr ""))
+  (lib (name "sliders")(type "KiCad")(uri "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/schematic/libs/sliders.kicad_sym")(options "")(descr ""))
 )
