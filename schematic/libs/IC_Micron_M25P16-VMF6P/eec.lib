@@ -1,0 +1,58 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Micron M25P16-VMF6P
+#
+DEF M25P16-VMF6P U 0 40 Y Y 2 L N
+F0 "U" 0 200 50 H V L CNN 
+F1 "M25P16-VMF6P" 0 300 50 H V L CNN 
+F2 "Micron-M25P16-VMF6P-*" 0 400 50 H I L CNN 
+F3 "http://www.micron.com/~/media/Documents/Products/Data%20Sheet/NOR%20Flash/Serial%20NOR/M25P/M25P16.pdf" 0 500 50 H I L CNN 
+F4 "EmbeddedÂ " 0 600 50 H I L CNN "Applications"
+F5 "Manufacturer URL" 0 700 50 H I L CNN "Component Link 1 Description"
+F6 "http://www.micron.com/" 0 800 50 H I L CNN "Component Link 1 URL"
+F7 "Package Specification" 0 900 50 H I L CNN "Component Link 3 Description"
+F8 "http://www.micron.com/~/media/Documents/Products/Data%20Sheet/NOR%20Flash/Serial%20NOR/M25P/M25P128.pdf" 0 1000 50 H I L CNN "Component Link 3 URL"
+F9 "Rev. Y" 0 1100 50 H I L CNN "Datasheet Version"
+F10 "16MbÂ " 0 1200 50 H I L CNN "Density"
+F11 "Surface Mount" 0 1300 50 H I L CNN "Mounting Technology"
+F12 "SO16 WideÂ " 0 1400 50 H I L CNN "Package"
+F13 "16-Pin SO Wide, 7.5 X 10.3 mm, Pitch 1.27 mm" 0 1500 50 H I L CNN "Package Description"
+F14 "Rev. A" 0 1600 50 H I L CNN "Package Version"
+F15 "M25PÂ " 0 1700 50 H I L CNN "Part Family"
+F16 "ProductionÂ " 0 1800 50 H I L CNN "Part Status"
+F17 "75 MHzÂ " 0 1900 50 H I L CNN "Speed"
+F18 "Data StorageÂ " 0 2000 50 H I L CNN "Type"
+F19 "2.7V-3.6VÂ " 0 2100 50 H I L CNN "Voltage"
+F20 "x1Â " 0 2200 50 H I L CNN "Width"
+F21 "IC" 0 2300 50 H I L CNN "category"
+F22 "1169112" 0 2400 50 H I L CNN "ciiva ids"
+F23 "73d198175bfc04f6" 0 2500 50 H I L CNN "library id"
+F24 "Micron" 0 2600 50 H I L CNN "manufacturer"
+F25 "MICT-MF-16" 0 2700 50 H I L CNN "package"
+F26 "1354234324" 0 2800 50 H I L CNN "release date"
+F27 "5D02B7A8-0EFA-4704-8599-A69C4B62F930" 0 2900 50 H I L CNN "vault revision"
+F28 "yes" 0 3000 50 H I L CNN "imported"
+DRAW
+X HOLD# 1 1100 -200 100 L 40 40 1 1 I 
+X VCC 2 100 -400 100 R 40 40 1 1 W 
+X S# 7 1100 0 100 L 40 40 1 1 I 
+X DQ1 8 100 -200 100 R 40 40 1 1 U 
+X W#/VPP 9 1100 -100 100 L 40 40 1 1 I 
+X VSS 10 1100 -400 100 L 40 40 1 1 W 
+X DQ0 15 100 -100 100 R 40 40 1 1 I 
+X C 16 100 0 100 R 40 40 1 1 I C
+S 200 100 1000 -500 1 1 0 f
+X DNU 3 100 0 100 R 40 40 2 1 P 
+X DNU 4 100 -100 100 R 40 40 2 1 P 
+X DNU 5 100 -200 100 R 40 40 2 1 P 
+X DNU 6 100 -300 100 R 40 40 2 1 P 
+X DNU 11 900 0 100 L 40 40 2 1 P 
+X DNU 12 900 -100 100 L 40 40 2 1 P 
+X DNU 13 900 -200 100 L 40 40 2 1 P 
+X DNU 14 900 -300 100 L 40 40 2 1 P 
+S 200 100 800 -400 2 1 0 f
+ENDDRAW
+ENDDEF
+#
+# End Library
