@@ -1,4 +1,4 @@
-20236251321750476
+20241226388773093
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -78707,6 +78707,13 @@ rotary encoder
 0
 5
 4
+SPST_square
+SPST_Square
+
+
+0
+2
+2
 SR26 1-1-12P
 SR26 1-1-12P
 
@@ -78714,6 +78721,20 @@ SR26 1-1-12P
 0
 13
 13
+SW_SPDT_small
+SW_SPDT_Small
+
+
+0
+3
+3
+SW_Sliding_5Pos
+SW_Sliding_5Pos
+
+
+0
+7
+7
 Sensor
 Aosong_DHT11_5.5x12.0_P2.54mm
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/DHT11.pdf

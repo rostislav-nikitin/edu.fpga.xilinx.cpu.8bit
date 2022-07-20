@@ -1,3 +1,6 @@
 (fp_lib_table
   (lib (name "SR26 1-1-12P")(type "KiCad")(uri "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/schematic/spartan3.original/libs/SR26 1-1-12P.pretty")(options "")(descr ""))
+  (lib (name "SW_Sliding_5Pos")(type "KiCad")(uri "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/schematic/spartan3.original/libs/SW_Sliding_5Pos.pretty")(options "")(descr ""))
+  (lib (name "SW_SPDT_small")(type "KiCad")(uri "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/schematic/spartan3.original/libs/SW_SPDT_small.pretty")(options "")(descr ""))
+  (lib (name "SPST_square")(type "KiCad")(uri "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/schematic/spartan3.original/libs/SPST_square.pretty")(options "")(descr ""))
 )
