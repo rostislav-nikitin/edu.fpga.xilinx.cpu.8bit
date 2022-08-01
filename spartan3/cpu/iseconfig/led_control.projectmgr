@@ -78,13 +78,13 @@
          <ClosedNode>/vga_v2 - Behavioral |home|s0lid|Sources|edu.fpga.xilinx.cpu.8bit|spartan3|cpu|vga_v2.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>cpu_facade.ucf (/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.ucf)</SelectedItem>
+         <SelectedItem>UUT - cpu_facade (/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.sch)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001bf000000020000000000000000000000000200000064ffffffff000000810000000300000002000001bf0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>cpu_facade.ucf (/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.ucf)</CurrentItem>
+      <CurrentItem>UUT - cpu_facade (/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.sch)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
