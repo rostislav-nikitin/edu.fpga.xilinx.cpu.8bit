@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Reading design: cpu_facade.prj
@@ -66,19 +66,19 @@ ROM Style                          : Auto
 Mux Extraction                     : Yes
 Resource Sharing                   : YES
 Asynchronous To Synchronous        : NO
-Multiplier Style                   : Auto
+Multiplier Style                   : LUT
 Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
-Add Generic Clock Buffer(BUFG)     : 24
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
 Register Duplication               : YES
 Slice Packing                      : YES
 Optimize Instantiated Primitives   : NO
-Use Clock Enable                   : Yes
-Use Synchronous Set                : Yes
-Use Synchronous Reset              : Yes
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
 Pack IO Registers into IOBs        : Auto
 Equivalent register Removal        : YES
 
@@ -110,108 +110,57 @@ Slice Utilization Ratio Delta      : 5
 Compiling vhdl file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/usart_tramnsmitter.vhd" in Library work.
 Architecture behavioral of Entity usart_tramnsmitter is up to date.
 Compiling vhdl file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf" in Library work.
-Entity <usart_muser_cpu_facade> compiled.
-Entity <usart_muser_cpu_facade> (Architecture <behavioral>) compiled.
-Entity <LD8CE_MXILINX_cpu_facade> compiled.
-Entity <LD8CE_MXILINX_cpu_facade> (Architecture <BEHAVIORAL>) compiled.
-Entity <LD8_MXILINX_cpu_facade> compiled.
-Entity <LD8_MXILINX_cpu_facade> (Architecture <BEHAVIORAL>) compiled.
-Entity <ram_256bytes_muser_cpu_facade> compiled.
-Entity <ram_256bytes_muser_cpu_facade> (Architecture <behavioral>) compiled.
-Entity <M2_1_MXILINX_cpu_facade> compiled.
-Entity <M2_1_MXILINX_cpu_facade> (Architecture <BEHAVIORAL>) compiled.
-Entity <M2_1E_MXILINX_cpu_facade> compiled.
-Entity <M2_1E_MXILINX_cpu_facade> (Architecture <BEHAVIORAL>) compiled.
-Entity <M16_1E_MXILINX_cpu_facade> compiled.
-Entity <M16_1E_MXILINX_cpu_facade> (Architecture <BEHAVIORAL>) compiled.
-Entity <bus_muxer_muser_cpu_facade> compiled.
-Entity <bus_muxer_muser_cpu_facade> (Architecture <behavioral>) compiled.
-Entity <reg_8bit_muser_cpu_facade> compiled.
-Entity <reg_8bit_muser_cpu_facade> (Architecture <behavioral>) compiled.
-Entity <D4_16E_MXILINX_cpu_facade> compiled.
-Entity <D4_16E_MXILINX_cpu_facade> (Architecture <BEHAVIORAL>) compiled.
-Entity <FJKC_MXILINX_cpu_facade> compiled.
-Entity <FJKC_MXILINX_cpu_facade> (Architecture <BEHAVIORAL>) compiled.
-Entity <FTCE_MXILINX_cpu_facade> compiled.
-Entity <FTCE_MXILINX_cpu_facade> (Architecture <BEHAVIORAL>) compiled.
-Entity <CB16CE_MXILINX_cpu_facade> compiled.
-Entity <CB16CE_MXILINX_cpu_facade> (Architecture <BEHAVIORAL>) compiled.
-Entity <debouncer_muser_cpu_facade> compiled.
-Entity <debouncer_muser_cpu_facade> (Architecture <behavioral>) compiled.
-Entity <INV8_MXILINX_cpu_facade> compiled.
-Entity <INV8_MXILINX_cpu_facade> (Architecture <BEHAVIORAL>) compiled.
-Entity <OR6_MXILINX_cpu_facade> compiled.
-Entity <OR6_MXILINX_cpu_facade> (Architecture <BEHAVIORAL>) compiled.
-Entity <D3_8E_MXILINX_cpu_facade> compiled.
-Entity <D3_8E_MXILINX_cpu_facade> (Architecture <BEHAVIORAL>) compiled.
-Entity <D2_4E_MXILINX_cpu_facade> compiled.
-Entity <D2_4E_MXILINX_cpu_facade> (Architecture <BEHAVIORAL>) compiled.
-Entity <CB4CE_MXILINX_cpu_facade> compiled.
-Entity <CB4CE_MXILINX_cpu_facade> (Architecture <BEHAVIORAL>) compiled.
-Entity <stepper_muser_cpu_facade> compiled.
-Entity <stepper_muser_cpu_facade> (Architecture <behavioral>) compiled.
-Entity <cpu_control_muser_cpu_facade> compiled.
-Entity <cpu_control_muser_cpu_facade> (Architecture <behavioral>) compiled.
-Entity <cpu_freq_divider_base_muser_cpu_facade> compiled.
-Entity <cpu_freq_divider_base_muser_cpu_facade> (Architecture <behavioral>) compiled.
-Entity <cpu_freq_divider_1khz_muser_cpu_facade> compiled.
-Entity <cpu_freq_divider_1khz_muser_cpu_facade> (Architecture <behavioral>) compiled.
-Entity <cpu_freq_divider_1inst_muser_cpu_facade> compiled.
-Entity <cpu_freq_divider_1inst_muser_cpu_facade> (Architecture <behavioral>) compiled.
-Entity <AND7_MXILINX_cpu_facade> compiled.
-Entity <AND7_MXILINX_cpu_facade> (Architecture <BEHAVIORAL>) compiled.
-Entity <cpu_freq_divider_1hz_muser_cpu_facade> compiled.
-Entity <cpu_freq_divider_1hz_muser_cpu_facade> (Architecture <behavioral>) compiled.
-Entity <AND6_MXILINX_cpu_facade> compiled.
-Entity <AND6_MXILINX_cpu_facade> (Architecture <BEHAVIORAL>) compiled.
-Entity <cpu_freq_divider_1stg_muser_cpu_facade> compiled.
-Entity <cpu_freq_divider_1stg_muser_cpu_facade> (Architecture <behavioral>) compiled.
-Entity <AND8_MXILINX_cpu_facade> compiled.
-Entity <AND8_MXILINX_cpu_facade> (Architecture <BEHAVIORAL>) compiled.
-Entity <freq_divider_muser_cpu_facade> compiled.
-Entity <freq_divider_muser_cpu_facade> (Architecture <behavioral>) compiled.
-Entity <encoder8_3_muser_cpu_facade> compiled.
-Entity <encoder8_3_muser_cpu_facade> (Architecture <behavioral>) compiled.
-Entity <M8_1E_MXILINX_cpu_facade> compiled.
-Entity <M8_1E_MXILINX_cpu_facade> (Architecture <BEHAVIORAL>) compiled.
-Entity <cpu_freq_divider_muser_cpu_facade> compiled.
-Entity <cpu_freq_divider_muser_cpu_facade> (Architecture <behavioral>) compiled.
-Entity <buf_8bit_muser_cpu_facade> compiled.
-Entity <buf_8bit_muser_cpu_facade> (Architecture <behavioral>) compiled.
-Entity <CB2CE_MXILINX_cpu_facade> compiled.
-Entity <CB2CE_MXILINX_cpu_facade> (Architecture <BEHAVIORAL>) compiled.
-Entity <clk_generator_muser_cpu_facade> compiled.
-Entity <clk_generator_muser_cpu_facade> (Architecture <behavioral>) compiled.
-Entity <OR8_MXILINX_cpu_facade> compiled.
-Entity <OR8_MXILINX_cpu_facade> (Architecture <BEHAVIORAL>) compiled.
-Entity <AND16_MXILINX_cpu_facade> compiled.
-Entity <AND16_MXILINX_cpu_facade> (Architecture <BEHAVIORAL>) compiled.
-Entity <encoder16_4_muser_cpu_facade> compiled.
-Entity <encoder16_4_muser_cpu_facade> (Architecture <behavioral>) compiled.
-Entity <cpu_output_muxer_muser_cpu_facade> compiled.
-Entity <cpu_output_muxer_muser_cpu_facade> (Architecture <behavioral>) compiled.
-Entity <pass_through_or_one_muser_cpu_facade> compiled.
-Entity <pass_through_or_one_muser_cpu_facade> (Architecture <behavioral>) compiled.
-Entity <LD4CE_MXILINX_cpu_facade> compiled.
-Entity <LD4CE_MXILINX_cpu_facade> (Architecture <BEHAVIORAL>) compiled.
-Entity <alu_output_muxer_muser_cpu_facade> compiled.
-Entity <alu_output_muxer_muser_cpu_facade> (Architecture <behavioral>) compiled.
-Entity <NOR8_MXILINX_cpu_facade> compiled.
-Entity <NOR8_MXILINX_cpu_facade> (Architecture <BEHAVIORAL>) compiled.
-Entity <lzero_muser_cpu_facade> compiled.
-Entity <lzero_muser_cpu_facade> (Architecture <behavioral>) compiled.
-Entity <cmp_1bit_muser_cpu_facade> compiled.
-Entity <cmp_1bit_muser_cpu_facade> (Architecture <behavioral>) compiled.
-Entity <cmp_8bit_muser_cpu_facade> compiled.
-Entity <cmp_8bit_muser_cpu_facade> (Architecture <behavioral>) compiled.
-Entity <ADD8_MXILINX_cpu_facade> compiled.
-Entity <ADD8_MXILINX_cpu_facade> (Architecture <BEHAVIORAL>) compiled.
-Entity <alu_muser_cpu_facade> compiled.
-Entity <alu_muser_cpu_facade> (Architecture <behavioral>) compiled.
-Entity <cpu_muser_cpu_facade> compiled.
-Entity <cpu_muser_cpu_facade> (Architecture <behavioral>) compiled.
-Entity <cpu_facade> compiled.
-Entity <cpu_facade> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity usart_muser_cpu_facade is up to date.
+Architecture behavioral of Entity ld8ce_mxilinx_cpu_facade is up to date.
+Architecture behavioral of Entity ld8_mxilinx_cpu_facade is up to date.
+Architecture behavioral of Entity ram_256bytes_muser_cpu_facade is up to date.
+Architecture behavioral of Entity m2_1_mxilinx_cpu_facade is up to date.
+Architecture behavioral of Entity m2_1e_mxilinx_cpu_facade is up to date.
+Architecture behavioral of Entity m16_1e_mxilinx_cpu_facade is up to date.
+Architecture behavioral of Entity bus_muxer_muser_cpu_facade is up to date.
+Architecture behavioral of Entity reg_8bit_muser_cpu_facade is up to date.
+Architecture behavioral of Entity d4_16e_mxilinx_cpu_facade is up to date.
+Architecture behavioral of Entity fjkc_mxilinx_cpu_facade is up to date.
+Architecture behavioral of Entity ftce_mxilinx_cpu_facade is up to date.
+Architecture behavioral of Entity cb16ce_mxilinx_cpu_facade is up to date.
+Architecture behavioral of Entity debouncer_muser_cpu_facade is up to date.
+Architecture behavioral of Entity inv8_mxilinx_cpu_facade is up to date.
+Architecture behavioral of Entity or6_mxilinx_cpu_facade is up to date.
+Architecture behavioral of Entity d3_8e_mxilinx_cpu_facade is up to date.
+Architecture behavioral of Entity d2_4e_mxilinx_cpu_facade is up to date.
+Architecture behavioral of Entity cb4ce_mxilinx_cpu_facade is up to date.
+Architecture behavioral of Entity stepper_muser_cpu_facade is up to date.
+Architecture behavioral of Entity cpu_control_muser_cpu_facade is up to date.
+Architecture behavioral of Entity cpu_freq_divider_base_muser_cpu_facade is up to date.
+Architecture behavioral of Entity cpu_freq_divider_1khz_muser_cpu_facade is up to date.
+Architecture behavioral of Entity cpu_freq_divider_1inst_muser_cpu_facade is up to date.
+Architecture behavioral of Entity and7_mxilinx_cpu_facade is up to date.
+Architecture behavioral of Entity cpu_freq_divider_1hz_muser_cpu_facade is up to date.
+Architecture behavioral of Entity and6_mxilinx_cpu_facade is up to date.
+Architecture behavioral of Entity cpu_freq_divider_1stg_muser_cpu_facade is up to date.
+Architecture behavioral of Entity and8_mxilinx_cpu_facade is up to date.
+Architecture behavioral of Entity freq_divider_muser_cpu_facade is up to date.
+Architecture behavioral of Entity encoder8_3_muser_cpu_facade is up to date.
+Architecture behavioral of Entity m8_1e_mxilinx_cpu_facade is up to date.
+Architecture behavioral of Entity cpu_freq_divider_muser_cpu_facade is up to date.
+Architecture behavioral of Entity buf_8bit_muser_cpu_facade is up to date.
+Architecture behavioral of Entity cb2ce_mxilinx_cpu_facade is up to date.
+Architecture behavioral of Entity clk_generator_muser_cpu_facade is up to date.
+Architecture behavioral of Entity or8_mxilinx_cpu_facade is up to date.
+Architecture behavioral of Entity and16_mxilinx_cpu_facade is up to date.
+Architecture behavioral of Entity encoder16_4_muser_cpu_facade is up to date.
+Architecture behavioral of Entity cpu_output_muxer_muser_cpu_facade is up to date.
+Architecture behavioral of Entity pass_through_or_one_muser_cpu_facade is up to date.
+Architecture behavioral of Entity ld4ce_mxilinx_cpu_facade is up to date.
+Architecture behavioral of Entity alu_output_muxer_muser_cpu_facade is up to date.
+Architecture behavioral of Entity nor8_mxilinx_cpu_facade is up to date.
+Architecture behavioral of Entity lzero_muser_cpu_facade is up to date.
+Architecture behavioral of Entity cmp_1bit_muser_cpu_facade is up to date.
+Architecture behavioral of Entity cmp_8bit_muser_cpu_facade is up to date.
+Architecture behavioral of Entity add8_mxilinx_cpu_facade is up to date.
+Architecture behavioral of Entity alu_muser_cpu_facade is up to date.
+Architecture behavioral of Entity cpu_muser_cpu_facade is up to date.
+Architecture behavioral of Entity cpu_facade is up to date.
 Compiling vhdl file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf" in Library work.
 Architecture behavioral of Entity ld8ce_hxilinx_cpu is up to date.
 Architecture behavioral of Entity cb4ce_hxilinx_cpu is up to date.
@@ -261,10 +210,8 @@ Compiling vhdl file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/d
 Architecture behavioral of Entity cb16ce_hxilinx_debouncer is up to date.
 Architecture behavioral of Entity debouncer is up to date.
 Compiling vhdl file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/ram_256bytes.vhf" in Library work.
-Entity <LD8_MXILINX_ram_256bytes> compiled.
-Entity <LD8_MXILINX_ram_256bytes> (Architecture <BEHAVIORAL>) compiled.
-Entity <ram_256bytes> compiled.
-Entity <ram_256bytes> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity ld8_mxilinx_ram_256bytes is up to date.
+Architecture behavioral of Entity ram_256bytes is up to date.
 Compiling vhdl file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/USART.vhf" in Library work.
 Architecture behavioral of Entity usart is up to date.
 Compiling vhdl file "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/alu.vhf" in Library work.
@@ -379,11 +326,11 @@ Analyzing hierarchy for entity <cpu_facade> in library <work> (architecture <beh
 
 Analyzing hierarchy for entity <cpu_MUSER_cpu_facade> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <INV8_MXILINX_cpu_facade> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <INV8_MXILINX_cpu_facade> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <debouncer_MUSER_cpu_facade> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <FJKC_MXILINX_cpu_facade> in library <work> (architecture <BEHAVIORAL>) with generics.
+Analyzing hierarchy for entity <FJKC_MXILINX_cpu_facade> in library <work> (architecture <behavioral>) with generics.
 	INIT = '0'
 
 Analyzing hierarchy for entity <USART_MUSER_cpu_facade> in library <work> (architecture <behavioral>).
@@ -392,11 +339,11 @@ Analyzing hierarchy for entity <ram_256bytes_MUSER_cpu_facade> in library <work>
 
 Analyzing hierarchy for entity <reg_8bit_MUSER_cpu_facade> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <D4_16E_MXILINX_cpu_facade> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <D4_16E_MXILINX_cpu_facade> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <bus_muxer_MUSER_cpu_facade> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <LD8CE_MXILINX_cpu_facade> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <LD8CE_MXILINX_cpu_facade> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <alu_MUSER_cpu_facade> in library <work> (architecture <behavioral>).
 
@@ -406,19 +353,19 @@ Analyzing hierarchy for entity <cpu_control_MUSER_cpu_facade> in library <work> 
 
 Analyzing hierarchy for entity <pass_through_or_one_MUSER_cpu_facade> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <LD4CE_MXILINX_cpu_facade> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <LD4CE_MXILINX_cpu_facade> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <LD8_MXILINX_cpu_facade> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <LD8_MXILINX_cpu_facade> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <cpu_output_muxer_MUSER_cpu_facade> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <M2_1_MXILINX_cpu_facade> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <M2_1_MXILINX_cpu_facade> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <buf_8bit_MUSER_cpu_facade> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <cpu_freq_divider_MUSER_cpu_facade> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <CB16CE_MXILINX_cpu_facade> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <CB16CE_MXILINX_cpu_facade> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <cpu_freq_divider_1Hz_MUSER_cpu_facade> in library <work> (architecture <behavioral>).
 
@@ -430,13 +377,13 @@ Analyzing hierarchy for entity <cpu_freq_divider_1KHz_MUSER_cpu_facade> in libra
 
 Analyzing hierarchy for entity <usart_tramnsmitter> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <M16_1E_MXILINX_cpu_facade> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <M16_1E_MXILINX_cpu_facade> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <D3_8E_MXILINX_cpu_facade> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <D3_8E_MXILINX_cpu_facade> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <ADD8_MXILINX_cpu_facade> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <ADD8_MXILINX_cpu_facade> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <INV8_MXILINX_cpu_facade> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <INV8_MXILINX_cpu_facade> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <cmp_8bit_MUSER_cpu_facade> in library <work> (architecture <behavioral>).
 
@@ -444,16 +391,16 @@ Analyzing hierarchy for entity <lzero_MUSER_cpu_facade> in library <work> (archi
 
 Analyzing hierarchy for entity <alu_output_muxer_MUSER_cpu_facade> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <FJKC_MXILINX_cpu_facade> in library <work> (architecture <BEHAVIORAL>) with generics.
+Analyzing hierarchy for entity <FJKC_MXILINX_cpu_facade> in library <work> (architecture <behavioral>) with generics.
 	INIT = '0'
 
-Analyzing hierarchy for entity <CB2CE_MXILINX_cpu_facade> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <CB2CE_MXILINX_cpu_facade> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <stepper_MUSER_cpu_facade> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <D2_4E_MXILINX_cpu_facade> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <D2_4E_MXILINX_cpu_facade> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <OR6_MXILINX_cpu_facade> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <OR6_MXILINX_cpu_facade> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <bus_muxer_MUSER_cpu_facade> in library <work> (architecture <behavioral>).
 
@@ -461,50 +408,50 @@ Analyzing hierarchy for entity <encoder16_4_MUSER_cpu_facade> in library <work> 
 
 Analyzing hierarchy for entity <freq_divider_MUSER_cpu_facade> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <M8_1E_MXILINX_cpu_facade> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <M8_1E_MXILINX_cpu_facade> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <encoder8_3_MUSER_cpu_facade> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <FTCE_MXILINX_cpu_facade> in library <work> (architecture <BEHAVIORAL>) with generics.
+Analyzing hierarchy for entity <FTCE_MXILINX_cpu_facade> in library <work> (architecture <behavioral>) with generics.
 	INIT = '0'
 
 Analyzing hierarchy for entity <cpu_freq_divider_base_MUSER_cpu_facade> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <AND7_MXILINX_cpu_facade> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <AND7_MXILINX_cpu_facade> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <AND6_MXILINX_cpu_facade> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <AND6_MXILINX_cpu_facade> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <M2_1_MXILINX_cpu_facade> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <M2_1_MXILINX_cpu_facade> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <M2_1E_MXILINX_cpu_facade> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <M2_1E_MXILINX_cpu_facade> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <cmp_1bit_MUSER_cpu_facade> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <NOR8_MXILINX_cpu_facade> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <NOR8_MXILINX_cpu_facade> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <CB4CE_MXILINX_cpu_facade> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <CB4CE_MXILINX_cpu_facade> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <D3_8E_MXILINX_cpu_facade> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <D3_8E_MXILINX_cpu_facade> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <M16_1E_MXILINX_cpu_facade> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <M16_1E_MXILINX_cpu_facade> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <AND16_MXILINX_cpu_facade> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <AND16_MXILINX_cpu_facade> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <OR8_MXILINX_cpu_facade> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <OR8_MXILINX_cpu_facade> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <CB16CE_MXILINX_cpu_facade> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <CB16CE_MXILINX_cpu_facade> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <AND8_MXILINX_cpu_facade> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <AND8_MXILINX_cpu_facade> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <FJKC_MXILINX_cpu_facade> in library <work> (architecture <BEHAVIORAL>) with generics.
+Analyzing hierarchy for entity <FJKC_MXILINX_cpu_facade> in library <work> (architecture <behavioral>) with generics.
 	INIT = '0'
 
-Analyzing hierarchy for entity <FTCE_MXILINX_cpu_facade> in library <work> (architecture <BEHAVIORAL>) with generics.
+Analyzing hierarchy for entity <FTCE_MXILINX_cpu_facade> in library <work> (architecture <behavioral>) with generics.
 	INIT = '0'
 
-Analyzing hierarchy for entity <M2_1_MXILINX_cpu_facade> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <M2_1_MXILINX_cpu_facade> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <M2_1E_MXILINX_cpu_facade> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <M2_1E_MXILINX_cpu_facade> in library <work> (architecture <behavioral>).
 
 
 =========================================================================
@@ -588,10 +535,10 @@ WARNING:Xst:753 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu
     Set user-defined property "HU_SET =  XLXI_102_93" for instance <XLXI_102> in unit <alu_MUSER_cpu_facade>.
 Entity <alu_MUSER_cpu_facade> analyzed. Unit <alu_MUSER_cpu_facade> generated.
 
-Analyzing Entity <D3_8E_MXILINX_cpu_facade> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <D3_8E_MXILINX_cpu_facade> in library <work> (Architecture <behavioral>).
 Entity <D3_8E_MXILINX_cpu_facade> analyzed. Unit <D3_8E_MXILINX_cpu_facade> generated.
 
-Analyzing Entity <ADD8_MXILINX_cpu_facade> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <ADD8_MXILINX_cpu_facade> in library <work> (Architecture <behavioral>).
     Set user-defined property "RLOC =  X0Y0" for instance <I_36_16> in unit <ADD8_MXILINX_cpu_facade>.
     Set user-defined property "RLOC =  X0Y0" for instance <I_36_17> in unit <ADD8_MXILINX_cpu_facade>.
     Set user-defined property "RLOC =  X0Y1" for instance <I_36_18> in unit <ADD8_MXILINX_cpu_facade>.
@@ -620,7 +567,7 @@ Analyzing Entity <lzero_MUSER_cpu_facade> in library <work> (Architecture <behav
     Set user-defined property "HU_SET =  XLXI_1_90" for instance <XLXI_1> in unit <lzero_MUSER_cpu_facade>.
 Entity <lzero_MUSER_cpu_facade> analyzed. Unit <lzero_MUSER_cpu_facade> generated.
 
-Analyzing Entity <NOR8_MXILINX_cpu_facade> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <NOR8_MXILINX_cpu_facade> in library <work> (Architecture <behavioral>).
     Set user-defined property "RLOC =  X0Y0" for instance <I_36_29> in unit <NOR8_MXILINX_cpu_facade>.
     Set user-defined property "RLOC =  X0Y0" for instance <I_36_138> in unit <NOR8_MXILINX_cpu_facade>.
     Set user-defined property "RLOC =  X0Y1" for instance <I_36_144> in unit <NOR8_MXILINX_cpu_facade>.
@@ -636,12 +583,12 @@ WARNING:Xst:753 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu
     Set user-defined property "HU_SET =  XLXI_14_76" for instance <XLXI_14> in unit <clk_generator_MUSER_cpu_facade>.
 Entity <clk_generator_MUSER_cpu_facade> analyzed. Unit <clk_generator_MUSER_cpu_facade> generated.
 
-Analyzing Entity <CB2CE_MXILINX_cpu_facade> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <CB2CE_MXILINX_cpu_facade> in library <work> (Architecture <behavioral>).
     Set user-defined property "HU_SET =  I_Q0_73" for instance <I_Q0> in unit <CB2CE_MXILINX_cpu_facade>.
     Set user-defined property "HU_SET =  I_Q1_74" for instance <I_Q1> in unit <CB2CE_MXILINX_cpu_facade>.
 Entity <CB2CE_MXILINX_cpu_facade> analyzed. Unit <CB2CE_MXILINX_cpu_facade> generated.
 
-Analyzing generic Entity <FTCE_MXILINX_cpu_facade> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing generic Entity <FTCE_MXILINX_cpu_facade> in library <work> (Architecture <behavioral>).
 	INIT = '0'
     Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_cpu_facade>.
     Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_cpu_facade>.
@@ -667,17 +614,17 @@ WARNING:Xst:753 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu
     Set user-defined property "HU_SET =  XLXI_25_42" for instance <XLXI_25> in unit <stepper_MUSER_cpu_facade>.
 Entity <stepper_MUSER_cpu_facade> analyzed. Unit <stepper_MUSER_cpu_facade> generated.
 
-Analyzing Entity <CB4CE_MXILINX_cpu_facade> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <CB4CE_MXILINX_cpu_facade> in library <work> (Architecture <behavioral>).
     Set user-defined property "HU_SET =  I_Q0_37" for instance <I_Q0> in unit <CB4CE_MXILINX_cpu_facade>.
     Set user-defined property "HU_SET =  I_Q1_38" for instance <I_Q1> in unit <CB4CE_MXILINX_cpu_facade>.
     Set user-defined property "HU_SET =  I_Q2_39" for instance <I_Q2> in unit <CB4CE_MXILINX_cpu_facade>.
     Set user-defined property "HU_SET =  I_Q3_40" for instance <I_Q3> in unit <CB4CE_MXILINX_cpu_facade>.
 Entity <CB4CE_MXILINX_cpu_facade> analyzed. Unit <CB4CE_MXILINX_cpu_facade> generated.
 
-Analyzing Entity <D2_4E_MXILINX_cpu_facade> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <D2_4E_MXILINX_cpu_facade> in library <work> (Architecture <behavioral>).
 Entity <D2_4E_MXILINX_cpu_facade> analyzed. Unit <D2_4E_MXILINX_cpu_facade> generated.
 
-Analyzing Entity <OR6_MXILINX_cpu_facade> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <OR6_MXILINX_cpu_facade> in library <work> (Architecture <behavioral>).
     Set user-defined property "RLOC =  X0Y0" for instance <I_36_106> in unit <OR6_MXILINX_cpu_facade>.
     Set user-defined property "RLOC =  X0Y0" for instance <I_36_107> in unit <OR6_MXILINX_cpu_facade>.
 Entity <OR6_MXILINX_cpu_facade> analyzed. Unit <OR6_MXILINX_cpu_facade> generated.
@@ -693,14 +640,14 @@ Analyzing Entity <pass_through_or_one_MUSER_cpu_facade> in library <work> (Archi
     Set user-defined property "HU_SET =  XLXI_13_89" for instance <XLXI_13> in unit <pass_through_or_one_MUSER_cpu_facade>.
 Entity <pass_through_or_one_MUSER_cpu_facade> analyzed. Unit <pass_through_or_one_MUSER_cpu_facade> generated.
 
-Analyzing Entity <LD4CE_MXILINX_cpu_facade> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <LD4CE_MXILINX_cpu_facade> in library <work> (Architecture <behavioral>).
     Set user-defined property "INIT =  0" for instance <I_Q0> in unit <LD4CE_MXILINX_cpu_facade>.
     Set user-defined property "INIT =  0" for instance <I_Q1> in unit <LD4CE_MXILINX_cpu_facade>.
     Set user-defined property "INIT =  0" for instance <I_Q2> in unit <LD4CE_MXILINX_cpu_facade>.
     Set user-defined property "INIT =  0" for instance <I_Q3> in unit <LD4CE_MXILINX_cpu_facade>.
 Entity <LD4CE_MXILINX_cpu_facade> analyzed. Unit <LD4CE_MXILINX_cpu_facade> generated.
 
-Analyzing Entity <LD8_MXILINX_cpu_facade> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <LD8_MXILINX_cpu_facade> in library <work> (Architecture <behavioral>).
     Set user-defined property "INIT =  0" for instance <I_Q0> in unit <LD8_MXILINX_cpu_facade>.
     Set user-defined property "INIT =  0" for instance <I_Q1> in unit <LD8_MXILINX_cpu_facade>.
     Set user-defined property "INIT =  0" for instance <I_Q2> in unit <LD8_MXILINX_cpu_facade>.
@@ -722,7 +669,7 @@ Analyzing Entity <encoder16_4_MUSER_cpu_facade> in library <work> (Architecture 
     Set user-defined property "HU_SET =  XLXI_59_81" for instance <XLXI_59> in unit <encoder16_4_MUSER_cpu_facade>.
 Entity <encoder16_4_MUSER_cpu_facade> analyzed. Unit <encoder16_4_MUSER_cpu_facade> generated.
 
-Analyzing Entity <AND16_MXILINX_cpu_facade> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <AND16_MXILINX_cpu_facade> in library <work> (Architecture <behavioral>).
     Set user-defined property "RLOC =  X0Y0" for instance <I_36_2> in unit <AND16_MXILINX_cpu_facade>.
     Set user-defined property "RLOC =  X0Y0" for instance <I_36_29> in unit <AND16_MXILINX_cpu_facade>.
     Set user-defined property "RLOC =  X0Y0" for instance <I_36_129> in unit <AND16_MXILINX_cpu_facade>.
@@ -733,13 +680,13 @@ Analyzing Entity <AND16_MXILINX_cpu_facade> in library <work> (Architecture <BEH
     Set user-defined property "RLOC =  X0Y1" for instance <I_36_170> in unit <AND16_MXILINX_cpu_facade>.
 Entity <AND16_MXILINX_cpu_facade> analyzed. Unit <AND16_MXILINX_cpu_facade> generated.
 
-Analyzing Entity <OR8_MXILINX_cpu_facade> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <OR8_MXILINX_cpu_facade> in library <work> (Architecture <behavioral>).
     Set user-defined property "RLOC =  X0Y1" for instance <I_36_91> in unit <OR8_MXILINX_cpu_facade>.
     Set user-defined property "RLOC =  X0Y0" for instance <I_36_116> in unit <OR8_MXILINX_cpu_facade>.
     Set user-defined property "RLOC =  X0Y0" for instance <I_36_117> in unit <OR8_MXILINX_cpu_facade>.
 Entity <OR8_MXILINX_cpu_facade> analyzed. Unit <OR8_MXILINX_cpu_facade> generated.
 
-Analyzing Entity <M2_1_MXILINX_cpu_facade> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <M2_1_MXILINX_cpu_facade> in library <work> (Architecture <behavioral>).
 Entity <M2_1_MXILINX_cpu_facade> analyzed. Unit <M2_1_MXILINX_cpu_facade> generated.
 
 Analyzing Entity <buf_8bit_MUSER_cpu_facade> in library <work> (Architecture <behavioral>).
@@ -762,27 +709,27 @@ WARNING:Xst:753 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu
     Set user-defined property "HU_SET =  XLXI_150_65" for instance <XLXI_150> in unit <freq_divider_MUSER_cpu_facade>.
 Entity <freq_divider_MUSER_cpu_facade> analyzed. Unit <freq_divider_MUSER_cpu_facade> generated.
 
-Analyzing Entity <AND8_MXILINX_cpu_facade> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <AND8_MXILINX_cpu_facade> in library <work> (Architecture <behavioral>).
     Set user-defined property "RLOC =  X0Y0" for instance <I_36_29> in unit <AND8_MXILINX_cpu_facade>.
     Set user-defined property "RLOC =  X0Y0" for instance <I_36_138> in unit <AND8_MXILINX_cpu_facade>.
     Set user-defined property "RLOC =  X0Y1" for instance <I_36_152> in unit <AND8_MXILINX_cpu_facade>.
 Entity <AND8_MXILINX_cpu_facade> analyzed. Unit <AND8_MXILINX_cpu_facade> generated.
 
-Analyzing Entity <M8_1E_MXILINX_cpu_facade> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <M8_1E_MXILINX_cpu_facade> in library <work> (Architecture <behavioral>).
     Set user-defined property "HU_SET =  I_M01_71" for instance <I_M01> in unit <M8_1E_MXILINX_cpu_facade>.
     Set user-defined property "HU_SET =  I_M23_70" for instance <I_M23> in unit <M8_1E_MXILINX_cpu_facade>.
     Set user-defined property "HU_SET =  I_M45_69" for instance <I_M45> in unit <M8_1E_MXILINX_cpu_facade>.
     Set user-defined property "HU_SET =  I_M67_68" for instance <I_M67> in unit <M8_1E_MXILINX_cpu_facade>.
 Entity <M8_1E_MXILINX_cpu_facade> analyzed. Unit <M8_1E_MXILINX_cpu_facade> generated.
 
-Analyzing Entity <M2_1E_MXILINX_cpu_facade> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <M2_1E_MXILINX_cpu_facade> in library <work> (Architecture <behavioral>).
 Entity <M2_1E_MXILINX_cpu_facade> analyzed. Unit <M2_1E_MXILINX_cpu_facade> generated.
 
 Analyzing Entity <encoder8_3_MUSER_cpu_facade> in library <work> (Architecture <behavioral>).
     Set user-defined property "HU_SET =  XLXI_4_67" for instance <XLXI_4> in unit <encoder8_3_MUSER_cpu_facade>.
 Entity <encoder8_3_MUSER_cpu_facade> analyzed. Unit <encoder8_3_MUSER_cpu_facade> generated.
 
-Analyzing Entity <CB16CE_MXILINX_cpu_facade> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <CB16CE_MXILINX_cpu_facade> in library <work> (Architecture <behavioral>).
     Set user-defined property "HU_SET =  I_Q0_20" for instance <I_Q0> in unit <CB16CE_MXILINX_cpu_facade>.
     Set user-defined property "HU_SET =  I_Q1_19" for instance <I_Q1> in unit <CB16CE_MXILINX_cpu_facade>.
     Set user-defined property "HU_SET =  I_Q2_22" for instance <I_Q2> in unit <CB16CE_MXILINX_cpu_facade>.
@@ -814,7 +761,7 @@ WARNING:Xst:753 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu
     Set user-defined property "HU_SET =  XLXI_2_52" for instance <XLXI_2> in unit <cpu_freq_divider_base_MUSER_cpu_facade>.
 Entity <cpu_freq_divider_base_MUSER_cpu_facade> analyzed. Unit <cpu_freq_divider_base_MUSER_cpu_facade> generated.
 
-Analyzing Entity <AND7_MXILINX_cpu_facade> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <AND7_MXILINX_cpu_facade> in library <work> (Architecture <behavioral>).
     Set user-defined property "RLOC =  X0Y0" for instance <I_36_98> in unit <AND7_MXILINX_cpu_facade>.
     Set user-defined property "RLOC =  X0Y0" for instance <I_36_110> in unit <AND7_MXILINX_cpu_facade>.
 Entity <AND7_MXILINX_cpu_facade> analyzed. Unit <AND7_MXILINX_cpu_facade> generated.
@@ -825,7 +772,7 @@ Analyzing Entity <cpu_freq_divider_1Stg_MUSER_cpu_facade> in library <work> (Arc
     Set user-defined property "HU_SET =  XLXI_22_59" for instance <XLXI_22> in unit <cpu_freq_divider_1Stg_MUSER_cpu_facade>.
 Entity <cpu_freq_divider_1Stg_MUSER_cpu_facade> analyzed. Unit <cpu_freq_divider_1Stg_MUSER_cpu_facade> generated.
 
-Analyzing Entity <AND6_MXILINX_cpu_facade> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <AND6_MXILINX_cpu_facade> in library <work> (Architecture <behavioral>).
     Set user-defined property "RLOC =  X0Y0" for instance <I_36_93> in unit <AND6_MXILINX_cpu_facade>.
     Set user-defined property "RLOC =  X0Y0" for instance <I_36_94> in unit <AND6_MXILINX_cpu_facade>.
 Entity <AND6_MXILINX_cpu_facade> analyzed. Unit <AND6_MXILINX_cpu_facade> generated.
@@ -840,7 +787,7 @@ WARNING:Xst:753 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu
     Set user-defined property "HU_SET =  XLXI_15_53" for instance <XLXI_15> in unit <cpu_freq_divider_1KHz_MUSER_cpu_facade>.
 Entity <cpu_freq_divider_1KHz_MUSER_cpu_facade> analyzed. Unit <cpu_freq_divider_1KHz_MUSER_cpu_facade> generated.
 
-Analyzing Entity <INV8_MXILINX_cpu_facade> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <INV8_MXILINX_cpu_facade> in library <work> (Architecture <behavioral>).
 Entity <INV8_MXILINX_cpu_facade> analyzed. Unit <INV8_MXILINX_cpu_facade> generated.
 
 Analyzing Entity <debouncer_MUSER_cpu_facade> in library <work> (Architecture <behavioral>).
@@ -852,7 +799,7 @@ WARNING:Xst:753 - "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu
     Set user-defined property "HU_SET =  XLXI_2_36" for instance <XLXI_2> in unit <debouncer_MUSER_cpu_facade>.
 Entity <debouncer_MUSER_cpu_facade> analyzed. Unit <debouncer_MUSER_cpu_facade> generated.
 
-Analyzing generic Entity <FJKC_MXILINX_cpu_facade> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing generic Entity <FJKC_MXILINX_cpu_facade> in library <work> (Architecture <behavioral>).
 	INIT = '0'
     Set user-defined property "INIT =  0" for instance <I_36_32> in unit <FJKC_MXILINX_cpu_facade>.
     Set user-defined property "RLOC =  X0Y0" for instance <I_36_32> in unit <FJKC_MXILINX_cpu_facade>.
@@ -873,7 +820,7 @@ Analyzing Entity <reg_8bit_MUSER_cpu_facade> in library <work> (Architecture <be
     Set user-defined property "HU_SET =  XLXI_5_18" for instance <XLXI_5> in unit <reg_8bit_MUSER_cpu_facade>.
 Entity <reg_8bit_MUSER_cpu_facade> analyzed. Unit <reg_8bit_MUSER_cpu_facade> generated.
 
-Analyzing Entity <D4_16E_MXILINX_cpu_facade> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <D4_16E_MXILINX_cpu_facade> in library <work> (Architecture <behavioral>).
 Entity <D4_16E_MXILINX_cpu_facade> analyzed. Unit <D4_16E_MXILINX_cpu_facade> generated.
 
 Analyzing Entity <bus_muxer_MUSER_cpu_facade> in library <work> (Architecture <behavioral>).
@@ -887,7 +834,7 @@ Analyzing Entity <bus_muxer_MUSER_cpu_facade> in library <work> (Architecture <b
     Set user-defined property "HU_SET =  XLXI_17_17" for instance <XLXI_17> in unit <bus_muxer_MUSER_cpu_facade>.
 Entity <bus_muxer_MUSER_cpu_facade> analyzed. Unit <bus_muxer_MUSER_cpu_facade> generated.
 
-Analyzing Entity <M16_1E_MXILINX_cpu_facade> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <M16_1E_MXILINX_cpu_facade> in library <work> (Architecture <behavioral>).
     Set user-defined property "HU_SET =  I_MAB_4" for instance <I_MAB> in unit <M16_1E_MXILINX_cpu_facade>.
     Set user-defined property "HU_SET =  I_MCD_3" for instance <I_MCD> in unit <M16_1E_MXILINX_cpu_facade>.
     Set user-defined property "HU_SET =  I_MEF_2" for instance <I_MEF> in unit <M16_1E_MXILINX_cpu_facade>.
@@ -899,7 +846,7 @@ Analyzing Entity <M16_1E_MXILINX_cpu_facade> in library <work> (Architecture <BE
     Set user-defined property "HU_SET =  I_O_1" for instance <I_O> in unit <M16_1E_MXILINX_cpu_facade>.
 Entity <M16_1E_MXILINX_cpu_facade> analyzed. Unit <M16_1E_MXILINX_cpu_facade> generated.
 
-Analyzing Entity <LD8CE_MXILINX_cpu_facade> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <LD8CE_MXILINX_cpu_facade> in library <work> (Architecture <behavioral>).
     Set user-defined property "INIT =  0" for instance <I_Q0> in unit <LD8CE_MXILINX_cpu_facade>.
     Set user-defined property "INIT =  0" for instance <I_Q1> in unit <LD8CE_MXILINX_cpu_facade>.
     Set user-defined property "INIT =  0" for instance <I_Q2> in unit <LD8CE_MXILINX_cpu_facade>.
@@ -4109,13 +4056,13 @@ Delay:               27.875ns (Levels of Logic = 34)
 =========================================================================
 
 
-Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 10.08 secs
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 13.45 secs
  
 --> 
 
 
-Total memory usage is 794020 kilobytes
+Total memory usage is 794056 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  236 (   0 filtered)

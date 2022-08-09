@@ -1528,3 +1528,147 @@ ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq1
 xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.syr" 
 ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
 map -intstyle ise -p xc3s100e-tq144-5 -cm area -detail -ir off -pr off -c 100 -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -detail -ir off -pr off -c 100 -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -detail -ir off -pr off -c 100 -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -detail -ir off -pr off -c 100 -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_facade_map.ncd cpu_facade.ncd cpu_facade.pcf 
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -detail -ir off -pr off -c 100 -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_facade_map.ncd cpu_facade.ncd cpu_facade.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_facade_map.ncd cpu_facade.ncd cpu_facade.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -detail -ir off -pr off -c 100 -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_facade_map.ncd cpu_facade.ncd cpu_facade.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml cpu_facade.twx cpu_facade.ncd -o cpu_facade.twr cpu_facade.pcf -ucf cpu_facade.ucf 
+bitgen -intstyle ise -f cpu_facade.ut cpu_facade.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -detail -ir off -pr off -c 100 -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_facade_map.ncd cpu_facade.ncd cpu_facade.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml cpu_facade.twx cpu_facade.ncd -o cpu_facade.twr cpu_facade.pcf -ucf cpu_facade.ucf 
+bitgen -intstyle ise -f cpu_facade.ut cpu_facade.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -detail -ir off -pr off -c 100 -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_facade_map.ncd cpu_facade.ncd cpu_facade.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml cpu_facade.twx cpu_facade.ncd -o cpu_facade.twr cpu_facade.pcf -ucf cpu_facade.ucf 
+bitgen -intstyle ise -f cpu_facade.ut cpu_facade.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -detail -ir off -pr off -c 100 -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_facade_map.ncd cpu_facade.ncd cpu_facade.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml cpu_facade.twx cpu_facade.ncd -o cpu_facade.twr cpu_facade.pcf -ucf cpu_facade.ucf 
+bitgen -intstyle ise -f cpu_facade.ut cpu_facade.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -detail -ir off -pr off -c 100 -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_facade_map.ncd cpu_facade.ncd cpu_facade.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -detail -ir off -pr off -c 100 -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_facade_map.ncd cpu_facade.ncd cpu_facade.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml cpu_facade.twx cpu_facade.ncd -o cpu_facade.twr cpu_facade.pcf -ucf cpu_facade.ucf 
+bitgen -intstyle ise -f cpu_facade.ut cpu_facade.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -detail -ir off -pr off -c 100 -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_facade_map.ncd cpu_facade.ncd cpu_facade.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml cpu_facade.twx cpu_facade.ncd -o cpu_facade.twr cpu_facade.pcf -ucf cpu_facade.ucf 
+bitgen -intstyle ise -f cpu_facade.ut cpu_facade.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -detail -ir off -pr off -c 100 -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_facade_map.ncd cpu_facade.ncd cpu_facade.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml cpu_facade.twx cpu_facade.ncd -o cpu_facade.twr cpu_facade.pcf -ucf cpu_facade.ucf 
+bitgen -intstyle ise -f cpu_facade.ut cpu_facade.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -detail -ir off -pr off -c 100 -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_facade_map.ncd cpu_facade.ncd cpu_facade.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml cpu_facade.twx cpu_facade.ncd -o cpu_facade.twr cpu_facade.pcf -ucf cpu_facade.ucf 
+bitgen -intstyle ise -f cpu_facade.ut cpu_facade.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -detail -ir off -pr off -c 100 -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_facade_map.ncd cpu_facade.ncd cpu_facade.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml cpu_facade.twx cpu_facade.ncd -o cpu_facade.twr cpu_facade.pcf -ucf cpu_facade.ucf 
+bitgen -intstyle ise -f cpu_facade.ut cpu_facade.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -detail -ir off -pr off -c 100 -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_facade_map.ncd cpu_facade.ncd cpu_facade.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -detail -ir off -pr off -c 100 -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_facade_map.ncd cpu_facade.ncd cpu_facade.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml cpu_facade.twx cpu_facade.ncd -o cpu_facade.twr cpu_facade.pcf -ucf cpu_facade.ucf 
+bitgen -intstyle ise -f cpu_facade.ut cpu_facade.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -detail -ir off -pr off -c 100 -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_facade_map.ncd cpu_facade.ncd cpu_facade.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml cpu_facade.twx cpu_facade.ncd -o cpu_facade.twr cpu_facade.pcf -ucf cpu_facade.ucf 
+bitgen -intstyle ise -f cpu_facade.ut cpu_facade.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -detail -ir off -pr off -c 100 -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_facade_map.ncd cpu_facade.ncd cpu_facade.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -detail -ir off -pr off -c 100 -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -detail -ir off -pr off -c 100 -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -detail -ir off -pr off -c 100 -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -detail -ir off -pr off -c 100 -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -detail -ir off -pr off -c 100 -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -detail -ir off -pr off -c 100 -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -detail -ir off -pr off -c 100 -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -detail -ir off -pr off -c 100 -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -detail -ir off -pr off -c 100 -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -detail -ir off -pr off -c 100 -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -detail -ir off -pr off -c 100 -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -detail -ir off -pr off -c 100 -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -detail -ir off -pr off -c 100 -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_facade_map.ncd cpu_facade.ncd cpu_facade.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml cpu_facade.twx cpu_facade.ncd -o cpu_facade.twr cpu_facade.pcf -ucf cpu_facade.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -detail -ir off -pr off -c 100 -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -detail -ir off -pr off -c 100 -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_facade_map.ncd cpu_facade.ncd cpu_facade.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml cpu_facade.twx cpu_facade.ncd -o cpu_facade.twr cpu_facade.pcf -ucf cpu_facade.ucf 
+bitgen -intstyle ise -f cpu_facade.ut cpu_facade.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -detail -ir off -pr off -c 100 -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_facade_map.ncd cpu_facade.ncd cpu_facade.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml cpu_facade.twx cpu_facade.ncd -o cpu_facade.twr cpu_facade.pcf -ucf cpu_facade.ucf 
+bitgen -intstyle ise -f cpu_facade.ut cpu_facade.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -detail -ir off -pr off -c 100 -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -detail -ir off -pr off -c 100 -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_facade_map.ncd cpu_facade.ncd cpu_facade.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml cpu_facade.twx cpu_facade.ncd -o cpu_facade.twr cpu_facade.pcf -ucf cpu_facade.ucf 
+bitgen -intstyle ise -f cpu_facade.ut cpu_facade.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -detail -ir off -pr off -c 100 -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_facade_map.ncd cpu_facade.ncd cpu_facade.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml cpu_facade.twx cpu_facade.ncd -o cpu_facade.twr cpu_facade.pcf -ucf cpu_facade.ucf 
+pin2ucf cpu_facade.ncd -o /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/led_control.ucf -r cpu_facade.lck 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -uc led_control.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -uc led_control.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -uc led_control.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -uc led_control.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+xst -intstyle ise -ifn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.xst" -ofn "/home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -uc led_control.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu_facade.ucf -p xc3s100e-tq144-5 cpu_facade.ngc cpu_facade.ngd  
+map -intstyle ise -p xc3s100e-tq144-5 -cm area -detail -ir off -pr off -c 100 -o cpu_facade_map.ncd cpu_facade.ngd cpu_facade.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_facade_map.ncd cpu_facade.ncd cpu_facade.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml cpu_facade.twx cpu_facade.ncd -o cpu_facade.twr cpu_facade.pcf -ucf cpu_facade.ucf 
+bitgen -intstyle ise -f cpu_facade.ut cpu_facade.ncd 

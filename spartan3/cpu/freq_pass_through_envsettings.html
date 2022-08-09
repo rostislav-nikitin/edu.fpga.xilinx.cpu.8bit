@@ -17,22 +17,22 @@
 <td>LD_LIBRARY_PATH</td>
 <td>/opt/Xilinx/14.3/ISE_DS/ISE//lib/lin64</td>
 <td>/opt/Xilinx/14.3/ISE_DS/ISE//lib/lin64</td>
-<td><font color=gray>/opt/Xilinx/14.3/ISE_DS/ISE//lib/lin64</font></td>
-<td><font color=gray>/opt/Xilinx/14.3/ISE_DS/ISE//lib/lin64</font></td>
+<td>/opt/Xilinx/14.3/ISE_DS/ISE//lib/lin64</td>
+<td>/opt/Xilinx/14.3/ISE_DS/ISE//lib/lin64</td>
 </tr>
 <tr>
 <td>PATH</td>
 <td>/opt/Xilinx/14.3/ISE_DS/ISE//bin/lin64:<br>/home/s0lid/.local/bin:<br>/home/s0lid/bin:<br>/usr/local/bin:<br>/usr/local/sbin:<br>/usr/bin:<br>/usr/sbin:<br>/var/lib/snapd/snap/bin:<br>/home/s0lid/.dotnet/tools</td>
 <td>/opt/Xilinx/14.3/ISE_DS/ISE//bin/lin64:<br>/home/s0lid/.local/bin:<br>/home/s0lid/bin:<br>/usr/local/bin:<br>/usr/local/sbin:<br>/usr/bin:<br>/usr/sbin:<br>/var/lib/snapd/snap/bin:<br>/home/s0lid/.dotnet/tools</td>
-<td><font color=gray>/opt/Xilinx/14.3/ISE_DS/ISE//bin/lin64:<br>/home/s0lid/.local/bin:<br>/home/s0lid/bin:<br>/usr/local/bin:<br>/usr/local/sbin:<br>/usr/bin:<br>/usr/sbin:<br>/var/lib/snapd/snap/bin:<br>/home/s0lid/.dotnet/tools</font></td>
-<td><font color=gray>/opt/Xilinx/14.3/ISE_DS/ISE//bin/lin64:<br>/home/s0lid/.local/bin:<br>/home/s0lid/bin:<br>/usr/local/bin:<br>/usr/local/sbin:<br>/usr/bin:<br>/usr/sbin:<br>/var/lib/snapd/snap/bin:<br>/home/s0lid/.dotnet/tools</font></td>
+<td>/opt/Xilinx/14.3/ISE_DS/ISE//bin/lin64:<br>/home/s0lid/.local/bin:<br>/home/s0lid/bin:<br>/usr/local/bin:<br>/usr/local/sbin:<br>/usr/bin:<br>/usr/sbin:<br>/var/lib/snapd/snap/bin:<br>/home/s0lid/.dotnet/tools</td>
+<td>/opt/Xilinx/14.3/ISE_DS/ISE//bin/lin64:<br>/home/s0lid/.local/bin:<br>/home/s0lid/bin:<br>/usr/local/bin:<br>/usr/local/sbin:<br>/usr/bin:<br>/usr/sbin:<br>/var/lib/snapd/snap/bin:<br>/home/s0lid/.dotnet/tools</td>
 </tr>
 <tr>
 <td>XILINX</td>
 <td>/opt/Xilinx/14.3/ISE_DS/ISE/</td>
 <td>/opt/Xilinx/14.3/ISE_DS/ISE/</td>
-<td><font color=gray>/opt/Xilinx/14.3/ISE_DS/ISE/</font></td>
-<td><font color=gray>/opt/Xilinx/14.3/ISE_DS/ISE/</font></td>
+<td>/opt/Xilinx/14.3/ISE_DS/ISE/</td>
+<td>/opt/Xilinx/14.3/ISE_DS/ISE/</td>
 </tr>
 </TABLE>
 <A NAME="Synthesis Property Settings"></A>
@@ -241,7 +241,7 @@
 <tr>
 <td>-mult_style</td>
 <td>&nbsp;</td>
-<td>Auto</td>
+<td>LUT</td>
 <td>AUTO</td>
 </tr>
 <tr>
@@ -253,13 +253,13 @@
 <tr>
 <td>-max_fanout</td>
 <td>&nbsp;</td>
-<td>500</td>
+<td>100000</td>
 <td>500</td>
 </tr>
 <tr>
 <td>-bufg</td>
 <td>&nbsp;</td>
-<td>24</td>
+<td>16</td>
 <td>24</td>
 </tr>
 <tr>
@@ -283,19 +283,19 @@
 <tr>
 <td>-use_clock_enable</td>
 <td>&nbsp;</td>
-<td>Yes</td>
+<td>Auto</td>
 <td>YES</td>
 </tr>
 <tr>
 <td>-use_sync_set</td>
 <td>&nbsp;</td>
-<td>Yes</td>
+<td>Auto</td>
 <td>YES</td>
 </tr>
 <tr>
 <td>-use_sync_reset</td>
 <td>&nbsp;</td>
-<td>Yes</td>
+<td>Auto</td>
 <td>YES</td>
 </tr>
 <tr>
@@ -365,76 +365,46 @@
 <td><b>Default Value</b></td>
 </tr>
 <tr>
-<td><font color=gray>-detail</font></td>
-<td><font color=gray>Generate Detailed MAP Report</font></td>
-<td><font color=gray>TRUE</font></td>
-<td><font color=gray>TRUE</font></td>
+<td>-detail</td>
+<td>Generate Detailed MAP Report</td>
+<td>TRUE</td>
+<td>TRUE</td>
 </tr>
 <tr>
-<td><font color=gray>-ol</font></td>
-<td><font color=gray>Place & Route Effort Level (Overall)</font></td>
-<td><font color=gray>high</font></td>
-<td><font color=gray>high</font></td>
+<td>-ir</td>
+<td>Use RLOC Constraints</td>
+<td>OFF</td>
+<td>OFF</td>
 </tr>
 <tr>
-<td><font color=gray>-xt</font></td>
-<td><font color=gray>Extra Cost Tables</font></td>
-<td><font color=gray>0</font></td>
-<td><font color=gray>0</font></td>
+<td>-cm</td>
+<td>Optimization Strategy (Cover Mode)</td>
+<td>area</td>
+<td>area</td>
 </tr>
 <tr>
-<td><font color=gray>-ir</font></td>
-<td><font color=gray>Use RLOC Constraints</font></td>
-<td><font color=gray>OFF</font></td>
-<td><font color=gray>OFF</font></td>
+<td>-intstyle</td>
+<td>&nbsp;</td>
+<td>ise</td>
+<td>None</td>
 </tr>
 <tr>
-<td><font color=gray>-t</font></td>
-<td><font color=gray>Starting Placer Cost Table (1-100) Map</font></td>
-<td><font color=gray>1</font></td>
-<td><font color=gray>0</font></td>
+<td>-o</td>
+<td>&nbsp;</td>
+<td>cpu_facade_map.ncd</td>
+<td>None</td>
 </tr>
 <tr>
-<td><font color=gray>-r</font></td>
-<td><font color=gray>Register Ordering</font></td>
-<td><font color=gray>4</font></td>
-<td><font color=gray>4</font></td>
+<td>-pr</td>
+<td>Pack I/O Registers/Latches into IOBs</td>
+<td>off</td>
+<td>off</td>
 </tr>
 <tr>
-<td><font color=gray>-intstyle</font></td>
-<td><font color=gray>&nbsp;</font></td>
-<td><font color=gray>ise</font></td>
-<td><font color=gray>None</font></td>
-</tr>
-<tr>
-<td><font color=gray>-lc</font></td>
-<td><font color=gray>LUT Combining</font></td>
-<td><font color=gray>off</font></td>
-<td><font color=gray>off</font></td>
-</tr>
-<tr>
-<td><font color=gray>-o</font></td>
-<td><font color=gray>&nbsp;</font></td>
-<td><font color=gray>cpu_facade_map.ncd</font></td>
-<td><font color=gray>None</font></td>
-</tr>
-<tr>
-<td><font color=gray>-w</font></td>
-<td><font color=gray>&nbsp;</font></td>
-<td><font color=gray>true</font></td>
-<td><font color=gray>false</font></td>
-</tr>
-<tr>
-<td><font color=gray>-pr</font></td>
-<td><font color=gray>Pack I/O Registers/Latches into IOBs</font></td>
-<td><font color=gray>off</font></td>
-<td><font color=gray>off</font></td>
-</tr>
-<tr>
-<td><font color=gray>-p</font></td>
-<td><font color=gray>&nbsp;</font></td>
-<td><font color=gray>xa6slx9-ftg256-3</font></td>
-<td><font color=gray>None</font></td>
+<td>-p</td>
+<td>&nbsp;</td>
+<td>xc3s100e-tq144-5</td>
+<td>None</td>
 </tr>
 </TABLE>
 <A NAME="Place and Route Property Settings"></A>
@@ -449,28 +419,28 @@
 <td><b>Default Value</b></td>
 </tr>
 <tr>
-<td><font color=gray>-intstyle</font></td>
-<td><font color=gray>&nbsp;</font></td>
-<td><font color=gray>ise</font></td>
-<td><font color=gray>&nbsp;</font></td>
+<td>-t</td>
+<td>&nbsp;</td>
+<td>1</td>
+<td>1</td>
 </tr>
 <tr>
-<td><font color=gray>-mt</font></td>
-<td><font color=gray>Enable Multi-Threading</font></td>
-<td><font color=gray>off</font></td>
-<td><font color=gray>off</font></td>
+<td>-intstyle</td>
+<td>&nbsp;</td>
+<td>ise</td>
+<td>&nbsp;</td>
 </tr>
 <tr>
-<td><font color=gray>-ol</font></td>
-<td><font color=gray>Place & Route Effort Level (Overall)</font></td>
-<td><font color=gray>high</font></td>
-<td><font color=gray>std</font></td>
+<td>-ol</td>
+<td>Place & Route Effort Level (Overall)</td>
+<td>high</td>
+<td>std</td>
 </tr>
 <tr>
-<td><font color=gray>-w</font></td>
-<td><font color=gray>&nbsp;</font></td>
-<td><font color=gray>true</font></td>
-<td><font color=gray>false</font></td>
+<td>-w</td>
+<td>&nbsp;</td>
+<td>true</td>
+<td>false</td>
 </tr>
 </TABLE>
 <A NAME="Operating System Information"></A>
@@ -487,31 +457,31 @@
 </tr>
 <tr>
 <td>CPU Architecture/Speed</td>
-<td>Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz/3200.000 MHz</td>
-<td>Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz/3300.000 MHz</td>
-<td><font color=gray>Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz/2200.000 MHz</font></td>
-<td><font color=gray>Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz/2200.000 MHz</font></td>
+<td>Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz/3400.000 MHz</td>
+<td>Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz/3400.000 MHz</td>
+<td>Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz/2400.000 MHz</td>
+<td>Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz/2413.400 MHz</td>
 </tr>
 <tr>
 <td>Host</td>
 <td>fedora</td>
 <td>fedora</td>
-<td><font color=gray>fedora</font></td>
-<td><font color=gray>fedora</font></td>
+<td>fedora</td>
+<td>fedora</td>
 </tr>
 <tr>
 <td>OS Name</td>
 <td>Fedora</td>
 <td>Fedora</td>
-<td><font color=gray>Fedora</font></td>
-<td><font color=gray>Fedora</font></td>
+<td>Fedora</td>
+<td>Fedora</td>
 </tr>
 <tr>
 <td>OS Release</td>
 <td>Fedora release 34 (Thirty Four)</td>
 <td>Fedora release 34 (Thirty Four)</td>
-<td><font color=gray>Fedora release 34 (Thirty Four)</font></td>
-<td><font color=gray>Fedora release 34 (Thirty Four)</font></td>
+<td>Fedora release 34 (Thirty Four)</td>
+<td>Fedora release 34 (Thirty Four)</td>
 </tr>
 </TABLE>
 </BODY> </HTML>
