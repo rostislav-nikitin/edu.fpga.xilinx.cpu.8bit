@@ -1,7 +1,7 @@
 Release 14.3 par P.40xd (lin64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-fedora::  Tue Aug 09 02:31:07 2022
+fedora::  Mon Aug 15 01:21:26 2022
 
 par -w -intstyle ise -ol high -t 1 cpu_facade_map.ncd cpu_facade.ncd
 cpu_facade.pcf 
@@ -57,47 +57,47 @@ Total REAL time at the beginning of Placer: 1 secs
 Total CPU  time at the beginning of Placer: 1 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:19e0e168) REAL time: 1 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:f54014d5) REAL time: 1 secs 
 
 Phase 2.7  Design Feasibility Check
 INFO:Place:834 - Only a subset of IOs are locked. Out of 53 IOs, 45 are locked and 8 are not locked. If you would like
    to print the names of these IOs, please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
-Phase 2.7  Design Feasibility Check (Checksum:19e0e168) REAL time: 1 secs 
+Phase 2.7  Design Feasibility Check (Checksum:f54014d5) REAL time: 1 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:19e0e168) REAL time: 1 secs 
+Phase 3.31  Local Placement Optimization (Checksum:f54014d5) REAL time: 1 secs 
 
 Phase 4.2  Initial Clock and IO Placement
-...
-Phase 4.2  Initial Clock and IO Placement (Checksum:2546f2e5) REAL time: 1 secs 
+.......
+Phase 4.2  Initial Clock and IO Placement (Checksum:a62652) REAL time: 1 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:2546f2e5) REAL time: 1 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:a62652) REAL time: 1 secs 
 
 Phase 6.36  Local Placement Optimization
-Phase 6.36  Local Placement Optimization (Checksum:2546f2e5) REAL time: 1 secs 
+Phase 6.36  Local Placement Optimization (Checksum:a62652) REAL time: 1 secs 
 
 Phase 7.3  Local Placement Optimization
-...
-Phase 7.3  Local Placement Optimization (Checksum:8eab95a1) REAL time: 2 secs 
+........
+Phase 7.3  Local Placement Optimization (Checksum:6123e904) REAL time: 2 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:8eab95a1) REAL time: 2 secs 
+Phase 8.5  Local Placement Optimization (Checksum:6123e904) REAL time: 2 secs 
 
 Phase 9.8  Global Placement
-.................................
-..............................
-.........
-Phase 9.8  Global Placement (Checksum:82400b2d) REAL time: 3 secs 
+.........................................
+..................................
+...........
+Phase 9.8  Global Placement (Checksum:4ed794a8) REAL time: 3 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:82400b2d) REAL time: 3 secs 
+Phase 10.5  Local Placement Optimization (Checksum:4ed794a8) REAL time: 3 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:1d457192) REAL time: 3 secs 
+Phase 11.18  Placement Optimization (Checksum:d0ffc5e9) REAL time: 3 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:1d457192) REAL time: 3 secs 
+Phase 12.5  Local Placement Optimization (Checksum:d0ffc5e9) REAL time: 3 secs 
 
 Total REAL time to Placer completion: 3 secs 
 Total CPU  time to Placer completion: 3 secs 
@@ -110,13 +110,13 @@ Starting Router
 
 Phase  1  : 2058 unrouted;      REAL time: 4 secs 
 
-Phase  2  : 1880 unrouted;      REAL time: 4 secs 
+Phase  2  : 1891 unrouted;      REAL time: 4 secs 
 
-Phase  3  : 296 unrouted;      REAL time: 4 secs 
+Phase  3  : 323 unrouted;      REAL time: 4 secs 
 
-Phase  4  : 296 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 5 secs 
+Phase  4  : 323 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 4 secs 
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 5 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 4 secs 
 
 Updating file: cpu_facade.ncd with current fully routed design.
 
@@ -128,9 +128,9 @@ Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL 
 WARNING:Route:455 - CLK Net:XLXI_7/clkr may have excessive skew because 
       1 CLK pins and 11 NON_CLK pins failed to route using a CLK template.
 WARNING:Route:455 - CLK Net:XLXI_7/clk_internal may have excessive skew because 
-      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 WARNING:Route:455 - CLK Net:XLXI_7/clkc may have excessive skew because 
-      0 CLK pins and 4 NON_CLK pins failed to route using a CLK template.
+      2 CLK pins and 4 NON_CLK pins failed to route using a CLK template.
 WARNING:Route:455 - CLK Net:XLXI_7/XLXI_937/half_period_tick may have excessive skew because 
       1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 WARNING:Route:455 - CLK Net:XLXI_7/ram_a_w may have excessive skew because 
@@ -138,7 +138,7 @@ WARNING:Route:455 - CLK Net:XLXI_7/ram_a_w may have excessive skew because
 WARNING:Route:455 - CLK Net:XLXI_7/acc_w may have excessive skew because 
       0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 WARNING:Route:455 - CLK Net:XLXI_7/temp_w may have excessive skew because 
-      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+      3 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 WARNING:Route:455 - CLK Net:XLXI_7/iar_w may have excessive skew because 
       0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 WARNING:Route:455 - CLK Net:XLXI_7/r0_w may have excessive skew because 
@@ -148,11 +148,11 @@ WARNING:Route:455 - CLK Net:XLXI_7/r1_w may have excessive skew because
 WARNING:Route:455 - CLK Net:XLXI_7/r2_w may have excessive skew because 
       0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 WARNING:Route:455 - CLK Net:XLXI_7/r3_w may have excessive skew because 
-      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 WARNING:Route:455 - CLK Net:XLXI_7/cc_flags_w may have excessive skew because 
       0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 WARNING:Route:455 - CLK Net:XLXI_105/XLXI_2/usart_clk may have excessive skew because 
-      2 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+      9 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
 WARNING:Route:455 - CLK Net:port_one_w may have excessive skew because 
       0 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
 WARNING:Route:455 - CLK Net:XLXI_7/cc_r0_w may have excessive skew because 
@@ -183,54 +183,54 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|         in_clk_IBUF |  BUFGMUX_X2Y1| No   |  111 |  0.021     |  0.054      |
+|         in_clk_IBUF |  BUFGMUX_X2Y1| No   |  111 |  0.028     |  0.063      |
 +---------------------+--------------+------+------+------------+-------------+
-|         XLXI_7/clkr |         Local|      |   12 |  0.000     |  0.785      |
+|         XLXI_7/clkr |         Local|      |   12 |  0.000     |  1.373      |
 +---------------------+--------------+------+------+------------+-------------+
 |XLXI_7/XLXI_931/high |              |      |      |            |             |
-|                 <3> |         Local|      |    3 |  0.000     |  1.049      |
+|                 <3> |         Local|      |    3 |  0.000     |  0.588      |
 +---------------------+--------------+------+------+------------+-------------+
-| XLXI_7/clk_internal |         Local|      |    3 |  0.000     |  0.763      |
+| XLXI_7/clk_internal |         Local|      |    3 |  0.004     |  1.277      |
 +---------------------+--------------+------+------+------------+-------------+
-|         XLXI_7/clkc |         Local|      |    7 |  0.000     |  1.476      |
+|         XLXI_7/clkc |         Local|      |    7 |  0.640     |  1.384      |
 +---------------------+--------------+------+------+------------+-------------+
 |XLXI_7/XLXI_926/half |              |      |      |            |             |
-|        _period_tick |         Local|      |    1 |  0.000     |  0.469      |
+|        _period_tick |         Local|      |    1 |  0.000     |  1.031      |
 +---------------------+--------------+------+------+------------+-------------+
-|      XLXI_51/db2<7> |         Local|      |    2 |  0.000     |  0.801      |
+|      XLXI_51/db2<7> |         Local|      |    2 |  0.000     |  0.820      |
 +---------------------+--------------+------+------+------------+-------------+
 |XLXI_7/XLXI_927/half |              |      |      |            |             |
-|        _period_tick |         Local|      |    1 |  0.000     |  0.246      |
+|        _period_tick |         Local|      |    1 |  0.000     |  0.979      |
 +---------------------+--------------+------+------+------------+-------------+
 |XLXI_7/XLXI_937/half |              |      |      |            |             |
-|        _period_tick |         Local|      |    2 |  0.000     |  0.953      |
+|        _period_tick |         Local|      |    2 |  0.000     |  0.760      |
 +---------------------+--------------+------+------+------------+-------------+
-|      XLXI_7/ram_a_w |         Local|      |    7 |  0.145     |  1.648      |
+|      XLXI_7/ram_a_w |         Local|      |    7 |  0.180     |  1.606      |
 +---------------------+--------------+------+------+------------+-------------+
-|        XLXI_7/acc_w |         Local|      |    9 |  0.225     |  1.728      |
+|        XLXI_7/acc_w |         Local|      |    9 |  0.503     |  1.924      |
 +---------------------+--------------+------+------+------------+-------------+
-|       XLXI_7/temp_w |         Local|      |    5 |  0.168     |  1.647      |
+|       XLXI_7/temp_w |         Local|      |    5 |  0.558     |  2.086      |
 +---------------------+--------------+------+------+------------+-------------+
-|        XLXI_7/iar_w |         Local|      |    5 |  0.189     |  1.695      |
+|        XLXI_7/iar_w |         Local|      |    5 |  0.151     |  1.605      |
 +---------------------+--------------+------+------+------------+-------------+
-|         XLXI_7/r0_w |         Local|      |    5 |  0.193     |  1.703      |
+|         XLXI_7/r0_w |         Local|      |    5 |  0.187     |  1.703      |
 +---------------------+--------------+------+------+------------+-------------+
-|         XLXI_7/r1_w |         Local|      |    5 |  0.181     |  1.672      |
+|         XLXI_7/r1_w |         Local|      |    5 |  0.211     |  1.728      |
 +---------------------+--------------+------+------+------------+-------------+
-|         XLXI_7/r2_w |         Local|      |    5 |  0.232     |  1.726      |
+|         XLXI_7/r2_w |         Local|      |    5 |  0.075     |  1.543      |
 +---------------------+--------------+------+------+------------+-------------+
-|         XLXI_7/r3_w |         Local|      |    5 |  0.177     |  1.873      |
+|         XLXI_7/r3_w |         Local|      |    5 |  0.191     |  1.523      |
 +---------------------+--------------+------+------+------------+-------------+
-|   XLXI_7/cc_flags_w |         Local|      |    4 |  0.143     |  1.624      |
+|   XLXI_7/cc_flags_w |         Local|      |    4 |  0.006     |  1.668      |
 +---------------------+--------------+------+------+------------+-------------+
 |XLXI_105/XLXI_2/usar |              |      |      |            |             |
-|               t_clk |         Local|      |    9 |  0.731     |  1.603      |
+|               t_clk |         Local|      |    9 |  0.695     |  1.314      |
 +---------------------+--------------+------+------+------------+-------------+
-|          port_one_w |         Local|      |    9 |  0.334     |  1.778      |
+|          port_one_w |         Local|      |    9 |  0.040     |  1.264      |
 +---------------------+--------------+------+------+------------+-------------+
-|      XLXI_7/cc_r0_w |         Local|      |    9 |  0.484     |  2.048      |
+|      XLXI_7/cc_r0_w |         Local|      |    9 |  0.708     |  2.279      |
 +---------------------+--------------+------+------+------------+-------------+
-|      XLXI_7/cc_ir_w |         Local|      |    5 |  0.036     |  1.672      |
+|      XLXI_7/cc_ir_w |         Local|      |    5 |  0.223     |  1.737      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -250,7 +250,7 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_ | SETUP       |    11.631ns|     8.369ns|       0|           0
+  TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_ | SETUP       |    11.301ns|     8.699ns|       0|           0
   pin" 50 MHz HIGH 50%                      | HOLD        |     0.892ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 

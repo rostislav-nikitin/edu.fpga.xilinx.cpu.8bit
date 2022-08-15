@@ -1,4 +1,4 @@
-V3 618
+V3 616
 FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/alu.vhf 2022/04/08.21:49:45 P.40xd
 FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/alu_output_muxer.vhf 2022/04/07.05:54:05 P.40xd
 FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/buf_8bit.vhf 2022/04/22.02:06:37 P.40xd
@@ -40,485 +40,485 @@ FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/ram_256bytes.vhf 2022/04/07.
 FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/reg_8bit.vhf 2022/04/09.02:00:09 P.40xd
 FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/cpu/stepper.vhf 2022/03/30.23:59:50 P.40xd
 FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/alu.vhf 2022/06/28.04:21:44 P.40xd
-EN work/ADD8_HXILINX_alu 1660001574 \
+EN work/ADD8_HXILINX_alu 1660515864 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/alu.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/std_logic_arith 1350103244 \
       PB ieee/STD_LOGIC_UNSIGNED 1350103247
-AR work/ADD8_HXILINX_alu/ADD8_HXILINX_alu_V 1660001575 \
+AR work/ADD8_HXILINX_alu/ADD8_HXILINX_alu_V 1660515865 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/alu.vhf \
-      EN work/ADD8_HXILINX_alu 1660001574
-EN work/NOR8_HXILINX_alu 1660001576 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/alu.vhf \
-      PB ieee/std_logic_1164 1350103243
-AR work/NOR8_HXILINX_alu/NOR8_HXILINX_alu_V 1660001577 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/alu.vhf \
-      EN work/NOR8_HXILINX_alu 1660001576
-EN work/INV8_HXILINX_alu 1660001578 \
+      EN work/ADD8_HXILINX_alu 1660515864
+EN work/NOR8_HXILINX_alu 1660515866 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/alu.vhf \
       PB ieee/std_logic_1164 1350103243
-AR work/INV8_HXILINX_alu/INV8_HXILINX_alu_V 1660001579 \
+AR work/NOR8_HXILINX_alu/NOR8_HXILINX_alu_V 1660515867 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/alu.vhf \
-      EN work/INV8_HXILINX_alu 1660001578
-EN work/D3_8E_HXILINX_alu 1660001580 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/alu.vhf \
-      PB ieee/std_logic_1164 1350103243
-AR work/D3_8E_HXILINX_alu/D3_8E_HXILINX_alu_V 1660001581 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/alu.vhf \
-      EN work/D3_8E_HXILINX_alu 1660001580
-EN work/M16_1E_HXILINX_alu 1660001582 \
+      EN work/NOR8_HXILINX_alu 1660515866
+EN work/INV8_HXILINX_alu 1660515868 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/alu.vhf \
       PB ieee/std_logic_1164 1350103243
-AR work/M16_1E_HXILINX_alu/M16_1E_HXILINX_alu_V 1660001583 \
+AR work/INV8_HXILINX_alu/INV8_HXILINX_alu_V 1660515869 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/alu.vhf \
-      EN work/M16_1E_HXILINX_alu 1660001582
-EN work/bus_muxer_MUSER_alu 1660001584 \
+      EN work/INV8_HXILINX_alu 1660515868
+EN work/D3_8E_HXILINX_alu 1660515870 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/alu.vhf \
+      PB ieee/std_logic_1164 1350103243
+AR work/D3_8E_HXILINX_alu/D3_8E_HXILINX_alu_V 1660515871 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/alu.vhf \
+      EN work/D3_8E_HXILINX_alu 1660515870
+EN work/M16_1E_HXILINX_alu 1660515872 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/alu.vhf \
+      PB ieee/std_logic_1164 1350103243
+AR work/M16_1E_HXILINX_alu/M16_1E_HXILINX_alu_V 1660515873 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/alu.vhf \
+      EN work/M16_1E_HXILINX_alu 1660515872
+EN work/bus_muxer_MUSER_alu 1660515874 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/alu.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/bus_muxer_MUSER_alu/BEHAVIORAL 1660001585 \
+AR work/bus_muxer_MUSER_alu/BEHAVIORAL 1660515875 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/alu.vhf \
-      EN work/bus_muxer_MUSER_alu 1660001584 CP M16_1E_HXILINX_alu CP BUF
-EN work/alu_output_muxer_MUSER_alu 1660001586 \
+      EN work/bus_muxer_MUSER_alu 1660515874 CP M16_1E_HXILINX_alu CP BUF
+EN work/alu_output_muxer_MUSER_alu 1660515876 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/alu.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/alu_output_muxer_MUSER_alu/BEHAVIORAL 1660001587 \
+AR work/alu_output_muxer_MUSER_alu/BEHAVIORAL 1660515877 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/alu.vhf \
-      EN work/alu_output_muxer_MUSER_alu 1660001586 CP BUF CP bus_muxer_MUSER_alu \
+      EN work/alu_output_muxer_MUSER_alu 1660515876 CP BUF CP bus_muxer_MUSER_alu \
       CP GND CP VCC
-EN work/lzero_MUSER_alu 1660001588 \
+EN work/lzero_MUSER_alu 1660515878 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/alu.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/lzero_MUSER_alu/BEHAVIORAL 1660001589 \
+AR work/lzero_MUSER_alu/BEHAVIORAL 1660515879 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/alu.vhf \
-      EN work/lzero_MUSER_alu 1660001588 CP NOR8_HXILINX_alu
-EN work/cmp_1bit_MUSER_alu 1660001590 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/alu.vhf \
-      PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
-      PH unisim/VCOMPONENTS 1350103252
-AR work/cmp_1bit_MUSER_alu/BEHAVIORAL 1660001591 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/alu.vhf \
-      EN work/cmp_1bit_MUSER_alu 1660001590 CP XNOR2 CP AND2 CP OR2 CP INV
-EN work/cmp_8bit_MUSER_alu 1660001592 \
+      EN work/lzero_MUSER_alu 1660515878 CP NOR8_HXILINX_alu
+EN work/cmp_1bit_MUSER_alu 1660515880 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/alu.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/cmp_8bit_MUSER_alu/BEHAVIORAL 1660001593 \
+AR work/cmp_1bit_MUSER_alu/BEHAVIORAL 1660515881 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/alu.vhf \
-      EN work/cmp_8bit_MUSER_alu 1660001592 CP cmp_1bit_MUSER_alu CP PULLUP \
+      EN work/cmp_1bit_MUSER_alu 1660515880 CP XNOR2 CP AND2 CP OR2 CP INV
+EN work/cmp_8bit_MUSER_alu 1660515882 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/alu.vhf \
+      PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
+      PH unisim/VCOMPONENTS 1350103252
+AR work/cmp_8bit_MUSER_alu/BEHAVIORAL 1660515883 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/alu.vhf \
+      EN work/cmp_8bit_MUSER_alu 1660515882 CP cmp_1bit_MUSER_alu CP PULLUP \
       CP PULLDOWN
-EN work/alu 1660001594 \
+EN work/alu 1660515884 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/alu.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/alu/BEHAVIORAL 1660001595 \
+AR work/alu/BEHAVIORAL 1660515885 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/alu.vhf \
-      EN work/alu 1660001594 CP D3_8E_HXILINX_alu CP ADD8_HXILINX_alu CP BUF CP VCC \
+      EN work/alu 1660515884 CP D3_8E_HXILINX_alu CP ADD8_HXILINX_alu CP BUF CP VCC \
       CP AND2 CP OR3 CP INV8_HXILINX_alu CP OR2 CP cmp_8bit_MUSER_alu \
       CP lzero_MUSER_alu CP alu_output_muxer_MUSER_alu
 FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/alu_output_muxer.vhf 2022/06/28.04:21:45 P.40xd
-EN work/M16_1E_HXILINX_alu_output_muxer 1660001690 \
+EN work/M16_1E_HXILINX_alu_output_muxer 1660515980 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/alu_output_muxer.vhf \
       PB ieee/std_logic_1164 1350103243
-AR work/M16_1E_HXILINX_alu_output_muxer/M16_1E_HXILINX_alu_output_muxer_V 1660001691 \
+AR work/M16_1E_HXILINX_alu_output_muxer/M16_1E_HXILINX_alu_output_muxer_V 1660515981 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/alu_output_muxer.vhf \
-      EN work/M16_1E_HXILINX_alu_output_muxer 1660001690
-EN work/bus_muxer_MUSER_alu_output_muxer 1660001692 \
+      EN work/M16_1E_HXILINX_alu_output_muxer 1660515980
+EN work/bus_muxer_MUSER_alu_output_muxer 1660515982 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/alu_output_muxer.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/bus_muxer_MUSER_alu_output_muxer/BEHAVIORAL 1660001693 \
+AR work/bus_muxer_MUSER_alu_output_muxer/BEHAVIORAL 1660515983 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/alu_output_muxer.vhf \
-      EN work/bus_muxer_MUSER_alu_output_muxer 1660001692 \
+      EN work/bus_muxer_MUSER_alu_output_muxer 1660515982 \
       CP M16_1E_HXILINX_alu_output_muxer CP BUF
-EN work/alu_output_muxer 1660001694 \
+EN work/alu_output_muxer 1660515984 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/alu_output_muxer.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/alu_output_muxer/BEHAVIORAL 1660001695 \
+AR work/alu_output_muxer/BEHAVIORAL 1660515985 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/alu_output_muxer.vhf \
-      EN work/alu_output_muxer 1660001694 CP BUF \
+      EN work/alu_output_muxer 1660515984 CP BUF \
       CP bus_muxer_MUSER_alu_output_muxer CP GND CP VCC
 FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/buf_8bit.vhf 2022/06/28.04:13:06 P.40xd
-EN work/buf_8bit 1660001596 \
+EN work/buf_8bit 1660515886 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/buf_8bit.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/buf_8bit/BEHAVIORAL 1660001597 \
+AR work/buf_8bit/BEHAVIORAL 1660515887 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/buf_8bit.vhf \
-      EN work/buf_8bit 1660001596 CP BUF
+      EN work/buf_8bit 1660515886 CP BUF
 FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/bus_muxer.vhf 2022/06/28.04:13:06 P.40xd
-EN work/M16_1E_HXILINX_bus_muxer 1660001732 \
+EN work/M16_1E_HXILINX_bus_muxer 1660516022 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/bus_muxer.vhf \
       PB ieee/std_logic_1164 1350103243
-AR work/M16_1E_HXILINX_bus_muxer/M16_1E_HXILINX_bus_muxer_V 1660001733 \
+AR work/M16_1E_HXILINX_bus_muxer/M16_1E_HXILINX_bus_muxer_V 1660516023 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/bus_muxer.vhf \
-      EN work/M16_1E_HXILINX_bus_muxer 1660001732
-EN work/bus_muxer 1660001734 \
+      EN work/M16_1E_HXILINX_bus_muxer 1660516022
+EN work/bus_muxer 1660516024 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/bus_muxer.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/bus_muxer/BEHAVIORAL 1660001735 \
+AR work/bus_muxer/BEHAVIORAL 1660516025 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/bus_muxer.vhf \
-      EN work/bus_muxer 1660001734 CP M16_1E_HXILINX_bus_muxer CP BUF
+      EN work/bus_muxer 1660516024 CP M16_1E_HXILINX_bus_muxer CP BUF
 FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/clk_generator.vhf 2022/06/28.04:10:56 P.40xd
-EN work/FJKC_HXILINX_clk_generator 1660001598 \
+EN work/FJKC_HXILINX_clk_generator 1660515888 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/clk_generator.vhf \
       PB ieee/std_logic_1164 1350103243
-AR work/FJKC_HXILINX_clk_generator/Behavioral 1660001599 \
+AR work/FJKC_HXILINX_clk_generator/Behavioral 1660515889 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/clk_generator.vhf \
-      EN work/FJKC_HXILINX_clk_generator 1660001598
-EN work/CB2CE_HXILINX_clk_generator 1660001600 \
+      EN work/FJKC_HXILINX_clk_generator 1660515888
+EN work/CB2CE_HXILINX_clk_generator 1660515890 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/clk_generator.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/std_logic_arith 1350103244 \
       PB ieee/STD_LOGIC_UNSIGNED 1350103247
-AR work/CB2CE_HXILINX_clk_generator/Behavioral 1660001601 \
+AR work/CB2CE_HXILINX_clk_generator/Behavioral 1660515891 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/clk_generator.vhf \
-      EN work/CB2CE_HXILINX_clk_generator 1660001600
-EN work/clk_generator 1660001602 \
+      EN work/CB2CE_HXILINX_clk_generator 1660515890
+EN work/clk_generator 1660515892 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/clk_generator.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/clk_generator/BEHAVIORAL 1660001603 \
+AR work/clk_generator/BEHAVIORAL 1660515893 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/clk_generator.vhf \
-      EN work/clk_generator 1660001602 CP FJKC_HXILINX_clk_generator CP OR2 \
+      EN work/clk_generator 1660515892 CP FJKC_HXILINX_clk_generator CP OR2 \
       CP AND2B1 CP INV CP VCC CP CB2CE_HXILINX_clk_generator
 FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cmp_1bit.vhf 2022/06/28.04:13:09 P.40xd
-EN work/cmp_1bit 1660001736 \
+EN work/cmp_1bit 1660516026 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cmp_1bit.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/cmp_1bit/BEHAVIORAL 1660001737 \
+AR work/cmp_1bit/BEHAVIORAL 1660516027 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cmp_1bit.vhf \
-      EN work/cmp_1bit 1660001736 CP XNOR2 CP AND2 CP OR2 CP INV
+      EN work/cmp_1bit 1660516026 CP XNOR2 CP AND2 CP OR2 CP INV
 FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cmp_8bit.vhf 2022/06/28.04:13:09 P.40xd
-EN work/cmp_1bit_MUSER_cmp_8bit 1660001696 \
+EN work/cmp_1bit_MUSER_cmp_8bit 1660515986 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cmp_8bit.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/cmp_1bit_MUSER_cmp_8bit/BEHAVIORAL 1660001697 \
+AR work/cmp_1bit_MUSER_cmp_8bit/BEHAVIORAL 1660515987 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cmp_8bit.vhf \
-      EN work/cmp_1bit_MUSER_cmp_8bit 1660001696 CP XNOR2 CP AND2 CP OR2 CP INV
-EN work/cmp_8bit 1660001698 \
+      EN work/cmp_1bit_MUSER_cmp_8bit 1660515986 CP XNOR2 CP AND2 CP OR2 CP INV
+EN work/cmp_8bit 1660515988 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cmp_8bit.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/cmp_8bit/BEHAVIORAL 1660001699 \
+AR work/cmp_8bit/BEHAVIORAL 1660515989 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cmp_8bit.vhf \
-      EN work/cmp_8bit 1660001698 CP cmp_1bit_MUSER_cmp_8bit CP PULLUP CP PULLDOWN
+      EN work/cmp_8bit 1660515988 CP cmp_1bit_MUSER_cmp_8bit CP PULLUP CP PULLDOWN
 FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf 2022/06/28.04:21:47 P.40xd
-EN work/LD8CE_HXILINX_cpu 1660001476 \
+EN work/LD8CE_HXILINX_cpu 1660515766 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
       PB ieee/std_logic_1164 1350103243
-AR work/LD8CE_HXILINX_cpu/Behavioral 1660001477 \
+AR work/LD8CE_HXILINX_cpu/Behavioral 1660515767 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/LD8CE_HXILINX_cpu 1660001476
-EN work/CB4CE_HXILINX_cpu 1660001478 \
+      EN work/LD8CE_HXILINX_cpu 1660515766
+EN work/CB4CE_HXILINX_cpu 1660515768 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/std_logic_arith 1350103244 \
       PB ieee/STD_LOGIC_UNSIGNED 1350103247
-AR work/CB4CE_HXILINX_cpu/Behavioral 1660001479 \
+AR work/CB4CE_HXILINX_cpu/Behavioral 1660515769 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/CB4CE_HXILINX_cpu 1660001478
-EN work/LD8_HXILINX_cpu 1660001480 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      PB ieee/std_logic_1164 1350103243
-AR work/LD8_HXILINX_cpu/Behavioral 1660001481 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/LD8_HXILINX_cpu 1660001480
-EN work/AND16_HXILINX_cpu 1660001482 \
+      EN work/CB4CE_HXILINX_cpu 1660515768
+EN work/LD8_HXILINX_cpu 1660515770 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
       PB ieee/std_logic_1164 1350103243
-AR work/AND16_HXILINX_cpu/AND16_HXILINX_cpu_V 1660001483 \
+AR work/LD8_HXILINX_cpu/Behavioral 1660515771 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/AND16_HXILINX_cpu 1660001482
-EN work/ADD8_HXILINX_cpu 1660001484 \
+      EN work/LD8_HXILINX_cpu 1660515770
+EN work/AND16_HXILINX_cpu 1660515772 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
+      PB ieee/std_logic_1164 1350103243
+AR work/AND16_HXILINX_cpu/AND16_HXILINX_cpu_V 1660515773 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
+      EN work/AND16_HXILINX_cpu 1660515772
+EN work/ADD8_HXILINX_cpu 1660515774 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/std_logic_arith 1350103244 \
       PB ieee/STD_LOGIC_UNSIGNED 1350103247
-AR work/ADD8_HXILINX_cpu/ADD8_HXILINX_cpu_V 1660001485 \
+AR work/ADD8_HXILINX_cpu/ADD8_HXILINX_cpu_V 1660515775 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/ADD8_HXILINX_cpu 1660001484
-EN work/M8_1E_HXILINX_cpu 1660001486 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      PB ieee/std_logic_1164 1350103243
-AR work/M8_1E_HXILINX_cpu/M8_1E_HXILINX_cpu_V 1660001487 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/M8_1E_HXILINX_cpu 1660001486
-EN work/NOR8_HXILINX_cpu 1660001488 \
+      EN work/ADD8_HXILINX_cpu 1660515774
+EN work/M8_1E_HXILINX_cpu 1660515776 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
       PB ieee/std_logic_1164 1350103243
-AR work/NOR8_HXILINX_cpu/NOR8_HXILINX_cpu_V 1660001489 \
+AR work/M8_1E_HXILINX_cpu/M8_1E_HXILINX_cpu_V 1660515777 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/NOR8_HXILINX_cpu 1660001488
-EN work/INV8_HXILINX_cpu 1660001490 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      PB ieee/std_logic_1164 1350103243
-AR work/INV8_HXILINX_cpu/INV8_HXILINX_cpu_V 1660001491 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/INV8_HXILINX_cpu 1660001490
-EN work/OR6_HXILINX_cpu 1660001492 \
+      EN work/M8_1E_HXILINX_cpu 1660515776
+EN work/NOR8_HXILINX_cpu 1660515778 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
       PB ieee/std_logic_1164 1350103243
-AR work/OR6_HXILINX_cpu/OR6_HXILINX_cpu_V 1660001493 \
+AR work/NOR8_HXILINX_cpu/NOR8_HXILINX_cpu_V 1660515779 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/OR6_HXILINX_cpu 1660001492
-EN work/OR8_HXILINX_cpu 1660001494 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      PB ieee/std_logic_1164 1350103243
-AR work/OR8_HXILINX_cpu/OR8_HXILINX_cpu_V 1660001495 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/OR8_HXILINX_cpu 1660001494
-EN work/LD4CE_HXILINX_cpu 1660001496 \
+      EN work/NOR8_HXILINX_cpu 1660515778
+EN work/INV8_HXILINX_cpu 1660515780 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
       PB ieee/std_logic_1164 1350103243
-AR work/LD4CE_HXILINX_cpu/Behavioral 1660001497 \
+AR work/INV8_HXILINX_cpu/INV8_HXILINX_cpu_V 1660515781 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/LD4CE_HXILINX_cpu 1660001496
-EN work/CB16CE_HXILINX_cpu 1660001498 \
+      EN work/INV8_HXILINX_cpu 1660515780
+EN work/OR6_HXILINX_cpu 1660515782 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
+      PB ieee/std_logic_1164 1350103243
+AR work/OR6_HXILINX_cpu/OR6_HXILINX_cpu_V 1660515783 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
+      EN work/OR6_HXILINX_cpu 1660515782
+EN work/OR8_HXILINX_cpu 1660515784 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
+      PB ieee/std_logic_1164 1350103243
+AR work/OR8_HXILINX_cpu/OR8_HXILINX_cpu_V 1660515785 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
+      EN work/OR8_HXILINX_cpu 1660515784
+EN work/LD4CE_HXILINX_cpu 1660515786 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
+      PB ieee/std_logic_1164 1350103243
+AR work/LD4CE_HXILINX_cpu/Behavioral 1660515787 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
+      EN work/LD4CE_HXILINX_cpu 1660515786
+EN work/CB16CE_HXILINX_cpu 1660515788 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/std_logic_arith 1350103244 \
       PB ieee/STD_LOGIC_UNSIGNED 1350103247
-AR work/CB16CE_HXILINX_cpu/Behavioral 1660001499 \
+AR work/CB16CE_HXILINX_cpu/Behavioral 1660515789 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/CB16CE_HXILINX_cpu 1660001498
-EN work/D3_8E_HXILINX_cpu 1660001500 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      PB ieee/std_logic_1164 1350103243
-AR work/D3_8E_HXILINX_cpu/D3_8E_HXILINX_cpu_V 1660001501 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/D3_8E_HXILINX_cpu 1660001500
-EN work/M16_1E_HXILINX_cpu 1660001502 \
+      EN work/CB16CE_HXILINX_cpu 1660515788
+EN work/D3_8E_HXILINX_cpu 1660515790 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
       PB ieee/std_logic_1164 1350103243
-AR work/M16_1E_HXILINX_cpu/M16_1E_HXILINX_cpu_V 1660001503 \
+AR work/D3_8E_HXILINX_cpu/D3_8E_HXILINX_cpu_V 1660515791 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/M16_1E_HXILINX_cpu 1660001502
-EN work/FJKC_HXILINX_cpu 1660001504 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      PB ieee/std_logic_1164 1350103243
-AR work/FJKC_HXILINX_cpu/Behavioral 1660001505 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/FJKC_HXILINX_cpu 1660001504
-EN work/D2_4E_HXILINX_cpu 1660001506 \
+      EN work/D3_8E_HXILINX_cpu 1660515790
+EN work/M16_1E_HXILINX_cpu 1660515792 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
       PB ieee/std_logic_1164 1350103243
-AR work/D2_4E_HXILINX_cpu/D2_4E_HXILINX_cpu_V 1660001507 \
+AR work/M16_1E_HXILINX_cpu/M16_1E_HXILINX_cpu_V 1660515793 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/D2_4E_HXILINX_cpu 1660001506
-EN work/M2_1_HXILINX_cpu 1660001508 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      PB ieee/std_logic_1164 1350103243
-AR work/M2_1_HXILINX_cpu/M2_1_HXILINX_cpu_V 1660001509 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/M2_1_HXILINX_cpu 1660001508
-EN work/AND6_HXILINX_cpu 1660001510 \
+      EN work/M16_1E_HXILINX_cpu 1660515792
+EN work/FJKC_HXILINX_cpu 1660515794 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
       PB ieee/std_logic_1164 1350103243
-AR work/AND6_HXILINX_cpu/AND6_HXILINX_cpu_V 1660001511 \
+AR work/FJKC_HXILINX_cpu/Behavioral 1660515795 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/AND6_HXILINX_cpu 1660001510
-EN work/AND7_HXILINX_cpu 1660001512 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      PB ieee/std_logic_1164 1350103243
-AR work/AND7_HXILINX_cpu/AND7_HXILINX_cpu_V 1660001513 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/AND7_HXILINX_cpu 1660001512
-EN work/AND8_HXILINX_cpu 1660001514 \
+      EN work/FJKC_HXILINX_cpu 1660515794
+EN work/D2_4E_HXILINX_cpu 1660515796 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
       PB ieee/std_logic_1164 1350103243
-AR work/AND8_HXILINX_cpu/AND8_HXILINX_cpu_V 1660001515 \
+AR work/D2_4E_HXILINX_cpu/D2_4E_HXILINX_cpu_V 1660515797 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/AND8_HXILINX_cpu 1660001514
-EN work/CB2CE_HXILINX_cpu 1660001516 \
+      EN work/D2_4E_HXILINX_cpu 1660515796
+EN work/M2_1_HXILINX_cpu 1660515798 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
+      PB ieee/std_logic_1164 1350103243
+AR work/M2_1_HXILINX_cpu/M2_1_HXILINX_cpu_V 1660515799 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
+      EN work/M2_1_HXILINX_cpu 1660515798
+EN work/AND6_HXILINX_cpu 1660515800 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
+      PB ieee/std_logic_1164 1350103243
+AR work/AND6_HXILINX_cpu/AND6_HXILINX_cpu_V 1660515801 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
+      EN work/AND6_HXILINX_cpu 1660515800
+EN work/AND7_HXILINX_cpu 1660515802 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
+      PB ieee/std_logic_1164 1350103243
+AR work/AND7_HXILINX_cpu/AND7_HXILINX_cpu_V 1660515803 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
+      EN work/AND7_HXILINX_cpu 1660515802
+EN work/AND8_HXILINX_cpu 1660515804 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
+      PB ieee/std_logic_1164 1350103243
+AR work/AND8_HXILINX_cpu/AND8_HXILINX_cpu_V 1660515805 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
+      EN work/AND8_HXILINX_cpu 1660515804
+EN work/CB2CE_HXILINX_cpu 1660515806 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/std_logic_arith 1350103244 \
       PB ieee/STD_LOGIC_UNSIGNED 1350103247
-AR work/CB2CE_HXILINX_cpu/Behavioral 1660001517 \
+AR work/CB2CE_HXILINX_cpu/Behavioral 1660515807 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/CB2CE_HXILINX_cpu 1660001516
-EN work/bus_muxer_MUSER_cpu 1660001518 \
+      EN work/CB2CE_HXILINX_cpu 1660515806
+EN work/bus_muxer_MUSER_cpu 1660515808 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/bus_muxer_MUSER_cpu/BEHAVIORAL 1660001519 \
+AR work/bus_muxer_MUSER_cpu/BEHAVIORAL 1660515809 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/bus_muxer_MUSER_cpu 1660001518 CP M16_1E_HXILINX_cpu CP BUF
-EN work/stepper_MUSER_cpu 1660001520 \
+      EN work/bus_muxer_MUSER_cpu 1660515808 CP M16_1E_HXILINX_cpu CP BUF
+EN work/stepper_MUSER_cpu 1660515810 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/stepper_MUSER_cpu/BEHAVIORAL 1660001521 \
+AR work/stepper_MUSER_cpu/BEHAVIORAL 1660515811 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/stepper_MUSER_cpu 1660001520 CP VCC CP CB4CE_HXILINX_cpu \
+      EN work/stepper_MUSER_cpu 1660515810 CP VCC CP CB4CE_HXILINX_cpu \
       CP D3_8E_HXILINX_cpu CP INV CP OR2
-EN work/cpu_control_MUSER_cpu 1660001522 \
+EN work/cpu_control_MUSER_cpu 1660515812 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/cpu_control_MUSER_cpu/BEHAVIORAL 1660001523 \
+AR work/cpu_control_MUSER_cpu/BEHAVIORAL 1660515813 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/cpu_control_MUSER_cpu 1660001522 CP stepper_MUSER_cpu CP AND2 CP GND \
+      EN work/cpu_control_MUSER_cpu 1660515812 CP stepper_MUSER_cpu CP AND2 CP GND \
       CP OR4 CP OR2 CP D3_8E_HXILINX_cpu CP BUF CP OR3 CP D2_4E_HXILINX_cpu CP VCC \
       CP INV CP AND3B1 CP OR5 CP OR6_HXILINX_cpu CP bus_muxer_MUSER_cpu CP AND4
-EN work/cpu_freq_divider_base_MUSER_cpu 1660001524 \
+EN work/cpu_freq_divider_base_MUSER_cpu 1660515814 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/cpu_freq_divider_base_MUSER_cpu/BEHAVIORAL 1660001525 \
+AR work/cpu_freq_divider_base_MUSER_cpu/BEHAVIORAL 1660515815 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/cpu_freq_divider_base_MUSER_cpu 1660001524 CP CB16CE_HXILINX_cpu \
+      EN work/cpu_freq_divider_base_MUSER_cpu 1660515814 CP CB16CE_HXILINX_cpu \
       CP VCC
-EN work/cpu_freq_divider_1KHz_MUSER_cpu 1660001526 \
+EN work/cpu_freq_divider_1KHz_MUSER_cpu 1660515816 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/cpu_freq_divider_1KHz_MUSER_cpu/BEHAVIORAL 1660001527 \
+AR work/cpu_freq_divider_1KHz_MUSER_cpu/BEHAVIORAL 1660515817 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/cpu_freq_divider_1KHz_MUSER_cpu 1660001526 \
+      EN work/cpu_freq_divider_1KHz_MUSER_cpu 1660515816 \
       CP cpu_freq_divider_base_MUSER_cpu CP OR2 CP FJKC_HXILINX_cpu CP VCC CP BUF \
       CP AND4
-EN work/cpu_freq_divider_1Inst_MUSER_cpu 1660001528 \
+EN work/cpu_freq_divider_1Inst_MUSER_cpu 1660515818 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/cpu_freq_divider_1Inst_MUSER_cpu/BEHAVIORAL 1660001529 \
+AR work/cpu_freq_divider_1Inst_MUSER_cpu/BEHAVIORAL 1660515819 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/cpu_freq_divider_1Inst_MUSER_cpu 1660001528 \
+      EN work/cpu_freq_divider_1Inst_MUSER_cpu 1660515818 \
       CP cpu_freq_divider_base_MUSER_cpu CP OR2 CP FJKC_HXILINX_cpu CP VCC CP BUF
-EN work/cpu_freq_divider_1Hz_MUSER_cpu 1660001530 \
+EN work/cpu_freq_divider_1Hz_MUSER_cpu 1660515820 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/cpu_freq_divider_1Hz_MUSER_cpu/BEHAVIORAL 1660001531 \
+AR work/cpu_freq_divider_1Hz_MUSER_cpu/BEHAVIORAL 1660515821 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/cpu_freq_divider_1Hz_MUSER_cpu 1660001530 \
+      EN work/cpu_freq_divider_1Hz_MUSER_cpu 1660515820 \
       CP cpu_freq_divider_base_MUSER_cpu CP BUF CP AND5 CP AND7_HXILINX_cpu CP AND2 \
       CP OR2 CP FJKC_HXILINX_cpu CP VCC
-EN work/cpu_freq_divider_1Stg_MUSER_cpu 1660001532 \
+EN work/cpu_freq_divider_1Stg_MUSER_cpu 1660515822 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/cpu_freq_divider_1Stg_MUSER_cpu/BEHAVIORAL 1660001533 \
+AR work/cpu_freq_divider_1Stg_MUSER_cpu/BEHAVIORAL 1660515823 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/cpu_freq_divider_1Stg_MUSER_cpu 1660001532 \
+      EN work/cpu_freq_divider_1Stg_MUSER_cpu 1660515822 \
       CP cpu_freq_divider_base_MUSER_cpu CP BUF CP AND2 CP OR2 CP FJKC_HXILINX_cpu \
       CP VCC CP AND6_HXILINX_cpu
-EN work/freq_divider_MUSER_cpu 1660001534 \
+EN work/freq_divider_MUSER_cpu 1660515824 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/freq_divider_MUSER_cpu/BEHAVIORAL 1660001535 \
+AR work/freq_divider_MUSER_cpu/BEHAVIORAL 1660515825 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/freq_divider_MUSER_cpu 1660001534 CP CB16CE_HXILINX_cpu CP VCC \
+      EN work/freq_divider_MUSER_cpu 1660515824 CP CB16CE_HXILINX_cpu CP VCC \
       CP XNOR2 CP AND8_HXILINX_cpu CP FJKC_HXILINX_cpu CP AND4 CP OR2
-EN work/encoder8_3_MUSER_cpu 1660001536 \
+EN work/encoder8_3_MUSER_cpu 1660515826 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/encoder8_3_MUSER_cpu/BEHAVIORAL 1660001537 \
+AR work/encoder8_3_MUSER_cpu/BEHAVIORAL 1660515827 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/encoder8_3_MUSER_cpu 1660001536 CP OR4 CP AND8_HXILINX_cpu CP INV
-EN work/cpu_freq_divider_MUSER_cpu 1660001538 \
+      EN work/encoder8_3_MUSER_cpu 1660515826 CP OR4 CP AND8_HXILINX_cpu CP INV
+EN work/cpu_freq_divider_MUSER_cpu 1660515828 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/cpu_freq_divider_MUSER_cpu/BEHAVIORAL 1660001539 \
+AR work/cpu_freq_divider_MUSER_cpu/BEHAVIORAL 1660515829 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/cpu_freq_divider_MUSER_cpu 1660001538 CP freq_divider_MUSER_cpu \
+      EN work/cpu_freq_divider_MUSER_cpu 1660515828 CP freq_divider_MUSER_cpu \
       CP M8_1E_HXILINX_cpu CP encoder8_3_MUSER_cpu CP BUF CP INV CP GND
-EN work/buf_8bit_MUSER_cpu 1660001540 \
+EN work/buf_8bit_MUSER_cpu 1660515830 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/buf_8bit_MUSER_cpu/BEHAVIORAL 1660001541 \
+AR work/buf_8bit_MUSER_cpu/BEHAVIORAL 1660515831 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/buf_8bit_MUSER_cpu 1660001540 CP BUF
-EN work/clk_generator_MUSER_cpu 1660001542 \
+      EN work/buf_8bit_MUSER_cpu 1660515830 CP BUF
+EN work/clk_generator_MUSER_cpu 1660515832 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/clk_generator_MUSER_cpu/BEHAVIORAL 1660001543 \
+AR work/clk_generator_MUSER_cpu/BEHAVIORAL 1660515833 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/clk_generator_MUSER_cpu 1660001542 CP FJKC_HXILINX_cpu CP OR2 \
+      EN work/clk_generator_MUSER_cpu 1660515832 CP FJKC_HXILINX_cpu CP OR2 \
       CP AND2B1 CP INV CP VCC CP CB2CE_HXILINX_cpu
-EN work/encoder16_4_MUSER_cpu 1660001544 \
+EN work/encoder16_4_MUSER_cpu 1660515834 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/encoder16_4_MUSER_cpu/BEHAVIORAL 1660001545 \
+AR work/encoder16_4_MUSER_cpu/BEHAVIORAL 1660515835 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/encoder16_4_MUSER_cpu 1660001544 CP INV CP AND16_HXILINX_cpu \
+      EN work/encoder16_4_MUSER_cpu 1660515834 CP INV CP AND16_HXILINX_cpu \
       CP OR8_HXILINX_cpu
-EN work/cpu_output_muxer_MUSER_cpu 1660001546 \
+EN work/cpu_output_muxer_MUSER_cpu 1660515836 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/cpu_output_muxer_MUSER_cpu/BEHAVIORAL 1660001547 \
+AR work/cpu_output_muxer_MUSER_cpu/BEHAVIORAL 1660515837 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/cpu_output_muxer_MUSER_cpu 1660001546 CP bus_muxer_MUSER_cpu CP BUF \
+      EN work/cpu_output_muxer_MUSER_cpu 1660515836 CP bus_muxer_MUSER_cpu CP BUF \
       CP INV CP encoder16_4_MUSER_cpu CP GND
-EN work/reg_8bit_MUSER_cpu 1660001548 \
+EN work/reg_8bit_MUSER_cpu 1660515838 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/reg_8bit_MUSER_cpu/BEHAVIORAL 1660001549 \
+AR work/reg_8bit_MUSER_cpu/BEHAVIORAL 1660515839 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/reg_8bit_MUSER_cpu 1660001548 CP LD8CE_HXILINX_cpu CP VCC
-EN work/pass_through_or_one_MUSER_cpu 1660001550 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
-      PH unisim/VCOMPONENTS 1350103252
-AR work/pass_through_or_one_MUSER_cpu/BEHAVIORAL 1660001551 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/pass_through_or_one_MUSER_cpu 1660001550 CP M2_1_HXILINX_cpu
-EN work/alu_output_muxer_MUSER_cpu 1660001552 \
+      EN work/reg_8bit_MUSER_cpu 1660515838 CP LD8CE_HXILINX_cpu CP VCC
+EN work/pass_through_or_one_MUSER_cpu 1660515840 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/alu_output_muxer_MUSER_cpu/BEHAVIORAL 1660001553 \
+AR work/pass_through_or_one_MUSER_cpu/BEHAVIORAL 1660515841 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/alu_output_muxer_MUSER_cpu 1660001552 CP BUF CP bus_muxer_MUSER_cpu \
+      EN work/pass_through_or_one_MUSER_cpu 1660515840 CP M2_1_HXILINX_cpu
+EN work/alu_output_muxer_MUSER_cpu 1660515842 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
+      PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
+      PH unisim/VCOMPONENTS 1350103252
+AR work/alu_output_muxer_MUSER_cpu/BEHAVIORAL 1660515843 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
+      EN work/alu_output_muxer_MUSER_cpu 1660515842 CP BUF CP bus_muxer_MUSER_cpu \
       CP GND CP VCC
-EN work/lzero_MUSER_cpu 1660001554 \
+EN work/lzero_MUSER_cpu 1660515844 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/lzero_MUSER_cpu/BEHAVIORAL 1660001555 \
+AR work/lzero_MUSER_cpu/BEHAVIORAL 1660515845 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/lzero_MUSER_cpu 1660001554 CP NOR8_HXILINX_cpu
-EN work/cmp_1bit_MUSER_cpu 1660001556 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
-      PH unisim/VCOMPONENTS 1350103252
-AR work/cmp_1bit_MUSER_cpu/BEHAVIORAL 1660001557 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/cmp_1bit_MUSER_cpu 1660001556 CP XNOR2 CP AND2 CP OR2 CP INV
-EN work/cmp_8bit_MUSER_cpu 1660001558 \
+      EN work/lzero_MUSER_cpu 1660515844 CP NOR8_HXILINX_cpu
+EN work/cmp_1bit_MUSER_cpu 1660515846 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/cmp_8bit_MUSER_cpu/BEHAVIORAL 1660001559 \
+AR work/cmp_1bit_MUSER_cpu/BEHAVIORAL 1660515847 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/cmp_8bit_MUSER_cpu 1660001558 CP cmp_1bit_MUSER_cpu CP PULLUP \
+      EN work/cmp_1bit_MUSER_cpu 1660515846 CP XNOR2 CP AND2 CP OR2 CP INV
+EN work/cmp_8bit_MUSER_cpu 1660515848 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
+      PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
+      PH unisim/VCOMPONENTS 1350103252
+AR work/cmp_8bit_MUSER_cpu/BEHAVIORAL 1660515849 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
+      EN work/cmp_8bit_MUSER_cpu 1660515848 CP cmp_1bit_MUSER_cpu CP PULLUP \
       CP PULLDOWN
-EN work/alu_MUSER_cpu 1660001560 \
+EN work/alu_MUSER_cpu 1660515850 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/alu_MUSER_cpu/BEHAVIORAL 1660001561 \
+AR work/alu_MUSER_cpu/BEHAVIORAL 1660515851 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/alu_MUSER_cpu 1660001560 CP D3_8E_HXILINX_cpu CP ADD8_HXILINX_cpu \
+      EN work/alu_MUSER_cpu 1660515850 CP D3_8E_HXILINX_cpu CP ADD8_HXILINX_cpu \
       CP BUF CP VCC CP AND2 CP OR3 CP INV8_HXILINX_cpu CP OR2 CP cmp_8bit_MUSER_cpu \
       CP lzero_MUSER_cpu CP alu_output_muxer_MUSER_cpu
-EN work/cpu 1660001562 \
+EN work/cpu 1660515852 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/cpu/BEHAVIORAL 1660001563 \
+AR work/cpu/BEHAVIORAL 1660515853 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu.vhf \
-      EN work/cpu 1660001562 CP alu_MUSER_cpu CP clk_generator_MUSER_cpu \
+      EN work/cpu 1660515852 CP alu_MUSER_cpu CP clk_generator_MUSER_cpu \
       CP cpu_control_MUSER_cpu CP pass_through_or_one_MUSER_cpu CP PULLUP \
       CP LD4CE_HXILINX_cpu CP VCC CP AND2 CP FDC_1 CP OR2 CP LD8_HXILINX_cpu CP BUF \
       CP INV CP reg_8bit_MUSER_cpu CP cpu_output_muxer_MUSER_cpu CP GND CP AND3 \
@@ -527,457 +527,457 @@ AR work/cpu/BEHAVIORAL 1660001563 \
       CP cpu_freq_divider_1Stg_MUSER_cpu CP cpu_freq_divider_1Inst_MUSER_cpu \
       CP cpu_freq_divider_1KHz_MUSER_cpu CP OR5
 FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_control.vhf 2022/06/28.04:13:06 P.40xd
-EN work/CB4CE_HXILINX_cpu_control 1660001604 \
+EN work/CB4CE_HXILINX_cpu_control 1660515894 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_control.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/std_logic_arith 1350103244 \
       PB ieee/STD_LOGIC_UNSIGNED 1350103247
-AR work/CB4CE_HXILINX_cpu_control/Behavioral 1660001605 \
+AR work/CB4CE_HXILINX_cpu_control/Behavioral 1660515895 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_control.vhf \
-      EN work/CB4CE_HXILINX_cpu_control 1660001604
-EN work/OR6_HXILINX_cpu_control 1660001606 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_control.vhf \
-      PB ieee/std_logic_1164 1350103243
-AR work/OR6_HXILINX_cpu_control/OR6_HXILINX_cpu_control_V 1660001607 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_control.vhf \
-      EN work/OR6_HXILINX_cpu_control 1660001606
-EN work/D3_8E_HXILINX_cpu_control 1660001608 \
+      EN work/CB4CE_HXILINX_cpu_control 1660515894
+EN work/OR6_HXILINX_cpu_control 1660515896 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_control.vhf \
       PB ieee/std_logic_1164 1350103243
-AR work/D3_8E_HXILINX_cpu_control/D3_8E_HXILINX_cpu_control_V 1660001609 \
+AR work/OR6_HXILINX_cpu_control/OR6_HXILINX_cpu_control_V 1660515897 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_control.vhf \
-      EN work/D3_8E_HXILINX_cpu_control 1660001608
-EN work/M16_1E_HXILINX_cpu_control 1660001610 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_control.vhf \
-      PB ieee/std_logic_1164 1350103243
-AR work/M16_1E_HXILINX_cpu_control/M16_1E_HXILINX_cpu_control_V 1660001611 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_control.vhf \
-      EN work/M16_1E_HXILINX_cpu_control 1660001610
-EN work/D2_4E_HXILINX_cpu_control 1660001612 \
+      EN work/OR6_HXILINX_cpu_control 1660515896
+EN work/D3_8E_HXILINX_cpu_control 1660515898 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_control.vhf \
       PB ieee/std_logic_1164 1350103243
-AR work/D2_4E_HXILINX_cpu_control/D2_4E_HXILINX_cpu_control_V 1660001613 \
+AR work/D3_8E_HXILINX_cpu_control/D3_8E_HXILINX_cpu_control_V 1660515899 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_control.vhf \
-      EN work/D2_4E_HXILINX_cpu_control 1660001612
-EN work/bus_muxer_MUSER_cpu_control 1660001614 \
+      EN work/D3_8E_HXILINX_cpu_control 1660515898
+EN work/M16_1E_HXILINX_cpu_control 1660515900 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_control.vhf \
+      PB ieee/std_logic_1164 1350103243
+AR work/M16_1E_HXILINX_cpu_control/M16_1E_HXILINX_cpu_control_V 1660515901 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_control.vhf \
+      EN work/M16_1E_HXILINX_cpu_control 1660515900
+EN work/D2_4E_HXILINX_cpu_control 1660515902 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_control.vhf \
+      PB ieee/std_logic_1164 1350103243
+AR work/D2_4E_HXILINX_cpu_control/D2_4E_HXILINX_cpu_control_V 1660515903 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_control.vhf \
+      EN work/D2_4E_HXILINX_cpu_control 1660515902
+EN work/bus_muxer_MUSER_cpu_control 1660515904 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_control.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/bus_muxer_MUSER_cpu_control/BEHAVIORAL 1660001615 \
+AR work/bus_muxer_MUSER_cpu_control/BEHAVIORAL 1660515905 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_control.vhf \
-      EN work/bus_muxer_MUSER_cpu_control 1660001614 \
+      EN work/bus_muxer_MUSER_cpu_control 1660515904 \
       CP M16_1E_HXILINX_cpu_control CP BUF
-EN work/stepper_MUSER_cpu_control 1660001616 \
+EN work/stepper_MUSER_cpu_control 1660515906 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_control.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/stepper_MUSER_cpu_control/BEHAVIORAL 1660001617 \
+AR work/stepper_MUSER_cpu_control/BEHAVIORAL 1660515907 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_control.vhf \
-      EN work/stepper_MUSER_cpu_control 1660001616 CP VCC \
+      EN work/stepper_MUSER_cpu_control 1660515906 CP VCC \
       CP CB4CE_HXILINX_cpu_control CP D3_8E_HXILINX_cpu_control CP INV CP OR2
-EN work/cpu_control 1660001618 \
+EN work/cpu_control 1660515908 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_control.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/cpu_control/BEHAVIORAL 1660001619 \
+AR work/cpu_control/BEHAVIORAL 1660515909 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_control.vhf \
-      EN work/cpu_control 1660001618 CP stepper_MUSER_cpu_control CP AND2 CP GND \
+      EN work/cpu_control 1660515908 CP stepper_MUSER_cpu_control CP AND2 CP GND \
       CP OR4 CP OR2 CP D3_8E_HXILINX_cpu_control CP BUF CP OR3 \
       CP D2_4E_HXILINX_cpu_control CP VCC CP INV CP AND3B1 CP OR5 \
       CP OR6_HXILINX_cpu_control CP bus_muxer_MUSER_cpu_control CP AND4
 FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf 2022/06/28.04:26:04 P.40xd
-EN work/USART_MUSER_cpu_facade 1660001374 \
+EN work/USART_MUSER_cpu_facade 1660515664 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/USART_MUSER_cpu_facade/BEHAVIORAL 1660001375 \
+AR work/USART_MUSER_cpu_facade/BEHAVIORAL 1660515665 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/USART_MUSER_cpu_facade 1660001374 CP usart_tramnsmitter
-EN work/LD8CE_MXILINX_cpu_facade 1660001376 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
-      PH unisim/VCOMPONENTS 1350103252
-AR work/LD8CE_MXILINX_cpu_facade/BEHAVIORAL 1660001377 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/LD8CE_MXILINX_cpu_facade 1660001376 CP LDCE
-EN work/LD8_MXILINX_cpu_facade 1660001378 \
+      EN work/USART_MUSER_cpu_facade 1660515664 CP usart_tramnsmitter
+EN work/LD8CE_MXILINX_cpu_facade 1660515666 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/LD8_MXILINX_cpu_facade/BEHAVIORAL 1660001379 \
+AR work/LD8CE_MXILINX_cpu_facade/BEHAVIORAL 1660515667 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/LD8_MXILINX_cpu_facade 1660001378 CP LD
-EN work/ram_256bytes_MUSER_cpu_facade 1660001380 \
+      EN work/LD8CE_MXILINX_cpu_facade 1660515666 CP LDCE
+EN work/LD8_MXILINX_cpu_facade 1660515668 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/ram_256bytes_MUSER_cpu_facade/BEHAVIORAL 1660001381 \
+AR work/LD8_MXILINX_cpu_facade/BEHAVIORAL 1660515669 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/ram_256bytes_MUSER_cpu_facade 1660001380 CP LD8_MXILINX_cpu_facade \
+      EN work/LD8_MXILINX_cpu_facade 1660515668 CP LD
+EN work/ram_256bytes_MUSER_cpu_facade 1660515670 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
+      PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
+      PH unisim/VCOMPONENTS 1350103252
+AR work/ram_256bytes_MUSER_cpu_facade/BEHAVIORAL 1660515671 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
+      EN work/ram_256bytes_MUSER_cpu_facade 1660515670 CP LD8_MXILINX_cpu_facade \
       CP INV
-EN work/M2_1_MXILINX_cpu_facade 1660001382 \
+EN work/M2_1_MXILINX_cpu_facade 1660515672 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/M2_1_MXILINX_cpu_facade/BEHAVIORAL 1660001383 \
+AR work/M2_1_MXILINX_cpu_facade/BEHAVIORAL 1660515673 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/M2_1_MXILINX_cpu_facade 1660001382 CP AND2B1 CP OR2 CP AND2
-EN work/M2_1E_MXILINX_cpu_facade 1660001384 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
-      PH unisim/VCOMPONENTS 1350103252
-AR work/M2_1E_MXILINX_cpu_facade/BEHAVIORAL 1660001385 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/M2_1E_MXILINX_cpu_facade 1660001384 CP AND3 CP AND3B1 CP OR2
-EN work/M16_1E_MXILINX_cpu_facade 1660001386 \
+      EN work/M2_1_MXILINX_cpu_facade 1660515672 CP AND2B1 CP OR2 CP AND2
+EN work/M2_1E_MXILINX_cpu_facade 1660515674 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/M16_1E_MXILINX_cpu_facade/BEHAVIORAL 1660001387 \
+AR work/M2_1E_MXILINX_cpu_facade/BEHAVIORAL 1660515675 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/M16_1E_MXILINX_cpu_facade 1660001386 CP M2_1_MXILINX_cpu_facade \
+      EN work/M2_1E_MXILINX_cpu_facade 1660515674 CP AND3 CP AND3B1 CP OR2
+EN work/M16_1E_MXILINX_cpu_facade 1660515676 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
+      PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
+      PH unisim/VCOMPONENTS 1350103252
+AR work/M16_1E_MXILINX_cpu_facade/BEHAVIORAL 1660515677 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
+      EN work/M16_1E_MXILINX_cpu_facade 1660515676 CP M2_1_MXILINX_cpu_facade \
       CP MUXF5_L CP MUXF6 CP M2_1E_MXILINX_cpu_facade
-EN work/bus_muxer_MUSER_cpu_facade 1660001388 \
+EN work/bus_muxer_MUSER_cpu_facade 1660515678 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/bus_muxer_MUSER_cpu_facade/BEHAVIORAL 1660001389 \
+AR work/bus_muxer_MUSER_cpu_facade/BEHAVIORAL 1660515679 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/bus_muxer_MUSER_cpu_facade 1660001388 CP M16_1E_MXILINX_cpu_facade \
+      EN work/bus_muxer_MUSER_cpu_facade 1660515678 CP M16_1E_MXILINX_cpu_facade \
       CP BUF
-EN work/reg_8bit_MUSER_cpu_facade 1660001390 \
+EN work/reg_8bit_MUSER_cpu_facade 1660515680 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/reg_8bit_MUSER_cpu_facade/BEHAVIORAL 1660001391 \
+AR work/reg_8bit_MUSER_cpu_facade/BEHAVIORAL 1660515681 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/reg_8bit_MUSER_cpu_facade 1660001390 CP LD8CE_MXILINX_cpu_facade \
+      EN work/reg_8bit_MUSER_cpu_facade 1660515680 CP LD8CE_MXILINX_cpu_facade \
       CP VCC
-EN work/D4_16E_MXILINX_cpu_facade 1660001392 \
+EN work/D4_16E_MXILINX_cpu_facade 1660515682 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/D4_16E_MXILINX_cpu_facade/BEHAVIORAL 1660001393 \
+AR work/D4_16E_MXILINX_cpu_facade/BEHAVIORAL 1660515683 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/D4_16E_MXILINX_cpu_facade 1660001392 CP AND5B3 CP AND5B2 CP AND5B1 \
+      EN work/D4_16E_MXILINX_cpu_facade 1660515682 CP AND5B3 CP AND5B2 CP AND5B1 \
       CP AND5 CP AND5B4
-EN work/FJKC_MXILINX_cpu_facade 1660001394 \
+EN work/FJKC_MXILINX_cpu_facade 1660515684 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/FJKC_MXILINX_cpu_facade/BEHAVIORAL 1660001395 \
+AR work/FJKC_MXILINX_cpu_facade/BEHAVIORAL 1660515685 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/FJKC_MXILINX_cpu_facade 1660001394 CP FDC CP AND3B2 CP AND3B1 CP OR3 \
+      EN work/FJKC_MXILINX_cpu_facade 1660515684 CP FDC CP AND3B2 CP AND3B1 CP OR3 \
       CP AND2B1
-EN work/FTCE_MXILINX_cpu_facade 1660001396 \
+EN work/FTCE_MXILINX_cpu_facade 1660515686 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/FTCE_MXILINX_cpu_facade/BEHAVIORAL 1660001397 \
+AR work/FTCE_MXILINX_cpu_facade/BEHAVIORAL 1660515687 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/FTCE_MXILINX_cpu_facade 1660001396 CP XOR2 CP FDCE
-EN work/CB16CE_MXILINX_cpu_facade 1660001398 \
+      EN work/FTCE_MXILINX_cpu_facade 1660515686 CP XOR2 CP FDCE
+EN work/CB16CE_MXILINX_cpu_facade 1660515688 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/CB16CE_MXILINX_cpu_facade/BEHAVIORAL 1660001399 \
+AR work/CB16CE_MXILINX_cpu_facade/BEHAVIORAL 1660515689 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/CB16CE_MXILINX_cpu_facade 1660001398 CP FTCE_MXILINX_cpu_facade \
+      EN work/CB16CE_MXILINX_cpu_facade 1660515688 CP FTCE_MXILINX_cpu_facade \
       CP AND3 CP AND2 CP VCC CP AND4 CP AND5
-EN work/debouncer_MUSER_cpu_facade 1660001400 \
+EN work/debouncer_MUSER_cpu_facade 1660515690 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/debouncer_MUSER_cpu_facade/BEHAVIORAL 1660001401 \
+AR work/debouncer_MUSER_cpu_facade/BEHAVIORAL 1660515691 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/debouncer_MUSER_cpu_facade 1660001400 CP CB16CE_MXILINX_cpu_facade \
+      EN work/debouncer_MUSER_cpu_facade 1660515690 CP CB16CE_MXILINX_cpu_facade \
       CP VCC CP BUF
-EN work/INV8_MXILINX_cpu_facade 1660001402 \
+EN work/INV8_MXILINX_cpu_facade 1660515692 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/INV8_MXILINX_cpu_facade/BEHAVIORAL 1660001403 \
+AR work/INV8_MXILINX_cpu_facade/BEHAVIORAL 1660515693 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/INV8_MXILINX_cpu_facade 1660001402 CP INV
-EN work/OR6_MXILINX_cpu_facade 1660001404 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
-      PH unisim/VCOMPONENTS 1350103252
-AR work/OR6_MXILINX_cpu_facade/BEHAVIORAL 1660001405 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/OR6_MXILINX_cpu_facade 1660001404 CP OR4 CP OR3 CP FMAP
-EN work/D3_8E_MXILINX_cpu_facade 1660001406 \
+      EN work/INV8_MXILINX_cpu_facade 1660515692 CP INV
+EN work/OR6_MXILINX_cpu_facade 1660515694 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/D3_8E_MXILINX_cpu_facade/BEHAVIORAL 1660001407 \
+AR work/OR6_MXILINX_cpu_facade/BEHAVIORAL 1660515695 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/D3_8E_MXILINX_cpu_facade 1660001406 CP AND4 CP AND4B1 CP AND4B2 \
+      EN work/OR6_MXILINX_cpu_facade 1660515694 CP OR4 CP OR3 CP FMAP
+EN work/D3_8E_MXILINX_cpu_facade 1660515696 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
+      PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
+      PH unisim/VCOMPONENTS 1350103252
+AR work/D3_8E_MXILINX_cpu_facade/BEHAVIORAL 1660515697 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
+      EN work/D3_8E_MXILINX_cpu_facade 1660515696 CP AND4 CP AND4B1 CP AND4B2 \
       CP AND4B3
-EN work/D2_4E_MXILINX_cpu_facade 1660001408 \
+EN work/D2_4E_MXILINX_cpu_facade 1660515698 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/D2_4E_MXILINX_cpu_facade/BEHAVIORAL 1660001409 \
+AR work/D2_4E_MXILINX_cpu_facade/BEHAVIORAL 1660515699 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/D2_4E_MXILINX_cpu_facade 1660001408 CP AND3 CP AND3B1 CP AND3B2
-EN work/CB4CE_MXILINX_cpu_facade 1660001410 \
+      EN work/D2_4E_MXILINX_cpu_facade 1660515698 CP AND3 CP AND3B1 CP AND3B2
+EN work/CB4CE_MXILINX_cpu_facade 1660515700 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/CB4CE_MXILINX_cpu_facade/BEHAVIORAL 1660001411 \
+AR work/CB4CE_MXILINX_cpu_facade/BEHAVIORAL 1660515701 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/CB4CE_MXILINX_cpu_facade 1660001410 CP FTCE_MXILINX_cpu_facade \
+      EN work/CB4CE_MXILINX_cpu_facade 1660515700 CP FTCE_MXILINX_cpu_facade \
       CP AND4 CP AND3 CP AND2 CP VCC
-EN work/stepper_MUSER_cpu_facade 1660001412 \
+EN work/stepper_MUSER_cpu_facade 1660515702 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/stepper_MUSER_cpu_facade/BEHAVIORAL 1660001413 \
+AR work/stepper_MUSER_cpu_facade/BEHAVIORAL 1660515703 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/stepper_MUSER_cpu_facade 1660001412 CP VCC \
+      EN work/stepper_MUSER_cpu_facade 1660515702 CP VCC \
       CP CB4CE_MXILINX_cpu_facade CP D3_8E_MXILINX_cpu_facade CP INV CP OR2
-EN work/cpu_control_MUSER_cpu_facade 1660001414 \
+EN work/cpu_control_MUSER_cpu_facade 1660515704 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/cpu_control_MUSER_cpu_facade/BEHAVIORAL 1660001415 \
+AR work/cpu_control_MUSER_cpu_facade/BEHAVIORAL 1660515705 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/cpu_control_MUSER_cpu_facade 1660001414 CP stepper_MUSER_cpu_facade \
+      EN work/cpu_control_MUSER_cpu_facade 1660515704 CP stepper_MUSER_cpu_facade \
       CP AND2 CP GND CP OR4 CP OR2 CP D3_8E_MXILINX_cpu_facade CP BUF CP OR3 \
       CP D2_4E_MXILINX_cpu_facade CP VCC CP INV CP AND3B1 CP OR5 \
       CP OR6_MXILINX_cpu_facade CP bus_muxer_MUSER_cpu_facade CP AND4
-EN work/cpu_freq_divider_base_MUSER_cpu_facade 1660001416 \
+EN work/cpu_freq_divider_base_MUSER_cpu_facade 1660515706 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/cpu_freq_divider_base_MUSER_cpu_facade/BEHAVIORAL 1660001417 \
+AR work/cpu_freq_divider_base_MUSER_cpu_facade/BEHAVIORAL 1660515707 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/cpu_freq_divider_base_MUSER_cpu_facade 1660001416 \
+      EN work/cpu_freq_divider_base_MUSER_cpu_facade 1660515706 \
       CP CB16CE_MXILINX_cpu_facade CP VCC
-EN work/cpu_freq_divider_1KHz_MUSER_cpu_facade 1660001418 \
+EN work/cpu_freq_divider_1KHz_MUSER_cpu_facade 1660515708 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/cpu_freq_divider_1KHz_MUSER_cpu_facade/BEHAVIORAL 1660001419 \
+AR work/cpu_freq_divider_1KHz_MUSER_cpu_facade/BEHAVIORAL 1660515709 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/cpu_freq_divider_1KHz_MUSER_cpu_facade 1660001418 \
+      EN work/cpu_freq_divider_1KHz_MUSER_cpu_facade 1660515708 \
       CP cpu_freq_divider_base_MUSER_cpu_facade CP OR2 CP FJKC_MXILINX_cpu_facade \
       CP VCC CP BUF CP AND4
-EN work/cpu_freq_divider_1Inst_MUSER_cpu_facade 1660001420 \
+EN work/cpu_freq_divider_1Inst_MUSER_cpu_facade 1660515710 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/cpu_freq_divider_1Inst_MUSER_cpu_facade/BEHAVIORAL 1660001421 \
+AR work/cpu_freq_divider_1Inst_MUSER_cpu_facade/BEHAVIORAL 1660515711 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/cpu_freq_divider_1Inst_MUSER_cpu_facade 1660001420 \
+      EN work/cpu_freq_divider_1Inst_MUSER_cpu_facade 1660515710 \
       CP cpu_freq_divider_base_MUSER_cpu_facade CP OR2 CP FJKC_MXILINX_cpu_facade \
       CP VCC CP BUF
-EN work/AND7_MXILINX_cpu_facade 1660001422 \
+EN work/AND7_MXILINX_cpu_facade 1660515712 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/AND7_MXILINX_cpu_facade/BEHAVIORAL 1660001423 \
+AR work/AND7_MXILINX_cpu_facade/BEHAVIORAL 1660515713 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/AND7_MXILINX_cpu_facade 1660001422 CP AND4 CP FMAP
-EN work/cpu_freq_divider_1Hz_MUSER_cpu_facade 1660001424 \
+      EN work/AND7_MXILINX_cpu_facade 1660515712 CP AND4 CP FMAP
+EN work/cpu_freq_divider_1Hz_MUSER_cpu_facade 1660515714 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/cpu_freq_divider_1Hz_MUSER_cpu_facade/BEHAVIORAL 1660001425 \
+AR work/cpu_freq_divider_1Hz_MUSER_cpu_facade/BEHAVIORAL 1660515715 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/cpu_freq_divider_1Hz_MUSER_cpu_facade 1660001424 \
+      EN work/cpu_freq_divider_1Hz_MUSER_cpu_facade 1660515714 \
       CP cpu_freq_divider_base_MUSER_cpu_facade CP BUF CP AND5 \
       CP AND7_MXILINX_cpu_facade CP AND2 CP OR2 CP FJKC_MXILINX_cpu_facade CP VCC
-EN work/AND6_MXILINX_cpu_facade 1660001426 \
+EN work/AND6_MXILINX_cpu_facade 1660515716 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/AND6_MXILINX_cpu_facade/BEHAVIORAL 1660001427 \
+AR work/AND6_MXILINX_cpu_facade/BEHAVIORAL 1660515717 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/AND6_MXILINX_cpu_facade 1660001426 CP AND3 CP AND4 CP FMAP
-EN work/cpu_freq_divider_1Stg_MUSER_cpu_facade 1660001428 \
+      EN work/AND6_MXILINX_cpu_facade 1660515716 CP AND3 CP AND4 CP FMAP
+EN work/cpu_freq_divider_1Stg_MUSER_cpu_facade 1660515718 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/cpu_freq_divider_1Stg_MUSER_cpu_facade/BEHAVIORAL 1660001429 \
+AR work/cpu_freq_divider_1Stg_MUSER_cpu_facade/BEHAVIORAL 1660515719 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/cpu_freq_divider_1Stg_MUSER_cpu_facade 1660001428 \
+      EN work/cpu_freq_divider_1Stg_MUSER_cpu_facade 1660515718 \
       CP cpu_freq_divider_base_MUSER_cpu_facade CP BUF CP AND2 CP OR2 \
       CP FJKC_MXILINX_cpu_facade CP VCC CP AND6_MXILINX_cpu_facade
-EN work/AND8_MXILINX_cpu_facade 1660001430 \
+EN work/AND8_MXILINX_cpu_facade 1660515720 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/AND8_MXILINX_cpu_facade/BEHAVIORAL 1660001431 \
+AR work/AND8_MXILINX_cpu_facade/BEHAVIORAL 1660515721 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/AND8_MXILINX_cpu_facade 1660001430 CP FMAP CP AND4 CP AND2
-EN work/freq_divider_MUSER_cpu_facade 1660001432 \
+      EN work/AND8_MXILINX_cpu_facade 1660515720 CP FMAP CP AND4 CP AND2
+EN work/freq_divider_MUSER_cpu_facade 1660515722 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/freq_divider_MUSER_cpu_facade/BEHAVIORAL 1660001433 \
+AR work/freq_divider_MUSER_cpu_facade/BEHAVIORAL 1660515723 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/freq_divider_MUSER_cpu_facade 1660001432 \
+      EN work/freq_divider_MUSER_cpu_facade 1660515722 \
       CP CB16CE_MXILINX_cpu_facade CP VCC CP XNOR2 CP AND8_MXILINX_cpu_facade \
       CP FJKC_MXILINX_cpu_facade CP AND4 CP OR2
-EN work/encoder8_3_MUSER_cpu_facade 1660001434 \
+EN work/encoder8_3_MUSER_cpu_facade 1660515724 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/encoder8_3_MUSER_cpu_facade/BEHAVIORAL 1660001435 \
+AR work/encoder8_3_MUSER_cpu_facade/BEHAVIORAL 1660515725 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/encoder8_3_MUSER_cpu_facade 1660001434 CP OR4 \
+      EN work/encoder8_3_MUSER_cpu_facade 1660515724 CP OR4 \
       CP AND8_MXILINX_cpu_facade CP INV
-EN work/M8_1E_MXILINX_cpu_facade 1660001436 \
+EN work/M8_1E_MXILINX_cpu_facade 1660515726 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/M8_1E_MXILINX_cpu_facade/BEHAVIORAL 1660001437 \
+AR work/M8_1E_MXILINX_cpu_facade/BEHAVIORAL 1660515727 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/M8_1E_MXILINX_cpu_facade 1660001436 CP M2_1E_MXILINX_cpu_facade \
+      EN work/M8_1E_MXILINX_cpu_facade 1660515726 CP M2_1E_MXILINX_cpu_facade \
       CP MUXF5_L CP MUXF6
-EN work/cpu_freq_divider_MUSER_cpu_facade 1660001438 \
+EN work/cpu_freq_divider_MUSER_cpu_facade 1660515728 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/cpu_freq_divider_MUSER_cpu_facade/BEHAVIORAL 1660001439 \
+AR work/cpu_freq_divider_MUSER_cpu_facade/BEHAVIORAL 1660515729 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/cpu_freq_divider_MUSER_cpu_facade 1660001438 \
+      EN work/cpu_freq_divider_MUSER_cpu_facade 1660515728 \
       CP freq_divider_MUSER_cpu_facade CP M8_1E_MXILINX_cpu_facade \
       CP encoder8_3_MUSER_cpu_facade CP BUF CP INV CP GND
-EN work/buf_8bit_MUSER_cpu_facade 1660001440 \
+EN work/buf_8bit_MUSER_cpu_facade 1660515730 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/buf_8bit_MUSER_cpu_facade/BEHAVIORAL 1660001441 \
+AR work/buf_8bit_MUSER_cpu_facade/BEHAVIORAL 1660515731 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/buf_8bit_MUSER_cpu_facade 1660001440 CP BUF
-EN work/CB2CE_MXILINX_cpu_facade 1660001442 \
+      EN work/buf_8bit_MUSER_cpu_facade 1660515730 CP BUF
+EN work/CB2CE_MXILINX_cpu_facade 1660515732 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/CB2CE_MXILINX_cpu_facade/BEHAVIORAL 1660001443 \
+AR work/CB2CE_MXILINX_cpu_facade/BEHAVIORAL 1660515733 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/CB2CE_MXILINX_cpu_facade 1660001442 CP FTCE_MXILINX_cpu_facade \
+      EN work/CB2CE_MXILINX_cpu_facade 1660515732 CP FTCE_MXILINX_cpu_facade \
       CP AND2 CP VCC
-EN work/clk_generator_MUSER_cpu_facade 1660001444 \
+EN work/clk_generator_MUSER_cpu_facade 1660515734 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/clk_generator_MUSER_cpu_facade/BEHAVIORAL 1660001445 \
+AR work/clk_generator_MUSER_cpu_facade/BEHAVIORAL 1660515735 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/clk_generator_MUSER_cpu_facade 1660001444 \
+      EN work/clk_generator_MUSER_cpu_facade 1660515734 \
       CP FJKC_MXILINX_cpu_facade CP OR2 CP AND2B1 CP INV CP VCC \
       CP CB2CE_MXILINX_cpu_facade
-EN work/OR8_MXILINX_cpu_facade 1660001446 \
+EN work/OR8_MXILINX_cpu_facade 1660515736 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/OR8_MXILINX_cpu_facade/BEHAVIORAL 1660001447 \
+AR work/OR8_MXILINX_cpu_facade/BEHAVIORAL 1660515737 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/OR8_MXILINX_cpu_facade 1660001446 CP FMAP CP OR2 CP OR4
-EN work/AND16_MXILINX_cpu_facade 1660001448 \
+      EN work/OR8_MXILINX_cpu_facade 1660515736 CP FMAP CP OR2 CP OR4
+EN work/AND16_MXILINX_cpu_facade 1660515738 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/AND16_MXILINX_cpu_facade/BEHAVIORAL 1660001449 \
+AR work/AND16_MXILINX_cpu_facade/BEHAVIORAL 1660515739 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/AND16_MXILINX_cpu_facade 1660001448 CP MUXCY_L CP FMAP CP VCC CP GND \
+      EN work/AND16_MXILINX_cpu_facade 1660515738 CP MUXCY_L CP FMAP CP VCC CP GND \
       CP AND4 CP MUXCY
-EN work/encoder16_4_MUSER_cpu_facade 1660001450 \
+EN work/encoder16_4_MUSER_cpu_facade 1660515740 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/encoder16_4_MUSER_cpu_facade/BEHAVIORAL 1660001451 \
+AR work/encoder16_4_MUSER_cpu_facade/BEHAVIORAL 1660515741 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/encoder16_4_MUSER_cpu_facade 1660001450 CP INV \
+      EN work/encoder16_4_MUSER_cpu_facade 1660515740 CP INV \
       CP AND16_MXILINX_cpu_facade CP OR8_MXILINX_cpu_facade
-EN work/cpu_output_muxer_MUSER_cpu_facade 1660001452 \
+EN work/cpu_output_muxer_MUSER_cpu_facade 1660515742 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/cpu_output_muxer_MUSER_cpu_facade/BEHAVIORAL 1660001453 \
+AR work/cpu_output_muxer_MUSER_cpu_facade/BEHAVIORAL 1660515743 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/cpu_output_muxer_MUSER_cpu_facade 1660001452 \
+      EN work/cpu_output_muxer_MUSER_cpu_facade 1660515742 \
       CP bus_muxer_MUSER_cpu_facade CP BUF CP INV CP encoder16_4_MUSER_cpu_facade \
       CP GND
-EN work/pass_through_or_one_MUSER_cpu_facade 1660001454 \
+EN work/pass_through_or_one_MUSER_cpu_facade 1660515744 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/pass_through_or_one_MUSER_cpu_facade/BEHAVIORAL 1660001455 \
+AR work/pass_through_or_one_MUSER_cpu_facade/BEHAVIORAL 1660515745 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/pass_through_or_one_MUSER_cpu_facade 1660001454 \
+      EN work/pass_through_or_one_MUSER_cpu_facade 1660515744 \
       CP M2_1_MXILINX_cpu_facade
-EN work/LD4CE_MXILINX_cpu_facade 1660001456 \
+EN work/LD4CE_MXILINX_cpu_facade 1660515746 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/LD4CE_MXILINX_cpu_facade/BEHAVIORAL 1660001457 \
+AR work/LD4CE_MXILINX_cpu_facade/BEHAVIORAL 1660515747 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/LD4CE_MXILINX_cpu_facade 1660001456 CP LDCE
-EN work/alu_output_muxer_MUSER_cpu_facade 1660001458 \
+      EN work/LD4CE_MXILINX_cpu_facade 1660515746 CP LDCE
+EN work/alu_output_muxer_MUSER_cpu_facade 1660515748 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/alu_output_muxer_MUSER_cpu_facade/BEHAVIORAL 1660001459 \
+AR work/alu_output_muxer_MUSER_cpu_facade/BEHAVIORAL 1660515749 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/alu_output_muxer_MUSER_cpu_facade 1660001458 CP BUF \
+      EN work/alu_output_muxer_MUSER_cpu_facade 1660515748 CP BUF \
       CP bus_muxer_MUSER_cpu_facade CP GND CP VCC
-EN work/NOR8_MXILINX_cpu_facade 1660001460 \
+EN work/NOR8_MXILINX_cpu_facade 1660515750 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/NOR8_MXILINX_cpu_facade/BEHAVIORAL 1660001461 \
+AR work/NOR8_MXILINX_cpu_facade/BEHAVIORAL 1660515751 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/NOR8_MXILINX_cpu_facade 1660001460 CP FMAP CP OR4 CP NOR2
-EN work/lzero_MUSER_cpu_facade 1660001462 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
-      PH unisim/VCOMPONENTS 1350103252
-AR work/lzero_MUSER_cpu_facade/BEHAVIORAL 1660001463 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/lzero_MUSER_cpu_facade 1660001462 CP NOR8_MXILINX_cpu_facade
-EN work/cmp_1bit_MUSER_cpu_facade 1660001464 \
+      EN work/NOR8_MXILINX_cpu_facade 1660515750 CP FMAP CP OR4 CP NOR2
+EN work/lzero_MUSER_cpu_facade 1660515752 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/cmp_1bit_MUSER_cpu_facade/BEHAVIORAL 1660001465 \
+AR work/lzero_MUSER_cpu_facade/BEHAVIORAL 1660515753 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/cmp_1bit_MUSER_cpu_facade 1660001464 CP XNOR2 CP AND2 CP OR2 CP INV
-EN work/cmp_8bit_MUSER_cpu_facade 1660001466 \
+      EN work/lzero_MUSER_cpu_facade 1660515752 CP NOR8_MXILINX_cpu_facade
+EN work/cmp_1bit_MUSER_cpu_facade 1660515754 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/cmp_8bit_MUSER_cpu_facade/BEHAVIORAL 1660001467 \
+AR work/cmp_1bit_MUSER_cpu_facade/BEHAVIORAL 1660515755 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/cmp_8bit_MUSER_cpu_facade 1660001466 CP cmp_1bit_MUSER_cpu_facade \
+      EN work/cmp_1bit_MUSER_cpu_facade 1660515754 CP XNOR2 CP AND2 CP OR2 CP INV
+EN work/cmp_8bit_MUSER_cpu_facade 1660515756 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
+      PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
+      PH unisim/VCOMPONENTS 1350103252
+AR work/cmp_8bit_MUSER_cpu_facade/BEHAVIORAL 1660515757 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
+      EN work/cmp_8bit_MUSER_cpu_facade 1660515756 CP cmp_1bit_MUSER_cpu_facade \
       CP PULLUP CP PULLDOWN
-EN work/ADD8_MXILINX_cpu_facade 1660001468 \
+EN work/ADD8_MXILINX_cpu_facade 1660515758 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/ADD8_MXILINX_cpu_facade/BEHAVIORAL 1660001469 \
+AR work/ADD8_MXILINX_cpu_facade/BEHAVIORAL 1660515759 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/ADD8_MXILINX_cpu_facade 1660001468 CP FMAP CP MUXCY_L CP MUXCY \
+      EN work/ADD8_MXILINX_cpu_facade 1660515758 CP FMAP CP MUXCY_L CP MUXCY \
       CP XORCY CP MUXCY_D CP XOR2
-EN work/alu_MUSER_cpu_facade 1660001470 \
+EN work/alu_MUSER_cpu_facade 1660515760 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/alu_MUSER_cpu_facade/BEHAVIORAL 1660001471 \
+AR work/alu_MUSER_cpu_facade/BEHAVIORAL 1660515761 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/alu_MUSER_cpu_facade 1660001470 CP D3_8E_MXILINX_cpu_facade \
+      EN work/alu_MUSER_cpu_facade 1660515760 CP D3_8E_MXILINX_cpu_facade \
       CP ADD8_MXILINX_cpu_facade CP BUF CP VCC CP AND2 CP OR3 \
       CP INV8_MXILINX_cpu_facade CP OR2 CP cmp_8bit_MUSER_cpu_facade \
       CP lzero_MUSER_cpu_facade CP alu_output_muxer_MUSER_cpu_facade
-EN work/cpu_MUSER_cpu_facade 1660001472 \
+EN work/cpu_MUSER_cpu_facade 1660515762 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/cpu_MUSER_cpu_facade/BEHAVIORAL 1660001473 \
+AR work/cpu_MUSER_cpu_facade/BEHAVIORAL 1660515763 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/cpu_MUSER_cpu_facade 1660001472 CP alu_MUSER_cpu_facade \
+      EN work/cpu_MUSER_cpu_facade 1660515762 CP alu_MUSER_cpu_facade \
       CP clk_generator_MUSER_cpu_facade CP cpu_control_MUSER_cpu_facade \
       CP pass_through_or_one_MUSER_cpu_facade CP PULLUP \
       CP LD4CE_MXILINX_cpu_facade CP VCC CP AND2 CP FDC_1 CP OR2 \
@@ -989,438 +989,438 @@ AR work/cpu_MUSER_cpu_facade/BEHAVIORAL 1660001473 \
       CP cpu_freq_divider_1Stg_MUSER_cpu_facade \
       CP cpu_freq_divider_1Inst_MUSER_cpu_facade \
       CP cpu_freq_divider_1KHz_MUSER_cpu_facade CP OR5
-EN work/cpu_facade 1660001474 \
+EN work/cpu_facade 1660515764 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/cpu_facade/BEHAVIORAL 1660001475 \
+AR work/cpu_facade/BEHAVIORAL 1660515765 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_facade.vhf \
-      EN work/cpu_facade 1660001474 CP cpu_MUSER_cpu_facade CP GND CP INV \
+      EN work/cpu_facade 1660515764 CP cpu_MUSER_cpu_facade CP GND CP INV \
       CP INV8_MXILINX_cpu_facade CP debouncer_MUSER_cpu_facade \
       CP FJKC_MXILINX_cpu_facade CP VCC CP USART_MUSER_cpu_facade \
       CP ram_256bytes_MUSER_cpu_facade CP AND2 CP reg_8bit_MUSER_cpu_facade \
       CP D4_16E_MXILINX_cpu_facade CP bus_muxer_MUSER_cpu_facade CP BUF CP AND4 \
       CP LD8CE_MXILINX_cpu_facade
 FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider.vhf 2022/06/28.04:13:09 P.40xd
-EN work/M8_1E_HXILINX_cpu_freq_divider 1660001620 \
+EN work/M8_1E_HXILINX_cpu_freq_divider 1660515910 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider.vhf \
       PB ieee/std_logic_1164 1350103243
-AR work/M8_1E_HXILINX_cpu_freq_divider/M8_1E_HXILINX_cpu_freq_divider_V 1660001621 \
+AR work/M8_1E_HXILINX_cpu_freq_divider/M8_1E_HXILINX_cpu_freq_divider_V 1660515911 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider.vhf \
-      EN work/M8_1E_HXILINX_cpu_freq_divider 1660001620
-EN work/CB16CE_HXILINX_cpu_freq_divider 1660001622 \
+      EN work/M8_1E_HXILINX_cpu_freq_divider 1660515910
+EN work/CB16CE_HXILINX_cpu_freq_divider 1660515912 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/std_logic_arith 1350103244 \
       PB ieee/STD_LOGIC_UNSIGNED 1350103247
-AR work/CB16CE_HXILINX_cpu_freq_divider/Behavioral 1660001623 \
+AR work/CB16CE_HXILINX_cpu_freq_divider/Behavioral 1660515913 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider.vhf \
-      EN work/CB16CE_HXILINX_cpu_freq_divider 1660001622
-EN work/FJKC_HXILINX_cpu_freq_divider 1660001624 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider.vhf \
-      PB ieee/std_logic_1164 1350103243
-AR work/FJKC_HXILINX_cpu_freq_divider/Behavioral 1660001625 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider.vhf \
-      EN work/FJKC_HXILINX_cpu_freq_divider 1660001624
-EN work/AND8_HXILINX_cpu_freq_divider 1660001626 \
+      EN work/CB16CE_HXILINX_cpu_freq_divider 1660515912
+EN work/FJKC_HXILINX_cpu_freq_divider 1660515914 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider.vhf \
       PB ieee/std_logic_1164 1350103243
-AR work/AND8_HXILINX_cpu_freq_divider/AND8_HXILINX_cpu_freq_divider_V 1660001627 \
+AR work/FJKC_HXILINX_cpu_freq_divider/Behavioral 1660515915 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider.vhf \
-      EN work/AND8_HXILINX_cpu_freq_divider 1660001626
-EN work/freq_divider_MUSER_cpu_freq_divider 1660001628 \
+      EN work/FJKC_HXILINX_cpu_freq_divider 1660515914
+EN work/AND8_HXILINX_cpu_freq_divider 1660515916 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider.vhf \
+      PB ieee/std_logic_1164 1350103243
+AR work/AND8_HXILINX_cpu_freq_divider/AND8_HXILINX_cpu_freq_divider_V 1660515917 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider.vhf \
+      EN work/AND8_HXILINX_cpu_freq_divider 1660515916
+EN work/freq_divider_MUSER_cpu_freq_divider 1660515918 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/freq_divider_MUSER_cpu_freq_divider/BEHAVIORAL 1660001629 \
+AR work/freq_divider_MUSER_cpu_freq_divider/BEHAVIORAL 1660515919 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider.vhf \
-      EN work/freq_divider_MUSER_cpu_freq_divider 1660001628 \
+      EN work/freq_divider_MUSER_cpu_freq_divider 1660515918 \
       CP CB16CE_HXILINX_cpu_freq_divider CP VCC CP XNOR2 \
       CP AND8_HXILINX_cpu_freq_divider CP FJKC_HXILINX_cpu_freq_divider CP AND4 \
       CP OR2
-EN work/encoder8_3_MUSER_cpu_freq_divider 1660001630 \
+EN work/encoder8_3_MUSER_cpu_freq_divider 1660515920 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/encoder8_3_MUSER_cpu_freq_divider/BEHAVIORAL 1660001631 \
+AR work/encoder8_3_MUSER_cpu_freq_divider/BEHAVIORAL 1660515921 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider.vhf \
-      EN work/encoder8_3_MUSER_cpu_freq_divider 1660001630 CP OR4 \
+      EN work/encoder8_3_MUSER_cpu_freq_divider 1660515920 CP OR4 \
       CP AND8_HXILINX_cpu_freq_divider CP INV
-EN work/cpu_freq_divider 1660001632 \
+EN work/cpu_freq_divider 1660515922 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/cpu_freq_divider/BEHAVIORAL 1660001633 \
+AR work/cpu_freq_divider/BEHAVIORAL 1660515923 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider.vhf \
-      EN work/cpu_freq_divider 1660001632 CP freq_divider_MUSER_cpu_freq_divider \
+      EN work/cpu_freq_divider 1660515922 CP freq_divider_MUSER_cpu_freq_divider \
       CP M8_1E_HXILINX_cpu_freq_divider CP encoder8_3_MUSER_cpu_freq_divider \
       CP BUF CP INV CP GND
 FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1Hz.vhf 2022/06/28.04:13:07 P.40xd
-EN work/CB16CE_HXILINX_cpu_freq_divider_1Hz 1660001634 \
+EN work/CB16CE_HXILINX_cpu_freq_divider_1Hz 1660515924 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1Hz.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/std_logic_arith 1350103244 \
       PB ieee/STD_LOGIC_UNSIGNED 1350103247
-AR work/CB16CE_HXILINX_cpu_freq_divider_1Hz/Behavioral 1660001635 \
+AR work/CB16CE_HXILINX_cpu_freq_divider_1Hz/Behavioral 1660515925 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1Hz.vhf \
-      EN work/CB16CE_HXILINX_cpu_freq_divider_1Hz 1660001634
-EN work/FJKC_HXILINX_cpu_freq_divider_1Hz 1660001636 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1Hz.vhf \
-      PB ieee/std_logic_1164 1350103243
-AR work/FJKC_HXILINX_cpu_freq_divider_1Hz/Behavioral 1660001637 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1Hz.vhf \
-      EN work/FJKC_HXILINX_cpu_freq_divider_1Hz 1660001636
-EN work/AND7_HXILINX_cpu_freq_divider_1Hz 1660001638 \
+      EN work/CB16CE_HXILINX_cpu_freq_divider_1Hz 1660515924
+EN work/FJKC_HXILINX_cpu_freq_divider_1Hz 1660515926 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1Hz.vhf \
       PB ieee/std_logic_1164 1350103243
-AR work/AND7_HXILINX_cpu_freq_divider_1Hz/AND7_HXILINX_cpu_freq_divider_1Hz_V 1660001639 \
+AR work/FJKC_HXILINX_cpu_freq_divider_1Hz/Behavioral 1660515927 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1Hz.vhf \
-      EN work/AND7_HXILINX_cpu_freq_divider_1Hz 1660001638
-EN work/cpu_freq_divider_base_MUSER_cpu_freq_divider_1Hz 1660001640 \
+      EN work/FJKC_HXILINX_cpu_freq_divider_1Hz 1660515926
+EN work/AND7_HXILINX_cpu_freq_divider_1Hz 1660515928 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1Hz.vhf \
+      PB ieee/std_logic_1164 1350103243
+AR work/AND7_HXILINX_cpu_freq_divider_1Hz/AND7_HXILINX_cpu_freq_divider_1Hz_V 1660515929 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1Hz.vhf \
+      EN work/AND7_HXILINX_cpu_freq_divider_1Hz 1660515928
+EN work/cpu_freq_divider_base_MUSER_cpu_freq_divider_1Hz 1660515930 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1Hz.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/cpu_freq_divider_base_MUSER_cpu_freq_divider_1Hz/BEHAVIORAL 1660001641 \
+AR work/cpu_freq_divider_base_MUSER_cpu_freq_divider_1Hz/BEHAVIORAL 1660515931 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1Hz.vhf \
-      EN work/cpu_freq_divider_base_MUSER_cpu_freq_divider_1Hz 1660001640 \
+      EN work/cpu_freq_divider_base_MUSER_cpu_freq_divider_1Hz 1660515930 \
       CP CB16CE_HXILINX_cpu_freq_divider_1Hz CP VCC
-EN work/cpu_freq_divider_1Hz 1660001642 \
+EN work/cpu_freq_divider_1Hz 1660515932 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1Hz.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/cpu_freq_divider_1Hz/BEHAVIORAL 1660001643 \
+AR work/cpu_freq_divider_1Hz/BEHAVIORAL 1660515933 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1Hz.vhf \
-      EN work/cpu_freq_divider_1Hz 1660001642 \
+      EN work/cpu_freq_divider_1Hz 1660515932 \
       CP cpu_freq_divider_base_MUSER_cpu_freq_divider_1Hz CP BUF CP AND5 \
       CP AND7_HXILINX_cpu_freq_divider_1Hz CP AND2 CP OR2 \
       CP FJKC_HXILINX_cpu_freq_divider_1Hz CP VCC
 FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1Inst.vhf 2022/06/28.04:13:09 P.40xd
-EN work/CB16CE_HXILINX_cpu_freq_divider_1Inst 1660001644 \
+EN work/CB16CE_HXILINX_cpu_freq_divider_1Inst 1660515934 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1Inst.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/std_logic_arith 1350103244 \
       PB ieee/STD_LOGIC_UNSIGNED 1350103247
-AR work/CB16CE_HXILINX_cpu_freq_divider_1Inst/Behavioral 1660001645 \
+AR work/CB16CE_HXILINX_cpu_freq_divider_1Inst/Behavioral 1660515935 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1Inst.vhf \
-      EN work/CB16CE_HXILINX_cpu_freq_divider_1Inst 1660001644
-EN work/FJKC_HXILINX_cpu_freq_divider_1Inst 1660001646 \
+      EN work/CB16CE_HXILINX_cpu_freq_divider_1Inst 1660515934
+EN work/FJKC_HXILINX_cpu_freq_divider_1Inst 1660515936 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1Inst.vhf \
       PB ieee/std_logic_1164 1350103243
-AR work/FJKC_HXILINX_cpu_freq_divider_1Inst/Behavioral 1660001647 \
+AR work/FJKC_HXILINX_cpu_freq_divider_1Inst/Behavioral 1660515937 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1Inst.vhf \
-      EN work/FJKC_HXILINX_cpu_freq_divider_1Inst 1660001646
-EN work/cpu_freq_divider_base_MUSER_cpu_freq_divider_1Inst 1660001648 \
+      EN work/FJKC_HXILINX_cpu_freq_divider_1Inst 1660515936
+EN work/cpu_freq_divider_base_MUSER_cpu_freq_divider_1Inst 1660515938 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1Inst.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/cpu_freq_divider_base_MUSER_cpu_freq_divider_1Inst/BEHAVIORAL 1660001649 \
+AR work/cpu_freq_divider_base_MUSER_cpu_freq_divider_1Inst/BEHAVIORAL 1660515939 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1Inst.vhf \
-      EN work/cpu_freq_divider_base_MUSER_cpu_freq_divider_1Inst 1660001648 \
+      EN work/cpu_freq_divider_base_MUSER_cpu_freq_divider_1Inst 1660515938 \
       CP CB16CE_HXILINX_cpu_freq_divider_1Inst CP VCC
-EN work/cpu_freq_divider_1Inst 1660001650 \
+EN work/cpu_freq_divider_1Inst 1660515940 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1Inst.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/cpu_freq_divider_1Inst/BEHAVIORAL 1660001651 \
+AR work/cpu_freq_divider_1Inst/BEHAVIORAL 1660515941 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1Inst.vhf \
-      EN work/cpu_freq_divider_1Inst 1660001650 \
+      EN work/cpu_freq_divider_1Inst 1660515940 \
       CP cpu_freq_divider_base_MUSER_cpu_freq_divider_1Inst CP OR2 \
       CP FJKC_HXILINX_cpu_freq_divider_1Inst CP VCC CP BUF
 FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1KHz.vhf 2022/06/28.04:13:07 P.40xd
-EN work/CB16CE_HXILINX_cpu_freq_divider_1KHz 1660001652 \
+EN work/CB16CE_HXILINX_cpu_freq_divider_1KHz 1660515942 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1KHz.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/std_logic_arith 1350103244 \
       PB ieee/STD_LOGIC_UNSIGNED 1350103247
-AR work/CB16CE_HXILINX_cpu_freq_divider_1KHz/Behavioral 1660001653 \
+AR work/CB16CE_HXILINX_cpu_freq_divider_1KHz/Behavioral 1660515943 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1KHz.vhf \
-      EN work/CB16CE_HXILINX_cpu_freq_divider_1KHz 1660001652
-EN work/FJKC_HXILINX_cpu_freq_divider_1KHz 1660001654 \
+      EN work/CB16CE_HXILINX_cpu_freq_divider_1KHz 1660515942
+EN work/FJKC_HXILINX_cpu_freq_divider_1KHz 1660515944 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1KHz.vhf \
       PB ieee/std_logic_1164 1350103243
-AR work/FJKC_HXILINX_cpu_freq_divider_1KHz/Behavioral 1660001655 \
+AR work/FJKC_HXILINX_cpu_freq_divider_1KHz/Behavioral 1660515945 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1KHz.vhf \
-      EN work/FJKC_HXILINX_cpu_freq_divider_1KHz 1660001654
-EN work/cpu_freq_divider_base_MUSER_cpu_freq_divider_1KHz 1660001656 \
+      EN work/FJKC_HXILINX_cpu_freq_divider_1KHz 1660515944
+EN work/cpu_freq_divider_base_MUSER_cpu_freq_divider_1KHz 1660515946 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1KHz.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/cpu_freq_divider_base_MUSER_cpu_freq_divider_1KHz/BEHAVIORAL 1660001657 \
+AR work/cpu_freq_divider_base_MUSER_cpu_freq_divider_1KHz/BEHAVIORAL 1660515947 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1KHz.vhf \
-      EN work/cpu_freq_divider_base_MUSER_cpu_freq_divider_1KHz 1660001656 \
+      EN work/cpu_freq_divider_base_MUSER_cpu_freq_divider_1KHz 1660515946 \
       CP CB16CE_HXILINX_cpu_freq_divider_1KHz CP VCC
-EN work/cpu_freq_divider_1KHz 1660001658 \
+EN work/cpu_freq_divider_1KHz 1660515948 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1KHz.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/cpu_freq_divider_1KHz/BEHAVIORAL 1660001659 \
+AR work/cpu_freq_divider_1KHz/BEHAVIORAL 1660515949 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1KHz.vhf \
-      EN work/cpu_freq_divider_1KHz 1660001658 \
+      EN work/cpu_freq_divider_1KHz 1660515948 \
       CP cpu_freq_divider_base_MUSER_cpu_freq_divider_1KHz CP OR2 \
       CP FJKC_HXILINX_cpu_freq_divider_1KHz CP VCC CP BUF CP AND4
 FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1Stg.vhf 2022/06/28.04:13:09 P.40xd
-EN work/CB16CE_HXILINX_cpu_freq_divider_1Stg 1660001660 \
+EN work/CB16CE_HXILINX_cpu_freq_divider_1Stg 1660515950 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1Stg.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/std_logic_arith 1350103244 \
       PB ieee/STD_LOGIC_UNSIGNED 1350103247
-AR work/CB16CE_HXILINX_cpu_freq_divider_1Stg/Behavioral 1660001661 \
+AR work/CB16CE_HXILINX_cpu_freq_divider_1Stg/Behavioral 1660515951 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1Stg.vhf \
-      EN work/CB16CE_HXILINX_cpu_freq_divider_1Stg 1660001660
-EN work/FJKC_HXILINX_cpu_freq_divider_1Stg 1660001662 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1Stg.vhf \
-      PB ieee/std_logic_1164 1350103243
-AR work/FJKC_HXILINX_cpu_freq_divider_1Stg/Behavioral 1660001663 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1Stg.vhf \
-      EN work/FJKC_HXILINX_cpu_freq_divider_1Stg 1660001662
-EN work/AND6_HXILINX_cpu_freq_divider_1Stg 1660001664 \
+      EN work/CB16CE_HXILINX_cpu_freq_divider_1Stg 1660515950
+EN work/FJKC_HXILINX_cpu_freq_divider_1Stg 1660515952 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1Stg.vhf \
       PB ieee/std_logic_1164 1350103243
-AR work/AND6_HXILINX_cpu_freq_divider_1Stg/AND6_HXILINX_cpu_freq_divider_1Stg_V 1660001665 \
+AR work/FJKC_HXILINX_cpu_freq_divider_1Stg/Behavioral 1660515953 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1Stg.vhf \
-      EN work/AND6_HXILINX_cpu_freq_divider_1Stg 1660001664
-EN work/cpu_freq_divider_base_MUSER_cpu_freq_divider_1Stg 1660001666 \
+      EN work/FJKC_HXILINX_cpu_freq_divider_1Stg 1660515952
+EN work/AND6_HXILINX_cpu_freq_divider_1Stg 1660515954 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1Stg.vhf \
+      PB ieee/std_logic_1164 1350103243
+AR work/AND6_HXILINX_cpu_freq_divider_1Stg/AND6_HXILINX_cpu_freq_divider_1Stg_V 1660515955 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1Stg.vhf \
+      EN work/AND6_HXILINX_cpu_freq_divider_1Stg 1660515954
+EN work/cpu_freq_divider_base_MUSER_cpu_freq_divider_1Stg 1660515956 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1Stg.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/cpu_freq_divider_base_MUSER_cpu_freq_divider_1Stg/BEHAVIORAL 1660001667 \
+AR work/cpu_freq_divider_base_MUSER_cpu_freq_divider_1Stg/BEHAVIORAL 1660515957 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1Stg.vhf \
-      EN work/cpu_freq_divider_base_MUSER_cpu_freq_divider_1Stg 1660001666 \
+      EN work/cpu_freq_divider_base_MUSER_cpu_freq_divider_1Stg 1660515956 \
       CP CB16CE_HXILINX_cpu_freq_divider_1Stg CP VCC
-EN work/cpu_freq_divider_1Stg 1660001668 \
+EN work/cpu_freq_divider_1Stg 1660515958 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1Stg.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/cpu_freq_divider_1Stg/BEHAVIORAL 1660001669 \
+AR work/cpu_freq_divider_1Stg/BEHAVIORAL 1660515959 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_1Stg.vhf \
-      EN work/cpu_freq_divider_1Stg 1660001668 \
+      EN work/cpu_freq_divider_1Stg 1660515958 \
       CP cpu_freq_divider_base_MUSER_cpu_freq_divider_1Stg CP BUF CP AND2 CP OR2 \
       CP FJKC_HXILINX_cpu_freq_divider_1Stg CP VCC \
       CP AND6_HXILINX_cpu_freq_divider_1Stg
 FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_base.vhf 2022/06/28.04:13:09 P.40xd
-EN work/CB16CE_HXILINX_cpu_freq_divider_base 1660001700 \
+EN work/CB16CE_HXILINX_cpu_freq_divider_base 1660515990 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_base.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/std_logic_arith 1350103244 \
       PB ieee/STD_LOGIC_UNSIGNED 1350103247
-AR work/CB16CE_HXILINX_cpu_freq_divider_base/Behavioral 1660001701 \
+AR work/CB16CE_HXILINX_cpu_freq_divider_base/Behavioral 1660515991 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_base.vhf \
-      EN work/CB16CE_HXILINX_cpu_freq_divider_base 1660001700
-EN work/cpu_freq_divider_base 1660001702 \
+      EN work/CB16CE_HXILINX_cpu_freq_divider_base 1660515990
+EN work/cpu_freq_divider_base 1660515992 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_base.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/cpu_freq_divider_base/BEHAVIORAL 1660001703 \
+AR work/cpu_freq_divider_base/BEHAVIORAL 1660515993 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_freq_divider_base.vhf \
-      EN work/cpu_freq_divider_base 1660001702 \
+      EN work/cpu_freq_divider_base 1660515992 \
       CP CB16CE_HXILINX_cpu_freq_divider_base CP VCC
 FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_output_muxer.vhf 2022/06/28.04:13:07 P.40xd
-EN work/AND16_HXILINX_cpu_output_muxer 1660001670 \
+EN work/AND16_HXILINX_cpu_output_muxer 1660515960 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_output_muxer.vhf \
       PB ieee/std_logic_1164 1350103243
-AR work/AND16_HXILINX_cpu_output_muxer/AND16_HXILINX_cpu_output_muxer_V 1660001671 \
+AR work/AND16_HXILINX_cpu_output_muxer/AND16_HXILINX_cpu_output_muxer_V 1660515961 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_output_muxer.vhf \
-      EN work/AND16_HXILINX_cpu_output_muxer 1660001670
-EN work/OR8_HXILINX_cpu_output_muxer 1660001672 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_output_muxer.vhf \
-      PB ieee/std_logic_1164 1350103243
-AR work/OR8_HXILINX_cpu_output_muxer/OR8_HXILINX_cpu_output_muxer_V 1660001673 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_output_muxer.vhf \
-      EN work/OR8_HXILINX_cpu_output_muxer 1660001672
-EN work/M16_1E_HXILINX_cpu_output_muxer 1660001674 \
+      EN work/AND16_HXILINX_cpu_output_muxer 1660515960
+EN work/OR8_HXILINX_cpu_output_muxer 1660515962 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_output_muxer.vhf \
       PB ieee/std_logic_1164 1350103243
-AR work/M16_1E_HXILINX_cpu_output_muxer/M16_1E_HXILINX_cpu_output_muxer_V 1660001675 \
+AR work/OR8_HXILINX_cpu_output_muxer/OR8_HXILINX_cpu_output_muxer_V 1660515963 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_output_muxer.vhf \
-      EN work/M16_1E_HXILINX_cpu_output_muxer 1660001674
-EN work/encoder16_4_MUSER_cpu_output_muxer 1660001676 \
+      EN work/OR8_HXILINX_cpu_output_muxer 1660515962
+EN work/M16_1E_HXILINX_cpu_output_muxer 1660515964 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_output_muxer.vhf \
+      PB ieee/std_logic_1164 1350103243
+AR work/M16_1E_HXILINX_cpu_output_muxer/M16_1E_HXILINX_cpu_output_muxer_V 1660515965 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_output_muxer.vhf \
+      EN work/M16_1E_HXILINX_cpu_output_muxer 1660515964
+EN work/encoder16_4_MUSER_cpu_output_muxer 1660515966 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_output_muxer.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/encoder16_4_MUSER_cpu_output_muxer/BEHAVIORAL 1660001677 \
+AR work/encoder16_4_MUSER_cpu_output_muxer/BEHAVIORAL 1660515967 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_output_muxer.vhf \
-      EN work/encoder16_4_MUSER_cpu_output_muxer 1660001676 CP INV \
+      EN work/encoder16_4_MUSER_cpu_output_muxer 1660515966 CP INV \
       CP AND16_HXILINX_cpu_output_muxer CP OR8_HXILINX_cpu_output_muxer
-EN work/bus_muxer_MUSER_cpu_output_muxer 1660001678 \
+EN work/bus_muxer_MUSER_cpu_output_muxer 1660515968 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_output_muxer.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/bus_muxer_MUSER_cpu_output_muxer/BEHAVIORAL 1660001679 \
+AR work/bus_muxer_MUSER_cpu_output_muxer/BEHAVIORAL 1660515969 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_output_muxer.vhf \
-      EN work/bus_muxer_MUSER_cpu_output_muxer 1660001678 \
+      EN work/bus_muxer_MUSER_cpu_output_muxer 1660515968 \
       CP M16_1E_HXILINX_cpu_output_muxer CP BUF
-EN work/cpu_output_muxer 1660001680 \
+EN work/cpu_output_muxer 1660515970 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_output_muxer.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/cpu_output_muxer/BEHAVIORAL 1660001681 \
+AR work/cpu_output_muxer/BEHAVIORAL 1660515971 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/cpu_output_muxer.vhf \
-      EN work/cpu_output_muxer 1660001680 CP bus_muxer_MUSER_cpu_output_muxer \
+      EN work/cpu_output_muxer 1660515970 CP bus_muxer_MUSER_cpu_output_muxer \
       CP BUF CP INV CP encoder16_4_MUSER_cpu_output_muxer CP GND
 FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/debouncer.vhf 2022/06/28.04:13:09 P.40xd
-EN work/CB16CE_HXILINX_debouncer 1660001564 \
+EN work/CB16CE_HXILINX_debouncer 1660515854 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/debouncer.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/std_logic_arith 1350103244 \
       PB ieee/STD_LOGIC_UNSIGNED 1350103247
-AR work/CB16CE_HXILINX_debouncer/Behavioral 1660001565 \
+AR work/CB16CE_HXILINX_debouncer/Behavioral 1660515855 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/debouncer.vhf \
-      EN work/CB16CE_HXILINX_debouncer 1660001564
-EN work/debouncer 1660001566 \
+      EN work/CB16CE_HXILINX_debouncer 1660515854
+EN work/debouncer 1660515856 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/debouncer.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/debouncer/BEHAVIORAL 1660001567 \
+AR work/debouncer/BEHAVIORAL 1660515857 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/debouncer.vhf \
-      EN work/debouncer 1660001566 CP CB16CE_HXILINX_debouncer CP VCC CP BUF
+      EN work/debouncer 1660515856 CP CB16CE_HXILINX_debouncer CP VCC CP BUF
 FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/encoder16_4.vhf 2022/06/28.04:13:06 P.40xd
-EN work/AND16_HXILINX_encoder16_4 1660001704 \
+EN work/AND16_HXILINX_encoder16_4 1660515994 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/encoder16_4.vhf \
       PB ieee/std_logic_1164 1350103243
-AR work/AND16_HXILINX_encoder16_4/AND16_HXILINX_encoder16_4_V 1660001705 \
+AR work/AND16_HXILINX_encoder16_4/AND16_HXILINX_encoder16_4_V 1660515995 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/encoder16_4.vhf \
-      EN work/AND16_HXILINX_encoder16_4 1660001704
-EN work/OR8_HXILINX_encoder16_4 1660001706 \
+      EN work/AND16_HXILINX_encoder16_4 1660515994
+EN work/OR8_HXILINX_encoder16_4 1660515996 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/encoder16_4.vhf \
       PB ieee/std_logic_1164 1350103243
-AR work/OR8_HXILINX_encoder16_4/OR8_HXILINX_encoder16_4_V 1660001707 \
+AR work/OR8_HXILINX_encoder16_4/OR8_HXILINX_encoder16_4_V 1660515997 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/encoder16_4.vhf \
-      EN work/OR8_HXILINX_encoder16_4 1660001706
-EN work/encoder16_4 1660001708 \
+      EN work/OR8_HXILINX_encoder16_4 1660515996
+EN work/encoder16_4 1660515998 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/encoder16_4.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/encoder16_4/BEHAVIORAL 1660001709 \
+AR work/encoder16_4/BEHAVIORAL 1660515999 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/encoder16_4.vhf \
-      EN work/encoder16_4 1660001708 CP INV CP AND16_HXILINX_encoder16_4 \
+      EN work/encoder16_4 1660515998 CP INV CP AND16_HXILINX_encoder16_4 \
       CP OR8_HXILINX_encoder16_4
 FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/encoder8_3.vhf 2022/06/28.04:13:07 P.40xd
-EN work/AND8_HXILINX_encoder8_3 1660001710 \
+EN work/AND8_HXILINX_encoder8_3 1660516000 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/encoder8_3.vhf \
       PB ieee/std_logic_1164 1350103243
-AR work/AND8_HXILINX_encoder8_3/AND8_HXILINX_encoder8_3_V 1660001711 \
+AR work/AND8_HXILINX_encoder8_3/AND8_HXILINX_encoder8_3_V 1660516001 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/encoder8_3.vhf \
-      EN work/AND8_HXILINX_encoder8_3 1660001710
-EN work/encoder8_3 1660001712 \
+      EN work/AND8_HXILINX_encoder8_3 1660516000
+EN work/encoder8_3 1660516002 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/encoder8_3.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/encoder8_3/BEHAVIORAL 1660001713 \
+AR work/encoder8_3/BEHAVIORAL 1660516003 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/encoder8_3.vhf \
-      EN work/encoder8_3 1660001712 CP OR4 CP AND8_HXILINX_encoder8_3 CP INV
+      EN work/encoder8_3 1660516002 CP OR4 CP AND8_HXILINX_encoder8_3 CP INV
 FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/freq_divider.vhf 2022/06/28.04:13:05 P.40xd
-EN work/CB16CE_HXILINX_freq_divider 1660001714 \
+EN work/CB16CE_HXILINX_freq_divider 1660516004 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/freq_divider.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/std_logic_arith 1350103244 \
       PB ieee/STD_LOGIC_UNSIGNED 1350103247
-AR work/CB16CE_HXILINX_freq_divider/Behavioral 1660001715 \
+AR work/CB16CE_HXILINX_freq_divider/Behavioral 1660516005 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/freq_divider.vhf \
-      EN work/CB16CE_HXILINX_freq_divider 1660001714
-EN work/FJKC_HXILINX_freq_divider 1660001716 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/freq_divider.vhf \
-      PB ieee/std_logic_1164 1350103243
-AR work/FJKC_HXILINX_freq_divider/Behavioral 1660001717 \
-      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/freq_divider.vhf \
-      EN work/FJKC_HXILINX_freq_divider 1660001716
-EN work/AND8_HXILINX_freq_divider 1660001718 \
+      EN work/CB16CE_HXILINX_freq_divider 1660516004
+EN work/FJKC_HXILINX_freq_divider 1660516006 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/freq_divider.vhf \
       PB ieee/std_logic_1164 1350103243
-AR work/AND8_HXILINX_freq_divider/AND8_HXILINX_freq_divider_V 1660001719 \
+AR work/FJKC_HXILINX_freq_divider/Behavioral 1660516007 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/freq_divider.vhf \
-      EN work/AND8_HXILINX_freq_divider 1660001718
-EN work/freq_divider 1660001720 \
+      EN work/FJKC_HXILINX_freq_divider 1660516006
+EN work/AND8_HXILINX_freq_divider 1660516008 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/freq_divider.vhf \
+      PB ieee/std_logic_1164 1350103243
+AR work/AND8_HXILINX_freq_divider/AND8_HXILINX_freq_divider_V 1660516009 \
+      FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/freq_divider.vhf \
+      EN work/AND8_HXILINX_freq_divider 1660516008
+EN work/freq_divider 1660516010 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/freq_divider.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/freq_divider/BEHAVIORAL 1660001721 \
+AR work/freq_divider/BEHAVIORAL 1660516011 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/freq_divider.vhf \
-      EN work/freq_divider 1660001720 CP CB16CE_HXILINX_freq_divider CP VCC \
+      EN work/freq_divider 1660516010 CP CB16CE_HXILINX_freq_divider CP VCC \
       CP XNOR2 CP AND8_HXILINX_freq_divider CP FJKC_HXILINX_freq_divider CP AND4 \
       CP OR2
 FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/lzero.vhf 2022/06/28.04:13:09 P.40xd
-EN work/NOR8_HXILINX_lzero 1660001722 \
+EN work/NOR8_HXILINX_lzero 1660516012 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/lzero.vhf \
       PB ieee/std_logic_1164 1350103243
-AR work/NOR8_HXILINX_lzero/NOR8_HXILINX_lzero_V 1660001723 \
+AR work/NOR8_HXILINX_lzero/NOR8_HXILINX_lzero_V 1660516013 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/lzero.vhf \
-      EN work/NOR8_HXILINX_lzero 1660001722
-EN work/lzero 1660001724 \
+      EN work/NOR8_HXILINX_lzero 1660516012
+EN work/lzero 1660516014 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/lzero.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/lzero/BEHAVIORAL 1660001725 \
+AR work/lzero/BEHAVIORAL 1660516015 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/lzero.vhf \
-      EN work/lzero 1660001724 CP NOR8_HXILINX_lzero
+      EN work/lzero 1660516014 CP NOR8_HXILINX_lzero
 FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/pass_through_or_one.vhf 2022/06/28.04:10:56 P.40xd
-EN work/M2_1_HXILINX_pass_through_or_one 1660001682 \
+EN work/M2_1_HXILINX_pass_through_or_one 1660515972 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/pass_through_or_one.vhf \
       PB ieee/std_logic_1164 1350103243
-AR work/M2_1_HXILINX_pass_through_or_one/M2_1_HXILINX_pass_through_or_one_V 1660001683 \
+AR work/M2_1_HXILINX_pass_through_or_one/M2_1_HXILINX_pass_through_or_one_V 1660515973 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/pass_through_or_one.vhf \
-      EN work/M2_1_HXILINX_pass_through_or_one 1660001682
-EN work/pass_through_or_one 1660001684 \
+      EN work/M2_1_HXILINX_pass_through_or_one 1660515972
+EN work/pass_through_or_one 1660515974 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/pass_through_or_one.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/pass_through_or_one/BEHAVIORAL 1660001685 \
+AR work/pass_through_or_one/BEHAVIORAL 1660515975 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/pass_through_or_one.vhf \
-      EN work/pass_through_or_one 1660001684 CP M2_1_HXILINX_pass_through_or_one
+      EN work/pass_through_or_one 1660515974 CP M2_1_HXILINX_pass_through_or_one
 FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/ram_256bytes.vhf 2022/06/28.04:26:04 P.40xd
-EN work/LD8_MXILINX_ram_256bytes 1660001568 \
+EN work/LD8_MXILINX_ram_256bytes 1660515858 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/ram_256bytes.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/LD8_MXILINX_ram_256bytes/BEHAVIORAL 1660001569 \
+AR work/LD8_MXILINX_ram_256bytes/BEHAVIORAL 1660515859 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/ram_256bytes.vhf \
-      EN work/LD8_MXILINX_ram_256bytes 1660001568 CP LD
-EN work/ram_256bytes 1660001570 \
+      EN work/LD8_MXILINX_ram_256bytes 1660515858 CP LD
+EN work/ram_256bytes 1660515860 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/ram_256bytes.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/ram_256bytes/BEHAVIORAL 1660001571 \
+AR work/ram_256bytes/BEHAVIORAL 1660515861 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/ram_256bytes.vhf \
-      EN work/ram_256bytes 1660001570 CP LD8_MXILINX_ram_256bytes CP INV
+      EN work/ram_256bytes 1660515860 CP LD8_MXILINX_ram_256bytes CP INV
 FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/reg_8bit.vhf 2022/06/28.04:13:05 P.40xd
-EN work/LD8CE_HXILINX_reg_8bit 1660001686 \
+EN work/LD8CE_HXILINX_reg_8bit 1660515976 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/reg_8bit.vhf \
       PB ieee/std_logic_1164 1350103243
-AR work/LD8CE_HXILINX_reg_8bit/Behavioral 1660001687 \
+AR work/LD8CE_HXILINX_reg_8bit/Behavioral 1660515977 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/reg_8bit.vhf \
-      EN work/LD8CE_HXILINX_reg_8bit 1660001686
-EN work/reg_8bit 1660001688 \
+      EN work/LD8CE_HXILINX_reg_8bit 1660515976
+EN work/reg_8bit 1660515978 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/reg_8bit.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/reg_8bit/BEHAVIORAL 1660001689 \
+AR work/reg_8bit/BEHAVIORAL 1660515979 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/reg_8bit.vhf \
-      EN work/reg_8bit 1660001688 CP LD8CE_HXILINX_reg_8bit CP VCC
+      EN work/reg_8bit 1660515978 CP LD8CE_HXILINX_reg_8bit CP VCC
 FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/stepper.vhf 2022/06/28.04:13:06 P.40xd
-EN work/CB4CE_HXILINX_stepper 1660001726 \
+EN work/CB4CE_HXILINX_stepper 1660516016 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/stepper.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/std_logic_arith 1350103244 \
       PB ieee/STD_LOGIC_UNSIGNED 1350103247
-AR work/CB4CE_HXILINX_stepper/Behavioral 1660001727 \
+AR work/CB4CE_HXILINX_stepper/Behavioral 1660516017 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/stepper.vhf \
-      EN work/CB4CE_HXILINX_stepper 1660001726
-EN work/D3_8E_HXILINX_stepper 1660001728 \
+      EN work/CB4CE_HXILINX_stepper 1660516016
+EN work/D3_8E_HXILINX_stepper 1660516018 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/stepper.vhf \
       PB ieee/std_logic_1164 1350103243
-AR work/D3_8E_HXILINX_stepper/D3_8E_HXILINX_stepper_V 1660001729 \
+AR work/D3_8E_HXILINX_stepper/D3_8E_HXILINX_stepper_V 1660516019 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/stepper.vhf \
-      EN work/D3_8E_HXILINX_stepper 1660001728
-EN work/stepper 1660001730 \
+      EN work/D3_8E_HXILINX_stepper 1660516018
+EN work/stepper 1660516020 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/stepper.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/stepper/BEHAVIORAL 1660001731 \
+AR work/stepper/BEHAVIORAL 1660516021 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/stepper.vhf \
-      EN work/stepper 1660001730 CP VCC CP CB4CE_HXILINX_stepper \
+      EN work/stepper 1660516020 CP VCC CP CB4CE_HXILINX_stepper \
       CP D3_8E_HXILINX_stepper CP INV CP OR2
 FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/USART.vhf 2022/06/28.04:13:09 P.40xd
-EN work/USART 1660001572 \
+EN work/USART 1660515862 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/USART.vhf \
       PB ieee/std_logic_1164 1350103243 PB ieee/NUMERIC_STD 1350103249 LB UNISIM \
       PH unisim/VCOMPONENTS 1350103252
-AR work/USART/BEHAVIORAL 1660001573 \
+AR work/USART/BEHAVIORAL 1660515863 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/USART.vhf \
-      EN work/USART 1660001572 CP usart_tramnsmitter
+      EN work/USART 1660515862 CP usart_tramnsmitter
 FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/usart_tramnsmitter.vhd 2022/06/28.04:10:56 P.40xd
-EN work/usart_tramnsmitter 1660001372 \
+EN work/usart_tramnsmitter 1660515662 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/usart_tramnsmitter.vhd \
       PB ieee/std_logic_1164 1350103243
-AR work/usart_tramnsmitter/Behavioral 1660001373 \
+AR work/usart_tramnsmitter/Behavioral 1660515663 \
       FL /home/s0lid/Sources/edu.fpga.xilinx.cpu.8bit/spartan3/cpu/usart_tramnsmitter.vhd \
-      EN work/usart_tramnsmitter 1660001372
+      EN work/usart_tramnsmitter 1660515662

@@ -106,17 +106,27 @@ NET "in_ram_w" LOC = P136;
 NET "out_is_bus1_w" LOC = P5;
 NET "in_bus1" LOC = P4;
 
-NET "out_usart1_tx" LOC = P143;
+NET "out_usart1_tx" LOC = P52;
 
 #F14 -- free
 
 
-NET "in_manual_input_o[0]" LOC = P54;
-NET "in_manual_input_o[1]" LOC = P57;
-NET "in_manual_input_o[2]" LOC = P58;
-NET "in_manual_input_o[3]" LOC = P59;
-NET "in_manual_input_o[4]" LOC = P60;
-NET "in_manual_input_o[5]" LOC = P62;
+#NET "in_manual_input_o[0]" LOC = P54;
+#NET "in_manual_input_o[1]" LOC = P58;
+#NET "in_manual_input_o[2]" LOC = P59;
+#NET "in_manual_input_o[3]" LOC = P66;
+#NET "in_manual_input_o[4]" LOC = P29;
+#NET "in_manual_input_o[5]" LOC = P36;
+#NET "in_manual_input_o[6]" LOC = P69;
+#NET "in_manual_input_o[7]" LOC = P41;
+
+
+NET "in_manual_input_o[0]" LOC = P38;
+NET "in_manual_input_o[1]" LOC = P41;
+NET "in_manual_input_o[2]" LOC = P47;
+NET "in_manual_input_o[3]" LOC = P54;
+NET "in_manual_input_o[4]" LOC = P58;
+NET "in_manual_input_o[5]" LOC = P59;
 NET "in_manual_input_o[6]" LOC = P66;
 NET "in_manual_input_o[7]" LOC = P69;
 
