@@ -1,0 +1,28 @@
+Drill report for spartan3.kicad_pcb
+Created on Tue 16 Aug 2022 02:23:35 AM EEST
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'spartan3-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.400mm  0.0157"  (147 holes)
+    T2  0.500mm  0.0197"  (13 holes)  (with 13 slots)
+    T3  0.762mm  0.0300"  (123 holes)  (with 26 slots)
+    T4  0.900mm  0.0354"  (4 holes)
+    T5  1.000mm  0.0394"  (33 holes)
+    T6  1.100mm  0.0433"  (4 holes)
+    T7  1.300mm  0.0512"  (3 holes)  (with 3 slots)
+
+    Total plated holes count 327
+
+
+Drill file 'spartan3-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+
+    Total unplated holes count 0
