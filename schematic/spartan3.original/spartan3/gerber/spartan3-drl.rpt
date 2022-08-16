@@ -1,5 +1,5 @@
 Drill report for spartan3.kicad_pcb
-Created on Tue 16 Aug 2022 02:23:35 AM EEST
+Created on Tue 16 Aug 2022 02:03:16 PM EEST
 
 Copper Layer Stackup:
     =============================================================
@@ -11,7 +11,7 @@ Drill file 'spartan3-PTH.drl' contains
     plated through holes:
     =============================================================
     T1  0.400mm  0.0157"  (147 holes)
-    T2  0.500mm  0.0197"  (13 holes)  (with 13 slots)
+    T2  0.600mm  0.0236"  (13 holes)  (with 13 slots)
     T3  0.762mm  0.0300"  (123 holes)  (with 26 slots)
     T4  0.900mm  0.0354"  (4 holes)
     T5  1.000mm  0.0394"  (33 holes)
