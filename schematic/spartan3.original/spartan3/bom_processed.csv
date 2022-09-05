@@ -1,0 +1,224 @@
+Designator,Comment,Footprint,JLCPCB Part #（optional）
+C_pwr_aux_0,100uF,CP_Elec_6.3x5.4,C249790
+C_pwr_aux_1,100uF,CP_Elec_6.3x5.4,C249790
+C_pwr_vcc_0,100uF,CP_Elec_6.3x5.4,C249790
+C_pwr_vcc_core_0,100uF,CP_Elec_6.3x5.4,C249790
+C_pwr_vcc_core_1,100uF,CP_Elec_6.3x5.4,C249790
+U_pwr_vcc_1,100uF,CP_Elec_6.3x5.4,C249790
+R__eeprom_dq1_0,33R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C328394
+R_clk_out_0,33R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C328394
+R_JTAG_TCK_0,33R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C328394
+R_JTAG_TDI_0,33R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C328394
+R_JTAG_TDO_0,33R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C328394
+R_JTAG_TMS_0,33R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C328394
+R_d_in_acc_r_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_d_in_acc_w_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_d_in_bus1_one_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_d_in_bus1_ps_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_d_in_clk_manual_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_d_in_iar_r_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_d_in_iar_w_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_d_in_ir_r_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_d_in_ir_w_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_d_in_is_bus1_w_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_d_in_is_clk_external_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_d_in_is_clk_high_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_d_in_is_clk_low_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_d_in_is_clk_manual_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_d_in_is_clk_veryhigh_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_d_in_manual_input_r_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_d_in_none_r_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_d_in_r0_r_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_d_in_r0_w_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_d_in_r1_r_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_d_in_r1_w_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_d_in_r2_r_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_d_in_r2_w_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_d_in_r3_r_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_d_in_r3_w_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_d_in_ram_a_w_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_d_in_ram_r_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_d_in_ram_w_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_d_in_read_reg_en_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_d_in_temp_w_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_d_in_write_reg_en_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_acc_r_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_acc_w_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_bus1_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_can_read_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_can_write_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_clk_internal_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_clkc_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_clkr_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_clkw_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_flags_C_out_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_flags_eq_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_flags_gt_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_flags_w_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_flags_z_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_iar_r_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_iar_w_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_ir_w_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_is_bus1_w_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_r0_r_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_r0_w_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_r1_r_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_r1_w_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_r2_r_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_r2_w_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_r3_r_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_r3_w_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_ram_a_w_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_ram_r_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_ram_w_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_s1_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_s2_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_s3_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_s4_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_s5_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_s6_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_sysbus_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_sysbus_1,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_sysbus_2,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_sysbus_3,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_sysbus_4,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_sysbus_5,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_sysbus_6,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_sysbus_7,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_out_temp_w_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_vcc_0,68R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C352185
+R_eeprom_spi_clk_pulldown_0,100R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C723393
+R_eeprom_spi_clk_pullup_0,100R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C723393
+R_PROG_B_0,820R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C101874
+R_eeprom_hold_0,10K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C332266
+R_eeprom_s_0,10K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C332266
+R_eeprom_w_0,10K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C332266
+R_HSWAP_EN_0,10K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C332266
+R_M_0,10K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C332266
+R_VS_0,10K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C332266
+R_VS_1,10K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C332266
+R_VS_2,10K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C332266
+R_clk_oe_0,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C188361
+R_in_acc_r_0,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C188361
+R_in_acc_w_0,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C188361
+R_in_bus1_0,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C188361
+R_in_clk_manual_0,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C188361
+R_in_iar_r_0,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C188361
+R_in_iar_w_0,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C188361
+R_in_ir_r_0,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C188361
+R_in_ir_w_0,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C188361
+R_in_is_bus1_w_0,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C188361
+R_in_is_clk_external_0,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C188361
+R_in_is_clk_high_0,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C188361
+R_in_is_clk_low_0,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C188361
+R_in_is_clk_manual_0,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C188361
+R_in_is_clk_veryhigh_0,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C188361
+R_in_manual_input_o_0,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C188361
+R_in_manual_input_o_1,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C188361
+R_in_manual_input_o_2,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C188361
+R_in_manual_input_o_3,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C188361
+R_in_manual_input_o_4,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C188361
+R_in_manual_input_o_5,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C188361
+R_in_manual_input_o_6,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C188361
+R_in_manual_input_o_7,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C188361
+R_in_manual_input_r_0,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C188361
+R_in_r0_r_0,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C188361
+R_in_r0_w_0,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C188361
+R_in_r1_r_0,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C188361
+R_in_r1_w_0,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C188361
+R_in_r2_r_0,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C188361
+R_in_r2_w_0,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C188361
+R_in_r3_r_0,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C188361
+R_in_r3_w_0,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C188361
+R_in_ram_a_w_0,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C188361
+R_in_ram_r_0,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C188361
+R_in_ram_w_0,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C188361
+R_in_read_reg_en_0,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C188361
+R_in_temp_w_0,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C188361
+R_in_write_reg_en_0,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C188361
+R_reset_0,1K,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C188361
+D_out_flags_z_0,LED blue 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C84259
+D_in_acc_r_0,LED green 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C142303
+D_in_bus1_one_0,LED green 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C142303
+D_in_bus1_ps_0,LED green 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C142303
+D_in_iar_r_0,LED green 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C142303
+D_in_ir_r_0,LED green 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C142303
+D_in_is_clk_external_0,LED green 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C142303
+D_in_is_clk_high_0,LED green 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C142303
+D_in_is_clk_low_0,LED green 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C142303
+D_in_is_clk_manual_0,LED green 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C142303
+D_in_is_clk_veryhigh_0,LED green 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C142303
+D_in_manual_input_r_0,LED green 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C142303
+D_in_none_r_0,LED green 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C142303
+D_in_r0_r_0,LED green 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C142303
+D_in_r1_r_0,LED green 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C142303
+D_in_r2_r_0,LED green 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C142303
+D_in_r3_r_0,LED green 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C142303
+D_in_ram_r_0,LED green 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C142303
+D_out_acc_r_0,LED green 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C142303
+D_out_bus1_0,LED green 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C142303
+D_out_can_read_0,LED green 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C142303
+D_out_can_write_0,LED green 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C142303
+D_out_clkr_0,LED green 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C142303
+D_out_flags_eq_0,LED green 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C142303
+D_out_iar_r_0,LED green 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C142303
+D_out_is_bus1_w_0,LED green 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C142303
+D_out_r0_r_0,LED green 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C142303
+D_out_r1_r_0,LED green 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C142303
+D_out_r2_r_0,LED green 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C142303
+D_out_r3_r_0,LED green 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C142303
+D_out_ram_r_0,LED green 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C142303
+D_vcc_0,LED green 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C142303
+D_out_s1_0,LED orange 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C712083
+D_out_s2_0,LED orange 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C712083
+D_out_s3_0,LED orange 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C712083
+D_out_s4_0,LED orange 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C712083
+D_out_s5_0,LED orange 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C712083
+D_out_s6_0,LED orange 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C712083
+D_in_acc_w_0,LED red 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C965812
+D_in_iar_w_0,LED red 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C965812
+D_in_ir_w_0,LED red 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C965812
+D_in_is_bus1_w_0,LED red 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C965812
+D_in_r0_w_0,LED red 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C965812
+D_in_r1_w_0,LED red 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C965812
+D_in_r2_w_0,LED red 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C965812
+D_in_r3_w_0,LED red 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C965812
+D_in_ram_a_w_0,LED red 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C965812
+D_in_ram_w_0,LED red 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C965812
+D_in_read_reg_en_0,LED red 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C965812
+D_in_temp_w_0,LED red 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C965812
+D_in_write_reg_en_0,LED red 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C965812
+D_out_acc_w_0,LED red 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C965812
+D_out_clkw_0,LED red 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C965812
+D_out_flags_C_out_0,LED red 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C965812
+D_out_flags_w_0,LED red 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C965812
+D_out_iar_w_0,LED red 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C965812
+D_out_ir_w_0,LED red 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C965812
+D_out_r0_w_0,LED red 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C965812
+D_out_r1_w_0,LED red 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C965812
+D_out_r2_w_0,LED red 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C965812
+D_out_r3_w_0,LED red 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C965812
+D_out_ram_a_w_0,LED red 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C965812
+D_out_ram_w_0,LED red 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C965812
+D_out_sysbus_0,LED red 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C965812
+D_out_sysbus_1,LED red 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C965812
+D_out_sysbus_2,LED red 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C965812
+D_out_sysbus_3,LED red 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C965812
+D_out_sysbus_4,LED red 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C965812
+D_out_sysbus_5,LED red 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C965812
+D_out_sysbus_6,LED red 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C965812
+D_out_sysbus_7,LED red 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C965812
+D_out_temp_w_0,LED red 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C965812
+D_in_clk_manual_0,LED yellow 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C2296
+D_out_clk_internal_0,LED yellow 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C2296
+D_out_clkc_0,LED yellow 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C2296
+D_out_flags_gt_0,LED yellow 2.0V/20mA,LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C2296
+C_clk_out_0,15pF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C107110
+C_clk_0,0.1uF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C49678
+C_clk_1,4.7uF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1779
+C_eeprom_vcc_0,104,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C49678
+U_pwr_vcc_core_0,AMS1117-1.2,SOT-223-3_TabPin2,C347218
+U_pwr_aux_0,AMS1117-2.5,SOT-223-3_TabPin2,C12087
+U_pwr_vcc_0,AMS1117-3.3,SOT-223-3_TabPin2,C6186
+F_pwr_0,Fuse 3.3V / 2A,Fuse_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C2757931
+U_eeprom_0,M25P16-VMN3PB,SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm,C151067

@@ -1,0 +1,12 @@
+Type							Name							Color	Link
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SW_SPDT							SW_in_manual_input_o_{X}				https://www.rcscomponents.kiev.ua/product/smts-102-a2_143351.html
+SW_DPDT_x2						SW_in_{name}_{X}, SW_pwr_0				https://www.rytronics.in/product/dpdt-push-button-switch-self-locking-6-pin
+SW_Rotary12						SW_Rotary12								https://www.rcscomponents.kiev.ua/product/peremikach-povorotnij-sr26ns1-1-12p-m10-38r6_147897.html
+SW_Push							SW_reset_0								https://www.ebay.com/itm/304127100824?hash=item46cf634798:g:usMAAOSw-xphLXQ5
+SPFT_Sliding_Switch-dynacore	U1_clk_select_0							https://store.synthrotek.com/Slide-Switch-5-Position-_p_777.html
+SW_Push							SW_in_clk_manual_0				Yellow	https://www.amazon.co.uk/Larcele-Latching-Plastic-Mounting-11x13mm/dp/B08JYNSNMF/ref=sr_1_3?keywords=Square+Push+Switches&qid=1661279971&sr=8-3
+Xilinx_JTAG						P_JTAG_FPGA_0, P_JTAG_FLASH_0			https://www.sunrom.com/p/14-pin-box-header-straight
+USB_A							J_pwr_0									https://www.we-online.com/catalog/en/COM_TYPE_A_VERTICAL
+
+

@@ -1,0 +1,197 @@
+Ref,Val,Package,PosX,PosY,Rot,Side
+"C_pwr_aux_0","100uF","CP_Elec_6.3x5.4",196.590000,-59.690000,0.000000,top
+"C_pwr_aux_1","100uF","CP_Elec_6.3x5.4",196.590000,-67.310000,0.000000,top
+"C_pwr_vcc_0","100uF","CP_Elec_6.3x5.4",194.310000,-24.130000,0.000000,top
+"C_pwr_vcc_core_0","100uF","CP_Elec_6.3x5.4",191.770000,-39.370000,0.000000,top
+"C_pwr_vcc_core_1","100uF","CP_Elec_6.3x5.4",191.770000,-46.990000,0.000000,top
+"D_in_acc_r_0","LED green 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",62.190000,-55.340000,0.000000,top
+"D_in_acc_w_0","LED red 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",92.670000,-68.580000,0.000000,top
+"D_in_bus1_one_0","LED green 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",64.730000,-93.440000,0.000000,top
+"D_in_bus1_ps_0","LED green 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",64.730000,-88.360000,0.000000,top
+"D_in_clk_manual_0","LED yellow 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",34.250000,-141.700000,0.000000,top
+"D_in_iar_r_0","LED green 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",54.570000,-40.100000,0.000000,top
+"D_in_iar_w_0","LED red 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",92.670000,-48.260000,0.000000,top
+"D_in_ir_r_0","LED green 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",59.650000,-48.260000,0.000000,top
+"D_in_ir_w_0","LED red 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",92.670000,-58.420000,0.000000,top
+"D_in_is_bus1_w_0","LED red 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",57.110000,-80.740000,0.000000,top
+"D_in_is_clk_external_0","LED green 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",59.650000,-139.160000,0.000000,top
+"D_in_is_clk_high_0","LED green 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",59.650000,-144.240000,0.000000,top
+"D_in_is_clk_low_0","LED green 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",59.650000,-149.320000,0.000000,top
+"D_in_is_clk_manual_0","LED green 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",59.650000,-154.400000,0.000000,top
+"D_in_is_clk_veryhigh_0","LED green 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",59.650000,-134.080000,0.000000,top
+"D_in_manual_input_r_0","LED green 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",26.630000,-55.340000,0.000000,top
+"D_in_none_r_0","LED green 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",44.410000,-37.560000,0.000000,top
+"D_in_r0_r_0","LED green 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",54.570000,-70.580000,0.000000,top
+"D_in_r0_w_0","LED red 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",118.070000,-58.420000,0.000000,top
+"D_in_r1_r_0","LED green 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",44.410000,-73.120000,0.000000,top
+"D_in_r1_w_0","LED red 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",118.070000,-68.580000,0.000000,top
+"D_in_r2_r_0","LED green 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",34.250000,-70.580000,0.000000,top
+"D_in_r2_w_0","LED red 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",118.070000,-78.740000,0.000000,top
+"D_in_r3_r_0","LED green 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",29.170000,-62.960000,0.000000,top
+"D_in_r3_w_0","LED red 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",118.070000,-88.900000,0.000000,top
+"D_in_ram_a_w_0","LED red 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",92.670000,-78.740000,0.000000,top
+"D_in_ram_r_0","LED green 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",59.650000,-62.960000,0.000000,top
+"D_in_ram_w_0","LED red 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",92.670000,-88.900000,0.000000,top
+"D_in_read_reg_en_0","LED red 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",57.110000,-29.940000,0.000000,top
+"D_in_temp_w_0","LED red 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",118.070000,-48.260000,0.000000,top
+"D_in_write_reg_en_0","LED red 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",107.910000,-29.940000,0.000000,top
+"D_out_acc_r_0","LED green 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",34.250000,-111.220000,0.000000,top
+"D_out_acc_w_0","LED red 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",34.250000,-118.840000,0.000000,top
+"D_out_bus1_0","LED green 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",49.490000,-111.220000,0.000000,top
+"D_out_can_read_0","LED green 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",18.770000,-29.940000,0.000000,top
+"D_out_can_write_0","LED green 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",82.510000,-29.940000,0.000000,top
+"D_out_clk_internal_0","LED yellow 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",34.250000,-146.780000,0.000000,top
+"D_out_clkc_0","LED yellow 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",77.430000,-144.240000,0.000000,top
+"D_out_clkr_0","LED green 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",77.430000,-149.320000,0.000000,top
+"D_out_clkw_0","LED red 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",77.430000,-154.400000,0.000000,top
+"D_out_flags_C_out_0","LED red 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",146.010000,-144.240000,0.000000,top
+"D_out_flags_eq_0","LED green 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",176.490000,-144.240000,0.000000,top
+"D_out_flags_gt_0","LED yellow 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",161.250000,-144.240000,0.000000,top
+"D_out_flags_w_0","LED red 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",74.890000,-118.840000,0.000000,top
+"D_out_flags_z_0","LED blue 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",191.730000,-144.240000,0.000000,top
+"D_out_iar_r_0","LED green 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",26.630000,-111.220000,0.000000,top
+"D_out_iar_w_0","LED red 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",26.630000,-118.840000,0.000000,top
+"D_out_ir_w_0","LED red 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",49.490000,-118.840000,0.000000,top
+"D_out_is_bus1_w_0","LED green 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",18.770000,-80.740000,0.000000,top
+"D_out_r0_r_0","LED green 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",85.050000,-111.220000,0.000000,top
+"D_out_r0_w_0","LED red 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",85.050000,-118.840000,0.000000,top
+"D_out_r1_r_0","LED green 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",92.670000,-111.220000,0.000000,top
+"D_out_r1_w_0","LED red 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",92.670000,-118.840000,0.000000,top
+"D_out_r2_r_0","LED green 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",100.290000,-111.220000,0.000000,top
+"D_out_r2_w_0","LED red 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",100.290000,-118.840000,0.000000,top
+"D_out_r3_r_0","LED green 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",107.910000,-111.220000,0.000000,top
+"D_out_r3_w_0","LED red 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",107.910000,-118.840000,0.000000,top
+"D_out_ram_a_w_0","LED red 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",64.730000,-118.840000,0.000000,top
+"D_out_ram_r_0","LED green 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",41.870000,-111.220000,0.000000,top
+"D_out_ram_w_0","LED red 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",41.870000,-118.840000,0.000000,top
+"D_out_s1_0","LED orange 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",85.050000,-144.240000,0.000000,top
+"D_out_s2_0","LED orange 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",92.670000,-144.240000,0.000000,top
+"D_out_s3_0","LED orange 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",100.290000,-144.240000,0.000000,top
+"D_out_s4_0","LED orange 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",107.910000,-144.240000,0.000000,top
+"D_out_s5_0","LED orange 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",115.530000,-144.240000,0.000000,top
+"D_out_s6_0","LED orange 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",123.150000,-144.240000,0.000000,top
+"D_out_sysbus_0","LED red 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",206.970000,-116.300000,0.000000,top
+"D_out_sysbus_1","LED red 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",196.810000,-116.300000,0.000000,top
+"D_out_sysbus_2","LED red 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",186.650000,-116.300000,0.000000,top
+"D_out_sysbus_3","LED red 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",176.490000,-116.300000,0.000000,top
+"D_out_sysbus_4","LED red 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",166.330000,-116.300000,0.000000,top
+"D_out_sysbus_5","LED red 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",156.170000,-116.300000,0.000000,top
+"D_out_sysbus_6","LED red 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",146.010000,-116.300000,0.000000,top
+"D_out_sysbus_7","LED red 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",135.850000,-116.300000,0.000000,top
+"D_out_temp_w_0","LED red 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",57.110000,-118.840000,0.000000,top
+"D_vcc_0","LED green 2.0V/20mA","LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder",6.310000,-88.360000,0.000000,top
+"R_d_in_acc_r_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",67.310000,-58.420000,0.000000,top
+"R_d_in_acc_w_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",97.790000,-68.580000,180.000000,top
+"R_d_in_bus1_one_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",72.390000,-93.440000,0.000000,top
+"R_d_in_bus1_ps_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",72.390000,-88.360000,180.000000,top
+"R_d_in_clk_manual_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",34.290000,-137.160000,0.000000,top
+"R_d_in_iar_r_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",50.800000,-36.830000,0.000000,top
+"R_d_in_iar_w_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",97.790000,-48.260000,180.000000,top
+"R_d_in_ir_r_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",67.580000,-50.800000,0.000000,top
+"R_d_in_ir_w_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",97.790000,-58.420000,180.000000,top
+"R_d_in_is_bus1_w_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",57.110000,-85.090000,0.000000,top
+"R_d_in_is_clk_external_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",66.040000,-139.160000,180.000000,top
+"R_d_in_is_clk_high_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",66.040000,-144.240000,180.000000,top
+"R_d_in_is_clk_low_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",66.040000,-149.320000,180.000000,top
+"R_d_in_is_clk_manual_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",66.040000,-154.400000,180.000000,top
+"R_d_in_is_clk_veryhigh_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",66.040000,-134.080000,180.000000,top
+"R_d_in_manual_input_r_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",22.860000,-59.690000,0.000000,top
+"R_d_in_none_r_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",35.290000,-38.100000,0.000000,top
+"R_d_in_r0_r_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",54.610000,-74.930000,0.000000,top
+"R_d_in_r0_w_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",123.190000,-58.420000,180.000000,top
+"R_d_in_r1_r_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",44.450000,-77.470000,0.000000,top
+"R_d_in_r1_w_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",123.190000,-68.580000,180.000000,top
+"R_d_in_r2_r_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",34.250000,-77.470000,0.000000,top
+"R_d_in_r2_w_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",123.190000,-78.740000,180.000000,top
+"R_d_in_r3_r_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",26.670000,-67.310000,0.000000,top
+"R_d_in_r3_w_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",123.190000,-88.900000,180.000000,top
+"R_d_in_ram_a_w_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",97.790000,-78.740000,180.000000,top
+"R_d_in_ram_r_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",60.960000,-67.310000,0.000000,top
+"R_d_in_ram_w_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",97.790000,-88.900000,180.000000,top
+"R_d_in_read_reg_en_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",57.150000,-34.290000,0.000000,top
+"R_d_in_temp_w_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",123.190000,-48.260000,180.000000,top
+"R_d_in_write_reg_en_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",107.950000,-34.290000,0.000000,top
+"R_in_acc_r_0","1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",68.310000,-53.340000,0.000000,top
+"R_in_acc_w_0","1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",92.670000,-73.660000,0.000000,top
+"R_in_bus1_0","1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",46.990000,-88.900000,90.000000,top
+"R_in_clk_manual_0","1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",24.130000,-137.160000,0.000000,top
+"R_in_iar_r_0","1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",59.690000,-43.180000,0.000000,top
+"R_in_iar_w_0","1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",92.710000,-53.340000,0.000000,top
+"R_in_ir_r_0","1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",64.770000,-45.720000,0.000000,top
+"R_in_ir_w_0","1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",92.670000,-63.500000,0.000000,top
+"R_in_is_bus1_w_0","1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",45.450000,-81.280000,180.000000,top
+"R_in_is_clk_external_0","1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",42.910000,-139.700000,180.000000,top
+"R_in_is_clk_high_0","1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",42.910000,-144.780000,180.000000,top
+"R_in_is_clk_low_0","1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",42.910000,-149.860000,180.000000,top
+"R_in_is_clk_manual_0","1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",42.910000,-154.940000,180.000000,top
+"R_in_is_clk_veryhigh_0","1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",42.910000,-134.620000,180.000000,top
+"R_in_manual_input_o_0","1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",207.010000,-76.200000,0.000000,top
+"R_in_manual_input_o_1","1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",196.850000,-76.200000,0.000000,top
+"R_in_manual_input_o_2","1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",186.690000,-76.200000,0.000000,top
+"R_in_manual_input_o_3","1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",176.530000,-76.200000,0.000000,top
+"R_in_manual_input_o_4","1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",166.370000,-76.200000,0.000000,top
+"R_in_manual_input_o_5","1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",156.210000,-76.200000,0.000000,top
+"R_in_manual_input_o_6","1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",146.050000,-76.200000,0.000000,top
+"R_in_manual_input_o_7","1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",134.890000,-76.200000,0.000000,top
+"R_in_manual_input_r_0","1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",19.050000,-55.880000,180.000000,top
+"R_in_r0_r_0","1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",62.230000,-71.120000,0.000000,top
+"R_in_r0_w_0","1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",118.110000,-63.500000,0.000000,top
+"R_in_r1_r_0","1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",39.370000,-77.470000,0.000000,top
+"R_in_r1_w_0","1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",118.110000,-73.660000,0.000000,top
+"R_in_r2_r_0","1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",27.940000,-72.390000,180.000000,top
+"R_in_r2_w_0","1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",118.110000,-83.820000,0.000000,top
+"R_in_r3_r_0","1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",21.590000,-63.500000,180.000000,top
+"R_in_r3_w_0","1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",118.110000,-93.980000,0.000000,top
+"R_in_ram_a_w_0","1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",92.670000,-83.820000,0.000000,top
+"R_in_ram_r_0","1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",67.310000,-63.500000,0.000000,top
+"R_in_ram_w_0","1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",92.670000,-93.980000,0.000000,top
+"R_in_read_reg_en_0","1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",46.990000,-30.480000,0.000000,top
+"R_in_temp_w_0","1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",118.110000,-53.340000,0.000000,top
+"R_in_write_reg_en_0","1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",100.330000,-30.480000,0.000000,top
+"R_out_acc_r_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",34.250000,-115.570000,0.000000,top
+"R_out_acc_w_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",34.250000,-123.190000,0.000000,top
+"R_out_bus1_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",49.490000,-115.570000,0.000000,top
+"R_out_can_read_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",27.670000,-29.940000,0.000000,top
+"R_out_can_write_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",90.170000,-30.480000,0.000000,top
+"R_out_clk_internal_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",34.250000,-151.130000,0.000000,top
+"R_out_clkc_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",71.120000,-144.240000,180.000000,top
+"R_out_clkr_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",71.120000,-149.320000,180.000000,top
+"R_out_clkw_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",71.120000,-154.400000,180.000000,top
+"R_out_flags_C_out_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",146.010000,-148.590000,0.000000,top
+"R_out_flags_eq_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",176.490000,-148.590000,0.000000,top
+"R_out_flags_gt_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",161.250000,-148.590000,0.000000,top
+"R_out_flags_w_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",74.890000,-123.190000,0.000000,top
+"R_out_flags_z_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",191.770000,-148.590000,0.000000,top
+"R_out_iar_r_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",26.630000,-115.570000,0.000000,top
+"R_out_iar_w_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",26.630000,-123.190000,0.000000,top
+"R_out_ir_w_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",49.490000,-123.190000,0.000000,top
+"R_out_is_bus1_w_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",18.770000,-85.090000,0.000000,top
+"R_out_r0_r_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",85.050000,-115.570000,0.000000,top
+"R_out_r0_w_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",85.050000,-123.190000,0.000000,top
+"R_out_r1_r_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",92.670000,-115.570000,0.000000,top
+"R_out_r1_w_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",92.670000,-123.190000,0.000000,top
+"R_out_r2_r_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",100.290000,-115.570000,0.000000,top
+"R_out_r2_w_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",100.290000,-123.190000,0.000000,top
+"R_out_r3_r_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",107.910000,-115.570000,0.000000,top
+"R_out_r3_w_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",107.910000,-123.190000,0.000000,top
+"R_out_ram_a_w_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",64.730000,-123.190000,0.000000,top
+"R_out_ram_r_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",41.870000,-115.570000,0.000000,top
+"R_out_ram_w_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",41.870000,-123.190000,0.000000,top
+"R_out_s1_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",85.050000,-148.590000,0.000000,top
+"R_out_s2_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",92.670000,-148.590000,0.000000,top
+"R_out_s3_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",100.330000,-148.590000,0.000000,top
+"R_out_s4_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",107.950000,-148.590000,0.000000,top
+"R_out_s5_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",115.530000,-148.590000,0.000000,top
+"R_out_s6_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",123.150000,-148.590000,0.000000,top
+"R_out_sysbus_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",206.970000,-120.650000,0.000000,top
+"R_out_sysbus_1","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",196.810000,-120.650000,0.000000,top
+"R_out_sysbus_2","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",186.650000,-120.650000,0.000000,top
+"R_out_sysbus_3","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",176.490000,-120.650000,0.000000,top
+"R_out_sysbus_4","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",166.330000,-120.650000,0.000000,top
+"R_out_sysbus_5","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",156.170000,-120.650000,0.000000,top
+"R_out_sysbus_6","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",146.010000,-120.650000,0.000000,top
+"R_out_sysbus_7","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",135.850000,-120.650000,0.000000,top
+"R_out_temp_w_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",57.110000,-123.190000,0.000000,top
+"R_reset_0","1K","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",8.890000,-111.760000,0.000000,top
+"R_vcc_0","68R","R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",6.350000,-92.710000,0.000000,top
+"U_pwr_vcc_1","100uF","CP_Elec_6.3x5.4",194.310000,-31.750000,0.000000,top
